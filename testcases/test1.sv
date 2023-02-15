@@ -65,6 +65,7 @@ endinterface
 
 
 // Have two always_comb blocks in module top
+// adder and muliplier using always_comb
 module top(
     output int a,
     input int b,c
