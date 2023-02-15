@@ -84,3 +84,12 @@
  - DM: AM to use makefile examples from DM as a guide/ starter.
  - RS: AM to seek help from RS when making makefiles for testcases; some errors may be subtle and can be fixed quickly by an experienced user.
  - AM: Make 15 initial test cases recommended by DM.
+
+- Meeting: Pull requests and Makefile Intro @ 16:30 NT 60mins
+ - Present: AM, DM
+  - A walkthrough on pull requests with AM by DM.
+  - A quick look at how makefiles work and relevance to project.
+  - AM: Use GNU make when making makefiles for using tools in project
+
+
+
