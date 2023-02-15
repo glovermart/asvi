@@ -74,7 +74,7 @@
 - Edited/ created sample test and pushed to remote branch.
 - Meeting: weekly @1200 BT 42 mins
   - present: AM, DM, RS
-    -Feedback on example test case from DM
+    - Feedback on example test case from DM
      - AM: Setup VScode to be POSIX compliant - use Nik's recommendations & VScode link as guide.
      - AM: Avoid commiting commented code - code should be clean.
      - AM: Only use module name top in hierarchical designs.
@@ -84,7 +84,6 @@
  - DM: AM to use makefile examples from DM as a guide/ starter.
  - RS: AM to seek help from RS when making makefiles for testcases; some errors may be subtle and can be fixed quickly by an experienced user.
  - AM: Make 15 initial test cases recommended by DM.
-
 - Meeting: Pull requests and Makefile Intro @ 16:30 NT 60mins
  - Present: AM, DM
   - A walkthrough on pull requests with AM by DM.
