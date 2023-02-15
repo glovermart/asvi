@@ -79,6 +79,7 @@ module top(
         .c(c)
     );
 
+    // declare internal signals
     logic [31:0] x; 
     logic [31:0] y;
 
