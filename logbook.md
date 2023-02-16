@@ -75,14 +75,17 @@
 - Meeting: weekly @1200 BT 42 mins
   - present: AM, DM, RS
     - Feedback on example test case from DM
-     - AM: Setup VScode to be POSIX compliant - use Nik's recommendations & VScode link as guide.
+     - AM: Setup VScode to be POSIX compliant - use Nik's recommendations & 
+     VScode link as guide.
      - AM: Avoid commiting commented code - code should be clean.
      - AM: Only use module name top in hierarchical designs.
-     - AM: Come up with/ describe naming convention for signals in interfaces and signals in modules.
+     - AM: Come up with/ describe naming convention for signals in interfaces 
+           and signals in modules.
  - DM: Take AM through pull & push request basics later today.
  - DM: Send AM 'boilerplate' for inst, port and svi testcases.
  - DM: AM to use makefile examples from DM as a guide/ starter.
- - RS: AM to seek help from RS when making makefiles for testcases; some errors may be subtle and can be fixed quickly by an experienced user.
+ - RS: AM to seek help from RS when making makefiles for testcases; some errors 
+       may be subtle and can be fixed quickly by an experienced user.
  - AM: Make 15 initial test cases recommended by DM.
 - Meeting: Pull requests and Makefile Intro @ 16:30 NT 60mins
   - Present: AM, DM
@@ -90,5 +93,29 @@
   - A quick look at how makefiles work and relevance to project.
   - AM: Use GNU make when making makefiles for using tools in project
 
+2023-02-16
+----------
+- DDF meeting
+- Started work on first 15 initial testcases
+  - Made 2 simple test cases using always_ff in the files 
+    `alwaysff_port.sv` & `alwaysff_svi.sv`.
+  - Made 2 simple test cases using always_latch in the files 
+    `alwayslatch_inst.sv` & `alwayslatch_svi.sv`.
+  - Did a quick check of testcases in Vivado;
+    - Only 2x test cases with *_port.sv from 8/15 test cases are elaborated 
+      (Including `test1.sv`).
+    - All other test cases are not elaborated.
+    - Only `test1.sv` is synthesizable.
+    - All other test cases are not synthesizable.
+- To Do
+  - Investigate cause of no elaboration in some test cases.
+  - Investigate cause of no synthesis in testcases other than `test1.sv`.
+  - Complete the remaining 7/ 15 test cases.
+- Clues as to why some testcases are not able to be elaborated or synthesized:
+  - Improper connections/ Instationtion? Some top level ports not connected?
+  - Compare other testcases with `test1.sv`.
+  - Signals from interface after instantion in top module are not used?
+  - Signals not having direction?
+  - Module top and/ or interface having no output?
 
 
