@@ -6,7 +6,7 @@ interface I;
 
 endinterface
 
-module M;
+module M
   ( input logic i_clk
   , input logic i_arst
   );
@@ -17,7 +17,7 @@ always_latch
   if (!i_arst)
     u_I.y <= 1'b0;
   else if (i_clk)
-    u_I.y <= u_I.x
+    u_I.y <= u_I.x;
 
 endmodule
 
