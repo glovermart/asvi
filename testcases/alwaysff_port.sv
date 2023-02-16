@@ -39,29 +39,29 @@ always_ff @(posedge p.i_clk)
   else
     p.z <= Z;
 always_ff @(posedge p.i_clk)
- if (p.srst)
+ if (p.i_srst)
     p.y <= 1'b0;
  else
     p.y <= 1'b1;
 always_ff @(posedge p.i_clk)
-  if (p.srst)
+  if (p.i_srst)
     p.x <= 1'b0;
   else
-    p.x <= a
+    p.x <= a;
 
 //Asynchronous reset
-always_ff @(posedge p.i_clk, posedge p.i_arst)
-  if (i_arst)
+always_ff @(posedge p.i_clk , posedge p.i_arst)
+  if (p.i_arst)
     p.z <= 1'b0;
   else
     p.z <= Z;
 always_ff @(posedge p.i_clk, posedge p.i_arst)
-  if (i_arst)
+  if (p.i_arst)
     p.y <= 1'b0;
   else
     p.y <= 1'b1;
 always_ff @(posedge p.i_clk, posedge p.i_arst)
-  if (i_arst)
+  if (p.i_arst)
     p.x <= 1'b0;
   else
     p.x <= a;
