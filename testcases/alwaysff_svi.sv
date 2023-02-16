@@ -2,8 +2,6 @@
 
 interface I
  ( input var logic i_clk
- , input var logic i_srst
- , input var logic i_arst
  );
 
  logic z;
@@ -20,8 +18,6 @@ endinterface
 
 module M
  ( input var logic i_clk
- , input var logic i_srst
- , input var logic i_arst
  );
 
  I u_I(.*);
