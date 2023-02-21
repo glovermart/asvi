@@ -2,9 +2,10 @@
 
 interface I;
 
-  logic z,
+  logic z;
   logic y;
   logic x;
+  logic w;
 
   modport P
    ( output z
