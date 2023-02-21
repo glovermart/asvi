@@ -118,4 +118,14 @@
   - Signals not having direction?
   - Module top and/ or interface having no output?
 
-
+2023-02-21
+----------
+- Completed the 15 initial testcases.
+- Used `force` procedural-continuous assignment with always_comb instead of
+  initial begin end statements.
+- Check if this is allowed since examples seen use this in initial blocks.
+- `alwayslatch_port` and `assign_port` elaborated in Vivado 2020.1.
+- `force` not supported in Vivado 2020.1.
+- Other testcases failed to elaborate in Vivado.
+- To Do
+  - Start tutorials/ work on Makefiles.
