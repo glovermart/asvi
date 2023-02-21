@@ -11,6 +11,8 @@ module M
 
  I u_I ();
  assign u_I.z = b;
+ 
+ always_comb
   if (a)
     force u_I.z = 1'bz;
   else

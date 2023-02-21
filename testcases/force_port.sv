@@ -42,9 +42,10 @@ module top
  I u_I();
  M1 u_M1
   (u_I);
- M2 u_M2;
+ M2 u_M2
   (u_I);
-
+  
+  always_comb
   force p1.z = u_M2.a;
 
 endmodule
