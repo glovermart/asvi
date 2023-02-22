@@ -129,3 +129,18 @@
 - Other testcases failed to elaborate in Vivado.
 - To Do
   - Start tutorials/ work on Makefiles.
+
+2023-02-22
+----------
+- Make reads/ tutorials.
+- Weekly Meeting @13:00 NT 25 mins
+  - Present: AM, DM, RS, MO
+  - AM: Updated team on progress.
+  - DM: Accepted 2x pull requests from AM.
+  - DM: Updated MO on thesis progress and tasks.
+  - RS/DM: Clarified mentioning tool names in logbook.
+  - MO: AM to share overleaf of thesis report with MO.
+  - DM: AM to focus on setting up intrasftructure (Makefiles) for tests.
+  - Meeting time changed to 14:00. Requested by BD; accepted by all.
+  - AM: Future pull requests to DM should be to master branch.
+
