@@ -144,3 +144,28 @@
   - Meeting time changed to 14:00. Requested by BD; accepted by all.
   - AM: Future pull requests to DM should be to master branch.
 
+2023-02-23
+----------
+- Make reads/ tutorials.
+- Makefile for Yosys linter done.
+  - Exits on error - does not check remaining files; to fix.
+
+2023-02-27
+----------
+- Attempted fixing testcases that generated no netlist.
+- DDD presentation on Project.
+
+2023-02-28
+----------
+- Makefile for icarus:
+ - Exits on error - does not check remaining files; to fix.
+ - Fixed with || true.
+- Makefile for svlint:
+ - Checks first file only; to fix.
+ - Checks all files but writes stderr into the first .txt file; to fix.
+ - Fixed by piping to true.
+ - Alternate syntax <svlint -- --lint> may be better for clarity.
+- Fixed yosys linter exiting due to 'error' issue.
+- Fixed verilator linter exiting due to 'error' issue.
+- Running Verilator,Yosys,Svlint and Icarus Linters at once.
+- Started looking into Questa and Spyglass userguide for command line syntaxes.
