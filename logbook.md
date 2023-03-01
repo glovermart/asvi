@@ -169,3 +169,14 @@
 - Fixed verilator linter exiting due to 'error' issue.
 - Running Verilator,Yosys,Svlint and Icarus Linters at once.
 - Started looking into Questa and Spyglass userguide for command line syntaxes.
+
+2023-03-01
+- Weekly Meeting @14:00 NT 25 mins
+  - Present: AM, DM, RS
+  - DM: AM to still focus on test infrastructure for now.
+  - DM/ RS: Possibility of investigating a real corner case from the design team
+    later on.
+  - AM: To keep the warnings/error messages from linters as they are - do not
+    try to 'fix' the test cases. 
+- Master thesis report - Chapter 1 (Introduction/Motivation) write up.
+- Pull request to DM - Makefiles for 4x tools.
