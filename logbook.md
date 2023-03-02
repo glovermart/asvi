@@ -171,6 +171,7 @@
 - Started looking into Questa and Spyglass userguide for command line syntaxes.
 
 2023-03-01
+----------
 - Weekly Meeting @14:00 NT 25 mins
   - Present: AM, DM, RS
   - DM: AM to still focus on test infrastructure for now.
@@ -180,3 +181,11 @@
     try to 'fix' the test cases. 
 - Master thesis report - Chapter 1 (Introduction/Motivation) write up.
 - Pull request to DM - Makefiles for 4x tools.
+
+2023-03-02
+----------
+- Project report structure setup.
+- Intro text to Methodology and Experiment chapters.
+- Talking points for Theory chapter.
+- Review and addition of text/improved structure of chapter 1 of report.
+- DDF meeting.
