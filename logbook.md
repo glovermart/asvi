@@ -195,3 +195,5 @@
 ----------
 - Incorporated feedback from DM & BD into draft thesis report.
 - Worked on comments from DM from pull request; handling errors in GNU make.
+- Command line syntax for Vivado found but opens GUI.
+ - Check how to use read_verilog -sv (tcl)command properly for Vivado in shell.
