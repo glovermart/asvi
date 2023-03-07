@@ -8,4 +8,4 @@ lint: $(addprefix ${OUTDIR}/,$(addsuffix .icarus_lint.txt,${TESTCASE_NAMES}))
 
 ${OUTDIR}/%.icarus_lint.txt: testcases/%.sv
 	mkdir -p ${OUTDIR}
-	iverilog -tnull -g2012 -Wall -i $^ >> $@ 2>&1 || true
+	-iverilog -tnull -g2012 -Wall -i $^ >> $@ 2>&1
