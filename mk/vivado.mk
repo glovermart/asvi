@@ -8,3 +8,4 @@ read: $(addprefix ${OUTDIR}/,$(addsuffix .vivado_reader.txt,${TESTCASE_NAMES}))
 
 ${OUTDIR}/%.vivado_reader.txt: testcases/%.sv
 	mkdir -p ${OUTDIR}
+	vivado -mode tcl -nojournal -nolog
