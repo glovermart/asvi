@@ -7,4 +7,5 @@ default:
 	#make -f mk/yosys.mk
 	#make -f mk/svlint.mk
 	#make -f mk/icarus.mk
-	make -f mk/vivado.mk
+	#make -f mk/vivado.mk
+	make -f mk/questa.mk
