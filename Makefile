@@ -8,4 +8,5 @@ default:
 	#make -f mk/svlint.mk
 	#make -f mk/icarus.mk
 	#make -f mk/vivado.mk
-	make -f mk/questa.mk
+	#make -f mk/questa.mk
+	make -f mk/spyglass.mk

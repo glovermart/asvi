@@ -4,3 +4,6 @@ out/
 vivav*
 .Xil/
 work/
+gui_command.log
+sg_shell_command.log
+spyglass.out
