@@ -197,3 +197,11 @@
 - Worked on comments from DM from pull request; handling errors in GNU make.
 - Command line syntax for Vivado found but opens GUI.
  - Check how to use read_verilog -sv (tcl)command properly for Vivado in shell.
+
+2023-03-08
+----------
+- Weekly Meeting @14:00 NT 25 mins
+  - AM: Brief on progess so far to team.
+  - MO: Clarification on direction of thesis.
+  - DM,BD,RS: Shed more light on thesis, motivation and expectations.
+- Continued work on getting other tools to work - Vivado, Questa, Spyglass.
