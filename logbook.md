@@ -205,3 +205,11 @@
   - MO: Clarification on direction of thesis.
   - DM,BD,RS: Shed more light on thesis, motivation and expectations.
 - Continued work on getting other tools to work - Vivado, Questa, Spyglass.
+
+2023-03-09
+----------
+- Spyglass and Questa tools initial work.
+- Tried batch and gui modes in Spyglass.
+- Attemped -shell mode in Spyglass
+  - used current_goal lint/lint_rtl
+  - used current_goal lint/lint_rtl_enhanced
