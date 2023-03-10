@@ -219,5 +219,12 @@
 - Test cases `force_inst`, `force_port`, `force_svi`
 - Tool: Synopsys Spyglass
     - In report, moresimple.rpt (BuiltIn -> RuleGroup=Design Read)
-      - Force statements are not synthesizable.
-      - Release statements are not synthesizable.
+      - `FORCE` statements are not synthesizable (Severity -Synthesis error).
+      - `RELEASE` statements are not synthesizable (Severity -Synthesis error).
+  Test case :`force_svi` Goal=lint/lint_rtl
+    - Rule W123, Severity - error
+      - Variable 'u_I.x' read but never set.[Hierarchy: ':M']
+      - Variable 'u_I.y' read but never set.[Hierarchy: ':M']
+    - Rule W528, Severity - warning
+      - Variable 'u_I.z' set but not read.[Hierarchy: ':M']
+
