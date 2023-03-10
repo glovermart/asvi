@@ -222,11 +222,15 @@
       - `FORCE` statements are not synthesizable (Severity -Synthesis error).
       - `RELEASE` statements are not synthesizable (Severity -Synthesis error).
   Test case :`force_svi` Goal=lint/lint_rtl
-    - Rule W123, Severity - error
+    - Rule W123, Severity - error, Lines 16 in moude M
       - Variable 'u_I.x' read but never set.[Hierarchy: ':M']
       - Variable 'u_I.y' read but never set.[Hierarchy: ':M']
-    - Rule W528, Severity - warning
+    - Rule W528, Severity - warning, Line 16 in module M
       - Variable 'u_I.z' set but not read.[Hierarchy: ':M']
+  Test case :`force_svi` RuleGroup=Design Read
+    - Rule SYNTH_102 &103, Severity - Synthesis error , Lines 8 & 18 in module M
+      - FORCE statements are not synthesizable (SYNTH_102)
+      - RELEASE statements are not synthesizable (SYNTH_103)
   Test case :`force_port` Goal=lint/lint_rtl
     - Rule W240, Severity - warning , Line 39 in module top
       - Input 'p1.x' declared but not read.[Hierarchy: ':top']
