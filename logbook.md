@@ -227,4 +227,12 @@
       - Variable 'u_I.y' read but never set.[Hierarchy: ':M']
     - Rule W528, Severity - warning
       - Variable 'u_I.z' set but not read.[Hierarchy: ':M']
-
+  Test case :`force_port` Goal=lint/lint_rtl
+    - Rule W240, Severity - warning , Line 39 in module top
+      - Input 'p1.x' declared but not read.[Hierarchy: ':top']
+      - Input 'p1.y' declared but not read.[Hierarchy: ':top']
+    - Rule W528, Severity - warning , Line 34 in module M2
+      - Variable 'a' set but not read.[Hierarchy: ':top:u_M2@M2']
+  Test case :`force_port` RuleGroup=Design Read
+    - Rule W240, Severity - Synthesis error , Line 49 in module top
+      - Hierarchical references ( u_M2.a ) are not supported for synthesis
