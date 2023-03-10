@@ -218,6 +218,6 @@
 ----------
 - Test cases `force_inst`, `force_port`, `force_svi`
 - Tool: Synopsys Spyglass
-    - In report, moresimple.rpt (BuiltIn RuleGroup=Design Read)
-      - Force statements are not synthesizable
-      - Release statements are not synthesizable
+    - In report, moresimple.rpt (BuiltIn -> RuleGroup=Design Read)
+      - Force statements are not synthesizable.
+      - Release statements are not synthesizable.
