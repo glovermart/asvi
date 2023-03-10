@@ -216,6 +216,11 @@
 
 2023-03-10
 ----------
+- Spyglass setup using shell mode
+  - Cleaned/ fixed code.
+  - Run using initial testcases.
+  - Reports saved for each test case.
+  - To Do: Loop through each test case and report moresimple.rpt separately.
 - Test cases `force_inst`, `force_port`, `force_svi`
 - Tool: Synopsys Spyglass
     - In report, moresimple.rpt (BuiltIn -> RuleGroup=Design Read)
