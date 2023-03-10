@@ -213,3 +213,11 @@
 - Attemped -shell mode in Spyglass
   - used current_goal lint/lint_rtl
   - used current_goal lint/lint_rtl_enhanced
+
+2023-03-10
+----------
+- Test cases `force_inst`, `force_port`, `force_svi`
+- Tool: Synopsys Spyglass
+    - In report, moresimple.rpt (BuiltIn RuleGroup=Design Read)
+      - Force statements are not synthesizable
+      - Release statements are not synthesizable
