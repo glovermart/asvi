@@ -2,7 +2,7 @@
 # All generated files should go under a single directory.
 OUTDIR := out
 QWORKDIR := work
-SPYWkDIR := spyglass-1
+SPYWkDIR := spyglass
 TESTCASES := $(wildcard testcases/*.sv)
 TESTCASE_NAMES := $(basename $(notdir ${TESTCASES}))
 
