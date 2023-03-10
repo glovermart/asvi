@@ -14,7 +14,4 @@ clean:
 	rm -rf ${OUTDIR}
 	rm -rf ${QWORKDIR}
 	rm -rf ${SPYWkDIR}
-	rm -f gui_command.log
-	rm -f sg_shell_command.log
-	rm -f spyglass.out
 
