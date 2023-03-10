@@ -1,4 +1,5 @@
 set_option enableSV yes
-read_file testcases/alwayscomb_port.sv
+read_file testcases/test1.sv
 current_goal lint/lint_rtl -alltop
-capture -stdout -stderr -append out/report.log {run_goal}
+run_goal
+exit -force
