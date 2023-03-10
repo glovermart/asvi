@@ -240,3 +240,10 @@
   Test case :`force_port` RuleGroup=Design Read
     - Rule W240, Severity - Synthesis error , Line 49 in module top
       - Hierarchical references ( u_M2.a ) are not supported for synthesis
+  Test case :`force_inst` Goal=lint/lint_rtl
+    - Rule W528, Severity - warning , Line 17 in module M
+      - Variable 'u_I.z' set but not read.[Hierarchy: ':M']
+  Test case :`force_inst` RuleGroup=Design Read
+    - Rule SYNTH_102&103, Severity - Synthesis error , Lines 17 & 19 in module M
+      - FORCE statements are not synthesizable (SYNTH_102)
+      - RELEASE statements are not synthesizable (SYNTH_103)
