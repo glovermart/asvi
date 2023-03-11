@@ -252,3 +252,14 @@
     - Rule SYNTH_102&103, Severity - Synthesis error , Lines 17 & 19 in module M
       - FORCE statements are not synthesizable (SYNTH_102)
       - RELEASE statements are not synthesizable (SYNTH_103)
+- Run the other testcases and saved lint report.
+
+2023-03-11
+----------
+- Initial work on setting up Synopsys DC tool.
+  - Explored dc GUI via dc_shell/ invoking directly using design_vision.
+  - Used dc_shell commands to read and remove designs.
+    - Tried both read_file and read_sverilog commands.
+  - Visualized schematics in DC Vision.
+- Read DC (syn) manuals.
+

@@ -14,4 +14,5 @@ clean:
 	rm -rf ${OUTDIR}
 	rm -rf ${QWORKDIR}
 	rm -rf ${SPYWkDIR}
-
+	rm -f command.log
+	rm -f default.svf
