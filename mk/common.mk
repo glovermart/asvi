@@ -17,3 +17,5 @@ clean:
 	rm -f command.log
 	rm -f default.svf
 	rm -rf simv.da*
+	rm -f *.psp
+	rm -rf impl_*

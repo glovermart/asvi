@@ -6,7 +6,7 @@
   - DM: Setup a GitHub repo.
   - DM: Schedule walkthrough session for Tue. DONE
   - AM: Use yosys to synth and make pictures.
-  - DM: Ask Anja about scheduling presentations. DONE
+  - DM: Ask AD about scheduling presentations. DONE
   - Andrew will probably meet academic supervisor in around 2 weeks.
 - 3 presentations are scheduled.
   - Mon 2023-02-27 at the DDD weekly team meeting.
@@ -42,8 +42,8 @@
   - present: AM, DM.
   - DM: Make working directory for thesis visible to DDD team - Done.
   - DM: Provided AM with textbooks on Git and Unix.
-  - AM: Deep dive into unix commands - To Do, In progress.
-  - AM: Deep dive into git commands - To Do, In progress.
+  - AM: Deep dive into unix commands.
+  - AM: Deep dive into git commands.
 
 2023-02-08
 ----------
@@ -263,3 +263,11 @@
   - Visualized schematics in DC Vision.
 - Read DC (syn) manuals.
 
+2023-03-14
+----------
+- Initial setup of VCS and Formality tools.
+- VCS - There appears to be a license issue on startup.
+- Mentor Tessent - using 2022.4 version; shell mode only, errors when
+  using visualizer mode.
+- Mentor Precsion - 2023.1(latest version); errors when invoked.
+  - 2022.2 works - working with this version for now.
