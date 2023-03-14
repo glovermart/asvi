@@ -13,4 +13,5 @@ default:
 	#make -f mk/dc.mk
 	#make -f mk/vcs.mk
 	#make -f mk/formality.mk
-	make -f mk/precision.mk
+	#make -f mk/precision.mk
+	make -f mk/tessent.mk

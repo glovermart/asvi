@@ -265,9 +265,10 @@
 
 2023-03-14
 ----------
-- Initial setup of VCS and Formality tools.
+- Initial setup of VCS,Formality,Precision & Tessent tools.
 - VCS - There appears to be a license issue on startup.
 - Mentor Tessent - using 2022.4 version; shell mode only, errors when
   using visualizer mode.
 - Mentor Precsion - 2023.1(latest version); errors when invoked.
   - 2022.2 works - working with this version for now.
+- Formality initial work OK.
