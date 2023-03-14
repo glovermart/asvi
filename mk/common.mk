@@ -17,9 +17,3 @@ clean:
 	rm -f command.log
 	rm -f default.svf
 	rm -rf simv.da*
-	rm -rf FM_INFO
-	rm -rf FM_WORK
-	rm -f fm_shell_command.log
-	rm -f fm_shell_command.lck
-	rm -f formality.log
-	rm -f formality.lck
