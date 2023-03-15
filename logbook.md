@@ -272,3 +272,17 @@
 - Mentor Precsion - 2023.1(latest version); errors when invoked.
   - 2022.2 works - working with this version for now.
 - Formality initial work OK.
+
+2023-03-15
+----------
+- Initial setup of Xcelium & RC tools.
+- RC - There appears to be a license issue on startup.
+- Xcelium - unsure of tool to use, several commands available.
+- Jaspergold folder not found.
+- Quartus setup file/folder not found.
+- Weekly Meeting @15:00 NT 30 mins
+  - Present: AM, DM, RS
+  - RS : Check on Licenses for VCS & RC and manuals for JG & Qtus.
+  - DM : Check on workdone by AM so far early next week.
+  - AM : Work on TCL scripting for tools requiring TCL scripts.
+  - AM : Use EDA playground for now for tools with no license or manuals.
