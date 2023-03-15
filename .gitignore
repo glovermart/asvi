@@ -10,3 +10,4 @@ default.svf
 impl_*/
 project_*.psp
 .simvision/
+rc.*

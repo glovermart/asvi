@@ -15,4 +15,5 @@ default:
 	#make -f mk/formality.mk
 	#make -f mk/precision.mk
 	#make -f mk/tessent.mk
-	make -f mk/xcelium.mk
+	#make -f mk/xcelium.mk
+	make -f mk/rc.mk

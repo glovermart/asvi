@@ -20,3 +20,4 @@ clean:
 	rm -f *.psp
 	rm -rf impl_*
 	rm -rf .simvision
+	rm -rf rc.*
