@@ -277,7 +277,6 @@
 ----------
 - Initial setup of Xcelium & RC tools.
 - RC - There appears to be a license issue on startup.
-- Xcelium - unsure of tool to use, several commands available.
 - Jaspergold folder not found.
 - Quartus setup file/folder not found.
 - Weekly Meeting @15:00 NT 30 mins
