@@ -9,3 +9,4 @@ command.log
 default.svf
 impl_*/
 project_*.psp
+.simvision/

@@ -19,3 +19,4 @@ clean:
 	rm -rf simv.da*
 	rm -f *.psp
 	rm -rf impl_*
+	rm -rf .simvision
