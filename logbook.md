@@ -285,3 +285,8 @@
   - DM : Check on workdone by AM so far early next week.
   - AM : Work on TCL scripting for tools requiring TCL scripts.
   - AM : Use EDA playground for now for tools with no license or manuals.
+
+2023-03-16
+----------
+- DDF Meeting
+- TCL tutorials
