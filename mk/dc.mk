@@ -1,6 +1,11 @@
 include mk/common.mk
 
 default: read
-	mkdir out
-	dc_shell -f tcl/dc_batch_run.tcl
+
 .PHONY: read
+read: $(addprefix ${OUTDIR}/,$(addsuffix .dc_read.log,${TESTCASE_NAMES}))
+
+${OUTDIR}/%.dc_read.log: testcases/%.sv
+	mkdir -p ${OUTDIR}
+	dc_shell -x "read_sverilog $^;remove_design -designs;quit" >> $@ 2>&1
+
