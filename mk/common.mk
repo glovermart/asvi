@@ -21,3 +21,6 @@ clean:
 	rm -rf impl_*
 	rm -rf rc.*
 	rm -f sg_shell.log
+	rm -rf xcelium.d
+	rm -f xmsim.log
+	rm -f xmvlog.log

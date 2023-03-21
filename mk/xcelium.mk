@@ -7,4 +7,4 @@ read: $(addprefix ${OUTDIR}/,$(addsuffix .xcelium_read.txt,${TESTCASE_NAMES}))
 
 ${OUTDIR}/%.xcelium_read.txt: testcases/%.sv
 	mkdir -p ${OUTDIR}
-	xmsim -version >> $@
+	xmvlog -sv $^ >> $@ 2>&1
