@@ -15,7 +15,7 @@ always_latch
    y <= x;
 endinterface
 
-module M
+module top
  ( input logic i_clk
  , input logic i_arst
  );

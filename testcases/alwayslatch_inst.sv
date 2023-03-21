@@ -6,7 +6,7 @@ interface I;
 
 endinterface
 
-module M
+module top
   ( input logic i_clk
   , input logic i_arst
   );

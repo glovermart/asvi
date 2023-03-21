@@ -14,7 +14,7 @@ interface I;
 
 endinterface
 
-module M;
+module top;
 
   I u_I();
 
