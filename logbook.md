@@ -305,4 +305,5 @@
   warnings and errors.
 - Xcelium(xmsim) simulates designs having force & release constructs without
   warnings and errors.
-- Vivado setup - read and synthesize only
+- Vivado setup - read and synthesize only.
+- read_verilog command not checking for syntax errors as expected
