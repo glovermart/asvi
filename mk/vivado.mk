@@ -1,11 +1,11 @@
 
 include mk/common.mk
 
-default: read
+default: synth
 
-.PHONY: read
-read: $(addprefix ${OUTDIR}/,$(addsuffix .vivado_reader.txt,${TESTCASE_NAMES}))
+.PHONY: synth
+synth: $(addprefix ${OUTDIR}/,$(addsuffix .vivado_synth.log,${TESTCASE_NAMES}))
 
-${OUTDIR}/%.vivado_reader.txt: testcases/%.sv
+${OUTDIR}/%.vivado_synth.log: testcases/%.sv
 	mkdir -p ${OUTDIR}
 	-vivado -mode batch -nojournal -nolog -source tcl/vv_batch_run.tcl -tclargs $^ >> $@ 2>&1
