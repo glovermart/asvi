@@ -7,4 +7,4 @@ compile: $(addprefix ${OUTDIR}/,$(addsuffix .xcelium_compile.txt,${TESTCASE_NAME
 
 ${OUTDIR}/%.xcelium_compile.txt: testcases/%.sv
 	mkdir -p ${OUTDIR}
-	-xmvlog -sv -nocopyright -messages $^ >> $@ 2>&1
+	-xmvlog -sv -nocopyright -messages -nolog $^ >> $@ 2>&1

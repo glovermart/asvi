@@ -295,3 +295,8 @@
 ----------
 - Automating with tcl + make : Precision, Spyglass, DC
 - Searched manuals for commands
+
+
+2023-03-21
+----------
+- Xcelium compiles force & release constructs without warnings and errors.
