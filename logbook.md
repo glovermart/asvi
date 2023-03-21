@@ -301,3 +301,7 @@
 ----------
 - Xcelium(xmvlog) compiles force & release constructs without
   warnings and errors.
+- Xcelium(xmelab) elaborates designs having force & release constructs without
+  warnings and errors.
+- Xcelium(xmsim) simulates designs having force & release constructs without
+  warnings and errors.

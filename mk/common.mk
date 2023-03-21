@@ -22,5 +22,4 @@ clean:
 	rm -rf rc.*
 	rm -f sg_shell.log
 	rm -rf xcelium.d
-	rm -f xmsim.log
-	rm -f xmelab.log
+	rm -f xmsim.key

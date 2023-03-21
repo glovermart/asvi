@@ -1,10 +1,13 @@
 include mk/common.mk
 
-default: compile
+default: simulate
 
-.PHONY: compile
-compile: $(addprefix ${OUTDIR}/,$(addsuffix .xcelium_compile.txt,${TESTCASE_NAMES}))
+.PHONY: simulate
+simulate: $(addprefix ${OUTDIR}/,$(addsuffix .xcelium_simulate.txt,${TESTCASE_NAMES}))
 
-${OUTDIR}/%.xcelium_compile.txt: testcases/%.sv
+XCELIUM_TOP ?= top
+${OUTDIR}/%.xcelium_simulate.txt: testcases/%.sv
 	mkdir -p ${OUTDIR}
 	-xmvlog -sv -nocopyright -nolog $^ >> $@ 2>&1
+	-xmelab -nocopyright -nolog ${XCELIUM_TOP} >> $@ 2>&1
+	-xmsim -nocopyright -nolog ${XCELIUM_TOP} >> $@ 2>&1
