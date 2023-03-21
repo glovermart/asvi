@@ -1,10 +1,10 @@
 include mk/common.mk
 
-default: read
+default: compile
 
-.PHONY: read
-read: $(addprefix ${OUTDIR}/,$(addsuffix .xcelium_read.txt,${TESTCASE_NAMES}))
+.PHONY: compile
+compile: $(addprefix ${OUTDIR}/,$(addsuffix .xcelium_compile.txt,${TESTCASE_NAMES}))
 
-${OUTDIR}/%.xcelium_read.txt: testcases/%.sv
+${OUTDIR}/%.xcelium_compile.txt: testcases/%.sv
 	mkdir -p ${OUTDIR}
-	xmvlog -sv $^ >> $@ 2>&1
+	-xmvlog -sv -nocopyright -messages $^ >> $@ 2>&1

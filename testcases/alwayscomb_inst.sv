@@ -10,7 +10,7 @@ endinterface
 
 module M;
 
-  localparam bit Z = 1'b0;
+  localparam bit Z = 1'b0
   logic a;
   I u_I();
 
