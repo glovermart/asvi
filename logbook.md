@@ -291,7 +291,7 @@
 - DDF Meeting
 - TCL tutorials
 
-2023-03-16
+2023-03-17
 ----------
 - Automating with tcl + make : Precision, Spyglass, DC
 - Searched manuals for commands
