@@ -8,4 +8,5 @@ synth: $(addprefix ${OUTDIR}/,$(addsuffix .vivado_synth.log,${TESTCASE_NAMES}))
 
 ${OUTDIR}/%.vivado_synth.log: testcases/%.sv
 	mkdir -p ${OUTDIR}
-	-vivado -mode batch -nojournal -nolog -source tcl/vv_batch_run.tcl -tclargs $^ >> $@ 2>&1
+	-vivado -mode batch -nojournal -nolog -source tcl/vv_batch_run.tcl -tclargs \
+	$^ >> $@ 2>&1
