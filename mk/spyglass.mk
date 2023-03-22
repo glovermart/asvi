@@ -9,4 +9,4 @@ export TESTCASE_REPORT = $@
 ${OUTDIR}/%.spyglass_lint.txt: testcases/%.sv
 	mkdir -p ${SPYGLASS_WORK_DIR}
 	mkdir -p ${OUTDIR}
-	sg_shell < tcl/sg_batch_run.tcl
+	sg_shell < tcl/spyglass_batch_run.tcl

@@ -6,6 +6,5 @@ setup_design -max_fanout=1000
 add_input_file $path/$argv
 compile
 synthesize
-#place_and_route ;TO DO
 remove_design -designs
 remove_input_file -all
