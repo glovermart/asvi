@@ -323,3 +323,5 @@
     as expected due to optimization errors.
     - Fatal error `force_port.sv`: "(vsim-3695) The interface port 'p1' must
     be passed an actual interface".
+- Weekly Meeting @14:00 NT 30 mins
+  - Present: AM, DM, RS

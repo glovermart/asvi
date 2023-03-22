@@ -1,7 +1,7 @@
 global env
-set TEST_NAME $env(T_CASE)
-set TEST_REPORT $env(T_REPORT)
-new_project spyG_lint -projectwdir spyglass -force
+set TEST_NAME $env(TESTCASE)
+set TEST_REPORT $env(TESTCASE_REPORT)
+new_project spyglass_lint -projectwdir spyglass -force
 set_option enableSV yes
 set_option sfcu yes
 read_file ${TEST_NAME}
