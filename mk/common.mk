@@ -1,8 +1,6 @@
 
 # All generated files should go under a single directory.
 OUTDIR := out
-QWORKDIR := work
-SPYWkDIR := spyglass
 TESTCASES := $(wildcard testcases/*.sv)
 TESTCASE_NAMES := $(basename $(notdir ${TESTCASES}))
 
@@ -12,8 +10,8 @@ default:
 .PHONY: clean
 clean:
 	rm -rf ${OUTDIR}
-	rm -rf ${QWORKDIR}
-	rm -rf ${SPYWkDIR}
+	rm -rf work
+	rm -rf spyglass
 	rm -f command.log
 	rm -f default.svf
 	rm -rf simv.da*
@@ -24,3 +22,4 @@ clean:
 	rm -rf xcelium.d
 	rm -f xmsim.key
 	rm -rf .Xil
+	rm -f transcript

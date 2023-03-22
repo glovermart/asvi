@@ -12,3 +12,4 @@ project_*.psp
 .simvision/
 rc.*
 sg_shell.log
+transcript

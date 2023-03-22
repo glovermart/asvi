@@ -316,5 +316,10 @@
   - To Do: Show command - install GraphViz.
 - Questasim tool work
   - Added vopt command.
-    - Errors(suppressible) in testcase, alwaysff_port.sv.
-
+    - Errors(suppressible) in initial testcases:`alwaysff_port.sv` &
+    `template.sv`.
+  - Added vsim command.
+    - Errors(suppressible) in initial testcases:`alwaysff_port.sv`,`template.sv`
+    as expected due to optimization errors.
+    - Fatal error `force_port.sv`: "(vsim-3695) The interface port 'p1' must
+    be passed an actual interface".
