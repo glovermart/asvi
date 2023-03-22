@@ -1,11 +1,12 @@
 include mk/common.mk
 
-default: read
+default: synth
 
-.PHONY: read
-read: $(addprefix ${OUTDIR}/,$(addsuffix .precision_read.log,${TESTCASE_NAMES}))
+.PHONY: synth
+synth: $(addprefix ${OUTDIR}/,$(addsuffix \
+.precision_synth.log,${TESTCASE_NAMES}))
 
-${OUTDIR}/%.precision_read.log: testcases/%.sv
+${OUTDIR}/%.precision_synth.log: testcases/%.sv
 	mkdir -p ${OUTDIR}
-	-precision -shell -logfile out/precision.log -file tcl/precision_batch_run.tcl \
-	-fileargs $^ >> $@ 2>&1
+	-precision -shell -logfile out/precision.log \
+	-file tcl/precision_batch_run.tcl -fileargs $^ >> $@ 2>&1
