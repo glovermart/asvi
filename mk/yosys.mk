@@ -1,12 +1,11 @@
 
 include mk/common.mk
 
-default: lint
+default: read
 
-.PHONY: lint
-lint: $(addprefix ${OUTDIR}/,$(addsuffix .yosys_lint.txt,${TESTCASE_NAMES}))
+.PHONY: read
 
-${OUTDIR}/%.yosys_lint.txt: testcases/%.sv
+read: $(addprefix ${OUTDIR}/,$(addsuffix .yosys_read.txt,${TESTCASE_NAMES}))
+${OUTDIR}/%.yosys_read.txt: testcases/%.sv
 	mkdir -p ${OUTDIR}
-	-yosys -q \-p 'read_verilog -sv $^' >> $@ 2>&1
-
+	-yosys -q -p "read_verilog -sv $^" -p proc -p opt >> $@ 2>&1
