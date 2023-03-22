@@ -209,6 +209,7 @@
 2023-03-09
 ----------
 - Spyglass and Questa tools initial work.
+- Questasim - Compiles/lints with 0 errors/warnings for initial testcases.
 - Tried batch and gui modes in Spyglass.
 - Attemped -shell mode in Spyglass
   - used current_goal lint/lint_rtl
