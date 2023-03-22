@@ -1,10 +1,11 @@
 include mk/common.mk
 
-default: lint
+default: opt
 
-.PHONY: lint
-lint: $(addprefix ${OUTDIR}/,$(addsuffix .questa_linter.txt,${TESTCASE_NAMES}))
+.PHONY: opt
+opt: $(addprefix ${OUTDIR}/,$(addsuffix .questa_opt.txt,${TESTCASE_NAMES}))
 
-${OUTDIR}/%.questa_linter.txt: testcases/%.sv
+${OUTDIR}/%.questa_opt.txt: testcases/%.sv
 	mkdir -p ${OUTDIR}
-	-vlog -sv -lint $^ >> $@ 2>&1
+	-vlog -sv -sv17compat -lint $^ >> $@ 2>&1
+	-vopt top -o optversion >> $@ 2>&1

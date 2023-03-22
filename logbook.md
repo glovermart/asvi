@@ -209,7 +209,7 @@
 2023-03-09
 ----------
 - Spyglass and Questa tools initial work.
-- Questasim - Compiles/lints with 0 errors/warnings for initial testcases.
+- Questasim (vlog)- Compiles/lints with 0 errors/warnings for initial testcases.
 - Tried batch and gui modes in Spyglass.
 - Attemped -shell mode in Spyglass
   - used current_goal lint/lint_rtl
@@ -309,3 +309,12 @@
 - Vivado setup - read and synthesize only.
 - Vivado read_verilog command not checking for syntax errors as expected - works
   like add_file; could be the reason.
+
+2023-03-22
+----------
+- Yosys tool work - added proc and opt commands.
+  - To Do: Show command - install GraphViz.
+- Questasim tool work
+  - Added vopt command.
+    - Errors(suppressible) in testcase, alwaysff_port.sv.
+
