@@ -7,5 +7,5 @@ read: $(addprefix ${OUTDIR}/,$(addsuffix .dc_read.log,${TESTCASE_NAMES}))
 
 ${OUTDIR}/%.dc_read.log: testcases/%.sv
 	mkdir -p ${OUTDIR}
-	dc_shell -x "read_sverilog $^;remove_design -designs;quit" >> $@ 2>&1
+	dc_shell -x "read_sverilog $^;compile;remove_design -designs;quit" >> $@ 2>&1
 

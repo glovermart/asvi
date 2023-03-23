@@ -328,3 +328,14 @@
   - code review
   - Updates on tools without licenses and clarifications.
     - AM: Ok - Use 'top' for testcases with one module only(DM)
+
+2023-03-23
+----------
+- Formality : To Do:
+  - Make similar designs for implementation/reference without interfaces.
+  - Add match command before verify command.
+- DC
+  - Added setup file ; eliminates warnings/errors - link and target libraries not found since dc is run from  directory specified by the user.
+  - Compile/ Compile_ultra output logs might be useful when UPF is added to testcases?
+- Questasim
+  - Added testbench.
