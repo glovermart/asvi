@@ -8,4 +8,4 @@ compile: $(addprefix ${OUTDIR}/,$(addsuffix \
 
 ${OUTDIR}/%.vcformal_compile.log: testcases/%.sv
 	mkdir -p ${OUTDIR}
-	vcf -f tcl/vcformal_batch_run.tcl -out_dir out
+	vcf -batch -f tcl/vcformal_batch_run.tcl -out_dir out -x "read_file -format sverilog -top top $^" >> $@ 2>&1
