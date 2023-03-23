@@ -13,3 +13,4 @@ project_*.psp
 rc.*
 sg_shell.log
 transcript
+.synopsys_dc.setup
