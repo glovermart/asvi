@@ -23,3 +23,4 @@ clean:
 	rm -f xmsim.key
 	rm -rf .Xil
 	rm -f transcript
+	rm -f elab_summary_sam.rpt
