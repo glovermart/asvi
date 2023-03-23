@@ -325,3 +325,6 @@
     be passed an actual interface".
 - Weekly Meeting @14:00 NT 30 mins
   - Present: AM, DM, RS
+  - code review
+  - Updates on tools without licenses and clarifications.
+    - AM: Ok - Use 'top' for testcases with one module only(DM)
