@@ -1,3 +1,5 @@
+#To Do: Add implementation design & match step before verify command
+#To Do: Make similar designs without interfaces
 include mk/common.mk
 
 default: read
