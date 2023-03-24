@@ -12,6 +12,7 @@ clean:
 	rm -rf ${OUTDIR}
 	rm -rf work
 	rm -rf spyglass
+	rm -rf vcformal
 	rm -f command.log
 	rm -f default.svf
 	rm -rf simv.da*
@@ -23,4 +24,5 @@ clean:
 	rm -f xmsim.key
 	rm -rf .Xil
 	rm -f transcript
-	rm -f elab_summary_sam.rpt
+	rm -f elab_summary*
+	rm -f core.*
