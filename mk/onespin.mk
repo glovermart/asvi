@@ -7,6 +7,7 @@ compile: $(addprefix ${OUTDIR}/,$(addsuffix \
 .onespin_compile.log,${TESTCASE_NAMES}))
 
 export TESTCASE = $^
+export TESTCASE_REPORT = $@
 
 ${OUTDIR}/%.onespin_compile.log: testcases/%.sv
 	mkdir -p ${OUTDIR}
