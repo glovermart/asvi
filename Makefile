@@ -12,4 +12,5 @@ default:
 	# make -f mk/formality.mk
 	# make -f mk/precision.mk
 	# make -f mk/xcelium.mk
-	make -f mk/vcformal.mk
+	# make -f mk/vcformal.mk
+	make -f mk/onespin.mk
