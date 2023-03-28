@@ -14,6 +14,7 @@
 - Naming convention:
   - Module name: `M`
     - Extension: `M1`, `M2`, ...
+    - Top module (Including testcases with a single module only): `top`
   - Interface name: `I`
     - Extension: `I1`, `I2`, ...
   - Modport name: `P`
@@ -41,7 +42,7 @@ interface I;
 
 endinterface
 
-module M;
+module top;
                                         // 1st section is setup.
   localparam bit Z = 1'b0;
   logic a;

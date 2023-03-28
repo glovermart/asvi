@@ -4,7 +4,7 @@ interface in_adders (input int b,c);
 
 endinterface
 
-module add_mult(
+module top(
  output int a,
  input int b,c
 );

@@ -5,13 +5,13 @@ interface I;
 endinterface
 
 
-module M
+module top
   ( input bit a
   , input var logic b);
 
  I u_I ();
  assign u_I.z = b;
- 
+
  always_comb
   if (a)
     force u_I.z = 1'bz;

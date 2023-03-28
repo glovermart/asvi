@@ -8,7 +8,7 @@ interface I;
 
 endinterface
 
-module M;
+module top;
 
   localparam bit Z = 1'b0;
   logic a;

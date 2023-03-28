@@ -10,7 +10,7 @@ interface I;
 endinterface
 
 
-module M;
+module top;
 
   I u_I();
  assign u_I.z = u_I.x | u_I.y;

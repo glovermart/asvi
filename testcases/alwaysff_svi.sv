@@ -16,7 +16,7 @@ interface I
 
 endinterface
 
-module M
+module top
  ( input var logic i_clk
  );
 

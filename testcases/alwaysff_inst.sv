@@ -8,7 +8,7 @@ interface I;
 
 endinterface
 
-module M
+module top
   ( input var logic i_clk
   , input var logic i_srst
   , input var logic i_arst
