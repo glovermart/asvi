@@ -1,7 +1,7 @@
 
 # All generated files should go under a single directory.
 OUTDIR := out
-TESTCASES := $(wildcard testcases/*.sv)
+TESTCASES := $(filter-out %/template.sv, $(wildcard testcases/*.sv))
 TESTCASE_NAMES := $(basename $(notdir ${TESTCASES}))
 
 # Targets for tool output should have `.stdout` suffix.
