@@ -7,6 +7,15 @@ TESTCASE_NAMES := $(basename $(notdir ${TESTCASES}))
 .PHONY: default
 default:
 
+# Disable suffix rules and pattern rules.
+.SUFFIXES:
+MAKEFLAGS += -r
+
+# Disable Make's default behaviour of removing intermediate targets.
+# https://www.gnu.org/software/make/manual/html_node/Special-Targets.html
+.NOTINTERMEDIATE:
+.SECONDARY:
+
 .PHONY: clean
 clean:
 	rm -rf ${OUTDIR}
