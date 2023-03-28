@@ -4,6 +4,13 @@ OUTDIR := out
 TESTCASES := $(wildcard testcases/*.sv)
 TESTCASE_NAMES := $(basename $(notdir ${TESTCASES}))
 
+# Targets for tool output should have `.stdout` suffix.
+# This substitution alias should be used as the last argument to tool commands.
+# Use like:
+#    ${OUTDIR}/%.sometool.stdout: testcases/%.sv
+#      sometool $^ ${REDIRECT}
+REDIRECT = > $@ 2> $(subst stdout,stderr,$@) || (echo "FAILURE" >> $@)
+
 .PHONY: default
 default:
 
