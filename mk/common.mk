@@ -11,8 +11,14 @@ TESTCASE_NAMES := $(basename $(notdir ${TESTCASES}))
 #      sometool $^ ${REDIRECT}
 REDIRECT = > $@ 2> $(subst stdout,stderr,$@) || (echo "FAILURE" >> $@)
 
+
+# Always use the name `default` as the default target.
+# This relies on this file being included at the beginning of each Makefile.
 .PHONY: default
-default:
+default: | ${OUTDIR}
+
+${OUTDIR}:
+	mkdir -p ${OUTDIR}
 
 # Disable suffix rules and pattern rules.
 .SUFFIXES:
