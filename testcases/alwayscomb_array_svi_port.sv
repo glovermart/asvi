@@ -17,10 +17,10 @@ interface I;
     ( output x
     , output y
     , output z
-    );      
+    );
 
 endinterface
-  
+
 module M1
   ( I.P1 p1
   );
@@ -33,7 +33,7 @@ module M1
   always_comb p1.z = a;      // Signal
 
 endmodule
-  
+
 module M2
   ( I.P2 p2
   );
@@ -56,9 +56,9 @@ module top;
   M1 u_M1
     ( .p1(u_I1)
     );
-    
+
   M2 u_M2
     ( .p2(u_I2)
-    );    
+    );
 
 endmodule

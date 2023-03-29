@@ -25,7 +25,7 @@ endmodule
 module top;
 
   I u_I2 ();
-  M u_M 
+  M u_M
     ( .u_I1(u_I2)
     );
 

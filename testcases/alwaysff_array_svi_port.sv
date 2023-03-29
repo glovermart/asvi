@@ -2,17 +2,17 @@
 // Array of SVIs
 
 interface I;
-  
+
   logic w = 1'b1;
 
   logic z;
   logic y;
   logic x;
-  
+
   var logic i_clk;
   var logic i_srst;
   var logic i_arst;
- 
+
   modport P
     ( output z
     , output y
@@ -22,10 +22,10 @@ interface I;
     , input i_arst
     , input w
     );
- 
+
 endinterface
- 
-module M1 
+
+module M1
   ( I.P p
   );
   localparam bit Z = 1'b0;
@@ -59,8 +59,8 @@ module M2
       p.x <= p.w;
 
 endmodule
- 
-module M3 
+
+module M3
   ( I.P p
   );
   localparam bit Z = 1'b1;
@@ -103,5 +103,4 @@ module top
     ( .p(u_I)
     );
 
-endmodule 
- 
+endmodule
