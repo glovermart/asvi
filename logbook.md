@@ -356,6 +356,17 @@
 - Weekly Meeting @14:00 NT 12 mins
   - Present: AM, DM, MO, BD
   - code review (DM) - QUesta : Make file & testcase always_ff
-  - AM: Go through comments and changes made by DM. Make similar changes
-  for all working tools.
+  - AM: Go through comments and changes made by DM. Make similar changes for all working tools.
+- `assign_array_svi_svi.sv` testcase:
+  - Compilation errors in Synopsys DC.
+  - Compiles, elaborates and synthesizes (with warnings -inout    inferred for interface `I` with no modport) in Vivado.
+  - No top module but input and output elaborated.
+    - Attempts: Intermediate signals, always_comb, explicit  declaration as wire but in port list signals and in top module. Same outputs were observed.
+  - Implementation step (Vivado):
+    - Input and output pins with two buffers in-between.
+- Tescases added : assign_array_svi_*.sv
+
+2023-03-30
+----------
+- Tescases added : force_array_svi_*.sv
 
