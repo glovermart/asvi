@@ -381,7 +381,8 @@
 - Weekly Meeting @14:00 NT 60 mins
   - Present: AM, DM, RS
   - code review: Array of SVIs with RS
-  - DM: AM to redo tool pull requests to have only .mk file of tool of interest per PR.
+  - DM: AM to redo tool pull requests to have only .mk file of tool of interest
+  per PR.
   - DM: AM to send PR for logbook and testcases.
 - Re-worked on pull requests as per PR# 6 - Questa fixes by DM.
 - Initiated PR for logbook.
