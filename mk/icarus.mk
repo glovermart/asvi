@@ -6,7 +6,7 @@ default: lint
 lint: $(addprefix ${OUTDIR}/,$(addsuffix .icarus_lint.stdout,${TESTCASE_NAMES}))
 
 # -tnull: No specific target for compilation; no code generation.
-# -g2012: Select the IEEE1800-2012 standard.
+# -g2012: Select the IEEE1800-2012 standard. Note: No support yet for the IEEE1800-2017 standard.
 # -Wall: Display all warnings.
 # -i: Ignore missing modules.
 # https://www.mankier.com/1/iverilog
