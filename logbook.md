@@ -335,7 +335,53 @@
   - Make similar designs for implementation/reference without interfaces.
   - Add match command before verify command.
 - DC
-  - Added setup file ; eliminates warnings/errors - link and target libraries not found since dc is run from  directory specified by the user.
-  - Compile/ Compile_ultra output logs might be useful when UPF is added to testcases?
+  - Added setup file ; eliminates warnings/errors - link and target
+  libraries not found since dc is run from  directory specified by the user.
+  - Compile/ Compile_ultra output logs might be useful when UPF is added to
+  testcases?
 - Questasim
   - Added testbench.
+
+2023-03-24
+----------
+- VC Formal and Onespin setup
+
+2023-03-25
+----------
+- Testcases : array of SVIs
+
+2023-03-29
+----------
+- Weekly Meeting @14:00 NT 12 mins
+  - Present: AM, DM, MO, BD
+  - code review (DM) - QUesta : Make file & testcase always_ff
+  - AM: Go through comments and changes made by DM.
+  Make similar changes for all working tools.
+- `assign_array_svi_svi.sv` testcase:
+  - Compilation errors in Synopsys DC.
+  - Compiles, elaborates and synthesizes with warnings -inout inferred for
+  interface `I` with no modport in Vivado during synthesis.
+  - No top module but input and output elaborated.
+    - Attempts: Intermediate signals, always_comb, explicit  declaration as wire
+    but in port list signals and in top module. Same outputs were observed.
+  - Implementation step (Vivado):
+    - Input and output pins with two buffers in-between.
+- Tescases added : assign_array_svi_*.sv
+
+2023-03-30
+----------
+- Tescases added : force_array_svi_*.sv
+
+2023-04-03
+----------
+- Worked on pull requests as specified by DM in PR#6. 
+
+2023-04-05
+----------
+- Weekly Meeting @14:00 NT 60 mins
+  - Present: AM, DM, RS
+  - code review: Array of SVIs with RS
+  - DM: AM to redo tool pull requests to have only .mk file of tool of interest per PR.
+  - DM: AM to send PR for logbook and testcases.
+- Re-worked on pull requests as per PR# 6 - Questa fixes by DM.
+- Initiated PR for logbook.
