@@ -386,3 +386,7 @@
   - DM: AM to send PR for logbook and testcases.
 - Re-worked on pull requests as per PR# 6 - Questa fixes by DM.
 - Initiated PR for logbook.
+
+2023-04-07 to 2023-04-12
+------------------------
+- Theory, Methodology and Experiments chapters write-up.
