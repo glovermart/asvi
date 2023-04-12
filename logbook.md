@@ -387,6 +387,20 @@
 - Re-worked on pull requests as per PR# 6 - Questa fixes by DM.
 - Initiated PR for logbook.
 
-2023-04-07 to 2023-04-12
+2023-04-07 to 2023-04-11
 ------------------------
+- Theory, Methodology and Experiments chapters write-up.
+
+2023-04-12
+----------
+- Weekly Meeting @ 14:30 NT 33 mins
+  - Present: AM, RS, DM, BD
+  - AM: Updated all on progress and sought clarification on scope/ possible
+  testcases following some literature reads.
+  - DM: AM to focus on current scope and if time permits look at UPF with
+  interfaces.
+  - DM: AM permitted to investigate other SV constructs/keywords with 
+  interfaces but must keep to scope.
+  - DM: Initiate pull requests for other tools, testcases and
+  testcases/tool with results.
 - Theory, Methodology and Experiments chapters write-up.
