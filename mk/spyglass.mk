@@ -10,7 +10,6 @@ lint: $(addprefix ${OUTDIR}/,\
 	$(addsuffix .spyglass_lint.stdout,${TESTCASE_NAMES}))
 
 export TESTCASE = $^
-export TESTCASE_REPORT = $@
 
 # See Spyglass Tcl Shell Interface User Guide, Version U-2023.03
 # SpyGlass_TclShellInterface_UserGuide.pdf
