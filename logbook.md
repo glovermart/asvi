@@ -404,3 +404,14 @@
   - DM: Initiate pull requests for other tools, testcases and
   testcases/tool with results.
 - Theory, Methodology and Experiments chapters write-up.
+
+
+2023-04-13 to 2023-04-14
+------------------------
+- Theory, Methodology and Experiments chapters write-up.
+
+
+2023-04-18
+----------
+- Tool setup and PR for Onespin, Spyglass, and VC Formal tools.
+
