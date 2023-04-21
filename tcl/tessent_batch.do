@@ -4,33 +4,31 @@ array set params {
 }
 array set params $tessent_user_arg
 
-#Insert Scan chain procedure
-set_context dft -scan -hierarchical_scan_insertion
-#read_cell_library
-read_verilog $params(netlist)
-set_current_design top
-add_black_boxes -auto
-#add_clocks 0 i_clk
-report_clocks
-set_test_logic -clock on -reset on
-report_environment
-set_system_mode analysis
-set_scan_insertion_options -chain_count 10
-analyze_scan_chains
-insert_test_logic
-report_scan_chains
-report_test_logic
-write_design -output $params(netlist).scan.v
-write_atpg_setup $params(netlist).atpg.v
+#Perform Automatic Test Pattern Generation (ATPG)
 
-#Perform ATPG
-#set_context patterns -scan
+#Invoke the Tessent tool for pattern generation
+set_context patterns -scan
+#Read in library for mapping cells to design components
+#Location of cell library unknown - ATPG run without library
 #read_cell_library [insert library name]
-#read_verilog $params(netlist)
-#dofile
-#set_system_mode analysis
-#set_fault_type stuck
-#create_patterns -auto
-#report_statistics
+
+#Load synthesized netlist with scan chain already inserted.
+read_verilog $params(netlist)
+#Specify the design top
+set_current_design top
+#add_black_boxes used here to suppress errors due to blackboxes
+#generated;possibly from  no cells in use or unconnected nets
+#in synthesized netlist
+add_black_boxes -auto
+#Set Tessent shell to analysis mode
+set_system_mode analysis
+#Specify the fault model
+set_fault_type stuck
+#Generate test patterns
+create_patterns -auto
+#Print statistics fault test using the patterns generated
+report_statistics
+#Print faults/fault location in DUT
+report_faults -all
 
 exit -force
