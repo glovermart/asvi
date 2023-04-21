@@ -24,10 +24,10 @@ scan: $(addprefix ${OUTDIR}/,\
 #-hierarchy: Save the entire design including top-level design
 #-output: Specify filename for netlist
 
-${OUTDIR}/%.syn.v: testcases/%.sv | ${OUTDIR}
+${OUTDIR}/%_syn.v: testcases/%.sv | ${OUTDIR}
 	-dc_shell  -x "read_sverilog $^;compile -scan;insert_dft;\
 		compile -incremental -scan;\
-		write_file -format verilog -hierarchy -output $@;quit"
+		write_file -format verilog -hierarchy -output $@;quit" >> $@.txt
 #See tessent Shell Reference Manual, version 2023.1
 #Pages 91, 92
 #-shell: Invoke Tessent shell in command0 line mode
@@ -36,5 +36,5 @@ ${OUTDIR}/%.syn.v: testcases/%.sv | ${OUTDIR}
 
 #See tessent Shell Reference Manual, version 2023.1 for tcl/dofile commands
 
-${OUTDIR}/%.tessent_scan.stdout: ${OUTDIR}/%.syn.v
+${OUTDIR}/%.tessent_scan.stdout: ${OUTDIR}/%_syn.v
 	-tessent -shell -dofile tcl/tessent_batch.do -Arguments netlist=$^ ${REDIRECT}
