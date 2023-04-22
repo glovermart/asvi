@@ -415,3 +415,22 @@
 ----------
 - Tool setup and PR for Onespin, Spyglass, and VC Formal tools.
 
+
+2023-04-19
+----------
+- Weekly Meeting @ 14:00 NT 30 mins
+  - Present: AM, RS, DM, MO
+  - AM: Status update to all.
+  - AM: Clarification - stage of interest in the DFT flow.
+    - DM/RS: Insertion of built in self test circuiry and boundary checks not 
+    of importance at the moment.
+  - MO: AM to submit thesis report for review - current form not okay for
+  meaningful feedback.
+- Read Tessent manuals and studied example of Tessent + DC use for DFT.
+
+
+2023-04-20
+----------
+- Tessent tool setup
+
+
