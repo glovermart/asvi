@@ -48,3 +48,7 @@ clean:
 	rm -f transcript
 	rm -f elab_summary*
 	rm -f core.*
+	rm -f xe.msg
+	rm -rf tmp
+	rm -f xeCompile.log
+	rm -f xeCompile.key
