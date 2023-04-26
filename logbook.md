@@ -434,3 +434,18 @@
 - Tessent tool setup
 
 
+2023-04-22
+----------
+- Palladium tool initial setup
+
+
+2023-04-25
+----------
+- Fixed issues faced with Palladium tool
+
+
+
+2023-04-26
+----------
+- Weekly Meeting @ 14:00 NT
+
