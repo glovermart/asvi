@@ -15,3 +15,4 @@ default:
 	make -f mk/vcformal.mk
 	make -f mk/onespin.mk
 	make -f mk/palladium.mk
+	make -f mk/tessent.mk
