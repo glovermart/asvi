@@ -1,5 +1,6 @@
 global env
 set TEST_NAME $env(TESTCASE)
-set TEST_REPORT $env(TESTCASE_REPORT)
-read_file -format sverilog -top top ${TEST_NAME} >> ${TEST_REPORT}
+read_file -format sverilog -top top ${TEST_NAME}
+check_fv_setup
+report_fv_setup -list
 quit
