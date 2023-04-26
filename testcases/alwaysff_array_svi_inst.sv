@@ -13,18 +13,6 @@ interface I
 
 endinterface
 
-module top
-  ( input var logic i_clk
-  , input var logic i_srst
-  , input var logic i_arst
-  );
-  I u_I4 (.*);
-  M1 u_M1 (.u_I1(u_I4));
-  M2 u_M2 (.u_I2(u_I4));
-  M3 u_M3 (.u_I3(u_I4));
-
-endmodule
-
 module M1
   ( I u_I1
   );
@@ -83,4 +71,15 @@ module M3
       u_I3.x <= 1'b0;
     else
       u_I3.x <= a;      // Signal
+endmodule
+
+module top
+  ( input var logic i_clk
+  , input var logic i_srst
+  , input var logic i_arst
+  );
+  I u_I4 (.*);
+  M1 u_M1 (.u_I1(u_I4));
+  M2 u_M2 (.u_I2(u_I4));
+  M3 u_M3 (.u_I3(u_I4));
 endmodule
