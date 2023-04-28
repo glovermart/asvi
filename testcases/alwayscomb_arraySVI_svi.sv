@@ -3,14 +3,15 @@
 
 `define duplicate 8
 interface I;
-  `timescale 1 ns / 1 ps
-  var logic x;
-  var logic y;
-  var logic z;
-  
+  timeunit 1ns;
+  timeprecision 1ps;
+  //alternative: timeunit 1ns/ 1ps
+  //section 3.14.2.2: page 57 of LRM 1800:2017
+  logic x;
+  logic y;
+
   always_comb x = 1'b0;      
-  always_comb y = 1'b1;   
-  always_comb z = 1'bx;      
+  always_comb y = 1'b1;       
     
 endinterface
 
@@ -19,28 +20,28 @@ module M
   , input logic i_clk
   , output logic  o_a
   , output logic  o_b
-  , output logic  o_c
   );
+  timeunit 1ns;
+  timeprecision 1ps;
   
   always_ff @ (posedge i_clk) begin
      o_a <= u_I.x;      
      o_b <= u_I.y;  
-     o_c <= u_I.z;    
   end
   
 endmodule
 
 module top
   ( input logic i_clk
-  , input logic i_a
-  , input logic i_b
-  , input logic i_c
   , output logic [`duplicate-1:0] o_a
   , output logic [`duplicate-1:0] o_b
-  , output logic [`duplicate-1:0] o_c
   );
+  timeunit 10ns;
+  timeprecision 1ns; 
   
   I u_I [`duplicate-1:0]();
+  wire logic i_a;
+  wire logic i_b;
   
   for (genvar i=0;i<`duplicate;i++) begin
     M u_M
@@ -48,24 +49,25 @@ module top
      , .i_clk(i_clk)
      , .o_a(i_a)
      , .o_b(i_b)
-     , .o_c(i_c)
      );
   end   
    
   logic a;
+  logic [`duplicate-1:0] a_a;
   logic b;
-  logic c;
+  logic [`duplicate-1:0] b_b;
   
   always_comb a = i_a;
   always_comb b = i_b;
-  always_comb c = i_c;
   
   always @ (posedge i_clk) begin
-  for (int i=0;i<`duplicate;i++) begin
-    o_a[i] <= a; 
-    o_b[i] <= b; 
-    o_c[i] <= c; 
+    for (int i=0;i<`duplicate;i++) begin
+      a_a[i] <= a; 
+      b_b[i] <= b;  
+    end
   end
-  end
+  
+  assign o_a = a_a;
+  assign o_b = b_b;
 
 endmodule
