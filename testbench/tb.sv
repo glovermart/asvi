@@ -11,6 +11,7 @@ module tb;
   logic [7:0] o_b;
   logic [7:0] o_c;
   parameter clk_period = 2;
+  parameter sim_end = clk_period*5;
   always #clk_period  i_clk = ~i_clk;
   
   top u_DUT (.*);
@@ -22,7 +23,7 @@ module tb;
     $display("value of o_a is %0b",o_a);
     $display("value of o_b is %0b",o_b);
     $display("value of o_c is %0b",o_c);
-    #clk_period 
+    #sim_end
     $display("output values at time %0t",$time);
     $display("value of o_a is %0b",o_a);
     $display("value of o_b is %0b",o_b);
