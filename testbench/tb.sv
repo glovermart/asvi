@@ -15,11 +15,12 @@ module tb;
   initial begin: l_tb_initial
     $info("Simulation started.");
     i_clk <= 0;
-    #clk_period 
+    $display("output values at time %0t",$time);
     $display("value of o_a is %0b",o_a);
     $display("value of o_b is %0b",o_b);
     $display("value of o_c is %0b",o_c);
     #clk_period 
+    $display("output values at time %0t",$time);
     $display("value of o_a is %0b",o_a);
     $display("value of o_b is %0b",o_b);
     $display("value of o_c is %0b",o_c);
