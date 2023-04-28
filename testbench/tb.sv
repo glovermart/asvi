@@ -1,5 +1,8 @@
 `default_nettype none
 module tb;
+  timeunit 1ns;
+  timeprecision 1ps;
+
   logic i_clk;
   logic i_a;
   logic i_b;
@@ -7,7 +10,7 @@ module tb;
   logic [7:0] o_a;
   logic [7:0] o_b;
   logic [7:0] o_c;
-  parameter clk_period = 50;
+  parameter clk_period = 2;
   always #clk_period  i_clk = ~i_clk;
   
   top u_DUT (.*);
