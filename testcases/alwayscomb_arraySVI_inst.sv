@@ -25,7 +25,7 @@ module M
 endmodule
 
 module top
-  ( input logic clk 
+  ( input logic i_clk 
   , output logic [`duplicate-1:0] o_a
   , output logic [`duplicate-1:0] o_b
   , output logic [`duplicate-1:0] o_c
