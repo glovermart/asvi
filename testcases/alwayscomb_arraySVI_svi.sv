@@ -60,7 +60,7 @@ module top
   always_comb a = i_a;
   always_comb b = i_b;
   
-  always @ (posedge i_clk) begin
+  always_ff @ (posedge i_clk) begin
     for (int i=0;i<`duplicate;i++) begin
       a_a[i] <= a; 
       b_b[i] <= b;  
