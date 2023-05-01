@@ -13,12 +13,6 @@ interface I
   logic y;
   logic z;
 
-  modport P
-    ( output x 
-    , output y 
-    , output z 
-    );
-
   always_ff @(posedge i_clk) begin
     for (int i=0;i<`duplicate;i++)begin
       x <= 1'b1;
