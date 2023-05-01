@@ -14,11 +14,9 @@ interface I
   logic z;
 
   always_ff @(posedge i_clk) begin
-    for (int i=0;i<`duplicate;i++)begin
       x <= 1'b1;
       y <= 1'b0;
       z <= 1'b1;
-    end
   end
 
 endinterface
