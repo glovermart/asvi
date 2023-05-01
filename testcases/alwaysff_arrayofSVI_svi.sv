@@ -1,4 +1,4 @@
-// Assignment via `always_ff` to scalar members of within an SVI interface.
+// Assignment via `always_ff` to scalar members within an SVI interface.
 // Array of SVIs
 
 `define duplicate 8
