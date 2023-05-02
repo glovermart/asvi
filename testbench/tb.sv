@@ -24,16 +24,16 @@ module tb;
     $display("value of o_a is %0b",o_a);
     $display("value of o_b is %0b",o_b);
     $display("value of o_c is %0b",o_c);
-    repeat (9)
+    repeat (2)
     @ (posedge i_clk);
     i_arst <= 0;
     repeat (4)
     @ (posedge i_clk);
     i_arst <= 1;
-    repeat (9)
+    repeat (2)
     @ (posedge i_clk);    
     i_arst <= 0;
-    repeat (9)
+    repeat (2)
     @ (posedge i_clk);    
     en <= 0;
     #sim_end
