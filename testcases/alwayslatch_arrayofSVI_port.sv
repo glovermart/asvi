@@ -1,13 +1,12 @@
 // Assignment via `always_latch` to scalar members of an SVI port.
 // Array of SVIs
-// Using modports, output 'y' from module M1 is an input to module M2
+// Using modports, output 'y' from module M1 is an input to module M2.
+// Modules M1 and M2 now with en and arst pins conected directly to 
+// top module pins.
 
 `define V 8
 
-interface I
-  ( input logic arst
-  , input logic en
-  );
+interface I;
   timeunit 1ns;
   timeprecision 1ps;
   
@@ -30,23 +29,16 @@ endinterface
 module M1
   ( I.P1 p1[`V-1:0]
   , output logic [`V-1:0]o_a
+  , output logic en
+  , output logic i_arst
   );
   timeunit 1ns;
   timeprecision 1ps;
   
-  logic en;
-  logic rst;
-
-
-  I u_I 
-    ( .arst(rst)
-    , .en
-    );
-  
   for(genvar i =0; i< `V;i++) begin
     always_comb p1[i].x = 1'b1;
     always_latch begin
-      if (!rst)
+      if (!i_arst)
         p1[i].y <= 1'b0;
       else if (en)
         p1[i].y <= p1[i].x;
@@ -59,16 +51,10 @@ endmodule
 module M2
   ( I.P2 p2[`V-1:0]
   , output logic [`V-1:0]o_b
+  , output logic en
   );
   timeunit 1ns;
   timeprecision 1ps;
-  
-  logic en;
-
-  I u_I 
-    ( 
-    .en
-    );
 
   for(genvar i =0; i< `V;i++) begin
     always_latch begin
@@ -92,34 +78,20 @@ module top
 
   timeunit 1ns;
   timeprecision 1ps;
-
-  logic [`V-1:0] a_a;
-  logic [`V-1:0] b_b;
   
-  I u_I [`V-1:0]
-    ( .arst(i_arst)
-    , .en(en)
-    );
+  I u_I [`V-1:0] ();
 
   M1 u_M1
     ( .p1(u_I)
-    , .o_a(a_a)
+    , .o_a(o_a)
+    , .en
+    , .i_arst 
     );
 
   M2 u_M2
     ( .p2(u_I)
-    , .o_b(b_b)
+    , .o_b(o_b)
+    , .en
     );
-
-  int i =0;
-  always_ff @(posedge i_clk ) begin
-    if (i >= `V )
-      i <= 0;
-    else begin
-      o_a[i] <= a_a[i];
-      o_b[i] <= b_b[i];
-      i++;
-    end
-  end
 
 endmodule
