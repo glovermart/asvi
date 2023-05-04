@@ -3,14 +3,10 @@
 
 localparam int SIZE = 8;
 
-interface I
-  ( input logic i_arst
-  , input logic en
-  , input logic i_a
-  , output logic o_a
-  , output logic o_b
-  );
-
+interface I;
+  logic i_arst;
+  logic en;
+  logic i_a;
   logic y;
   
   /* variable z manipulated by module M, depending on value of variable y */
@@ -21,20 +17,20 @@ interface I
       y <= 1'b0;
     else if (en)
       y <= i_a;
-
-  assign o_a = y;
-  assign o_b = z;
-
 endinterface
 
 module M
-  ( I u_I [SIZE-1:0]
+  ( output logic [SIZE-1:0] o_a
+  , output logic [SIZE-1:0] o_b  
   );
-  
+  I u_I [SIZE-1:0] ();
   logic b = 1'b1;
   
-  for(genvar i=0; i < SIZE; i++)
+  for(genvar i=0; i < SIZE; i++) begin
     assign u_I[i].z = u_I[i].y & b;
+    assign o_a[i] = u_I[i].y;
+    assign o_b[i] = u_I[i].z;
+  end
  
 endmodule
 
@@ -47,19 +43,15 @@ module top
   , output logic [SIZE-1:0] o_b
   );
 
-  I u_I [SIZE-1:0]
-    ( .i_arst
-    , .en
-    , .i_a
-    );
+  I u_I ();
+  
+  assign u_I.i_arst = i_arst;  
+  assign u_I.en = en;  
+  assign u_I.i_a = i_a;  
   
   M u_M 
-    (.u_I
+    ( .o_a
+    , .o_b 
     );
-
-  for (genvar i = 0; i < SIZE; i++) begin
-    assign o_a[i] = u_I[i].o_a;
-    assign o_b[i] = u_I[i].o_b;
-  end
 
 endmodule
