@@ -1,55 +1,44 @@
 // Assignment via `always_latch` to scalar members within an SVI interface.
 // Array of SVIs
 
-localparam M = 8;
+localparam Size = 8;
 
 interface I
   ( input logic i_arst
   , input logic en
   , input logic i_a
   , output logic o_a
+  , output logic o_b
   );
-//  timeunit 1ns;
-//  timeprecision 1ps;
 
   logic y;
-  var logic x;
-  var logic z;
+  logic x;
+  
+  /* variable z manipulated by module M, depending on value of variable y */
+  logic z; 
 
-  always_comb x = i_a;
+  always_latch x = i_a; // always_comb should be used here ordinarily
 
   always_latch
     if (!i_arst)
       y <= 1'b0;
     else if (en)
       y <= x;
-  assign o_a = z;
-//  assign o_a = y;
+
+  assign o_a = y;
+  assign o_b = z;
 
 endinterface
 
-module M ;
-//  ( output logic o_a
-//  );
-//  timeunit 1ns;
-//  timeprecision 1ps;
+module M
+  ( I u_I [Size-1:0]
+  );
   
-  logic a;
-
-//  I u_I 
-//    ( .o_a(a)
-//   (.y(a)  
-//   );
-
   logic b = 1'b1;
-  logic c;
-
-  always_comb
-//    c = a & b;
-     c = u_I.y & b;
-  assign u_I.z = c;
-//  assign o_a = c;  
-
+  
+  for(genvar i=0; i < Size; i++)
+    assign u_I[i].z = u_I[i].y & b;
+ 
 endmodule
 
 
@@ -57,25 +46,27 @@ module top
   ( input logic i_arst
   , input logic en
   , input logic i_a
-  , output logic [M-1:0] o_a
-  , output logic o_b
+  , output logic [Size-1:0] o_a
+  , output logic [Size-1:0] o_b
   );
 
-  I u_I [M-1:0]
+  I u_I [Size-1:0]
     ( .i_arst
     , .en
     , .i_a
-    , .o_a(o_b)
     );
   
-  logic [M-1:0] a;
+  logic [Size-1:0] a;
 
-  for (genvar i = 0; i < M; i++)begin
+  for (genvar i = 0; i < Size; i++) begin
     M u_M 
-      (u_I[i]
+      (.u_I[i]
       );
-//    u_M.o_a = a[i];
-//    a[i] = u_M.o_a;
+  end
+
+  for (genvar i = 0; i < Size; i++) begin
+    assign o_a[i] = u_I[i].o_a;
+    assign o_b[i] = u_I[i].o_b;
   end
 
 endmodule
