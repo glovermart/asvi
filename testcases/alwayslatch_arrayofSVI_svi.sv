@@ -12,18 +12,15 @@ interface I
   );
 
   logic y;
-  logic x;
   
   /* variable z manipulated by module M, depending on value of variable y */
   logic z; 
-
-  always_comb x = i_a; 
 
   always_latch
     if (!i_arst)
       y <= 1'b0;
     else if (en)
-      y <= x;
+      y <= i_a;
 
   assign o_a = y;
   assign o_b = z;

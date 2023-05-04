@@ -1,11 +1,16 @@
 `default_nettype none
 module tb;
-  timeunit 1ns;
-  timeprecision 1ps;
+//  timeunit 1ns;
+//  timeprecision 1ps;
+
+/*timescale keywords commented to avoid parse error from yosys and not replicating these keywords
+in design modules and interfaces.*/
+  
   logic i_clk;
   logic i_srst;
   logic i_arst;
   logic en;
+  logic i_a;
   logic [7:0] o_a;
   logic [7:0] o_b;
   logic [7:0] o_c;
@@ -20,20 +25,30 @@ module tb;
     i_clk <= 0;
     en <= 1;
     i_arst <= 1;
+    i_a <= 1;
     $display("output values at time %0t",$time);
     $display("value of o_a is %0b",o_a);
     $display("value of o_b is %0b",o_b);
     $display("value of o_c is %0b",o_c);
-    repeat (2)
+    repeat (9)
     @ (posedge i_clk);
+    $display("output values at time %0t",$time);
+    $display("value of o_a is %0b",o_a);
+    $display("value of o_b is %0b",o_b);
+    $display("value of o_c is %0b",o_c);   
     i_arst <= 0;
     repeat (4)
     @ (posedge i_clk);
     i_arst <= 1;
-    repeat (2)
+    i_a <= 'x;
+    repeat (9)
     @ (posedge i_clk);    
+    $display("output values at time %0t",$time);
+    $display("value of o_a is %0b",o_a);
+    $display("value of o_b is %0b",o_b);
+    $display("value of o_c is %0b",o_c);    
     i_arst <= 0;
-    repeat (2)
+    repeat (9)
     @ (posedge i_clk);    
     en <= 0;
     #sim_end
