@@ -32,8 +32,8 @@ endinterface
 module M1
   ( I.P1 p1[`V-1:0]
   , output logic [`V-1:0]o_a
-  , input logic en
-  , input logic i_arst
+  , output logic en
+  , output logic i_arst
   );
   timeunit 1ns;
   timeprecision 1ps;
@@ -56,7 +56,7 @@ endmodule
 module M2
   ( I.P2 p2[`V-1:0]
   , output logic [`V-1:0]o_b
-  , input logic en
+  , output logic en
   );
   timeunit 1ns;
   timeprecision 1ps;
