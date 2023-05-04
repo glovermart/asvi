@@ -12,16 +12,17 @@ endinterface
 
 module M
   ( I u_I[`duplicate-1:0]
-  , input logic i_a
+  , input logic i_a   // avoid variable not driven warnings
   );
 
   localparam bit Z = 1'b0;
-
+  generate
   for (genvar i=0; i<`duplicate; i++) begin   
     assign u_I[i].x = Z;      // Constant
     assign u_I[i].y = 1'b1;   // Literal
     assign u_I[i].z = i_a;      // Signal
   end
+  endgenerate
 endmodule
 
 module top
