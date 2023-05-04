@@ -12,22 +12,21 @@ endinterface
 
 module M
   ( I u_I[`duplicate-1:0]
+  , input logic i_a
   );
 
   localparam bit Z = 1'b0;
-  logic a;
 
-  for (genvar i=0; i<`duplicate; i++)   
+  for (genvar i=0; i<`duplicate; i++) begin   
     assign u_I[i].x = Z;      // Constant
-  for (genvar i=0; i<`duplicate; i++)    
     assign u_I[i].y = 1'b1;   // Literal
-  for (genvar i=0; i<`duplicate; i++)   
-    assign u_I[i].z = a;      // Signal
-
+    assign u_I[i].z = i_a;      // Signal
+  end
 endmodule
 
 module top
-  ( output logic [`duplicate-1:0] o_a
+  ( input logic i_a
+  , output logic [`duplicate-1:0] o_a
   , output logic [`duplicate-1:0] o_b
   , output logic [`duplicate-1:0] o_c
   );
@@ -36,6 +35,7 @@ module top
   
   M u_M 
     ( .*
+    , .i_a
     );
 
   for (genvar i=0;i<`duplicate;i++)begin
