@@ -16,8 +16,9 @@ module M
   );
 
   localparam bit Z = 1'b0;
+  genvar i;
   generate
-  for (genvar i=0; i<`duplicate; i++) begin   
+  for (i=0; i<`duplicate; i++) begin   
     assign u_I[i].x = Z;      // Constant
     assign u_I[i].y = 1'b1;   // Literal
     assign u_I[i].z = i_a;      // Signal
