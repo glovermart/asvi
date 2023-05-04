@@ -17,11 +17,12 @@ module M
   localparam bit Z = 1'b0;
   logic a;
 
-  for (genvar i=0; i<`duplicate; i++) begin  
+  for (genvar i=0; i<`duplicate; i++)   
     assign u_I[i].x = Z;      // Constant
+  for (genvar i=0; i<`duplicate; i++)    
     assign u_I[i].y = 1'b1;   // Literal
+  for (genvar i=0; i<`duplicate; i++)   
     assign u_I[i].z = a;      // Signal
-  end
 
 endmodule
 
