@@ -1,4 +1,4 @@
-// Assignment via `assign` to scalar members within an Interface.
+// Assignment via `assign` to scalar members of an Interface port list.
 // Array of SVIs
 
 //Instantiation of a vector (1D SVI Array) in module top with netlists connected.
