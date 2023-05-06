@@ -14,12 +14,19 @@ interface I;
 
 endinterface
 
-module M
+module M1
   (interface i   //Generic interface
   );
 
-   always_comb i.p1 = '0;
-   always_comb i.p2 = '1;
+  always_comb  i.p1 = '0;
+
+endmodule
+
+module M2
+  (interface i   //Generic interface
+  );
+
+  always_comb i.p2 = '1;
 
 endmodule
 
@@ -28,10 +35,14 @@ module top
   );
 
   I u_I ();
-  M u_M 
+  M1 u_M1 
     ( u_I.P1 //LSBs
-    , u_I.P2 //MSBs
     );
+ 
+  M2 u_M2
+    ( u_I.P2 //MSBs
+    );
+
   assign o_a = u_I.x; //output the full vector 11110000
 
 endmodule
