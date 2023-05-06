@@ -3,7 +3,6 @@
 
 
 // Output a vector (SVI 1D array instance) of 0's,1's,z's
-// Copy to output pin via gen block and assign construct.
 
 interface I;
   logic z;
@@ -29,7 +28,7 @@ module top
       release u_I[i].z;
  end
 
- for (genvar i = 0; i < 8; i++)
-   assign o_a [i] = u_I[i].z;
+ // Copy to output pin using assign construct(no generate block/loop scheme).
+ assign o_a = u_I.z;
 
 endmodule

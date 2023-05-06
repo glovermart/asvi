@@ -24,38 +24,27 @@ in design modules and interfaces.*/
     $info("Simulation started.");
     i_clk <= 0;
     en <= 1;
-    i_arst <= 1;
-    i_a <= 1;
+    i_a <= '0;
     $display("output values at time %0t",$time);
     $display("value of o_a is %0b",o_a);
-    $display("value of o_b is %0b",o_b);
-    $display("value of o_c is %0b",o_c);
     repeat (9)
     @ (posedge i_clk);
     $display("output values at time %0t",$time);
-    $display("value of o_a is %0b",o_a);
-    $display("value of o_b is %0b",o_b);
-    $display("value of o_c is %0b",o_c);   
-    i_arst <= 0;
+    $display("value of o_a is %0b",o_a);   
     repeat (4)
     @ (posedge i_clk);
-    i_arst <= 1;
-    i_a <= 'x;
+    en  <= 0;
     repeat (9)
     @ (posedge i_clk);    
     $display("output values at time %0t",$time);
-    $display("value of o_a is %0b",o_a);
-    $display("value of o_b is %0b",o_b);
-    $display("value of o_c is %0b",o_c);    
-    i_arst <= 0;
+    $display("value of o_a is %0b",o_a);    
     repeat (9)
     @ (posedge i_clk);    
     en <= 0;
+    i_a <= '1;
     #sim_end
     $display("output values at time %0t",$time);
     $display("value of o_a is %0b",o_a);
-    $display("value of o_b is %0b",o_b);
-    $display("value of o_c is %0b",o_c);
     $finish;
   end: l_tb_initial
 endmodule
