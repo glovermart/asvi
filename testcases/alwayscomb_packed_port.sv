@@ -15,11 +15,12 @@ interface I;
 endinterface
 
 module M
-  ( interface i   //Generic interface
-  );
+  ( interface i  // Generic interface.
+  , interface j
+  );            
 
   always_comb i.p1 = '0; //write 0000
-  always_comb i.p2 = '1; //write 1111
+  always_comb j.p2 = '1; //write 1111
                         
 endmodule
 
