@@ -18,7 +18,8 @@ module top
  I u_I [7:0]();
  
  for (genvar i = 0; i < 8; i++)
- assign u_I[i].z = i_a;
+   always_comb u_I[i].z = i_a; /*`always_comb` changes simulation behaviour;
+     `assign` works as expected */
 
  for (genvar i = 0; i < 8; i++) begin 
    always_comb
@@ -28,7 +29,8 @@ module top
       release u_I[i].z;
  end
 
- // Copy to output pin using assign construct(no generate block/loop scheme).
- assign o_a = u_I.z;
+ // Copy to output pin using assign construct and generate block/loop scheme.
+ for (genvar i = 0; i < 8; i++)
+   assign o_a[i] = u_I[i].z;
 
 endmodule
