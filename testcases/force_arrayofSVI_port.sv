@@ -9,7 +9,7 @@ interface I;
   logic z;
   
   modport P
-    ( input z
+    ( output z  //changed modport view to output
     );
 endinterface
 
