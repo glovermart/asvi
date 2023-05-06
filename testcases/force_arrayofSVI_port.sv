@@ -1,8 +1,9 @@
-// Assignment via `force` to scalar members of an SVI instance.
-// Array of SVIs
+// Assignment via `force` to scalar members of an SVI interface.
+// Use of modport during module instantiation.
+// Array of SVIs.
 
 
-// Output a vector (SVI 1D array instance) of 0's,1's,z's
+// Output a vector (SVI 1D array instance) of 0's,1's,z's.
 
 interface I;
   logic z;
