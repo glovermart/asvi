@@ -16,12 +16,11 @@ endinterface
 
 module M
   ( interface i   //Generic interface
-  , interface j
   );
 
-  always_comb i.p1 = '0;
-  always_comb j.p2 = '1;// Generic interface `j` introduced to elimate questa error:
-                        // Failed to find 'p2' in hierarchical name 'i.p2'.
+  always_comb i.p1 = '0; //write 0000
+  always_comb i.p2 = '1; //write 1111
+                        
 endmodule
 
 module top
@@ -29,9 +28,12 @@ module top
   );
 
   I u_I ();
-  M u_M 
+  M u_M1 
     ( u_I.P1 //LSBs
-    , u_I.P2 //MSBs
+    );
+
+  M u_M2
+    ( u_I.P2 //MSBs
     );
 
   assign o_a = u_I.x; //output the full vector 11110000
