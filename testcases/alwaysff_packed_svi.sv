@@ -27,10 +27,10 @@ module top
   , output logic [7:0] o_a
   );
 
-  I u_I        // Ordered port connection: Interface I and module top have  
-    ( i_a      // the same port order/position.
-    , i_clk    // The port names do not have to be the same;
-    , o_a      // kept project naming convention.
+  I u_I        // .name port connection: Interface I and module top have  
+    ( .i_a      // the same port names.
+    , .i_clk    // Order does not matter with this style.
+    , .o_a      
     );     
 
 endmodule
