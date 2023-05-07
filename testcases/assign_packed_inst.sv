@@ -1,4 +1,5 @@
 // Assignment via `assign` to a packed array of an interface instance.
+// In the loop scheme of the generate block, identifier type int is used.
 
 interface I;
 
@@ -14,7 +15,7 @@ module top
 
   I u_I ();
   
-  for (genvar i = 0; i < 8 ; i++)
+  for (int i = 0; i < 8 ; i++) // genvar appropriate type
     assign u_I.x[i] = i_a; 
   
   assign o_a = u_I.x;
