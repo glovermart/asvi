@@ -1,10 +1,10 @@
 // Assignment via `force` to an 8 bit vector of an SVI instance.
-// Use modport expression to force LSBs to high-impedance state (Z)
+// Use modport expression to force the 'bus' to high-impedance state (Z)
 
 interface I;
   logic [7:0]z;
   modport P1
-    ( output .p1(z[3:0]) // LSBs
+    ( output .p1(z[7:0]) 
     );
 endinterface
 
