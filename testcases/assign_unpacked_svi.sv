@@ -6,7 +6,8 @@ interface I
 
   logic x [7:0]; // Unpacked array x.
    
-  assign x = {8{i_a}}; // Replicate values to unpacked array.
+  assign x = '{8{i_a}}; /* Replicate values to unpacked array.
+  LRM: 10.10 -10.10.1 */
 
 endinterface
 
