@@ -37,7 +37,8 @@ module top
   I u_I (); // Interface instance.
 
   M u_M 
-   ( .j(u_I.P)  // A named port is required for generic interfaces.
+   ( .j(u_I)  /* A named port is required for generic interfaces.
+   The modport view is excluded in this testcase */
    , .*
    );
 
