@@ -16,10 +16,10 @@ module top
   I u_I ();
   
   always_comb begin
-  int i = 0;
+  automatic int i = 0;
 
   do begin 
-    assign u_I.x[i] = i_a;
+    u_I.x[i] = i_a; // assign statement removed. Makes testcase always_comb.
     i++; end
   while 
   ( i < 8);end
