@@ -15,9 +15,9 @@ module top
 
   I u_I ();
   
-  assign    // Some tools output error messages during read step.
+    // Some tools output error messages during read step.
     foreach (u_I.x[i])
-      u_I.x[i] = i_a; 
+      assign u_I.x[i] = i_a; 
   
   assign o_a = u_I.x;
 
