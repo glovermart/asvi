@@ -28,7 +28,7 @@ module top
 
   I u_I ();
   M u_M
-    ( .p(u_I.P) // Enforce modport views?
+    ( .p(u_I) // Connection without explicitly specify port view. i.e.`u_I.P`
     , .i_a(i_a)
     );
   assign o_a = u_I.x; // Copy to output pins.
