@@ -1,5 +1,5 @@
 // Assignment via `assign` to an unpacked array of an interface instance.
-// Use `foreach` loop to iterate through array elements.
+// Use `do-while` loop to iterate through array elements.
 
 interface I;
 
@@ -14,10 +14,14 @@ module top
   );
 
   I u_I ();
-  
-    // Some tools output error messages during read step.
-    foreach (u_I.x[i])
-      assign u_I.x[i] = i_a; 
+    
+  int i = 0;
+
+  do begin 
+    assign u_I.x[i] = i_a;
+    i++; end
+  while 
+    ( i < 8);
   
   assign o_a = u_I.x;
 
