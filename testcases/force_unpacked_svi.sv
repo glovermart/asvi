@@ -1,4 +1,4 @@
-// Assignment via `force` to an unpacked vector within an SVI interface.
+// Assignment via `force` to an unpacked array within an SVI interface.
 /* Release: Assigns the net/variable the resolved value before 
 the force assignment.*/
 
@@ -9,7 +9,7 @@ interface I
   );
 
   wire x [7:0]; // "An array of wires can be assigned an array of variables..."
-  assign x = '{8{i_a}}; // Fill the vector with some bit of the same value.
+  assign x = '{8{i_a}}; // Fill the array with some bit of the same value.
 
   always_comb
     if (en)
