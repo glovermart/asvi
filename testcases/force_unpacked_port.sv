@@ -1,12 +1,14 @@
 // Assignment via `force` to an unpacked array of an SVI instance.
-// Use modport expression to force LSBs to high-impedance state (Z)
+// Use modport expression to force the 4 LSBs to high-impedance state (z).
+/* At module instantiation, modport view is removed i.e.
+(.i(u_I) instead of .i(u_I.P)) */
 
 interface I;
   
   logic z [7:0];
   
-  modport P1
-    ( output .p1(z[3:0]) // LSBs
+  modport P
+    ( output .p(z[3:0]) // LSBs
     );
 
 endinterface
@@ -18,9 +20,9 @@ module M
 
   always_comb
     if (en)
-      force i.p1 = '{4{'z}};
+      force i.p = '{4{'z}};
     else
-      release i.p1;
+      release i.p;
 
 endmodule
 
@@ -36,9 +38,9 @@ module top
 
   M u_M 
     ( .en(en)
-    , .i(u_I.P1)
+    , .i(u_I)
     );
 
-  assign o_a = u_I.z; // Copy/output the array content.
+  assign o_a = u_I.z; // Copy/output the array elements.
 
 endmodule
