@@ -1,7 +1,7 @@
 // Assignment via `always_latch` to scalar members of an SVI instance.
 // Array of SVIs
 // Copy output from interface to module output pins using assign construct.
-`define V 8
+localparam int SIZE = 8;
 
 interface I;
   timeunit 1ns;
@@ -14,18 +14,18 @@ endinterface
 module top
   ( input logic en
   , input logic i_arst
-  , output logic [`V-1:0]o_a 
+  , output logic [SIZE-1:0]o_a 
   );
   
   timeunit 1ns;
   timeprecision 1ps;
   
-  I u_I [`V-1:0]();
+  I u_I [SIZE-1:0]();
   logic a = 1'b1;
-  logic [`V-1:0] a_a;
+  logic [SIZE-1:0] a_a;
 
   genvar i;
-  for(i =0; i< `V;i++) begin 
+  for(i =0; i< SIZE;i++) begin 
     //Use always_latch with intermediate signal (variable) a.
     //Would normally use always_comb here.
     always_latch  u_I[i].x <= a;
