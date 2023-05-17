@@ -2,7 +2,7 @@
 // Array of SVIs.
 // timeunit and timeprecision keywords removed.
 
-localparam int SIZE = 8
+localparam int SIZE = 8;
 interface I;
   logic x;
   logic y;

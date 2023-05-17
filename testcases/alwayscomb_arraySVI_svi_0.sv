@@ -1,7 +1,7 @@
 // Assignment via `always_comb` to scalar members within an SVI interface.
 // Array of SVIs
 
-localparam int SIZE = 8
+localparam int SIZE = 8;
 interface I;
   timeunit 1ns;
   timeprecision 1ps;
