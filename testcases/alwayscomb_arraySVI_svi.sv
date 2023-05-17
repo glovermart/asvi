@@ -1,7 +1,7 @@
 // Assignment via `always_comb` to scalar members within an SVI interface.
 // Array of SVIs
 
-`define duplicate 8
+localparam int SIZE = 8
 interface I;
   timeunit 1ns;
   timeprecision 1ps;
@@ -33,35 +33,35 @@ endmodule
 
 module top
   ( input logic i_clk
-  , output logic [`duplicate-1:0] o_a
-  , output logic [`duplicate-1:0] o_b
+  , output logic [SIZE-1:0] o_a
+  , output logic [SIZE-1:0] o_b
   );
   timeunit 10ns;
   timeprecision 1ns; 
   
-  I u_I [`duplicate-1:0]();
-  wire logic i_a;
-  wire logic i_b;
+  I u_I [SIZE-1:0]();
+  wire logic a1;
+  wire logic b1;
   
-  for (genvar i=0;i<`duplicate;i++) begin
+  for (genvar i=0;i<SIZE;i++) begin
     M u_M
      (.u_I(u_I[i])
      , .i_clk(i_clk)
-     , .o_a(i_a)
-     , .o_b(i_b)
+     , .o_a(a1)
+     , .o_b(b1)
      );
   end   
    
   logic a;
-  logic [`duplicate-1:0] a_a;
+  logic [SIZE-1:0] a_a;
   logic b;
-  logic [`duplicate-1:0] b_b;
+  logic [SIZE-1:0] b_b;
   
-  always_comb a = i_a;
-  always_comb b = i_b;
+  always_comb a = a1;
+  always_comb b = b1;
   
   always_ff @ (posedge i_clk) begin
-    for (int i=0;i<`duplicate;i++) begin
+    for (int i=0;i<SIZE;i++) begin
       a_a[i] <= a; 
       b_b[i] <= b;  
     end
