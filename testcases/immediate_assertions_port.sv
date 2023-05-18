@@ -19,7 +19,7 @@ module M
   , output logic o_a
   );
   always_comb begin
-    assert (^p.z !== ’x)
+    assert final (^p.z !== ’x)
       else $error("p.z = X");
     if (p.z)
       o_a = i_a;
