@@ -335,18 +335,10 @@
   - Make similar designs for implementation/reference without interfaces.
   - Add match command before verify command.
 - DC
-<<<<<<< HEAD
-  - Added setup file ; eliminates warnings/errors - link and
-  target libraries not found since dc is run from  directory
-  specified by the user.
-  - Compile/ Compile_ultra output logs might be useful when
-  UPF is added to testcases?
-=======
   - Added setup file ; eliminates warnings/errors - link and target
   libraries not found since dc is run from  directory specified by the user.
   - Compile/ Compile_ultra output logs might be useful when UPF is added to
   testcases?
->>>>>>> master
 - Questasim
   - Added testbench.
 
@@ -363,14 +355,6 @@
 - Weekly Meeting @14:00 NT 12 mins
   - Present: AM, DM, MO, BD
   - code review (DM) - QUesta : Make file & testcase always_ff
-<<<<<<< HEAD
-  - AM: Go through comments and changes made by DM. Make similar changes for all working tools.
-- `assign_array_svi_svi.sv` testcase:
-  - Compilation errors in Synopsys DC.
-  - Compiles, elaborates and synthesizes (with warnings -inout    inferred for interface `I` with no modport) in Vivado.
-  - No top module but input and output elaborated.
-    - Attempts: Intermediate signals, always_comb, explicit  declaration as wire but in port list signals and in top module. Same outputs were observed.
-=======
   - AM: Go through comments and changes made by DM.
   Make similar changes for all working tools.
 - `assign_array_svi_svi.sv` testcase:
@@ -380,7 +364,6 @@
   - No top module but input and output elaborated.
     - Attempts: Intermediate signals, always_comb, explicit  declaration as wire
     but in port list signals and in top module. Same outputs were observed.
->>>>>>> master
   - Implementation step (Vivado):
     - Input and output pins with two buffers in-between.
 - Tescases added : assign_array_svi_*.sv
@@ -389,8 +372,6 @@
 ----------
 - Tescases added : force_array_svi_*.sv
 
-<<<<<<< HEAD
-=======
 2023-04-03
 ----------
 - Worked on pull requests as specified by DM in PR#6. 
@@ -409,4 +390,3 @@
 2023-04-07 to 2023-04-12
 ------------------------
 - Theory, Methodology and Experiments chapters write-up.
->>>>>>> master
