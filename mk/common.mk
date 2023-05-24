@@ -54,3 +54,6 @@ clean:
 	rm -f xeCompile.key
 	rm -f hdlIce.log
 	rm -f hdlIce.log.saved
+	rm -f vivado*
+	rm -rf project_*
+	rm -f xme*
