@@ -1,6 +1,6 @@
 // Assignment via `always_comb` from scalar members of an SVI array's elements
 // to a module array SVI port, without a modport.
-// TODO: Note where are the interesting assignments. (lines, signal names)
+// NOTE: Lines 18, 28, and 41.
 
 localparam int SIZE = 8;
 
@@ -15,8 +15,8 @@ endinterface
 
 
 module M
-  ( I ifc_I [SIZE-1:0] // TODO: Why use unpacked range instead of a size?
-  );
+  ( I ifc_I [SIZE-1:0] // Unpacked array sizes may be declared using a range. 
+  );                   // Applying same syntax to interfaces.
 
   localparam bit Z = 1'b0;
 
@@ -33,15 +33,15 @@ endmodule
 
 module top
   ( input  logic i_clk
-  , output logic [SIZE-1:0] o_a
+  , output logic [SIZE-1:0] o_a // Packed array.
   , output logic [SIZE-1:0] o_b
   , output logic [SIZE-1:0] o_c
   );
 
-  I u_I [SIZE-1:0] (); // TODO: Why use unpacked range instead of a size?
+  I u_I [SIZE-1:0] (); 
 
   M u_M
-    ( .* // TODO: Why is this a wildcard connection to `u_I`?
+    ( .ifc_I (u_I) // Named port connection. Ports have different names.
     );
 
   for (genvar i = 0; i < SIZE; i++) begin
