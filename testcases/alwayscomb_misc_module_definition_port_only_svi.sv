@@ -1,6 +1,6 @@
 // Assignment via `always_comb` to scalar members within an SVI.
-/* Instance of interface identifiers in M module port and instantiated in top
-with different names*/
+// Module definition with only port defined in module port list.
+// NOTE: Lines 21, 29, and 31.
 
 interface I;
 
@@ -16,17 +16,19 @@ interface I;
 
 endinterface
 
-module M
-  ( I u_I1
-  );
 
+module M
+  ( I ifc_I // Interface instance in module port. 
+  );
+  // Only module port is defined during module definition.
 endmodule
+
 
 module top;
 
-  I u_I2 ();
+  I u_I ();
   M u_M
-    ( .u_I1(u_I2)
+    ( .ifc_I  (u_I) // Module instantiation and port connection.
     );
 
 endmodule
