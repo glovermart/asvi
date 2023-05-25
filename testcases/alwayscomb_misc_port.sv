@@ -1,5 +1,6 @@
 // Assignment via `always_comb` to scalar members of an SVI port.
 // Two instances of an interface.
+// NOTE: Lines 27, 41, 57, 58, 61, and 65. 33, 34, 35, 48, 49, and 50.
 
 interface I;
 
@@ -21,9 +22,10 @@ interface I;
 
 endinterface
 
+
 module M1
-  ( I.P1 p1
-  );
+  ( I.P1 p1 // Specify modport view during module definition.
+  );        // View signals x, y, and z as input signals.
 
   localparam bit Z = 1'b0;
   logic a;
@@ -34,8 +36,9 @@ module M1
 
 endmodule
 
+
 module M2
-  ( I.P2 p2
+  ( I.P2 p2 // View signals x, y, and z as ouput signals.
   );
 
   logic a;
@@ -47,6 +50,7 @@ module M2
   always_comb c = p2.z;
 
 endmodule
+
 
 module top;
 
