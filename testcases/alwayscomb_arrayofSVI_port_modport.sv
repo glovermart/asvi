@@ -1,6 +1,6 @@
 // Assignment via `always_comb` from scalar members of an SVI array's elements
 // to a module array SVI port, with a modport.
-// TODO: Note where are the interesting assignments. (lines, signal names)
+// NOTE: Lines 24, 27, 28, 32, and 33.
 
 localparam int SIZE = 8;
 
@@ -11,7 +11,7 @@ interface I;
   logic y;
   logic z;
 
-  modport P
+  modport P 
     ( output x
     , output y
     , output z
@@ -21,19 +21,17 @@ endinterface
 
 
 module M
-  ( I.P p [SIZE] // TODO: Why use unpacked size instead of a range?
-  );
+  ( I.P p [SIZE] // SystemVerilog allows C-style declaration of array size
+  );             // for unpacked arrays. Applying same syntax for interfaces.
 
-  logic a = 1'b0; // TODO: Is this a valid assignment?
-  logic b = 1'b1; // TODO: Is this a valid assignment?
+  logic a = 1'b0; // Assigning values to signals without procedural blocks or
+  logic b = 1'b1; // continuous assignments.
   logic c;
 
-  // TODO: Why not show constant/literal/signal like
-  // alwayscomb_arraySVI_port_nomodport?
   for (genvar i = 0; i < SIZE; i++) begin
-    always_comb p[i].x = a;
-    always_comb p[i].y = b;
-    always_comb p[i].z = c;
+    always_comb p[i].x = a; // Signal
+    always_comb p[i].y = b; // Signal
+    always_comb p[i].z = c; // Signal
   end
 
 endmodule
@@ -46,7 +44,7 @@ module top
   , output logic [SIZE-1:0] o_c
   );
 
-  I u_I [SIZE] (); // TODO: Why use unpacked size instead of a range?
+  I u_I [SIZE] (); 
 
   M u_M
     ( .p  (u_I)
