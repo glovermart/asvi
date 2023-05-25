@@ -1,4 +1,6 @@
 // Assignment via `always_comb` to a packed array of an interface instance.
+// Assignment without unbased_unsized_ literal.
+// NOTE: Lines 6, 12, and 18.
 
 interface I;
 
@@ -8,7 +10,7 @@ endinterface
 
 
 module top
-  ( input logic i_a
+  ( input logic i_a // Defaults to bit.
   , output logic [7:0] o_a
   );
 
