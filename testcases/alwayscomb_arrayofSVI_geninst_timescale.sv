@@ -49,7 +49,7 @@ module top
   );
 
   // Timescale keywords must be replicated in all modules and interfaces.
-  timeunit 1ns;
+  timeunit 10ns; // Timeunit does not match other declared timenuits. 
   timeprecision 1ns;
 
   I u_I [SIZE-1:0] ();
