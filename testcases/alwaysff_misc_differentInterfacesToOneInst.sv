@@ -1,6 +1,7 @@
 // Assignment via `always_ff` to scalar members of an SVI instance.
 /* Different instances of interface in module ports connected to the
 same instance in top module */
+// NOTE: Lines 20, 35, 62, 94, 99, 103, and 107.
 
 interface I
   ( input var logic i_clk
@@ -14,9 +15,11 @@ interface I
 
 endinterface
 
+
 module M1
   ( I u_I1
   );
+
   localparam bit Z = 1'b0;
   logic a;
 
@@ -24,11 +27,14 @@ module M1
   always_ff @(posedge u_I1.i_clk) u_I1.z <= Z;      // Constant
   always_ff @(posedge u_I1.i_clk) u_I1.y <= 1'b1;   // Literal
   always_ff @(posedge u_I1.i_clk) u_I1.x <= a;      // Signal
+
 endmodule
+
 
 module M2
   ( I u_I2
   );
+
   localparam bit Z = 1'b0;
   logic a;
 
@@ -48,11 +54,14 @@ module M2
       u_I2.x <= 1'b0;
     else
       u_I2.x <= a;      // Signal
+
 endmodule
+
 
 module M3
   ( I u_I3
   );
+
   localparam bit Z = 1'b0;
   logic a;
 
@@ -72,15 +81,30 @@ module M3
       u_I3.x <= 1'b0;
     else
       u_I3.x <= a;      // Signal
+
 endmodule
+
 
 module top
   ( input var logic i_clk
   , input var logic i_srst
   , input var logic i_arst
   );
-  I u_I4 (.*);
-  M1 u_M1 (.u_I1(u_I4));
-  M2 u_M2 (.u_I2(u_I4));
-  M3 u_M3 (.u_I3(u_I4));
+  
+  I u_I4 
+    ( .*
+    );
+  
+  M1 u_M1 
+    ( .u_I1  (u_I4)
+    );
+
+  M2 u_M2 
+    ( .u_I2  (u_I4)
+    );
+
+  M3 u_M3 
+    ( .u_I3  (u_I4)
+    );
+
 endmodule
