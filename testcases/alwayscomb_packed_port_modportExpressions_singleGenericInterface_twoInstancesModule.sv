@@ -1,14 +1,17 @@
 // Assignment via `always_comb` to a packed array of an interface port.
-// Use of modport expressions for slice of a 1D packed array.
+// Use of modport expressions for slices of a 1D packed array.
 /* Single generic interface.Two instantiations of module M with
 different modport views*/
+// NOTE: Lines 25, 26, 36, 37, 40, and 41. 
 
 interface I;
   
   logic [7:0] x;
+
   modport P1
     ( output .p1(x[3:0])
     );
+
   modport P2
     ( output .p2(x[7:4])
     );
@@ -29,6 +32,7 @@ module top
   );
 
   I u_I ();
+
   M u_M1 
     ( u_I.P1 //LSBs
     );
