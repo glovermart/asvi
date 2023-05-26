@@ -9,6 +9,7 @@ interface I;
 
 endinterface
 
+
 module top
   ( input logic en
   , input logic i_clk
@@ -16,8 +17,10 @@ module top
   , output logic [SIZE-1:0]o_a 
   );
   
-  I u_I [SIZE-1:0]();
+  I u_I [SIZE-1:0] ();
+  
   localparam bit a = 1'b1;
+  
   logic [SIZE-1:0] a_a;
 
   genvar i;
@@ -33,8 +36,8 @@ module top
   end
 
   int i_i =0;
-  always_ff @(posedge i_clk ) begin
-    if (i_i >= SIZE )
+  always_ff @(posedge i_clk) begin
+    if (i_i >= SIZE)
       i_i <= 0;
     else begin
       o_a[i_i] <= a_a[i_i];
