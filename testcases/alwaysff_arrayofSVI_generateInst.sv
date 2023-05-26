@@ -21,11 +21,11 @@ module M
   
   for (genvar i = 0; i < SIZE; i++) begin
     always_ff @(posedge i_clk)
-      u_I[i].x = 1'b1; // Literal.
+      u_I[i].x <= 1'b1; // Literal.
     always_ff @(posedge i_clk)
-      u_I[i].y = 1'b0; // Literal.
+      u_I[i].y <= 1'b0; // Literal.
     always_ff @(posedge i_clk)
-      u_I[i].z = 1'b1; // Literal.
+      u_I[i].z <= 1'b1; // Literal.
   end  
   
 endmodule
