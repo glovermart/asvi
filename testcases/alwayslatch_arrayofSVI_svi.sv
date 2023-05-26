@@ -1,6 +1,9 @@
 // Assignment via `always_latch` to scalar members within an SVI interface.
 // Array of SVIs
+
 localparam int SIZE = 8;
+
+
 interface I
   ( input logic i_arst
   , input logic en
@@ -25,6 +28,7 @@ interface I
   
 endinterface
 
+
 module M
   ( I u_I [SIZE-1:0]
   );
@@ -36,6 +40,7 @@ module M
  
 endmodule
 
+
 module top
   ( input logic i_arst
   , input logic en
@@ -43,18 +48,20 @@ module top
   , output logic [SIZE-1:0] o_a
   , output logic [SIZE-1:0] o_b
   );
+  
   I u_I [SIZE-1:0]
     ( .i_arst
     , .en
     , .i_a
     );
+  
   //Multiple instances of M
-  for(genvar i=0; i < SIZE; i++)
+  for(genvar i = 0; i < SIZE; i++)
   M u_M 
     (.u_I
     );
     
-  for (genvar i = 0; i < SIZE; i++) begin
+  for(genvar i = 0; i < SIZE; i++) begin
     assign o_a[i] = u_I[i].o_a;
     assign o_b[i] = u_I[i].o_b;
   end
