@@ -2,7 +2,7 @@
 
 interface I;
 
-  logic [7:0] x; //Packed array x
+  logic [7:0] x; // Packed array x
   
 endinterface
 
@@ -15,8 +15,8 @@ module top
 
   I u_I ();
   
-  always_ff @ (posedge i_clk) begin
-    for(int i=0; i<8;i++) //8 processes/ registers.
+  always_ff @(posedge i_clk) begin
+    for(int i = 0; i < 8; i++) // 8 processes/ registers.
       u_I.x[i] <= i_a;
   end
 

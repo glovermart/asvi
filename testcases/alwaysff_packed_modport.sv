@@ -4,10 +4,12 @@
 
 interface I;
 
-  logic [7:0] x; //Packed array x
+  logic [7:0] x; // Packed array x
+  
   modport P
     ( output x
     );
+
 endinterface
 
 
@@ -18,16 +20,18 @@ module M
   , input logic i_clk
   );
   
-  int i = 0;  
-  always_ff @ (posedge i_clk) 
+  int i = 0;
+
+  always_ff @(posedge i_clk) 
     p.x[i] <= i_a;
   
-  always_ff @ (posedge i_clk)     
+  always_ff @(posedge i_clk)     
     i <= i + 'd1;          
   
   assign o_a = p.x;
 
 endmodule
+
 
 module top
   ( input logic i_a
@@ -36,10 +40,12 @@ module top
   );
 
   I u_I ();
+
   M u_M
-    ( .o_a
+    ( .o_a   // .name port connection style.
     , .i_a
     , .i_clk
     , .p(u_I)
     );
+
 endmodule
