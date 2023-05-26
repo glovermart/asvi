@@ -10,16 +10,19 @@ interface I
   );
 
   logic [7:0] x; //Packed array x
+  
   int i = 0;
-  always_ff @ (posedge i_clk)
+  
+  always_ff @(posedge i_clk)
     x[i] <= i_a;
   
-  always_ff @ (posedge i_clk)
+  always_ff @(posedge i_clk)
     i <= i + 'd1;
  
   assign o_a = x;
   
 endinterface
+
 
 module top
   ( input logic i_a
@@ -27,10 +30,10 @@ module top
   , output logic [7:0] o_a
   );
 
-  I u_I        // .name port connection: Interface I and module top have  
-    ( .i_a      // the same port names.
-    , .i_clk    // Order does not matter with this style.
-    , .o_a      
+  I u_I        // Ordered port connection: Interface I and module top have  
+    ( i_a      // the same port order/position.
+    , i_clk    // The port names do not have to be the same;
+    , o_a      // kept project naming convention.
     );     
 
 endmodule

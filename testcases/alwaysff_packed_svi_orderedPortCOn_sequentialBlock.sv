@@ -1,6 +1,6 @@
 // Assignment via `always_ff` to a packed array within an interface.
 // Write to each bit location every rising edge of i_clk.
-// No for loop.
+// No for loop. Sequential block: Lines 16 to 19.
 // Ordered port connection in module top.
 
 interface I
@@ -10,7 +10,9 @@ interface I
   );
 
   logic [7:0] x; //Packed array x
+  
   int i = 0;
+  
   always_ff @ (posedge i_clk)begin // Introduce sequential block.
     x[i] <= i_a;                   
     i <= i + 'd1;
@@ -19,6 +21,7 @@ interface I
   assign o_a = x;
   
 endinterface
+
 
 module top
   ( input logic i_a
