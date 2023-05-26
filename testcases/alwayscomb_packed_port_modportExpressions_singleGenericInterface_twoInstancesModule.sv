@@ -18,6 +18,7 @@ interface I;
 
 endinterface
 
+
 module M
   ( interface i   //Generic interface
   );
@@ -26,6 +27,7 @@ module M
   always_comb i.p2 = '1; //write 1111
                         
 endmodule
+
 
 module top
   ( output logic [7:0] o_a
