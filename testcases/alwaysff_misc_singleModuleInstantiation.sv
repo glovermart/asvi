@@ -1,4 +1,5 @@
-//Assignment via `always_ff` to scalar members of an SVI port.
+// Assignment via `always_ff` to scalar members of an SVI port.
+// NOTE: Lines 46, 75, and 111.
 
 interface I
   ( output logic z
@@ -8,6 +9,7 @@ interface I
   , input logic i_srst
   , input logic i_arst
   );
+  
   logic w = 1'b1;
 
   modport P
@@ -22,32 +24,41 @@ interface I
 
 endinterface
 
+
 module M1
   ( I.P p
   );
+  
   localparam bit Z = 1'b0;
-  //No reset
+  
+  // No reset
   always_ff @(posedge p.i_clk) p.z <= Z;
   always_ff @(posedge p.i_clk) p.y <= 1'b1;
   always_ff @(posedge p.i_clk) p.x <= p.w;
 
 endmodule
 
+
 module M2
   ( I.P p
   );
+  
   localparam bit Z = 1'b0;
-  M1 u_M1 (.p(p));
-  //Synchronous reset
+  
+  M1 u_M1 
+    ( .p  (p)
+    );
+  
+  // Synchronous reset
   always_ff @(posedge p.i_clk)
     if (p.i_srst)
       p.z <= 1'b1;
     else
       p.z <= Z;
   always_ff @(posedge p.i_clk)
-  if (p.i_srst)
+    if (p.i_srst)
       p.y <= 1'b0;
-  else
+    else
       p.y <= 1'b1;
   always_ff @(posedge p.i_clk)
     if (p.i_srst)
@@ -57,12 +68,18 @@ module M2
 
 endmodule
 
+
 module M3
   ( I.P p
   );
+  
   localparam bit Z = 1'b1;
-  M2 u_M2 (.p(p));
-  //Asynchronous reset
+  
+  M2 u_M2 
+    ( .p  (p)
+    );
+  
+  // Asynchronous reset
   always_ff @(posedge p.i_clk , posedge p.i_arst)
   if (p.i_arst)
     p.z <= 1'b0;
@@ -78,29 +95,25 @@ module M3
     p.x <= 1'b0;
   else
     p.x <= p.w;
+    
 endmodule
 
+
 module top
-  ( input var logic i_clk
-  , input var logic i_srst
-  , input var logic i_arst
+  ( input logic i_clk
+  , input logic i_srst
+  , input logic i_arst
   , output logic z
   , output logic y
   , output logic x
   );
 
-  I u_I (.*);  //  Connect ports.
+  I u_I 
+    ( .* //  Connect ports.
+    );  
   
-  M1 u_M1
-    ( .p(u_I)
-    );
-
-  M2 u_M2
-    ( .p(u_I)
-    );
-
   M3 u_M3
-    ( .p(u_I)
+    ( .p  (u_I)  //  Instantiating M3 instantiates M2 and M1.
     );
 
 endmodule
