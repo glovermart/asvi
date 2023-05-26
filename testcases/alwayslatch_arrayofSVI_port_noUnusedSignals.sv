@@ -8,9 +8,10 @@
 
 /* Removed nets not used in modport to avoid inferred connection to 
  to the input or output of other module (M1 or M2).*/
-// en and i_arst deliberately defined as ouput instead of input pins.
+
 
 localparam int SIZE = 8;
+
 
 interface I;  
   logic y;
@@ -26,21 +27,22 @@ interface I;
 
 endinterface
 
+
 module M1
   ( I.P1 p1[SIZE-1:0]
   , output logic [SIZE-1:0]o_a
-  , output logic en // Must be an input pin.
-  , output logic i_arst // Must be an input pin.
+  , input logic en 
+  , input logic i_arst 
   );
     
-  for(genvar i =0; i< SIZE;i++) begin
+  for(genvar i = 0; i < SIZE; i++) begin
     always_latch begin
       if (!i_arst)
         p1[i].y <= 1'b0;
       else if (en)
         p1[i].y <= 1'b1;
     end
-  assign o_a[i] = p1[i].y;
+    assign o_a[i] = p1[i].y;
   end
 
 endmodule
@@ -51,16 +53,17 @@ endmodule
 module M2
   ( I.P2 p2[SIZE-1:0]
   , output logic [SIZE-1:0]o_b
-  , output logic en // Must be an input pin.
+  , input logic en 
   );
   
-  for(genvar i =0; i< SIZE;i++) begin
+  for(genvar i = 0; i < SIZE; i++) begin
     always_latch
       if (en)
         o_b[i] <= p2[i].y;
   end
 
 endmodule
+
 
 module top
   ( input logic en
@@ -73,15 +76,15 @@ module top
   I u_I [SIZE-1:0] ();
 
   M1 u_M1
-    ( .p1(u_I)
-    , .o_a(o_a)
+    ( .p1   (u_I)
+    , .o_a  (o_a)
     , .en
     , .i_arst 
     );
 
   M2 u_M2
-    ( .p2(u_I)
-    , .o_b(o_b)
+    ( .p2   (u_I)
+    , .o_b  (o_b)
     , .en
     );
 
