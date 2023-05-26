@@ -1,4 +1,6 @@
 // Assignment via `always_comb` to an unpacked array within an interface. 
+// No force-release constructs.
+// NOTE: Lines 14, and 16.
 
 interface I
   ( input logic i_a
@@ -14,6 +16,7 @@ interface I
       x = '{8{i_a}}; // Write all array elements with the same value. 
 
 endinterface
+
 
 module top
   ( input logic i_a
