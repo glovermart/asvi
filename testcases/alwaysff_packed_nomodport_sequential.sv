@@ -1,4 +1,4 @@
-// Assignment via `always_ff` and modport to a packed array within an interface.
+// Assignment via `always_ff`to a packed array within an interface.
 // No modport.
 
 interface I;
@@ -7,6 +7,7 @@ interface I;
 
 endinterface
 
+
 module top
   ( input logic i_a
   , input logic i_clk
@@ -14,9 +15,10 @@ module top
   );
 
   I u_I ();
+
   int i = 0;
   
-  always_ff @ (posedge i_clk)begin 
+  always_ff @(posedge i_clk) begin // Introduce sequential block; begin...end. 
     u_I.x[i] <= i_a;
     i <= i + 'd1; // Single processes with clock enable inferred.
   end             // Each register is written @ i_clk posedge.
