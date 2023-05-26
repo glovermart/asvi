@@ -28,7 +28,7 @@ module M
   logic b [SIZE:0];
   logic c [SIZE:0];
   
-  for (genvar i = 0;i < SIZE; i++)begin
+  for (genvar i = 0; i < SIZE; i++) begin
     assign u_I[i].x = a[i]; // Signal
     assign u_I[i].y = b[i]; // Signal
     assign u_I[i].z = c[i]; // Signal
@@ -39,7 +39,7 @@ module M
   // integer issues.
   // Assign and intermediate variables used as a workaround.
   always_ff @(posedge i_clk) begin
-    for (int i=0;i<SIZE;i++)begin
+    for (int i = 0; i < SIZE; i++) begin
       a[i] <= 1'b1; // Literal
       b[i] <= 1'b0; // Literal
       c[i] <= 1'b1; // Literal
@@ -58,13 +58,13 @@ module top
   timeunit 1ns;
   timeprecision 1ps;
   
-  I u_I [SIZE](); // Inherit timescale from top module. LRM 3.14.2.3
+  I u_I [SIZE] (); // Inherit timescale from top module. LRM 3.14.2.3.
 
-  M u_M // Inherit timescale from top module. LRM 3.14.2.3
+  M u_M  // Inherit timescale from top module. LRM 3.14.2.3.
     ( .* // Implicit port connection. u_I from module M's port and u_I from 
     );   // interface instance in top module.
   
-  for (genvar i=0;i<SIZE;i++)begin
+  for (genvar i = 0; i < SIZE; i++) begin
     assign o_a[i] = u_I[i].x;
     assign o_b[i] = u_I[i].y;
     assign o_c[i] = u_I[i].z;
