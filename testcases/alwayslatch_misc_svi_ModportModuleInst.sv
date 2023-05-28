@@ -8,6 +8,7 @@ interface I
   , input logic [3:0] i_a
   , output logic [3:0] o_a
   );
+
   modport P
     ( input x
     , input i_clk
@@ -19,7 +20,9 @@ interface I
   always_latch
     if (i_en)
       x <= i_a;
+
 endinterface
+
 
 module M1
   ( I.P p
@@ -30,6 +33,7 @@ module M1
 
 endmodule
 
+
 module M2
   ( I.P p
   );
@@ -38,6 +42,7 @@ module M2
     p.o_a[2] <= p.x[1];
    
 endmodule
+
 
 module M3
   ( I.P p
@@ -48,6 +53,7 @@ module M3
      
 endmodule
 
+
 module M4
   ( I.P p
   );
@@ -57,17 +63,32 @@ module M4
 
 endmodule
 
-module top
- ( input logic i_clk
- , input logic i_en
- , output logic [3:0] o_a
- , input logic [3:0] i_a
- );
 
-  I u_I(.*);
-  M1 u_M1 (.p(u_I.P));
-  M2 u_M2 (.p(u_I.P));
-  M3 u_M3 (.p(u_I.P));
-  M4 u_M4 (.p(u_I.P));
+module top
+  ( input logic i_clk
+  , input logic i_en
+  , output logic [3:0] o_a
+  , input logic [3:0] i_a
+  );
+
+  I u_I
+    ( .*
+    );
+
+  M1 u_M1 
+    ( .p  (u_I.P)
+    );
+
+  M2 u_M2 
+    ( .p  (u_I.P)
+    );
+
+  M3 u_M3 
+    ( .p  (u_I.P)
+    );
+
+  M4 u_M4 
+    ( .p  (u_I.P)
+    );
 
 endmodule
