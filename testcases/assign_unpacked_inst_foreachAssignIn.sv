@@ -1,5 +1,6 @@
 // Assignment via `assign` to an unpacked array of an interface instance.
 // Use `foreach` loop to iterate through array elements.
+// NOTE: Lines 20 and 21.
 
 interface I;
 
@@ -15,9 +16,9 @@ module top
 
   I u_I ();
   
-  assign    // Some tools output error messages during read step.
+    // Some tools output error messages during read step.
     foreach (u_I.x[i])
-      u_I.x[i] = i_a; 
+      assign u_I.x[i] = i_a; 
   
   assign o_a = u_I.x;
 
