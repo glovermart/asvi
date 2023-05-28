@@ -1,20 +1,21 @@
 // Assignment via `force` to scalar members of an SVI interface.
 // Use of modport during module instantiation.
 // Array of SVIs.
-
-
 // Output a vector (SVI 1D array instance) of 0's,1's,z's.
 
 interface I;
+  
   logic z;
   
   modport P
     ( output z  //changed modport view to output
     );
+
 endinterface
 
+
 module M
-  ( I u_I[7:0]
+  ( I u_I [7:0]
   , output logic [7:0] o_a
   , input bit en
   , input var logic i_a
@@ -26,7 +27,7 @@ module M
   for (genvar i = 0; i < 8; i++) begin
     always_comb
       if (en)
-       force u_I[i].z = 1'bz;
+        force u_I[i].z = 1'bz;
      else
        release u_I[i].z;
   end
@@ -36,19 +37,20 @@ module M
   
 endmodule
 
+
 module top
   ( input bit en
   , input var logic i_a
   , output logic [7:0] o_a
   );
 
- I u_I [7:0]();
+ I u_I [7:0] ();
 
  M u_M 
-  ( .u_I(u_I.P) // use modport view P
-  , .o_a(o_a)
-  , .en(en)
-  , .i_a(i_a)
+  ( .u_I    (u_I.P) // use modport view P
+  , .o_a    (o_a)
+  , .en     (en)
+  , .i_a    (i_a)
   );
 
 endmodule
