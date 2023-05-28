@@ -10,6 +10,7 @@ interface I
 
 endinterface
 
+
 module top
   ( input logic i_a
   , output logic o_a [7:0]

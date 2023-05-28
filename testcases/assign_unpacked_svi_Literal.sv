@@ -11,13 +11,14 @@ interface I
 
 endinterface
 
+
 module top
   ( input logic i_a
   , output logic o_a [7:0]
   );
 
   I u_I 
-    ( .i_a(i_a)    
+    ( .i_a  (i_a)    
     );
 
   assign o_a = u_I.x; // Copy values to output.
