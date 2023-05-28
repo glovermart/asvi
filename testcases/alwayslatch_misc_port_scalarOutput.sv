@@ -15,6 +15,7 @@ interface I
 
 endinterface
 
+
 module M1
   ( I.P p1
   );
@@ -24,6 +25,7 @@ module M1
       p1.o_a <= p1.i_a;
 
 endmodule
+
 
 module M2
   ( I.P p1
@@ -39,6 +41,7 @@ module M2
 
 endmodule
 
+
 module M3
   ( I.P p1
   );
@@ -53,8 +56,9 @@ module M3
 
 endmodule
 
+
 module M4
-  ( I.P p2
+  ( I.P p2  // Another interface instance of modport.
   );
 
   always_latch
@@ -62,10 +66,11 @@ module M4
       p2.o_a <= p2.i_a;
 
   M3 u_M3 
-    ( .p1(p2)
+    ( .p1  (p2)
     );
 
 endmodule
+
 
 module top
   ( input var logic i_en
@@ -74,8 +79,9 @@ module top
   );
 
   I u_I (.*);
+
   M4 u_M4
-    ( .p2(u_I)
+    ( .p2  (u_I)
     );
 
 endmodule
