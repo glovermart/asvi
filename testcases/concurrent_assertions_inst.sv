@@ -13,18 +13,22 @@ interface I
 
 endinterface
 
+
 module top 
   ( output logic [3:0] o_q
   , input logic i_clk
   , input logic i_srst
   );
+
   I u_I 
     (.*
     );
+
   always_ff @(posedge i_clk) begin
     o_q[0] <= ~o_q[3] & i_srst;
     o_q[1] <= o_q[0];
     o_q[2] <= o_q[1];
     o_q[3] <= o_q[2];
   end
+
 endmodule
