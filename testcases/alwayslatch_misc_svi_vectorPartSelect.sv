@@ -1,5 +1,5 @@
 // Assignment via `always_latch` to a scalar member within an SVI.
-// Rverese part of a vector.
+// Reverse part of a vector.
 
 interface I
   ( input logic i_clk
@@ -7,6 +7,7 @@ interface I
   , input logic [3:0] i_a
   , output logic [3:0] o_a
   );
+  
   modport P
     ( input x
     , input i_clk
@@ -18,7 +19,9 @@ interface I
   always_latch
     if (i_en)
       x <= i_a;
+
 endinterface
+
 
 module M1
   ( I.P p
@@ -28,9 +31,11 @@ module M1
     p.o_a[3] <= p.x[0];
   
   logic [3:0] a;
+
   always_comb a = ~p.x;
 
 endmodule
+
 
 module M2
   ( I.P p
@@ -39,27 +44,31 @@ module M2
 
   always_ff @(posedge p.i_clk)
     p.o_a[2] <= p.x[1];
+
   M1 u_M1 
-    ( .p(p)
+    ( .p  (p)
     );
+
   always_comb o_c = u_M1.a;
+
 endmodule
 
+
 module top
- ( input logic i_clk
- , input logic i_en
- , output logic [3:0] o_a
- , output logic [3:0] o_b
- , input logic [3:0] i_a
- );
+  ( input logic i_clk
+  , input logic i_en
+  , output logic [3:0] o_a
+  , output logic [3:0] o_b
+  , input logic [3:0] i_a
+  );
 
   I u_I 
     ( .*
     );
   
   M2 u_M2 
-    ( .p(u_I)
-    , .o_c(o_b)
+    ( .p    (u_I)
+    , .o_c  (o_b)
     );
 
 endmodule
