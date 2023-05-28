@@ -7,11 +7,15 @@ interface I
   , input logic i_a
   , output logic o_a
   );
+  
   logic x;
+  
   always_latch
     if (i_en)
       x <= i_a;
+
  endinterface
+
 
  module M1
    ( I u_I
@@ -23,6 +27,7 @@ interface I
 
  endmodule
 
+
  module M2
    ( I u_I
    );
@@ -32,10 +37,12 @@ interface I
      );
 
    logic a;
+
    always_ff @(posedge u_I.i_clk)
      a <= ~u_M1.o_a;
 
  endmodule
+
 
  module M3
    ( I u_I
@@ -45,10 +52,13 @@ interface I
      ( .*
      );
 
-   logic a;  
+   logic a; 
+
    always_ff @(posedge u_I.i_clk)
      a <= u_M2.a;
+
  endmodule
+
 
  module M4
    ( I u_I
@@ -63,6 +73,7 @@ interface I
 
  endmodule
 
+
  module top
   ( input logic i_clk
   , input logic i_en
@@ -71,8 +82,9 @@ interface I
   );
 
   I u_I(.*);
+  
   M4 u_M4 
-    ( .u_I(u_I)
+    ( .u_I  (u_I)
     );
 
  endmodule
