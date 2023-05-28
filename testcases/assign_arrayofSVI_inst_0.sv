@@ -2,6 +2,8 @@
 // Array of SVIs
 
 localparam int SIZE = 8;
+
+
 interface I;
 
   logic x;
@@ -10,14 +12,16 @@ interface I;
 
 endinterface
 
+
 module M
-  ( I u_I[SIZE-1:0]
+  ( I u_I [SIZE-1:0]
   );
 
   localparam bit Z = 1'b0;
+  
   logic a;
 
-  for (genvar i=0; i<SIZE; i++) begin  
+  for (genvar i = 0; i < SIZE; i++) begin  
     assign u_I[i].x = Z;      // Constant
     assign u_I[i].y = 1'b1;   // Literal
     assign u_I[i].z = a;      // Signal
@@ -25,19 +29,20 @@ module M
 
 endmodule
 
+
 module top
   ( output logic [SIZE-1:0] o_a
   , output logic [SIZE-1:0] o_b
   , output logic [SIZE-1:0] o_c
   );
   
-  I u_I[SIZE-1:0] ();
+  I u_I [SIZE-1:0] ();
   
   M u_M 
     ( .*
     );
 
-  for (genvar i=0;i<SIZE;i++)begin
+  for (genvar i = 0; i < SIZE; i++) begin
     assign o_a[i] = u_I[i].x;      
     assign o_b[i] = u_I[i].y;  
     assign o_c[i] = u_I[i].z;    
