@@ -1,7 +1,5 @@
 // Assignment via `force` to an unpacked array of an SVI instance.
-// Use modport expression to force the 4 LSBs to high-impedance state (z).
-/* At module instantiation, modport view is removed i.e.
-(.i(u_I) instead of .i(u_I.P)) */
+// Use modport expression to force LSBs to high-impedance state (Z)
 
 interface I;
   
@@ -12,6 +10,7 @@ interface I;
     );
 
 endinterface
+
 
 module M
   ( interface i  // Generic interface i.
@@ -26,6 +25,7 @@ module M
 
 endmodule
 
+
 module top
   ( input bit i_en
   , input var logic i_a
@@ -34,13 +34,13 @@ module top
 
   I u_I ();
   
-  assign u_I.z = '{8{i_a}}; // Fill the array with some bit of the same value.
+  assign u_I.z = '{8{i_a}}; // Fill the array with bits of the same value.
 
   M u_M 
-    ( .i_en(i_en)
-    , .i(u_I)
+    ( .i_en  (i_en)
+    , .i     (u_I.P)
     );
 
-  assign o_a = u_I.z; // Copy/output the array elements.
+  assign o_a = u_I.z; // Copy/output the array content.
 
 endmodule
