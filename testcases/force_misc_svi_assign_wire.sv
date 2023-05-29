@@ -8,9 +8,11 @@ interface I(input var logic i_srst);
   wire y;
   wire x;
 
-  always_comb force z = i_srst ? (x & y) : (x | y);
+  always_comb 
+    force z = i_srst ? (x & y) : (x | y);
 
 endinterface
+
 
 module M
   ( I u_I
@@ -28,20 +30,29 @@ module M
 
 endmodule
 
+
 module top
   ( input logic i_sclk
   , output logic o_a
   , output logic i_srst
   );
 
-  I u_I(.i_srst(i_srst));
-  M u_M1 (u_I);
-  M u_M2 (u_I);
+  I u_I
+    ( .i_srst  (i_srst)
+    );
+
+  M u_M1 
+    (u_I
+    );
+
+  M u_M2 
+    (u_I
+    );
 
   logic a;
   logic [3:0] counter;
 
-  always_ff @ (posedge i_sclk) begin
+  always_ff @(posedge i_sclk) begin
     if (i_srst)
       counter <= 0;
     else
