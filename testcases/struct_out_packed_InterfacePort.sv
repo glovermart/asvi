@@ -1,18 +1,22 @@
 // Defining a struct outside an interface and module.
+// Instantiate struct as output port of interface.
+// Declare struct as packed.
 
-typedef struct 
+typedef struct packed 
   { logic [7:0] data;
   } data_t;
 
-data_t data;
 
 interface I
   ( input logic i_clk
+  , output data_t o_a
   );
 
   always_ff @ (posedge i_clk)
-    data.data <= '1;
+    o_a.data <= '1;
+    
 endinterface
+
 
 module top
   ( input logic i_clk
@@ -20,8 +24,8 @@ module top
   );
 
   I u_I 
-  ( .i_clk
-  );
-  assign o_a = data.data;
+    ( .i_clk
+    , .o_a
+    );
+    
 endmodule
-
