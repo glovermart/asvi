@@ -9,6 +9,7 @@ interface I
   , input logic i_b
   , output logic o_a
   );
+  
   logic z;
   
   always_comb begin
@@ -21,6 +22,7 @@ interface I
   end
 endinterface
 
+
 module top
   ( input logic i_a
   , input logic i_b
@@ -32,4 +34,3 @@ module top
     );
   
 endmodule
-
