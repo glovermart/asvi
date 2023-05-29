@@ -7,7 +7,9 @@ interface I;
   task adder (input int i_a, i_b, output int o_a); // Define task.
     o_a = i_a + i_b;
   endtask
+
 endinterface
+
 
 module top
   ( input int i_a
@@ -16,5 +18,7 @@ module top
   );
 
   I u_I ();
+  
   always_comb u_I.adder(i_a,i_b,o_a); // 'Import' task.
+
 endmodule

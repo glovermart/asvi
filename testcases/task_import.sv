@@ -12,7 +12,9 @@ interface I;
   modport P
     ( import adder
     );
+
 endinterface
+
 
 module M
   ( I.P p
@@ -22,7 +24,9 @@ module M
   );
 
   always_comb p.adder(i_a,i_b,o_a); // Instantiate  task.
+
 endmodule
+
 
 module top
   ( input int i_a
@@ -31,8 +35,10 @@ module top
   );
 
   I u_I ();
+  
   M u_M
-    ( .p(u_I)
+    ( .p  (u_I)
     , .*
     );
+
 endmodule
