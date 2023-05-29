@@ -1,8 +1,8 @@
- /* Elaboration time assertion experiment using a 
- generate block + functionality within an interface */
- /* This testcase is modified from "Who Put Assertions In My RTL Code? And Why?
- How RTL Design Engineers Can Benefit from the Use of 
- SystemVerilog Assertions" by Stuart Sutherland, SNUG 2015.Example 17, Page 16.*/
+/* Elaboration time assertion experiment using a 
+generate block + functionality within an interface */
+/* This testcase is modified from "Who Put Assertions In My RTL Code? And Why?
+How RTL Design Engineers Can Benefit from the Use of 
+SystemVerilog Assertions" by Stuart Sutherland, SNUG 2015.Example 17, Page 16.*/
  
 localparam MUX_CONFIG_S = 1;
 localparam MUX_CONFIG_N = 8;
@@ -14,6 +14,7 @@ interface I
    , input tri0    [N-1:0] i_c, i_d // i_c and i_d pull down if unconnected
    , input logic   [S-1:0] i_sel
    );
+  
   generate
     if (!(S inside {[1:2]})) $fatal(0,"In %m S=%0d; must be 1 or 2", S);
   endgenerate
@@ -29,17 +30,17 @@ interface I
  
 endinterface
  
- module top // 2:1 MUX (S == 1) or 4:1 MUX (S == 2)
-   #(parameter N = MUX_CONFIG_N, S = MUX_CONFIG_S)
-   ( output logic  [N-1:0] o_y
-   , input logic   [N-1:0] i_a, i_b // i_a and i_b should always be connected
-   , input tri0    [N-1:0] i_c, i_d // i_c and i_d pull down if unconnected
-   , input logic   [S-1:0] i_sel
-   );
- 
-   I u_I 
-   ( .*
-   );
- 
- endmodule
 
+module top // 2:1 MUX (S == 1) or 4:1 MUX (S == 2)
+  #(parameter N = MUX_CONFIG_N, S = MUX_CONFIG_S)
+  ( output logic  [N-1:0] o_y
+  , input logic   [N-1:0] i_a, i_b // i_a and i_b should always be connected
+  , input tri0    [N-1:0] i_c, i_d // i_c and i_d pull down if unconnected
+  , input logic   [S-1:0] i_sel
+  );
+
+  I u_I 
+    ( .*
+    );
+
+endmodule
