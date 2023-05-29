@@ -4,6 +4,7 @@
 interface I
   ( input logic i_clk
   );
+  
   typedef struct
     { logic [7:0] data;
     } data_t;
@@ -12,7 +13,9 @@ interface I
 
   always_ff @ (posedge i_clk)
     data.data <= '1;
+
 endinterface
+
 
 module top
   ( input logic i_clk
@@ -20,8 +23,10 @@ module top
   );
 
   I u_I 
-  ( .i_clk
-  );
+    ( .i_clk
+    );
+
   assign o_a = u_I.data.data;
+
 endmodule
 
