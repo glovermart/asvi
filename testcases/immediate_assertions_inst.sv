@@ -5,8 +5,11 @@ SNUG San Jose 2006, Page 5
 // The example has been modified.
 
 interface I;
+  
   logic z;
+
 endinterface
+
 
 module top 
   ( input logic i_a
@@ -15,6 +18,7 @@ module top
   );
   
   I u_I ();
+
   always_comb begin
     assert final (^u_I.z !== ’x) 
       else $error("u_I.z = X");
@@ -23,4 +27,5 @@ module top
     else
       o_a = i_b;
   end
+  
 endmodule
