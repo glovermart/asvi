@@ -1,14 +1,18 @@
 // Assignment via `force` to scalar members of an SVI instance.
+// In module M1, declare input pin i_b as variable.
+// NOTE: Line 14.
 
 interface I;
+  
   logic z;
   bit y;
+
 endinterface
 
 
 module M1
   ( I u_I
-  , input logic i_b 
+  , input var logic i_b // Declare as var
   );
 
   assign u_I.z = i_b;
@@ -18,6 +22,7 @@ module M1
       force u_I.z = 1'bz;
 
 endmodule
+
 
 module M2
   ( I u_I
@@ -29,14 +34,21 @@ module M2
 
 endmodule
 
+
 module top
   ( output logic o_a
   , input logic i_clk
   );
 
   I u_I ();
-  M1 u_M1 (.u_I(u_I));
-  M2 u_M2 (.u_I(u_I));
+  
+  M1 u_M1 
+    ( .u_I  (u_I)
+    );
+
+  M2 u_M2 
+    ( .u_I  (u_I)
+    );
 
   always_ff @(posedge i_clk) begin
     o_a <= u_I.z;
