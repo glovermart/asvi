@@ -16,11 +16,13 @@ interface I;
   modport P1
     ( import adder
     );
+
   modport P2
     ( import subtractor
     );
 
 endinterface
+
 
 module M1
   ( I.P1 p1
@@ -30,7 +32,9 @@ module M1
   );
 
   always_comb p1.adder(i_a,i_b,o_a); // Call the adder function.
+
 endmodule
+
 
 module M2
   ( I.P2 p2
@@ -40,7 +44,9 @@ module M2
   );
 
   always_comb p2.subtractor(i_a,i_b,o_b); // Call the subtractor function.
+
 endmodule
+
 
 module top
   ( input int i_a
@@ -49,14 +55,16 @@ module top
   , output int o_b
   );
 
-I u_I ();
-M1 u_M1
-  ( .p1(u_I)
-  , .*
-  );
+  I u_I ();
+  
+  M1 u_M1
+    ( .p1   (u_I)
+    , .*
+    );
 
-M2 u_M2
-  ( .p2(u_I)
-  , .*
-  );
+  M2 u_M2
+    ( .p2   (u_I)
+    , .*
+    );
+
 endmodule

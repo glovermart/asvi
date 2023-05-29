@@ -7,7 +7,9 @@ interface I;
   function automatic void adder (input int i_a, i_b, output int o_a); // Define function.
     o_a = i_a + i_b;
   endfunction
+
 endinterface
+
 
 module top
   ( input int i_a
@@ -16,5 +18,7 @@ module top
   );
 
   I u_I ();
+  
   always_comb u_I.adder(i_a,i_b,o_a); // Call function.
+
 endmodule
