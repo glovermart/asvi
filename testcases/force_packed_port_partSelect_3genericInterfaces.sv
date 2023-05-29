@@ -21,6 +21,7 @@ interface I
 
 endinterface
 
+
 module M
   ( interface i  // Generic interfaces i,j,and k.
   , interface j
@@ -44,6 +45,7 @@ module M
  
 endmodule
 
+
 module top
   ( input bit en
   , input var logic i_a
@@ -55,10 +57,10 @@ module top
     );
   
   M u_M1 
-    ( .en(en)
-    , .i(u_I.P1) // Port P1 only
-    , .j(u_I.P2) // Port P2 only
-    , .k(u_I) // Unrestricted view
+    ( .en  (en)
+    , .i   (u_I.P1) // Port P1 only
+    , .j   (u_I.P2) // Port P2 only
+    , .k   (u_I)    // Unrestricted view
     );
 
   assign o_a = u_I.z; // Copy/output the array content.
