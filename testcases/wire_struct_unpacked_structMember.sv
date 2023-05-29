@@ -3,11 +3,13 @@
 // Struct defined as a wire.
 
 interface I;
-   wire struct 
+   
+  wire struct 
     { logic [7:0] data;
     } data;
  
 endinterface
+
 
 module top
   ( input logic i_clk
@@ -15,8 +17,10 @@ module top
   );
   
   I u_I ();
-  always_ff @ (posedge i_clk)
+  
+  always_ff @(posedge i_clk)
     u_I.data.data <= '1;
   
-  assign o_a = u_I.data; // struct name only
+  assign o_a = u_I.data.data;
+
 endmodule
