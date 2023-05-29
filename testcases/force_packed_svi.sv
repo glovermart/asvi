@@ -8,6 +8,7 @@ interface I
   );
 
   logic [7:0]z;
+  
   assign z = {8{i_a}}; // Fill the vector with some bit of the same value.
 
   always_comb
@@ -16,6 +17,7 @@ interface I
     else
       release z;
   assign o_a = z;
+
 endinterface
 
 
