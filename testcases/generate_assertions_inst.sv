@@ -5,13 +5,16 @@ How RTL Design Engineers Can Benefit from the Use of
 SystemVerilog Assertions" by Stuart Sutherland, SNUG 2015.Example 17, Page 16.*/
 
 localparam MUX_CONFIG = 1;
+
+
 interface I
   #(parameter S = MUX_CONFIG);
- generate
-   if (!(S inside {[1:2]})) $fatal(0,"In %m S=%0d; must be 1 or 2", S);
- endgenerate
+  generate
+    if (!(S inside {[1:2]})) $fatal(0,"In %m S=%0d; must be 1 or 2", S);
+  endgenerate
 
 endinterface
+
 
 module top // 2:1 MUX (S == 1) or 4:1 MUX (S == 2)
   #(parameter N = 8, S = MUX_CONFIG)
@@ -21,7 +24,8 @@ module top // 2:1 MUX (S == 1) or 4:1 MUX (S == 2)
   , input logic   [S-1:0] i_sel
   );
   
-  I u_I (); 
+  I u_I ();
+
   always_comb begin
     case (i_sel)
       2'b00: o_y = i_a;

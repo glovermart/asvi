@@ -10,10 +10,11 @@ interface I
     ( output x   
     );
    
-  for (genvar i = 0; i < 8 ; i++) // Assign with generate block within interface.
+  for (genvar i = 0; i < 8; i++) // Assign with generate block within interface.
     assign x[i] = i_a;
 
 endinterface
+
 
 module top
   ( input logic i_a

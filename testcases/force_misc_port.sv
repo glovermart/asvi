@@ -1,6 +1,7 @@
 // Assignment via `force` to scalar members of an SVI port.
 
 interface I;
+  
   logic [7:0] z;
   logic [7:0] y;
 
@@ -29,6 +30,7 @@ module M1
 
 endmodule
 
+
 module M2
   ( I u_I
   , input logic [7:0] i_a
@@ -46,6 +48,7 @@ module M2
 
 endmodule
 
+
 module top
   ( input logic [7:0] i_a
   , input logic [7:0] i_b
@@ -54,6 +57,7 @@ module top
   );
 
   I u_I();
+  
   M1 u_M1
     ( u_I.P1
     );
@@ -72,6 +76,7 @@ module top
   always_comb force u_M2.i_b = i_srst ? 8'hxx : c;
 
   logic [7:0] a;
+  
   always_comb a = u_M1.o_a;
   assign o_c = a;
 

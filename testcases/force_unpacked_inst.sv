@@ -15,7 +15,7 @@ module top
 
   I u_I ();
   
-  assign u_I.z = '{8{i_a}}; // Fill the array with some bit of the same value.
+  assign u_I.z = '{8{i_a}}; // Fill the array with bits of the same value.
 
   always_comb
     if (en)

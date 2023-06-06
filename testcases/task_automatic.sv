@@ -10,6 +10,7 @@ interface I;
 
 endinterface
 
+
 module top
   ( input int i_a
   , input int i_b
@@ -17,6 +18,7 @@ module top
   );
 
   I u_I ();
+
   always_comb u_I.adder(i_a,i_b,o_a);
 
 endmodule

@@ -13,6 +13,7 @@ interface I;
 
 endinterface
 
+
 module M1
   ( I u_I
   , output logic o_b
@@ -21,6 +22,7 @@ module M1
   assign o_b = ~u_I.y | (u_I.x ^ u_I.z);
 
 endmodule
+
 
 module M2
   ( I u_I
@@ -31,6 +33,7 @@ module M2
 
 endmodule
 
+
 module top
   ( input logic i_a
   , output logic o_b
@@ -39,11 +42,11 @@ module top
   I u_I ();
   
   M1 u_M1
-    ( .u_I(u_I)
+    ( .u_I  (u_I)
     );
   
   M2 u_M2
-    ( .u_I(u_I)
+    ( .u_I  (u_I)
     );
 
   assign o_b = ~(u_M2.o_b & u_M1.o_b) ^ (i_a & 1'b1);

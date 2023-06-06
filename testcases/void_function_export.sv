@@ -3,13 +3,17 @@
 // adder method called in another module.
 
 interface I;
+  
   modport P1
     ( import function adder (input int i_a, i_b, output int o_a)
     );
+
   modport P2
     ( export adder
     );
+
 endinterface
+
 
 module M1
   ( interface j
@@ -20,6 +24,7 @@ module M1
   endfunction
 
 endmodule
+
 
 module M2
   ( interface i // Generic interface.
@@ -32,6 +37,7 @@ module M2
 
 endmodule
 
+
 module top
   ( input int i_a
   , input int i_b
@@ -39,9 +45,11 @@ module top
   );
 
   I u_I ();
+  
   M1 u_M1 
     ( u_I.P2
     );
+
   M2 u_M2
     ( u_I.P1
     , i_a
