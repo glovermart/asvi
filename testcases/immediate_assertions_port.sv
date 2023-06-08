@@ -23,7 +23,7 @@ module M
   );
 
   always_comb begin
-    assert final (^p.z !== ’x)
+    assert final (^p.z !== 'x)
       else $error("p.z = X");
     if (p.z)
       o_a = i_a;

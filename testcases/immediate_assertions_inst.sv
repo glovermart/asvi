@@ -20,7 +20,7 @@ module top
   I u_I ();
 
   always_comb begin
-    assert final (^u_I.z !== ’x) 
+    assert final (^u_I.z !== 'x)
       else $error("u_I.z = X");
     if (u_I.z)
       o_a = i_a;

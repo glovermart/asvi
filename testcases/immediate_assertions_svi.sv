@@ -13,7 +13,7 @@ interface I
   logic z;
 
   always_comb begin
-    assert final (^z !== ’x)
+    assert final (^z !== 'x)
       else $error("z = x");
     if (z)
       o_a = i_a;
