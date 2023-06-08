@@ -17,9 +17,9 @@ interface I
   logic y;
 
   logic Z = 1'b0;
- 
+
   assign y = Z;
-  assign x = i_a; 
+  assign x = i_a;
 
   assign o_a = y;
   assign o_b = x;
@@ -31,11 +31,11 @@ module top
   , output logic [SIZE-1:0] o_a
   , output logic [SIZE-1:0] o_b
   );
-  
-  I u_I[SIZE-1:0] 
+
+  I u_I[SIZE-1:0]
     ( .i_a
     , .o_a
     , .o_b
     );
-  
+
 endmodule

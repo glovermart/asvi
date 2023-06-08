@@ -3,7 +3,7 @@
 // NOTE: Line 14.
 
 interface I;
-  
+
   logic z;
   bit y;
 
@@ -41,12 +41,12 @@ module top
   );
 
   I u_I ();
-  
-  M1 u_M1 
+
+  M1 u_M1
     ( .u_I  (u_I)
     );
 
-  M2 u_M2 
+  M2 u_M2
     ( .u_I  (u_I)
     );
 
@@ -56,7 +56,7 @@ module top
   end
 
   logic  [2:0] counter;
-  
+
   always_ff @(posedge i_clk) begin
     counter <= counter + 3'h1;
     if (counter == 3'h5) begin

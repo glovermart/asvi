@@ -3,7 +3,7 @@
 // NOTE: Lines 9, 10, and 21.
 
 interface I;
-  
+
   logic [7:0] x;
 
   always_comb x[3:0] = '0; // Write 0000.

@@ -2,9 +2,9 @@
 // Use modport expression to force LSBs to high-impedance state (z)
 
 interface I;
-  
+
   logic [7:0]z;
-  
+
   modport P1
     ( output .p1(z[3:0]) // LSBs
     );
@@ -14,15 +14,15 @@ endinterface
 
 module M
   ( interface i  // Generic interface i.
-  , input bit en 
+  , input bit en
   );
- 
+
   always_comb
     if (en)
       force i.p1 = 'z;
     else
       release i.p1;
-      
+
 endmodule
 
 
@@ -33,10 +33,10 @@ module top
   );
 
   I u_I ();
-  
+
   assign u_I.z = {8{i_a}}; // Fill the vector with some bit of the same value.
 
-  M u_M 
+  M u_M
     ( .en(en)
     , .i(u_I.P1)
     );

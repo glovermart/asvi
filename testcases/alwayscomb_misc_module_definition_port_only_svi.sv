@@ -18,7 +18,7 @@ endinterface
 
 
 module M
-  ( I ifc_I // Interface instance in module port. 
+  ( I ifc_I // Interface instance in module port.
   );
   // Only module port is defined during module definition.
 endmodule

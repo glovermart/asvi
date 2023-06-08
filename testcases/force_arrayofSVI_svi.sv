@@ -2,10 +2,10 @@
 // Array of SVIs
 
 interface I;
-  
+
   logic z;
 
-  always_comb 
+  always_comb
     force z = '0;
 
 endinterface
@@ -17,10 +17,10 @@ module top
   );
 
   I u_I [7:0] ();
-  
+
   for (genvar i = 0; i < 8; i++)
     assign u_I[i].z = i_a;
- 
+
   for (genvar i = 0; i < 8; i++)
     assign o_a[i] = u_I[i].z;
 

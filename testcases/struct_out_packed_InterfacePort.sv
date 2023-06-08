@@ -2,7 +2,7 @@
 // Instantiate struct as output port of interface.
 // Declare struct as packed.
 
-typedef struct packed 
+typedef struct packed
   { logic [7:0] data;
   } data_t;
 
@@ -14,7 +14,7 @@ interface I
 
   always_ff @ (posedge i_clk)
     o_a.data <= '1;
-    
+
 endinterface
 
 
@@ -23,9 +23,9 @@ module top
   , output logic [7:0] o_a
   );
 
-  I u_I 
+  I u_I
     ( .i_clk
     , .o_a
     );
-    
+
 endmodule

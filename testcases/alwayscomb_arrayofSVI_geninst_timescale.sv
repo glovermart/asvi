@@ -1,7 +1,7 @@
 /* Assignment via `always_comb` from scalar members of an SVI array's elements
  to a generate-loop of module non-array SVI port. */
 // Demonstrate the use of timescale keywords.
-// NOTE: Lines 11, 12, 33, 34, 52, and 53.  
+// NOTE: Lines 11, 12, 33, 34, 52, and 53.
 
 localparam int SIZE = 8;
 
@@ -28,14 +28,14 @@ module M
   , output logic o_a
   , output logic o_b
   );
-  
+
   // Timescale keywords must be replicated in all modules and interfaces.
   timeunit 1ns;
   timeprecision 1ps;
 
-  always_ff @(posedge i_clk) 
+  always_ff @(posedge i_clk)
     o_a <= u_I.x; // Signal
-  
+
   always_ff @(posedge i_clk)
     o_b <= u_I.y; // Signal
 
@@ -49,7 +49,7 @@ module top
   );
 
   // Timescale keywords must be replicated in all modules and interfaces.
-  timeunit 10ns; // Timeunit does not match other declared timenuits. 
+  timeunit 10ns; // Timeunit does not match other declared timenuits.
   timeprecision 1ns;
 
   I u_I [SIZE-1:0] ();
@@ -78,7 +78,7 @@ module top
   // Use procedural loop block - observe value assignments per clock cycle.
   // Generate blocks get evaluated during elaboration time.
   always_ff @(posedge i_clk) begin
-    for (int i = 0; i < SIZE; i++) 
+    for (int i = 0; i < SIZE; i++)
       a_q[i] <= a;
       b_q[i] <= b;
   end

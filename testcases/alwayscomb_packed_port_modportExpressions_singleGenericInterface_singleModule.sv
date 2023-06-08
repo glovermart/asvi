@@ -4,9 +4,9 @@ slices of a 1D packed array. */
 // NOTE: Lines 11, 15, 22, 25, 26, 38, and 39.
 
 interface I;
-  
+
   logic [7:0] x; // Packed array.
-  
+
   modport P1
     ( output .p1(x[3:0]) // Modport expression; LSBs.
     );
@@ -34,7 +34,7 @@ module top
 
   I u_I (); // Interface instance.
 
-  M u_M 
+  M u_M
     ( u_I.P1 //LSBs
     , u_I.P2 //MSBs
     );

@@ -7,7 +7,7 @@ interface I
   , input logic [3:0] i_a
   , output logic [3:0] o_a
   );
-  
+
   modport P
     ( input x
     , input i_clk
@@ -26,10 +26,10 @@ endinterface
 module M1
   ( I.P p
   );
- 
+
   always_ff @(posedge p.i_clk)
     p.o_a[3] <= p.x[0];
-  
+
   logic [3:0] a;
 
   always_comb a = ~p.x;
@@ -45,7 +45,7 @@ module M2
   always_ff @(posedge p.i_clk)
     p.o_a[2] <= p.x[1];
 
-  M1 u_M1 
+  M1 u_M1
     ( .p  (p)
     );
 
@@ -62,11 +62,11 @@ module top
   , input logic [3:0] i_a
   );
 
-  I u_I 
+  I u_I
     ( .*
     );
-  
-  M2 u_M2 
+
+  M2 u_M2
     ( .p    (u_I)
     , .o_c  (o_b)
     );

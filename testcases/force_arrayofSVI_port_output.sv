@@ -4,9 +4,9 @@
 // Output a vector (SVI 1D array instance) of 0's,1's,z's.
 
 interface I;
-  
+
   logic z;
-  
+
   modport P
     ( output z  //changed modport view to output
     );
@@ -34,7 +34,7 @@ module M
 
   for (genvar i =0; i < 8; i++)
     assign o_a[i] = u_I[i].z;
-  
+
 endmodule
 
 
@@ -46,7 +46,7 @@ module top
 
  I u_I [7:0] ();
 
- M u_M 
+ M u_M
   ( .u_I    (u_I.P) // use modport view P
   , .o_a    (o_a)
   , .en     (en)

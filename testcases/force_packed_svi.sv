@@ -8,7 +8,7 @@ interface I
   );
 
   logic [7:0]z;
-  
+
   assign z = {8{i_a}}; // Fill the vector with some bit of the same value.
 
   always_comb
@@ -27,8 +27,8 @@ module top
   , output logic [7:0] o_a
   );
 
-  I u_I 
+  I u_I
   ( .*  // dot-star port connection. Ports with the same name are
   );    // connected regardless of order in port list.
-  
+
 endmodule

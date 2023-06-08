@@ -10,16 +10,16 @@ interface I
   );
 
   logic [7:0] x; //Packed array x
-  
+
   int i = 0;
-  
+
   always_ff @ (posedge i_clk)begin // Introduce sequential block.
-    x[i] <= i_a;                   
+    x[i] <= i_a;
     i <= i + 'd1;
   end // Sequential block fixes Questa vopt failure messages.
- 
+
   assign o_a = x;
-  
+
 endinterface
 
 
@@ -29,10 +29,10 @@ module top
   , output logic [7:0] o_a
   );
 
-  I u_I        // Ordered port connection: Interface I and module top have  
+  I u_I        // Ordered port connection: Interface I and module top have
     ( i_a      // the same port order/position.
     , i_clk    // The port names do not have to be the same;
     , o_a      // kept project naming convention.
-    ); 
-    
+    );
+
 endmodule

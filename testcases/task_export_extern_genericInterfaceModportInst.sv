@@ -6,7 +6,7 @@
 interface I;
 
   extern task adder (input int i_a, i_b, output int o_a); // Export task.
-  
+
   modport P
     ( import task adder (input int i_a, i_b, output int o_a)
     );
@@ -15,7 +15,7 @@ endinterface
 
 
 module M1;
- 
+
   task adder (input int i_a, i_b, output int o_a); // Define task.
     o_a = i_a + i_b;
   endtask

@@ -10,7 +10,7 @@ interface I
   ( input logic i_clk
   );
   timeprecision 1ps;
-  
+
   logic x;
   logic y;
   logic z;
@@ -29,18 +29,18 @@ module top
   , output logic [SIZE-1:0] o_a
   , output logic [SIZE-1:0] o_b
   , output logic [SIZE-1:0] o_c
-  ); 
+  );
   timeunit 1ns; // Interface I should inherit this timeunit. LRM 3.14.2.3
   timeprecision 1ps;
-  
-  I u_I [SIZE-1:0] 
+
+  I u_I [SIZE-1:0]
     ( .*
     );
-    
+
   for (genvar i = 0; i < SIZE; i++) begin
-    assign o_a[i] = u_I[i].x;      
-    assign o_b[i] = u_I[i].y;  
-    assign o_c[i] = u_I[i].z;    
+    assign o_a[i] = u_I[i].x;
+    assign o_b[i] = u_I[i].y;
+    assign o_c[i] = u_I[i].z;
   end
 
 endmodule

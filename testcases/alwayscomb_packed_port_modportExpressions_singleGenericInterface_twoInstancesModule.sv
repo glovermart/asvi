@@ -2,10 +2,10 @@
 // Use of modport expressions for slices of a 1D packed array.
 /* Single generic interface.Two instantiations of module M with
 different modport views*/
-// NOTE: Lines 25, 26, 36, 37, 40, and 41. 
+// NOTE: Lines 25, 26, 36, 37, 40, and 41.
 
 interface I;
-  
+
   logic [7:0] x;
 
   modport P1
@@ -25,7 +25,7 @@ module M
 
   always_comb i.p1 = '0; //write 0000
   always_comb i.p2 = '1; //write 1111
-                        
+
 endmodule
 
 
@@ -35,7 +35,7 @@ module top
 
   I u_I ();
 
-  M u_M1 
+  M u_M1
     ( u_I.P1 //LSBs
     );
 

@@ -14,17 +14,17 @@ module top
   ( input logic en
   , input logic i_clk
   , input logic i_arst
-  , output logic [SIZE-1:0]o_a 
+  , output logic [SIZE-1:0]o_a
   );
-  
+
   I u_I [SIZE-1:0] ();
-  
+
   localparam bit a = 1'b1;
-  
+
   logic [SIZE-1:0] a_a;
 
   genvar i;
-  for(i =0; i< SIZE;i++) begin 
+  for(i =0; i< SIZE;i++) begin
     always_comb u_I[i].x = a;
     always_latch begin
       if (!i_arst)
@@ -44,5 +44,5 @@ module top
       i_i++;
     end
   end
- 
+
 endmodule

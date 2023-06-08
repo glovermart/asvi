@@ -3,10 +3,10 @@
 
 interface I;
 
-  logic x [7:0]; 
-  
+  logic x [7:0];
+
   modport P
-    ( output x 
+    ( output x
     );
 
 endinterface
@@ -34,7 +34,7 @@ module top
     ( .i_a
     , .p   (u_I)
     );
-  
+
   assign o_a = u_I.x; // Output copy.
 
 endmodule

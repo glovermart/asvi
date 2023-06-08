@@ -27,7 +27,7 @@ interface I
    ( I u_I
    );
 
-   M1 u_M1 
+   M1 u_M1
      ( .u_I
      );
 
@@ -41,11 +41,11 @@ interface I
    ( I u_I
    );
 
-   M2 u_M2 
+   M2 u_M2
      ( .*
      );
 
-   logic a;  
+   logic a;
    always_ff @(posedge u_I.i_clk)
      a <= u_M2.a;
  endmodule
@@ -54,7 +54,7 @@ interface I
    ( I u_I
    );
 
-   M3 u_M3 
+   M3 u_M3
      ( .*
      );
 
@@ -73,8 +73,8 @@ interface I
   I u_I
     ( .*
     );
-    
-  M4 u_M4 
+
+  M4 u_M4
     ( .u_I(u_I)
     );
 

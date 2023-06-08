@@ -27,7 +27,7 @@ endinterface
 module M1
   ( I.P p
   );
- 
+
   always_ff @(posedge p.i_clk)
     p.o_a[3] <= p.x[0];
 
@@ -40,24 +40,24 @@ module M2
 
   always_ff @(posedge p.i_clk)
     p.o_a[2] <= p.x[1];
-   
+
 endmodule
 
 
 module M3
   ( I.P p
   );
-  
+
   always_ff @(posedge p.i_clk)
     p.o_a[1] <= p.x[2];
-     
+
 endmodule
 
 
 module M4
   ( I.P p
   );
-  
+
   always_ff @(posedge p.i_clk)
     p.o_a[0] <= p.x[3];
 
@@ -75,19 +75,19 @@ module top
     ( .*
     );
 
-  M1 u_M1 
+  M1 u_M1
     ( .p  (u_I.P)
     );
 
-  M2 u_M2 
+  M2 u_M2
     ( .p  (u_I.P)
     );
 
-  M3 u_M3 
+  M3 u_M3
     ( .p  (u_I.P)
     );
 
-  M4 u_M4 
+  M4 u_M4
     ( .p  (u_I.P)
     );
 

@@ -6,7 +6,7 @@ interface I(input var logic i_srst);
   logic y;
   logic x;
 
-  always_comb 
+  always_comb
     force z = i_srst ? (x & y) : (x | y);
 
 endinterface

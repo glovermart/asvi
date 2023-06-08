@@ -3,7 +3,7 @@
 // Output a vector (SVI 1D array instance) of 0's,1's,z's
 
 interface I;
-  
+
   logic z;
 
 endinterface
@@ -16,11 +16,11 @@ module top
   );
 
   I u_I [7:0]();
- 
+
   for (genvar i = 0; i < 8; i++)
     assign u_I[i].z = i_a;
 
-  for (genvar i = 0; i < 8; i++) begin 
+  for (genvar i = 0; i < 8; i++) begin
     always_comb
       if (en)
         force u_I[i].z = 1'bz;

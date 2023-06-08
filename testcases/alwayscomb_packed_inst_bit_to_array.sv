@@ -5,7 +5,7 @@
 interface I;
 
   logic [7:0] x; //Packed array x
-  
+
 endinterface
 
 
@@ -15,7 +15,7 @@ module top
   );
 
   I u_I ();
-  
+
   always_comb u_I.x = i_a; //scalar to array without `'`
   assign o_a = u_I.x;
 

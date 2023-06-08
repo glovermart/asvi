@@ -24,7 +24,7 @@ module M
   , output logic o_b
   );
 
-  always_ff @(posedge i_clk) 
+  always_ff @(posedge i_clk)
     o_a <= u_I.x; // Signal
   always_ff @(posedge i_clk)
     o_b <= u_I.y; // Signal
@@ -48,7 +48,7 @@ module top
 
   logic [SIZE-1:0] a_q;
   logic [SIZE-1:0] b_q;
-  
+
   // A generate loop scheme without generate and endgenerate keywords.
   // Several instances of module M to each element of the interface vector.
   for (genvar i = 0; i < SIZE; i++) begin
@@ -59,14 +59,14 @@ module top
       , .o_b    (b1)
       );
   end
-  
-  /* Intermediate assignment to allow use of 
+
+  /* Intermediate assignment to allow use of
   procedural loop construct (for loop with int) instead of genvar.*/
   always_comb a = a1;
   always_comb b = b1;
 
   // Observe output assignments per clock cylce during simulation.
-  /* A generate loop could have been used instead but 
+  /* A generate loop could have been used instead but
   outputs will not be obeserved per clock cycle */
   /* A generate loop gets evaluated before simulation time. Outputs get assigned
   before simulation start. See concept of Delta Cycle Simulation and LRM 27.4 */

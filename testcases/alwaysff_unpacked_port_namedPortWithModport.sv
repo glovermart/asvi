@@ -9,7 +9,7 @@ interface I;
   modport P
     ( output x
     );
-  
+
 endinterface
 
 
@@ -22,14 +22,14 @@ module M
 
   always_ff @(posedge i_clk)
     foreach (j.x[i])
-      j.x[i] <= i_a; 
-  
+      j.x[i] <= i_a;
+
   assign o_a = j.x;
-  
+
 endmodule
 
 
-module top 
+module top
   ( input logic i_a
   , input logic i_clk
   , output logic o_a [8]
@@ -37,7 +37,7 @@ module top
 
   I u_I (); // Interface instance.
 
-  M u_M 
+  M u_M
     ( .j  (u_I.P)  // Named port connection style required for
     , .*           // generic interfaces.
     );

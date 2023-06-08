@@ -4,7 +4,7 @@
 // Copy to output pin via gen block and assign construct.
 
 interface I;
-  
+
   logic z;
 
 endinterface
@@ -17,11 +17,11 @@ module top
   );
 
   I u_I [7:0]();
- 
+
   for (genvar i = 0; i < 8; i++)
     assign u_I[i].z = i_a;
 
-  for (genvar i = 0; i < 8; i++) begin 
+  for (genvar i = 0; i < 8; i++) begin
     always_comb
       if (en)
         force u_I[i].z = 1'bz;

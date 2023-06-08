@@ -25,7 +25,7 @@ endinterface
 module M1
   ( I.P p
   );
-  
+
   logic [3:0] a;
 
   always_comb a = ~p.x;
@@ -40,7 +40,7 @@ module M2
   , output logic [3:0] o_c
   );
 
-  M1 u_M1 
+  M1 u_M1
     ( .p  (p)
     );
   always_comb o_c = u_M1.a;
@@ -55,11 +55,11 @@ module top
   , input logic [3:0] i_a
   );
 
-  I u_I 
+  I u_I
     ( .*
     );
-  
-  M2 u_M2 
+
+  M2 u_M2
     ( .p    (u_I)
     , .o_c  (o_b)
     );

@@ -1,7 +1,7 @@
 // Assignment via `force` to an 8 bit vector of an SVI instance.
 
 interface I;
-  
+
   logic [7:0] z;
 
 endinterface

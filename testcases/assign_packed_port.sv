@@ -1,11 +1,11 @@
 // Assignment via `assign` to a packed array of an interface port.
 // Writing to an input modport using assign
-// Lines 7, 10, and 22. 
+// Lines 7, 10, and 22.
 
 interface I;
 
   logic [7:0] x; //Packed array x
-  
+
   modport P
     ( input x // should be an output modport
     );
@@ -35,7 +35,7 @@ module top
     ( .i_a
     , .p    (u_I)
     );
-  
+
   assign o_a = u_I.x;
 
 endmodule

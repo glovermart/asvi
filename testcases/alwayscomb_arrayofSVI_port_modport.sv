@@ -11,7 +11,7 @@ interface I;
   logic y;
   logic z;
 
-  modport P 
+  modport P
     ( output x
     , output y
     , output z
@@ -44,7 +44,7 @@ module top
   , output logic [SIZE-1:0] o_c
   );
 
-  I u_I [SIZE] (); 
+  I u_I [SIZE] ();
 
   M u_M
     ( .p  (u_I)

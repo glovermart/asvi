@@ -3,7 +3,7 @@
 // NOTE: Lines 48,78 and 116, 120.
 
 interface I;
-  
+
   logic i_clk;
   logic i_srst;
   logic i_arst;
@@ -29,7 +29,7 @@ endinterface
 module M1
   ( I.P p
   );
-  
+
   localparam bit Z = 1'b0;
   //No reset
   always_ff @(posedge p.i_clk) p.z <= Z;
@@ -42,13 +42,13 @@ endmodule
 module M2
   ( I.P p
   );
-  
+
   localparam bit Z = 1'b0;
-  
-  M1 u_M1 
+
+  M1 u_M1
     ( .p (p)
     );
-  
+
   //Synchronous reset
   always_ff @(posedge p.i_clk)
     if (p.i_srst)
@@ -72,13 +72,13 @@ endmodule
 module M3
   ( I.P p
   );
-  
+
   localparam bit Z = 1'b1;
-  
-  M2 u_M2 
+
+  M2 u_M2
     ( .p (p)
     );
-  
+
   //Asynchronous reset
   always_ff @(posedge p.i_clk , posedge p.i_arst)
     if (p.i_arst)
@@ -109,8 +109,8 @@ module top
   , output logic w
   );
 
-  I u_I 
-    ( .P (.*) // Port with direction to top portlist? 
+  I u_I
+    ( .P (.*) // Port with direction to top portlist?
     );
 
   M2 u_M2      // Second instantiation of M2.

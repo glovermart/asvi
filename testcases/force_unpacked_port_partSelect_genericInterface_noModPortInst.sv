@@ -4,9 +4,9 @@
 (.i(u_I) instead of .i(u_I.P)) */
 
 interface I;
-  
+
   logic z [7:0];
-  
+
   modport P
     ( output .p(z[3:0]) // LSBs
     );
@@ -16,7 +16,7 @@ endinterface
 
 module M
   ( interface i  // Generic interface i.
-  , input bit i_en 
+  , input bit i_en
   );
 
   always_comb
@@ -35,10 +35,10 @@ module top
   );
 
   I u_I ();
-  
+
   assign u_I.z = '{8{i_a}}; // Fill the array with some bit of the same value.
 
-  M u_M 
+  M u_M
     ( .i_en   (i_en)
     , .i      (u_I)
     );

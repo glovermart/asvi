@@ -7,9 +7,9 @@ interface I
   , input logic i_a
   , output logic o_a
   );
-  
+
   logic x;
-  
+
   always_latch
     if (i_en)
       x <= i_a;
@@ -32,7 +32,7 @@ interface I
    ( I u_I
    );
 
-   M1 u_M1 
+   M1 u_M1
      ( .*
      );
 
@@ -48,11 +48,11 @@ interface I
    ( I u_I
    );
 
-   M2 u_M2 
+   M2 u_M2
      ( .*
      );
 
-   logic a; 
+   logic a;
 
    always_ff @(posedge u_I.i_clk)
      a <= u_M2.a;
@@ -64,7 +64,7 @@ interface I
    ( I u_I
    );
 
-   M3 u_M3 
+   M3 u_M3
      ( .*
      );
 
@@ -82,8 +82,8 @@ interface I
   );
 
   I u_I(.*);
-  
-  M4 u_M4 
+
+  M4 u_M4
     ( .u_I  (u_I)
     );
 

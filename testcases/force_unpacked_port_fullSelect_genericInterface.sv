@@ -2,9 +2,9 @@
 // Use modport expression to force the 4 LSBs to high-impedance state (z).
 
 interface I;
-  
+
   logic z [7:0];
-  
+
   modport P
     ( output .p(z[0+:4]) // LSBs. Using addressing style from LRM 11.5.1.
     , output .q(z[7-:4]) // MSBs. Using addressing style from LRM 11.5.1.
@@ -15,12 +15,12 @@ endinterface
 
 module M
   ( interface i  // Generic interface i.
-  , input logic i_en 
+  , input logic i_en
   , input logic i_a
   );
 
   always @ (i_en)
- // always_comb behaves the same way. 
+ // always_comb behaves the same way.
     if (i_en)
       force i.p = '{4{1'bz}};
     else
@@ -43,10 +43,10 @@ module top
   );
 
   I u_I ();
-  
+
   assign u_I.z = '{8{i_a}}; // Fill the array with some bit of the same value.
 
-  M u_M 
+  M u_M
     ( .i_en   (i_en)
     , .i      (u_I.P)
     , .i_a    (i_a)
