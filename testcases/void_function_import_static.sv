@@ -56,7 +56,7 @@ module top
   );
 
   I u_I ();
-  
+
   M1 u_M1
     ( .p1   (u_I)
     , .*

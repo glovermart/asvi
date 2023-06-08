@@ -4,11 +4,11 @@
 interface I
   ( input logic i_clk
   );
-  
+
   typedef struct
     { logic [7:0] data;
     } data_t;
- 
+
   data_t data;
 
   always_ff @ (posedge i_clk)
@@ -22,7 +22,7 @@ module top
   , output logic [7:0] o_a
   );
 
-  I u_I 
+  I u_I
     ( .i_clk
     );
 

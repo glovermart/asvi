@@ -4,7 +4,7 @@
 interface I;
 
   logic x [7:0]; // Unpacked array x with start and end address.
-  
+
 endinterface
 
 
@@ -14,17 +14,17 @@ module top
   );
 
   I u_I ();
-  
+
   always_comb begin
     automatic int i = 0;
 
-    do begin 
+    do begin
       u_I.x[i] = i_a; // assign statement removed. Makes testcase always_comb.
       i++; end
-    while 
+    while
       ( i < 8);
   end
-  
+
   assign o_a = u_I.x;
 
 endmodule

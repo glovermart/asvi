@@ -1,6 +1,6 @@
 // Defining a struct outside an interface and module.
 
-typedef struct 
+typedef struct
   { logic [7:0] data;
   } data_t;
 
@@ -21,7 +21,7 @@ module top
   , output logic [7:0] o_a
   );
 
-  I u_I 
+  I u_I
   ( .i_clk
   );
 

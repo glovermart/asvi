@@ -90,20 +90,20 @@ module top
   , input var logic i_srst
   , input var logic i_arst
   );
-  
-  I u_I4 
+
+  I u_I4
     ( .*
     );
-  
-  M1 u_M1 
+
+  M1 u_M1
     ( .u_I1  (u_I4)
     );
 
-  M2 u_M2 
+  M2 u_M2
     ( .u_I2  (u_I4)
     );
 
-  M3 u_M3 
+  M3 u_M3
     ( .u_I3  (u_I4)
     );
 

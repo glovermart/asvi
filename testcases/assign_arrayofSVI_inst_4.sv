@@ -20,10 +20,10 @@ module M
   );
 
   localparam bit Z = 1'b0;
-  
+
   genvar i;
   generate
-    for (i = 0; i < SIZE; i++) begin   
+    for (i = 0; i < SIZE; i++) begin
       assign u_I[i].x = Z;       // Constant
       assign u_I[i].y = 1'b1;    // Literal
       assign u_I[i].z = i_a;     // Signal
@@ -39,18 +39,18 @@ module top
   , output logic [SIZE-1:0] o_b
   , output logic [SIZE-1:0] o_c
   );
-  
+
   I u_I [SIZE-1:0] ();
-  
-  M u_M 
+
+  M u_M
     ( .*
     , .i_a
     );
 
   for (genvar i = 0; i < SIZE; i++) begin
-    assign o_a[i] = u_I[i].x;      
-    assign o_b[i] = u_I[i].y;  
-    assign o_c[i] = u_I[i].z;    
+    assign o_a[i] = u_I[i].x;
+    assign o_b[i] = u_I[i].y;
+    assign o_c[i] = u_I[i].z;
   end
 
 endmodule

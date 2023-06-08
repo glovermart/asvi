@@ -1,6 +1,6 @@
 //Concurrent assertion experiment; instance of an interface.
 /* This testcase is modified from "Who Put Assertions In My RTL Code? And Why?
-How RTL Design Engineers Can Benefit from the Use of 
+How RTL Design Engineers Can Benefit from the Use of
 SystemVerilog Assertions" by Stuart Sutherland, SNUG 2015.Example 13, Page 14.*/
 
 interface I
@@ -14,13 +14,13 @@ interface I
 endinterface
 
 
-module top 
+module top
   ( output logic [3:0] o_q
   , input logic i_clk
   , input logic i_srst
   );
 
-  I u_I 
+  I u_I
     (.*
     );
 

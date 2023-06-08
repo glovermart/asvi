@@ -2,7 +2,7 @@
 // Hierarchical modules.
 
 interface I;
-  
+
   logic y;
   logic z;
   localparam logic x = 1'b1;

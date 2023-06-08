@@ -6,7 +6,7 @@
 interface I;
 
   logic x [7:0]; // Unpacked array x.
-  
+
   modport P
     ( output x
     );
@@ -37,5 +37,5 @@ module top
     );
 
   assign o_a = u_I.x; // Copy to output pins.
-  
+
 endmodule

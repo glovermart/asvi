@@ -6,7 +6,7 @@ interface I;
   logic y;
   logic x;
   localparam bit Z = 1'b0;
-  
+
   assign z = Z;      // Constant
   assign y = 1'b1;   // Literal
   assign x = ~z;      // Signal
@@ -38,13 +38,13 @@ module top
   ( input logic i_a
   , output logic o_b
   );
-  
+
   I u_I ();
-  
+
   M1 u_M1
     ( .u_I  (u_I)
     );
-  
+
   M2 u_M2
     ( .u_I  (u_I)
     );

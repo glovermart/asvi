@@ -10,4 +10,4 @@ lint: $(addprefix ${OUTDIR}/,$(addsuffix .svlint_lint.stdout,${TESTCASE_NAMES}))
 
 ${OUTDIR}/%.svlint_lint.stdout: testcases/%.sv | ${OUTDIR}
 	svlint --version > $@
-	-svlint $^ ${REDIRECT}
+	-svlint-parseonly $^ ${REDIRECT}

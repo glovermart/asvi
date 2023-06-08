@@ -2,11 +2,11 @@
 // Use modport expression to force the 'bus' to high-impedance state (Z)
 
 interface I;
-  
+
   logic [7:0]z;
-  
+
   modport P1
-    ( output .p1(z[7:0]) 
+    ( output .p1(z[7:0])
     );
 
 endinterface
@@ -14,9 +14,9 @@ endinterface
 
 module M
   ( interface i  // Generic interface i.
-  , input bit en 
+  , input bit en
   );
- 
+
   always_comb
     if (en)
       force i.p1 = 'z;
@@ -33,10 +33,10 @@ module top
   );
 
   I u_I ();
-  
+
   assign u_I.z = {8{i_a}}; // Fill the vector with some bit of the same value.
 
-  M u_M 
+  M u_M
     ( .en  (en)
     , .i   (u_I.P1)
     );

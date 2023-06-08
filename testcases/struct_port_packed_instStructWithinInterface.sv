@@ -3,15 +3,15 @@
 // Modports for different views of the struct.
 // Define struct as packed type.
 
-typedef struct packed 
+typedef struct packed
   { logic [7:0] data;
   } data_t;
 
 
 interface I;
-  
+
   data_t data;
-  
+
   modport P1
     ( output data
     );
@@ -50,7 +50,7 @@ module top
   );
 
   I u_I ();
-  
+
   M1 u_m1
     ( .p1      (u_I.P1)
     );

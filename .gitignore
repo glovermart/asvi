@@ -16,3 +16,4 @@ transcript
 .synopsys_dc.setup
 tools_loader.sh
 tools_unload.sh
+xcelium.d/

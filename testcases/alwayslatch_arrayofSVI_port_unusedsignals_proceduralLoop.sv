@@ -9,7 +9,7 @@ interface I
   ( input logic arst
   , input logic en
   );
- 
+
   logic y;
   logic x;
   logic w;
@@ -34,11 +34,11 @@ module M1  // Module does not use signal w.
   logic en;
   logic rst;
 
-  I u_I 
+  I u_I
     ( .arst(rst)
     , .en
     );
-  
+
   for(genvar i = 0; i < SIZE; i++) begin
     always_comb p1[i].x = 1'b1;
     always_latch begin
@@ -57,11 +57,11 @@ module M2  // Module does not use signal x.
   ( I.P2 p2[SIZE-1:0]
   , output logic [SIZE-1:0]o_b
   );
- 
+
   logic en;
 
-  I u_I 
-    ( 
+  I u_I
+    (
     .en
     );
 
@@ -80,13 +80,13 @@ module top
   ( input logic en
   , input logic i_clk
   , input logic i_arst
-  , output logic [SIZE-1:0]o_a 
+  , output logic [SIZE-1:0]o_a
   , output logic [SIZE-1:0]o_b
   );
 
   logic [SIZE-1:0] a_a;
   logic [SIZE-1:0] b_b;
-  
+
   I u_I [SIZE-1:0]
     ( .arst(i_arst)
     , .en(en)

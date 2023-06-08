@@ -2,7 +2,7 @@
 // Struct instantiated in an interface port.
 // Modports for different views of the struct.
 
-typedef struct 
+typedef struct
   { logic [7:0] data;
   } data_t;
 
@@ -10,7 +10,7 @@ typedef struct
 interface I
   ( data_t data
   );
-  
+
   modport P1
     ( output data
     );
@@ -49,7 +49,7 @@ module top
   );
 
   I u_I ();
-  
+
   M1 u_m1
     ( .p1     (u_I.P1)
     );
@@ -59,5 +59,5 @@ module top
     , .i_clk  (i_clk)
     , .o_a    (o_a)
     );
-    
+
 endmodule

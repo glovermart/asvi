@@ -15,7 +15,7 @@ endinterface
 
 
 module M
-  ( I ifc_I [SIZE-1:0] // Unpacked array sizes may be declared using a range. 
+  ( I ifc_I [SIZE-1:0] // Unpacked array sizes may be declared using a range.
   );                   // Applying same syntax to interfaces.
 
   localparam bit Z = 1'b0;
@@ -38,7 +38,7 @@ module top
   , output logic [SIZE-1:0] o_c
   );
 
-  I u_I [SIZE-1:0] (); 
+  I u_I [SIZE-1:0] ();
 
   M u_M
     ( .ifc_I (u_I) // Named port connection. Ports have different names.

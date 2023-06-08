@@ -6,7 +6,7 @@ typedef struct packed // Define as packed.
   { logic [7:0] data;
   } data_t;
 
-  
+
 interface I
   ( data_t data
   );
@@ -48,7 +48,7 @@ module top
   );
 
   I u_I ();
-  
+
   M1 u_m1
     ( .p1     (u_I.P1)
     );

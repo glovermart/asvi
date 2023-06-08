@@ -37,7 +37,7 @@ module M2
   , output o_a
   , output o_b
   );
-  
+
   assign o_a = p2.z;
   assign o_b = p2.w;
 

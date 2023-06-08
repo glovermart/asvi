@@ -40,5 +40,5 @@ module top
     ( .p(u_I)
     , .*
     );
-    
+
 endmodule

@@ -1,0 +1,22 @@
+
+module load synopsys/syn/2212-sp2
+module load synopsys/formality/2022.12-sp2
+module load synopsys/spyglass/2023.03
+module load synopsys/vc-static/2022.06-sp2
+module load mentor/onespin/2023.1
+module load mentor/questasim/2022.2_1
+module load mentor/precision/2022.2
+module load mentor/tessent/2022.4
+module load cadence/xcelium/22.03.004
+module load cadence/hdlice/22.04.160
+module load cadence/vxe/22.04.001
+source /cad/xilinx/vivado/2022.1/Vivado/2022.1/settings64.sh
+
+module use --append /pro/sig_research/dddTools/work/aade/linttools/Modules/modulefiles
+module load linttools/recommended_iverilog
+
+module use --append /pro/sig_research/dddTools/modulefiles
+module load verilator-v5.008
+module load yosys-0.27
+module load svlint-v0.7.1
+

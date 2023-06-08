@@ -8,11 +8,11 @@ interface I
   );
 
   logic x [7:0]; // Unpacked array x with starting and ending addresses.
-  
+
   always_ff
     foreach (x[i])
       x[i] = i_a;
-   
+
   assign o_a = x; // Copy array to output pins.
 
 endinterface
@@ -23,9 +23,9 @@ module top
   , output logic o_a [7:0]
   );
 
-  I u_I 
+  I u_I
   ( i_a // Ordered port list connection.
   , o_a
   );
-  
+
 endmodule

@@ -1,6 +1,6 @@
 // Assignment via `always_ff` to scalar members within an SVI.
 // Hierachical referencing - module intance.
-// NOTE: Lines 29 to 31, 43 to 45, 65 to 67, and 88 to 90. 
+// NOTE: Lines 29 to 31, 43 to 45, 65 to 67, and 88 to 90.
 
 interface I
   ( input logic i_clk
@@ -44,7 +44,7 @@ module M2
   assign b = u_M1.b;
   assign c = u_M1.c;
 
-  M1 u_M1 
+  M1 u_M1
     ( .*
     );
 
@@ -57,8 +57,8 @@ module M3
   , output logic b
   , output logic c
   );
-  
-  M2 u_M2 
+
+  M2 u_M2
     ( .*
     );
 
@@ -75,16 +75,16 @@ module top
   , output logic b
   , output logic c
   );
-  
-  I u_I 
+
+  I u_I
     ( .*
     );
 
-  M3 u_M3 
+  M3 u_M3
     ( .u_I  (u_I)
     , .*
     );
-  
+
   assign a = u_M3.a;
   assign b = u_M3.b;
   assign c = u_M3.c;

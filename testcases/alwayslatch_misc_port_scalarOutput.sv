@@ -35,7 +35,7 @@ module M2
     if (p1.i_en)
       p1.o_a <= p1.i_a;
 
-  M1 u_M1 
+  M1 u_M1
     ( .p1
     );
 
@@ -50,7 +50,7 @@ module M3
     if (p1.i_en)
       p1.o_a <= p1.i_a;
 
-  M2 u_M2 
+  M2 u_M2
     ( .p1
     );
 
@@ -65,7 +65,7 @@ module M4
     if (p2.i_en)
       p2.o_a <= p2.i_a;
 
-  M3 u_M3 
+  M3 u_M3
     ( .p1  (p2)
     );
 

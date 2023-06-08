@@ -4,9 +4,9 @@
 // NOTE: Lines 22, 31, 45, 46, 49, and 50.
 
 interface I;
-  
+
   logic [7:0] x;
-  
+
   modport P1
     ( output .p1(x[3:0])
     );
@@ -41,11 +41,11 @@ module top
   );
 
   I u_I ();
-  
-  M1 u_M1 
+
+  M1 u_M1
     ( u_I.P1 //LSBs
     );
- 
+
   M2 u_M2
     ( u_I.P2 //MSBs
     );

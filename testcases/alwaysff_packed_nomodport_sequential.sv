@@ -17,8 +17,8 @@ module top
   I u_I ();
 
   int i = 0;
-  
-  always_ff @(posedge i_clk) begin // Introduce sequential block; begin...end. 
+
+  always_ff @(posedge i_clk) begin // Introduce sequential block; begin...end.
     u_I.x[i] <= i_a;
     i <= i + 'd1; // Single processes with clock enable inferred.
   end             // Each register is written @ i_clk posedge.

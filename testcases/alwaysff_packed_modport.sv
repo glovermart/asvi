@@ -5,7 +5,7 @@
 interface I;
 
   logic [7:0] x; // Packed array x
-  
+
   modport P
     ( output x
     );
@@ -14,20 +14,20 @@ endinterface
 
 
 module M
-  ( I.P p 
+  ( I.P p
   , output logic [7:0] o_a
   , input logic i_a
   , input logic i_clk
   );
-  
+
   int i = 0;
 
-  always_ff @(posedge i_clk) 
+  always_ff @(posedge i_clk)
     p.x[i] <= i_a;
-  
-  always_ff @(posedge i_clk)     
-    i <= i + 'd1;          
-  
+
+  always_ff @(posedge i_clk)
+    i <= i + 'd1;
+
   assign o_a = p.x;
 
 endmodule

@@ -1,5 +1,5 @@
 // Assignment via `always_ff` to scalar members of an SVI port.
-// NOTE: Lines 8 to 14 and 112 to 119. 
+// NOTE: Lines 8 to 14 and 112 to 119.
 
 interface I;
 
@@ -29,9 +29,9 @@ endinterface
 module M1
   ( I.P p
   );
-  
+
   localparam bit Z = 1'b0;
-  
+
   //No reset
   always_ff @(posedge p.i_clk) p.z <= Z;
   always_ff @(posedge p.i_clk) p.y <= 1'b1;
@@ -43,13 +43,13 @@ endmodule
 module M2
   ( I.P p
   );
-  
+
   localparam bit Z = 1'b0;
-  
-  M1 u_M1 
+
+  M1 u_M1
     ( .p  (p)
     );
-  
+
   //Synchronous reset
   always_ff @(posedge p.i_clk)
     if (p.i_srst)
@@ -73,13 +73,13 @@ endmodule
 module M3
   ( I.P p
   );
-  
+
   localparam bit Z = 1'b1;
-  
-  M2 u_M2 
+
+  M2 u_M2
     ( .p  (p)
     );
-  
+
   //Asynchronous reset
   always_ff @(posedge p.i_clk , posedge p.i_arst)
     if (p.i_arst)
@@ -109,14 +109,14 @@ module top
   , output logic x
   );
 
-  I u_I 
+  I u_I
     ( .i_clk   (i_clk)
     , .i_srst  (i_srst)
     , .i_arst  (i_arst)
     , .z       (z)
     , .y       (y)
     , .x       (x)
-    );  
+    );
 
   M2 u_M2
     ( .p  (u_I)

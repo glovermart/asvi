@@ -3,7 +3,7 @@
    Hierachical referencing using modport.
 */
 /* This testcase is modified from "Who Put Assertions In My RTL Code? And Why?
-How RTL Design Engineers Can Benefit from the Use of 
+How RTL Design Engineers Can Benefit from the Use of
 SystemVerilog Assertions" by Stuart Sutherland, SNUG 2015.Example 13, Page 14.*/
 
 interface I

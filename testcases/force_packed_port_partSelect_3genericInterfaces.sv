@@ -10,7 +10,7 @@ interface I
   );
 
   logic [7:0]z;
- 
+
   modport P1
     ( output .p1(z[3:0]) // LSBs
     );
@@ -26,23 +26,23 @@ module M
   ( interface i  // Generic interfaces i,j,and k.
   , interface j
   , interface k
-  , input bit en 
+  , input bit en
   );
- 
+
   assign k.z = {8{k.i_a}}; // Fill the vector with some bit of the same value.
-  
-  always_comb 
-    if (en) 
+
+  always_comb
+    if (en)
       force i.p1 = 'z; // sets LSBs to z.
-    else 
+    else
       release i.p1;
-  
-  always_comb 
-    if (en) 
+
+  always_comb
+    if (en)
       force j.p2 = '1;  // sets MSBs to 1.
-    else 
+    else
       release j.p2;
- 
+
 endmodule
 
 
@@ -52,11 +52,11 @@ module top
   , output logic [7:0] o_a
   );
 
-  I u_I 
+  I u_I
     ( .i_a
     );
-  
-  M u_M1 
+
+  M u_M1
     ( .en  (en)
     , .i   (u_I.P1) // Port P1 only
     , .j   (u_I.P2) // Port P2 only

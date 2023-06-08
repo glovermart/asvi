@@ -1,7 +1,7 @@
 // Assignment via `force` to scalar members of an SVI instance.
 
 interface I;
-  
+
   logic z;
   bit y;
 
@@ -10,7 +10,7 @@ endinterface
 
 module M1
   ( I u_I
-  , input logic i_b 
+  , input logic i_b
   );
 
   assign u_I.z = i_b;
@@ -39,12 +39,12 @@ module top
   );
 
   I u_I ();
-  
-  M1 u_M1 
+
+  M1 u_M1
     ( .u_I  (u_I)
     );
 
-  M2 u_M2 
+  M2 u_M2
     ( .u_I  (u_I)
     );
 
@@ -54,7 +54,7 @@ module top
   end
 
   logic  [2:0] counter;
-  
+
   always_ff @(posedge i_clk) begin
     counter <= counter + 3'h1;
     if (counter == 3'h5) begin

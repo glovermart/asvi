@@ -1,5 +1,5 @@
 // Assignment via `always_ff` to scalar members of an SVI port.
-// Lines 28 and 48, 42 and 119, 72 and 123. Lines 5 to 10.  
+// Lines 28 and 48, 42 and 119, 72 and 123. Lines 5 to 10.
 
 interface I
   ( logic z       // Direction of signals not specified.
@@ -9,7 +9,7 @@ interface I
   , logic i_srst
   , logic i_arst
   );
-  
+
   logic w = 1'b1;
 
   modport P
@@ -28,9 +28,9 @@ endinterface
 module M1
   ( I.P p
   );
-  
+
   localparam bit Z = 1'b0;
-  
+
   // No reset
   always_ff @(posedge p.i_clk) p.z <= Z;
   always_ff @(posedge p.i_clk) p.y <= 1'b1;
@@ -42,13 +42,13 @@ endmodule
 module M2
   ( I.P p
   );
-  
+
   localparam bit Z = 1'b0;
-  
-  M1 u_M1 
+
+  M1 u_M1
     ( .p  (p)
     );
-  
+
   // Synchronous reset
   always_ff @(posedge p.i_clk)
     if (p.i_srst)
@@ -72,13 +72,13 @@ endmodule
 module M3
   ( I.P p
   );
-  
+
   localparam bit Z = 1'b1;
-  
-  M2 u_M2 
+
+  M2 u_M2
     ( .p  (p)
     );
-  
+
   // Asynchronous reset
   always_ff @(posedge p.i_clk , posedge p.i_arst)
     if (p.i_arst)
@@ -108,10 +108,10 @@ module top
   , output logic x
   );
 
-  I u_I 
+  I u_I
     ( .* // Connect ports - Implicit port connection.
-    );  
-  
+    );
+
   M1 u_M1
     ( .p  (u_I)
     );

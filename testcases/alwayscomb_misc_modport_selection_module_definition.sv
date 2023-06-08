@@ -29,7 +29,7 @@ module M1
 
   localparam bit Z = 1'b0;
   logic a;
-  
+
   // Assigning values using always_comb but modport view is input to module.
   always_comb p1.x = Z;      // Constant
   always_comb p1.y = 1'b1;   // Literal
@@ -45,7 +45,7 @@ module M2
   logic a;
   logic b;
   logic c;
-  
+
   // Assigning values to internal signals - modport view declared as output.
   always_comb a = p2.x;
   always_comb b = p2.y;

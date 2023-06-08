@@ -3,7 +3,7 @@
 interface I;
 
   logic [7:0] x; //Packed array x
-  
+
 endinterface
 
 
@@ -13,10 +13,10 @@ module top
   );
 
   I u_I ();
-  
+
   for (genvar i = 0; i < 8; i++)
-    assign u_I.x[i] = i_a; 
-  
+    assign u_I.x[i] = i_a;
+
   assign o_a = u_I.x;
 
 endmodule

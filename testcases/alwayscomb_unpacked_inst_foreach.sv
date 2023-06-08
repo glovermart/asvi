@@ -5,7 +5,7 @@
 interface I;
 
   logic x [8]; // Unpacked array x.
-  
+
 endinterface
 
 
@@ -15,12 +15,12 @@ module top
   );
 
   I u_I ();
-  
+
   // Procedural for loop scheme with foreach construct.
   always_comb
     foreach (u_I.x[i])
-      u_I.x[i] = i_a; 
-  
+      u_I.x[i] = i_a;
+
   assign o_a = u_I.x;
-  
+
 endmodule

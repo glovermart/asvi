@@ -1,10 +1,10 @@
 // Task defined in a module; use of export to export task to interface.
 // Call task in combinational block.
 // adder method called in another module.
-// NOTE: Lines : 9, 13, 20, 23, 31 and 37. 
+// NOTE: Lines : 9, 13, 20, 23, 31 and 37.
 
 interface I;
-  
+
   modport P1
     ( import task adder (input int i_a, i_b, output int o_a)
     );
@@ -19,7 +19,7 @@ endinterface
 module M1
   ( interface j
   );
- 
+
   task j.adder (input int i_a, i_b, output int o_a); // Define task.
     o_a = i_a + i_b;
   endtask
@@ -47,7 +47,7 @@ module top
 
   I u_I ();
 
-  M1 u_M1 
+  M1 u_M1
     ( u_I.P2
     );
 

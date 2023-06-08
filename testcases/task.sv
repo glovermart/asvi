@@ -18,7 +18,7 @@ module top
   );
 
   I u_I ();
-  
+
   always_comb u_I.adder(i_a,i_b,o_a); // 'Import' task.
 
 endmodule

@@ -1,11 +1,12 @@
 include mk/common.mk
 
-default: lint simulate
+default: lint
+default: simulate
 
 # module load mentor/questasim/2022.2_1
 
 .PHONY: lint
-simulate: $(addprefix ${OUTDIR}/,$(addsuffix .questa_lint.stdout,${TESTCASE_NAMES}))
+lint: $(addprefix ${OUTDIR}/,$(addsuffix .questa_lint.stdout,${TESTCASE_NAMES}))
 
 .PHONY: simulate
 simulate: $(addprefix ${OUTDIR}/,$(addsuffix .questa_vsim.stdout,${TESTCASE_NAMES}))

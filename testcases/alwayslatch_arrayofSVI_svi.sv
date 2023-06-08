@@ -15,7 +15,7 @@ interface I
   logic y;
 
   /* variable z manipulated by module M, depending on value of variable y */
-  logic z; 
+  logic z;
 
   always_latch
     if (!i_arst)
@@ -25,19 +25,19 @@ interface I
 
   assign o_a = y;
   assign o_b = z;
-  
+
 endinterface
 
 
 module M
   ( I u_I [SIZE-1:0]
   );
-  
+
   logic b = 1'b1;
-  
+
   for(genvar i=0; i < SIZE; i++)
     assign u_I[i].z = u_I[i].y & b;
- 
+
 endmodule
 
 
@@ -48,19 +48,19 @@ module top
   , output logic [SIZE-1:0] o_a
   , output logic [SIZE-1:0] o_b
   );
-  
+
   I u_I [SIZE-1:0]
     ( .i_arst
     , .en
     , .i_a
     );
-  
+
   //Multiple instances of M
   for(genvar i = 0; i < SIZE; i++)
-  M u_M 
+  M u_M
     (.u_I
     );
-    
+
   for(genvar i = 0; i < SIZE; i++) begin
     assign o_a[i] = u_I[i].o_a;
     assign o_b[i] = u_I[i].o_b;

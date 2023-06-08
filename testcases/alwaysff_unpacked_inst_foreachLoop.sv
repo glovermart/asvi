@@ -4,7 +4,7 @@
 interface I;
 
   logic x [8]; // Unpacked array x
-  
+
 endinterface
 
 
@@ -18,8 +18,8 @@ module top
 
   always_ff @ (posedge i_clk)
     foreach (u_I.x[i])
-      u_I.x[i] <= i_a; 
-  
+      u_I.x[i] <= i_a;
+
   assign o_a = u_I.x;
-  
+
 endmodule

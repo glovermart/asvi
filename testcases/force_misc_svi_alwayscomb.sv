@@ -9,7 +9,7 @@ interface I
   logic y;
   logic x;
 
-  always_comb 
+  always_comb
     force z = i_srst ? (x & y) : (x | y);
 
 endinterface
@@ -42,11 +42,11 @@ module top
     ( .i_srst  (i_srst)
     );
 
-  M u_M1 
+  M u_M1
     (u_I
     );
 
-  M u_M2 
+  M u_M2
     (u_I
     );
 

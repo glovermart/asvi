@@ -4,7 +4,7 @@
 // NOTE: Lines 22, 23, 26, 27, 39, and 40.
 
 interface I;
-  
+
   logic [7:0] x;
 
   modport P1
@@ -25,7 +25,7 @@ module M
 
   always_comb i.p1 = '0;
   always_comb j.p2 = '1;
-                        
+
 endmodule
 
 
@@ -35,7 +35,7 @@ module top
 
   I u_I ();
 
-  M u_M 
+  M u_M
     ( u_I.P1 //LSBs
     , u_I.P2 //MSBs
     );

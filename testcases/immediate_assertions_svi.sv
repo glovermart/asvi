@@ -9,11 +9,11 @@ interface I
   , input logic i_b
   , output logic o_a
   );
-  
+
   logic z;
-  
+
   always_comb begin
-    assert final (^z !== ’x)
+    assert final (^z !== 'x)
       else $error("z = x");
     if (z)
       o_a = i_a;
@@ -29,8 +29,8 @@ module top
   , output logic o_a
   );
 
-  I u_I 
+  I u_I
     ( .*
     );
-  
+
 endmodule

@@ -4,25 +4,25 @@
 interface I;
 
   logic x [7:0]; // Unpacked array x with start and end address.
-  
+
 endinterface
 
 
 module top
   ( input logic i_a
-  , output logic [7:0] o_a
+  , output logic [7:0] o_x
   );
 
   I u_I ();
-    
+
   int i = 0;
 
-  do begin 
-    assign u_I.x[i] = i_a;
-    i++; end
-  while 
-    ( i < 8);
-  
-  assign o_a = u_I.x;
+  initial
+    do begin
+      assign u_I.x[i] = i_a;
+      i++;
+    end while (i < 8);
+
+  assign o_x = u_I.x;
 
 endmodule
