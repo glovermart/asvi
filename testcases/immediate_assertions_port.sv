@@ -6,7 +6,7 @@ SNUG San Jose 2006, Page 5
 // Immediate assertion with modport.
 
 interface I;
-  
+
   logic z;
   modport P
     (input z
@@ -41,10 +41,10 @@ module top
   );
 
   I u_I ();
-  
+
   M u_M
     ( .p(u_I.P)
     , .* // connect pins i_a,i_b, and o_a.
     );
-    
+
 endmodule
