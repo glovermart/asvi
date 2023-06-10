@@ -8,7 +8,8 @@ localparam int SIZE = 8;
 
 interface I;
 
-  timeunit 1ns;
+  timeunit 1ns; // First timeunit declaration.
+  timeunit 10ns; // Second timeunit declaration.
   timeprecision 1ps;
   // Alternative: `timescale 1ns/ 1ps
   // IEEE Std 1800-2017 clause 3.14.2.2, page 57
@@ -49,9 +50,8 @@ module top
   );
 
   // Timescale keywords must be replicated in all modules and interfaces.
-  timeunit 1ns; // First timeunit declaration.
-  timeunit 10ns; // Second timeunit declaration.
-  timeprecision 1ns;
+  timeunit 1ns; 
+  timeprecision 1ps;
 
   I u_I [SIZE-1:0] ();
 

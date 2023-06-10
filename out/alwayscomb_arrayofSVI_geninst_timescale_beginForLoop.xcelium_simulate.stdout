@@ -1,0 +1,8 @@
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> run
+xmsim: *N,INFSEV (./testbench/tb.sv,7): (time 0 FS).
+tb.l_tb_initial
+Simulation started.
+Simulation complete via $finish(1) at time 0 FS + 0
+./testbench/tb.sv:8     $finish;
+xcelium> exit

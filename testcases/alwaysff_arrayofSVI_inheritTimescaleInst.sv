@@ -55,8 +55,6 @@ module top
   , output logic [SIZE-1:0] o_b
   , output logic [SIZE-1:0] o_c
   );
-  timeunit 1ns;
-  timeprecision 1ps;
 
   I u_I [SIZE] (); // Inherit timescale from top module. LRM 3.14.2.3.
 

@@ -1,0 +1,4 @@
+  timeunit 10ns; // Second timeunit declaration.
+              |
+xmvlog: *E,TMDRPT (testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits_forBeginEnd.sv,12|14): <timeunits_declaration> values do not match those already seen in this scope [SystemVerilog].
+FAILURE

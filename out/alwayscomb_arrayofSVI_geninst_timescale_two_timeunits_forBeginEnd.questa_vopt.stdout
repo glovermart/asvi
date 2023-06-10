@@ -1,0 +1,17 @@
+QuestaSim-64 vopt 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 07:43:09 on Jun 10,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+** Error: testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits_forBeginEnd.sv(48): (vopt-2730) Undefined variable: 'SIZE'.
+** Error (suppressible): testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits_forBeginEnd.sv(49): (vopt-2388) 'o_a' already declared in this scope (top) at testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits_forBeginEnd.sv(48).
+** Error: testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits_forBeginEnd.sv(48): (vopt-13294) Identifier must be declared with a port mode: o_a.
+Optimization failed
+End time: 07:43:10 on Jun 10,2023, Elapsed time: 0:00:01
+Errors: 3, Warnings: 0
+FAILURE

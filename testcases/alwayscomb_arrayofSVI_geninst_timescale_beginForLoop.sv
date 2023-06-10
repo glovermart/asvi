@@ -8,7 +8,7 @@ localparam int SIZE = 8;
 
 interface I;
 
-  timeunit 1ns;
+  timeunit 10ns;// Timeunit does not match other declared timenuits. 
   timeprecision 1ps;
   // Alternative: `timescale 1ns/ 1ps
   // IEEE Std 1800-2017 clause 3.14.2.2, page 57
@@ -49,16 +49,14 @@ module top
   );
 
   // Timescale keywords must be replicated in all modules and interfaces.
-  timeunit 10ns; // Timeunit does not match other declared timenuits. 
-  timeprecision 1ns;
+  timeunit 1ns; 
+  timeprecision 1ps;
 
   I u_I [SIZE-1:0] ();
 
-  logic a1;
-  logic b1;
+  logic [7:0]a;
+  logic [7:0]b;
 
-  logic a;
-  logic b;
 
   logic [SIZE-1:0] a_q;
   logic [SIZE-1:0] b_q;
@@ -67,20 +65,18 @@ module top
     M u_M
       ( .u_I    (u_I[i])
       , .i_clk  (i_clk)
-      , .o_a    (a1)
-      , .o_b    (b1)
+      , .o_a    (a[i])
+      , .o_b    (b[i])
       );
   end
 
-  always_comb a = a1;
-  always_comb b = b1;
 
   // Use procedural loop block - observe value assignments per clock cycle.
   // Generate blocks get evaluated during elaboration time.
   always_ff @(posedge i_clk) 
     for (int i = 0; i < SIZE; i++) begin 
-      a_q[i] <= a;
-      b_q[i] <= b;
+      a_q[i] <= a[i];
+      b_q[i] <= b[i];
     end
 
   assign o_a = a_q;
