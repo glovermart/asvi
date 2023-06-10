@@ -1,0 +1,6 @@
+testcases/alwayslatch_misc_svi_vectorPartSelect.sv:27: syntax error
+testcases/alwayslatch_misc_svi_vectorPartSelect.sv:27: Errors in port declarations.
+testcases/alwayslatch_misc_svi_vectorPartSelect.sv:41: syntax error
+testcases/alwayslatch_misc_svi_vectorPartSelect.sv:41: Errors in port declarations.
+testcases/alwayslatch_misc_svi_vectorPartSelect.sv:49: warning: implicit definition of wire 'p'.
+testcases/alwayslatch_misc_svi_vectorPartSelect.sv:70: warning: implicit definition of wire 'u_I'.

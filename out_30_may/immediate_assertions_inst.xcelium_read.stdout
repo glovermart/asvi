@@ -1,0 +1,16 @@
+    assert final (^u_I.z !== ’x) 
+               |
+xmvlog: *W,DEFFIN (testcases/immediate_assertions_inst.sv,23|15): Usage of reserved word "final" in a deferred assertion is not supported.
+    assert final (^u_I.z !== ’x) 
+                             |
+xmvlog: *W,NONPRT (testcases/immediate_assertions_inst.sv,23|29): non-printable character (0xe2) ignored.
+    assert final (^u_I.z !== ’x) 
+                              |
+xmvlog: *W,NONPRT (testcases/immediate_assertions_inst.sv,23|30): non-printable character (0x80) ignored.
+    assert final (^u_I.z !== ’x) 
+                               |
+xmvlog: *W,NONPRT (testcases/immediate_assertions_inst.sv,23|31): non-printable character (0x99) ignored.
+    assert final (^u_I.z !== ’x) 
+                                |
+xmvlog: *E,UNDIDN (testcases/immediate_assertions_inst.sv,23|32): 'x': undeclared identifier [12.5(IEEE)].
+FAILURE

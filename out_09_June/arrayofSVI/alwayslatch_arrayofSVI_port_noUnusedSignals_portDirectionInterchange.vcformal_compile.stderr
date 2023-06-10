@@ -1,0 +1,9 @@
+
+Error in script: tcl/vcformal_batch_run.tcl, terminating VC Static Master...
+0
+    while executing
+"read_file -format sverilog -top top ${TEST_NAME}"
+    (file "tcl/vcformal_batch_run.tcl" line 3)
+    invoked from within
+"source -echo -verbose tcl/vcformal_batch_run.tcl"
+

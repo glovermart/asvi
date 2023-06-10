@@ -1,0 +1,21 @@
+$tcl_library is set to: /cad/mentor/oneSpin360/2023.1/etc/tcl8.6
+init.tcl executed.
+source "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_defaults.tcl"
+source -signed "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_startup.tcl.obf"
+source "/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl"
+-I- FileParse - Analyzing source file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_arrayofSVI_port.sv" .... [1]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_arrayofSVI_port.sv:21: Analyzing module ( M ). [4]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_arrayofSVI_port.sv:34: Analyzing module ( top ). [4]
+-I- Elaborate auto-selected the toplevel: "verilog!work.top"
+-W- SimSynMismatch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_arrayofSVI_port.sv:26: Initialization of non-wire register might be ignored by some synthesis tools. Use continuous assignment instead.
+-I- Elaborating verilog portion...
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_arrayofSVI_port.sv:22: wire 'p.x$resolve' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_arrayofSVI_port.sv:28:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_arrayofSVI_port.sv:22:.
+-E- InterfaceErr - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_arrayofSVI_port.sv:43: try to bind interface 'u_I' to port 'p' of different sizes.
+-E- Elaboration of design golden failed.
+-E- Can not source script '/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl'.
+    while executing
+"elaborate"
+    (file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl" line 4)
+-E- Error during execution of user commands.

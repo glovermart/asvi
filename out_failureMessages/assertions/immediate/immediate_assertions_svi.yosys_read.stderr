@@ -1,0 +1,1 @@
+testcases/immediate_assertions_svi.sv:17: ERROR: syntax error, unexpected TOK_ELSE, expecting ';'

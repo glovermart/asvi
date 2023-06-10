@@ -1,0 +1,115 @@
+$tcl_library is set to: /cad/mentor/oneSpin360/2023.1/etc/tcl8.6
+init.tcl executed.
+source "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_defaults.tcl"
+source -signed "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_startup.tcl.obf"
+source "/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl"
+-I- FileParse - Analyzing source file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv" .... [1]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:30: Analyzing module ( M1 ). [4]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:56: Analyzing module ( M2 ). [4]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:79: Analyzing module ( top ). [4]
+-I- Elaborate auto-selected the toplevel: "verilog!work.top"
+-W- SimSynMismatch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:105: Initialization of non-wire register might be ignored by some synthesis tools. Use continuous assignment instead.
+-I- Elaborating verilog portion...
+-W- UndrivenReg - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:38: reading undriven register 'rst'.
+-W- UndrivenReg - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:45: reading undriven register 'rst'.
+-W- UndrivenReg - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:39: reading undriven register 'en'.
+-W- UndrivenReg - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:47: reading undriven register 'en'.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31: wire 'p1[0].x$resolve' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:14:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31: wire 'p1[1].x$resolve' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:14:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31: wire 'p1[2].x$resolve' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:14:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31: wire 'p1[3].x$resolve' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:14:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31: wire 'p1[4].x$resolve' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:14:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31: wire 'p1[5].x$resolve' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:14:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31: wire 'p1[6].x$resolve' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:14:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31: wire 'p1[7].x$resolve' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:14:.
+-W- UndrivenReg - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:65: reading undriven register 'en'.
+-W- UndrivenReg - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:70: reading undriven register 'en'.
+-W- UnconnInputPort - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:63: input port 'arst' is unconnected in instance 'u_I'.
+-W- MixedAssign - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:106: Register 'i' is written with blocking and nonblocking assignments.
+-I- MixedAssign - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:112: Blocking assignment to 'i'.
+-I- MixedAssign - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:108: Nonblocking assignment to 'i'.
+
+Warning Statistics:
+-------------------
+    1   UnconnInputPort      input port is not connected
+    1   MixedAssign          mixing blocking and nonblocking assignment
+    1   SimSynMismatch       simulation synthesis mismatch
+    6   UndrivenReg          reading undriven register
+    8   MultDrivers          multiple drivers
+-I- Elaboration of design golden succeeded.
+-I- Traversing modules of design 'top' ...
+-I- Traversing modules of design 'top' took 0.12 seconds.
+-I- Analyzing signal dependency in design 'top' ...
+-I- Analyzing signal dependency in design 'top' took 0.02 seconds.
+-I- Analyzing loops ...
+-I- Analyzing loops took 0.00 seconds.
+-I- Analyzing primary and generated clocks ...
+-I- Computing next states ...
+-I- Computing next states took 0.00 seconds.
+-I- Analyzing primary and generated clocks took 0.00 seconds.
+-I- Checking clock dependency assumption ...
+-I- Checking clock dependency assumption took 0.01 seconds.
+-I- Clock input 'i_clk (posedge)' found.
+-I- Computing CSA result ...
+-I- Computing CSA result took 0.01 seconds.
+-I- Finishing CSA analysis ...
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31: State 'u_M1/p1[0]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31: State 'u_M1/p1[1]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31: State 'u_M1/p1[2]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31: State 'u_M1/p1[3]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31: State 'u_M1/p1[4]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31: State 'u_M1/p1[5]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31: State 'u_M1/p1[6]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31: State 'u_M1/p1[7]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:57: State 'u_M2/p2[0]/w' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:57: State 'u_M2/p2[1]/w' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:57: State 'u_M2/p2[2]/w' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:57: State 'u_M2/p2[3]/w' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:57: State 'u_M2/p2[4]/w' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:57: State 'u_M2/p2[5]/w' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:57: State 'u_M2/p2[6]/w' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:57: State 'u_M2/p2[7]/w' is classified as latch, because it is not edge sensitive.
+-I- Compilation for design golden succeeded.
+-R- Printed Messages
+===============================================================================
+class       category            memo                                                          occurrence
+-------------------------------------------------------------------------------
+Warning     MixedAssign         mixing blocking and nonblocking assignment                    1         
+Warning     MultDrivers         multiple drivers                                              8         
+Warning     SimSynMismatch      simulation synthesis mismatch                                 1         
+Warning     UnconnInputPort     input port is not connected                                   1         
+Warning     UndrivenReg         reading undriven register                                     6         
+Info        AnalyzeModule       analyzing module                                              3         
+Info        FileParse           file parsed                                                   1         
+Info        Latch               State  is classified as latch                                 16        
+Info        MixedAssign         mixing blocking and nonblocking assignment                    2         
+Info        {}                  Clock input '<Name> (<Name>)' found.                          1         
+Info        {}                  unclassified message                                          18        
+Info        {}                  {}                                                            1         
+Result      {}                  {}                                                            1         
+Plain       {}                  unclassified message                                          1         
+Plain       {}                  {}                                                            15        
+TclStdOut   {}                  {}                                                            2         
+CommandLog  {}                  {}                                                            3         
+	
+-R- Filtered Messages
+===============================================================================
+id   active   class     category            memo                     text                     src_loc        origin  hits 
+-------------------------------------------------------------------------------
+No message filters available.

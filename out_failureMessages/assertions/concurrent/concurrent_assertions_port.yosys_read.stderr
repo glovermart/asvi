@@ -1,0 +1,1 @@
+testcases/concurrent_assertions_port.sv:10: ERROR: Module port `\i_clk' is neither input nor output.

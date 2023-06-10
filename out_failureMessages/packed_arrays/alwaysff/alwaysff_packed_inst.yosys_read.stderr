@@ -1,0 +1,3 @@
+Warning: wire '\u_I.x' is assigned in a block at testcases/alwaysff_packed_inst.sv:20.7-20.22.
+testcases/alwaysff_packed_inst.sv:20: Warning: Identifier `\u_I.x' is implicitly declared.
+testcases/alwaysff_packed_inst.sv:20: Warning: Range select out of bounds on signal `\u_I.x': Setting result bit to undef.

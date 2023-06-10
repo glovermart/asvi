@@ -1,0 +1,7 @@
+[93mWarning[97m: Config file '.svlint.toml' is not found. Enable all rules(B[m
+[91mError[97m: parse error
+[94m   -->[37m testcases/immediate_assertions_port.sv:26:24
+[94m   |
+[94m26 |[37m     assert final (^p.z !== ’x)
+[94m   |[93m                        ^(B[m
+FAILURE

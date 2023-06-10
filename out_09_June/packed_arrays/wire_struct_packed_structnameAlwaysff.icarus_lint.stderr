@@ -1,0 +1,3 @@
+testcases/wire_struct_packed_structnameAlwaysff.sv:22: error: u_I.data.data is not a valid l-value in top.
+testcases/wire_struct_packed_structnameAlwaysff.sv:9:      : u_I.data.data is declared here as wire.
+Elaboration failed

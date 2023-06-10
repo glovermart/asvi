@@ -1,0 +1,10 @@
+%Warning-DECLFILENAME: testcases/assign_unpacked_inst_foreachAssignOut.sv:5:11: Filename 'assign_unpacked_inst_foreachAssignOut' does not match IFACE name: 'I'
+    5 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: testcases/assign_unpacked_inst_foreachAssignOut.sv:24:14: Operator ASSIGNW expects 8 bits on the Assign RHS, but Assign RHS's VARXREF 'x' generates 1 bits.
+                                                                              : ... In instance top
+   24 |   assign o_x = u_I.x;
+      |              ^
+%Error: Exiting due to 2 warning(s)

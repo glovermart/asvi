@@ -1,0 +1,78 @@
+%Warning-DECLFILENAME: testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:6:11: Filename 'alwaysff_arrayofSVI_instModuleport_noloop' does not match IFACE name: 'I'
+    6 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Error: testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:20:10: Illegal bit or array select; type does not have a bit range, or bad dimension: data type is 'logic'
+                                                                    : ... In instance top
+   20 |     u_I.x[0] <= 1'b1;  
+      |          ^
+%Error: testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:21:10: Illegal bit or array select; type does not have a bit range, or bad dimension: data type is 'logic'
+                                                                    : ... In instance top
+   21 |     u_I.x[1] <= 1'b0;
+      |          ^
+%Warning-SELRANGE: testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:21:10: Selection index out of range: 1:1 outside 0:0
+                                                                               : ... In instance top
+   21 |     u_I.x[1] <= 1'b0;
+      |          ^
+%Error: testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:22:10: Illegal bit or array select; type does not have a bit range, or bad dimension: data type is 'logic'
+                                                                    : ... In instance top
+   22 |     u_I.x[2] <= 1'b1;
+      |          ^
+%Warning-SELRANGE: testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:22:10: Selection index out of range: 2:2 outside 0:0
+                                                                               : ... In instance top
+   22 |     u_I.x[2] <= 1'b1;
+      |          ^
+%Error: testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:23:10: Illegal bit or array select; type does not have a bit range, or bad dimension: data type is 'logic'
+                                                                    : ... In instance top
+   23 |     u_I.x[3] <= 1'b0;
+      |          ^
+%Warning-SELRANGE: testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:23:10: Selection index out of range: 3:3 outside 0:0
+                                                                               : ... In instance top
+   23 |     u_I.x[3] <= 1'b0;
+      |          ^
+%Warning-SELRANGE: testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:23:10: Selection index out of range: 1:1 outside 0:0
+                                                                               : ... In instance top
+   23 |     u_I.x[3] <= 1'b0;
+      |          ^
+%Error: testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:24:10: Illegal bit or array select; type does not have a bit range, or bad dimension: data type is 'logic'
+                                                                    : ... In instance top
+   24 |     u_I.x[4] <= 1'b1;
+      |          ^
+%Warning-SELRANGE: testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:24:10: Selection index out of range: 4:4 outside 0:0
+                                                                               : ... In instance top
+   24 |     u_I.x[4] <= 1'b1;
+      |          ^
+%Error: testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:25:10: Illegal bit or array select; type does not have a bit range, or bad dimension: data type is 'logic'
+                                                                    : ... In instance top
+   25 |     u_I.x[5] <= 1'b0;
+      |          ^
+%Warning-SELRANGE: testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:25:10: Selection index out of range: 5:5 outside 0:0
+                                                                               : ... In instance top
+   25 |     u_I.x[5] <= 1'b0;
+      |          ^
+%Warning-SELRANGE: testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:25:10: Selection index out of range: 1:1 outside 0:0
+                                                                               : ... In instance top
+   25 |     u_I.x[5] <= 1'b0;
+      |          ^
+%Error: testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:26:10: Illegal bit or array select; type does not have a bit range, or bad dimension: data type is 'logic'
+                                                                    : ... In instance top
+   26 |     u_I.x[6] <= 1'b1;
+      |          ^
+%Warning-SELRANGE: testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:26:10: Selection index out of range: 6:6 outside 0:0
+                                                                               : ... In instance top
+   26 |     u_I.x[6] <= 1'b1;
+      |          ^
+%Error: testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:27:10: Illegal bit or array select; type does not have a bit range, or bad dimension: data type is 'logic'
+                                                                    : ... In instance top
+   27 |     u_I.x[7] <= 1'b0;
+      |          ^
+%Warning-SELRANGE: testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:27:10: Selection index out of range: 7:7 outside 0:0
+                                                                               : ... In instance top
+   27 |     u_I.x[7] <= 1'b0;
+      |          ^
+%Warning-SELRANGE: testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:27:10: Selection index out of range: 1:1 outside 0:0
+                                                                               : ... In instance top
+   27 |     u_I.x[7] <= 1'b0;
+      |          ^
+%Error: Exiting due to 8 error(s), 11 warning(s)

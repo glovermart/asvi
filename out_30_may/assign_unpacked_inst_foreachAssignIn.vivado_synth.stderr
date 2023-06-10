@@ -1,0 +1,6 @@
+ERROR: [Synth 8-2715] syntax error near foreach [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_foreachAssignIn.sv:20]
+ERROR: [Synth 8-8779] SystemVerilog keyword foreach used in incorrect context [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_foreachAssignIn.sv:20]
+ERROR: [Synth 8-2715] syntax error near ) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_foreachAssignIn.sv:20]
+ERROR: [Synth 8-6775] single value range is not allowed in packed dimension [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_foreachAssignIn.sv:20]
+ERROR: [Synth 8-36] 'i' is not declared [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_foreachAssignIn.sv:20]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

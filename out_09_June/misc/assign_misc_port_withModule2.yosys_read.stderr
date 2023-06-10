@@ -1,0 +1,9 @@
+testcases/assign_misc_port_withModule2.sv:29: Warning: Identifier `\p2.z' is implicitly declared.
+testcases/assign_misc_port_withModule2.sv:29: Warning: Identifier `\p1.y' is implicitly declared.
+testcases/assign_misc_port_withModule2.sv:29: Warning: Identifier `\p1.x' is implicitly declared.
+testcases/assign_misc_port_withModule2.sv:30: Warning: Identifier `\p2.w' is implicitly declared.
+testcases/assign_misc_port_withModule2.sv:54: Warning: Identifier `\u_I.P1' is implicitly declared.
+testcases/assign_misc_port_withModule2.sv:55: Warning: Identifier `\u_I.P2' is implicitly declared.
+Warning: Wire M2.\o_b is used but has no driver.
+Warning: Wire M2.\o_a is used but has no driver.
+ERROR: Module `M2' referenced in module `top' in cell `u_M2' does not have a port named 'p2'.

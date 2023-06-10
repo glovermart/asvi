@@ -1,0 +1,436 @@
+[93mWarning[97m: Config file '.svlint.toml' is not found. Enable all rules(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:6:0
+[94m  |
+[94m6 |[37m 
+[94m  |[93m [93m hint  : Remove trailing whitespace.
+[94m  |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:6:1
+[94m  |
+[94m6 |[37m // NOTE: Lines 24 and 61. 
+[94m  |[93m ^^^^^^^^^^^^^^^^^^^^^^^^^^[93m hint  : Remove trailing whitespace.
+[94m  |[33m                           [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:10:1
+[94m   |
+[94m10 |[37m localparam int SIZE = 8;
+[94m   |[93m ^^^^^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m           [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: re_forbidden_localparam
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:10:16
+[94m   |
+[94m10 |[37m localparam int SIZE = 8;
+[94m   |[93m                ^^^^[93m hint  : Use a localparam identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                    [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:13:1
+[94m   |
+[94m13 |[37m interface I;
+[94m   |[93m ^^^^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m          [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_interface
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:13:1
+[94m   |
+[94m13 |[37m interface I;
+[94m   |[93m ^^^^^^^^^[93m hint  : Prefix `interface` identifier with "ifc_".
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_interface
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:13:1
+[94m   |
+[94m13 |[37m interface I;
+[94m   |[93m ^^^^^^^^^[93m hint  : Use a interface identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_interface
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:13:1
+[94m   |
+[94m13 |[37m interface I;
+[94m   |[93m ^^^^^^^^^[93m hint  : Use a interface identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:13:11
+[94m   |
+[94m13 |[37m interface I;
+[94m   |[93m           ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m            [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:14:0
+[94m   |
+[94m14 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:22:1
+[94m   |
+[94m22 |[37m module M
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:22:1
+[94m   |
+[94m22 |[37m module M
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:22:1
+[94m   |
+[94m22 |[37m module M
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:22:1
+[94m   |
+[94m22 |[37m module M
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:22:8
+[94m   |
+[94m22 |[37m module M
+[94m   |[93m        ^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m         [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:23:5
+[94m   |
+[94m23 |[37m   ( input logic i_clk
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:23:17
+[94m   |
+[94m23 |[37m   ( input logic i_clk
+[94m   |[93m                 ^^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                      [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: interface_port_with_modport
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:24:5
+[94m   |
+[94m24 |[37m   , I u_I [SIZE]
+[94m   |[93m     ^[93m hint  : Specify the modport on the interface port.
+[94m   |[33m      [33m reason: Without a modport, the interface port signals are all implictly `inout`.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:24:5
+[94m   |
+[94m24 |[37m   , I u_I [SIZE]
+[94m   |[93m     ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m      [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:24:7
+[94m   |
+[94m24 |[37m   , I u_I [SIZE]
+[94m   |[93m       ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:24:7
+[94m   |
+[94m24 |[37m   , I u_I [SIZE]
+[94m   |[93m       ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_port_input
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:24:7
+[94m   |
+[94m24 |[37m   , I u_I [SIZE]
+[94m   |[93m       ^^^[93m hint  : Use a port identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_port_interface
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:24:7
+[94m   |
+[94m24 |[37m   , I u_I [SIZE]
+[94m   |[93m       ^^^[93m hint  : Use a port identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:26:0
+[94m   |
+[94m26 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:30:0
+[94m   |
+[94m30 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: generate_for_with_label
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:31:3
+[94m   |
+[94m31 |[37m   for (genvar i = 0; i < SIZE; i++) begin
+[94m   |[93m   ^^^[93m hint  : Use a label with prefix "l_" on loop generate block.
+[94m   |[33m      [33m reason: Unnamed generate blocks imply unintuitive hierarchical paths.
+(B[m
+[91mFail[97m: keyword_required_generate
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:31:3
+[94m   |
+[94m31 |[37m   for (genvar i = 0; i < SIZE; i++) begin
+[94m   |[93m   ^^^[93m hint  : Use `generate`/`endgenerate` keywords to define generate regions.
+[94m   |[33m      [33m reason: Omitting `generate`/`endgenerate` keywords may cause issues with non-compliant tools.
+(B[m
+[91mFail[97m: genvar_declaration_out_loop
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:31:8
+[94m   |
+[94m31 |[37m   for (genvar i = 0; i < SIZE; i++) begin
+[94m   |[93m        ^^^^^^[93m hint  : Declare `genvar` outside the loop generate construct.
+[94m   |[33m              [33m reason: Some tools don't support `genvar` declarations inside loop generate constructs.
+(B[m
+[91mFail[97m: re_forbidden_genvar
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:31:15
+[94m   |
+[94m31 |[37m   for (genvar i = 0; i < SIZE; i++) begin
+[94m   |[93m               ^[93m hint  : Use a genvar identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_keyword_end
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:35:3
+[94m   |
+[94m35 |[37m   end  
+[94m   |[93m   ^^^[93m hint  : Follow keyword with a colon, newline, or exactly 1 space.
+[94m   |[33m      [33m reason: Consistent use of whitespace enhances readability by reducing visual noise.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:36:0
+[94m   |
+[94m36 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:37:3
+[94m   |
+[94m37 |[37m   // An always_ff block cannot be used to drive signals of an array of 
+[94m   |[93m   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[93m hint  : Remove trailing whitespace.
+[94m   |[33m                                                                        [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:38:3
+[94m   |
+[94m38 |[37m   // interfaces directly. It does not resolve; generate block and 
+[94m   |[93m   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[93m hint  : Remove trailing whitespace.
+[94m   |[33m                                                                   [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: sequential_block_in_always_ff
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:41:30
+[94m   |
+[94m41 |[37m   always_ff @(posedge i_clk) begin
+[94m   |[93m                              ^^^^^[93m hint  : Keywords `begin` and `end` are forbidden within `always_ff`.
+[94m   |[33m                                   [33m reason: Sequential blocks within `always_ff` may encourage overly-complex code.
+(B[m
+[91mFail[97m: style_keyword_end
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:46:5
+[94m   |
+[94m46 |[37m     end 
+[94m   |[93m     ^^^[93m hint  : Follow keyword with a colon, newline, or exactly 1 space.
+[94m   |[33m        [33m reason: Consistent use of whitespace enhances readability by reducing visual noise.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:47:0
+[94m   |
+[94m47 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:48:0
+[94m   |
+[94m48 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:52:1
+[94m   |
+[94m52 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:52:1
+[94m   |
+[94m52 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:52:1
+[94m   |
+[94m52 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: uppercamelcase_module
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:52:8
+[94m   |
+[94m52 |[37m module top
+[94m   |[93m        ^^^[93m hint  : Begin `module` name with UpperCamelCase.
+[94m   |[33m           [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:53:5
+[94m   |
+[94m53 |[37m   ( input logic i_clk
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:53:17
+[94m   |
+[94m53 |[37m   ( input logic i_clk
+[94m   |[93m                 ^^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                      [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:54:5
+[94m   |
+[94m54 |[37m   , output logic [SIZE-1:0] o_a
+[94m   |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m   |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:54:29
+[94m   |
+[94m54 |[37m   , output logic [SIZE-1:0] o_a
+[94m   |[93m                             ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                                [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:55:5
+[94m   |
+[94m55 |[37m   , output logic [SIZE-1:0] o_b
+[94m   |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m   |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:55:29
+[94m   |
+[94m55 |[37m   , output logic [SIZE-1:0] o_b
+[94m   |[93m                             ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                                [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:56:5
+[94m   |
+[94m56 |[37m   , output logic [SIZE-1:0] o_c
+[94m   |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m   |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:56:29
+[94m   |
+[94m56 |[37m   , output logic [SIZE-1:0] o_c
+[94m   |[93m                             ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                                [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:60:0
+[94m   |
+[94m60 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:61:3
+[94m   |
+[94m61 |[37m   I u_I [SIZE] (); // Inherit timescale from top module. LRM 3.14.2.3.
+[94m   |[93m   ^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m    [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:61:5
+[94m   |
+[94m61 |[37m   I u_I [SIZE] (); // Inherit timescale from top module. LRM 3.14.2.3.
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:61:5
+[94m   |
+[94m61 |[37m   I u_I [SIZE] (); // Inherit timescale from top module. LRM 3.14.2.3.
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:63:3
+[94m   |
+[94m63 |[37m   M u_M  // Inherit timescale from top module. LRM 3.14.2.3.
+[94m   |[93m   ^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m    [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:63:5
+[94m   |
+[94m63 |[37m   M u_M  // Inherit timescale from top module. LRM 3.14.2.3.
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:63:5
+[94m   |
+[94m63 |[37m   M u_M  // Inherit timescale from top module. LRM 3.14.2.3.
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:64:10
+[94m   |
+[94m64 |[37m     ( .* // Implicit port connection. u_I from module M's port and u_I from 
+[94m   |[93m          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[93m hint  : Remove trailing whitespace.
+[94m   |[33m                                                                             [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:67:0
+[94m   |
+[94m67 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: generate_for_with_label
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:67:3
+[94m   |
+[94m67 |[37m   for (genvar i = 0; i < SIZE; i++) begin
+[94m   |[93m   ^^^[93m hint  : Use a label with prefix "l_" on loop generate block.
+[94m   |[33m      [33m reason: Unnamed generate blocks imply unintuitive hierarchical paths.
+(B[m
+[91mFail[97m: keyword_required_generate
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:67:3
+[94m   |
+[94m67 |[37m   for (genvar i = 0; i < SIZE; i++) begin
+[94m   |[93m   ^^^[93m hint  : Use `generate`/`endgenerate` keywords to define generate regions.
+[94m   |[33m      [33m reason: Omitting `generate`/`endgenerate` keywords may cause issues with non-compliant tools.
+(B[m
+[91mFail[97m: genvar_declaration_out_loop
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:67:8
+[94m   |
+[94m67 |[37m   for (genvar i = 0; i < SIZE; i++) begin
+[94m   |[93m        ^^^^^^[93m hint  : Declare `genvar` outside the loop generate construct.
+[94m   |[33m              [33m reason: Some tools don't support `genvar` declarations inside loop generate constructs.
+(B[m
+[91mFail[97m: re_forbidden_genvar
+[94m   -->[37m testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:67:15
+[94m   |
+[94m67 |[37m   for (genvar i = 0; i < SIZE; i++) begin
+[94m   |[93m               ^[93m hint  : Use a genvar identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+FAILURE

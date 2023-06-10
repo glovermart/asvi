@@ -1,0 +1,79 @@
+$tcl_library is set to: /cad/mentor/oneSpin360/2023.1/etc/tcl8.6
+init.tcl executed.
+source "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_defaults.tcl"
+source -signed "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_startup.tcl.obf"
+source "/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl"
+-I- FileParse - Analyzing source file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv" .... [1]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:17: Analyzing module ( M ). [4]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:40: Analyzing module ( top ). [4]
+-I- Elaborate auto-selected the toplevel: "verilog!work.top"
+-W- UnsuppVerilog - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:30: not supported: force (ignored).
+-W- UnsuppVerilog - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:32: not supported: release (ignored).
+-I- Elaborating verilog portion...
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:18: wire 'u_I[0].z$resolve' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:25:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:18:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:18: wire 'u_I[1].z$resolve' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:25:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:18:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:18: wire 'u_I[2].z$resolve' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:25:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:18:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:18: wire 'u_I[3].z$resolve' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:25:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:18:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:18: wire 'u_I[4].z$resolve' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:25:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:18:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:18: wire 'u_I[5].z$resolve' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:25:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:18:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:18: wire 'u_I[6].z$resolve' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:25:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:18:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:18: wire 'u_I[7].z$resolve' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:25:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_input.sv:18:.
+
+Warning Statistics:
+-------------------
+    2   UnsuppVerilog        unsupported Verilog feature
+    8   MultDrivers          multiple drivers
+-I- Elaboration of design golden succeeded.
+-I- Traversing modules of design 'top' ...
+-I- Traversing modules of design 'top' took 0.04 seconds.
+-I- Analyzing signal dependency in design 'top' ...
+-I- Analyzing signal dependency in design 'top' took 0.01 seconds.
+-I- Analyzing loops ...
+-I- Analyzing loops took 0.00 seconds.
+-I- Analyzing primary and generated clocks ...
+-I- Computing next states ...
+-I- Computing next states took 0.00 seconds.
+-I- Analyzing primary and generated clocks took 0.00 seconds.
+-I- Checking clock dependency assumption ...
+-I- Checking clock dependency assumption took 0.00 seconds.
+-I- Computing CSA result ...
+-I- Computing CSA result took 0.00 seconds.
+-I- Finishing CSA analysis ...
+-I- Compilation for design golden succeeded.
+-R- Printed Messages
+===============================================================================
+class       category            memo                                                          occurrence
+-------------------------------------------------------------------------------
+Warning     MultDrivers         multiple drivers                                              8         
+Warning     UnsuppVerilog       unsupported Verilog feature                                   2         
+Info        AnalyzeModule       analyzing module                                              2         
+Info        FileParse           file parsed                                                   1         
+Info        {}                  unclassified message                                          18        
+Info        {}                  {}                                                            1         
+Result      {}                  {}                                                            1         
+Plain       {}                  unclassified message                                          1         
+Plain       {}                  {}                                                            9         
+TclStdOut   {}                  {}                                                            2         
+CommandLog  {}                  {}                                                            3         
+	
+-R- Filtered Messages
+===============================================================================
+id   active   class     category            memo                     text                     src_loc        origin  hits 
+-------------------------------------------------------------------------------
+No message filters available.

@@ -1,0 +1,103 @@
+
+                                   VC Static 
+
+                  Version U-2023.03 for linux64 - Mar 02, 2023
+
+                    Copyright (c) 2010 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid this.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+vcf> vcf> global env
+set TEST_NAME $env(TESTCASE)
+testcases/assign_arrayofSVI_inst_0.sv
+read_file -format sverilog -top top ${TEST_NAME}
+Info: Invoking Simon...
+Info: Simon VCS Start
+=======================================================
+VCS CPU Time(s)     :0.06
+SIMON CPU Time(s)   :0.03
+SIMON Total Time(s) :0.03
+Peak Memory(MB)     :434
+=======================================================
+Info: Simon VCS Finished
+Info: Simon call complete 
+Info: Exiting after Simon Analysis 
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 0 warning(s)
+[Info] DB_COPT045: Vcs analyzer task has finished.
+# Gate Counts 
+Number of Flat Instances = 52
+Number of Operator = 52
+Number of Libcells = 0
+Number of Black-Box Instances = 0
+
+1
+check_fv_setup
+[Info] AUTO_SIM_SAVE_RESET: Saving the reset states.
+	Either the command 'sim_save_reset' has not been run or the reset states need to be saved again.
+[Warning] SIM_RESET_GENERATED: The initial reset state will be generated without simulation having been run.
+	To get reset simulation trace, please run sim_run prior to sim_save_reset.
+[Info] FORMAL_I_CREATE: Create Formal Model:top.
+[Info] FORMAL_I_RUN: Starting formal verification for check_fv_setup
+	  Id: 0  Goals: 0  Constraints: 0  Block Mode: true
+[Info] APP_LIC_CHKOUT: Checkout 1 app license(s).
+[Info] FDC_FVS: No setup issues found.
+	The results can be viewed again by using the report_fv_setup command.
+1
+report_fv_setup -list
+
+  Design/Setup analysis results
+  -----------------------------
+
+  Summary
+  -------
+
+  Reset violations                 :    0
+  Clock violations                 :    0
+  Glitch violations                :    0
+  Oscillating pure comb. loops     :    0
+  Oscillating latch/ff comb. loops :    0
+  Combinational loops              :    0
+  Multidriven nets                 :    0
+
+  > No issues in design or setup detected
+
+1
+quit
+=======================================================
+Total Time(S)  :7.56
+CPU Time(S)    :3.37
+Peak Memory(MB):1346
+========================Formal=========================
+Engine Wall Time(S)    :2.80
+=======================================================

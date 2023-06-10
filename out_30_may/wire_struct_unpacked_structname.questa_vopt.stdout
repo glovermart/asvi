@@ -1,0 +1,24 @@
+QuestaSim-64 vopt 2023.1 Compiler 2023.01 Jan 23 2023
+Start time: 02:35:28 on May 30,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+-- Loading interface I
+** Warning: testbench/tb.sv(3): (vopt-2685) [TFMPC] - Too few port connections for 'u_DUT'.  Expected 2, found 0.
+Incremental compilation check found no design-units (out of 4) may be reused.
+Optimizing 4 design-units (inlining 2/3 module instances):
+-- Inlining interface I(fast__1)
+-- Inlining module top(fast)
+-- Optimizing module tb(fast)
+** Error: testcases/wire_struct_unpacked_structname.sv(22): (vopt-2110) Illegal reference to net "data".
+** Error (suppressible): testcases/wire_struct_unpacked_structname.sv(24): (vopt-13215) Cannot assign an unpacked type 'tb.u_DUT.u_I.struct' to a packed type 'reg[7:0]'.
+Optimization failed
+** Error: (vopt-2064) Compiler back-end code generation process terminated with code 12.
+End time: 02:35:28 on May 30,2023, Elapsed time: 0:00:00
+Errors: 3, Warnings: 1
+FAILURE

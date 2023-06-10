@@ -1,0 +1,28 @@
+QuestaSim-64 vopt 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 07:13:16 on Jun 09,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+-- Loading interface I
+** Warning: testcases/assign_unpacked_svi_noLiteral.sv(19): (vopt-2241) Connection width does not match width of port 'i_a'. The port definition is at: testcases/alwayslatch_misc_svi_vectorPartSelect.sv(7).
+** Warning: testbench/tb.sv(3): (vopt-2685) [TFMPC] - Too few port connections for 'u_DUT'.  Expected 2, found 0.
+Incremental compilation check found 1 design-unit (out of 4) may be reused.
+Optimizing 3 design-units (inlining 2/3 module instances):
+-- Inlining interface I(fast__1)
+-- Inlining module top(fast)
+** Warning: testcases/assign_unpacked_svi_noLiteral.sv(19): (vopt-2685) [TFMPC] - Too few port connections for 'u_I'.  Expected 4, found 1.
+** Warning: testcases/assign_unpacked_svi_noLiteral.sv(19): (vopt-2718) [TFMPC] - Missing connection for port 'o_a'.
+** Warning: testcases/assign_unpacked_svi_noLiteral.sv(19): (vopt-2718) [TFMPC] - Missing connection for port 'i_en'.
+** Warning: testcases/assign_unpacked_svi_noLiteral.sv(19): (vopt-2718) [TFMPC] - Missing connection for port 'i_clk'.
+-- Optimizing module tb(fast)
+** Error (suppressible): testcases/assign_unpacked_svi_noLiteral.sv(23): (vopt-2997) Cannot assign a packed type 'reg[3:0]' to an unpacked type 'reg $[7:0]'.
+Optimization failed
+** Error: (vopt-2064) Compiler back-end code generation process terminated with code 12.
+End time: 07:13:16 on Jun 09,2023, Elapsed time: 0:00:00
+Errors: 2, Warnings: 6
+FAILURE

@@ -1,0 +1,10 @@
+%Warning-DECLFILENAME: testcases/assign_arrayofSVI_port.sv:9:11: Filename 'assign_arrayofSVI_port' does not match IFACE name: 'I'
+    9 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Error: testcases/assign_arrayofSVI_port.sv:28:12: Attempt to drive input-only modport: 'x'
+                                                 : ... In instance top.u_M
+   28 |   assign p.x = Z;      
+      |            ^
+%Error: Exiting due to 1 error(s), 1 warning(s)

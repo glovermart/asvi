@@ -1,0 +1,3 @@
+ERROR: [Synth 8-659] type mismatch in port association: bit [7:0]A vs. struct {bit [7:0]data;} B [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/struct_out_unpacked_InterfacePort.sv:27]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/struct_out_unpacked_InterfacePort.sv:20]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

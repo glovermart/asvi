@@ -1,0 +1,4 @@
+    foreach (u_I.x[i])
+          |
+xmvlog: *E,EXPENM (testcases/assign_unpacked_inst_foreachAssignIn.sv,20|10): expecting the keyword 'endmodule' [12.1(IEEE)].
+FAILURE

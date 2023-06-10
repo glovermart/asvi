@@ -1,0 +1,53 @@
+xeCompile - 22H1_VXE, V22.04.163.s001            
+
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+WARNING (legacy-52507): The file descriptors limit is 4096, which is less than recommended minimum of 16384.
+WARNING (legacy-52368): Current overcommit memory settings are not optimal. The values are (memory=0, ratio=50). Suggested values are (memory=2, ratio=100).
+XEC> global env
+XEC> set TEST_NAME $env(TESTCASE)
+testcases/alwaysff_unpacked_port_namedPortWithModport.sv
+XEC> set TESTCASE_NAME $env(TESTCASE_NAME_NO_DIR)
+alwaysff_unpacked_port_namedPortWithModport.palladium_synth.stdout
+XEC> 
+XEC> #See UXE Command Reference Manual, Version 17.5 (uxecmdref.pdf)
+XEC> #Pages 179, 174, 177, 176, 184, 185, 189, 190, 192 
+XEC> 
+XEC> hdlInputFile ${TEST_NAME}
+XEC> 
+XEC> #-sv: Enable recognition of SystemVerilog keywords/ features.
+XEC> #-atb: Enable synthesis of force, release, and other contructs
+XEC> #that are otherwise 'non-sythesizable'
+XEC> #(See UXE User Guide Version 17.5,page 155).
+XEC> hdlImport -sv -atb
+hdlice - HDLICE, V22.04.160.s002                
+(c) 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+   >> Analyzing Verilog file testcases/alwaysff_unpacked_port_namedPortWithModport.sv ...
+   >> Analyzing interface I ...
+   >> Analyzing module M_P ...
+--ver2hdl exited abnormally with signal 11.
+-- 16 stack frames.
+/cad/cadence/HDLICE/22.04.160/tools.lnx86/bin/64bit/ver2hdl(_Z11print_tracev+0x18) [0x656278]
+/cad/cadence/HDLICE/22.04.160/tools.lnx86/bin/64bit/ver2hdl(_Z10sigHandleri+0x98) [0x656378]
+/usr/lib64/libpthread.so.0(+0x12cf0) [0x14ba45891cf0]
+/cad/cadence/HDLICE/22.04.160/tools.lnx86/bin/64bit/ver2hdl(_ZNK13VeNamedObject12checkObjAttrEm+0x110) [0x736930]
+/cad/cadence/HDLICE/22.04.160/tools.lnx86/bin/64bit/ver2hdl(_Z16translateForeachP9VeForeach+0x4e3) [0x55b523]
+/cad/cadence/HDLICE/22.04.160/tools.lnx86/bin/64bit/ver2hdl(_Z18translateStatementP11VeStateMentP10VeIterator+0x1595) [0x5555b5]
+/cad/cadence/HDLICE/22.04.160/tools.lnx86/bin/64bit/ver2hdl(_Z14translateBlock9veObjTypeP11VeStateMent+0x28) [0x558368]
+/cad/cadence/HDLICE/22.04.160/tools.lnx86/bin/64bit/ver2hdl() [0x562672]
+/cad/cadence/HDLICE/22.04.160/tools.lnx86/bin/64bit/ver2hdl() [0x565ada]
+/cad/cadence/HDLICE/22.04.160/tools.lnx86/bin/64bit/ver2hdl(_Z19translateConstructsP8VeModule+0x2af) [0x59201f]
+/cad/cadence/HDLICE/22.04.160/tools.lnx86/bin/64bit/ver2hdl() [0x6114d3]
+/cad/cadence/HDLICE/22.04.160/tools.lnx86/bin/64bit/ver2hdl() [0x612fd6]
+/cad/cadence/HDLICE/22.04.160/tools.lnx86/bin/64bit/ver2hdl(_Z13translateRootP6VeRoot+0x6d1) [0x613db1]
+/cad/cadence/HDLICE/22.04.160/tools.lnx86/bin/64bit/ver2hdl(_Z9translateiPPc+0x375) [0x61c405]
+/usr/lib64/libc.so.6(__libc_start_main+0xe5) [0x14ba454f3d85]
+/cad/cadence/HDLICE/22.04.160/tools.lnx86/bin/64bit/ver2hdl() [0x54010d]
+ERROR: RTL Verilog analyzer aborts abnormally with signal[6].
+ERROR (legacy-21806): hdlImport Failed.
+
+    while executing
+"hdlImport -sv -atb"
+    (file "tcl/palladium_batch_run.tcl" line 14)
+WARNING (legacy-54241): The workstation was running low on memory (free memory dropped to 10 GB), therefore the performance might be impacted.
+FAILURE

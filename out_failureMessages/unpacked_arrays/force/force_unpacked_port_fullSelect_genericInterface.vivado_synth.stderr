@@ -1,0 +1,3 @@
+ERROR: [Synth 8-2512] part-select +: is not allowed in declaration [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_unpacked_port_fullSelect_genericInterface.sv:9]
+ERROR: [Synth 8-2512] part-select -: is not allowed in declaration [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_unpacked_port_fullSelect_genericInterface.sv:10]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

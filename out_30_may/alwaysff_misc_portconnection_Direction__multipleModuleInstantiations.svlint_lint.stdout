@@ -1,0 +1,744 @@
+[93mWarning[97m: Config file '.svlint.toml' is not found. Enable all rules(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:4:1
+[94m  |
+[94m4 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m  |[33m          [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_interface
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:4:1
+[94m  |
+[94m4 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Prefix `interface` identifier with "ifc_".
+[94m  |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_interface
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:4:1
+[94m  |
+[94m4 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_interface
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:4:1
+[94m  |
+[94m4 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:4:11
+[94m  |
+[94m4 |[37m interface I
+[94m  |[93m           ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m  |[33m            [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:5:5
+[94m  |
+[94m5 |[37m   ( input logic z
+[94m  |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m  |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: prefix_input
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:5:5
+[94m  |
+[94m5 |[37m   ( input logic z
+[94m  |[93m     ^^^^^[93m hint  : Prefix `input` port identifier with "i_".
+[94m  |[33m          [33m reason: Port prefixes help readers to follow signals through modules.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:5:17
+[94m  |
+[94m5 |[37m   ( input logic z
+[94m  |[93m                 ^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m                  [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:6:5
+[94m  |
+[94m6 |[37m   , input logic y
+[94m  |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m  |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: prefix_input
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:6:5
+[94m  |
+[94m6 |[37m   , input logic y
+[94m  |[93m     ^^^^^[93m hint  : Prefix `input` port identifier with "i_".
+[94m  |[33m          [33m reason: Port prefixes help readers to follow signals through modules.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:6:17
+[94m  |
+[94m6 |[37m   , input logic y
+[94m  |[93m                 ^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m                  [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:7:5
+[94m  |
+[94m7 |[37m   , input logic x
+[94m  |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m  |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: prefix_input
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:7:5
+[94m  |
+[94m7 |[37m   , input logic x
+[94m  |[93m     ^^^^^[93m hint  : Prefix `input` port identifier with "i_".
+[94m  |[33m          [33m reason: Port prefixes help readers to follow signals through modules.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:7:17
+[94m  |
+[94m7 |[37m   , input logic x
+[94m  |[93m                 ^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m                  [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:8:5
+[94m  |
+[94m8 |[37m   , input logic i_clk
+[94m  |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m  |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:8:17
+[94m  |
+[94m8 |[37m   , input logic i_clk
+[94m  |[93m                 ^^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m                      [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:9:5
+[94m  |
+[94m9 |[37m   , input logic i_srst
+[94m  |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m  |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:9:17
+[94m  |
+[94m9 |[37m   , input logic i_srst
+[94m  |[93m                 ^^^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m                       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:10:5
+[94m   |
+[94m10 |[37m   , input logic i_arst
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:10:17
+[94m   |
+[94m10 |[37m   , input logic i_arst
+[94m   |[93m                 ^^^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:12:0
+[94m   |
+[94m12 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: re_forbidden_modport
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:15:3
+[94m   |
+[94m15 |[37m   modport P
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_modport
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:15:3
+[94m   |
+[94m15 |[37m   modport P
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:28:1
+[94m   |
+[94m28 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:28:1
+[94m   |
+[94m28 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:28:1
+[94m   |
+[94m28 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:28:1
+[94m   |
+[94m28 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:28:8
+[94m   |
+[94m28 |[37m module M1
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:29:5
+[94m   |
+[94m29 |[37m   ( I.P p
+[94m   |[93m     ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m      [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:29:9
+[94m   |
+[94m29 |[37m   ( I.P p
+[94m   |[93m         ^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:29:9
+[94m   |
+[94m29 |[37m   ( I.P p
+[94m   |[93m         ^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:31:0
+[94m   |
+[94m31 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: re_forbidden_localparam
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:32:18
+[94m   |
+[94m32 |[37m   localparam bit Z = 1'b0;
+[94m   |[93m                  ^[93m hint  : Use a localparam identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                   [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:33:0
+[94m   |
+[94m33 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:42:1
+[94m   |
+[94m42 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:42:1
+[94m   |
+[94m42 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:42:1
+[94m   |
+[94m42 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:42:1
+[94m   |
+[94m42 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:42:8
+[94m   |
+[94m42 |[37m module M2
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:43:5
+[94m   |
+[94m43 |[37m   ( I.P p
+[94m   |[93m     ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m      [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:43:9
+[94m   |
+[94m43 |[37m   ( I.P p
+[94m   |[93m         ^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:43:9
+[94m   |
+[94m43 |[37m   ( I.P p
+[94m   |[93m         ^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:45:0
+[94m   |
+[94m45 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: re_forbidden_localparam
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:46:18
+[94m   |
+[94m46 |[37m   localparam bit Z = 1'b0;
+[94m   |[93m                  ^[93m hint  : Use a localparam identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                   [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:47:0
+[94m   |
+[94m47 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:48:3
+[94m   |
+[94m48 |[37m   M1 u_M1 
+[94m   |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:48:6
+[94m   |
+[94m48 |[37m   M1 u_M1 
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:48:6
+[94m   |
+[94m48 |[37m   M1 u_M1 
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:49:0
+[94m   |
+[94m49 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:51:0
+[94m   |
+[94m51 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:54:5
+[94m   |
+[94m54 |[37m     if (p.i_srst)
+[94m   |[93m     ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m   |[33m       [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:59:5
+[94m   |
+[94m59 |[37m     if (p.i_srst)
+[94m   |[93m     ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m   |[33m       [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:64:5
+[94m   |
+[94m64 |[37m     if (p.i_srst)
+[94m   |[93m     ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m   |[33m       [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:72:1
+[94m   |
+[94m72 |[37m module M3
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:72:1
+[94m   |
+[94m72 |[37m module M3
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:72:1
+[94m   |
+[94m72 |[37m module M3
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:72:1
+[94m   |
+[94m72 |[37m module M3
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:72:8
+[94m   |
+[94m72 |[37m module M3
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:73:5
+[94m   |
+[94m73 |[37m   ( I.P p
+[94m   |[93m     ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m      [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:73:9
+[94m   |
+[94m73 |[37m   ( I.P p
+[94m   |[93m         ^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:73:9
+[94m   |
+[94m73 |[37m   ( I.P p
+[94m   |[93m         ^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:75:0
+[94m   |
+[94m75 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: re_forbidden_localparam
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:76:18
+[94m   |
+[94m76 |[37m   localparam bit Z = 1'b1;
+[94m   |[93m                  ^[93m hint  : Use a localparam identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                   [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:77:0
+[94m   |
+[94m77 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:78:3
+[94m   |
+[94m78 |[37m   M2 u_M2 
+[94m   |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:78:6
+[94m   |
+[94m78 |[37m   M2 u_M2 
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:78:6
+[94m   |
+[94m78 |[37m   M2 u_M2 
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:79:0
+[94m   |
+[94m79 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:81:0
+[94m   |
+[94m81 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:84:5
+[94m   |
+[94m84 |[37m     if (p.i_arst)
+[94m   |[93m     ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m   |[33m       [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:89:5
+[94m   |
+[94m89 |[37m     if (p.i_arst)
+[94m   |[93m     ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m   |[33m       [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:94:5
+[94m   |
+[94m94 |[37m     if (p.i_arst)
+[94m   |[93m     ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m   |[33m       [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:98:0
+[94m   |
+[94m98 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:102:1
+[94m    |
+[94m102 |[37m module top
+[94m    |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m    |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:102:1
+[94m    |
+[94m102 |[37m module top
+[94m    |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m    |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:102:1
+[94m    |
+[94m102 |[37m module top
+[94m    |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m    |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: uppercamelcase_module
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:102:8
+[94m    |
+[94m102 |[37m module top
+[94m    |[93m        ^^^[93m hint  : Begin `module` name with UpperCamelCase.
+[94m    |[33m           [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:103:5
+[94m    |
+[94m103 |[37m   ( input logic i_clk
+[94m    |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m    |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:103:17
+[94m    |
+[94m103 |[37m   ( input logic i_clk
+[94m    |[93m                 ^^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m    |[33m                      [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:104:5
+[94m    |
+[94m104 |[37m   , input logic i_srst
+[94m    |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m    |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:104:17
+[94m    |
+[94m104 |[37m   , input logic i_srst
+[94m    |[93m                 ^^^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m    |[33m                       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:105:5
+[94m    |
+[94m105 |[37m   , input logic i_arst
+[94m    |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m    |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:105:17
+[94m    |
+[94m105 |[37m   , input logic i_arst
+[94m    |[93m                 ^^^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m    |[33m                       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:106:5
+[94m    |
+[94m106 |[37m   , output logic z
+[94m    |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m    |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: prefix_output
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:106:5
+[94m    |
+[94m106 |[37m   , output logic z
+[94m    |[93m     ^^^^^^[93m hint  : Prefix `output` port identifier with "o_".
+[94m    |[33m           [33m reason: Port prefixes help readers to follow signals through modules.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:106:18
+[94m    |
+[94m106 |[37m   , output logic z
+[94m    |[93m                  ^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m    |[33m                   [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:107:5
+[94m    |
+[94m107 |[37m   , output logic y
+[94m    |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m    |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: prefix_output
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:107:5
+[94m    |
+[94m107 |[37m   , output logic y
+[94m    |[93m     ^^^^^^[93m hint  : Prefix `output` port identifier with "o_".
+[94m    |[33m           [33m reason: Port prefixes help readers to follow signals through modules.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:107:18
+[94m    |
+[94m107 |[37m   , output logic y
+[94m    |[93m                  ^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m    |[33m                   [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:108:5
+[94m    |
+[94m108 |[37m   , output logic x
+[94m    |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m    |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: prefix_output
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:108:5
+[94m    |
+[94m108 |[37m   , output logic x
+[94m    |[93m     ^^^^^^[93m hint  : Prefix `output` port identifier with "o_".
+[94m    |[33m           [33m reason: Port prefixes help readers to follow signals through modules.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:108:18
+[94m    |
+[94m108 |[37m   , output logic x
+[94m    |[93m                  ^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m    |[33m                   [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:111:3
+[94m    |
+[94m111 |[37m   I u_I 
+[94m    |[93m   ^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m    |[33m    [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:111:5
+[94m    |
+[94m111 |[37m   I u_I 
+[94m    |[93m     ^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m    |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:111:5
+[94m    |
+[94m111 |[37m   I u_I 
+[94m    |[93m     ^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m    |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:112:0
+[94m    |
+[94m112 |[37m 
+[94m    |[93m [93m hint  : Remove trailing whitespace.
+[94m    |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:114:0
+[94m    |
+[94m114 |[37m 
+[94m    |[93m [93m hint  : Remove trailing whitespace.
+[94m    |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:115:3
+[94m    |
+[94m115 |[37m   M1 u_M1
+[94m    |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m    |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:115:6
+[94m    |
+[94m115 |[37m   M1 u_M1
+[94m    |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m    |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:115:6
+[94m    |
+[94m115 |[37m   M1 u_M1
+[94m    |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m    |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:119:3
+[94m    |
+[94m119 |[37m   M2 u_M2
+[94m    |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m    |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:119:6
+[94m    |
+[94m119 |[37m   M2 u_M2
+[94m    |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m    |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:119:6
+[94m    |
+[94m119 |[37m   M2 u_M2
+[94m    |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m    |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:123:3
+[94m    |
+[94m123 |[37m   M3 u_M3
+[94m    |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m    |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:123:6
+[94m    |
+[94m123 |[37m   M3 u_M3
+[94m    |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m    |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:123:6
+[94m    |
+[94m123 |[37m   M3 u_M3
+[94m    |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m    |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+FAILURE

@@ -1,0 +1,20 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/alwayscomb_unpacked_modportSelect_instAndModulePort.sv,29): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 1 input port was not connected:
+xmelab: (./testcases/alwayscomb_unpacked_modportSelect_instAndModulePort.sv,28): i_a
+
+    ( .p    (u_I.P) // Select modport again.
+       |
+xmelab: *E,CUVPOM (./testcases/alwayscomb_unpacked_modportSelect_instAndModulePort.sv,35|7): Port name 'p' of instance 'tb.u_DUT.u_M' is invalid or has multiple connections and the instantiated module is defined in file '/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits.sv'.
+    , .i_a  (i_a)
+         |
+xmelab: *E,CUVPOM (./testcases/alwayscomb_unpacked_modportSelect_instAndModulePort.sv,36|9): Port name 'i_a' of instance 'tb.u_DUT.u_M' is invalid or has multiple connections and the instantiated module is defined in file '/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits.sv'.
+  ( I u_I
+        |
+xmelab: *E,CUIMBC (./testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits.sv,26|8): An interface port declaration must be connected in instance(tb.u_DUT.u_M, file:./testcases/alwayscomb_unpacked_modportSelect_instAndModulePort.sv, line:34).
+FAILURE

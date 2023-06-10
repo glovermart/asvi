@@ -1,0 +1,185 @@
+xeCompile - 22H1_VXE, V22.04.163.s001            
+
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+WARNING (legacy-52507): The file descriptors limit is 4096, which is less than recommended minimum of 16384.
+WARNING (legacy-52368): Current overcommit memory settings are not optimal. The values are (memory=0, ratio=50). Suggested values are (memory=2, ratio=100).
+XEC> global env
+XEC> set TEST_NAME $env(TESTCASE)
+testcases/alwaysff_arrayofSVI_generateInst.sv
+XEC> set TESTCASE_NAME $env(TESTCASE_NAME_NO_DIR)
+alwaysff_arrayofSVI_generateInst.palladium_synth.stdout
+XEC> 
+XEC> #See UXE Command Reference Manual, Version 17.5 (uxecmdref.pdf)
+XEC> #Pages 179, 174, 177, 176, 184, 185, 189, 190, 192 
+XEC> 
+XEC> hdlInputFile ${TEST_NAME}
+XEC> 
+XEC> #-sv: Enable recognition of SystemVerilog keywords/ features.
+XEC> #-atb: Enable synthesis of force, release, and other contructs
+XEC> #that are otherwise 'non-sythesizable'
+XEC> #(See UXE User Guide Version 17.5,page 155).
+XEC> hdlImport -sv -atb
+hdlice - HDLICE, V22.04.160.s002                
+(c) 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+   >> Analyzing Verilog file testcases/alwaysff_arrayofSVI_generateInst.sv ...
+   >> Analyzing Global Compilation Unit ...
+   >> Analyzing interface I ...
+   >> Analyzing module M ...
+   >> Analyzing module top ...
+
+ >> Reporting Runtime Statistics ...
+   Hostname         :    cad11.nordicsemi.no
+   Operating system :    Linux RedHat 7.9 (64bit)
+   User CPU time     :        0.03 seconds
+   System CPU time   :        0.08 seconds
+   Wall clock time   :        2 seconds
+   Peak Memory usage :       52604 KB
+
+INFO (legacy-22893): hdlImport completed successfully!
+0
+XEC> 
+XEC> #-add -f: Writes the synthesized file in some file format.
+XEC> hdlOutputFile -add -f verilog out/${TESTCASE_NAME}.palladium_synth.v
+XEC> 
+XEC> #-dontStopOnError: Continue with sythesis when errors are detected.
+XEC> #-append: Append new output to an existing file.
+XEC> hdlSynthesize -dontStopOnError -append top
+hdlice - HDLICE, V22.04.160.s002                
+(c) 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+ >> (1) Synthesizing module 'top' at Fri Jun  9 09:29:17 2023
+
+INFO: Using new BDD package in HDLICE; to revert to legacy BDD package from 20.0, use switch '-legacy_bdd'.
+   >> Loading module top ...
+   >> Loading SystemVerilog compilation unit ...
+
+   >> Running post optimization ...
+
+ >> (2) Synthesizing module 'M' at Fri Jun  9 09:29:17 2023
+ under /top
+   >> Loading module M ...
+   >> Loading SystemVerilog compilation unit ...
+
+   >> Mapping RTL block 'verilog/always:23' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:25' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:27' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:23_0' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:25_0' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:27_0' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:23_1' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:25_1' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:27_1' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:23_2' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:25_2' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:27_2' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:23_3' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:25_3' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:27_3' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:23_4' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:25_4' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:27_4' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:23_5' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:25_5' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:27_5' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:23_6' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:25_6' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:27_6' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog' ...
+   >> Running datapath synthesis
+      total area under this block:     168.00
+
+   >> Running post optimization ...
+      Reduces 100.00% (168.00 -> 0.00)
+
+ >> writing 'out/alwaysff_arrayofSVI_generateInst.palladium_synth.stdout.palladium_synth.v' at Fri Jun  9 09:29:17 2023
+ ...
+
+ >> Reporting netlist area at Fri Jun  9 09:29:17 2023
+ ...
+
+ Total Area (2 modules & 2 instances) :            0.00
+
+ >> Reporting Runtime Statistics ...
+   Hostname         :    cad11.nordicsemi.no
+   Operating system :    Linux RedHat 7.9 (64bit)
+   User CPU time     :        0.03 seconds
+   System CPU time   :        0.07 seconds
+   Wall clock time   :        0 seconds
+   Peak Memory usage :       56376 KB
+
+INFO (legacy-22984): hdlSynthesize completed successfully!
+^D
+WARNING (legacy-54241): The workstation was running low on memory (free memory dropped to 6 GB), therefore the performance might be impacted.

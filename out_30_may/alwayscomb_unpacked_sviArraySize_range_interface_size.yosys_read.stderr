@@ -1,0 +1,1 @@
+yosys: error while loading shared libraries: libreadline.so.6: cannot open shared object file: No such file or directory

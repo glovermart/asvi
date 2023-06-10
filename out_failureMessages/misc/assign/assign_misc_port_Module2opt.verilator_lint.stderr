@@ -1,0 +1,8 @@
+%Warning-DECLFILENAME: testcases/assign_misc_port_Module2opt.sv:5:11: Filename 'assign_misc_port_Module2opt' does not match IFACE name: 'I'
+    5 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Error: Internal Error: testcases/assign_misc_port_Module2opt.sv:41:17: ../V3LinkDot.cpp:2138: Can't find interface var ref: top__02Eu_I__Viftop
+   41 |     ( .p1  (u_I.P1)
+      |                 ^~

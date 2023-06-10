@@ -1,0 +1,10 @@
+testcases/alwayslatch_misc_svi_dotnameModuleInst.sv:21: Warning: Identifier `\u_I.i_clk' is implicitly declared.
+testcases/alwayslatch_misc_svi_dotnameModuleInst.sv:22: Warning: Identifier `\u_I.x' is implicitly declared.
+testcases/alwayslatch_misc_svi_dotnameModuleInst.sv:36: Warning: Identifier `\u_M1.o_a' is implicitly declared.
+testcases/alwayslatch_misc_svi_dotnameModuleInst.sv:50: Warning: Identifier `\u_M2.a' is implicitly declared.
+Warning: wire '\u_I.o_a' is assigned in a block at testcases/alwayslatch_misc_svi_dotnameModuleInst.sv:62.6-62.24.
+testcases/alwayslatch_misc_svi_dotnameModuleInst.sv:62: Warning: Identifier `\u_I.o_a' is implicitly declared.
+testcases/alwayslatch_misc_svi_dotnameModuleInst.sv:62: Warning: Identifier `\u_M3.a' is implicitly declared.
+Warning: Wire I.\o_a is used but has no driver.
+Warning: Wire M4$interfaces$I.\u_M3.a is used but has no driver.
+Warning: Driver-driver conflict for \u_I.o_a between cell u_M3.u_I.o_a and constant 1'x in M4$interfaces$I: Resolved using constant.

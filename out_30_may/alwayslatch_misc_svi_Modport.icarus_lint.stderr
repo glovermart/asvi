@@ -1,0 +1,16 @@
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/system.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/vhdl_sys.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/vhdl_textio.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/v2009.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+testcases/alwayslatch_misc_svi_Modport.sv:28: syntax error
+testcases/alwayslatch_misc_svi_Modport.sv:28: Errors in port declarations.
+testcases/alwayslatch_misc_svi_Modport.sv:38: syntax error
+testcases/alwayslatch_misc_svi_Modport.sv:38: Errors in port declarations.
+testcases/alwayslatch_misc_svi_Modport.sv:48: syntax error
+testcases/alwayslatch_misc_svi_Modport.sv:48: Errors in port declarations.
+testcases/alwayslatch_misc_svi_Modport.sv:58: syntax error
+testcases/alwayslatch_misc_svi_Modport.sv:58: Errors in port declarations.

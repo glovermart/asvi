@@ -1,0 +1,18 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 2 output ports were not connected:
+xmelab: (./testcases/assign_arrayofSVI_port.sv,36): o_a
+xmelab: (./testcases/assign_arrayofSVI_port.sv,37): o_b
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 1 input port was not connected:
+xmelab: (./testcases/assign_arrayofSVI_port.sv,35): i_a
+
+    ( .p(u_I)
+           |
+xmelab: *E,CUINPD (./testcases/assign_arrayofSVI_port.sv,43|11): Scalar interface port in AOI does not match scalar interface instance.
+  ( I.P p
+        |
+xmelab: *E,CUIMBC (./testcases/assign_arrayofSVI_port.sv,22|8): An interface port declaration must be connected in instance(tb.u_DUT.u_M, file:./testcases/assign_arrayofSVI_port.sv, line:42).
+FAILURE

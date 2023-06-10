@@ -1,0 +1,24 @@
+%Warning-DECLFILENAME: testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:4:11: Filename 'alwaysff_misc_port_signalsInInterfaceDefinition' does not match IFACE name: 'I'
+    4 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Error: testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:113:8: Pin is not an in/out/inout/param/interface: 'i_clk'
+  113 |     ( .i_clk   (i_clk)
+      |        ^~~~~
+%Error: testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:114:8: Pin is not an in/out/inout/param/interface: 'i_srst'
+  114 |     , .i_srst  (i_srst)
+      |        ^~~~~~
+%Error: testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:115:8: Pin is not an in/out/inout/param/interface: 'i_arst'
+  115 |     , .i_arst  (i_arst)
+      |        ^~~~~~
+%Error: testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:116:8: Pin is not an in/out/inout/param/interface: 'z'
+  116 |     , .z       (z)
+      |        ^
+%Error: testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:117:8: Pin is not an in/out/inout/param/interface: 'y'
+  117 |     , .y       (y)
+      |        ^
+%Error: testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:118:8: Pin is not an in/out/inout/param/interface: 'x'
+  118 |     , .x       (x)
+      |        ^
+%Error: Exiting due to 6 error(s), 1 warning(s)

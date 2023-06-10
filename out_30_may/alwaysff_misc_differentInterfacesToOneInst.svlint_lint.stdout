@@ -1,0 +1,527 @@
+[93mWarning[97m: Config file '.svlint.toml' is not found. Enable all rules(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:6:1
+[94m  |
+[94m6 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m  |[33m          [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_interface
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:6:1
+[94m  |
+[94m6 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Prefix `interface` identifier with "ifc_".
+[94m  |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_interface
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:6:1
+[94m  |
+[94m6 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_interface
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:6:1
+[94m  |
+[94m6 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:6:11
+[94m  |
+[94m6 |[37m interface I
+[94m  |[93m           ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m  |[33m            [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:7:21
+[94m  |
+[94m7 |[37m   ( input var logic i_clk
+[94m  |[93m                     ^^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m                          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:8:21
+[94m  |
+[94m8 |[37m   , input var logic i_srst
+[94m  |[93m                     ^^^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m                           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:9:21
+[94m  |
+[94m9 |[37m   , input var logic i_arst
+[94m  |[93m                     ^^^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m                           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:19:1
+[94m   |
+[94m19 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:19:1
+[94m   |
+[94m19 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:19:1
+[94m   |
+[94m19 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:19:1
+[94m   |
+[94m19 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:19:8
+[94m   |
+[94m19 |[37m module M1
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: interface_port_with_modport
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:20:5
+[94m   |
+[94m20 |[37m   ( I u_I1
+[94m   |[93m     ^[93m hint  : Specify the modport on the interface port.
+[94m   |[33m      [33m reason: Without a modport, the interface port signals are all implictly `inout`.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:20:5
+[94m   |
+[94m20 |[37m   ( I u_I1
+[94m   |[93m     ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m      [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:20:7
+[94m   |
+[94m20 |[37m   ( I u_I1
+[94m   |[93m       ^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:20:7
+[94m   |
+[94m20 |[37m   ( I u_I1
+[94m   |[93m       ^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_port_inout
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:20:7
+[94m   |
+[94m20 |[37m   ( I u_I1
+[94m   |[93m       ^^^^[93m hint  : Use a port identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_port_interface
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:20:7
+[94m   |
+[94m20 |[37m   ( I u_I1
+[94m   |[93m       ^^^^[93m hint  : Use a port identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_localparam
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:23:18
+[94m   |
+[94m23 |[37m   localparam bit Z = 1'b0;
+[94m   |[93m                  ^[93m hint  : Use a localparam identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                   [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:34:1
+[94m   |
+[94m34 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:34:1
+[94m   |
+[94m34 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:34:1
+[94m   |
+[94m34 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:34:1
+[94m   |
+[94m34 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:34:8
+[94m   |
+[94m34 |[37m module M2
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: interface_port_with_modport
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:35:5
+[94m   |
+[94m35 |[37m   ( I u_I2
+[94m   |[93m     ^[93m hint  : Specify the modport on the interface port.
+[94m   |[33m      [33m reason: Without a modport, the interface port signals are all implictly `inout`.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:35:5
+[94m   |
+[94m35 |[37m   ( I u_I2
+[94m   |[93m     ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m      [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:35:7
+[94m   |
+[94m35 |[37m   ( I u_I2
+[94m   |[93m       ^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:35:7
+[94m   |
+[94m35 |[37m   ( I u_I2
+[94m   |[93m       ^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_port_inout
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:35:7
+[94m   |
+[94m35 |[37m   ( I u_I2
+[94m   |[93m       ^^^^[93m hint  : Use a port identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_port_interface
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:35:7
+[94m   |
+[94m35 |[37m   ( I u_I2
+[94m   |[93m       ^^^^[93m hint  : Use a port identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_localparam
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:38:18
+[94m   |
+[94m38 |[37m   localparam bit Z = 1'b0;
+[94m   |[93m                  ^[93m hint  : Use a localparam identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                   [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:43:5
+[94m   |
+[94m43 |[37m     if (u_I2.i_srst)
+[94m   |[93m     ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m   |[33m       [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:48:5
+[94m   |
+[94m48 |[37m     if (u_I2.i_srst)
+[94m   |[93m     ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m   |[33m       [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:53:5
+[94m   |
+[94m53 |[37m     if (u_I2.i_srst)
+[94m   |[93m     ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m   |[33m       [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:61:1
+[94m   |
+[94m61 |[37m module M3
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:61:1
+[94m   |
+[94m61 |[37m module M3
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:61:1
+[94m   |
+[94m61 |[37m module M3
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:61:1
+[94m   |
+[94m61 |[37m module M3
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:61:8
+[94m   |
+[94m61 |[37m module M3
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: interface_port_with_modport
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:62:5
+[94m   |
+[94m62 |[37m   ( I u_I3
+[94m   |[93m     ^[93m hint  : Specify the modport on the interface port.
+[94m   |[33m      [33m reason: Without a modport, the interface port signals are all implictly `inout`.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:62:5
+[94m   |
+[94m62 |[37m   ( I u_I3
+[94m   |[93m     ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m      [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:62:7
+[94m   |
+[94m62 |[37m   ( I u_I3
+[94m   |[93m       ^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:62:7
+[94m   |
+[94m62 |[37m   ( I u_I3
+[94m   |[93m       ^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_port_inout
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:62:7
+[94m   |
+[94m62 |[37m   ( I u_I3
+[94m   |[93m       ^^^^[93m hint  : Use a port identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_port_interface
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:62:7
+[94m   |
+[94m62 |[37m   ( I u_I3
+[94m   |[93m       ^^^^[93m hint  : Use a port identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_localparam
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:65:18
+[94m   |
+[94m65 |[37m   localparam bit Z = 1'b0;
+[94m   |[93m                  ^[93m hint  : Use a localparam identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                   [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:70:5
+[94m   |
+[94m70 |[37m     if (u_I3.i_arst)
+[94m   |[93m     ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m   |[33m       [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:75:5
+[94m   |
+[94m75 |[37m     if (u_I3.i_arst)
+[94m   |[93m     ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m   |[33m       [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:80:5
+[94m   |
+[94m80 |[37m     if (u_I3.i_arst)
+[94m   |[93m     ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m   |[33m       [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:88:1
+[94m   |
+[94m88 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:88:1
+[94m   |
+[94m88 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:88:1
+[94m   |
+[94m88 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: uppercamelcase_module
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:88:8
+[94m   |
+[94m88 |[37m module top
+[94m   |[93m        ^^^[93m hint  : Begin `module` name with UpperCamelCase.
+[94m   |[33m           [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:89:21
+[94m   |
+[94m89 |[37m   ( input var logic i_clk
+[94m   |[93m                     ^^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:90:21
+[94m   |
+[94m90 |[37m   , input var logic i_srst
+[94m   |[93m                     ^^^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:91:21
+[94m   |
+[94m91 |[37m   , input var logic i_arst
+[94m   |[93m                     ^^^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:93:0
+[94m   |
+[94m93 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:94:3
+[94m   |
+[94m94 |[37m   I u_I4 
+[94m   |[93m   ^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m    [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:94:5
+[94m   |
+[94m94 |[37m   I u_I4 
+[94m   |[93m     ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m         [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:94:5
+[94m   |
+[94m94 |[37m   I u_I4 
+[94m   |[93m     ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m         [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:95:0
+[94m   |
+[94m95 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:97:0
+[94m   |
+[94m97 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:98:3
+[94m   |
+[94m98 |[37m   M1 u_M1 
+[94m   |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:98:6
+[94m   |
+[94m98 |[37m   M1 u_M1 
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:98:6
+[94m   |
+[94m98 |[37m   M1 u_M1 
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:99:0
+[94m   |
+[94m99 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:102:3
+[94m    |
+[94m102 |[37m   M2 u_M2 
+[94m    |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m    |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:102:6
+[94m    |
+[94m102 |[37m   M2 u_M2 
+[94m    |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m    |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:102:6
+[94m    |
+[94m102 |[37m   M2 u_M2 
+[94m    |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m    |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:103:0
+[94m    |
+[94m103 |[37m 
+[94m    |[93m [93m hint  : Remove trailing whitespace.
+[94m    |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:106:3
+[94m    |
+[94m106 |[37m   M3 u_M3 
+[94m    |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m    |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:106:6
+[94m    |
+[94m106 |[37m   M3 u_M3 
+[94m    |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m    |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:106:6
+[94m    |
+[94m106 |[37m   M3 u_M3 
+[94m    |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m    |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_misc_differentInterfacesToOneInst.sv:107:0
+[94m    |
+[94m107 |[37m 
+[94m    |[93m [93m hint  : Remove trailing whitespace.
+[94m    |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+FAILURE

@@ -1,0 +1,20 @@
+Warning: wire '\p1.o_a' is assigned in a block at testcases/alwayslatch_misc_port_scalarOutput.sv:25.7-25.23.
+testcases/alwayslatch_misc_port_scalarOutput.sv:25: Warning: Identifier `\p1.o_a' is implicitly declared.
+testcases/alwayslatch_misc_port_scalarOutput.sv:24: Warning: Identifier `\p1.i_en' is implicitly declared.
+testcases/alwayslatch_misc_port_scalarOutput.sv:25: Warning: Identifier `\p1.i_a' is implicitly declared.
+Warning: wire '\p1.o_a' is assigned in a block at testcases/alwayslatch_misc_port_scalarOutput.sv:36.7-36.23.
+Warning: wire '\p1.o_a' is assigned in a block at testcases/alwayslatch_misc_port_scalarOutput.sv:51.7-51.23.
+Warning: wire '\p2.o_a' is assigned in a block at testcases/alwayslatch_misc_port_scalarOutput.sv:66.7-66.23.
+testcases/alwayslatch_misc_port_scalarOutput.sv:66: Warning: Identifier `\p2.o_a' is implicitly declared.
+testcases/alwayslatch_misc_port_scalarOutput.sv:65: Warning: Identifier `\p2.i_en' is implicitly declared.
+testcases/alwayslatch_misc_port_scalarOutput.sv:66: Warning: Identifier `\p2.i_a' is implicitly declared.
+Warning: Wire I.\o_a is used but has no driver.
+Warning: multiple conflicting drivers for M2$interfaces$I.\p1.o_a:
+    port Q[0] of cell $auto$proc_dlatch.cc:427:proc_dlatch$53 ($dlatch)
+    port p1.o_a[0] of cell u_M1 (M1$interfaces$I)
+Warning: multiple conflicting drivers for M3$interfaces$I.\p1.o_a:
+    port Q[0] of cell $auto$proc_dlatch.cc:427:proc_dlatch$42 ($dlatch)
+    port p1.o_a[0] of cell u_M2 (M2$interfaces$I)
+Warning: multiple conflicting drivers for M4$interfaces$I.\p2.o_a:
+    port Q[0] of cell $auto$proc_dlatch.cc:427:proc_dlatch$31 ($dlatch)
+    port p1.o_a[0] of cell u_M3 (M3$interfaces$I)

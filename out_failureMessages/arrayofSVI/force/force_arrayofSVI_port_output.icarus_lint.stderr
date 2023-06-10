@@ -1,0 +1,6 @@
+testcases/force_arrayofSVI_port_output.sv:18: syntax error
+testcases/force_arrayofSVI_port_output.sv:18: Errors in port declarations.
+testcases/force_arrayofSVI_port_output.sv:43: syntax error
+testcases/force_arrayofSVI_port_output.sv:1: Errors in port declarations.
+testcases/force_arrayofSVI_port_output.sv:51: warning: implicit definition of wire 'o_a'.
+testcases/force_arrayofSVI_port_output.sv:53: warning: implicit definition of wire 'i_a'.

@@ -1,0 +1,3 @@
+testcases/void_function_automatic.sv:7: error: Function top.u_I.adder port o_a is not an input port.
+testcases/void_function_automatic.sv:7:      : Function arguments must be input ports.
+1 error(s) during elaboration.

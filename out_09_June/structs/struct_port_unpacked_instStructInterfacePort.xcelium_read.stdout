@@ -1,0 +1,4 @@
+  ( data_t data
+              |
+xmvlog: *E,SVUPSL (testcases/struct_port_unpacked_instStructInterfacePort.sv,11|14): Unsupported unpacked struct/union functionality: unpacked structure as a net.
+FAILURE

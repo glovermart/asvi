@@ -1,0 +1,28 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv,40): o_a
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+    ( u_I.P1 //LSBs
+           |
+xmelab: *E,CUVUNF (./testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv,46|11): Hierarchical name component lookup failed for 'P1' at 'tb.u_DUT'.
+    ( u_I.P2 //MSBs
+           |
+xmelab: *E,CUVUNF (./testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv,50|11): Hierarchical name component lookup failed for 'P2' at 'tb.u_DUT'.
+  assign o_a = u_I.x; //output the full vector 11110000
+                   |
+xmelab: *E,CUVUNF (./testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv,53|19): Hierarchical name component lookup failed for 'x' at 'tb.u_DUT'.
+  always_comb  i.p1 = '0;
+                  |
+xmelab: *E,CUVUNF (./testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv,25|18): Hierarchical name component lookup failed for 'p1' at 'tb.u_DUT.u_M1'.
+  always_comb i.p2 = '1;
+                 |
+xmelab: *E,CUVUNF (./testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv,34|17): Hierarchical name component lookup failed for 'p2' at 'tb.u_DUT.u_M2'.
+  ( interface i   //Generic interface
+              |
+xmelab: *E,URCEN (./testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv,22|14): Unresolved constant expression VST_D_IO_INTERFACE.
+  ( interface i   //Generic interface
+              |
+xmelab: *E,URCEN (./testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv,31|14): Unresolved constant expression VST_D_IO_INTERFACE.
+FAILURE

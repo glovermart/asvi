@@ -1,0 +1,2 @@
+testcases/alwayscomb_packed_partSelect_svi.sv:10: warning: always_comb process has no sensitivities.
+testcases/alwayscomb_packed_partSelect_svi.sv:9: warning: always_comb process has no sensitivities.

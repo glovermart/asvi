@@ -1,0 +1,38 @@
+QuestaSim-64 vopt 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 01:08:20 on Jun 09,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+-- Loading interface I
+-- Loading module M1
+-- Loading module M2
+-- Loading module M3
+-- Loading module M4
+Incremental compilation check found no design-units (out of 8) may be reused.
+Optimizing 8 design-units (inlining 6/7 module instances):
+-- Inlining interface I(fast__1)
+-- Inlining module M1(fast)
+-- Inlining module M2(fast)
+-- Inlining module M3(fast)
+-- Inlining module M4(fast)
+-- Inlining module top(fast)
+-- Optimizing module tb(fast)
+** Error (suppressible): testcases/assign_misc_inst.sv(34): (vopt-7045) 'z' is driven by more than one continuous assignment. See testcases/assign_misc_inst.sv(20).
+** Error (suppressible): testcases/assign_misc_inst.sv(35): (vopt-7045) 'y' is driven by more than one continuous assignment. See testcases/assign_misc_inst.sv(21).
+** Error (suppressible): testcases/assign_misc_inst.sv(36): (vopt-7045) 'x' is driven by more than one continuous assignment. See testcases/assign_misc_inst.sv(22).
+** Error (suppressible): testcases/assign_misc_inst.sv(48): (vopt-7045) 'z' is driven by more than one continuous assignment. See testcases/assign_misc_inst.sv(20).
+** Error (suppressible): testcases/assign_misc_inst.sv(49): (vopt-7045) 'y' is driven by more than one continuous assignment. See testcases/assign_misc_inst.sv(21).
+** Error (suppressible): testcases/assign_misc_inst.sv(50): (vopt-7045) 'x' is driven by more than one continuous assignment. See testcases/assign_misc_inst.sv(22).
+** Error (suppressible): testcases/assign_misc_inst.sv(62): (vopt-7045) 'z' is driven by more than one continuous assignment. See testcases/assign_misc_inst.sv(20).
+** Error (suppressible): testcases/assign_misc_inst.sv(63): (vopt-7045) 'y' is driven by more than one continuous assignment. See testcases/assign_misc_inst.sv(21).
+** Error (suppressible): testcases/assign_misc_inst.sv(64): (vopt-7045) 'x' is driven by more than one continuous assignment. See testcases/assign_misc_inst.sv(22).
+Optimization failed
+** Error: (vopt-2064) Compiler back-end code generation process terminated with code 12.
+End time: 01:08:20 on Jun 09,2023, Elapsed time: 0:00:00
+Errors: 10, Warnings: 0
+FAILURE

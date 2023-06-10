@@ -1,0 +1,72 @@
+$tcl_library is set to: /cad/mentor/oneSpin360/2023.1/etc/tcl8.6
+init.tcl executed.
+source "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_defaults.tcl"
+source -signed "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_startup.tcl.obf"
+source "/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl"
+-I- FileParse - Analyzing source file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_misc_port.sv" .... [1]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_misc_port.sv:21: Analyzing module ( M1 ). [4]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_misc_port.sv:34: Analyzing module ( M2 ). [4]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_misc_port.sv:52: Analyzing module ( top ). [4]
+-I- Elaborate auto-selected the toplevel: "verilog!work.top"
+-W- UnsuppVerilog - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_misc_port.sv:75: not supported: force (ignored).
+-W- UnsuppVerilog - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_misc_port.sv:76: not supported: force (ignored).
+-I- Elaborating verilog portion...
+-W- UnconnOutputPort - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_misc_port.sv:61: output port 'o_a' is unconnected in instance 'u_M1'.
+-W- UndrivenNet - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_misc_port.sv:43: reading undriven net 'i_a' in instance at line /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_misc_port.sv:65.
+-W- UndrivenNet - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_misc_port.sv:44: reading undriven net 'i_b' in instance at line /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_misc_port.sv:65.
+-W- RegWithoutSink - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_misc_port.sv:69: reg 'b' has no sink.
+-W- RegWithoutSink - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_misc_port.sv:70: reg 'c' has no sink.
+-W- NetWithoutSink - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_misc_port.sv:55: net 'i_srst' has no sink.
+-W- UnconnInputPort - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_misc_port.sv:65: input port 'i_a' is unconnected in instance 'u_M2'.
+-W- UnconnInputPort - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_misc_port.sv:65: input port 'i_b' is unconnected in instance 'u_M2'.
+
+Warning Statistics:
+-------------------
+    1   NetWithoutSink       net without sink (never read)
+    1   UnconnOutputPort     output port is not connected
+    2   UnconnInputPort      input port is not connected
+    2   UndrivenNet          reading undriven net
+    2   RegWithoutSink       reg without sink (never read)
+    2   UnsuppVerilog        unsupported Verilog feature
+-I- Elaboration of design golden succeeded.
+-I- Traversing modules of design 'top' ...
+-I- Traversing modules of design 'top' took 0.11 seconds.
+-I- Analyzing signal dependency in design 'top' ...
+-I- Analyzing signal dependency in design 'top' took 0.03 seconds.
+-I- Analyzing loops ...
+-I- Analyzing loops took 0.00 seconds.
+-I- Analyzing primary and generated clocks ...
+-I- Computing next states ...
+-I- Computing next states took 0.00 seconds.
+-I- Analyzing primary and generated clocks took 0.00 seconds.
+-I- Checking clock dependency assumption ...
+-I- Checking clock dependency assumption took 0.00 seconds.
+-I- Computing CSA result ...
+-I- Computing CSA result took 0.00 seconds.
+-I- Finishing CSA analysis ...
+-I- Compilation for design golden succeeded.
+-R- Printed Messages
+===============================================================================
+class       category            memo                                                          occurrence
+-------------------------------------------------------------------------------
+Warning     NetWithoutSink      net without sink (never read)                                 1         
+Warning     RegWithoutSink      reg without sink (never read)                                 2         
+Warning     UnconnInputPort     input port is not connected                                   2         
+Warning     UnconnOutputPort    output port is not connected                                  1         
+Warning     UndrivenNet         reading undriven net                                          2         
+Warning     UnsuppVerilog       unsupported Verilog feature                                   2         
+Info        AnalyzeModule       analyzing module                                              3         
+Info        FileParse           file parsed                                                   1         
+Info        {}                  unclassified message                                          18        
+Info        {}                  {}                                                            1         
+Result      {}                  {}                                                            1         
+Plain       {}                  unclassified message                                          1         
+Plain       {}                  {}                                                            13        
+TclStdOut   {}                  {}                                                            2         
+CommandLog  {}                  {}                                                            3         
+	
+-R- Filtered Messages
+===============================================================================
+id   active   class     category            memo                     text                     src_loc        origin  hits 
+-------------------------------------------------------------------------------
+No message filters available.

@@ -1,0 +1,11 @@
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:7: syntax error
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:1: Errors in port declarations.
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:20: syntax error
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:20: Errors in port declarations.
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:35: syntax error
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:35: Errors in port declarations.
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:62: syntax error
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:62: Errors in port declarations.
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:89: syntax error
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:1: Errors in port declarations.
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:99: warning: implicit definition of wire 'u_I4'.

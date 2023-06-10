@@ -1,0 +1,22 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/alwayslatch_misc_port_scalarOutput.sv,77): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 2 input ports were not connected:
+xmelab: (./testcases/alwayslatch_misc_port_scalarOutput.sv,76): i_en
+xmelab: (./testcases/alwayslatch_misc_port_scalarOutput.sv,78): i_a
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+  always_latch
+             |
+xmelab: *E,MULAXX (./testcases/alwayslatch_misc_port_scalarOutput.sv,34|13): Multiple drivers to always_latch output variable p1.o_a detected.
+  always_latch
+             |
+xmelab: *E,MULAXX (./testcases/alwayslatch_misc_port_scalarOutput.sv,49|13): Multiple drivers to always_latch output variable p1.o_a detected.
+  always_latch
+             |
+xmelab: *E,MULAXX (./testcases/alwayslatch_misc_port_scalarOutput.sv,64|13): Multiple drivers to always_latch output variable p2.o_a detected.
+FAILURE

@@ -1,0 +1,14 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb_automatic_noAssign.sv,13): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 1 input port was not connected:
+xmelab: (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb_automatic_noAssign.sv,12): i_a
+
+      u_I.x[i] = i_a; // assign statement removed. Makes testcase always_comb.
+            |
+xmelab: *E,CUVNAA (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb_automatic_noAssign.sv,22|12): An index has been applied to an inappropriate type.
+FAILURE

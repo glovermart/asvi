@@ -1,0 +1,163 @@
+[93mWarning[97m: Config file '.svlint.toml' is not found. Enable all rules(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:3:1
+[94m  |
+[94m3 |[37m // Infer net and inout. 
+[94m  |[93m ^^^^^^^^^^^^^^^^^^^^^^^^[93m hint  : Remove trailing whitespace.
+[94m  |[33m                         [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:6:1
+[94m  |
+[94m6 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m  |[33m          [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_interface
+[94m   -->[37m testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:6:1
+[94m  |
+[94m6 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Prefix `interface` identifier with "ifc_".
+[94m  |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_interface
+[94m   -->[37m testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:6:1
+[94m  |
+[94m6 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_interface
+[94m   -->[37m testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:6:1
+[94m  |
+[94m6 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:6:11
+[94m  |
+[94m6 |[37m interface I;
+[94m  |[93m           ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m  |[33m            [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:13:1
+[94m   |
+[94m13 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:13:1
+[94m   |
+[94m13 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:13:1
+[94m   |
+[94m13 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: uppercamelcase_module
+[94m   -->[37m testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:13:8
+[94m   |
+[94m13 |[37m module top
+[94m   |[93m        ^^^[93m hint  : Begin `module` name with UpperCamelCase.
+[94m   |[33m           [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:14:5
+[94m   |
+[94m14 |[37m   ( input logic i_clk
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:14:17
+[94m   |
+[94m14 |[37m   ( input logic i_clk
+[94m   |[93m                 ^^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                      [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: interface_port_with_modport
+[94m   -->[37m testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:15:5
+[94m   |
+[94m15 |[37m   , I u_I[7:0] // Infer net.
+[94m   |[93m     ^[93m hint  : Specify the modport on the interface port.
+[94m   |[33m      [33m reason: Without a modport, the interface port signals are all implictly `inout`.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:15:5
+[94m   |
+[94m15 |[37m   , I u_I[7:0] // Infer net.
+[94m   |[93m     ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m      [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:15:7
+[94m   |
+[94m15 |[37m   , I u_I[7:0] // Infer net.
+[94m   |[93m       ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:15:7
+[94m   |
+[94m15 |[37m   , I u_I[7:0] // Infer net.
+[94m   |[93m       ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_port_input
+[94m   -->[37m testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:15:7
+[94m   |
+[94m15 |[37m   , I u_I[7:0] // Infer net.
+[94m   |[93m       ^^^[93m hint  : Use a port identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_port_interface
+[94m   -->[37m testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:15:7
+[94m   |
+[94m15 |[37m   , I u_I[7:0] // Infer net.
+[94m   |[93m       ^^^[93m hint  : Use a port identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:17:0
+[94m   |
+[94m17 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:18:3
+[94m   |
+[94m18 |[37m   // No loop scheme. 
+[94m   |[93m   ^^^^^^^^^^^^^^^^^^^[93m hint  : Remove trailing whitespace.
+[94m   |[33m                      [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: sequential_block_in_always_ff
+[94m   -->[37m testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:19:30
+[94m   |
+[94m19 |[37m   always_ff @(posedge i_clk) begin
+[94m   |[93m                              ^^^^^[93m hint  : Keywords `begin` and `end` are forbidden within `always_ff`.
+[94m   |[33m                                   [33m reason: Sequential blocks within `always_ff` may encourage overly-complex code.
+(B[m
+[91mFail[97m: style_keyword_end
+[94m   -->[37m testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:28:3
+[94m   |
+[94m28 |[37m   end   
+[94m   |[93m   ^^^[93m hint  : Follow keyword with a colon, newline, or exactly 1 space.
+[94m   |[33m      [33m reason: Consistent use of whitespace enhances readability by reducing visual noise.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_arrayofSVI_instModuleport_noloop.sv:29:0
+[94m   |
+[94m29 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+FAILURE

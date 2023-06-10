@@ -1,0 +1,1 @@
+testcases/assign_unpacked_inst_foreachAssignIn.sv:21: ERROR: syntax error, unexpected TOK_ASSIGN, expecting ';'

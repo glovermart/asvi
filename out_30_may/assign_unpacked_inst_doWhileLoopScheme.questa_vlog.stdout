@@ -1,0 +1,11 @@
+QuestaSim-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+Start time: 02:34:07 on May 30,2023
+vlog -sv -lint=full testcases/assign_unpacked_inst_doWhileLoopScheme.sv testbench/tb.sv 
+-- Compiling interface I
+-- Compiling module top
+** Error: (vlog-13069) testcases/assign_unpacked_inst_doWhileLoopScheme.sv(20): near "do": syntax error, unexpected "SystemVerilog keyword 'do'".
+** Error: testcases/assign_unpacked_inst_doWhileLoopScheme.sv(22): (vlog-13205) Syntax error found in the scope following 'i'. Is there a missing '::'?
+-- Compiling module tb
+End time: 02:34:07 on May 30,2023, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+FAILURE

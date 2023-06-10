@@ -1,0 +1,42 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/force_unpacked_port_fullSelect_genericInterface.sv,42): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 2 input ports were not connected:
+xmelab: (./testcases/force_unpacked_port_fullSelect_genericInterface.sv,40): i_en
+xmelab: (./testcases/force_unpacked_port_fullSelect_genericInterface.sv,41): i_a
+
+  I u_I ();
+      |
+xmelab: *W,CUVWSB (./testcases/force_unpacked_port_fullSelect_genericInterface.sv,45|6): 1 inout port was not connected:
+xmelab: (./testcases/struct_port_packed_instStructInterfacePort.sv,11): data
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+    , .i      (u_I.P)
+                   |
+xmelab: *E,CUVUNF (./testcases/force_unpacked_port_fullSelect_genericInterface.sv,51|19): Hierarchical name component lookup failed for 'P' at 'tb.u_DUT'.
+  assign u_I.z = '{8{i_a}}; // Fill the array with some bit of the same value.
+             |
+xmelab: *E,CUVUNF (./testcases/force_unpacked_port_fullSelect_genericInterface.sv,47|13): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT'.
+  assign o_a = u_I.z; // Copy/output the array elements.
+                   |
+xmelab: *E,CUVUNF (./testcases/force_unpacked_port_fullSelect_genericInterface.sv,55|19): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT'.
+      force i.p = '{4{1'bz}};
+              |
+xmelab: *E,CUVUNF (./testcases/force_unpacked_port_fullSelect_genericInterface.sv,25|14): Hierarchical name component lookup failed for 'p' at 'tb.u_DUT.u_M'.
+      release i.p;
+                |
+xmelab: *E,CUVUNF (./testcases/force_unpacked_port_fullSelect_genericInterface.sv,27|16): Hierarchical name component lookup failed for 'p' at 'tb.u_DUT.u_M'.
+      force i.q = '{4{i_a}};
+              |
+xmelab: *E,CUVUNF (./testcases/force_unpacked_port_fullSelect_genericInterface.sv,32|14): Hierarchical name component lookup failed for 'q' at 'tb.u_DUT.u_M'.
+      release i.q;
+                |
+xmelab: *E,CUVUNF (./testcases/force_unpacked_port_fullSelect_genericInterface.sv,34|16): Hierarchical name component lookup failed for 'q' at 'tb.u_DUT.u_M'.
+  ( interface i  // Generic interface i.
+              |
+xmelab: *E,URCEN (./testcases/force_unpacked_port_fullSelect_genericInterface.sv,17|14): Unresolved constant expression VST_D_IO_INTERFACE.
+FAILURE

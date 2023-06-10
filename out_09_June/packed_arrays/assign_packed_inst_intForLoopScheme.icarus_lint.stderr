@@ -1,0 +1,5 @@
+testcases/assign_packed_inst_intForLoopScheme.sv:19: syntax error
+testcases/assign_packed_inst_intForLoopScheme.sv:19: error: invalid module item.
+testcases/assign_packed_inst_intForLoopScheme.sv:19: syntax error
+testcases/assign_packed_inst_intForLoopScheme.sv:19: error: Invalid module instantiation
+testcases/assign_packed_inst_intForLoopScheme.sv:19: error: Invalid module instantiation

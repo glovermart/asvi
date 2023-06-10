@@ -1,0 +1,10 @@
+QuestaSim-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+Start time: 02:33:39 on May 30,2023
+vlog -sv -sv17compat -lint=default testcases/alwayscomb_unpacked_inst_foreach.sv 
+-- Compiling interface I
+-- Compiling module top
+
+Top level modules:
+	top
+End time: 02:33:39 on May 30,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

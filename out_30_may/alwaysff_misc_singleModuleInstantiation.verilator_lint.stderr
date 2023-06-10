@@ -1,0 +1,27 @@
+%Warning-DECLFILENAME: testcases/alwaysff_misc_singleModuleInstantiation.sv:4:11: Filename 'alwaysff_misc_singleModuleInstantiation' does not match IFACE name: 'I'
+    4 | interface I
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-MULTIDRIVEN: testcases/alwaysff_misc_singleModuleInstantiation.sv:5:18: Signal has multiple driving blocks with different clocking: 'z'
+                      testcases/alwaysff_misc_singleModuleInstantiation.sv:55:9: ... Location of first driving block
+   55 |       p.z <= 1'b1;
+      |         ^
+                      testcases/alwaysff_misc_singleModuleInstantiation.sv:85:7: ... Location of other driving block
+   85 |     p.z <= 1'b0;
+      |       ^
+%Warning-MULTIDRIVEN: testcases/alwaysff_misc_singleModuleInstantiation.sv:6:18: Signal has multiple driving blocks with different clocking: 'y'
+                      testcases/alwaysff_misc_singleModuleInstantiation.sv:60:9: ... Location of first driving block
+   60 |       p.y <= 1'b0;
+      |         ^
+                      testcases/alwaysff_misc_singleModuleInstantiation.sv:90:7: ... Location of other driving block
+   90 |     p.y <= 1'b0;
+      |       ^
+%Warning-MULTIDRIVEN: testcases/alwaysff_misc_singleModuleInstantiation.sv:7:18: Signal has multiple driving blocks with different clocking: 'x'
+                      testcases/alwaysff_misc_singleModuleInstantiation.sv:65:9: ... Location of first driving block
+   65 |       p.x <= 1'b0;
+      |         ^
+                      testcases/alwaysff_misc_singleModuleInstantiation.sv:95:7: ... Location of other driving block
+   95 |     p.x <= 1'b0;
+      |       ^
+%Error: Exiting due to 4 warning(s)

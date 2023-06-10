@@ -1,0 +1,12 @@
+testcases/alwayslatch_misc_port_vectorOutput.sv:21: syntax error
+testcases/alwayslatch_misc_port_vectorOutput.sv:21: Errors in port declarations.
+testcases/alwayslatch_misc_port_vectorOutput.sv:32: syntax error
+testcases/alwayslatch_misc_port_vectorOutput.sv:32: Errors in port declarations.
+testcases/alwayslatch_misc_port_vectorOutput.sv:47: syntax error
+testcases/alwayslatch_misc_port_vectorOutput.sv:47: Errors in port declarations.
+testcases/alwayslatch_misc_port_vectorOutput.sv:62: syntax error
+testcases/alwayslatch_misc_port_vectorOutput.sv:62: Errors in port declarations.
+testcases/alwayslatch_misc_port_vectorOutput.sv:70: warning: implicit definition of wire 'p2'.
+testcases/alwayslatch_misc_port_vectorOutput.sv:77: syntax error
+testcases/alwayslatch_misc_port_vectorOutput.sv:1: Errors in port declarations.
+testcases/alwayslatch_misc_port_vectorOutput.sv:85: warning: implicit definition of wire 'u_I'.

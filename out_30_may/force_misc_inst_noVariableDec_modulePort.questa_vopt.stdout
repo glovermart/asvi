@@ -1,0 +1,29 @@
+QuestaSim-64 vopt 2023.1 Compiler 2023.01 Jan 23 2023
+Start time: 02:37:41 on May 30,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+-- Loading interface I
+-- Loading module M1
+-- Loading module M2
+** Warning: testbench/tb.sv(3): (vopt-2685) [TFMPC] - Too few port connections for 'u_DUT'.  Expected 2, found 0.
+Incremental compilation check found no design-units (out of 6) may be reused.
+Optimizing 6 design-units (inlining 4/5 module instances):
+-- Inlining interface I(fast__1)
+-- Inlining module M1(fast)
+-- Inlining module M2(fast)
+-- Inlining module top(fast)
+** Warning: testcases/force_misc_inst_noVariableDec_modulePort.sv(43): (vopt-2685) [TFMPC] - Too few port connections for 'u_M1'.  Expected 2, found 1.
+** Warning: testcases/force_misc_inst_noVariableDec_modulePort.sv(43): (vopt-2718) [TFMPC] - Missing connection for port 'i_b'.
+-- Optimizing module tb(fast)
+** Error: testcases/force_misc_inst_noVariableDec_modulePort.sv(53): (vopt-2110) Illegal reference to net "i_b".
+Optimization failed
+** Error: (vopt-2064) Compiler back-end code generation process terminated with code 12.
+End time: 02:37:41 on May 30,2023, Elapsed time: 0:00:00
+Errors: 2, Warnings: 3
+FAILURE

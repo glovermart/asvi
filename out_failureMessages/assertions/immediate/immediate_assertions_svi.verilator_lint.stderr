@@ -1,0 +1,10 @@
+%Warning-DECLFILENAME: testcases/immediate_assertions_svi.sv:7:11: Filename 'immediate_assertions_svi' does not match IFACE name: 'I'
+    7 | interface I
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-UNDRIVEN: testcases/immediate_assertions_svi.sv:13:9: Signal is not driven: 'z'
+                                                             : ... In instance top
+   13 |   logic z;
+      |         ^
+%Error: Exiting due to 2 warning(s)

@@ -1,0 +1,6 @@
+testcases/concurrent_assertions_port.sv:10: syntax error
+testcases/concurrent_assertions_port.sv:10: Errors in port declarations.
+testcases/concurrent_assertions_port.sv:23: syntax error
+testcases/concurrent_assertions_port.sv:23: Errors in port declarations.
+testcases/concurrent_assertions_port.sv:34: syntax error
+testcases/concurrent_assertions_port.sv:34: error: Error in property_spec of concurrent assertion item.

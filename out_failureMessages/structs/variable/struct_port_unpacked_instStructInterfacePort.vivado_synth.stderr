@@ -1,0 +1,4 @@
+ERROR: [Synth 8-659] type mismatch in assignment: struct {bit [7:0]data;} A vs. bit [0:0]B [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/struct_port_unpacked_instStructInterfacePort.sv:29]
+ERROR: [Synth 8-6156] failed synthesizing module 'M1' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/struct_port_unpacked_instStructInterfacePort.sv:25]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/struct_port_unpacked_instStructInterfacePort.sv:46]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

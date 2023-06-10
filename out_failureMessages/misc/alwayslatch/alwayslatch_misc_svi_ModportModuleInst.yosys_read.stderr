@@ -1,0 +1,26 @@
+Warning: wire '\p.o_a' is assigned in a block at testcases/alwayslatch_misc_svi_ModportModuleInst.sv:32.5-32.23.
+testcases/alwayslatch_misc_svi_ModportModuleInst.sv:32: Warning: Identifier `\p.o_a' is implicitly declared.
+testcases/alwayslatch_misc_svi_ModportModuleInst.sv:32: Warning: Range select out of bounds on signal `\p.o_a': Setting result bit to undef.
+testcases/alwayslatch_misc_svi_ModportModuleInst.sv:31: Warning: Identifier `\p.i_clk' is implicitly declared.
+testcases/alwayslatch_misc_svi_ModportModuleInst.sv:32: Warning: Identifier `\p.x' is implicitly declared.
+testcases/alwayslatch_misc_svi_ModportModuleInst.sv:32: Warning: Range select out of bounds on signal `\p.x': Setting result bit to undef.
+Warning: wire '\p.o_a' is assigned in a block at testcases/alwayslatch_misc_svi_ModportModuleInst.sv:42.5-42.23.
+Warning: wire '\p.o_a' is assigned in a block at testcases/alwayslatch_misc_svi_ModportModuleInst.sv:52.5-52.23.
+Warning: wire '\p.o_a' is assigned in a block at testcases/alwayslatch_misc_svi_ModportModuleInst.sv:62.5-62.23.
+testcases/alwayslatch_misc_svi_ModportModuleInst.sv:79: Warning: Identifier `\u_I.P' is implicitly declared.
+Warning: Wire I.\o_a [3] is used but has no driver.
+Warning: Wire I.\o_a [2] is used but has no driver.
+Warning: Wire I.\o_a [1] is used but has no driver.
+Warning: Wire I.\o_a [0] is used but has no driver.
+Warning: Wire M1.\p.o_a [2] is used but has no driver.
+Warning: Wire M1.\p.o_a [1] is used but has no driver.
+Warning: Wire M1.\p.o_a [0] is used but has no driver.
+Warning: Wire M2.\p.o_a [3] is used but has no driver.
+Warning: Wire M2.\p.o_a [1] is used but has no driver.
+Warning: Wire M2.\p.o_a [0] is used but has no driver.
+Warning: Wire M3.\p.o_a [3] is used but has no driver.
+Warning: Wire M3.\p.o_a [2] is used but has no driver.
+Warning: Wire M3.\p.o_a [0] is used but has no driver.
+Warning: Wire M4.\p.o_a [3] is used but has no driver.
+Warning: Wire M4.\p.o_a [2] is used but has no driver.
+Warning: Wire M4.\p.o_a [1] is used but has no driver.

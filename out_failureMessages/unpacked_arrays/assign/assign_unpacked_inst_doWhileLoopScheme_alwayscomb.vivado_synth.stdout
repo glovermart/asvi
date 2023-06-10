@@ -1,0 +1,25 @@
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source tcl/vivado_batch_run.tcl
+# read_verilog -sv $argv
+read_verilog: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2998.457 ; gain = 2.023 ; free physical = 3109 ; free virtual = 271909
+# synth_design -top top -part xc7k70tfbg676-1
+Command: synth_design -top top -part xc7k70tfbg676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11465
+WARNING: [Synth 8-10180] variable 'i' must explicitly be declared as automatic or static [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv:19]
+INFO: [Synth 8-8750] module 'top' ignored due to previous errors [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv:30]
+Failed to read verilog '/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv'
+INFO: [Common 17-83] Releasing license: Synthesis
+6 Infos, 1 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  9 13:48:47 2023...
+FAILURE

@@ -1,0 +1,20 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/force_misc_inst_noVariableDec_modulePort.sv,37): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 1 input port was not connected:
+xmelab: (./testcases/force_misc_inst_noVariableDec_modulePort.sv,38): i_clk
+
+  M1 u_M1
+        |
+xmelab: *W,CUVWSI (./testcases/force_misc_inst_noVariableDec_modulePort.sv,43|8): 1 input port was not connected:
+xmelab: (./testcases/force_misc_inst_noVariableDec_modulePort.sv,13): i_b
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+    u_M1.i_b <= 1'b1;
+           |
+xmelab: *E,WANOTL (./testcases/force_misc_inst_noVariableDec_modulePort.sv,53|11): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+FAILURE

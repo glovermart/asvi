@@ -1,0 +1,429 @@
+[93mWarning[97m: Config file '.svlint.toml' is not found. Enable all rules(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:6:1
+[94m  |
+[94m6 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m  |[33m          [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_interface
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:6:1
+[94m  |
+[94m6 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Prefix `interface` identifier with "ifc_".
+[94m  |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_interface
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:6:1
+[94m  |
+[94m6 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_interface
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:6:1
+[94m  |
+[94m6 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:6:11
+[94m  |
+[94m6 |[37m interface I;
+[94m  |[93m           ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m  |[33m            [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:7:0
+[94m  |
+[94m7 |[37m 
+[94m  |[93m [93m hint  : Remove trailing whitespace.
+[94m  |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:9:0
+[94m  |
+[94m9 |[37m 
+[94m  |[93m [93m hint  : Remove trailing whitespace.
+[94m  |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: re_forbidden_modport
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:10:3
+[94m   |
+[94m10 |[37m   modport P
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_modport
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:10:3
+[94m   |
+[94m10 |[37m   modport P
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:17:1
+[94m   |
+[94m17 |[37m module M
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:17:1
+[94m   |
+[94m17 |[37m module M
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:17:1
+[94m   |
+[94m17 |[37m module M
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:17:1
+[94m   |
+[94m17 |[37m module M
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:17:8
+[94m   |
+[94m17 |[37m module M
+[94m   |[93m        ^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m         [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: interface_port_with_modport
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:18:5
+[94m   |
+[94m18 |[37m   ( I u_I [7:0]
+[94m   |[93m     ^[93m hint  : Specify the modport on the interface port.
+[94m   |[33m      [33m reason: Without a modport, the interface port signals are all implictly `inout`.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:18:5
+[94m   |
+[94m18 |[37m   ( I u_I [7:0]
+[94m   |[93m     ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m      [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:18:7
+[94m   |
+[94m18 |[37m   ( I u_I [7:0]
+[94m   |[93m       ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:18:7
+[94m   |
+[94m18 |[37m   ( I u_I [7:0]
+[94m   |[93m       ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_port_inout
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:18:7
+[94m   |
+[94m18 |[37m   ( I u_I [7:0]
+[94m   |[93m       ^^^[93m hint  : Use a port identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_port_interface
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:18:7
+[94m   |
+[94m18 |[37m   ( I u_I [7:0]
+[94m   |[93m       ^^^[93m hint  : Use a port identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:19:5
+[94m   |
+[94m19 |[37m   , output logic [7:0] o_a
+[94m   |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m   |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:19:24
+[94m   |
+[94m19 |[37m   , output logic [7:0] o_a
+[94m   |[93m                        ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:20:5
+[94m   |
+[94m20 |[37m   , input bit en
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: prefix_input
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:20:5
+[94m   |
+[94m20 |[37m   , input bit en
+[94m   |[93m     ^^^^^[93m hint  : Prefix `input` port identifier with "i_".
+[94m   |[33m          [33m reason: Port prefixes help readers to follow signals through modules.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:20:15
+[94m   |
+[94m20 |[37m   , input bit en
+[94m   |[93m               ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                 [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:21:21
+[94m   |
+[94m21 |[37m   , input var logic i_a
+[94m   |[93m                     ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: generate_for_with_label
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:24:3
+[94m   |
+[94m24 |[37m   for (genvar i = 0; i < 8; i++)
+[94m   |[93m   ^^^[93m hint  : Use a label with prefix "l_" on loop generate block.
+[94m   |[33m      [33m reason: Unnamed generate blocks imply unintuitive hierarchical paths.
+(B[m
+[91mFail[97m: keyword_required_generate
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:24:3
+[94m   |
+[94m24 |[37m   for (genvar i = 0; i < 8; i++)
+[94m   |[93m   ^^^[93m hint  : Use `generate`/`endgenerate` keywords to define generate regions.
+[94m   |[33m      [33m reason: Omitting `generate`/`endgenerate` keywords may cause issues with non-compliant tools.
+(B[m
+[91mFail[97m: genvar_declaration_out_loop
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:24:8
+[94m   |
+[94m24 |[37m   for (genvar i = 0; i < 8; i++)
+[94m   |[93m        ^^^^^^[93m hint  : Declare `genvar` outside the loop generate construct.
+[94m   |[33m              [33m reason: Some tools don't support `genvar` declarations inside loop generate constructs.
+(B[m
+[91mFail[97m: re_forbidden_genvar
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:24:15
+[94m   |
+[94m24 |[37m   for (genvar i = 0; i < 8; i++)
+[94m   |[93m               ^[93m hint  : Use a genvar identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: generate_for_with_label
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:27:3
+[94m   |
+[94m27 |[37m   for (genvar i = 0; i < 8; i++) begin
+[94m   |[93m   ^^^[93m hint  : Use a label with prefix "l_" on loop generate block.
+[94m   |[33m      [33m reason: Unnamed generate blocks imply unintuitive hierarchical paths.
+(B[m
+[91mFail[97m: keyword_required_generate
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:27:3
+[94m   |
+[94m27 |[37m   for (genvar i = 0; i < 8; i++) begin
+[94m   |[93m   ^^^[93m hint  : Use `generate`/`endgenerate` keywords to define generate regions.
+[94m   |[33m      [33m reason: Omitting `generate`/`endgenerate` keywords may cause issues with non-compliant tools.
+(B[m
+[91mFail[97m: genvar_declaration_out_loop
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:27:8
+[94m   |
+[94m27 |[37m   for (genvar i = 0; i < 8; i++) begin
+[94m   |[93m        ^^^^^^[93m hint  : Declare `genvar` outside the loop generate construct.
+[94m   |[33m              [33m reason: Some tools don't support `genvar` declarations inside loop generate constructs.
+(B[m
+[91mFail[97m: re_forbidden_genvar
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:27:15
+[94m   |
+[94m27 |[37m   for (genvar i = 0; i < 8; i++) begin
+[94m   |[93m               ^[93m hint  : Use a genvar identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:29:7
+[94m   |
+[94m29 |[37m       if (en)
+[94m   |[93m       ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m   |[33m         [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+[91mFail[97m: style_indent
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:31:0
+[94m   |
+[94m31 |[37m 
+[94m   |[93m [93m hint  : Follow each newline with an integer multiple of 2 spaces.
+[94m   |[33m [33m reason: Consistent indentation is essential for readability.
+(B[m
+[91mFail[97m: style_indent
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:32:0
+[94m   |
+[94m32 |[37m 
+[94m   |[93m [93m hint  : Follow each newline with an integer multiple of 2 spaces.
+[94m   |[33m [33m reason: Consistent indentation is essential for readability.
+(B[m
+[91mFail[97m: generate_for_with_label
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:35:3
+[94m   |
+[94m35 |[37m   for (genvar i =0; i < 8; i++)
+[94m   |[93m   ^^^[93m hint  : Use a label with prefix "l_" on loop generate block.
+[94m   |[33m      [33m reason: Unnamed generate blocks imply unintuitive hierarchical paths.
+(B[m
+[91mFail[97m: keyword_required_generate
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:35:3
+[94m   |
+[94m35 |[37m   for (genvar i =0; i < 8; i++)
+[94m   |[93m   ^^^[93m hint  : Use `generate`/`endgenerate` keywords to define generate regions.
+[94m   |[33m      [33m reason: Omitting `generate`/`endgenerate` keywords may cause issues with non-compliant tools.
+(B[m
+[91mFail[97m: genvar_declaration_out_loop
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:35:8
+[94m   |
+[94m35 |[37m   for (genvar i =0; i < 8; i++)
+[94m   |[93m        ^^^^^^[93m hint  : Declare `genvar` outside the loop generate construct.
+[94m   |[33m              [33m reason: Some tools don't support `genvar` declarations inside loop generate constructs.
+(B[m
+[91mFail[97m: re_forbidden_genvar
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:35:15
+[94m   |
+[94m35 |[37m   for (genvar i =0; i < 8; i++)
+[94m   |[93m               ^[93m hint  : Use a genvar identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:37:0
+[94m   |
+[94m37 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:41:1
+[94m   |
+[94m41 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:41:1
+[94m   |
+[94m41 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:41:1
+[94m   |
+[94m41 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: uppercamelcase_module
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:41:8
+[94m   |
+[94m41 |[37m module top
+[94m   |[93m        ^^^[93m hint  : Begin `module` name with UpperCamelCase.
+[94m   |[33m           [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:42:5
+[94m   |
+[94m42 |[37m   ( input bit en
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: prefix_input
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:42:5
+[94m   |
+[94m42 |[37m   ( input bit en
+[94m   |[93m     ^^^^^[93m hint  : Prefix `input` port identifier with "i_".
+[94m   |[33m          [33m reason: Port prefixes help readers to follow signals through modules.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:42:15
+[94m   |
+[94m42 |[37m   ( input bit en
+[94m   |[93m               ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                 [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:43:21
+[94m   |
+[94m43 |[37m   , input var logic i_a
+[94m   |[93m                     ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:44:5
+[94m   |
+[94m44 |[37m   , output logic [7:0] o_a
+[94m   |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m   |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:44:24
+[94m   |
+[94m44 |[37m   , output logic [7:0] o_a
+[94m   |[93m                        ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_indent
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:46:0
+[94m   |
+[94m46 |[37m 
+[94m   |[93m [93m hint  : Follow each newline with an integer multiple of 2 spaces.
+[94m   |[33m [33m reason: Consistent indentation is essential for readability.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:47:2
+[94m   |
+[94m47 |[37m  I u_I [7:0] ();
+[94m   |[93m  ^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m   [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:47:4
+[94m   |
+[94m47 |[37m  I u_I [7:0] ();
+[94m   |[93m    ^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:47:4
+[94m   |
+[94m47 |[37m  I u_I [7:0] ();
+[94m   |[93m    ^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_indent
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:48:0
+[94m   |
+[94m48 |[37m 
+[94m   |[93m [93m hint  : Follow each newline with an integer multiple of 2 spaces.
+[94m   |[33m [33m reason: Consistent indentation is essential for readability.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:49:2
+[94m   |
+[94m49 |[37m  M u_M 
+[94m   |[93m  ^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m   [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:49:4
+[94m   |
+[94m49 |[37m  M u_M 
+[94m   |[93m    ^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:49:4
+[94m   |
+[94m49 |[37m  M u_M 
+[94m   |[93m    ^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/force_arrayofSVI_port_output.sv:50:0
+[94m   |
+[94m50 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+FAILURE

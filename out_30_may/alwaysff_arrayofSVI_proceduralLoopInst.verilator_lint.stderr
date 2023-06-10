@@ -1,0 +1,30 @@
+%Warning-DECLFILENAME: testcases/alwaysff_arrayofSVI_proceduralLoopInst.sv:8:11: Filename 'alwaysff_arrayofSVI_proceduralLoopInst' does not match IFACE name: 'I'
+    8 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Error: testcases/alwaysff_arrayofSVI_proceduralLoopInst.sv:24:11: Expecting expression to be constant, but variable isn't const: 'i'
+                                                                 : ... In instance top.u_M
+   24 |       u_I[i].x <= 1'b1;  
+      |           ^
+%Error: testcases/alwaysff_arrayofSVI_proceduralLoopInst.sv:24:10: Could not expand constant selection inside dotted reference: 'i'
+                                                                 : ... In instance top.u_M
+   24 |       u_I[i].x <= 1'b1;  
+      |          ^
+%Error: testcases/alwaysff_arrayofSVI_proceduralLoopInst.sv:25:11: Expecting expression to be constant, but variable isn't const: 'i'
+                                                                 : ... In instance top.u_M
+   25 |       u_I[i].y <= 1'b0;  
+      |           ^
+%Error: testcases/alwaysff_arrayofSVI_proceduralLoopInst.sv:25:10: Could not expand constant selection inside dotted reference: 'i'
+                                                                 : ... In instance top.u_M
+   25 |       u_I[i].y <= 1'b0;  
+      |          ^
+%Error: testcases/alwaysff_arrayofSVI_proceduralLoopInst.sv:26:11: Expecting expression to be constant, but variable isn't const: 'i'
+                                                                 : ... In instance top.u_M
+   26 |       u_I[i].z <= 1'b1;  
+      |           ^
+%Error: testcases/alwaysff_arrayofSVI_proceduralLoopInst.sv:26:10: Could not expand constant selection inside dotted reference: 'i'
+                                                                 : ... In instance top.u_M
+   26 |       u_I[i].z <= 1'b1;  
+      |          ^
+%Error: Exiting due to 6 error(s), 1 warning(s)

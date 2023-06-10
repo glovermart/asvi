@@ -1,0 +1,15 @@
+%Error-UNSUPPORTED: testcases/task_export_genericInterface.sv:9:7: Unsupported: Modport import with prototype
+    9 |     ( import task adder (input int i_a, i_b, output int o_a)
+      |       ^~~~~~
+                    ... For error description see https://verilator.org/warn/UNSUPPORTED?v=5.008
+%Error-UNSUPPORTED: testcases/task_export_genericInterface.sv:20:5: Unsupported: generic interfaces
+   20 |   ( interface j
+      |     ^~~~~~~~~
+%Error-UNSUPPORTED: testcases/task_export_genericInterface.sv:23:9: Unsupported: Out of block function declaration
+   23 |   task j.adder (input int i_a, i_b, output int o_a);  
+      |         ^
+%Error-UNSUPPORTED: testcases/task_export_genericInterface.sv:31:5: Unsupported: generic interfaces
+   31 |   ( interface i  
+      |     ^~~~~~~~~
+%Error: Exiting due to 4 error(s)
+        ... See the manual at https://verilator.org/verilator_doc.html for more assistance.

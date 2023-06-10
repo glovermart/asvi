@@ -1,0 +1,20 @@
+%Warning-DECLFILENAME: testcases/force_arrayofSVI_inst_nogen_assign.sv:5:11: Filename 'force_arrayofSVI_inst_nogen_assign' does not match IFACE name: 'I'
+    5 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: testcases/force_arrayofSVI_inst_nogen_assign.sv:32:14: Operator ASSIGNW expects 8 bits on the Assign RHS, but Assign RHS's VARXREF 'z' generates 1 bits.
+                                                                           : ... In instance top
+   32 |   assign o_a = u_I.z;
+      |              ^
+%Error: testcases/force_arrayofSVI_inst_nogen_assign.sv:32:20: Can't find definition of 'u_I' in dotted signal: 'u_I.z'
+                                                             : ... In instance top
+   32 |   assign o_a = u_I.z;
+      |                    ^
+        ... Known scopes under 'z': u_I[0], u_I[1], u_I[2], u_I[3], u_I[4], u_I[5], u_I[6], u_I[7]
+%Error-UNSUPPORTED: testcases/force_arrayofSVI_inst_nogen_assign.sv:26:9: Unsupported tristate construct: ASSIGNFORCE
+                                                                        : ... In instance top
+   26 |         force u_I[i].z = 1'bz;
+      |         ^~~~~
+%Error: Verilator internal fault, sorry. Suggest trying --debug --gdbbt
+%Error: Command Failed ulimit -s unlimited 2>/dev/null; exec /hizz/pro/sig_research/dddTools/tools/verilator-v5.008/bin/verilator_bin --lint-only -Wall testcases/force_arrayofSVI_inst_nogen_assign.sv

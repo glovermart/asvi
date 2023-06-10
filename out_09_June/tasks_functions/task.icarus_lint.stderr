@@ -1,0 +1,1 @@
+testcases/task.sv:7: warning: user task (adder) must be automatic to be synthesized in an always_comb process.

@@ -1,0 +1,48 @@
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:40: Warning: Identifier `\u_I[0].x' is implicitly declared.
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:41: Warning: Identifier `\u_I[0].y' is implicitly declared.
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:42: Warning: Identifier `\u_I[0].z' is implicitly declared.
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:40: Warning: Identifier `\u_I[1].x' is implicitly declared.
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:41: Warning: Identifier `\u_I[1].y' is implicitly declared.
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:42: Warning: Identifier `\u_I[1].z' is implicitly declared.
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:40: Warning: Identifier `\u_I[2].x' is implicitly declared.
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:41: Warning: Identifier `\u_I[2].y' is implicitly declared.
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:42: Warning: Identifier `\u_I[2].z' is implicitly declared.
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:40: Warning: Identifier `\u_I[3].x' is implicitly declared.
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:41: Warning: Identifier `\u_I[3].y' is implicitly declared.
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:42: Warning: Identifier `\u_I[3].z' is implicitly declared.
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:40: Warning: Identifier `\u_I[4].x' is implicitly declared.
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:41: Warning: Identifier `\u_I[4].y' is implicitly declared.
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:42: Warning: Identifier `\u_I[4].z' is implicitly declared.
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:40: Warning: Identifier `\u_I[5].x' is implicitly declared.
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:41: Warning: Identifier `\u_I[5].y' is implicitly declared.
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:42: Warning: Identifier `\u_I[5].z' is implicitly declared.
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:40: Warning: Identifier `\u_I[6].x' is implicitly declared.
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:41: Warning: Identifier `\u_I[6].y' is implicitly declared.
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:42: Warning: Identifier `\u_I[6].z' is implicitly declared.
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:40: Warning: Identifier `\u_I[7].x' is implicitly declared.
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:41: Warning: Identifier `\u_I[7].y' is implicitly declared.
+testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv:42: Warning: Identifier `\u_I[7].z' is implicitly declared.
+Warning: Wire top.\o_c [7] is used but has no driver.
+Warning: Wire top.\o_c [6] is used but has no driver.
+Warning: Wire top.\o_c [5] is used but has no driver.
+Warning: Wire top.\o_c [4] is used but has no driver.
+Warning: Wire top.\o_c [3] is used but has no driver.
+Warning: Wire top.\o_c [2] is used but has no driver.
+Warning: Wire top.\o_c [1] is used but has no driver.
+Warning: Wire top.\o_c [0] is used but has no driver.
+Warning: Wire top.\o_b [7] is used but has no driver.
+Warning: Wire top.\o_b [6] is used but has no driver.
+Warning: Wire top.\o_b [5] is used but has no driver.
+Warning: Wire top.\o_b [4] is used but has no driver.
+Warning: Wire top.\o_b [3] is used but has no driver.
+Warning: Wire top.\o_b [2] is used but has no driver.
+Warning: Wire top.\o_b [1] is used but has no driver.
+Warning: Wire top.\o_b [0] is used but has no driver.
+Warning: Wire top.\o_a [7] is used but has no driver.
+Warning: Wire top.\o_a [6] is used but has no driver.
+Warning: Wire top.\o_a [5] is used but has no driver.
+Warning: Wire top.\o_a [4] is used but has no driver.
+Warning: Wire top.\o_a [3] is used but has no driver.
+Warning: Wire top.\o_a [2] is used but has no driver.
+Warning: Wire top.\o_a [1] is used but has no driver.
+Warning: Wire top.\o_a [0] is used but has no driver.

@@ -1,0 +1,6 @@
+testcases/task_export_extern_noGenericInterfaceModportInst.sv:8: syntax error
+testcases/task_export_extern_noGenericInterfaceModportInst.sv:8: error: invalid module item.
+testcases/task_export_extern_noGenericInterfaceModportInst.sv:11: sorry: modport task/function ports are not yet supported.
+testcases/task_export_extern_noGenericInterfaceModportInst.sv:27: syntax error
+testcases/task_export_extern_noGenericInterfaceModportInst.sv:27: Errors in port declarations.
+testcases/task_export_extern_noGenericInterfaceModportInst.sv:49: warning: implicit definition of wire 'u_I'.

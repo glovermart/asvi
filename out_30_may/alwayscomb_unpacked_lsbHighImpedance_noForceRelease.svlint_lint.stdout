@@ -1,0 +1,261 @@
+[93mWarning[97m: Config file '.svlint.toml' is not found. Enable all rules(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:1:1
+[94m  |
+[94m1 |[37m // Assignment via `always_comb` to an unpacked array within an interface. 
+[94m  |[93m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[93m hint  : Remove trailing whitespace.
+[94m  |[33m                                                                           [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:5:1
+[94m  |
+[94m5 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m  |[33m          [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_interface
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:5:1
+[94m  |
+[94m5 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Prefix `interface` identifier with "ifc_".
+[94m  |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_interface
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:5:1
+[94m  |
+[94m5 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_interface
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:5:1
+[94m  |
+[94m5 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:5:11
+[94m  |
+[94m5 |[37m interface I
+[94m  |[93m           ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m  |[33m            [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:6:5
+[94m  |
+[94m6 |[37m   ( input logic i_a
+[94m  |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m  |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:6:17
+[94m  |
+[94m6 |[37m   ( input logic i_a
+[94m  |[93m                 ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m                    [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:7:5
+[94m  |
+[94m7 |[37m   , input logic i_en
+[94m  |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m  |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:7:17
+[94m  |
+[94m7 |[37m   , input logic i_en
+[94m  |[93m                 ^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m                     [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:12:0
+[94m   |
+[94m12 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: style_keyword_construct
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:12:3
+[94m   |
+[94m12 |[37m   always_comb 
+[94m   |[93m   ^^^^^^^^^^^[93m hint  : Follow keyword with a newline or exactly 1 space.
+[94m   |[33m              [33m reason: Consistent use of whitespace enhances readability by reducing visual noise.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:13:0
+[94m   |
+[94m13 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:13:5
+[94m   |
+[94m13 |[37m     if (i_en)
+[94m   |[93m     ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m   |[33m       [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+[91mFail[97m: style_commaleading
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:14:16
+[94m   |
+[94m14 |[37m       x = '{i_a,i_a,i_a,i_a,'z,'z,'z,'z}; // Drive LSBs to 'z',
+[94m   |[93m                ^[93m hint  : Follow each comma with a single space (comma-leading format).
+[94m   |[33m                 [33m reason: Consistent style enhances readability.
+(B[m
+[91mFail[97m: style_commaleading
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:14:20
+[94m   |
+[94m14 |[37m       x = '{i_a,i_a,i_a,i_a,'z,'z,'z,'z}; // Drive LSBs to 'z',
+[94m   |[93m                    ^[93m hint  : Follow each comma with a single space (comma-leading format).
+[94m   |[33m                     [33m reason: Consistent style enhances readability.
+(B[m
+[91mFail[97m: style_commaleading
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:14:24
+[94m   |
+[94m14 |[37m       x = '{i_a,i_a,i_a,i_a,'z,'z,'z,'z}; // Drive LSBs to 'z',
+[94m   |[93m                        ^[93m hint  : Follow each comma with a single space (comma-leading format).
+[94m   |[33m                         [33m reason: Consistent style enhances readability.
+(B[m
+[91mFail[97m: style_commaleading
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:14:28
+[94m   |
+[94m14 |[37m       x = '{i_a,i_a,i_a,i_a,'z,'z,'z,'z}; // Drive LSBs to 'z',
+[94m   |[93m                            ^[93m hint  : Follow each comma with a single space (comma-leading format).
+[94m   |[33m                             [33m reason: Consistent style enhances readability.
+(B[m
+[91mFail[97m: style_commaleading
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:14:31
+[94m   |
+[94m14 |[37m       x = '{i_a,i_a,i_a,i_a,'z,'z,'z,'z}; // Drive LSBs to 'z',
+[94m   |[93m                               ^[93m hint  : Follow each comma with a single space (comma-leading format).
+[94m   |[33m                                [33m reason: Consistent style enhances readability.
+(B[m
+[91mFail[97m: style_commaleading
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:14:34
+[94m   |
+[94m14 |[37m       x = '{i_a,i_a,i_a,i_a,'z,'z,'z,'z}; // Drive LSBs to 'z',
+[94m   |[93m                                  ^[93m hint  : Follow each comma with a single space (comma-leading format).
+[94m   |[33m                                   [33m reason: Consistent style enhances readability.
+(B[m
+[91mFail[97m: style_commaleading
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:14:37
+[94m   |
+[94m14 |[37m       x = '{i_a,i_a,i_a,i_a,'z,'z,'z,'z}; // Drive LSBs to 'z',
+[94m   |[93m                                     ^[93m hint  : Follow each comma with a single space (comma-leading format).
+[94m   |[33m                                      [33m reason: Consistent style enhances readability.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:16:22
+[94m   |
+[94m16 |[37m       x = '{8{i_a}}; // Write all array elements with the same value. 
+[94m   |[93m                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[93m hint  : Remove trailing whitespace.
+[94m   |[33m                                                                       [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:21:1
+[94m   |
+[94m21 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:21:1
+[94m   |
+[94m21 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:21:1
+[94m   |
+[94m21 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: uppercamelcase_module
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:21:8
+[94m   |
+[94m21 |[37m module top
+[94m   |[93m        ^^^[93m hint  : Begin `module` name with UpperCamelCase.
+[94m   |[33m           [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:22:5
+[94m   |
+[94m22 |[37m   ( input logic i_a
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:22:17
+[94m   |
+[94m22 |[37m   ( input logic i_a
+[94m   |[93m                 ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                    [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:23:5
+[94m   |
+[94m23 |[37m   , input logic i_en
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:23:17
+[94m   |
+[94m23 |[37m   , input logic i_en
+[94m   |[93m                 ^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                     [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:24:5
+[94m   |
+[94m24 |[37m   , output logic o_a [7:0]
+[94m   |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m   |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:24:18
+[94m   |
+[94m24 |[37m   , output logic o_a [7:0]
+[94m   |[93m                  ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                     [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:27:3
+[94m   |
+[94m27 |[37m   I u_I 
+[94m   |[93m   ^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m    [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:27:5
+[94m   |
+[94m27 |[37m   I u_I 
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:27:5
+[94m   |
+[94m27 |[37m   I u_I 
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:28:0
+[94m   |
+[94m28 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:29:0
+[94m   |
+[94m29 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+FAILURE

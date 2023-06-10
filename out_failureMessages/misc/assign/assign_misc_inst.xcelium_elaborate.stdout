@@ -1,0 +1,38 @@
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+  assign u_I4.z = Z;      // Constant
+                |
+xmelab: *E,MULDRN (./testcases/assign_misc_inst.sv,62|16): Variable 'tb.u_DUT.u_I5.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.u_M4' is contributing to this conflict set.
+  assign u_I3.z = Z;      // Constant
+                |
+xmelab: *E,MULDRN (./testcases/assign_misc_inst.sv,48|16): Variable 'tb.u_DUT.u_I5.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.u_M3' is contributing to this conflict set.
+  assign u_I2.z = Z;      // Constant
+                |
+xmelab: *E,MULDRN (./testcases/assign_misc_inst.sv,34|16): Variable 'tb.u_DUT.u_I5.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.u_M2' is contributing to this conflict set.
+  assign u_I1.z = Z;      // Constant
+                |
+xmelab: *E,MULDRN (./testcases/assign_misc_inst.sv,20|16): Variable 'tb.u_DUT.u_I5.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.u_M1' is contributing to this conflict set.
+  assign u_I4.y = 1'b1;   // Literal
+                |
+xmelab: *E,MULDRN (./testcases/assign_misc_inst.sv,63|16): Variable 'tb.u_DUT.u_I5.y' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.u_M4' is contributing to this conflict set.
+  assign u_I3.y = 1'b1;   // Literal
+                |
+xmelab: *E,MULDRN (./testcases/assign_misc_inst.sv,49|16): Variable 'tb.u_DUT.u_I5.y' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.u_M3' is contributing to this conflict set.
+  assign u_I2.y = 1'b1;   // Literal
+                |
+xmelab: *E,MULDRN (./testcases/assign_misc_inst.sv,35|16): Variable 'tb.u_DUT.u_I5.y' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.u_M2' is contributing to this conflict set.
+  assign u_I1.y = 1'b1;   // Literal
+                |
+xmelab: *E,MULDRN (./testcases/assign_misc_inst.sv,21|16): Variable 'tb.u_DUT.u_I5.y' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.u_M1' is contributing to this conflict set.
+  assign u_I4.x = a;      // Signal
+                |
+xmelab: *E,MULDRN (./testcases/assign_misc_inst.sv,64|16): Variable 'tb.u_DUT.u_I5.x' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.u_M4' is contributing to this conflict set.
+  assign u_I3.x = a;      // Signal
+                |
+xmelab: *E,MULDRN (./testcases/assign_misc_inst.sv,50|16): Variable 'tb.u_DUT.u_I5.x' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.u_M3' is contributing to this conflict set.
+  assign u_I2.x = a;      // Signal
+                |
+xmelab: *E,MULDRN (./testcases/assign_misc_inst.sv,36|16): Variable 'tb.u_DUT.u_I5.x' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.u_M2' is contributing to this conflict set.
+  assign u_I1.x = a;      // Signal
+                |
+xmelab: *E,MULDRN (./testcases/assign_misc_inst.sv,22|16): Variable 'tb.u_DUT.u_I5.x' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.u_M1' is contributing to this conflict set.
+FAILURE

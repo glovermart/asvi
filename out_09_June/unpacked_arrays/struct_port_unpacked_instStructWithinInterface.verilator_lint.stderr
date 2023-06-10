@@ -1,0 +1,10 @@
+%Warning-DECLFILENAME: testcases/struct_port_unpacked_instStructWithinInterface.sv:10:11: Filename 'struct_port_unpacked_instStructWithinInterface' does not match IFACE name: 'I'
+   10 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: testcases/struct_port_unpacked_instStructWithinInterface.sv:41:9: Operator ASSIGNDLY expects 8 bits on the Assign RHS, but Assign RHS's VARXREF 'data' generates 1 bits.
+                                                                                      : ... In instance top.u_m2
+   41 |     o_a <= p2.data;
+      |         ^~
+%Error: Exiting due to 2 warning(s)

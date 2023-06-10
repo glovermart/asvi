@@ -1,0 +1,12 @@
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:29: Warning: Identifier `\u_I.z' is implicitly declared.
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:30: Warning: Identifier `\u_I.y' is implicitly declared.
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:31: Warning: Identifier `\u_I.x' is implicitly declared.
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:43: Warning: Identifier `\u_M1.a' is implicitly declared.
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:44: Warning: Identifier `\u_M1.b' is implicitly declared.
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:45: Warning: Identifier `\u_M1.c' is implicitly declared.
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:65: Warning: Identifier `\u_M2.a' is implicitly declared.
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:66: Warning: Identifier `\u_M2.b' is implicitly declared.
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:67: Warning: Identifier `\u_M2.c' is implicitly declared.
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:88: Warning: Identifier `\u_M3.a' is implicitly declared.
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:89: Warning: Identifier `\u_M3.b' is implicitly declared.
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:90: Warning: Identifier `\u_M3.c' is implicitly declared.

@@ -1,0 +1,25 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 3 output ports were not connected:
+xmelab: (./testcases/alwaysff_misc_portconnection_noDirection__multipleModuleInstantiations.sv,106): z
+xmelab: (./testcases/alwaysff_misc_portconnection_noDirection__multipleModuleInstantiations.sv,107): y
+xmelab: (./testcases/alwaysff_misc_portconnection_noDirection__multipleModuleInstantiations.sv,108): x
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 3 input ports were not connected:
+xmelab: (./testcases/alwaysff_misc_portconnection_noDirection__multipleModuleInstantiations.sv,103): i_clk
+xmelab: (./testcases/alwaysff_misc_portconnection_noDirection__multipleModuleInstantiations.sv,104): i_srst
+xmelab: (./testcases/alwaysff_misc_portconnection_noDirection__multipleModuleInstantiations.sv,105): i_arst
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+    ( .* // Connect ports - Implicit port connection.
+       |
+xmelab: *E,PCIONC (./testcases/alwaysff_misc_portconnection_noDirection__multipleModuleInstantiations.sv,112|7): Expression connected to an 'inout' port must be collapsible.
+    ( .* // Connect ports - Implicit port connection.
+       |
+xmelab: *E,PCIONC (./testcases/alwaysff_misc_portconnection_noDirection__multipleModuleInstantiations.sv,112|7): Expression connected to an 'inout' port must be collapsible.
+    ( .* // Connect ports - Implicit port connection.
+       |
+xmelab: *E,PCIONC (./testcases/alwaysff_misc_portconnection_noDirection__multipleModuleInstantiations.sv,112|7): Expression connected to an 'inout' port must be collapsible.
+FAILURE

@@ -1,0 +1,9 @@
+testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:30: syntax error
+testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:30: Errors in port declarations.
+testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:44: syntax error
+testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:44: Errors in port declarations.
+testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:50: warning: implicit definition of wire 'p'.
+testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:74: syntax error
+testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:74: Errors in port declarations.
+testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:80: warning: implicit definition of wire 'p'.
+testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:122: warning: implicit definition of wire 'u_I'.

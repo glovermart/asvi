@@ -1,0 +1,1 @@
+testcases/force_unpacked_port_partSelect_genericInterface_noModPortInst.sv:11: ERROR: syntax error, unexpected '.', expecting TOK_ID

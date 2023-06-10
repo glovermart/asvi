@@ -1,0 +1,1 @@
+testcases/assign_unpacked_svi_noLiteral.sv:16: ERROR: syntax error, unexpected '[', expecting ',' or '=' or ')'

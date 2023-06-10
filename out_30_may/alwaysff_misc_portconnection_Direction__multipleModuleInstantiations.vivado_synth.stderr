@@ -1,0 +1,2 @@
+ERROR: [Synth 8-9268] cannot re-specify direction for signal 'z' to output because it was specified as input [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:23]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

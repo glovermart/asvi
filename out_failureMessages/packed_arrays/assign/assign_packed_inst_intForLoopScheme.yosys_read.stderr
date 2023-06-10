@@ -1,0 +1,1 @@
+testcases/assign_packed_inst_intForLoopScheme.sv:19: ERROR: syntax error, unexpected TOK_INT, expecting TOK_ID or TOK_GENVAR

@@ -1,0 +1,4 @@
+%Error: testcases/assign_unpacked_inst_foreachAssignIn.sv:20:5: syntax error, unexpected foreach
+   20 |     foreach (u_I.x[i])
+      |     ^~~~~~~
+%Error: Exiting due to 1 error(s)

@@ -1,0 +1,155 @@
+$tcl_library is set to: /cad/mentor/oneSpin360/2023.1/etc/tcl8.6
+init.tcl executed.
+source "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_defaults.tcl"
+source -signed "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_startup.tcl.obf"
+source "/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl"
+-I- FileParse - Analyzing source file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv" .... [1]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:32: Analyzing module ( M ). [4]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:44: Analyzing module ( top ). [4]
+-I- Elaborate auto-selected the toplevel: "verilog!work.top"
+-W- SimSynMismatch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:36: Initialization of non-wire register might be ignored by some synthesis tools. Use continuous assignment instead.
+-I- Elaborating verilog portion...
+-W- UnconnOutputPort - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:52: output port 'o_a' is unconnected in instance 'u_I'.
+-W- UnconnOutputPort - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:52: output port 'o_b' is unconnected in instance 'u_I'.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:18: register 'z' has 8 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:18: register 'z' is driven in multiple continuous assignments; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:39:
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:18: register 'z' has 8 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:18: register 'z' is driven in multiple continuous assignments; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:39:
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:18: register 'z' has 8 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:18: register 'z' is driven in multiple continuous assignments; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:39:
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:18: register 'z' has 8 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:18: register 'z' is driven in multiple continuous assignments; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:39:
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:18: register 'z' has 8 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:18: register 'z' is driven in multiple continuous assignments; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:39:
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:18: register 'z' has 8 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:18: register 'z' is driven in multiple continuous assignments; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:39:
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:18: register 'z' has 8 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:18: register 'z' is driven in multiple continuous assignments; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:39:
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:18: register 'z' has 8 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:61:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:18: register 'z' is driven in multiple continuous assignments; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:39:
+
+Warning Statistics:
+-------------------
+    1   SimSynMismatch       simulation synthesis mismatch
+    2   UnconnOutputPort     output port is not connected
+   16   MultDrivers          multiple drivers
+-I- Elaboration of design golden succeeded.
+-I- Traversing modules of design 'top' ...
+-I- Traversing modules of design 'top' took 0.12 seconds.
+-I- Analyzing signal dependency in design 'top' ...
+-I- Analyzing signal dependency in design 'top' took 0.05 seconds.
+-I- Analyzing loops ...
+-I- Analyzing loops took 0.00 seconds.
+-I- Analyzing primary and generated clocks ...
+-I- Computing next states ...
+-I- Computing next states took 0.00 seconds.
+-I- Analyzing primary and generated clocks took 0.00 seconds.
+-I- Checking clock dependency assumption ...
+-I- Checking clock dependency assumption took 0.01 seconds.
+-I- Computing CSA result ...
+-I- Computing CSA result took 0.01 seconds.
+-I- Finishing CSA analysis ...
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:15: State 'u_I[0]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:15: State 'u_I[1]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:15: State 'u_I[2]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:15: State 'u_I[3]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:15: State 'u_I[4]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:15: State 'u_I[5]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:15: State 'u_I[6]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_svi.sv:15: State 'u_I[7]/y' is classified as latch, because it is not edge sensitive.
+-I- Compilation for design golden succeeded.
+-R- Printed Messages
+===============================================================================
+class       category            memo                                                          occurrence
+-------------------------------------------------------------------------------
+Warning     MultDrivers         multiple drivers                                              16        
+Warning     SimSynMismatch      simulation synthesis mismatch                                 1         
+Warning     UnconnOutputPort    output port is not connected                                  2         
+Info        AnalyzeModule       analyzing module                                              2         
+Info        FileParse           file parsed                                                   1         
+Info        Latch               State  is classified as latch                                 8         
+Info        {}                  unclassified message                                          18        
+Info        {}                  {}                                                            1         
+Result      {}                  {}                                                            1         
+Plain       {}                  unclassified message                                          1         
+Plain       {}                  {}                                                            11        
+TclStdOut   {}                  {}                                                            2         
+CommandLog  {}                  {}                                                            3         
+	
+-R- Filtered Messages
+===============================================================================
+id   active   class     category            memo                     text                     src_loc        origin  hits 
+-------------------------------------------------------------------------------
+No message filters available.

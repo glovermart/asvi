@@ -1,0 +1,10 @@
+QuestaSim-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+Start time: 02:37:47 on May 30,2023
+vlog -sv -lint=full testcases/assign_packed_svi.sv testbench/tb.sv 
+-- Compiling interface I
+** Error: (vlog-13069) testcases/assign_packed_svi.sv(14): near "assign": syntax error, unexpected assign, expecting begin.
+** Error: testbench/tb.sv(1): Compiler directive "`default_nettype" is not allowed inside a design element.
+-- Compiling module tb
+End time: 02:37:48 on May 30,2023, Elapsed time: 0:00:01
+Errors: 2, Warnings: 0
+FAILURE

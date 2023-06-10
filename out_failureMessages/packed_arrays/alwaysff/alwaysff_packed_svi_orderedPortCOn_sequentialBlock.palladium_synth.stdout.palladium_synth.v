@@ -1,0 +1,124 @@
+// Synthesized by HDL-ICE HDLICE, V22.04.160.s002                 (64bit)
+
+module top ( i_a, i_clk, o_a);
+// pragma CVASTRPROP MODULE HDLICE HDL_MODULE_ATTRIBUTE "0 vlog atb"
+input i_a;
+input i_clk;
+output [7:0] o_a;
+wire u_I_i_a;
+wire u_I_i_clk;
+wire [7:0] u_I_o_a;
+wire [7:0] u_I_x;
+wire [31:0] u_I_i;
+supply0 n76;
+Q_BUF U0 ( .A(u_I_x[0]), .Z(u_I_o_a[0]));
+Q_BUF U1 ( .A(u_I_x[1]), .Z(u_I_o_a[1]));
+Q_BUF U2 ( .A(u_I_x[2]), .Z(u_I_o_a[2]));
+Q_BUF U3 ( .A(u_I_x[3]), .Z(u_I_o_a[3]));
+Q_BUF U4 ( .A(u_I_x[4]), .Z(u_I_o_a[4]));
+Q_BUF U5 ( .A(u_I_x[5]), .Z(u_I_o_a[5]));
+Q_BUF U6 ( .A(u_I_x[6]), .Z(u_I_o_a[6]));
+Q_BUF U7 ( .A(u_I_x[7]), .Z(u_I_o_a[7]));
+Q_BUF U8 ( .A(u_I_o_a[0]), .Z(o_a[0]));
+Q_BUF U9 ( .A(u_I_o_a[1]), .Z(o_a[1]));
+Q_BUF U10 ( .A(u_I_o_a[2]), .Z(o_a[2]));
+Q_BUF U11 ( .A(u_I_o_a[3]), .Z(o_a[3]));
+Q_BUF U12 ( .A(u_I_o_a[4]), .Z(o_a[4]));
+Q_BUF U13 ( .A(u_I_o_a[5]), .Z(o_a[5]));
+Q_BUF U14 ( .A(u_I_o_a[6]), .Z(o_a[6]));
+Q_BUF U15 ( .A(u_I_o_a[7]), .Z(o_a[7]));
+Q_BUF U16 ( .A(i_clk), .Z(u_I_i_clk));
+Q_BUF U17 ( .A(i_a), .Z(u_I_i_a));
+Q_FDP0 U18 ( .CK(u_I_i_clk), .D(n75), .Q(u_I_i[0]), .QN(n75));
+Q_FDP0 U19 ( .CK(u_I_i_clk), .D(n60), .Q(u_I_i[1]), .QN(n74));
+Q_FDP0 U20 ( .CK(u_I_i_clk), .D(n58), .Q(u_I_i[2]), .QN(n73));
+Q_FDP0 U21 ( .CK(u_I_i_clk), .D(n56), .Q(u_I_i[3]), .QN( ));
+Q_FDP0 U22 ( .CK(u_I_i_clk), .D(n54), .Q(u_I_i[4]), .QN( ));
+Q_FDP0 U23 ( .CK(u_I_i_clk), .D(n52), .Q(u_I_i[5]), .QN( ));
+Q_FDP0 U24 ( .CK(u_I_i_clk), .D(n50), .Q(u_I_i[6]), .QN( ));
+Q_FDP0 U25 ( .CK(u_I_i_clk), .D(n48), .Q(u_I_i[7]), .QN( ));
+Q_FDP0 U26 ( .CK(u_I_i_clk), .D(n46), .Q(u_I_i[8]), .QN( ));
+Q_FDP0 U27 ( .CK(u_I_i_clk), .D(n44), .Q(u_I_i[9]), .QN( ));
+Q_FDP0 U28 ( .CK(u_I_i_clk), .D(n42), .Q(u_I_i[10]), .QN( ));
+Q_FDP0 U29 ( .CK(u_I_i_clk), .D(n40), .Q(u_I_i[11]), .QN( ));
+Q_FDP0 U30 ( .CK(u_I_i_clk), .D(n38), .Q(u_I_i[12]), .QN( ));
+Q_FDP0 U31 ( .CK(u_I_i_clk), .D(n36), .Q(u_I_i[13]), .QN( ));
+Q_FDP0 U32 ( .CK(u_I_i_clk), .D(n34), .Q(u_I_i[14]), .QN( ));
+Q_FDP0 U33 ( .CK(u_I_i_clk), .D(n32), .Q(u_I_i[15]), .QN( ));
+Q_FDP0 U34 ( .CK(u_I_i_clk), .D(n30), .Q(u_I_i[16]), .QN( ));
+Q_FDP0 U35 ( .CK(u_I_i_clk), .D(n28), .Q(u_I_i[17]), .QN( ));
+Q_FDP0 U36 ( .CK(u_I_i_clk), .D(n26), .Q(u_I_i[18]), .QN( ));
+Q_FDP0 U37 ( .CK(u_I_i_clk), .D(n24), .Q(u_I_i[19]), .QN( ));
+Q_FDP0 U38 ( .CK(u_I_i_clk), .D(n22), .Q(u_I_i[20]), .QN( ));
+Q_FDP0 U39 ( .CK(u_I_i_clk), .D(n20), .Q(u_I_i[21]), .QN( ));
+Q_FDP0 U40 ( .CK(u_I_i_clk), .D(n18), .Q(u_I_i[22]), .QN( ));
+Q_FDP0 U41 ( .CK(u_I_i_clk), .D(n16), .Q(u_I_i[23]), .QN( ));
+Q_FDP0 U42 ( .CK(u_I_i_clk), .D(n14), .Q(u_I_i[24]), .QN( ));
+Q_FDP0 U43 ( .CK(u_I_i_clk), .D(n12), .Q(u_I_i[25]), .QN( ));
+Q_FDP0 U44 ( .CK(u_I_i_clk), .D(n10), .Q(u_I_i[26]), .QN( ));
+Q_FDP0 U45 ( .CK(u_I_i_clk), .D(n8), .Q(u_I_i[27]), .QN( ));
+Q_FDP0 U46 ( .CK(u_I_i_clk), .D(n6), .Q(u_I_i[28]), .QN( ));
+Q_FDP0 U47 ( .CK(u_I_i_clk), .D(n4), .Q(u_I_i[29]), .QN( ));
+Q_FDP0 U48 ( .CK(u_I_i_clk), .D(n2), .Q(u_I_i[30]), .QN( ));
+Q_AD01HF U49 ( .A0(u_I_i[30]), .B0(n3), .S(n2), .CO(n1));
+Q_AD01HF U50 ( .A0(u_I_i[29]), .B0(n5), .S(n4), .CO(n3));
+Q_AD01HF U51 ( .A0(u_I_i[28]), .B0(n7), .S(n6), .CO(n5));
+Q_AD01HF U52 ( .A0(u_I_i[27]), .B0(n9), .S(n8), .CO(n7));
+Q_AD01HF U53 ( .A0(u_I_i[26]), .B0(n11), .S(n10), .CO(n9));
+Q_AD01HF U54 ( .A0(u_I_i[25]), .B0(n13), .S(n12), .CO(n11));
+Q_AD01HF U55 ( .A0(u_I_i[24]), .B0(n15), .S(n14), .CO(n13));
+Q_AD01HF U56 ( .A0(u_I_i[23]), .B0(n17), .S(n16), .CO(n15));
+Q_AD01HF U57 ( .A0(u_I_i[22]), .B0(n19), .S(n18), .CO(n17));
+Q_AD01HF U58 ( .A0(u_I_i[21]), .B0(n21), .S(n20), .CO(n19));
+Q_AD01HF U59 ( .A0(u_I_i[20]), .B0(n23), .S(n22), .CO(n21));
+Q_AD01HF U60 ( .A0(u_I_i[19]), .B0(n25), .S(n24), .CO(n23));
+Q_AD01HF U61 ( .A0(u_I_i[18]), .B0(n27), .S(n26), .CO(n25));
+Q_AD01HF U62 ( .A0(u_I_i[17]), .B0(n29), .S(n28), .CO(n27));
+Q_AD01HF U63 ( .A0(u_I_i[16]), .B0(n31), .S(n30), .CO(n29));
+Q_AD01HF U64 ( .A0(u_I_i[15]), .B0(n33), .S(n32), .CO(n31));
+Q_AD01HF U65 ( .A0(u_I_i[14]), .B0(n35), .S(n34), .CO(n33));
+Q_AD01HF U66 ( .A0(u_I_i[13]), .B0(n37), .S(n36), .CO(n35));
+Q_AD01HF U67 ( .A0(u_I_i[12]), .B0(n39), .S(n38), .CO(n37));
+Q_AD01HF U68 ( .A0(u_I_i[11]), .B0(n41), .S(n40), .CO(n39));
+Q_AD01HF U69 ( .A0(u_I_i[10]), .B0(n43), .S(n42), .CO(n41));
+Q_AD01HF U70 ( .A0(u_I_i[9]), .B0(n45), .S(n44), .CO(n43));
+Q_AD01HF U71 ( .A0(u_I_i[8]), .B0(n47), .S(n46), .CO(n45));
+Q_AD01HF U72 ( .A0(u_I_i[7]), .B0(n49), .S(n48), .CO(n47));
+Q_AD01HF U73 ( .A0(u_I_i[6]), .B0(n51), .S(n50), .CO(n49));
+Q_AD01HF U74 ( .A0(u_I_i[5]), .B0(n53), .S(n52), .CO(n51));
+Q_AD01HF U75 ( .A0(u_I_i[4]), .B0(n55), .S(n54), .CO(n53));
+Q_AD01HF U76 ( .A0(u_I_i[3]), .B0(n57), .S(n56), .CO(n55));
+Q_AD01HF U77 ( .A0(u_I_i[2]), .B0(n59), .S(n58), .CO(n57));
+Q_AD01HF U78 ( .A0(u_I_i[1]), .B0(u_I_i[0]), .S(n60), .CO(n59));
+Q_AN02 U79 ( .A0(n69), .A1(u_I_i[0]), .Z(n61));
+Q_AN02 U80 ( .A0(n69), .A1(n75), .Z(n62));
+Q_AN02 U81 ( .A0(n70), .A1(u_I_i[0]), .Z(n63));
+Q_AN02 U82 ( .A0(n70), .A1(n75), .Z(n64));
+Q_AN02 U83 ( .A0(n71), .A1(u_I_i[0]), .Z(n65));
+Q_AN02 U84 ( .A0(n71), .A1(n75), .Z(n66));
+Q_AN02 U85 ( .A0(n72), .A1(u_I_i[0]), .Z(n67));
+Q_AN02 U86 ( .A0(n72), .A1(n75), .Z(n68));
+Q_AN02 U87 ( .A0(u_I_i[2]), .A1(u_I_i[1]), .Z(n69));
+Q_AN02 U88 ( .A0(u_I_i[2]), .A1(n74), .Z(n70));
+Q_AN02 U89 ( .A0(n73), .A1(u_I_i[1]), .Z(n71));
+Q_NR02 U90 ( .A0(u_I_i[2]), .A1(u_I_i[1]), .Z(n72));
+Q_FDP4EP U91 ( .CK(u_I_i_clk), .CE(n61), .R(n76), .D(u_I_i_a), .Q(u_I_x[7]));
+Q_FDP4EP U92 ( .CK(u_I_i_clk), .CE(n62), .R(n76), .D(u_I_i_a), .Q(u_I_x[6]));
+Q_FDP4EP U93 ( .CK(u_I_i_clk), .CE(n63), .R(n76), .D(u_I_i_a), .Q(u_I_x[5]));
+Q_FDP4EP U94 ( .CK(u_I_i_clk), .CE(n64), .R(n76), .D(u_I_i_a), .Q(u_I_x[4]));
+Q_FDP4EP U95 ( .CK(u_I_i_clk), .CE(n65), .R(n76), .D(u_I_i_a), .Q(u_I_x[3]));
+Q_FDP4EP U96 ( .CK(u_I_i_clk), .CE(n66), .R(n76), .D(u_I_i_a), .Q(u_I_x[2]));
+Q_FDP4EP U97 ( .CK(u_I_i_clk), .CE(n67), .R(n76), .D(u_I_i_a), .Q(u_I_x[1]));
+Q_FDP4EP U98 ( .CK(u_I_i_clk), .CE(n68), .R(n76), .D(u_I_i_a), .Q(u_I_x[0]));
+Q_INV U99 ( .A(u_I_i[31]), .Z(n77));
+Q_FDP4EP U100 ( .CK(u_I_i_clk), .CE(n1), .R(n76), .D(n77), .Q(u_I_i[31]));
+`ifdef Q_DISPLAY_BUFFER_USE
+`ifdef CBV
+`else
+Q_DISPLAY_BUFFER Q_DISPLAY_BUFFER ();
+`endif
+`endif
+`ifdef Q_HDL_ROOT_USE
+Q_HDL_ROOT Q_HDL_ROOT ();
+`endif
+endmodule

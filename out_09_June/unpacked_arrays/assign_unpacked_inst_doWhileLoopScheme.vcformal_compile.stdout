@@ -1,0 +1,80 @@
+
+                                   VC Static 
+
+                Version T-2022.06-SP2 for linux64 - Nov 29, 2022
+
+                    Copyright (c) 2010 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+vcf> vcf> global env
+set TEST_NAME $env(TESTCASE)
+testcases/assign_unpacked_inst_doWhileLoopScheme.sv
+read_file -format sverilog -top top ${TEST_NAME}
+
+Error-[IBLHS-MW] Illegal behavioral left hand side
+testcases/assign_unpacked_inst_doWhileLoopScheme.sv, 22
+  Memory word cannot be used on the left hand side of this assignment
+  The offending expression is : top.u_I.x[i]
+  Source info: assign top.u_I.x[i] = i_a;
+
+
+Error-[IUDA] Incompatible dimensions
+testcases/assign_unpacked_inst_doWhileLoopScheme.sv, 26
+top, "assign o_x = top.u_I.x;"
+  Incompatible unpacked dimensions in assignment
+  Arrays with incompatible unpacked dimensions  cannot be used in assignments,
+  initializations and instantiations.
+
+2 errors
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 0 warning(s)
+[Info] DB_COPT045: Vcs analyzer task has finished.
+[Error] DB_COPT012: VCS reader failed
+	No scm file is generated, thus no NLDM is created.
+[Error] COM_ENV005: Design read using VCS & Simon failed.
+Error: 0
+	Use error_info for more info. (CMD-013)
+Information: script 'tcl/vcformal_batch_run.tcl'
+	stopped at line 3 due to error. (CMD-081)
+Extended error info:
+0
+    while executing
+"read_file -format sverilog -top top ${TEST_NAME}"
+    (file "tcl/vcformal_batch_run.tcl" line 3)
+ -- End Extended Error Info
+
+=======================================================
+Total Time(S)  :9.92
+CPU Time(S)    :3.77
+Peak Memory(MB):1149
+=======================================================
+FAILURE

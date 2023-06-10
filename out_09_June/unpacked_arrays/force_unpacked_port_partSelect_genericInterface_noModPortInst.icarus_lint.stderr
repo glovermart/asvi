@@ -1,0 +1,10 @@
+testcases/force_unpacked_port_partSelect_genericInterface_noModPortInst.sv:18: syntax error
+testcases/force_unpacked_port_partSelect_genericInterface_noModPortInst.sv:18: Errors in port declarations.
+testcases/force_unpacked_port_partSelect_genericInterface_noModPortInst.sv:24: syntax error
+testcases/force_unpacked_port_partSelect_genericInterface_noModPortInst.sv:24: error: malformed statement
+testcases/force_unpacked_port_partSelect_genericInterface_noModPortInst.sv:33: syntax error
+testcases/force_unpacked_port_partSelect_genericInterface_noModPortInst.sv:1: Errors in port declarations.
+testcases/force_unpacked_port_partSelect_genericInterface_noModPortInst.sv:39: syntax error
+testcases/force_unpacked_port_partSelect_genericInterface_noModPortInst.sv:39: error: syntax error in continuous assignment
+testcases/force_unpacked_port_partSelect_genericInterface_noModPortInst.sv:43: warning: implicit definition of wire 'u_I'.
+testcases/force_unpacked_port_partSelect_genericInterface_noModPortInst.sv:46: warning: implicit definition of wire 'o_a'.

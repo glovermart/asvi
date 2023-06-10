@@ -1,0 +1,29 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 2 output ports were not connected:
+xmelab: (./testcases/force_misc_svi_alwayscomb.sv,37): o_a
+xmelab: (./testcases/force_misc_svi_alwayscomb.sv,38): i_srst
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 1 input port was not connected:
+xmelab: (./testcases/force_misc_svi_alwayscomb.sv,36): i_sclk
+
+  M u_M1 
+       |
+xmelab: *W,CUVWSP (./testcases/force_misc_svi_alwayscomb.sv,45|7): 1 output port was not connected:
+xmelab: (./testcases/force_misc_svi_alwayscomb.sv,20): o_a
+
+  M u_M2 
+       |
+xmelab: *W,CUVWSP (./testcases/force_misc_svi_alwayscomb.sv,49|7): 1 output port was not connected:
+xmelab: (./testcases/force_misc_svi_alwayscomb.sv,20): o_a
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+  always_comb u_I.y = 1'b1;
+            |
+xmelab: *E,MULAXX (./testcases/force_misc_svi_alwayscomb.sv,27|12): Multiple drivers to always_comb output variable u_I.y detected.
+  always_comb u_I.x = 1'b0;
+            |
+xmelab: *E,MULAXX (./testcases/force_misc_svi_alwayscomb.sv,25|12): Multiple drivers to always_comb output variable u_I.x detected.
+FAILURE

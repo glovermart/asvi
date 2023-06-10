@@ -1,0 +1,1 @@
+testcases/wire_struct_packed_structnameAlwaysff.sv:7: ERROR: syntax error, unexpected TOK_STRUCT

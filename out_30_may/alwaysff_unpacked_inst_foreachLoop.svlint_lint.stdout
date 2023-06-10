@@ -1,0 +1,149 @@
+[93mWarning[97m: Config file '.svlint.toml' is not found. Enable all rules(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwaysff_unpacked_inst_foreachLoop.sv:4:1
+[94m  |
+[94m4 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m  |[33m          [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_interface
+[94m   -->[37m testcases/alwaysff_unpacked_inst_foreachLoop.sv:4:1
+[94m  |
+[94m4 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Prefix `interface` identifier with "ifc_".
+[94m  |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_interface
+[94m   -->[37m testcases/alwaysff_unpacked_inst_foreachLoop.sv:4:1
+[94m  |
+[94m4 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_interface
+[94m   -->[37m testcases/alwaysff_unpacked_inst_foreachLoop.sv:4:1
+[94m  |
+[94m4 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwaysff_unpacked_inst_foreachLoop.sv:4:11
+[94m  |
+[94m4 |[37m interface I;
+[94m  |[93m           ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m  |[33m            [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_unpacked_inst_foreachLoop.sv:8:0
+[94m  |
+[94m8 |[37m 
+[94m  |[93m [93m hint  : Remove trailing whitespace.
+[94m  |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwaysff_unpacked_inst_foreachLoop.sv:11:1
+[94m   |
+[94m11 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwaysff_unpacked_inst_foreachLoop.sv:11:1
+[94m   |
+[94m11 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwaysff_unpacked_inst_foreachLoop.sv:11:1
+[94m   |
+[94m11 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: uppercamelcase_module
+[94m   -->[37m testcases/alwaysff_unpacked_inst_foreachLoop.sv:11:8
+[94m   |
+[94m11 |[37m module top
+[94m   |[93m        ^^^[93m hint  : Begin `module` name with UpperCamelCase.
+[94m   |[33m           [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwaysff_unpacked_inst_foreachLoop.sv:12:5
+[94m   |
+[94m12 |[37m   ( input logic i_a
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwaysff_unpacked_inst_foreachLoop.sv:12:17
+[94m   |
+[94m12 |[37m   ( input logic i_a
+[94m   |[93m                 ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                    [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwaysff_unpacked_inst_foreachLoop.sv:13:5
+[94m   |
+[94m13 |[37m   , input logic i_clk
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwaysff_unpacked_inst_foreachLoop.sv:13:17
+[94m   |
+[94m13 |[37m   , input logic i_clk
+[94m   |[93m                 ^^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                      [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/alwaysff_unpacked_inst_foreachLoop.sv:14:5
+[94m   |
+[94m14 |[37m   , output logic o_a [8]
+[94m   |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m   |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/alwaysff_unpacked_inst_foreachLoop.sv:14:18
+[94m   |
+[94m14 |[37m   , output logic o_a [8]
+[94m   |[93m                  ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                     [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwaysff_unpacked_inst_foreachLoop.sv:17:3
+[94m   |
+[94m17 |[37m   I u_I ();
+[94m   |[93m   ^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m    [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwaysff_unpacked_inst_foreachLoop.sv:17:5
+[94m   |
+[94m17 |[37m   I u_I ();
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwaysff_unpacked_inst_foreachLoop.sv:17:5
+[94m   |
+[94m17 |[37m   I u_I ();
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_unpacked_inst_foreachLoop.sv:22:0
+[94m   |
+[94m22 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwaysff_unpacked_inst_foreachLoop.sv:24:0
+[94m   |
+[94m24 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+FAILURE

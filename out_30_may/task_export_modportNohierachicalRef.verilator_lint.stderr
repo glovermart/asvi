@@ -1,0 +1,19 @@
+%Warning-DECLFILENAME: testcases/task_export_modportNohierachicalRef.sv:6:11: Filename 'task_export_modportNohierachicalRef' does not match IFACE name: 'I'
+    6 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Error: testcases/task_export_modportNohierachicalRef.sv:9:14: Modport item not found: 'adder'
+    9 |     ( import adder 
+      |              ^~~~~
+%Error-UNSUPPORTED: testcases/task_export_modportNohierachicalRef.sv:13:14: Unsupported: modport export
+   13 |     ( export adder
+      |              ^~~~~
+%Error: testcases/task_export_modportNohierachicalRef.sv:13:14: Modport item not found: 'adder'
+   13 |     ( export adder
+      |              ^~~~~
+%Error: testcases/task_export_modportNohierachicalRef.sv:37:18: Can't find definition of 'adder' in dotted task/function: 'p1.adder'
+   37 |   always_comb p1.adder(i_a,i_b,o_a);  
+      |                  ^~~~~
+        ... Known scopes under 'adder': <no instances found>
+%Error: Exiting due to 4 error(s), 1 warning(s)

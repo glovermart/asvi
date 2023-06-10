@@ -1,0 +1,464 @@
+[93mWarning[97m: Config file '.svlint.toml' is not found. Enable all rules(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:4:1
+[94m  |
+[94m4 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m  |[33m          [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_interface
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:4:1
+[94m  |
+[94m4 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Prefix `interface` identifier with "ifc_".
+[94m  |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_interface
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:4:1
+[94m  |
+[94m4 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_interface
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:4:1
+[94m  |
+[94m4 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:4:11
+[94m  |
+[94m4 |[37m interface I
+[94m  |[93m           ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m  |[33m            [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:5:5
+[94m  |
+[94m5 |[37m   ( input logic i_clk
+[94m  |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m  |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:5:17
+[94m  |
+[94m5 |[37m   ( input logic i_clk
+[94m  |[93m                 ^^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m                      [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:6:5
+[94m  |
+[94m6 |[37m   , input logic i_en
+[94m  |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m  |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:6:17
+[94m  |
+[94m6 |[37m   , input logic i_en
+[94m  |[93m                 ^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m                     [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:7:5
+[94m  |
+[94m7 |[37m   , input logic [3:0] i_a
+[94m  |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m  |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:7:23
+[94m  |
+[94m7 |[37m   , input logic [3:0] i_a
+[94m  |[93m                       ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m                          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:8:5
+[94m  |
+[94m8 |[37m   , output logic [3:0] o_a
+[94m  |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m  |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:8:24
+[94m  |
+[94m8 |[37m   , output logic [3:0] o_a
+[94m  |[93m                        ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m                           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:10:0
+[94m   |
+[94m10 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: re_forbidden_modport
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:11:3
+[94m   |
+[94m11 |[37m   modport P
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_modport
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:11:3
+[94m   |
+[94m11 |[37m   modport P
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: explicit_if_else
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:20:5
+[94m   |
+[94m20 |[37m     if (i_en)
+[94m   |[93m     ^^[93m hint  : Add an `else` clause to the `if` statement.
+[94m   |[33m       [33m reason: Fully-specified conditional clarifies design intent.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:20:5
+[94m   |
+[94m20 |[37m     if (i_en)
+[94m   |[93m     ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m   |[33m       [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:26:1
+[94m   |
+[94m26 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:26:1
+[94m   |
+[94m26 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:26:1
+[94m   |
+[94m26 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:26:1
+[94m   |
+[94m26 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:26:8
+[94m   |
+[94m26 |[37m module M1
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:27:5
+[94m   |
+[94m27 |[37m   ( I.P p
+[94m   |[93m     ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m      [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:27:9
+[94m   |
+[94m27 |[37m   ( I.P p
+[94m   |[93m         ^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:27:9
+[94m   |
+[94m27 |[37m   ( I.P p
+[94m   |[93m         ^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_indent
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:29:0
+[94m   |
+[94m29 |[37m 
+[94m   |[93m [93m hint  : Follow each newline with an integer multiple of 2 spaces.
+[94m   |[33m [33m reason: Consistent indentation is essential for readability.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:29:0
+[94m   |
+[94m29 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:32:0
+[94m   |
+[94m32 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:40:1
+[94m   |
+[94m40 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:40:1
+[94m   |
+[94m40 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:40:1
+[94m   |
+[94m40 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:40:1
+[94m   |
+[94m40 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:40:8
+[94m   |
+[94m40 |[37m module M2
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:41:5
+[94m   |
+[94m41 |[37m   ( I.P p
+[94m   |[93m     ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m      [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:41:9
+[94m   |
+[94m41 |[37m   ( I.P p
+[94m   |[93m         ^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:41:9
+[94m   |
+[94m41 |[37m   ( I.P p
+[94m   |[93m         ^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:42:5
+[94m   |
+[94m42 |[37m   , output logic [3:0] o_c
+[94m   |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m   |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:42:24
+[94m   |
+[94m42 |[37m   , output logic [3:0] o_c
+[94m   |[93m                        ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:48:3
+[94m   |
+[94m48 |[37m   M1 u_M1 
+[94m   |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:48:6
+[94m   |
+[94m48 |[37m   M1 u_M1 
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:48:6
+[94m   |
+[94m48 |[37m   M1 u_M1 
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:49:0
+[94m   |
+[94m49 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:57:1
+[94m   |
+[94m57 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:57:1
+[94m   |
+[94m57 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:57:1
+[94m   |
+[94m57 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: uppercamelcase_module
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:57:8
+[94m   |
+[94m57 |[37m module top
+[94m   |[93m        ^^^[93m hint  : Begin `module` name with UpperCamelCase.
+[94m   |[33m           [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:58:5
+[94m   |
+[94m58 |[37m   ( input logic i_clk
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:58:17
+[94m   |
+[94m58 |[37m   ( input logic i_clk
+[94m   |[93m                 ^^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                      [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:59:5
+[94m   |
+[94m59 |[37m   , input logic i_en
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:59:17
+[94m   |
+[94m59 |[37m   , input logic i_en
+[94m   |[93m                 ^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                     [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:60:5
+[94m   |
+[94m60 |[37m   , output logic [3:0] o_a
+[94m   |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m   |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:60:24
+[94m   |
+[94m60 |[37m   , output logic [3:0] o_a
+[94m   |[93m                        ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:61:5
+[94m   |
+[94m61 |[37m   , output logic [3:0] o_b
+[94m   |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m   |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:61:24
+[94m   |
+[94m61 |[37m   , output logic [3:0] o_b
+[94m   |[93m                        ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:62:5
+[94m   |
+[94m62 |[37m   , input logic [3:0] i_a
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:62:23
+[94m   |
+[94m62 |[37m   , input logic [3:0] i_a
+[94m   |[93m                       ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:65:3
+[94m   |
+[94m65 |[37m   I u_I 
+[94m   |[93m   ^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m    [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:65:5
+[94m   |
+[94m65 |[37m   I u_I 
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:65:5
+[94m   |
+[94m65 |[37m   I u_I 
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:66:0
+[94m   |
+[94m66 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:68:0
+[94m   |
+[94m68 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:69:3
+[94m   |
+[94m69 |[37m   M2 u_M2 
+[94m   |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:69:6
+[94m   |
+[94m69 |[37m   M2 u_M2 
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:69:6
+[94m   |
+[94m69 |[37m   M2 u_M2 
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayslatch_misc_svi_vectorPartSelect.sv:70:0
+[94m   |
+[94m70 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+FAILURE

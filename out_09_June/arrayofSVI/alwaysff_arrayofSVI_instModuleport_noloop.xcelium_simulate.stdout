@@ -1,0 +1,7 @@
+xmsim: *W,DLWNEW: Intermediate file module worklib.tb:module (VST)
+	is newer than expected by snapshot worklib.tb:module (SSS)
+		actual:   Fri Jun  9 08:37:54 2023
+		expected: Fri Jun  9 08:37:53 2023.
+xmsim: *E,DLNORD: Intermediate file for interface worklib.I:interface (SIG) <0x338018ed> could not be read (no such object).
+xmsim: *F,NOSIMU: Errors initializing simulation 'tb'.
+FAILURE

@@ -1,0 +1,4 @@
+    ( output .p1(z[3:0]) // LSBs
+               |
+xmvlog: *E,MODPXE (testcases/force_packed_port_partSelect_genericInterface.sv,9|15): Unsupported modport expression for port identifier 'p1'.
+FAILURE

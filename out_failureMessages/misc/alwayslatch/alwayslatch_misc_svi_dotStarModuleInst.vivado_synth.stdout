@@ -1,0 +1,41 @@
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source tcl/vivado_batch_run.tcl
+# read_verilog -sv $argv
+read_verilog: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2989.551 ; gain = 2.023 ; free physical = 5182 ; free virtual = 271544
+# synth_design -top top -part xc7k70tfbg676-1
+Command: synth_design -top top -part xc7k70tfbg676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3116
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2989.551 ; gain = 0.000 ; free physical = 4555 ; free virtual = 271094
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:77]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'M4' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:63]
+WARNING: [Synth 8-330] inout connections inferred for interface port 'I' with no modport [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:87]
+INFO: [Synth 8-6157] synthesizing module 'M3' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:47]
+WARNING: [Synth 8-330] inout connections inferred for interface port 'I' with no modport [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:68]
+INFO: [Synth 8-6157] synthesizing module 'M2' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:31]
+WARNING: [Synth 8-330] inout connections inferred for interface port 'I' with no modport [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:52]
+INFO: [Synth 8-6157] synthesizing module 'M1' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:20]
+WARNING: [Synth 8-330] inout connections inferred for interface port 'I' with no modport [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:36]
+INFO: [Synth 8-6155] done synthesizing module 'M1' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:20]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2989.559 ; gain = 0.008 ; free physical = 4462 ; free virtual = 271067
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+13 Infos, 4 Warnings, 0 Critical Warnings and 7 Errors encountered.
+synth_design failed
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  9 13:45:08 2023...
+FAILURE

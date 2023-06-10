@@ -1,0 +1,5 @@
+testcases/assign_packed_inst_generateLoopScheme.sv:20: Warning: Identifier `\u_I.x' is implicitly declared.
+testcases/assign_packed_inst_generateLoopScheme.sv:18: Warning: Range select out of bounds on signal `\u_I.x': Setting result bit to undef.
+testcases/assign_packed_inst_generateLoopScheme.sv:18: Warning: Ignoring assignment to constant bits:
+    old assignment: 1'x = \i_a
+    new assignment: { } = { }.

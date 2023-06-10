@@ -1,0 +1,15 @@
+QuestaSim-64 vopt 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 05:20:17 on Jun 09,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+** Error: testbench/tb.sv(3): Module 'top' is not defined.
+ For instance 'u_DUT' at path 'tb'
+Optimization failed
+End time: 05:20:17 on Jun 09,2023, Elapsed time: 0:00:00
+Errors: 1, Warnings: 0
+FAILURE

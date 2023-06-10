@@ -1,0 +1,7 @@
+[93mWarning[97m: Config file '.svlint.toml' is not found. Enable all rules(B[m
+[91mError[97m: parse error
+[94m   -->[37m testcases/void_function_export.sv:8:29
+[94m  |
+[94m8 |[37m     ( import function adder (input int i_a, i_b, output int o_a)
+[94m  |[93m                             ^(B[m
+FAILURE

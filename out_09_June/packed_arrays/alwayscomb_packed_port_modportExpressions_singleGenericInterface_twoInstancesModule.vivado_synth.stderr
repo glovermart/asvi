@@ -1,0 +1,4 @@
+ERROR: [Synth 8-6038] cannot resolve hierarchical name for the item 'p2' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoInstancesModule.sv:27]
+ERROR: [Synth 8-6156] failed synthesizing module 'M' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoInstancesModule.sv:22]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoInstancesModule.sv:32]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

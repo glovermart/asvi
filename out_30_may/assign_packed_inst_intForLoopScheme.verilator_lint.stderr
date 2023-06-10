@@ -1,0 +1,4 @@
+%Error: testcases/assign_packed_inst_intForLoopScheme.sv:19:8: syntax error, unexpected int, expecting IDENTIFIER or genvar or randomize
+   19 |   for (int i = 0; i < 8; i++)  
+      |        ^~~
+%Error: Exiting due to 1 error(s)

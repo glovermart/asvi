@@ -1,0 +1,14 @@
+%Warning-DECLFILENAME: testcases/force_arrayofSVI_svi.sv:4:11: Filename 'force_arrayofSVI_svi' does not match IFACE name: 'I'
+    4 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-MULTIDRIVEN: testcases/force_arrayofSVI_svi.sv:9:11: Variable written to in always_comb also written by other process (IEEE 1800-2017 9.2.2.2): 'z'
+                                                            : ... In instance top
+                      testcases/force_arrayofSVI_svi.sv:9:11: 
+    9 |     force z = '0;
+      |           ^
+                      testcases/force_arrayofSVI_svi.sv:22:19: ... Location of other write
+   22 |     assign u_I[i].z = i_a;
+      |                   ^
+%Error: Exiting due to 2 warning(s)

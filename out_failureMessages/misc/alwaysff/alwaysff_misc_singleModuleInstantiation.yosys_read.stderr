@@ -1,0 +1,23 @@
+Warning: wire '\p.z' is assigned in a block at testcases/alwaysff_misc_singleModuleInstantiation.sv:35.32-35.40.
+Warning: wire '\p.y' is assigned in a block at testcases/alwaysff_misc_singleModuleInstantiation.sv:36.32-36.43.
+Warning: wire '\p.x' is assigned in a block at testcases/alwaysff_misc_singleModuleInstantiation.sv:37.32-37.42.
+testcases/alwaysff_misc_singleModuleInstantiation.sv:35: Warning: Identifier `\p.z' is implicitly declared.
+testcases/alwaysff_misc_singleModuleInstantiation.sv:35: Warning: Identifier `\p.i_clk' is implicitly declared.
+testcases/alwaysff_misc_singleModuleInstantiation.sv:36: Warning: Identifier `\p.y' is implicitly declared.
+testcases/alwaysff_misc_singleModuleInstantiation.sv:37: Warning: Identifier `\p.x' is implicitly declared.
+testcases/alwaysff_misc_singleModuleInstantiation.sv:37: Warning: Identifier `\p.w' is implicitly declared.
+Warning: wire '\p.z' is assigned in a block at testcases/alwaysff_misc_singleModuleInstantiation.sv:55.7-55.18.
+Warning: wire '\p.z' is assigned in a block at testcases/alwaysff_misc_singleModuleInstantiation.sv:57.7-57.15.
+Warning: wire '\p.y' is assigned in a block at testcases/alwaysff_misc_singleModuleInstantiation.sv:60.7-60.18.
+Warning: wire '\p.y' is assigned in a block at testcases/alwaysff_misc_singleModuleInstantiation.sv:62.7-62.18.
+Warning: wire '\p.x' is assigned in a block at testcases/alwaysff_misc_singleModuleInstantiation.sv:65.7-65.18.
+Warning: wire '\p.x' is assigned in a block at testcases/alwaysff_misc_singleModuleInstantiation.sv:67.7-67.17.
+testcases/alwaysff_misc_singleModuleInstantiation.sv:54: Warning: Identifier `\p.i_srst' is implicitly declared.
+Warning: wire '\p.z' is assigned in a block at testcases/alwaysff_misc_singleModuleInstantiation.sv:85.5-85.16.
+Warning: wire '\p.z' is assigned in a block at testcases/alwaysff_misc_singleModuleInstantiation.sv:87.5-87.13.
+Warning: wire '\p.y' is assigned in a block at testcases/alwaysff_misc_singleModuleInstantiation.sv:90.5-90.16.
+Warning: wire '\p.y' is assigned in a block at testcases/alwaysff_misc_singleModuleInstantiation.sv:92.5-92.16.
+Warning: wire '\p.x' is assigned in a block at testcases/alwaysff_misc_singleModuleInstantiation.sv:95.5-95.16.
+Warning: wire '\p.x' is assigned in a block at testcases/alwaysff_misc_singleModuleInstantiation.sv:97.5-97.15.
+testcases/alwaysff_misc_singleModuleInstantiation.sv:83: Warning: Identifier `\p.i_arst' is implicitly declared.
+ERROR: Could not find signal '\p.$0\w[0:0]' in 'M2'

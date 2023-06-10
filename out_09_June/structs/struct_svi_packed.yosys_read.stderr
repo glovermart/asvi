@@ -1,0 +1,2 @@
+testcases/struct_svi_packed.sv:29: Warning: Identifier `\u_I.data.data' is implicitly declared.
+Warning: Wire top.\o_a [0] is used but has no driver.

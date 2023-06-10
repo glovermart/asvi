@@ -1,0 +1,4 @@
+%Error: testcases/immediate_assertions_port.sv:26:28: syntax error, unexpected $end, expecting TYPE-IDENTIFIER
+   26 |     assert final (^p.z !==    x)
+      |                            ^
+%Error: Cannot continue

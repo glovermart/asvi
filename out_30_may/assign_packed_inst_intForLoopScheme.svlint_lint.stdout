@@ -1,0 +1,7 @@
+[93mWarning[97m: Config file '.svlint.toml' is not found. Enable all rules(B[m
+[91mError[97m: parse error
+[94m   -->[37m testcases/assign_packed_inst_intForLoopScheme.sv:19:11
+[94m   |
+[94m19 |[37m   for (int i = 0; i < 8; i++) // genvar appropriate type
+[94m   |[93m           ^(B[m
+FAILURE

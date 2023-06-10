@@ -1,0 +1,13 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 3 output ports were not connected:
+xmelab: (./testcases/alwaysff_arrayofSVI_noTimescaleInst.sv,47): o_a
+xmelab: (./testcases/alwaysff_arrayofSVI_noTimescaleInst.sv,48): o_b
+xmelab: (./testcases/alwaysff_arrayofSVI_noTimescaleInst.sv,49): o_c
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 1 input port was not connected:
+xmelab: (./testcases/alwaysff_arrayofSVI_noTimescaleInst.sv,46): i_clk
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.

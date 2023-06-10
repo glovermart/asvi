@@ -1,0 +1,4 @@
+%Error: testcases/concurrent_assertions_svi.sv:13:62: syntax error, unexpected [*, expecting ')'
+   13 |   assert property (@(posedge i_clk) $fell(i_srst) |-> !i_srst[*4])
+      |                                                              ^~
+%Error: Exiting due to 1 error(s)

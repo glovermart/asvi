@@ -1,0 +1,213 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 2 output ports were not connected:
+xmelab: (./testcases/alwayslatch_arrayofSVI_svi.sv,48): o_a
+xmelab: (./testcases/alwayslatch_arrayofSVI_svi.sv,49): o_b
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 3 input ports were not connected:
+xmelab: (./testcases/alwayslatch_arrayofSVI_svi.sv,45): i_arst
+xmelab: (./testcases/alwayslatch_arrayofSVI_svi.sv,46): en
+xmelab: (./testcases/alwayslatch_arrayofSVI_svi.sv,47): i_a
+
+  I u_I [SIZE-1:0]
+      |
+xmelab: *W,CUVWSP (./testcases/alwayslatch_arrayofSVI_svi.sv,52|6): 2 output ports were not connected:
+xmelab: (./testcases/alwayslatch_arrayofSVI_svi.sv,11): o_a
+xmelab: (./testcases/alwayslatch_arrayofSVI_svi.sv,12): o_b
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[0].u_M.genblk1[7]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[1].u_M.genblk1[7]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[2].u_M.genblk1[7]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[3].u_M.genblk1[7]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[4].u_M.genblk1[7]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[5].u_M.genblk1[7]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[6].u_M.genblk1[7]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[7].u_M.genblk1[7]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[0].u_M.genblk1[6]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[1].u_M.genblk1[6]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[2].u_M.genblk1[6]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[3].u_M.genblk1[6]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[4].u_M.genblk1[6]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[5].u_M.genblk1[6]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[6].u_M.genblk1[6]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[7].u_M.genblk1[6]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[0].u_M.genblk1[5]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[1].u_M.genblk1[5]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[2].u_M.genblk1[5]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[3].u_M.genblk1[5]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[4].u_M.genblk1[5]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[5].u_M.genblk1[5]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[6].u_M.genblk1[5]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[7].u_M.genblk1[5]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[0].u_M.genblk1[4]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[1].u_M.genblk1[4]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[2].u_M.genblk1[4]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[3].u_M.genblk1[4]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[4].u_M.genblk1[4]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[5].u_M.genblk1[4]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[6].u_M.genblk1[4]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[7].u_M.genblk1[4]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[0].u_M.genblk1[3]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[1].u_M.genblk1[3]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[2].u_M.genblk1[3]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[3].u_M.genblk1[3]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[4].u_M.genblk1[3]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[5].u_M.genblk1[3]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[6].u_M.genblk1[3]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[7].u_M.genblk1[3]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[0].u_M.genblk1[2]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[1].u_M.genblk1[2]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[2].u_M.genblk1[2]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[3].u_M.genblk1[2]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[4].u_M.genblk1[2]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[5].u_M.genblk1[2]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[6].u_M.genblk1[2]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[7].u_M.genblk1[2]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[0].u_M.genblk1[1]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[1].u_M.genblk1[1]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[2].u_M.genblk1[1]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[3].u_M.genblk1[1]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[4].u_M.genblk1[1]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[5].u_M.genblk1[1]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[6].u_M.genblk1[1]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[7].u_M.genblk1[1]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[0].u_M.genblk1[0]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[1].u_M.genblk1[0]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[2].u_M.genblk1[0]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[3].u_M.genblk1[0]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[4].u_M.genblk1[0]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[5].u_M.genblk1[0]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[6].u_M.genblk1[0]' is contributing to this conflict set.
+    assign u_I[i].z = u_I[i].y & b;
+                    |
+xmelab: *E,MULDRN (./testcases/alwayslatch_arrayofSVI_svi.sv,39|20): Variable 'tb.u_DUT.u_I.z' has multiple conflicting drivers and the indicated continuous assignment in scope 'tb.u_DUT.genblk1[7].u_M.genblk1[0]' is contributing to this conflict set.
+FAILURE

@@ -1,0 +1,2 @@
+ERROR: [Synth 8-36] 'i' is not declared [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale.sv:83]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

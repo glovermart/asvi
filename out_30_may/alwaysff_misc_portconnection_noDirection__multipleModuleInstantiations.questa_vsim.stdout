@@ -1,0 +1,16 @@
+Reading pref.tcl
+
+# 2023.1
+
+# vsim -c design_unit -do "run -all; quit -f" 
+# Start time: 02:37:32 on May 30,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: (vopt-13130) Failed to find design unit 'design_unit'.
+#         Searched libraries:
+#             work
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 02:37:33 on May 30,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+FAILURE

@@ -1,0 +1,310 @@
+[93mWarning[97m: Config file '.svlint.toml' is not found. Enable all rules(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:5:1
+[94m  |
+[94m5 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m  |[33m          [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_interface
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:5:1
+[94m  |
+[94m5 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Prefix `interface` identifier with "ifc_".
+[94m  |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_interface
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:5:1
+[94m  |
+[94m5 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_interface
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:5:1
+[94m  |
+[94m5 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:5:11
+[94m  |
+[94m5 |[37m interface I;
+[94m  |[93m           ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m  |[33m            [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_modport
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:11:3
+[94m   |
+[94m11 |[37m   modport P1
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_modport
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:11:3
+[94m   |
+[94m11 |[37m   modport P1
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_modport
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:17:3
+[94m   |
+[94m17 |[37m   modport P2
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_modport
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:17:3
+[94m   |
+[94m17 |[37m   modport P2
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:26:1
+[94m   |
+[94m26 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:26:1
+[94m   |
+[94m26 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:26:1
+[94m   |
+[94m26 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:26:1
+[94m   |
+[94m26 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:26:8
+[94m   |
+[94m26 |[37m module M1
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:27:5
+[94m   |
+[94m27 |[37m   ( I.P1 p1 // Specify modport view during module definition.
+[94m   |[93m     ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m      [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:27:10
+[94m   |
+[94m27 |[37m   ( I.P1 p1 // Specify modport view during module definition.
+[94m   |[93m          ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m            [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:27:10
+[94m   |
+[94m27 |[37m   ( I.P1 p1 // Specify modport view during module definition.
+[94m   |[93m          ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m            [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_localparam
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:30:18
+[94m   |
+[94m30 |[37m   localparam bit Z = 1'b0;
+[94m   |[93m                  ^[93m hint  : Use a localparam identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                   [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:32:0
+[94m   |
+[94m32 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:41:1
+[94m   |
+[94m41 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:41:1
+[94m   |
+[94m41 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:41:1
+[94m   |
+[94m41 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:41:1
+[94m   |
+[94m41 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:41:8
+[94m   |
+[94m41 |[37m module M2
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:42:5
+[94m   |
+[94m42 |[37m   ( I.P2 p2 // View signals x, y, and z as ouput signals.
+[94m   |[93m     ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m      [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:42:10
+[94m   |
+[94m42 |[37m   ( I.P2 p2 // View signals x, y, and z as ouput signals.
+[94m   |[93m          ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m            [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:42:10
+[94m   |
+[94m42 |[37m   ( I.P2 p2 // View signals x, y, and z as ouput signals.
+[94m   |[93m          ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m            [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:48:0
+[94m   |
+[94m48 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:57:1
+[94m   |
+[94m57 |[37m module top;
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:57:1
+[94m   |
+[94m57 |[37m module top;
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:57:1
+[94m   |
+[94m57 |[37m module top;
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: uppercamelcase_module
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:57:8
+[94m   |
+[94m57 |[37m module top;
+[94m   |[93m        ^^^[93m hint  : Begin `module` name with UpperCamelCase.
+[94m   |[33m           [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:59:3
+[94m   |
+[94m59 |[37m   I u_I1(); // Interface instance 1.
+[94m   |[93m   ^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m    [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:59:5
+[94m   |
+[94m59 |[37m   I u_I1(); // Interface instance 1.
+[94m   |[93m     ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m         [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:59:5
+[94m   |
+[94m59 |[37m   I u_I1(); // Interface instance 1.
+[94m   |[93m     ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m         [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:60:3
+[94m   |
+[94m60 |[37m   I u_I2(); // Interface instance 2.
+[94m   |[93m   ^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m    [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:60:5
+[94m   |
+[94m60 |[37m   I u_I2(); // Interface instance 2.
+[94m   |[93m     ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m         [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:60:5
+[94m   |
+[94m60 |[37m   I u_I2(); // Interface instance 2.
+[94m   |[93m     ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m         [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:62:3
+[94m   |
+[94m62 |[37m   M1 u_M1
+[94m   |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:62:6
+[94m   |
+[94m62 |[37m   M1 u_M1
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:62:6
+[94m   |
+[94m62 |[37m   M1 u_M1
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:66:3
+[94m   |
+[94m66 |[37m   M2 u_M2
+[94m   |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:66:6
+[94m   |
+[94m66 |[37m   M2 u_M2
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwayscomb_misc_modport_selection_module_definition.sv:66:6
+[94m   |
+[94m66 |[37m   M2 u_M2
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+FAILURE

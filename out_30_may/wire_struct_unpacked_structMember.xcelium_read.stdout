@@ -1,0 +1,4 @@
+    } data;
+         |
+xmvlog: *E,SVUPSL (testcases/wire_struct_unpacked_structMember.sv,9|9): Unsupported unpacked struct/union functionality: unpacked structure as a net.
+FAILURE

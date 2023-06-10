@@ -1,0 +1,15 @@
+%Warning-DECLFILENAME: testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:16:11: Filename 'alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange' does not match IFACE name: 'I'
+   16 | interface I;  
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Error-ASSIGNIN: testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:81:8: Assigning to input/const variable: 'en'
+   81 |     , .en
+      |        ^~
+%Error-ASSIGNIN: testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:82:8: Assigning to input/const variable: 'i_arst'
+   82 |     , .i_arst 
+      |        ^~~~~~
+%Error-ASSIGNIN: testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:88:8: Assigning to input/const variable: 'en'
+   88 |     , .en
+      |        ^~
+%Error: Exiting due to 3 error(s), 1 warning(s)

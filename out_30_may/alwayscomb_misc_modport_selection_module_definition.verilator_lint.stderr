@@ -1,0 +1,18 @@
+%Warning-DECLFILENAME: testcases/alwayscomb_misc_modport_selection_module_definition.sv:5:11: Filename 'alwayscomb_misc_modport_selection_module_definition' does not match IFACE name: 'I'
+    5 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Error: testcases/alwayscomb_misc_modport_selection_module_definition.sv:34:18: Attempt to drive input-only modport: 'x'
+                                                                              : ... In instance top.u_M1
+   34 |   always_comb p1.x = Z;       
+      |                  ^
+%Error: testcases/alwayscomb_misc_modport_selection_module_definition.sv:35:18: Attempt to drive input-only modport: 'y'
+                                                                              : ... In instance top.u_M1
+   35 |   always_comb p1.y = 1'b1;    
+      |                  ^
+%Error: testcases/alwayscomb_misc_modport_selection_module_definition.sv:36:18: Attempt to drive input-only modport: 'z'
+                                                                              : ... In instance top.u_M1
+   36 |   always_comb p1.z = a;       
+      |                  ^
+%Error: Exiting due to 3 error(s), 1 warning(s)

@@ -1,0 +1,10 @@
+%Warning-DECLFILENAME: testcases/assign_packed_port.sv:5:11: Filename 'assign_packed_port' does not match IFACE name: 'I'
+    5 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Error: testcases/assign_packed_port.sv:22:14: Attempt to drive input-only modport: 'x'
+                                             : ... In instance top.u_M
+   22 |     assign p.x[i] = i_a;
+      |              ^
+%Error: Exiting due to 1 error(s), 1 warning(s)

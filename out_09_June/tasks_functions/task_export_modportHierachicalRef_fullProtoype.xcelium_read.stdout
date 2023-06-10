@@ -1,0 +1,16 @@
+    ( import task adder (input int i_a, i_b, output int o_a) // Full protoype.
+                |
+xmvlog: *E,MODYET (testcases/task_export_modportHierachicalRef_fullProtoype.sv,9|16): Task or function prototypes in modport declarations not yet implemented.
+    ( import task adder (input int i_a, i_b, output int o_a) // Full protoype.
+                                                  |
+xmvlog: *E,FNDKWD (testcases/task_export_modportHierachicalRef_fullProtoype.sv,9|50): A Verilog keyword was found where an identifier was expected.
+    ( import task adder (input int i_a, i_b, output int o_a) // Full protoype.
+                                                           |
+xmvlog: *E,EXPSMC (testcases/task_export_modportHierachicalRef_fullProtoype.sv,9|59): expecting a semicolon (';') [3.2.2(IEEE)].
+    ( export adder
+           |
+xmvlog: *E,MODIOI (testcases/task_export_modportHierachicalRef_fullProtoype.sv,13|11): Expected input/output/inout/import in modport declaration [SystemVerilog].
+  task p2.adder (input int i_a, i_b, output int o_a); // Hierrachical define.
+        |
+xmvlog: *E,SVNIMP (testcases/task_export_modportHierachicalRef_fullProtoype.sv,23|8): SystemVerilog construct not yet implemented:  hierarchical task/function names (interface identifiers).
+FAILURE

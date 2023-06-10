@@ -1,0 +1,7 @@
+    ( .P (.*) // Port with direction to top portlist? 
+          |
+xmvlog: *E,ILLPRI (testcases/alwaysff_misc_modportNameWildcardInst.sv,113|10): illegal expression primary [4.2(IEEE)].
+    );
+    |
+xmvlog: *E,EXPSMC (testcases/alwaysff_misc_modportNameWildcardInst.sv,114|4): expecting a semicolon (';') [12.1.2][7.1(IEEE)].
+FAILURE

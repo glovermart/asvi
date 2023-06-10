@@ -1,0 +1,7 @@
+testcases/assign_misc_svi.sv:22: Warning: Identifier `\u_I.y' is implicitly declared.
+testcases/assign_misc_svi.sv:22: Warning: Identifier `\u_I.x' is implicitly declared.
+testcases/assign_misc_svi.sv:22: Warning: Identifier `\u_I.z' is implicitly declared.
+testcases/assign_misc_svi.sv:52: Warning: Identifier `\u_M2.o_b' is implicitly declared.
+testcases/assign_misc_svi.sv:52: Warning: Identifier `\u_M1.o_b' is implicitly declared.
+Warning: Wire top.\u_M1.o_b is used but has no driver.
+Warning: Wire top.\u_M2.o_b is used but has no driver.

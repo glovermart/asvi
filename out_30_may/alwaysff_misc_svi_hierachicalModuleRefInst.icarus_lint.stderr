@@ -1,0 +1,24 @@
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/system.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/vhdl_sys.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/vhdl_textio.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/v2009.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:23: syntax error
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:23: Errors in port declarations.
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:29: warning: implicit definition of wire 'a'.
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:30: warning: implicit definition of wire 'b'.
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:31: warning: implicit definition of wire 'c'.
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:37: syntax error
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:37: Errors in port declarations.
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:43: warning: implicit definition of wire 'a'.
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:44: warning: implicit definition of wire 'b'.
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:45: warning: implicit definition of wire 'c'.
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:55: syntax error
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:55: Errors in port declarations.
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:65: warning: implicit definition of wire 'a'.
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:66: warning: implicit definition of wire 'b'.
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:67: warning: implicit definition of wire 'c'.
+testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:84: warning: implicit definition of wire 'u_I'.

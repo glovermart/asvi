@@ -1,0 +1,21 @@
+%Warning-DECLFILENAME: testcases/force_misc_port.sv:3:11: Filename 'force_misc_port' does not match IFACE name: 'I'
+    3 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-PINMISSING: testcases/force_misc_port.sv:61:6: Cell has missing pin: 'o_a'
+   61 |   M1 u_M1
+      |      ^~~~
+%Warning-PINMISSING: testcases/force_misc_port.sv:65:6: Cell has missing pin: 'i_a'
+   65 |   M2 u_M2
+      |      ^~~~
+%Warning-PINMISSING: testcases/force_misc_port.sv:65:6: Cell has missing pin: 'i_b'
+   65 |   M2 u_M2
+      |      ^~~~
+%Error-ASSIGNIN: testcases/force_misc_port.sv:75:26: Assigning to input/const variable: 'i_a'
+   75 |   always_comb force u_M2.i_a = i_srst ? 8'hxx : b;
+      |                          ^~~
+%Error-ASSIGNIN: testcases/force_misc_port.sv:76:26: Assigning to input/const variable: 'i_b'
+   76 |   always_comb force u_M2.i_b = i_srst ? 8'hxx : c;
+      |                          ^~~
+%Error: Exiting due to 2 error(s), 4 warning(s)

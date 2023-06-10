@@ -1,0 +1,5 @@
+testcases/alwayscomb_unpacked_modportSelect_modulePort.sv:17: syntax error
+testcases/alwayscomb_unpacked_modportSelect_modulePort.sv:17: Errors in port declarations.
+testcases/alwayscomb_unpacked_modportSelect_modulePort.sv:22: syntax error
+testcases/alwayscomb_unpacked_modportSelect_modulePort.sv:23: Syntax in assignment statement l-value.
+testcases/alwayscomb_unpacked_modportSelect_modulePort.sv:36: warning: implicit definition of wire 'u_I'.

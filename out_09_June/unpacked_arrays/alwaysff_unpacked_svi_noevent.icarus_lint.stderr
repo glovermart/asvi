@@ -1,0 +1,2 @@
+testcases/alwaysff_unpacked_svi_noevent.sv:12: error: the first statement of an always_ff process must be an event control statement.
+Elaboration failed

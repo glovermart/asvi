@@ -1,0 +1,4 @@
+%Error: testcases/alwaysff_misc_modportNameWildcardInst.sv:113:11: syntax error, unexpected .*, expecting TYPE-IDENTIFIER
+  113 |     ( .P (.*)  
+      |           ^~
+%Error: Exiting due to 1 error(s)

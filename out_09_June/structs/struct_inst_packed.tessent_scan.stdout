@@ -1,0 +1,142 @@
+//  Tessent Shell  2022.4    Tue Nov 29 21:19:37 GMT 2022
+//                Unpublished work. Copyright 2022 Siemens
+//
+//      This material contains trade secrets or otherwise confidential 
+//  information owned by Siemens Industry Software Inc. or its affiliates 
+//   (collectively, "SISW"), or its licensors. Access to and use of this 
+//     information is strictly limited as set forth in the Customer's 
+//                   applicable agreements with SISW. 
+//
+//  Siemens software executing under x86-64 Linux on Fri Jun 09 10:38:57 CEST 2023.
+//  64 bit version
+//  Host: cad11.nordicsemi.no (386734 MB RAM, 31999 MB Swap)
+//
+//  command: set_tcl_shell_options -abort_dofile_on_error exit
+//  command: array set params {
+//             netlist ""
+//           }
+//  command: array set params $tessent_user_arg
+//  command: #Perform Automatic Test Pattern Generation (ATPG)
+//  command: #Invoke the Tessent tool for pattern generation
+//  command: set_context patterns -scan
+//  command: #Read in library for mapping cells to design components
+//  command: #Location of cell library unknown - ATPG run without library
+//  command: #read_cell_library [insert library name]
+//  command: #Load synthesized netlist with scan chain already inserted.
+//  command: read_verilog $params(netlist)
+//  command: #Specify the design top
+//  command: set_current_design top
+//  command: #add_black_boxes used here to suppress errors due to blackboxes
+//  command: #generated;possibly from  no cells in use or unconnected nets
+//  command: #in synthesized netlist
+//  command: add_black_boxes -auto
+//  command: #Set Tessent shell to analysis mode
+//  command: set_system_mode analysis
+//  Flattening process completed, gates=10, PIs=1, POs=8, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin circuit learning analyses.
+//  --------------------------------
+//  Learning completed, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin scan chain identification process, memory elements = 0.
+//  ---------------------------------------------------------------------------
+//  Circuit has no memory elements.
+//  command: #Specify the fault model
+//  command: set_fault_type stuck
+//  command: #Generate test patterns
+//  command: create_patterns -auto
+No faults in fault list. Adding all faults...
+// | ------------------------------------------------------------------------------------------------------------------ |
+// |                                             Analyzing the design                                                   |
+// |                                                                                                                    |
+// |      Current clock restriction setting:     Domain_clock (edge interaction)                                        |
+// |                                             (optimal)                                                              |
+// |                                                                                                                    |
+// |            Current abort limit setting:     30                                                                     |
+// |                                Calling:     set_abort_limit 300 100                                                |
+// | ------------------------------------------------------------------------------------------------------------------ |
+// |                                                                                                                    |
+// |               Current sequential depth:     0 (optimal)                                                            |
+// |                                                                                                                    |
+// | ------------------------------------------------------------------------------------------------------------------ |
+//  ------------------------------------------------------------------------
+//  Simulation performed for #gates = 10  #faults = 8
+//  system mode = analysis    pattern source = internal patterns
+//  ------------------------------------------------------------------------
+//  #patterns  test      #faults  #faults    # eff.    # test         process      RE/AU/AAB
+//  simulated  coverage  in list  detected   patterns  patterns       CPU time
+//   ---        ------      ---       ---      ---       ---          0.03 sec     0/0/0
+//   1         100.00%        0         8        1         1          0.03 sec
+
+          Statistics Report          
+           Stuck-at Faults           
+-------------------------------------
+Fault Classes              #faults   
+                           (total)   
+---------------------  --------------
+  FU (full)                  18      
+  -------------------  --------------
+  DS (det_simulation)      8 (44.44%)
+  UU (unused)              2 (11.11%)
+  TI (tied)                8 (44.44%)
+-------------------------------------
+Coverage                             
+  -------------------                
+  test_coverage              100.00% 
+  fault_coverage              44.44% 
+  atpg_effectiveness         100.00% 
+-------------------------------------
+#test_patterns                     1 
+#simulated_patterns                1 
+CPU_time (secs)                  8.4 
+-------------------------------------
+
+//  command: #Print statistics fault test using the patterns generated
+//  command: report_statistics 
+          Statistics Report          
+           Stuck-at Faults           
+-------------------------------------
+Fault Classes              #faults   
+                           (total)   
+---------------------  --------------
+  FU (full)                  18      
+  -------------------  --------------
+  DS (det_simulation)      8 (44.44%)
+  UU (unused)              2 (11.11%)
+  TI (tied)                8 (44.44%)
+-------------------------------------
+Coverage                             
+  -------------------                
+  test_coverage              100.00% 
+  fault_coverage              44.44% 
+  atpg_effectiveness         100.00% 
+-------------------------------------
+#test_patterns                     1 
+#simulated_patterns                1 
+CPU_time (secs)                  8.4 
+-------------------------------------
+
+//  command: #Print faults/fault location in DUT
+//  command: report_faults -all
+
+    type    code    pin_pathname
+    ----   ------   ------------------------------------
+      0    UU       /i_clk
+      1    UU       /i_clk
+      0    DS       /o_a[7]
+      1    TI       /o_a[7]
+      0    DS       /o_a[6]
+      1    TI       /o_a[6]
+      0    DS       /o_a[5]
+      1    TI       /o_a[5]
+      0    DS       /o_a[4]
+      1    TI       /o_a[4]
+      0    DS       /o_a[3]
+      1    TI       /o_a[3]
+      0    DS       /o_a[2]
+      1    TI       /o_a[2]
+      0    DS       /o_a[1]
+      1    TI       /o_a[1]
+      0    DS       /o_a[0]
+      1    TI       /o_a[0]
+//  command: exit -force

@@ -1,0 +1,359 @@
+[93mWarning[97m: Config file '.svlint.toml' is not found. Enable all rules(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:6:1
+[94m  |
+[94m6 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m  |[33m          [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_interface
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:6:1
+[94m  |
+[94m6 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Prefix `interface` identifier with "ifc_".
+[94m  |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_interface
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:6:1
+[94m  |
+[94m6 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_interface
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:6:1
+[94m  |
+[94m6 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:6:11
+[94m  |
+[94m6 |[37m interface I;
+[94m  |[93m           ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m  |[33m            [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:10:0
+[94m   |
+[94m10 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: re_forbidden_modport
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:10:3
+[94m   |
+[94m10 |[37m   modport P
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_modport
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:10:3
+[94m   |
+[94m10 |[37m   modport P
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:17:1
+[94m   |
+[94m17 |[37m module M1;
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:17:1
+[94m   |
+[94m17 |[37m module M1;
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:17:1
+[94m   |
+[94m17 |[37m module M1;
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:17:1
+[94m   |
+[94m17 |[37m module M1;
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:17:8
+[94m   |
+[94m17 |[37m module M1;
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: style_indent
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:18:0
+[94m   |
+[94m18 |[37m 
+[94m   |[93m [93m hint  : Follow each newline with an integer multiple of 2 spaces.
+[94m   |[33m [33m reason: Consistent indentation is essential for readability.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:18:0
+[94m   |
+[94m18 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: re_forbidden_task
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:19:3
+[94m   |
+[94m19 |[37m   task adder (input int i_a, i_b, output int o_a); // Define task.
+[94m   |[93m   ^^^^[93m hint  : Use a task identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:26:1
+[94m   |
+[94m26 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:26:1
+[94m   |
+[94m26 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:26:1
+[94m   |
+[94m26 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:26:1
+[94m   |
+[94m26 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:26:8
+[94m   |
+[94m26 |[37m module M2
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: interface_port_with_modport
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:27:5
+[94m   |
+[94m27 |[37m   ( interface i // Generic interface.
+[94m   |[93m     ^^^^^^^^^[93m hint  : Specify the modport on the interface port.
+[94m   |[33m              [33m reason: Without a modport, the interface port signals are all implictly `inout`.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:27:15
+[94m   |
+[94m27 |[37m   ( interface i // Generic interface.
+[94m   |[93m               ^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:27:15
+[94m   |
+[94m27 |[37m   ( interface i // Generic interface.
+[94m   |[93m               ^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:28:5
+[94m   |
+[94m28 |[37m   , input int i_a
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:28:15
+[94m   |
+[94m28 |[37m   , input int i_a
+[94m   |[93m               ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                  [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:29:5
+[94m   |
+[94m29 |[37m   , input int i_b
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:29:15
+[94m   |
+[94m29 |[37m   , input int i_b
+[94m   |[93m               ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                  [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:30:5
+[94m   |
+[94m30 |[37m   , output int o_a
+[94m   |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m   |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:30:16
+[94m   |
+[94m30 |[37m   , output int o_a
+[94m   |[93m                ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                   [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_commaleading
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:33:26
+[94m   |
+[94m33 |[37m   always_comb i.adder(i_a,i_b,o_a); // Perform addition operation.
+[94m   |[93m                          ^[93m hint  : Follow each comma with a single space (comma-leading format).
+[94m   |[33m                           [33m reason: Consistent style enhances readability.
+(B[m
+[91mFail[97m: style_commaleading
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:33:30
+[94m   |
+[94m33 |[37m   always_comb i.adder(i_a,i_b,o_a); // Perform addition operation.
+[94m   |[93m                              ^[93m hint  : Follow each comma with a single space (comma-leading format).
+[94m   |[33m                               [33m reason: Consistent style enhances readability.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:38:1
+[94m   |
+[94m38 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:38:1
+[94m   |
+[94m38 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:38:1
+[94m   |
+[94m38 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: uppercamelcase_module
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:38:8
+[94m   |
+[94m38 |[37m module top
+[94m   |[93m        ^^^[93m hint  : Begin `module` name with UpperCamelCase.
+[94m   |[33m           [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:39:5
+[94m   |
+[94m39 |[37m   ( input int i_a
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:39:15
+[94m   |
+[94m39 |[37m   ( input int i_a
+[94m   |[93m               ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                  [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:40:5
+[94m   |
+[94m40 |[37m   , input int i_b
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:40:15
+[94m   |
+[94m40 |[37m   , input int i_b
+[94m   |[93m               ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                  [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:41:5
+[94m   |
+[94m41 |[37m   , output int o_a
+[94m   |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m   |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:41:16
+[94m   |
+[94m41 |[37m   , output int o_a
+[94m   |[93m                ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                   [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:44:3
+[94m   |
+[94m44 |[37m   I u_I ();
+[94m   |[93m   ^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m    [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:44:5
+[94m   |
+[94m44 |[37m   I u_I ();
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:44:5
+[94m   |
+[94m44 |[37m   I u_I ();
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:46:3
+[94m   |
+[94m46 |[37m   M1 u_M1 ();
+[94m   |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:46:6
+[94m   |
+[94m46 |[37m   M1 u_M1 ();
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:46:6
+[94m   |
+[94m46 |[37m   M1 u_M1 ();
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:48:3
+[94m   |
+[94m48 |[37m   M2 u_M2
+[94m   |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:48:6
+[94m   |
+[94m48 |[37m   M2 u_M2
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/task_export_extern_genericInterfaceModportInst.sv:48:6
+[94m   |
+[94m48 |[37m   M2 u_M2
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+FAILURE

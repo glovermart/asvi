@@ -1,0 +1,6 @@
+%Error-UNSUPPORTED: testcases/alwaysff_unpacked_port_namedPortWithModport.sv:17:5: Unsupported: generic interfaces
+   17 |   ( interface j  
+      |     ^~~~~~~~~
+                    ... For error description see https://verilator.org/warn/UNSUPPORTED?v=5.008
+%Error: Exiting due to 1 error(s)
+        ... See the manual at https://verilator.org/verilator_doc.html for more assistance.

@@ -1,0 +1,13 @@
+QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 23:51:49 on Jun 08,2023
+vlog -sv -sv17compat -lint=default testcases/runtime_assertions_inst.sv 
+** Warning: testcases/runtime_assertions_inst.sv(24): (vlog-2605) empty port name in port list.
+-- Compiling package runtime_assertions_inst_sv_unit
+-- Compiling interface I
+-- Compiling module top
+** Warning: testcases/runtime_assertions_inst.sv(24): (vlog-2605) empty port name in port list.
+
+Top level modules:
+	top
+End time: 23:51:49 on Jun 08,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 2

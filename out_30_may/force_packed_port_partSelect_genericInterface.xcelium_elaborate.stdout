@@ -1,0 +1,25 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/force_packed_port_partSelect_genericInterface.sv,32): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 2 input ports were not connected:
+xmelab: (./testcases/force_packed_port_partSelect_genericInterface.sv,30): en
+xmelab: (./testcases/force_packed_port_partSelect_genericInterface.sv,31): i_a
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+    , .i(u_I.P1)
+              |
+xmelab: *E,CUVUNF (./testcases/force_packed_port_partSelect_genericInterface.sv,41|14): Hierarchical name component lookup failed for 'P1' at 'tb.u_DUT'.
+      force i.p1 = 'z;
+               |
+xmelab: *E,CUVUNF (./testcases/force_packed_port_partSelect_genericInterface.sv,22|15): Hierarchical name component lookup failed for 'p1' at 'tb.u_DUT.u_M'.
+      release i.p1;
+                 |
+xmelab: *E,CUVUNF (./testcases/force_packed_port_partSelect_genericInterface.sv,24|17): Hierarchical name component lookup failed for 'p1' at 'tb.u_DUT.u_M'.
+  ( interface i  // Generic interface i.
+              |
+xmelab: *E,URCEN (./testcases/force_packed_port_partSelect_genericInterface.sv,16|14): Unresolved constant expression VST_D_IO_INTERFACE.
+FAILURE

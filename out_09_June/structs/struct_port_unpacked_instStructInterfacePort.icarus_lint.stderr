@@ -1,0 +1,7 @@
+testcases/struct_port_unpacked_instStructInterfacePort.sv:5: sorry: Unpacked structs not supported.
+testcases/struct_port_unpacked_instStructInterfacePort.sv:11: syntax error
+testcases/struct_port_unpacked_instStructInterfacePort.sv:11: Errors in port declarations.
+testcases/struct_port_unpacked_instStructInterfacePort.sv:26: syntax error
+testcases/struct_port_unpacked_instStructInterfacePort.sv:26: Errors in port declarations.
+testcases/struct_port_unpacked_instStructInterfacePort.sv:35: syntax error
+testcases/struct_port_unpacked_instStructInterfacePort.sv:35: Errors in port declarations.

@@ -1,0 +1,12 @@
+%Error-UNSUPPORTED: testcases/task_export_extern_genericInterfaceNoModportInst.sv:8:3: Unsupported: extern task
+    8 |   extern task adder (input int i_a, i_b, output int o_a);  
+      |   ^~~~~~
+                    ... For error description see https://verilator.org/warn/UNSUPPORTED?v=5.008
+%Error-UNSUPPORTED: testcases/task_export_extern_genericInterfaceNoModportInst.sv:11:7: Unsupported: Modport import with prototype
+   11 |     ( import task adder (input int i_a, i_b, output int o_a)
+      |       ^~~~~~
+%Error-UNSUPPORTED: testcases/task_export_extern_genericInterfaceNoModportInst.sv:27:5: Unsupported: generic interfaces
+   27 |   ( interface i  
+      |     ^~~~~~~~~
+%Error: Exiting due to 3 error(s)
+        ... See the manual at https://verilator.org/verilator_doc.html for more assistance.

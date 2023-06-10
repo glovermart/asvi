@@ -1,0 +1,14 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 1 input port was not connected:
+xmelab: (./testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv,14): i_clk
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSN (./testbench/tb.sv,3|10): 1 null-IO port was not connected:
+xmelab: (./testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv,15): u_I
+
+  , I u_I[7:0] // Infer net.
+        |
+xmelab: *E,CUIMBC (./testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv,15|8): An interface port declaration must be connected in instance(tb.u_DUT, file:./testbench/tb.sv, line:3).
+FAILURE

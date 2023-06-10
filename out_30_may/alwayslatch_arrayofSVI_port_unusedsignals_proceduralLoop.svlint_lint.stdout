@@ -1,0 +1,681 @@
+[93mWarning[97m: Config file '.svlint.toml' is not found. Enable all rules(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:5:1
+[94m  |
+[94m5 |[37m localparam int SIZE = 8;
+[94m  |[93m ^^^^^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m  |[33m           [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: re_forbidden_localparam
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:5:16
+[94m  |
+[94m5 |[37m localparam int SIZE = 8;
+[94m  |[93m                ^^^^[93m hint  : Use a localparam identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m                    [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8:1
+[94m  |
+[94m8 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m  |[33m          [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_interface
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8:1
+[94m  |
+[94m8 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Prefix `interface` identifier with "ifc_".
+[94m  |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_interface
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8:1
+[94m  |
+[94m8 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_interface
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8:1
+[94m  |
+[94m8 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8:11
+[94m  |
+[94m8 |[37m interface I
+[94m  |[93m           ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m  |[33m            [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:9:5
+[94m  |
+[94m9 |[37m   ( input logic arst
+[94m  |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m  |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: prefix_input
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:9:5
+[94m  |
+[94m9 |[37m   ( input logic arst
+[94m  |[93m     ^^^^^[93m hint  : Prefix `input` port identifier with "i_".
+[94m  |[33m          [33m reason: Port prefixes help readers to follow signals through modules.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:9:17
+[94m  |
+[94m9 |[37m   ( input logic arst
+[94m  |[93m                 ^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m                     [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:10:5
+[94m   |
+[94m10 |[37m   , input logic en
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: prefix_input
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:10:5
+[94m   |
+[94m10 |[37m   , input logic en
+[94m   |[93m     ^^^^^[93m hint  : Prefix `input` port identifier with "i_".
+[94m   |[33m          [33m reason: Port prefixes help readers to follow signals through modules.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:10:17
+[94m   |
+[94m10 |[37m   , input logic en
+[94m   |[93m                 ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                   [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_indent
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:12:0
+[94m   |
+[94m12 |[37m 
+[94m   |[93m [93m hint  : Follow each newline with an integer multiple of 2 spaces.
+[94m   |[33m [33m reason: Consistent indentation is essential for readability.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:12:0
+[94m   |
+[94m12 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: re_forbidden_modport
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:17:3
+[94m   |
+[94m17 |[37m   modport P1
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_modport
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:17:3
+[94m   |
+[94m17 |[37m   modport P1
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_modport
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:22:3
+[94m   |
+[94m22 |[37m   modport P2
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_modport
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:22:3
+[94m   |
+[94m22 |[37m   modport P2
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:30:1
+[94m   |
+[94m30 |[37m module M1  // Module does not use signal w.
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:30:1
+[94m   |
+[94m30 |[37m module M1  // Module does not use signal w.
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:30:1
+[94m   |
+[94m30 |[37m module M1  // Module does not use signal w.
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:30:1
+[94m   |
+[94m30 |[37m module M1  // Module does not use signal w.
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:30:8
+[94m   |
+[94m30 |[37m module M1  // Module does not use signal w.
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31:5
+[94m   |
+[94m31 |[37m   ( I.P1 p1[SIZE-1:0]
+[94m   |[93m     ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m      [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31:10
+[94m   |
+[94m31 |[37m   ( I.P1 p1[SIZE-1:0]
+[94m   |[93m          ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m            [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31:10
+[94m   |
+[94m31 |[37m   ( I.P1 p1[SIZE-1:0]
+[94m   |[93m          ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m            [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:32:5
+[94m   |
+[94m32 |[37m   , output logic [SIZE-1:0]o_a
+[94m   |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m   |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:32:28
+[94m   |
+[94m32 |[37m   , output logic [SIZE-1:0]o_a
+[94m   |[93m                            ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                               [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:37:3
+[94m   |
+[94m37 |[37m   I u_I 
+[94m   |[93m   ^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m    [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:37:5
+[94m   |
+[94m37 |[37m   I u_I 
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:37:5
+[94m   |
+[94m37 |[37m   I u_I 
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:38:0
+[94m   |
+[94m38 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:41:0
+[94m   |
+[94m41 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: generate_for_with_label
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:42:3
+[94m   |
+[94m42 |[37m   for(genvar i = 0; i < SIZE; i++) begin
+[94m   |[93m   ^^^[93m hint  : Use a label with prefix "l_" on loop generate block.
+[94m   |[33m      [33m reason: Unnamed generate blocks imply unintuitive hierarchical paths.
+(B[m
+[91mFail[97m: keyword_required_generate
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:42:3
+[94m   |
+[94m42 |[37m   for(genvar i = 0; i < SIZE; i++) begin
+[94m   |[93m   ^^^[93m hint  : Use `generate`/`endgenerate` keywords to define generate regions.
+[94m   |[33m      [33m reason: Omitting `generate`/`endgenerate` keywords may cause issues with non-compliant tools.
+(B[m
+[91mFail[97m: style_keyword_1space
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:42:3
+[94m   |
+[94m42 |[37m   for(genvar i = 0; i < SIZE; i++) begin
+[94m   |[93m   ^^^[93m hint  : Follow keyword with exactly 1 space.
+[94m   |[33m      [33m reason: Consistent use of whitespace enhances readability by reducing visual noise.
+(B[m
+[91mFail[97m: genvar_declaration_out_loop
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:42:7
+[94m   |
+[94m42 |[37m   for(genvar i = 0; i < SIZE; i++) begin
+[94m   |[93m       ^^^^^^[93m hint  : Declare `genvar` outside the loop generate construct.
+[94m   |[33m             [33m reason: Some tools don't support `genvar` declarations inside loop generate constructs.
+(B[m
+[91mFail[97m: re_forbidden_genvar
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:42:14
+[94m   |
+[94m42 |[37m   for(genvar i = 0; i < SIZE; i++) begin
+[94m   |[93m              ^[93m hint  : Use a genvar identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m               [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: sequential_block_in_always_latch
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:44:18
+[94m   |
+[94m44 |[37m     always_latch begin
+[94m   |[93m                  ^^^^^[93m hint  : Keywords `begin` and `end` are forbidden within `always_latch`.
+[94m   |[33m                       [33m reason: Sequential blocks within `always_latch` may encourage overly-complex code.
+(B[m
+[91mFail[97m: explicit_if_else
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:45:7
+[94m   |
+[94m45 |[37m       if (!rst)
+[94m   |[93m       ^^[93m hint  : Add an `else` clause to the `if` statement.
+[94m   |[33m         [33m reason: Fully-specified conditional clarifies design intent.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:45:7
+[94m   |
+[94m45 |[37m       if (!rst)
+[94m   |[93m       ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m   |[33m         [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:56:1
+[94m   |
+[94m56 |[37m module M2  // Module does not use signal x.
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:56:1
+[94m   |
+[94m56 |[37m module M2  // Module does not use signal x.
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:56:1
+[94m   |
+[94m56 |[37m module M2  // Module does not use signal x.
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:56:1
+[94m   |
+[94m56 |[37m module M2  // Module does not use signal x.
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:56:8
+[94m   |
+[94m56 |[37m module M2  // Module does not use signal x.
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:57:5
+[94m   |
+[94m57 |[37m   ( I.P2 p2[SIZE-1:0]
+[94m   |[93m     ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m      [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:57:10
+[94m   |
+[94m57 |[37m   ( I.P2 p2[SIZE-1:0]
+[94m   |[93m          ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m            [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:57:10
+[94m   |
+[94m57 |[37m   ( I.P2 p2[SIZE-1:0]
+[94m   |[93m          ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m            [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:58:5
+[94m   |
+[94m58 |[37m   , output logic [SIZE-1:0]o_b
+[94m   |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m   |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:58:28
+[94m   |
+[94m58 |[37m   , output logic [SIZE-1:0]o_b
+[94m   |[93m                            ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                               [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_indent
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:60:0
+[94m   |
+[94m60 |[37m 
+[94m   |[93m [93m hint  : Follow each newline with an integer multiple of 2 spaces.
+[94m   |[33m [33m reason: Consistent indentation is essential for readability.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:60:0
+[94m   |
+[94m60 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:63:3
+[94m   |
+[94m63 |[37m   I u_I 
+[94m   |[93m   ^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m    [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:63:5
+[94m   |
+[94m63 |[37m   I u_I 
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:63:5
+[94m   |
+[94m63 |[37m   I u_I 
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:64:0
+[94m   |
+[94m64 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:65:0
+[94m   |
+[94m65 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: generate_for_with_label
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:68:3
+[94m   |
+[94m68 |[37m   for(genvar i = 0; i < SIZE; i++) begin
+[94m   |[93m   ^^^[93m hint  : Use a label with prefix "l_" on loop generate block.
+[94m   |[33m      [33m reason: Unnamed generate blocks imply unintuitive hierarchical paths.
+(B[m
+[91mFail[97m: keyword_required_generate
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:68:3
+[94m   |
+[94m68 |[37m   for(genvar i = 0; i < SIZE; i++) begin
+[94m   |[93m   ^^^[93m hint  : Use `generate`/`endgenerate` keywords to define generate regions.
+[94m   |[33m      [33m reason: Omitting `generate`/`endgenerate` keywords may cause issues with non-compliant tools.
+(B[m
+[91mFail[97m: style_keyword_1space
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:68:3
+[94m   |
+[94m68 |[37m   for(genvar i = 0; i < SIZE; i++) begin
+[94m   |[93m   ^^^[93m hint  : Follow keyword with exactly 1 space.
+[94m   |[33m      [33m reason: Consistent use of whitespace enhances readability by reducing visual noise.
+(B[m
+[91mFail[97m: genvar_declaration_out_loop
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:68:7
+[94m   |
+[94m68 |[37m   for(genvar i = 0; i < SIZE; i++) begin
+[94m   |[93m       ^^^^^^[93m hint  : Declare `genvar` outside the loop generate construct.
+[94m   |[33m             [33m reason: Some tools don't support `genvar` declarations inside loop generate constructs.
+(B[m
+[91mFail[97m: re_forbidden_genvar
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:68:14
+[94m   |
+[94m68 |[37m   for(genvar i = 0; i < SIZE; i++) begin
+[94m   |[93m              ^[93m hint  : Use a genvar identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m               [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: sequential_block_in_always_latch
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:69:18
+[94m   |
+[94m69 |[37m     always_latch begin
+[94m   |[93m                  ^^^^^[93m hint  : Keywords `begin` and `end` are forbidden within `always_latch`.
+[94m   |[33m                       [33m reason: Sequential blocks within `always_latch` may encourage overly-complex code.
+(B[m
+[91mFail[97m: style_indent
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:70:0
+[94m   |
+[94m70 |[37m 
+[94m   |[93m [93m hint  : Follow each newline with an integer multiple of 2 spaces.
+[94m   |[33m [33m reason: Consistent indentation is essential for readability.
+(B[m
+[91mFail[97m: explicit_if_else
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:70:6
+[94m   |
+[94m70 |[37m      if (en)
+[94m   |[93m      ^^[93m hint  : Add an `else` clause to the `if` statement.
+[94m   |[33m        [33m reason: Fully-specified conditional clarifies design intent.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:70:6
+[94m   |
+[94m70 |[37m      if (en)
+[94m   |[93m      ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m   |[33m        [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+[91mFail[97m: style_indent
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:71:0
+[94m   |
+[94m71 |[37m 
+[94m   |[93m [93m hint  : Follow each newline with an integer multiple of 2 spaces.
+[94m   |[33m [33m reason: Consistent indentation is essential for readability.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:79:1
+[94m   |
+[94m79 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:79:1
+[94m   |
+[94m79 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:79:1
+[94m   |
+[94m79 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: uppercamelcase_module
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:79:8
+[94m   |
+[94m79 |[37m module top
+[94m   |[93m        ^^^[93m hint  : Begin `module` name with UpperCamelCase.
+[94m   |[33m           [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:80:5
+[94m   |
+[94m80 |[37m   ( input logic en
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: prefix_input
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:80:5
+[94m   |
+[94m80 |[37m   ( input logic en
+[94m   |[93m     ^^^^^[93m hint  : Prefix `input` port identifier with "i_".
+[94m   |[33m          [33m reason: Port prefixes help readers to follow signals through modules.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:80:17
+[94m   |
+[94m80 |[37m   ( input logic en
+[94m   |[93m                 ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                   [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:81:5
+[94m   |
+[94m81 |[37m   , input logic i_clk
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:81:17
+[94m   |
+[94m81 |[37m   , input logic i_clk
+[94m   |[93m                 ^^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                      [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:82:5
+[94m   |
+[94m82 |[37m   , input logic i_arst
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:82:17
+[94m   |
+[94m82 |[37m   , input logic i_arst
+[94m   |[93m                 ^^^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:83:5
+[94m   |
+[94m83 |[37m   , output logic [SIZE-1:0]o_a 
+[94m   |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m   |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:83:28
+[94m   |
+[94m83 |[37m   , output logic [SIZE-1:0]o_a 
+[94m   |[93m                            ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                               [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:84:0
+[94m   |
+[94m84 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:84:5
+[94m   |
+[94m84 |[37m   , output logic [SIZE-1:0]o_b
+[94m   |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m   |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:84:28
+[94m   |
+[94m84 |[37m   , output logic [SIZE-1:0]o_b
+[94m   |[93m                            ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                               [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:89:0
+[94m   |
+[94m89 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:90:3
+[94m   |
+[94m90 |[37m   I u_I [SIZE-1:0]
+[94m   |[93m   ^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m    [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:90:5
+[94m   |
+[94m90 |[37m   I u_I [SIZE-1:0]
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:90:5
+[94m   |
+[94m90 |[37m   I u_I [SIZE-1:0]
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:95:3
+[94m   |
+[94m95 |[37m   M1 u_M1
+[94m   |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:95:6
+[94m   |
+[94m95 |[37m   M1 u_M1
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:95:6
+[94m   |
+[94m95 |[37m   M1 u_M1
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:100:3
+[94m    |
+[94m100 |[37m   M2 u_M2
+[94m    |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m    |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:100:6
+[94m    |
+[94m100 |[37m   M2 u_M2
+[94m    |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m    |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:100:6
+[94m    |
+[94m100 |[37m   M2 u_M2
+[94m    |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m    |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: sequential_block_in_always_ff
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:106:30
+[94m    |
+[94m106 |[37m   always_ff @(posedge i_clk) begin
+[94m    |[93m                              ^^^^^[93m hint  : Keywords `begin` and `end` are forbidden within `always_ff`.
+[94m    |[33m                                   [33m reason: Sequential blocks within `always_ff` may encourage overly-complex code.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:107:5
+[94m    |
+[94m107 |[37m     if (i >= SIZE)
+[94m    |[93m     ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m    |[33m       [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+FAILURE

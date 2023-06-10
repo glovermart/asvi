@@ -1,0 +1,5 @@
+testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits_forBeginEnd.sv:26: syntax error
+testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits_forBeginEnd.sv:26: Errors in port declarations.
+testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits_forBeginEnd.sv:53: error: repeat timeunit does not match the initial timeunit for this scope.
+testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits_forBeginEnd.sv:53: error: a timeprecision is missing or is too large!
+testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits_forBeginEnd.sv:54: error: repeat timeprecision found and the initial timeprecision for this scope is missing.

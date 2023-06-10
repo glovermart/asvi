@@ -1,0 +1,17 @@
+QuestaSim-64 vopt 2023.1 Compiler 2023.01 Jan 23 2023
+Start time: 02:38:09 on May 30,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+** Error: testbench/tb.sv(3): The interface port 'u_I' must be passed an actual interface.
+-- Loading module M1
+-- Loading module M2
+Optimization failed
+End time: 02:38:09 on May 30,2023, Elapsed time: 0:00:00
+Errors: 1, Warnings: 0
+FAILURE

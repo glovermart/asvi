@@ -1,0 +1,11 @@
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/system.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/vhdl_sys.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/vhdl_textio.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/v2009.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+testcases/wire_struct_packed_structnameAlwaysff.sv:22: error: u_I.data.data is not a valid l-value in top.
+testcases/wire_struct_packed_structnameAlwaysff.sv:9:      : u_I.data.data is declared here as wire.
+Elaboration failed

@@ -1,0 +1,17 @@
+%Warning-DECLFILENAME: testcases/alwayslatch_misc_svi_vectorPartSelect.sv:4:11: Filename 'alwayslatch_misc_svi_vectorPartSelect' does not match IFACE name: 'I'
+    4 | interface I
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-UNDRIVEN: testcases/alwayslatch_misc_svi_vectorPartSelect.sv:8:24: Bits of signal are not driven: 'o_a'[1:0]
+                                                                          : ... In instance top.u_M2.u_M1
+    8 |   , output logic [3:0] o_a
+      |                        ^~~
+%Warning-COMBDLY: testcases/alwayslatch_misc_svi_vectorPartSelect.sv:21:9: Non-blocking assignment '<=' in combinational logic process
+                                                                         : ... In instance top.u_I
+                                                                         : ... This will be executed as a blocking assignment '='!
+   21 |       x <= i_a;
+      |         ^~
+                  *** See https://verilator.org/warn/COMBDLY before disabling this,
+                  else you may end up with different sim results.
+%Error: Exiting due to 3 warning(s)

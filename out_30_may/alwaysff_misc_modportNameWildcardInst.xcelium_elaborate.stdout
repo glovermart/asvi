@@ -1,0 +1,25 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 2 output ports were not connected:
+xmelab: (./testcases/force_misc_svi_assign_wire.sv,36): o_a
+xmelab: (./testcases/force_misc_svi_assign_wire.sv,37): i_srst
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 1 input port was not connected:
+xmelab: (./testcases/force_misc_svi_assign_wire.sv,35): i_sclk
+
+    ( .i_srst  (i_srst)
+            |
+xmelab: *E,CUVPOM (./testcases/force_misc_svi_assign_wire.sv,41|12): Port name 'i_srst' of instance 'tb.u_DUT.u_I' is invalid or has multiple connections and the instantiated module is defined in file '/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_modportNameWildcardInst.sv'.
+  M u_M1 
+       |
+xmelab: *W,CUVWSP (./testcases/force_misc_svi_assign_wire.sv,44|7): 1 output port was not connected:
+xmelab: (./testcases/force_misc_svi_assign_wire.sv,19): o_a
+
+  M u_M2 
+       |
+xmelab: *W,CUVWSP (./testcases/force_misc_svi_assign_wire.sv,48|7): 1 output port was not connected:
+xmelab: (./testcases/force_misc_svi_assign_wire.sv,19): o_a
+
+FAILURE

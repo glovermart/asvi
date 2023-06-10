@@ -1,0 +1,14 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/struct_svi_packed.sv,22): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 1 input port was not connected:
+xmelab: (./testcases/struct_svi_packed.sv,21): i_clk
+
+    ( .i_clk
+           |
+xmelab: *E,CUVPOM (./testcases/struct_svi_packed.sv,26|11): Port name 'i_clk' of instance 'tb.u_DUT.u_I' is invalid or has multiple connections and the instantiated module is defined in file '/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_packed_inst_intForLoopScheme.sv'.
+FAILURE

@@ -1,0 +1,7 @@
+testcases/void_function_import_automatic.sv:17: sorry: modport task/function ports are not yet supported.
+testcases/void_function_import_automatic.sv:21: sorry: modport task/function ports are not yet supported.
+testcases/void_function_import_automatic.sv:28: syntax error
+testcases/void_function_import_automatic.sv:28: Errors in port declarations.
+testcases/void_function_import_automatic.sv:40: syntax error
+testcases/void_function_import_automatic.sv:40: Errors in port declarations.
+testcases/void_function_import_automatic.sv:61: warning: implicit definition of wire 'u_I'.

@@ -1,0 +1,13 @@
+QuestaSim-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+Start time: 02:38:09 on May 30,2023
+vlog -sv -lint=full testcases/immediate_assertions_inst.sv testbench/tb.sv 
+-- Compiling interface I
+-- Compiling module top
+** Error: (vlog-13067) testcases/immediate_assertions_inst.sv(23:29): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+** Error: (vlog-13067) testcases/immediate_assertions_inst.sv(23:30): Syntax error, unexpected non-printable character with the hex value '0x80'.
+** Error: (vlog-13067) testcases/immediate_assertions_inst.sv(23:31): Syntax error, unexpected non-printable character with the hex value '0x99'.
+** Error: testcases/immediate_assertions_inst.sv(23): (vlog-2730) Undefined variable: 'x'.
+-- Compiling module tb
+End time: 02:38:09 on May 30,2023, Elapsed time: 0:00:00
+Errors: 4, Warnings: 0
+FAILURE

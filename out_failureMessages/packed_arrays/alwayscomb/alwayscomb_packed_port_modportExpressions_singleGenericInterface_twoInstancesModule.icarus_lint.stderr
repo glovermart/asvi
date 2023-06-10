@@ -1,0 +1,2 @@
+testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoInstancesModule.sv:23: syntax error
+testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoInstancesModule.sv:23: Errors in port declarations.

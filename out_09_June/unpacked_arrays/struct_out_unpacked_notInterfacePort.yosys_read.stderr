@@ -1,0 +1,1 @@
+testcases/struct_out_unpacked_notInterfacePort.sv:4: ERROR: Only PACKED supported at this time

@@ -1,0 +1,4 @@
+%Error: testcases/assign_unpacked_inst_doWhileLoopScheme.sv:20:3: syntax error, unexpected do
+   20 |   do begin 
+      |   ^~
+%Error: Exiting due to 1 error(s)

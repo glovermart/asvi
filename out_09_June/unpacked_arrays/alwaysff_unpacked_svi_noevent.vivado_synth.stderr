@@ -1,0 +1,2 @@
+ERROR: [Synth 8-9121] an always_ff block must have one and only one event control [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_unpacked_svi_noevent.sv:14]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

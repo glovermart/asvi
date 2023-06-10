@@ -1,0 +1,4 @@
+  do begin 
+   |
+xmvlog: *E,EXPENM (testcases/assign_unpacked_inst_doWhileLoopScheme.sv,20|3): expecting the keyword 'endmodule' [12.1(IEEE)].
+FAILURE

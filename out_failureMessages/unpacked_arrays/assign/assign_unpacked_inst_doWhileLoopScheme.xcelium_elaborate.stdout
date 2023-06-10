@@ -1,0 +1,18 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/assign_unpacked_inst_doWhileLoopScheme.sv,13): o_x
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 1 input port was not connected:
+xmelab: (./testcases/assign_unpacked_inst_doWhileLoopScheme.sv,12): i_a
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+      assign u_I.x[i] = i_a;
+                   |
+xmelab: *E,ASNUSE (./testcases/assign_unpacked_inst_doWhileLoopScheme.sv,22|19): Illegal use of a bit-select, part-select, member-select or mda element [9.3.1(IEEE)].
+  assign o_x = u_I.x;
+                   |
+xmelab: *E,TYCMPAT (./testcases/assign_unpacked_inst_doWhileLoopScheme.sv,26|19): assignment operator type check failed on instance 'tb.u_DUT' (expecting datatype compatible with 'packed array' but found 'unpacked array [7:0] of logic' instead).
+FAILURE

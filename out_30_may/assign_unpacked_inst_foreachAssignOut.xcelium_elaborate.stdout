@@ -1,0 +1,14 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/alwaysff_unpacked_svi_noevent.sv,23): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 1 input port was not connected:
+xmelab: (./testcases/alwaysff_unpacked_svi_noevent.sv,22): i_a
+
+  I u_I 
+      |
+xmelab: *E,CUVWLP (./testcases/alwaysff_unpacked_svi_noevent.sv,26|6): Too many module port connections.
+FAILURE

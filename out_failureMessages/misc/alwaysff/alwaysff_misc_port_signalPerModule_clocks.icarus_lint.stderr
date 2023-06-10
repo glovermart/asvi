@@ -1,0 +1,9 @@
+testcases/alwaysff_misc_port_signalPerModule_clocks.sv:30: syntax error
+testcases/alwaysff_misc_port_signalPerModule_clocks.sv:30: Errors in port declarations.
+testcases/alwaysff_misc_port_signalPerModule_clocks.sv:42: syntax error
+testcases/alwaysff_misc_port_signalPerModule_clocks.sv:42: Errors in port declarations.
+testcases/alwaysff_misc_port_signalPerModule_clocks.sv:46: warning: implicit definition of wire 'p'.
+testcases/alwaysff_misc_port_signalPerModule_clocks.sv:60: syntax error
+testcases/alwaysff_misc_port_signalPerModule_clocks.sv:60: Errors in port declarations.
+testcases/alwaysff_misc_port_signalPerModule_clocks.sv:64: warning: implicit definition of wire 'p'.
+testcases/alwaysff_misc_port_signalPerModule_clocks.sv:91: warning: implicit definition of wire 'u_I'.

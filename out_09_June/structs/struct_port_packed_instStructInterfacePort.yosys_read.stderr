@@ -1,0 +1,1 @@
+testcases/struct_port_packed_instStructInterfacePort.sv:11: ERROR: Module port `\data' is neither input nor output.

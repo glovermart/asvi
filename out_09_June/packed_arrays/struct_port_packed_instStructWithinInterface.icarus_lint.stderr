@@ -1,0 +1,4 @@
+testcases/struct_port_packed_instStructWithinInterface.sv:27: syntax error
+testcases/struct_port_packed_instStructWithinInterface.sv:27: Errors in port declarations.
+testcases/struct_port_packed_instStructWithinInterface.sv:36: syntax error
+testcases/struct_port_packed_instStructWithinInterface.sv:36: Errors in port declarations.

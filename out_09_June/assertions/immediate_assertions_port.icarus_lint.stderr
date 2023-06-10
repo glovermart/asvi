@@ -1,0 +1,3 @@
+testcases/immediate_assertions_port.sv:19: syntax error
+testcases/immediate_assertions_port.sv:19: Errors in port declarations.
+testcases/immediate_assertions_port.sv:26: sorry: Deferred assertions are not supported. Try -gno-assertions or -gsupported-assertions to turn this message off.

@@ -1,0 +1,12 @@
+%Warning-DECLFILENAME: testcases/force_misc_svi_alwayscomb.sv:4:11: Filename 'force_misc_svi_alwayscomb' does not match IFACE name: 'I'
+    4 | interface I
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-PINMISSING: testcases/force_misc_svi_alwayscomb.sv:45:5: Cell has missing pin: 'o_a'
+   45 |   M u_M1
+      |     ^~~~
+%Warning-PINMISSING: testcases/force_misc_svi_alwayscomb.sv:49:5: Cell has missing pin: 'o_a'
+   49 |   M u_M2
+      |     ^~~~
+%Error: Exiting due to 3 warning(s)

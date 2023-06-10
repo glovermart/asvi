@@ -1,0 +1,30 @@
+QuestaSim-64 vopt 2023.1 Compiler 2023.01 Jan 23 2023
+Start time: 02:36:51 on May 30,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+-- Loading interface I
+-- Loading module M1
+-- Loading module M2
+** Warning: testcases/struct_port_unpacked_instStructInterfacePort.sv(51): (vopt-2685) [TFMPC] - Too few port connections for 'u_I'.  Expected 1, found 0.
+** Warning: testbench/tb.sv(3): (vopt-2685) [TFMPC] - Too few port connections for 'u_DUT'.  Expected 2, found 0.
+Incremental compilation check found no design-units (out of 7) may be reused.
+Optimizing 7 design-units (inlining 4/5 module instances):
+-- Optimizing package struct_port_unpacked_instStructInterfacePort_sv_unit(fast)
+-- Inlining interface I(fast__1)
+-- Inlining module M1(fast)
+-- Inlining module M2(fast)
+-- Inlining module top(fast)
+-- Optimizing module tb(fast)
+** Error (suppressible): testcases/struct_port_unpacked_instStructInterfacePort.sv(29): (vopt-2997) Cannot assign a packed type 'reg' to an unpacked type 'struct_port_unpacked_instStructInterfacePort_sv_unit::struct data_t'.
+** Error (suppressible): testcases/struct_port_unpacked_instStructInterfacePort.sv(41): (vopt-13215) Cannot assign an unpacked type 'struct_port_unpacked_instStructInterfacePort_sv_unit::struct data_t' to a packed type 'reg[7:0]'.
+Optimization failed
+** Error: (vopt-2064) Compiler back-end code generation process terminated with code 12.
+End time: 02:36:52 on May 30,2023, Elapsed time: 0:00:01
+Errors: 3, Warnings: 2
+FAILURE

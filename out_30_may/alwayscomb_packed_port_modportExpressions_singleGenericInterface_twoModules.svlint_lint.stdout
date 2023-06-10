@@ -1,0 +1,331 @@
+[93mWarning[97m: Config file '.svlint.toml' is not found. Enable all rules(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:6:1
+[94m  |
+[94m6 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m  |[33m          [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_interface
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:6:1
+[94m  |
+[94m6 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Prefix `interface` identifier with "ifc_".
+[94m  |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_interface
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:6:1
+[94m  |
+[94m6 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_interface
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:6:1
+[94m  |
+[94m6 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:6:11
+[94m  |
+[94m6 |[37m interface I;
+[94m  |[93m           ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m  |[33m            [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:7:0
+[94m  |
+[94m7 |[37m 
+[94m  |[93m [93m hint  : Remove trailing whitespace.
+[94m  |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:9:0
+[94m  |
+[94m9 |[37m 
+[94m  |[93m [93m hint  : Remove trailing whitespace.
+[94m  |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: re_forbidden_modport
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:10:3
+[94m   |
+[94m10 |[37m   modport P1
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_modport
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:10:3
+[94m   |
+[94m10 |[37m   modport P1
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_modport
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:14:3
+[94m   |
+[94m14 |[37m   modport P2
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_modport
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:14:3
+[94m   |
+[94m14 |[37m   modport P2
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:21:1
+[94m   |
+[94m21 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:21:1
+[94m   |
+[94m21 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:21:1
+[94m   |
+[94m21 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:21:1
+[94m   |
+[94m21 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:21:8
+[94m   |
+[94m21 |[37m module M1
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: interface_port_with_modport
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:22:5
+[94m   |
+[94m22 |[37m   ( interface i   //Generic interface
+[94m   |[93m     ^^^^^^^^^[93m hint  : Specify the modport on the interface port.
+[94m   |[33m              [33m reason: Without a modport, the interface port signals are all implictly `inout`.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:22:15
+[94m   |
+[94m22 |[37m   ( interface i   //Generic interface
+[94m   |[93m               ^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:22:15
+[94m   |
+[94m22 |[37m   ( interface i   //Generic interface
+[94m   |[93m               ^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_keyword_construct
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:25:3
+[94m   |
+[94m25 |[37m   always_comb  i.p1 = '0;
+[94m   |[93m   ^^^^^^^^^^^[93m hint  : Follow keyword with a newline or exactly 1 space.
+[94m   |[33m              [33m reason: Consistent use of whitespace enhances readability by reducing visual noise.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:30:1
+[94m   |
+[94m30 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:30:1
+[94m   |
+[94m30 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:30:1
+[94m   |
+[94m30 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:30:1
+[94m   |
+[94m30 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:30:8
+[94m   |
+[94m30 |[37m module M2
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: interface_port_with_modport
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:31:5
+[94m   |
+[94m31 |[37m   ( interface i   //Generic interface
+[94m   |[93m     ^^^^^^^^^[93m hint  : Specify the modport on the interface port.
+[94m   |[33m              [33m reason: Without a modport, the interface port signals are all implictly `inout`.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:31:15
+[94m   |
+[94m31 |[37m   ( interface i   //Generic interface
+[94m   |[93m               ^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:31:15
+[94m   |
+[94m31 |[37m   ( interface i   //Generic interface
+[94m   |[93m               ^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:39:1
+[94m   |
+[94m39 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:39:1
+[94m   |
+[94m39 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:39:1
+[94m   |
+[94m39 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: uppercamelcase_module
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:39:8
+[94m   |
+[94m39 |[37m module top
+[94m   |[93m        ^^^[93m hint  : Begin `module` name with UpperCamelCase.
+[94m   |[33m           [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:40:5
+[94m   |
+[94m40 |[37m   ( output logic [7:0] o_a
+[94m   |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m   |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:40:24
+[94m   |
+[94m40 |[37m   ( output logic [7:0] o_a
+[94m   |[93m                        ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:43:3
+[94m   |
+[94m43 |[37m   I u_I ();
+[94m   |[93m   ^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m    [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:43:5
+[94m   |
+[94m43 |[37m   I u_I ();
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:43:5
+[94m   |
+[94m43 |[37m   I u_I ();
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:44:0
+[94m   |
+[94m44 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:45:3
+[94m   |
+[94m45 |[37m   M1 u_M1 
+[94m   |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:45:6
+[94m   |
+[94m45 |[37m   M1 u_M1 
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:45:6
+[94m   |
+[94m45 |[37m   M1 u_M1 
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:46:0
+[94m   |
+[94m46 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: style_indent
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:48:0
+[94m   |
+[94m48 |[37m 
+[94m   |[93m [93m hint  : Follow each newline with an integer multiple of 2 spaces.
+[94m   |[33m [33m reason: Consistent indentation is essential for readability.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:48:0
+[94m   |
+[94m48 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:49:3
+[94m   |
+[94m49 |[37m   M2 u_M2
+[94m   |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:49:6
+[94m   |
+[94m49 |[37m   M2 u_M2
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoModules.sv:49:6
+[94m   |
+[94m49 |[37m   M2 u_M2
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+FAILURE

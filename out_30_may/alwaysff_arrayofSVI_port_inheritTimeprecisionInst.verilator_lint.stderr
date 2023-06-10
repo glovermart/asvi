@@ -1,0 +1,6 @@
+%Warning-DECLFILENAME: testcases/alwaysff_arrayofSVI_port_inheritTimeprecisionInst.sv:10:11: Filename 'alwaysff_arrayofSVI_port_inheritTimeprecisionInst' does not match IFACE name: 'I'
+   10 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Error: Exiting due to 1 warning(s)

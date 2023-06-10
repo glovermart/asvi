@@ -1,0 +1,9 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_singleModule.sv,32): o_a
+
+  M u_M 
+      |
+xmelab: *E,CUVWLP (./testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_singleModule.sv,37|6): Too many module port connections.
+FAILURE

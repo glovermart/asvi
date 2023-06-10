@@ -1,0 +1,33 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 3 output ports were not connected:
+xmelab: (./testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv,107): z
+xmelab: (./testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv,108): y
+xmelab: (./testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv,109): x
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 3 input ports were not connected:
+xmelab: (./testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv,104): i_clk
+xmelab: (./testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv,105): i_srst
+xmelab: (./testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv,106): i_arst
+
+    ( .i_clk   (i_clk)
+           |
+xmelab: *E,CUVPOM (./testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv,113|11): Port name 'i_clk' of instance 'tb.u_DUT.u_I' is invalid or has multiple connections and the instantiated module is defined in file '/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv'.
+    , .i_srst  (i_srst)
+            |
+xmelab: *E,CUVPOM (./testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv,114|12): Port name 'i_srst' of instance 'tb.u_DUT.u_I' is invalid or has multiple connections and the instantiated module is defined in file '/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv'.
+    , .i_arst  (i_arst)
+            |
+xmelab: *E,CUVPOM (./testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv,115|12): Port name 'i_arst' of instance 'tb.u_DUT.u_I' is invalid or has multiple connections and the instantiated module is defined in file '/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv'.
+    , .z       (z)
+       |
+xmelab: *E,CUVPOM (./testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv,116|7): Port name 'z' of instance 'tb.u_DUT.u_I' is invalid or has multiple connections and the instantiated module is defined in file '/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv'.
+    , .y       (y)
+       |
+xmelab: *E,CUVPOM (./testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv,117|7): Port name 'y' of instance 'tb.u_DUT.u_I' is invalid or has multiple connections and the instantiated module is defined in file '/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv'.
+    , .x       (x)
+       |
+xmelab: *E,CUVPOM (./testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv,118|7): Port name 'x' of instance 'tb.u_DUT.u_I' is invalid or has multiple connections and the instantiated module is defined in file '/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv'.
+FAILURE

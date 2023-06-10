@@ -1,0 +1,85 @@
+precision: Setting MGC_HOME to /cad/mentor/precision/2022.2/Mgc_home ...
+precision: Executing on platform: Red Hat Enterprise Linux release 8.7 (Ootpa)  -- 4.18.0-425.10.1.el8_7.x86_64 -- x86_64 
+# Info: Your psyncpbxilmgc_c license is about to expire
+# Info: Please contact your account representative for continued access to this feature.
+//  Precision RTL Synthesis 64-bit 2022.2.0.9 (Production Release) Fri Nov 25 19:04:53 PST 2022
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2022, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux anm3@cad14.nordicsemi.no #1 SMP Wed Dec 14 16:00:01 EST 2022 4.18.0-425.10.1.el8_7.x86_64 x86_64
+//  
+//  Start time Tue May 30 03:28:35 2023
+# -------------------------------------------------
+# Info: [9569]: Logging session transcript to file /hizz/pro/sig_research/dddTools/work/anm3/asvi/out/precision.log
+# Info: /hizz/pro/sig_research/dddTools/work/anm3/asvi
+# Warning: [9550]: Removed existing project /hizz/pro/sig_research/dddTools/work/anm3/asvi/out/precision_runs.psp in folder /hizz/pro/sig_research/dddTools/work/anm3/asvi/out.
+# Info: [9577]: Input directory: /hizz/pro/sig_research/dddTools/work/anm3/asvi/out
+# Info: [9558]: Created project /hizz/pro/sig_research/dddTools/work/anm3/asvi/out/precision_runs.psp in folder /hizz/pro/sig_research/dddTools/work/anm3/asvi/out.
+# Warning: [9527]: Removed existing implementation folder: /hizz/pro/sig_research/dddTools/work/anm3/asvi/out/prn_run.
+# Info: [9531]: Created directory: /hizz/pro/sig_research/dddTools/work/anm3/asvi/out/prn_run.
+# Info: [9557]: Created implementation prn_run in project /hizz/pro/sig_research/dddTools/work/anm3/asvi/out/precision_runs.psp.
+# Info: [9578]: The Results Directory has been set to: /hizz/pro/sig_research/dddTools/work/anm3/asvi/out/prn_run/
+# Info: [9569]: Logging project transcript to file /hizz/pro/sig_research/dddTools/work/anm3/asvi/out/prn_run/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file /hizz/pro/sig_research/dddTools/work/anm3/asvi/out/prn_run/precision.log.suppressed
+# Info: [9552]: Activated implementation prn_run in project /hizz/pro/sig_research/dddTools/work/anm3/asvi/out/precision_runs.psp.
+# Info: [20026]: MultiProc: Precision will use a maximum of 64 logical processors.
+# Info: [15302]: Setting up the design to use synthesis library "xck7.syn"
+# Info: [585]: The global max fanout is currently set to 10000 for Xilinx - KINTEX-7.
+# Info: [15328]: Setting Part to: "7K70TFBG676".
+# Info: [15329]: Setting Process to: "1".
+# Info: [7513]: The default input to Vivado place and route has been set to "Verilog".
+# Info: [7512]: The place and route tool for current technology is Vivado.
+# Info: [585]: The global max fanout is currently set to 1000 for Xilinx - KINTEX-7.
+# Info: [3052]: Decompressing file : /cad/mentor/precision/2022.2/Mgc_home/pkgs/psr/techlibs/xck7.syn in /hizz/pro/sig_research/dddTools/work/anm3/asvi/out/prn_run/synlib.
+# Info: [3022]: Reading file: /hizz/pro/sig_research/dddTools/work/anm3/asvi/out/prn_run/synlib/xck7.syn.
+# Info: [645]: Loading library initialization file /cad/mentor/precision/2022.2/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2022b.4
+# Info: [42003]: Starting analysis of files in library "work"
+# Info: [41002]: Analyzing input file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/task_export_extern_genericInterfaceNoModportInst.sv" ...
+# Info: [670]: Top module of the design is set to: top.
+# Info: [668]: Current working directory: /hizz/pro/sig_research/dddTools/work/anm3/asvi/out/prn_run.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2022b.4
+# Info: [40000]: Last compiled on Oct 11 2022 03:57:23
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2022b.4
+# Info: [40000]: Last compiled on Oct 11 2022 04:31:14
+# Info: [44512]: Initializing...
+# Info: [44506]: Module I: Pre-processing...
+# Info: [44506]: Module M1: Pre-processing...
+# Info: [44506]: Module M2{port =>I}: Pre-processing...
+# Info: [44508]: Module I: Compiling...
+# Info: [44508]: Module M1: Compiling...
+# Info: [44508]: Module M2{port =>I}: Compiling...
+# Info: [44523]: Root Module top: Compiling...
+# Info: [45193]: "/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/task_export_extern_genericInterfaceNoModportInst.sv", line 28: Net i_a[31:0] is unused after optimization
+# Info: [45193]: "/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/task_export_extern_genericInterfaceNoModportInst.sv", line 29: Net i_b[31:0] is unused after optimization
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 23.
+# Info: [44835]: Total CPU time for compilation: 0.0 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Warning: [4560]: Found black-box: work.M1; "/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/task_export_extern_genericInterfaceNoModportInst.sv", line 17:.
+# Warning: [4560]: Found black-box: work.I; "/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/task_export_extern_genericInterfaceNoModportInst.sv", line 6:.
+# Info: [668]: Current working directory: /hizz/pro/sig_research/dddTools/work/anm3/asvi/out/prn_run.
+# Info: [15334]: Doing rtl optimizations.
+# Info: [671]: Finished compiling design.
+# Info: [668]: Current working directory: /hizz/pro/sig_research/dddTools/work/anm3/asvi/out/prn_run.
+# Info: [20026]: MultiProc: Precision will use a maximum of 64 logical processors.
+# Info: [15002]: Optimizing design view:.work.top.INTERFACE
+# Info: [15002]: Optimizing design view:.work.top.INTERFACE
+# Info: [8010]: Gated clock transformations: Begin...
+# Info: [8010]: Gated clock transformations: End...
+# Info: [3027]: Writing file: /hizz/pro/sig_research/dddTools/work/anm3/asvi/out/prn_run/top.edf.
+# Info: [3027]: Writing file: /hizz/pro/sig_research/dddTools/work/anm3/asvi/out/prn_run/top.xdc.
+# Info: -- Writing file /hizz/pro/sig_research/dddTools/work/anm3/asvi/out/prn_run/top.tcl
+# Info: [3027]: Writing file: /hizz/pro/sig_research/dddTools/work/anm3/asvi/out/prn_run/top.v.
+# Info: -- Writing file /hizz/pro/sig_research/dddTools/work/anm3/asvi/out/prn_run/top.tcl
+# Info: [671]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 0.0 s secs.
+# Info: [11020]: Overall running time for synthesis: 0.3 s secs.
+# Info: /hizz/pro/sig_research/dddTools/work/anm3/asvi/out/prn_run/precision_tech.sdc
+# Warning: [532]: setup_place_and_route: invalid argument '-use_ucf_timing_constraints'

@@ -1,0 +1,30 @@
+%Warning-DECLFILENAME: testcases/assign_misc_inst.sv:4:11: Filename 'assign_misc_inst' does not match IFACE name: 'I'
+    4 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: testcases/assign_misc_inst.sv:6:9: Signal is not used: 'z'
+                                                        : ... In instance top.u_M4
+    6 |   logic z;
+      |         ^
+%Warning-UNUSEDSIGNAL: testcases/assign_misc_inst.sv:7:9: Signal is not used: 'y'
+                                                        : ... In instance top.u_M4
+    7 |   logic y;
+      |         ^
+%Warning-UNUSEDSIGNAL: testcases/assign_misc_inst.sv:8:9: Signal is not used: 'x'
+                                                        : ... In instance top.u_M4
+    8 |   logic x;
+      |         ^
+%Warning-UNDRIVEN: testcases/assign_misc_inst.sv:31:9: Signal is not driven: 'a'
+                                                     : ... In instance top.u_M2
+   31 |   logic a;
+      |         ^
+%Warning-UNDRIVEN: testcases/assign_misc_inst.sv:45:9: Signal is not driven: 'a'
+                                                     : ... In instance top.u_M3
+   45 |   logic a;
+      |         ^
+%Warning-UNDRIVEN: testcases/assign_misc_inst.sv:59:9: Signal is not driven: 'a'
+                                                     : ... In instance top.u_M4
+   59 |   logic a;
+      |         ^
+%Error: Exiting due to 7 warning(s)

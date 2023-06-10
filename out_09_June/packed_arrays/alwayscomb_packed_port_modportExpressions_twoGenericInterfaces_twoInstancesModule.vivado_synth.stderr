@@ -1,0 +1,4 @@
+ERROR: [Synth 8-2916] unconnected interface port 'j' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_packed_port_modportExpressions_twoGenericInterfaces_twoInstancesModule.sv:38]
+ERROR: [Synth 8-6156] failed synthesizing module 'M' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_packed_port_modportExpressions_twoGenericInterfaces_twoInstancesModule.sv:21]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_packed_port_modportExpressions_twoGenericInterfaces_twoInstancesModule.sv:32]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

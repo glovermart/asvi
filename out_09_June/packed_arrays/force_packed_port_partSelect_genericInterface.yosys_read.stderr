@@ -1,0 +1,1 @@
+testcases/force_packed_port_partSelect_genericInterface.sv:9: ERROR: syntax error, unexpected '.', expecting TOK_ID

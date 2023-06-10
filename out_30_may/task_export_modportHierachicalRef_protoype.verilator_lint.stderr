@@ -1,0 +1,6 @@
+%Error-UNSUPPORTED: testcases/task_export_modportHierachicalRef_protoype.sv:23:10: Unsupported: Out of block function declaration
+   23 |   task p2.adder (input int i_a, i_b, output int o_a);  
+      |          ^
+                    ... For error description see https://verilator.org/warn/UNSUPPORTED?v=5.008
+%Error: Exiting due to 1 error(s)
+        ... See the manual at https://verilator.org/verilator_doc.html for more assistance.

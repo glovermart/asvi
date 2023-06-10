@@ -1,0 +1,15 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/immediate_assertions_port.sv,40): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 2 input ports were not connected:
+xmelab: (./testcases/immediate_assertions_port.sv,38): i_a
+xmelab: (./testcases/immediate_assertions_port.sv,39): i_b
+
+    ( .p(u_I.P)
+       |
+xmelab: *E,CUVPOM (./testcases/immediate_assertions_port.sv,46|7): Port name 'p' of instance 'tb.u_DUT.u_M' is invalid or has multiple connections and the instantiated module is defined in file '/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits.sv'.
+FAILURE

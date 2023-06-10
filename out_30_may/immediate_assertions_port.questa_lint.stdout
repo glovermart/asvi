@@ -1,0 +1,13 @@
+QuestaSim-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+Start time: 02:33:31 on May 30,2023
+vlog -sv -sv17compat -lint=default testcases/immediate_assertions_port.sv 
+-- Compiling interface I
+-- Compiling module M
+** Error: (vlog-13067) testcases/immediate_assertions_port.sv(26:27): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+** Error: (vlog-13067) testcases/immediate_assertions_port.sv(26:28): Syntax error, unexpected non-printable character with the hex value '0x80'.
+** Error: (vlog-13067) testcases/immediate_assertions_port.sv(26:29): Syntax error, unexpected non-printable character with the hex value '0x99'.
+** Error: testcases/immediate_assertions_port.sv(26): (vlog-2730) Undefined variable: 'x'.
+-- Compiling module top
+End time: 02:33:32 on May 30,2023, Elapsed time: 0:00:01
+Errors: 4, Warnings: 0
+FAILURE

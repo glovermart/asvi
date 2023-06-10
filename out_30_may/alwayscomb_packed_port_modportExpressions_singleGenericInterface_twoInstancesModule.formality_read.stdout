@@ -1,0 +1,62 @@
+
+                                 Formality (R)
+
+               Version U-2022.12-SP2 for linux64 - Feb 24, 2023 
+
+                    Copyright (c) 1988 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Build: 8051736
+Hostname: cad14.nordicsemi.no
+Current time: Tue May 30 03:23:40 2023
+
+Loading db file '/cad/synopsys/formality/2022.12-SP2/libraries/syn/gtech.db'
+Error: Error 'CLE-10' has occurred (ERR-3)
+Warning: Message for error 'CLE-10' not found (ERR-1)
+Information:  (CLE-10)
+No target library specified, default is WORK
+Loading verilog file '/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoInstancesModule.sv'
+Current container set to 'r'
+Setting top design to 'r:/WORK/top'
+Status:   Elaborating design top   ...  
+Status:   Elaborating design M   ...  
+Error: Field ( 'p2' ) not found. (File: /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoInstancesModule.sv Line: 27)  (FMR_VLOG-379)
+
+
+Formality (R) has just encountered a fatal error (SIGSEGV):
+
+If you encountered this fatal error when using the most recent
+Synopsys release, submit this stack trace and a test case that
+reproduces the problem to the Synopsys Support Center by using
+Enter A Call at http://solvnet.synopsys.com/EnterACall.
+
+* For information about the latest software releases, go to the Synopsys
+  SolvNet Release Library at http://solvnet.synopsys.com/ReleaseLibrary.
+
+* For information about required Operating System patches, go to
+  http://www.synopsys.com/support.
+
+Release = 'U-2022.12-SP2'  Architecture = 'linux64'  Program = 'fm_shell'  Cputime = 0 seconds.
+
+'6866338 38659331 22910236146560 38500129 35403730 35412954 35260251 38504930 35964106 35965206 35876399 35878003 35296553 32172427 32182424 31999181 31956861 31966016 8314261 6874523 9613890 9619421 9645882 77689813 78909566 92634604 92655463 93309636 78890466 78899627 10233894 6533519 22910236065157'
+
+Maximum memory usage for this session: 908 MB
+CPU usage for this session: 0.65 seconds ( 0.00 hours )
+Current time: Tue May 30 03:23:40 2023
+Elapsed time: 0 seconds ( 0.00 hours )
+
+Thank you for using Formality (R)!
+FAILURE

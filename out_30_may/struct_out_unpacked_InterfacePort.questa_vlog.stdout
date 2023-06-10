@@ -1,0 +1,12 @@
+QuestaSim-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+Start time: 02:36:55 on May 30,2023
+vlog -sv -lint=full testcases/struct_out_unpacked_InterfacePort.sv testbench/tb.sv 
+-- Compiling package struct_out_unpacked_InterfacePort_sv_unit
+-- Compiling interface I
+-- Compiling module top
+-- Compiling module tb
+
+Top level modules:
+	tb
+End time: 02:36:56 on May 30,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

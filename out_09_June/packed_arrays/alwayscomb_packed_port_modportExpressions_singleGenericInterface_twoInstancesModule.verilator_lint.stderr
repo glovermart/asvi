@@ -1,0 +1,12 @@
+%Error-UNSUPPORTED: testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoInstancesModule.sv:12:14: Unsupported: Modport dotted port name
+   12 |     ( output .p1(x[3:0])
+      |              ^
+                    ... For error description see https://verilator.org/warn/UNSUPPORTED?v=5.008
+%Error-UNSUPPORTED: testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoInstancesModule.sv:16:14: Unsupported: Modport dotted port name
+   16 |     ( output .p2(x[7:4])
+      |              ^
+%Error-UNSUPPORTED: testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoInstancesModule.sv:23:5: Unsupported: generic interfaces
+   23 |   ( interface i    
+      |     ^~~~~~~~~
+%Error: Exiting due to 3 error(s)
+        ... See the manual at https://verilator.org/verilator_doc.html for more assistance.

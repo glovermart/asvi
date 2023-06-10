@@ -1,0 +1,10 @@
+QuestaSim-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+Start time: 02:34:01 on May 30,2023
+vlog -sv -lint=full testcases/alwaysff_packed_svi_orderedPortCOn_sequentialBlock.sv testbench/tb.sv 
+-- Compiling interface I
+** Error (suppressible): testcases/alwaysff_packed_svi_orderedPortCOn_sequentialBlock.sv(14): (vlog-7061) Variable 'i' driven in an always_ff block, may not be driven by any other process. See testcases/alwaysff_packed_svi_orderedPortCOn_sequentialBlock.sv(18).
+-- Compiling module top
+-- Compiling module tb
+End time: 02:34:01 on May 30,2023, Elapsed time: 0:00:00
+Errors: 1, Warnings: 0
+FAILURE

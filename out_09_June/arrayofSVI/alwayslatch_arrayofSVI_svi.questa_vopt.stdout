@@ -1,0 +1,27 @@
+QuestaSim-64 vopt 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 01:30:42 on Jun 09,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+-- Loading interface I
+-- Loading module M
+** Warning: testbench/tb.sv(3): (vopt-2685) [TFMPC] - Too few port connections for 'u_DUT'.  Expected 5, found 0.
+Incremental compilation check found no design-units (out of 6) may be reused.
+Optimizing 6 design-units (inlining 9/18 module instances):
+-- Optimizing package alwayslatch_arrayofSVI_svi_sv_unit(fast)
+-- Inlining module M(fast)
+-- Inlining module top(fast)
+** Warning: testcases/alwayslatch_arrayofSVI_svi.sv(52): (vopt-2685) [TFMPC] - Too few port connections for 'u_I'.  Expected 5, found 3.
+** Warning: testcases/alwayslatch_arrayofSVI_svi.sv(52): (vopt-2718) [TFMPC] - Missing connection for port 'o_b'.
+** Warning: testcases/alwayslatch_arrayofSVI_svi.sv(52): (vopt-2718) [TFMPC] - Missing connection for port 'o_a'.
+-- Optimizing module tb(fast)
+-- Optimizing interface I(fast__1)
+-- Optimizing interface I(fast)
+Optimized design name is design_unit
+End time: 01:30:43 on Jun 09,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 4

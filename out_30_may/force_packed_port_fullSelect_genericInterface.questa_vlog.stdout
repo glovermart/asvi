@@ -1,0 +1,12 @@
+QuestaSim-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+Start time: 02:34:42 on May 30,2023
+vlog -sv -lint=full testcases/force_packed_port_fullSelect_genericInterface.sv testbench/tb.sv 
+-- Compiling interface I
+-- Compiling module M
+-- Compiling module top
+-- Compiling module tb
+
+Top level modules:
+	tb
+End time: 02:34:42 on May 30,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

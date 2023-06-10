@@ -1,0 +1,63 @@
+QuestaSim-64 vopt 2023.1 Compiler 2023.01 Jan 23 2023
+Start time: 02:37:36 on May 30,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+-- Loading interface I
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(21): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk1[0]
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(21): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk1[1]
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(21): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk1[2]
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(21): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk1[3]
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(21): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk1[4]
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(21): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk1[5]
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(21): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk1[6]
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(21): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk1[7]
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(27): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk2[0]
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(27): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk2[1]
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(27): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk2[2]
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(27): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk2[3]
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(27): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk2[4]
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(27): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk2[5]
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(27): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk2[6]
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(27): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk2[7]
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(34): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk3[0]
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(34): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk3[1]
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(34): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk3[2]
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(34): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk3[3]
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(34): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk3[4]
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(34): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk3[5]
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(34): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk3[6]
+** Error (suppressible): testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(34): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I[i].z'.
+        Region: tb.u_DUT.genblk3[7]
+Optimization failed
+End time: 02:37:36 on May 30,2023, Elapsed time: 0:00:00
+Errors: 24, Warnings: 0
+FAILURE

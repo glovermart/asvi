@@ -1,0 +1,24 @@
+%Warning-DECLFILENAME: testcases/alwayslatch_misc_port_scalarOutput.sv:4:11: Filename 'alwayslatch_misc_port_scalarOutput' does not match IFACE name: 'I'
+    4 | interface I
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-COMBDLY: testcases/alwayslatch_misc_port_scalarOutput.sv:66:14: Non-blocking assignment '<=' in combinational logic process
+                                                                       : ... This will be executed as a blocking assignment '='!
+   66 |       p2.o_a <= p2.i_a;
+      |              ^~
+                  *** See https://verilator.org/warn/COMBDLY before disabling this,
+                  else you may end up with different sim results.
+%Warning-COMBDLY: testcases/alwayslatch_misc_port_scalarOutput.sv:51:14: Non-blocking assignment '<=' in combinational logic process
+                                                                       : ... This will be executed as a blocking assignment '='!
+   51 |       p1.o_a <= p1.i_a;
+      |              ^~
+%Warning-COMBDLY: testcases/alwayslatch_misc_port_scalarOutput.sv:36:14: Non-blocking assignment '<=' in combinational logic process
+                                                                       : ... This will be executed as a blocking assignment '='!
+   36 |       p1.o_a <= p1.i_a;
+      |              ^~
+%Warning-COMBDLY: testcases/alwayslatch_misc_port_scalarOutput.sv:25:14: Non-blocking assignment '<=' in combinational logic process
+                                                                       : ... This will be executed as a blocking assignment '='!
+   25 |       p1.o_a <= p1.i_a;
+      |              ^~
+%Error: Exiting due to 5 warning(s)

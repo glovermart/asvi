@@ -1,0 +1,4 @@
+    ( export adder
+           |
+xmvlog: *E,MODIOI (testcases/task_export_modportNohierachicalRef.sv,13|11): Expected input/output/inout/import in modport declaration [SystemVerilog].
+FAILURE

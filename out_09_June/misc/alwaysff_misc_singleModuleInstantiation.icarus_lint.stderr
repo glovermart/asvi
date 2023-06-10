@@ -1,0 +1,9 @@
+testcases/alwaysff_misc_singleModuleInstantiation.sv:29: syntax error
+testcases/alwaysff_misc_singleModuleInstantiation.sv:29: Errors in port declarations.
+testcases/alwaysff_misc_singleModuleInstantiation.sv:43: syntax error
+testcases/alwaysff_misc_singleModuleInstantiation.sv:43: Errors in port declarations.
+testcases/alwaysff_misc_singleModuleInstantiation.sv:49: warning: implicit definition of wire 'p'.
+testcases/alwaysff_misc_singleModuleInstantiation.sv:73: syntax error
+testcases/alwaysff_misc_singleModuleInstantiation.sv:73: Errors in port declarations.
+testcases/alwaysff_misc_singleModuleInstantiation.sv:79: warning: implicit definition of wire 'p'.
+testcases/alwaysff_misc_singleModuleInstantiation.sv:116: warning: implicit definition of wire 'u_I'.

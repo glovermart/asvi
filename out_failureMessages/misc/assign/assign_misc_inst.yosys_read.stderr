@@ -1,0 +1,13 @@
+Warning: Yosys has only limited support for tri-state logic at the moment. (testcases/assign_misc_inst.sv:17)
+testcases/assign_misc_inst.sv:20: Warning: Identifier `\u_I1.z' is implicitly declared.
+testcases/assign_misc_inst.sv:21: Warning: Identifier `\u_I1.y' is implicitly declared.
+testcases/assign_misc_inst.sv:22: Warning: Identifier `\u_I1.x' is implicitly declared.
+testcases/assign_misc_inst.sv:34: Warning: Identifier `\u_I2.z' is implicitly declared.
+testcases/assign_misc_inst.sv:35: Warning: Identifier `\u_I2.y' is implicitly declared.
+testcases/assign_misc_inst.sv:36: Warning: Identifier `\u_I2.x' is implicitly declared.
+testcases/assign_misc_inst.sv:48: Warning: Identifier `\u_I3.z' is implicitly declared.
+testcases/assign_misc_inst.sv:49: Warning: Identifier `\u_I3.y' is implicitly declared.
+testcases/assign_misc_inst.sv:50: Warning: Identifier `\u_I3.x' is implicitly declared.
+testcases/assign_misc_inst.sv:62: Warning: Identifier `\u_I4.z' is implicitly declared.
+testcases/assign_misc_inst.sv:63: Warning: Identifier `\u_I4.y' is implicitly declared.
+testcases/assign_misc_inst.sv:64: Warning: Identifier `\u_I4.x' is implicitly declared.

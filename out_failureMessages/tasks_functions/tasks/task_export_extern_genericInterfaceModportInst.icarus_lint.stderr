@@ -1,0 +1,5 @@
+testcases/task_export_extern_genericInterfaceModportInst.sv:8: syntax error
+testcases/task_export_extern_genericInterfaceModportInst.sv:8: error: invalid module item.
+testcases/task_export_extern_genericInterfaceModportInst.sv:11: sorry: modport task/function ports are not yet supported.
+testcases/task_export_extern_genericInterfaceModportInst.sv:27: syntax error
+testcases/task_export_extern_genericInterfaceModportInst.sv:27: Errors in port declarations.

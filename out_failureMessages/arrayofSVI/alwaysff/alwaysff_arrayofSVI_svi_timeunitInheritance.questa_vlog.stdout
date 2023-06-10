@@ -1,0 +1,7 @@
+QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 04:20:03 on Jun 09,2023
+vlog -sv -lint=full testcases/alwaysff_arrayofSVI_svi_timeunitInheritance.sv testbench/tb.sv 
+** Error: testcases/alwaysff_arrayofSVI_svi_timeunitInheritance.sv(24): Error in timescale or timeprecision statement.  <timeprecision> must be at least as precise as <timeunit>.
+End time: 04:20:03 on Jun 09,2023, Elapsed time: 0:00:00
+Errors: 1, Warnings: 0
+FAILURE

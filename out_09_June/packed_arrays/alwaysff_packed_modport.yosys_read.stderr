@@ -1,0 +1,2 @@
+Warning: wire '\p.x' is assigned in a block at testcases/alwaysff_packed_modport.sv:26.5-26.18.
+testcases/alwaysff_packed_modport.sv:26: Warning: Identifier `\p.x' is implicitly declared.

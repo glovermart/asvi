@@ -1,0 +1,171 @@
+
+                                   VC Static 
+
+                  Version U-2023.03 for linux64 - Mar 02, 2023
+
+                    Copyright (c) 2010 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid this.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+vcf> vcf> global env
+set TEST_NAME $env(TESTCASE)
+testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv
+read_file -format sverilog -top top ${TEST_NAME}
+Warning-[TFIPC] Too few instance port connections
+testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv, 63
+M2, "I u_I( .en (en));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Lint-[XMRE-L] Cross-module reference resolution error
+testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv, 43
+"p1[0].x"
+  The cross-module reference in following instance path cannot be resolved.
+  'ROOT.top.u_M1.genblk1[0]'
+
+
+Lint-[XMRE-L] Cross-module reference resolution error
+testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv, 43
+"p1[1].x"
+  The cross-module reference in following instance path cannot be resolved.
+  'ROOT.top.u_M1.genblk1[1]'
+
+
+Lint-[XMRE-L] Cross-module reference resolution error
+testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv, 43
+"p1[2].x"
+  The cross-module reference in following instance path cannot be resolved.
+  'ROOT.top.u_M1.genblk1[2]'
+
+
+Lint-[XMRE-L] Cross-module reference resolution error
+testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv, 43
+"p1[3].x"
+  The cross-module reference in following instance path cannot be resolved.
+  'ROOT.top.u_M1.genblk1[3]'
+
+
+Lint-[XMRE-L] Cross-module reference resolution error
+testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv, 43
+"p1[4].x"
+  The cross-module reference in following instance path cannot be resolved.
+  'ROOT.top.u_M1.genblk1[4]'
+
+
+Lint-[XMRE-L] Cross-module reference resolution error
+testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv, 43
+"p1[5].x"
+  The cross-module reference in following instance path cannot be resolved.
+  'ROOT.top.u_M1.genblk1[5]'
+
+
+Lint-[XMRE-L] Cross-module reference resolution error
+testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv, 43
+"p1[6].x"
+  The cross-module reference in following instance path cannot be resolved.
+  'ROOT.top.u_M1.genblk1[6]'
+
+
+Lint-[XMRE-L] Cross-module reference resolution error
+testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv, 43
+"p1[7].x"
+  The cross-module reference in following instance path cannot be resolved.
+  'ROOT.top.u_M1.genblk1[7]'
+
+
+Error-[ICPD_INIT] Illegal combination of drivers
+testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv, 105
+  Illegal combination of procedural drivers
+  Variable "i" is driven by an invalid combination of procedural drivers. 
+  Variables written on left-hand of "always_ff" cannot be written to by any 
+  other processes, including other "always_ff" processes.
+  This variable is declared at 
+  "testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv", 
+  105: int i;
+  The first driver is at 
+  "testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv", 
+  106: always_ff @(posedge i_clk) begin
+  if (i >= $unit::SIZE) begin
+   ...
+  The second driver is at 
+  "testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv", 
+  105: i = 0;
+  Use '-ignore initializer_driver_checks' to suppress this error
+
+
+Error-[ICPD_INIT] Illegal combination of drivers
+testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv, 105
+  Illegal combination of procedural drivers
+  Variable "i" is driven by an invalid combination of procedural drivers. 
+  Variables written on left-hand of "always_ff" cannot be written to by any 
+  other processes, including other "always_ff" processes.
+  This variable is declared at 
+  "testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv", 
+  105: int i;
+  The first driver is at 
+  "testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv", 
+  106: always_ff @(posedge i_clk) begin
+  if (i >= $unit::SIZE) begin
+   ...
+  The second driver is at 
+  "testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv", 
+  105: i = 0;
+  Use '-ignore initializer_driver_checks' to suppress this error
+
+1 warning
+2 errors
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 0 warning(s)
+[Info] DB_COPT045: Vcs analyzer task has finished.
+[Error] DB_COPT012: VCS reader failed
+	No scm file is generated, thus no NLDM is created.
+[Error] COM_ENV005: Design read using VCS & Simon failed.
+Error: 0
+	Use error_info for more info. (CMD-013)
+Information: script 'tcl/vcformal_batch_run.tcl'
+	stopped at line 3 due to error. (CMD-081)
+Extended error info:
+0
+    while executing
+"read_file -format sverilog -top top ${TEST_NAME}"
+    (file "tcl/vcformal_batch_run.tcl" line 3)
+ -- End Extended Error Info
+
+=======================================================
+Total Time(S)  :5.25
+CPU Time(S)    :1.59
+Peak Memory(MB):1301
+=======================================================
+FAILURE

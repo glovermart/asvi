@@ -1,0 +1,6 @@
+%Error-UNSUPPORTED: testcases/struct_port_unpacked_instStructInterfacePort.sv:11:12: Unsupported: Ranges ignored in port-lists
+   11 |   ( data_t data
+      |            ^~~~
+                    ... For error description see https://verilator.org/warn/UNSUPPORTED?v=5.008
+%Error: Exiting due to 1 error(s)
+        ... See the manual at https://verilator.org/verilator_doc.html for more assistance.

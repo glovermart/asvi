@@ -1,0 +1,3 @@
+testcases/assign_unpacked_svi_noLiteral.sv:9: assert: elaborate.cc:267: failed assertion rval_pident
+sh: line 1:  5147 Done                    /hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/ivlpp -L -Wredef-chg -F"/tmp/ivrlg27e0c0acb" -f"/tmp/ivrlg7e0c0acb" -p"/tmp/ivrli7e0c0acb"
+      5148 Aborted                 (core dumped) | /hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/ivl -C"/tmp/ivrlh7e0c0acb" -C"/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/null.conf" -- -

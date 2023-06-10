@@ -1,0 +1,4 @@
+ERROR: [Synth 8-35] 'i' is not a constant [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_proceduralLoopInst.sv:24]
+ERROR: [Synth 8-35] 'i' is not a constant [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_proceduralLoopInst.sv:25]
+ERROR: [Synth 8-35] 'i' is not a constant [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_proceduralLoopInst.sv:26]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

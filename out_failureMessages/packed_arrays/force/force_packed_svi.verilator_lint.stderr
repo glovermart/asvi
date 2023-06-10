@@ -1,0 +1,18 @@
+%Warning-DECLFILENAME: testcases/force_packed_svi.sv:4:11: Filename 'force_packed_svi' does not match IFACE name: 'I'
+    4 | interface I
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-MULTIDRIVEN: testcases/force_packed_svi.sv:16:13: Variable written to in always_comb also written by other process (IEEE 1800-2017 9.2.2.2): 'z'
+                                                         : ... In instance top
+                      testcases/force_packed_svi.sv:16:13: 
+   16 |       force z = 'z;   
+      |             ^
+                      testcases/force_packed_svi.sv:12:10: ... Location of other write
+   12 |   assign z = {8{i_a}};  
+      |          ^
+%Error-UNSUPPORTED: testcases/force_packed_svi.sv:16:7: Unsupported tristate construct: ASSIGNFORCE
+                                                      : ... In instance top
+   16 |       force z = 'z;   
+      |       ^~~~~
+%Error: Exiting due to 1 error(s), 2 warning(s)

@@ -1,0 +1,3 @@
+  assign x = {8{i_a}}; // Replicate values to unpacked array.
+             |
+xmvlog: *W,ILREPA (testcases/assign_unpacked_svi_noLiteral.sv,9|13): Replication operator is not allowed in this context LRM[10.10.1].

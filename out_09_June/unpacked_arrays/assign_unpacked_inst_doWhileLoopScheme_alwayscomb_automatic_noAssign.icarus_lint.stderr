@@ -1,0 +1,1 @@
+testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb_automatic_noAssign.sv:19: sorry: overriding the default variable lifetime is not yet supported.

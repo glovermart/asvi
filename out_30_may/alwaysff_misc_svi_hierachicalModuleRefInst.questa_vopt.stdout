@@ -1,0 +1,37 @@
+QuestaSim-64 vopt 2023.1 Compiler 2023.01 Jan 23 2023
+Start time: 02:38:00 on May 30,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+-- Loading interface I
+-- Loading module M3
+-- Loading module M2
+-- Loading module M1
+** Warning: testbench/tb.sv(3): (vopt-2685) [TFMPC] - Too few port connections for 'u_DUT'.  Expected 4, found 0.
+Incremental compilation check found no design-units (out of 7) may be reused.
+Optimizing 7 design-units (inlining 5/6 module instances):
+-- Inlining interface I(fast__1)
+-- Inlining module M1(fast)
+-- Inlining module M2(fast)
+-- Inlining module M3(fast)
+-- Inlining module top(fast)
+-- Optimizing module tb(fast)
+** Error (suppressible): testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv(43): (vopt-7045) 'a' is driven by more than one continuous assignment. See testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv(47).
+** Error (suppressible): testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv(44): (vopt-7045) 'b' is driven by more than one continuous assignment. See testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv(47).
+** Error (suppressible): testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv(45): (vopt-7045) 'c' is driven by more than one continuous assignment. See testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv(47).
+** Error (suppressible): testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv(65): (vopt-7045) 'a' is driven by more than one continuous assignment. See testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv(61).
+** Error (suppressible): testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv(66): (vopt-7045) 'b' is driven by more than one continuous assignment. See testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv(61).
+** Error (suppressible): testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv(67): (vopt-7045) 'c' is driven by more than one continuous assignment. See testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv(61).
+** Error (suppressible): testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv(88): (vopt-7045) 'a' is driven by more than one continuous assignment. See testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv(83).
+** Error (suppressible): testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv(89): (vopt-7045) 'b' is driven by more than one continuous assignment. See testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv(83).
+** Error (suppressible): testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv(90): (vopt-7045) 'c' is driven by more than one continuous assignment. See testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv(83).
+Optimization failed
+** Error: (vopt-2064) Compiler back-end code generation process terminated with code 12.
+End time: 02:38:01 on May 30,2023, Elapsed time: 0:00:01
+Errors: 10, Warnings: 1
+FAILURE

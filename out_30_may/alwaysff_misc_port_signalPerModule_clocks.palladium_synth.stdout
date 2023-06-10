@@ -1,0 +1,123 @@
+xeCompile - 22H1_VXE, V22.04.163.s001            
+
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+WARNING (legacy-52507): The file descriptors limit is 4096, which is less than recommended minimum of 16384.
+WARNING (legacy-52368): Current overcommit memory settings are not optimal. The values are (memory=0, ratio=50). Suggested values are (memory=2, ratio=100).
+XEC> global env
+XEC> set TEST_NAME $env(TESTCASE)
+testcases/alwaysff_misc_port_signalPerModule_clocks.sv
+XEC> set TESTCASE_NAME $env(TESTCASE_NAME_NO_DIR)
+alwaysff_misc_port_signalPerModule_clocks.palladium_synth.stdout
+XEC> 
+XEC> #See UXE Command Reference Manual, Version 17.5 (uxecmdref.pdf)
+XEC> #Pages 179, 174, 177, 176, 184, 185, 189, 190, 192 
+XEC> 
+XEC> hdlInputFile ${TEST_NAME}
+XEC> 
+XEC> #-sv: Enable recognition of SystemVerilog keywords/ features.
+XEC> #-atb: Enable synthesis of force, release, and other contructs
+XEC> #that are otherwise 'non-sythesizable'
+XEC> #(See UXE User Guide Version 17.5,page 155).
+XEC> hdlImport -sv -atb
+hdlice - HDLICE, V22.04.160.s002                
+(c) 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+   >> Analyzing Verilog file testcases/alwaysff_misc_port_signalPerModule_clocks.sv ...
+   >> Analyzing interface I ...
+   >> Analyzing module M1 ...
+   >> Analyzing module M2 ...
+   >> Analyzing module M3 ...
+   >> Analyzing module top ...
+
+ >> Reporting Runtime Statistics ...
+   Hostname         :    cad14.nordicsemi.no
+   Operating system :    Linux RedHat 8.7 (64bit)
+   User CPU time     :        0.01 seconds
+   System CPU time   :        0.02 seconds
+   Wall clock time   :        0 seconds
+   Peak Memory usage :       53076 KB
+
+INFO (legacy-22893): hdlImport completed successfully!
+0
+XEC> 
+XEC> #-add -f: Writes the synthesized file in some file format.
+XEC> hdlOutputFile -add -f verilog out/${TESTCASE_NAME}.palladium_synth.v
+XEC> 
+XEC> #-dontStopOnError: Continue with sythesis when errors are detected.
+XEC> #-append: Append new output to an existing file.
+XEC> hdlSynthesize -dontStopOnError -append top
+hdlice - HDLICE, V22.04.160.s002                
+(c) 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+ >> (1) Synthesizing module 'top' at Tue May 30 04:01:33 2023
+
+INFO: Using new BDD package in HDLICE; to revert to legacy BDD package from 20.0, use switch '-legacy_bdd'.
+   >> Loading module top ...
+
+   >> Running post optimization ...
+
+ >> (2) Synthesizing module 'M3' at Tue May 30 04:01:33 2023
+ under /top
+   >> Loading module M3 ...
+
+   >> Mapping RTL block 'verilog/always:68' ...
+   >> Running datapath synthesis
+   >> asynchronous reset inference
+      total area under this block:       8.00
+
+   >> Mapping RTL block 'verilog' ...
+   >> Running datapath synthesis
+      total area under this block:       8.00
+
+   >> Running post optimization ...
+      Reduces 0.00% (8.00 -> 8.00)
+
+ >> (3) Synthesizing module 'M2' at Tue May 30 04:01:33 2023
+ under /top/M3
+   >> Loading module M2 ...
+
+   >> Mapping RTL block 'verilog/always:50' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Running post optimization ...
+      Reduces 0.00% (7.00 -> 7.00)
+
+ >> (4) Synthesizing module 'M1' at Tue May 30 04:01:33 2023
+ under /top/M3/M2
+   >> Loading module M1 ...
+
+   >> Mapping RTL block 'verilog/always:36' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Running post optimization ...
+      Reduces 100.00% (7.00 -> 0.00)
+
+ >> writing 'out/alwaysff_misc_port_signalPerModule_clocks.palladium_synth.stdout.palladium_synth.v' at Tue May 30 04:01:33 2023
+ ...
+
+ >> Reporting netlist area at Tue May 30 04:01:33 2023
+ ...
+
+ Total Area (4 modules & 4 instances) :           15.00
+
+ >> Reporting Runtime Statistics ...
+   Hostname         :    cad14.nordicsemi.no
+   Operating system :    Linux RedHat 8.7 (64bit)
+   User CPU time     :        0.01 seconds
+   System CPU time   :        0.02 seconds
+   Wall clock time   :        0 seconds
+   Peak Memory usage :       57528 KB
+
+INFO (legacy-22984): hdlSynthesize completed successfully!
+^D
+WARNING (legacy-54241): The workstation was running low on memory (free memory dropped to 10 GB), therefore the performance might be impacted.

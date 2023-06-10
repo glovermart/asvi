@@ -1,0 +1,206 @@
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source tcl/vivado_batch_run.tcl
+# read_verilog -sv $argv
+# synth_design -top top -part xc7k70tfbg676-1
+Command: synth_design -top top -part xc7k70tfbg676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 418482
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3091.328 ; gain = 0.000 ; free physical = 4996 ; free virtual = 455808
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_port_modport.sv:40]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_port_modport.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_port_modport.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_port_modport.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_port_modport.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_port_modport.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_port_modport.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_port_modport.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_port_modport.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_port_modport.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_port_modport.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_port_modport.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_port_modport.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_port_modport.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_port_modport.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_port_modport.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_port_modport.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'M' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_port_modport.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'M' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_port_modport.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_port_modport.sv:40]
+WARNING: [Synth 8-3848] Net c in module/entity M does not have driver. [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_port_modport.sv:29]
+WARNING: [Synth 8-7129] Port i_clk in module top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3091.328 ; gain = 0.000 ; free physical = 6107 ; free virtual = 456921
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3091.328 ; gain = 0.000 ; free physical = 6097 ; free virtual = 456912
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbg676-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbg676-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3099.328 ; gain = 8.000 ; free physical = 6096 ; free virtual = 456912
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3099.328 ; gain = 8.000 ; free physical = 6076 ; free virtual = 456894
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3330] design top has an empty top module
+WARNING: [Synth 8-3917] design top has port o_a[7] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_a[6] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_a[5] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_a[4] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_a[3] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_a[2] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_a[1] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_a[0] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_b[7] driven by constant 1
+WARNING: [Synth 8-3917] design top has port o_b[6] driven by constant 1
+WARNING: [Synth 8-3917] design top has port o_b[5] driven by constant 1
+WARNING: [Synth 8-3917] design top has port o_b[4] driven by constant 1
+WARNING: [Synth 8-3917] design top has port o_b[3] driven by constant 1
+WARNING: [Synth 8-3917] design top has port o_b[2] driven by constant 1
+WARNING: [Synth 8-3917] design top has port o_b[1] driven by constant 1
+WARNING: [Synth 8-3917] design top has port o_b[0] driven by constant 1
+WARNING: [Synth 8-7129] Port i_clk in module top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 3099.328 ; gain = 8.000 ; free physical = 5306 ; free virtual = 456657
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 3099.328 ; gain = 8.000 ; free physical = 5302 ; free virtual = 456653
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 3099.328 ; gain = 8.000 ; free physical = 5302 ; free virtual = 456653
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 3099.328 ; gain = 8.000 ; free physical = 5304 ; free virtual = 456656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 3099.328 ; gain = 8.000 ; free physical = 5304 ; free virtual = 456656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 3099.328 ; gain = 8.000 ; free physical = 5304 ; free virtual = 456656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 3099.328 ; gain = 8.000 ; free physical = 5304 ; free virtual = 456656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 3099.328 ; gain = 8.000 ; free physical = 5304 ; free virtual = 456656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 3099.328 ; gain = 8.000 ; free physical = 5304 ; free virtual = 456656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |OBUF  |    16|
+|2     |OBUFT |     8|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    24|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 3099.328 ; gain = 8.000 ; free physical = 5304 ; free virtual = 456656
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 3099.328 ; gain = 8.000 ; free physical = 5306 ; free virtual = 456658
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 3099.336 ; gain = 8.000 ; free physical = 5308 ; free virtual = 456660
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3099.535 ; gain = 0.000 ; free physical = 5403 ; free virtual = 456755
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3099.535 ; gain = 0.000 ; free physical = 5309 ; free virtual = 456661
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 7f3b9255
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3099.535 ; gain = 8.211 ; free physical = 5516 ; free virtual = 456868
+INFO: [Common 17-206] Exiting Vivado at Tue May 30 01:00:18 2023...

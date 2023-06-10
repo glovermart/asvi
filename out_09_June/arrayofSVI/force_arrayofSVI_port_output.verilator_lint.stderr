@@ -1,0 +1,10 @@
+%Warning-DECLFILENAME: testcases/force_arrayofSVI_port_output.sv:6:11: Filename 'force_arrayofSVI_port_output' does not match IFACE name: 'I'
+    6 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Error-UNSUPPORTED: testcases/force_arrayofSVI_port_output.sv:30:9: Unsupported tristate construct: ASSIGNFORCE
+                                                                  : ... In instance top.u_M
+   30 |         force u_I[i].z = 1'bz;
+      |         ^~~~~
+%Error: Exiting due to 1 error(s), 1 warning(s)

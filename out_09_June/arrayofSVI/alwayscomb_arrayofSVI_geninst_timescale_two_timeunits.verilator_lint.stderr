@@ -1,0 +1,17 @@
+%Warning-DECLFILENAME: testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits.sv:9:11: Filename 'alwayscomb_arrayofSVI_geninst_timescale_two_timeunits' does not match IFACE name: 'I'
+    9 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-IMPLICIT: testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits.sv:84:11: Signal definition not found, creating implicitly: 'i'
+   84 |       b_q[i] <= b;
+      |           ^
+%Warning-WIDTHEXPAND: testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits.sv:84:10: Bit extraction of var[7:0] requires 3 bit index, not 1 bits.
+                                                                                              : ... In instance top
+   84 |       b_q[i] <= b;
+      |          ^
+%Warning-UNDRIVEN: testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits.sv:84:11: Signal is not driven: 'i'
+                                                                                           : ... In instance top
+   84 |       b_q[i] <= b;
+      |           ^
+%Error: Exiting due to 4 warning(s)

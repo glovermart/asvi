@@ -1,0 +1,4 @@
+ERROR: [Synth 8-27] force not supported [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_misc_svi_alwayscomb.sv:13]
+ERROR: [Synth 8-6156] failed synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_misc_svi_alwayscomb.sv:4]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_misc_svi_alwayscomb.sv:35]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

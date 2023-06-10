@@ -1,0 +1,4 @@
+ERROR: [Synth 8-27] force not supported [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_packed_port_fullSelect_genericInterface.sv:22]
+ERROR: [Synth 8-6156] failed synthesizing module 'M' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_packed_port_fullSelect_genericInterface.sv:15]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_packed_port_fullSelect_genericInterface.sv:29]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

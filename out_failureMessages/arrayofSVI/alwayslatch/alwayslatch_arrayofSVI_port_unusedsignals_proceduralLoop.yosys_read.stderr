@@ -1,0 +1,1 @@
+testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:31: ERROR: syntax error, unexpected '[', expecting ',' or '=' or ')'

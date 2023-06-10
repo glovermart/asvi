@@ -1,0 +1,216 @@
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source tcl/vivado_batch_run.tcl
+# read_verilog -sv $argv
+read_verilog: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2980.645 ; gain = 2.023 ; free physical = 2415 ; free virtual = 269921
+# synth_design -top top -part xc7k70tfbg676-1
+Command: synth_design -top top -part xc7k70tfbg676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 27907
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2980.645 ; gain = 0.000 ; free physical = 1088 ; free virtual = 268443
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6]
+WARNING: [Synth 8-330] inout connections inferred for interface port 'I' with no modport [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:15]
+WARNING: [Synth 8-330] inout connections inferred for interface port 'I' with no modport [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:15]
+WARNING: [Synth 8-330] inout connections inferred for interface port 'I' with no modport [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:15]
+WARNING: [Synth 8-330] inout connections inferred for interface port 'I' with no modport [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:15]
+WARNING: [Synth 8-330] inout connections inferred for interface port 'I' with no modport [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:15]
+WARNING: [Synth 8-330] inout connections inferred for interface port 'I' with no modport [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:15]
+WARNING: [Synth 8-330] inout connections inferred for interface port 'I' with no modport [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:15]
+WARNING: [Synth 8-330] inout connections inferred for interface port 'I' with no modport [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:13]
+WARNING: [Synth 8-6014] Unused sequential element u_I[2]\.x_reg was removed.  [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:22]
+WARNING: [Synth 8-6014] Unused sequential element u_I[3]\.x_reg was removed.  [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:23]
+WARNING: [Synth 8-6014] Unused sequential element u_I[4]\.x_reg was removed.  [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:24]
+WARNING: [Synth 8-6014] Unused sequential element u_I[5]\.x_reg was removed.  [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:25]
+WARNING: [Synth 8-6014] Unused sequential element u_I[6]\.x_reg was removed.  [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:26]
+WARNING: [Synth 8-6014] Unused sequential element u_I[7]\.x_reg was removed.  [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:27]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2980.652 ; gain = 0.008 ; free physical = 2174 ; free virtual = 269536
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2980.652 ; gain = 0.008 ; free physical = 2157 ; free virtual = 269519
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbg676-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbg676-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2988.648 ; gain = 8.004 ; free physical = 2155 ; free virtual = 269516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2988.656 ; gain = 8.012 ; free physical = 2137 ; free virtual = 269501
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 2988.656 ; gain = 8.012 ; free physical = 1798 ; free virtual = 269188
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 2988.656 ; gain = 8.012 ; free physical = 1771 ; free virtual = 269162
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 2988.656 ; gain = 8.012 ; free physical = 1760 ; free virtual = 269150
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 2988.656 ; gain = 8.012 ; free physical = 1750 ; free virtual = 269158
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 2988.656 ; gain = 8.012 ; free physical = 1750 ; free virtual = 269158
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 2988.656 ; gain = 8.012 ; free physical = 1750 ; free virtual = 269158
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 2988.656 ; gain = 8.012 ; free physical = 1750 ; free virtual = 269158
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 2988.656 ; gain = 8.012 ; free physical = 1750 ; free virtual = 269158
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 2988.656 ; gain = 8.012 ; free physical = 1750 ; free virtual = 269158
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |     8|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     8|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 2988.656 ; gain = 8.012 ; free physical = 1750 ; free virtual = 269158
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 2988.656 ; gain = 8.012 ; free physical = 1751 ; free virtual = 269160
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 2988.656 ; gain = 8.012 ; free physical = 1751 ; free virtual = 269159
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2988.879 ; gain = 0.000 ; free physical = 1840 ; free virtual = 269248
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2988.879 ; gain = 0.000 ; free physical = 1755 ; free virtual = 269178
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 6f05e345
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 2988.879 ; gain = 8.234 ; free physical = 1962 ; free virtual = 269385
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  9 13:22:15 2023...

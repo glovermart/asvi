@@ -1,0 +1,66 @@
+%Warning-DECLFILENAME: testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:5:11: Filename 'alwaysff_misc_svi_hierachicalModuleRefInst' does not match IFACE name: 'I'
+    5 | interface I
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Error: testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:88:12: Wire inputs its own output, creating circular logic (wire x=x)
+   88 |   assign a = u_M3.a;
+      |            ^
+%Error: testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:89:12: Wire inputs its own output, creating circular logic (wire x=x)
+   89 |   assign b = u_M3.b;
+      |            ^
+%Error: testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:90:12: Wire inputs its own output, creating circular logic (wire x=x)
+   90 |   assign c = u_M3.c;
+      |            ^
+%Error: testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:65:12: Wire inputs its own output, creating circular logic (wire x=x)
+   65 |   assign a = u_M2.a;
+      |            ^
+%Error: testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:66:12: Wire inputs its own output, creating circular logic (wire x=x)
+   66 |   assign b = u_M2.b;
+      |            ^
+%Error: testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:67:12: Wire inputs its own output, creating circular logic (wire x=x)
+   67 |   assign c = u_M2.c;
+      |            ^
+%Error: testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:43:12: Wire inputs its own output, creating circular logic (wire x=x)
+   43 |   assign a = u_M1.a;
+      |            ^
+%Error: testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:44:12: Wire inputs its own output, creating circular logic (wire x=x)
+   44 |   assign b = u_M1.b;
+      |            ^
+%Error: testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:45:12: Wire inputs its own output, creating circular logic (wire x=x)
+   45 |   assign c = u_M1.c;
+      |            ^
+%Warning-BLKSEQ: testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:15:32: Blocking assignment '=' in sequential logic process
+                                                                              : ... In instance top.u_I
+                                                                              : ... Suggest using delayed assignment '<='
+   15 |   always_ff @(posedge i_clk) z = Z;       
+      |                                ^
+%Warning-BLKSEQ: testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:16:32: Blocking assignment '=' in sequential logic process
+                                                                              : ... In instance top.u_I
+                                                                              : ... Suggest using delayed assignment '<='
+   16 |   always_ff @(posedge i_clk) y = 1'b1;    
+      |                                ^
+%Warning-BLKSEQ: testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:17:32: Blocking assignment '=' in sequential logic process
+                                                                              : ... In instance top.u_I
+                                                                              : ... Suggest using delayed assignment '<='
+   17 |   always_ff @(posedge i_clk) x = z;       
+      |                                ^
+%Warning-UNOPTFLAT: testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:74:18: Signal unoptimizable: Circular combinational logic: 'a'
+   74 |   , output logic a
+      |                  ^
+                    testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:74:18:      Example path: a
+                    testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:88:12:      Example path: ASSIGNW
+                    testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:74:18:      Example path: a
+%Warning-UNOPTFLAT: testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:75:18: Signal unoptimizable: Circular combinational logic: 'b'
+   75 |   , output logic b
+      |                  ^
+                    testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:75:18:      Example path: b
+                    testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:89:12:      Example path: ASSIGNW
+                    testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:75:18:      Example path: b
+%Warning-UNOPTFLAT: testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:76:18: Signal unoptimizable: Circular combinational logic: 'c'
+   76 |   , output logic c
+      |                  ^
+                    testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:76:18:      Example path: c
+                    testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:90:12:      Example path: ASSIGNW
+                    testcases/alwaysff_misc_svi_hierachicalModuleRefInst.sv:76:18:      Example path: c
+%Error: Exiting due to 9 error(s), 7 warning(s)

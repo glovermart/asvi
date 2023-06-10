@@ -1,0 +1,5 @@
+testcases/force_misc_port.sv:22: syntax error
+testcases/force_misc_port.sv:22: Errors in port declarations.
+testcases/force_misc_port.sv:29: warning: implicit definition of wire 'o_a'.
+testcases/force_misc_port.sv:35: syntax error
+testcases/force_misc_port.sv:35: Errors in port declarations.

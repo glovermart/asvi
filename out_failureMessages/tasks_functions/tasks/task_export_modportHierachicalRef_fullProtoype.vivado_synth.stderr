@@ -1,0 +1,4 @@
+ERROR: [Synth 8-36] 'adder' is not declared [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/task_export_modportHierachicalRef_fullProtoype.sv:37]
+ERROR: [Synth 8-6156] failed synthesizing module 'M2' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/task_export_modportHierachicalRef_fullProtoype.sv:30]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/task_export_modportHierachicalRef_fullProtoype.sv:42]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

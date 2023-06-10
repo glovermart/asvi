@@ -1,0 +1,12 @@
+%Warning-DECLFILENAME: testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:13:11: Filename 'alwaysff_arrayofSVI_inheritTimescaleInst' does not match IFACE name: 'I'
+   13 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-TIMESCALEMOD: testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:22:8: Timescale missing on this module as other modules have it (IEEE 1800-2017 3.14.2.3)
+   22 | module M
+      |        ^
+                       testcases/alwaysff_arrayofSVI_inheritTimescaleInst.sv:52:8: ... Location of module with timescale
+   52 | module top
+      |        ^~~
+%Error: Exiting due to 2 warning(s)

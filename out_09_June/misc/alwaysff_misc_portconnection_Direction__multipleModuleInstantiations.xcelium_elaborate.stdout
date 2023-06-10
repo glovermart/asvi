@@ -1,0 +1,97 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 3 output ports were not connected:
+xmelab: (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,106): z
+xmelab: (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,107): y
+xmelab: (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,108): x
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 3 input ports were not connected:
+xmelab: (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,103): i_clk
+xmelab: (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,104): i_srst
+xmelab: (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,105): i_arst
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+  always_ff @(posedge p.i_clk) p.z <= Z;
+                                 |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,35|33): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+  always_ff @(posedge p.i_clk) p.y <= 1'b1;
+                                 |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,36|33): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+  always_ff @(posedge p.i_clk) p.x <= p.w;
+                                 |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,37|33): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+      p.z <= 1'b1;
+        |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,55|8): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+      p.z <= Z;
+        |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,57|8): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+      p.y <= 1'b0;
+        |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,60|8): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+      p.y <= 1'b1;
+        |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,62|8): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+      p.x <= 1'b0;
+        |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,65|8): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+      p.x <= p.w;
+        |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,67|8): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+  always_ff @(posedge p.i_clk) p.z <= Z;
+                                 |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,35|33): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+  always_ff @(posedge p.i_clk) p.y <= 1'b1;
+                                 |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,36|33): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+  always_ff @(posedge p.i_clk) p.x <= p.w;
+                                 |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,37|33): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+      p.z <= 1'b0;
+        |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,85|8): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+      p.z <= Z;
+        |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,87|8): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+      p.y <= 1'b0;
+        |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,90|8): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+      p.y <= 1'b1;
+        |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,92|8): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+      p.x <= 1'b0;
+        |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,95|8): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+      p.x <= p.w;
+        |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,97|8): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+      p.z <= 1'b1;
+        |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,55|8): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+      p.z <= Z;
+        |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,57|8): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+      p.y <= 1'b0;
+        |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,60|8): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+      p.y <= 1'b1;
+        |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,62|8): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+      p.x <= 1'b0;
+        |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,65|8): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+      p.x <= p.w;
+        |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,67|8): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+  always_ff @(posedge p.i_clk) p.z <= Z;
+                                 |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,35|33): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+  always_ff @(posedge p.i_clk) p.y <= 1'b1;
+                                 |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,36|33): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+  always_ff @(posedge p.i_clk) p.x <= p.w;
+                                 |
+xmelab: *E,WANOTL (./testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv,37|33): A net is not a legal lvalue in this context [9.3.1(IEEE)].
+FAILURE

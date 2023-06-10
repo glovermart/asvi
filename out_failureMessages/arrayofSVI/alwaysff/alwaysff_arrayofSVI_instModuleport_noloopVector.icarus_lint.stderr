@@ -1,0 +1,2 @@
+testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:15: syntax error
+testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:1: Errors in port declarations.

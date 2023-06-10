@@ -1,0 +1,23 @@
+Warning: wire '\p.z' is assigned in a block at testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:36.32-36.40.
+Warning: wire '\p.y' is assigned in a block at testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:37.32-37.43.
+Warning: wire '\p.x' is assigned in a block at testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:38.32-38.42.
+testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:36: Warning: Identifier `\p.z' is implicitly declared.
+testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:36: Warning: Identifier `\p.i_clk' is implicitly declared.
+testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:37: Warning: Identifier `\p.y' is implicitly declared.
+testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:38: Warning: Identifier `\p.x' is implicitly declared.
+testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:38: Warning: Identifier `\p.w' is implicitly declared.
+Warning: wire '\p.z' is assigned in a block at testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:56.7-56.18.
+Warning: wire '\p.z' is assigned in a block at testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:58.7-58.15.
+Warning: wire '\p.y' is assigned in a block at testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:61.7-61.18.
+Warning: wire '\p.y' is assigned in a block at testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:63.7-63.18.
+Warning: wire '\p.x' is assigned in a block at testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:66.7-66.18.
+Warning: wire '\p.x' is assigned in a block at testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:68.7-68.17.
+testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:55: Warning: Identifier `\p.i_srst' is implicitly declared.
+Warning: wire '\p.z' is assigned in a block at testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:86.7-86.18.
+Warning: wire '\p.z' is assigned in a block at testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:88.6-88.14.
+Warning: wire '\p.y' is assigned in a block at testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:91.7-91.18.
+Warning: wire '\p.y' is assigned in a block at testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:93.7-93.18.
+Warning: wire '\p.x' is assigned in a block at testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:96.7-96.18.
+Warning: wire '\p.x' is assigned in a block at testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:98.7-98.17.
+testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:84: Warning: Identifier `\p.i_arst' is implicitly declared.
+ERROR: Module `I' referenced in module `top' in cell `u_I' does not have a port named 'x'.

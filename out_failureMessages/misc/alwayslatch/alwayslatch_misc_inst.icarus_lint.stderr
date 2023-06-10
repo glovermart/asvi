@@ -1,0 +1,4 @@
+testcases/alwayslatch_misc_inst.sv:14: syntax error
+testcases/alwayslatch_misc_inst.sv:14: Errors in port declarations.
+testcases/alwayslatch_misc_inst.sv:26: syntax error
+testcases/alwayslatch_misc_inst.sv:26: Errors in port declarations.

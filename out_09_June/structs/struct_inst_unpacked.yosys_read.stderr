@@ -1,0 +1,1 @@
+testcases/struct_inst_unpacked.sv:6: ERROR: Only PACKED supported at this time

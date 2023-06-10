@@ -1,0 +1,18 @@
+QuestaSim-64 vopt 2023.1 Compiler 2023.01 Jan 23 2023
+Start time: 02:34:31 on May 30,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+-- Loading interface I
+-- Loading module M
+** Error (suppressible): testcases/alwayscomb_packed_port_modportExpressions_twoGenericInterfaces_twoInstancesModule.sv(26): (vopt-7063) Failed to find 'p1' in hierarchical name 'i.p1'.
+        Region: tb.u_DUT.u_M2
+Optimization failed
+End time: 02:34:31 on May 30,2023, Elapsed time: 0:00:00
+Errors: 1, Warnings: 0
+FAILURE

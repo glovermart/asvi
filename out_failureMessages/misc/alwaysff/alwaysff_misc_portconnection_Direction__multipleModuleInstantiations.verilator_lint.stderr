@@ -1,0 +1,51 @@
+%Warning-DECLFILENAME: testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:4:11: Filename 'alwaysff_misc_portconnection_Direction__multipleModuleInstantiations' does not match IFACE name: 'I'
+    4 | interface I
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Error-ASSIGNIN: testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:85:9: Assigning to input/const variable: 'z'
+   85 |       p.z <= 1'b0;
+      |         ^
+%Error-ASSIGNIN: testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:87:9: Assigning to input/const variable: 'z'
+   87 |       p.z <= Z;
+      |         ^
+%Error-ASSIGNIN: testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:90:9: Assigning to input/const variable: 'y'
+   90 |       p.y <= 1'b0;
+      |         ^
+%Error-ASSIGNIN: testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:92:9: Assigning to input/const variable: 'y'
+   92 |       p.y <= 1'b1;
+      |         ^
+%Error-ASSIGNIN: testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:95:9: Assigning to input/const variable: 'x'
+   95 |       p.x <= 1'b0;
+      |         ^
+%Error-ASSIGNIN: testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:97:9: Assigning to input/const variable: 'x'
+   97 |       p.x <= p.w;
+      |         ^
+%Error-ASSIGNIN: testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:55:9: Assigning to input/const variable: 'z'
+   55 |       p.z <= 1'b1;
+      |         ^
+%Error-ASSIGNIN: testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:57:9: Assigning to input/const variable: 'z'
+   57 |       p.z <= Z;
+      |         ^
+%Error-ASSIGNIN: testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:60:9: Assigning to input/const variable: 'y'
+   60 |       p.y <= 1'b0;
+      |         ^
+%Error-ASSIGNIN: testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:62:9: Assigning to input/const variable: 'y'
+   62 |       p.y <= 1'b1;
+      |         ^
+%Error-ASSIGNIN: testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:65:9: Assigning to input/const variable: 'x'
+   65 |       p.x <= 1'b0;
+      |         ^
+%Error-ASSIGNIN: testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:67:9: Assigning to input/const variable: 'x'
+   67 |       p.x <= p.w;
+      |         ^
+%Error-ASSIGNIN: testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:35:34: Assigning to input/const variable: 'z'
+   35 |   always_ff @(posedge p.i_clk) p.z <= Z;
+      |                                  ^
+%Error-ASSIGNIN: testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:36:34: Assigning to input/const variable: 'y'
+   36 |   always_ff @(posedge p.i_clk) p.y <= 1'b1;
+      |                                  ^
+%Error-ASSIGNIN: testcases/alwaysff_misc_portconnection_Direction__multipleModuleInstantiations.sv:37:34: Assigning to input/const variable: 'x'
+   37 |   always_ff @(posedge p.i_clk) p.x <= p.w;
+      |                                  ^
+%Error: Exiting due to 15 error(s), 1 warning(s)

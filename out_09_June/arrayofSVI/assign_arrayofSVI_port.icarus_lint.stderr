@@ -1,0 +1,3 @@
+testcases/assign_arrayofSVI_port.sv:22: syntax error
+testcases/assign_arrayofSVI_port.sv:22: Errors in port declarations.
+testcases/assign_arrayofSVI_port.sv:43: warning: implicit definition of wire 'u_I'.

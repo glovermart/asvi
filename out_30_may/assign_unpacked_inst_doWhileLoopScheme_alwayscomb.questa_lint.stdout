@@ -1,0 +1,10 @@
+QuestaSim-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+Start time: 02:33:31 on May 30,2023
+vlog -sv -sv17compat -lint=default testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv 
+-- Compiling interface I
+-- Compiling module top
+** Error (suppressible): testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv(19): (vlog-2244) Variable 'i' is implicitly static. You must either explicitly declare it as static or automatic
+or remove the initialization in the declaration of variable.
+End time: 02:33:31 on May 30,2023, Elapsed time: 0:00:00
+Errors: 1, Warnings: 0
+FAILURE

@@ -1,0 +1,31 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/force_unpacked_port_partSelect_genericInterface_noModPortInst.sv,34): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 2 input ports were not connected:
+xmelab: (./testcases/force_unpacked_port_partSelect_genericInterface_noModPortInst.sv,32): i_en
+xmelab: (./testcases/force_unpacked_port_partSelect_genericInterface_noModPortInst.sv,33): i_a
+
+  I u_I ();
+      |
+xmelab: *W,CUVWSI (./testcases/force_unpacked_port_partSelect_genericInterface_noModPortInst.sv,37|6): 2 input ports were not connected:
+xmelab: (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv,9): arst
+xmelab: (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv,10): en
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+  assign u_I.z = '{8{i_a}}; // Fill the array with some bit of the same value.
+             |
+xmelab: *E,CUVUNF (./testcases/force_unpacked_port_partSelect_genericInterface_noModPortInst.sv,39|13): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT'.
+  assign o_a = u_I.z; // Copy/output the array elements.
+                   |
+xmelab: *E,CUVUNF (./testcases/force_unpacked_port_partSelect_genericInterface_noModPortInst.sv,46|19): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT'.
+      force i.p = '{4{'z}};
+              |
+xmelab: *E,CUVUNF (./testcases/force_unpacked_port_partSelect_genericInterface_noModPortInst.sv,24|14): Hierarchical name component lookup failed for 'p' at 'tb.u_DUT.u_M'.
+      release i.p;
+                |
+xmelab: *E,CUVUNF (./testcases/force_unpacked_port_partSelect_genericInterface_noModPortInst.sv,26|16): Hierarchical name component lookup failed for 'p' at 'tb.u_DUT.u_M'.
+FAILURE

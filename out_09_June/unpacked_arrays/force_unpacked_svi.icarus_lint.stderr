@@ -1,0 +1,4 @@
+testcases/force_unpacked_svi.sv:12: syntax error
+testcases/force_unpacked_svi.sv:12: error: syntax error in continuous assignment
+testcases/force_unpacked_svi.sv:16: syntax error
+testcases/force_unpacked_svi.sv:16: error: malformed statement

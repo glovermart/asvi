@@ -1,0 +1,3 @@
+    assert final (^z !== 'x)
+               |
+xmvlog: *W,DEFFIN (testcases/immediate_assertions_svi.sv,16|15): Usage of reserved word "final" in a deferred assertion is not supported.

@@ -1,0 +1,4 @@
+      b_q[i] <= b;
+          |
+xmvlog: *E,UNDIDN (testcases/alwayscomb_arrayofSVI_geninst_timescale.sv,83|10): 'i': undeclared identifier [12.5(IEEE)].
+FAILURE

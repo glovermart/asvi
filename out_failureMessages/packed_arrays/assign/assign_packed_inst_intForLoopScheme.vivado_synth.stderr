@@ -1,0 +1,4 @@
+ERROR: [Synth 8-2715] syntax error near int [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_packed_inst_intForLoopScheme.sv:19]
+ERROR: [Synth 8-8779] SystemVerilog keyword int used in incorrect context [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_packed_inst_intForLoopScheme.sv:19]
+ERROR: [Synth 8-2715] syntax error near < [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_packed_inst_intForLoopScheme.sv:19]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

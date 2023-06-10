@@ -1,0 +1,3 @@
+testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0.sv:14: syntax error
+testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0.sv:1: Errors in port declarations.
+testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0.sv:32: warning: implicit definition of wire 'o_a'.

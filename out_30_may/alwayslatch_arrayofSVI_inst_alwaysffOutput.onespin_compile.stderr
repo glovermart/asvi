@@ -1,0 +1,59 @@
+$tcl_library is set to: /cad/mentor/oneSpin360/2023.1/etc/tcl8.6
+init.tcl executed.
+source "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_defaults.tcl"
+source -signed "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_startup.tcl.obf"
+source "/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl"
+-I- FileParse - Analyzing source file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv" .... [1]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:13: Analyzing module ( top ). [4]
+-I- Elaborate auto-selected the toplevel: "verilog!work.top"
+-W- SimSynMismatch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:38: Initialization of non-wire register might be ignored by some synthesis tools. Use continuous assignment instead.
+-I- Elaborating verilog portion...
+-W- MixedAssign - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:39: Register 'i_i' is written with blocking and nonblocking assignments.
+-I- MixedAssign - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:44: Blocking assignment to 'i_i'.
+-I- MixedAssign - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:41: Nonblocking assignment to 'i_i'.
+
+Warning Statistics:
+-------------------
+    1   MixedAssign          mixing blocking and nonblocking assignment
+    1   SimSynMismatch       simulation synthesis mismatch
+-I- Elaboration of design golden succeeded.
+-I- Traversing modules of design 'top' ...
+-I- Traversing modules of design 'top' took 0.07 seconds.
+-I- Analyzing signal dependency in design 'top' ...
+-I- Analyzing signal dependency in design 'top' took 0.01 seconds.
+-I- Analyzing loops ...
+-I- Analyzing loops took 0.00 seconds.
+-I- Analyzing primary and generated clocks ...
+-I- Computing next states ...
+-I- Computing next states took 0.00 seconds.
+-I- Analyzing primary and generated clocks took 0.01 seconds.
+-I- Checking clock dependency assumption ...
+-I- Checking clock dependency assumption took 0.02 seconds.
+-I- Clock input 'i_clk (posedge)' found.
+-I- Computing CSA result ...
+-I- Computing CSA result took 0.00 seconds.
+-I- Finishing CSA analysis ...
+-I- Compilation for design golden succeeded.
+-R- Printed Messages
+===============================================================================
+class       category            memo                                                          occurrence
+-------------------------------------------------------------------------------
+Warning     MixedAssign         mixing blocking and nonblocking assignment                    1         
+Warning     SimSynMismatch      simulation synthesis mismatch                                 1         
+Info        AnalyzeModule       analyzing module                                              1         
+Info        FileParse           file parsed                                                   1         
+Info        MixedAssign         mixing blocking and nonblocking assignment                    2         
+Info        {}                  Clock input '<Name> (<Name>)' found.                          1         
+Info        {}                  unclassified message                                          18        
+Info        {}                  {}                                                            1         
+Result      {}                  {}                                                            1         
+Plain       {}                  unclassified message                                          1         
+Plain       {}                  {}                                                            11        
+TclStdOut   {}                  {}                                                            2         
+CommandLog  {}                  {}                                                            3         
+	
+-R- Filtered Messages
+===============================================================================
+id   active   class     category            memo                     text                     src_loc        origin  hits 
+-------------------------------------------------------------------------------
+No message filters available.

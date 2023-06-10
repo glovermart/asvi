@@ -1,0 +1,32 @@
+%Warning-DECLFILENAME: testcases/force_misc_svi_alwaysff.sv:3:11: Filename 'force_misc_svi_alwaysff' does not match IFACE name: 'I'
+    3 | interface I(input var logic i_srst);
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-PINMISSING: testcases/force_misc_svi_alwaysff.sv:42:5: Cell has missing pin: 'o_a'
+   42 |   M u_M1 (u_I);
+      |     ^~~~
+%Warning-PINMISSING: testcases/force_misc_svi_alwaysff.sv:42:5: Cell has missing pin: 'i_sclk'
+   42 |   M u_M1 (u_I);
+      |     ^~~~
+%Warning-PINMISSING: testcases/force_misc_svi_alwaysff.sv:43:5: Cell has missing pin: 'o_a'
+   43 |   M u_M2 (u_I);
+      |     ^~~~
+%Warning-PINMISSING: testcases/force_misc_svi_alwaysff.sv:43:5: Cell has missing pin: 'i_sclk'
+   43 |   M u_M2 (u_I);
+      |     ^~~~
+%Warning-MULTIDRIVEN: testcases/force_misc_svi_alwaysff.sv:7:9: Signal has multiple driving blocks with different clocking: 'x'
+                      testcases/force_misc_svi_alwaysff.sv:24:9: ... Location of first driving block
+   24 |     u_I.x <= 1'b0;
+      |         ^
+                      testcases/force_misc_svi_alwaysff.sv:24:9: ... Location of other driving block
+   24 |     u_I.x <= 1'b0;
+      |         ^
+%Warning-MULTIDRIVEN: testcases/force_misc_svi_alwaysff.sv:6:9: Signal has multiple driving blocks with different clocking: 'y'
+                      testcases/force_misc_svi_alwaysff.sv:27:9: ... Location of first driving block
+   27 |     u_I.y <= 1'b1;
+      |         ^
+                      testcases/force_misc_svi_alwaysff.sv:27:9: ... Location of other driving block
+   27 |     u_I.y <= 1'b1;
+      |         ^
+%Error: Exiting due to 7 warning(s)

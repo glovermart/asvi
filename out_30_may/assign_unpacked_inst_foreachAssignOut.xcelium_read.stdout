@@ -1,0 +1,7 @@
+    foreach (u_I.x[i])
+          |
+xmvlog: *E,FNDKWD (testcases/assign_unpacked_inst_foreachAssignOut.sv,20|10): A SystemVerilog keyword was found where an identifier was expected.
+    foreach (u_I.x[i])
+               |
+xmvlog: *E,EXPSMC (testcases/assign_unpacked_inst_foreachAssignOut.sv,20|15): expecting a semicolon (';') [6.1(IEEE)].
+FAILURE

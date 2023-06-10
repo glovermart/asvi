@@ -1,0 +1,3 @@
+xmsim: *E,DLNORD: Intermediate file for module worklib.top:module (SIG) <0x5bf74293> could not be read (no such object).
+xmsim: *F,NOSIMU: Errors initializing simulation 'tb'.
+FAILURE

@@ -1,0 +1,2 @@
+testcases/concurrent_assertions_svi.sv:13: syntax error
+testcases/concurrent_assertions_svi.sv:13: error: Error in property_spec of concurrent assertion item.

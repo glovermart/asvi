@@ -1,0 +1,1 @@
+testcases/immediate_assertions_inst.sv:23: sorry: Deferred assertions are not supported. Try -gno-assertions or -gsupported-assertions to turn this message off.

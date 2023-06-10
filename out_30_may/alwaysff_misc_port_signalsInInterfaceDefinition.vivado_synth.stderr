@@ -1,0 +1,11 @@
+ERROR: [Synth 8-448] named port connection 'i_clk' does not exist for instance 'u_I' of module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:113]
+ERROR: [Synth 8-448] named port connection 'i_srst' does not exist for instance 'u_I' of module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:114]
+ERROR: [Synth 8-448] named port connection 'i_arst' does not exist for instance 'u_I' of module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:115]
+ERROR: [Synth 8-448] named port connection 'z' does not exist for instance 'u_I' of module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:116]
+ERROR: [Synth 8-448] named port connection 'y' does not exist for instance 'u_I' of module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:117]
+ERROR: [Synth 8-448] named port connection 'x' does not exist for instance 'u_I' of module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:118]
+ERROR: [Synth 8-7039] Interface instance 'p' cannot be reassigned, ignoring this assignment [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:36]
+ERROR: [Synth 8-6156] failed synthesizing module 'M1' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:29]
+ERROR: [Synth 8-6156] failed synthesizing module 'M2' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:43]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:103]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

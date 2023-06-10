@@ -1,0 +1,12 @@
+Warning: wire '\p1.x' is assigned in a block at testcases/alwayscomb_misc_modport_selection_module_definition.sv:34.15-34.23.
+Warning: wire '\p1.y' is assigned in a block at testcases/alwayscomb_misc_modport_selection_module_definition.sv:35.15-35.26.
+Warning: wire '\p1.z' is assigned in a block at testcases/alwayscomb_misc_modport_selection_module_definition.sv:36.15-36.23.
+testcases/alwayscomb_misc_modport_selection_module_definition.sv:34: Warning: Identifier `\p1.x' is implicitly declared.
+testcases/alwayscomb_misc_modport_selection_module_definition.sv:35: Warning: Identifier `\p1.y' is implicitly declared.
+testcases/alwayscomb_misc_modport_selection_module_definition.sv:36: Warning: Identifier `\p1.z' is implicitly declared.
+testcases/alwayscomb_misc_modport_selection_module_definition.sv:50: Warning: Identifier `\p2.x' is implicitly declared.
+testcases/alwayscomb_misc_modport_selection_module_definition.sv:51: Warning: Identifier `\p2.y' is implicitly declared.
+testcases/alwayscomb_misc_modport_selection_module_definition.sv:52: Warning: Identifier `\p2.z' is implicitly declared.
+Warning: Wire M2$interfaces$I.\p2.z is used but has no driver.
+Warning: Wire M2$interfaces$I.\p2.y is used but has no driver.
+Warning: Wire M2$interfaces$I.\p2.x is used but has no driver.

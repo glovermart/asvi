@@ -1,0 +1,30 @@
+%Warning-DECLFILENAME: testcases/alwaysff_misc_differentInterfacesToOneInst.sv:6:11: Filename 'alwaysff_misc_differentInterfacesToOneInst' does not match IFACE name: 'I'
+    6 | interface I
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-UNDRIVEN: testcases/alwaysff_misc_differentInterfacesToOneInst.sv:24:9: Signal is not driven: 'a'
+                                                                               : ... In instance top.u_M1
+   24 |   logic a;
+      |         ^
+%Warning-UNUSEDSIGNAL: testcases/alwaysff_misc_differentInterfacesToOneInst.sv:12:9: Signal is not used: 'z'
+                                                                                   : ... In instance top.u_M3
+   12 |   logic z;
+      |         ^
+%Warning-UNUSEDSIGNAL: testcases/alwaysff_misc_differentInterfacesToOneInst.sv:13:9: Signal is not used: 'y'
+                                                                                   : ... In instance top.u_M3
+   13 |   logic y;
+      |         ^
+%Warning-UNUSEDSIGNAL: testcases/alwaysff_misc_differentInterfacesToOneInst.sv:14:9: Signal is not used: 'x'
+                                                                                   : ... In instance top.u_M3
+   14 |   logic x;
+      |         ^
+%Warning-UNDRIVEN: testcases/alwaysff_misc_differentInterfacesToOneInst.sv:39:9: Signal is not driven: 'a'
+                                                                               : ... In instance top.u_M2
+   39 |   logic a;
+      |         ^
+%Warning-UNDRIVEN: testcases/alwaysff_misc_differentInterfacesToOneInst.sv:66:9: Signal is not driven: 'a'
+                                                                               : ... In instance top.u_M3
+   66 |   logic a;
+      |         ^
+%Error: Exiting due to 7 warning(s)

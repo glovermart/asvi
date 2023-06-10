@@ -1,0 +1,9 @@
+Warning: wire '\p.o_a' is assigned in a block at testcases/alwayslatch_misc_svi_vectorPartSelect.sv:31.5-31.23.
+testcases/alwayslatch_misc_svi_vectorPartSelect.sv:31: Warning: Identifier `\p.o_a' is implicitly declared.
+testcases/alwayslatch_misc_svi_vectorPartSelect.sv:31: Warning: Range select out of bounds on signal `\p.o_a': Setting result bit to undef.
+testcases/alwayslatch_misc_svi_vectorPartSelect.sv:30: Warning: Identifier `\p.i_clk' is implicitly declared.
+testcases/alwayslatch_misc_svi_vectorPartSelect.sv:31: Warning: Identifier `\p.x' is implicitly declared.
+testcases/alwayslatch_misc_svi_vectorPartSelect.sv:31: Warning: Range select out of bounds on signal `\p.x': Setting result bit to undef.
+Warning: wire '\p.o_a' is assigned in a block at testcases/alwayslatch_misc_svi_vectorPartSelect.sv:46.5-46.23.
+testcases/alwayslatch_misc_svi_vectorPartSelect.sv:52: Warning: Identifier `\u_M1.a' is implicitly declared.
+ERROR: Could not find signal '\p.$0\x[3:0]' in 'M2'

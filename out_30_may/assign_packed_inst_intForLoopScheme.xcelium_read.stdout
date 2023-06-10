@@ -1,0 +1,4 @@
+  for (int i = 0; i < 8; i++) // genvar appropriate type
+         |
+xmvlog: *E,FNDKWD (testcases/assign_packed_inst_intForLoopScheme.sv,19|9): A SystemVerilog keyword was found where an identifier was expected.
+FAILURE

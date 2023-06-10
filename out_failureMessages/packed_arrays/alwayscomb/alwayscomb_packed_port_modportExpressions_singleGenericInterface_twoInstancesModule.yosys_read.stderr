@@ -1,0 +1,1 @@
+testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoInstancesModule.sv:12: ERROR: syntax error, unexpected '.', expecting TOK_ID

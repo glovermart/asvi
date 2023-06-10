@@ -1,0 +1,16 @@
+QuestaSim-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+Start time: 02:38:05 on May 30,2023
+vlog -sv -lint=full testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv testbench/tb.sv 
+-- Compiling package alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop_sv_unit
+-- Compiling interface I
+-- Compiling module M1
+** Warning: testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv(43): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv(46): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv(48): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+-- Compiling module M2
+** Warning: testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv(71): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+-- Compiling module top
+** Error (suppressible): testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv(105): (vlog-7061) Variable 'i' driven in an always_ff block, may not be driven by any other process. See testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv(108).
+End time: 02:38:05 on May 30,2023, Elapsed time: 0:00:00
+Errors: 1, Warnings: 4
+FAILURE

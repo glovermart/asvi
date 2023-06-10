@@ -1,0 +1,16 @@
+    ( import function adder (input int i_a, i_b, output int o_a)
+                    |
+xmvlog: *E,MODYET (testcases/void_function_export.sv,8|20): Task or function prototypes in modport declarations not yet implemented.
+    ( import function adder (input int i_a, i_b, output int o_a)
+                                                      |
+xmvlog: *E,FNDKWD (testcases/void_function_export.sv,8|54): A Verilog keyword was found where an identifier was expected.
+    ( import function adder (input int i_a, i_b, output int o_a)
+                                                               |
+xmvlog: *E,EXPSMC (testcases/void_function_export.sv,8|63): expecting a semicolon (';') [3.2.2(IEEE)].
+    ( export adder
+           |
+xmvlog: *E,MODIOI (testcases/void_function_export.sv,12|11): Expected input/output/inout/import in modport declaration [SystemVerilog].
+  function void j.adder (input int i_a, i_b, output int o_a); // Define function.
+                |
+xmvlog: *E,SVNIMP (testcases/void_function_export.sv,22|16): SystemVerilog construct not yet implemented:  hierarchical task/function names (interface identifiers).
+FAILURE

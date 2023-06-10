@@ -1,0 +1,4 @@
+ERROR: [Synth 8-659] type mismatch in interface port: bit A vs. bit B[7:0] [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_arrayofSVI_port.sv:43]
+ERROR: [Synth 8-6156] failed synthesizing module 'M' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_arrayofSVI_port.sv:21]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_arrayofSVI_port.sv:34]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

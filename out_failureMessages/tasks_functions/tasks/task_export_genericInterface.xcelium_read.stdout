@@ -1,0 +1,16 @@
+    ( import task adder (input int i_a, i_b, output int o_a)
+                |
+xmvlog: *E,MODYET (testcases/task_export_genericInterface.sv,9|16): Task or function prototypes in modport declarations not yet implemented.
+    ( import task adder (input int i_a, i_b, output int o_a)
+                                                  |
+xmvlog: *E,FNDKWD (testcases/task_export_genericInterface.sv,9|50): A Verilog keyword was found where an identifier was expected.
+    ( import task adder (input int i_a, i_b, output int o_a)
+                                                           |
+xmvlog: *E,EXPSMC (testcases/task_export_genericInterface.sv,9|59): expecting a semicolon (';') [3.2.2(IEEE)].
+    ( export adder
+           |
+xmvlog: *E,MODIOI (testcases/task_export_genericInterface.sv,13|11): Expected input/output/inout/import in modport declaration [SystemVerilog].
+  task j.adder (input int i_a, i_b, output int o_a); // Define task.
+       |
+xmvlog: *E,SVNIMP (testcases/task_export_genericInterface.sv,23|7): SystemVerilog construct not yet implemented:  hierarchical task/function names (interface identifiers).
+FAILURE

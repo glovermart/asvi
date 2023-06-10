@@ -1,0 +1,10 @@
+%Warning-DECLFILENAME: testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:6:11: Filename 'alwaysff_arrayofSVI_instModuleport_noloopVector' does not match IFACE name: 'I'
+    6 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: testcases/alwaysff_arrayofSVI_instModuleport_noloopVector.sv:8:9: Signal is not used: 'x'
+                                                                                       : ... In instance top
+    8 |   logic x;
+      |         ^
+%Error: Exiting due to 2 warning(s)

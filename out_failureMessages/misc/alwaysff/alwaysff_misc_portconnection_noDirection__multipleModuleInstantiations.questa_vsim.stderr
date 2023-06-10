@@ -1,0 +1,4 @@
+Jobspy Error: error flushing "sock2c4cb50": broken pipe
+    while executing
+"JobSpyIntf::Start"
+Error loading design

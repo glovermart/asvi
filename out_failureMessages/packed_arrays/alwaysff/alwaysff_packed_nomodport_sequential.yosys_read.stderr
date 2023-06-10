@@ -1,0 +1,2 @@
+Warning: wire '\u_I.x' is assigned in a block at testcases/alwaysff_packed_nomodport_sequential.sv:22.5-22.20.
+testcases/alwaysff_packed_nomodport_sequential.sv:22: Warning: Identifier `\u_I.x' is implicitly declared.

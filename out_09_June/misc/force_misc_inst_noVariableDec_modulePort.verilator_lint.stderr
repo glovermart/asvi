@@ -1,0 +1,12 @@
+%Warning-DECLFILENAME: testcases/force_misc_inst_noVariableDec_modulePort.sv:3:11: Filename 'force_misc_inst_noVariableDec_modulePort' does not match IFACE name: 'I'
+    3 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-PINMISSING: testcases/force_misc_inst_noVariableDec_modulePort.sv:43:6: Cell has missing pin: 'i_b'
+   43 |   M1 u_M1
+      |      ^~~~
+%Error-ASSIGNIN: testcases/force_misc_inst_noVariableDec_modulePort.sv:53:10: Assigning to input/const variable: 'i_b'
+   53 |     u_M1.i_b <= 1'b1;
+      |          ^~~
+%Error: Exiting due to 1 error(s), 2 warning(s)

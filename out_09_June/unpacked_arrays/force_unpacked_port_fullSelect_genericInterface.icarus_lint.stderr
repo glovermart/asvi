@@ -1,0 +1,8 @@
+testcases/force_unpacked_port_fullSelect_genericInterface.sv:17: syntax error
+testcases/force_unpacked_port_fullSelect_genericInterface.sv:17: Errors in port declarations.
+testcases/force_unpacked_port_fullSelect_genericInterface.sv:25: syntax error
+testcases/force_unpacked_port_fullSelect_genericInterface.sv:25: error: malformed statement
+testcases/force_unpacked_port_fullSelect_genericInterface.sv:32: syntax error
+testcases/force_unpacked_port_fullSelect_genericInterface.sv:32: error: malformed statement
+testcases/force_unpacked_port_fullSelect_genericInterface.sv:47: syntax error
+testcases/force_unpacked_port_fullSelect_genericInterface.sv:47: error: syntax error in continuous assignment

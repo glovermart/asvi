@@ -1,0 +1,5 @@
+ERROR: [Synth 8-2715] syntax error near do [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_doWhileLoopScheme.sv:20]
+ERROR: [Synth 8-8779] SystemVerilog keyword do used in incorrect context [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_doWhileLoopScheme.sv:20]
+ERROR: [Synth 8-2715] syntax error near ++ [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_doWhileLoopScheme.sv:22]
+ERROR: [Synth 8-35] 'i' is not a constant [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_doWhileLoopScheme.sv:21]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

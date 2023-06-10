@@ -1,0 +1,13 @@
+Warning: wire '\p.z' is assigned in a block at testcases/alwaysff_misc_port_signalPerModule_clocks.sv:36.32-36.40.
+testcases/alwaysff_misc_port_signalPerModule_clocks.sv:36: Warning: Identifier `\p.z' is implicitly declared.
+testcases/alwaysff_misc_port_signalPerModule_clocks.sv:36: Warning: Identifier `\p.i_clk' is implicitly declared.
+Warning: wire '\p.y' is assigned in a block at testcases/alwaysff_misc_port_signalPerModule_clocks.sv:52.7-52.18.
+Warning: wire '\p.y' is assigned in a block at testcases/alwaysff_misc_port_signalPerModule_clocks.sv:54.7-54.18.
+testcases/alwaysff_misc_port_signalPerModule_clocks.sv:52: Warning: Identifier `\p.y' is implicitly declared.
+testcases/alwaysff_misc_port_signalPerModule_clocks.sv:51: Warning: Identifier `\p.i_srst' is implicitly declared.
+Warning: wire '\p.x' is assigned in a block at testcases/alwaysff_misc_port_signalPerModule_clocks.sv:70.7-70.18.
+Warning: wire '\p.x' is assigned in a block at testcases/alwaysff_misc_port_signalPerModule_clocks.sv:72.7-72.17.
+testcases/alwaysff_misc_port_signalPerModule_clocks.sv:70: Warning: Identifier `\p.x' is implicitly declared.
+testcases/alwaysff_misc_port_signalPerModule_clocks.sv:68: Warning: Identifier `\p.i_arst' is implicitly declared.
+testcases/alwaysff_misc_port_signalPerModule_clocks.sv:72: Warning: Identifier `\p.w' is implicitly declared.
+ERROR: Could not find signal '\p.$0\w[0:0]' in 'M2'

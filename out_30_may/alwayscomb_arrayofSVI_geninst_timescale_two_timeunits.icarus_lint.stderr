@@ -1,0 +1,13 @@
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/system.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/vhdl_sys.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/vhdl_textio.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/v2009.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits.sv:26: syntax error
+testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits.sv:26: Errors in port declarations.
+testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits.sv:53: error: repeat timeunit does not match the initial timeunit for this scope.
+testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits.sv:53: error: a timeprecision is missing or is too large!
+testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits.sv:54: error: repeat timeprecision found and the initial timeprecision for this scope is missing.

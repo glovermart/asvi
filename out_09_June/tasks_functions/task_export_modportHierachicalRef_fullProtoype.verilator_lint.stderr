@@ -1,0 +1,9 @@
+%Error-UNSUPPORTED: testcases/task_export_modportHierachicalRef_fullProtoype.sv:9:7: Unsupported: Modport import with prototype
+    9 |     ( import task adder (input int i_a, i_b, output int o_a)  
+      |       ^~~~~~
+                    ... For error description see https://verilator.org/warn/UNSUPPORTED?v=5.008
+%Error-UNSUPPORTED: testcases/task_export_modportHierachicalRef_fullProtoype.sv:23:10: Unsupported: Out of block function declaration
+   23 |   task p2.adder (input int i_a, i_b, output int o_a);  
+      |          ^
+%Error: Exiting due to 2 error(s)
+        ... See the manual at https://verilator.org/verilator_doc.html for more assistance.

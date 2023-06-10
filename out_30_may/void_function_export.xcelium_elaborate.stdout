@@ -1,0 +1,167 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/void_function_export.sv,44): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 2 input ports were not connected:
+xmelab: (./testcases/void_function_export.sv,42): i_a
+xmelab: (./testcases/void_function_export.sv,43): i_b
+
+  I u_I ();
+      |
+xmelab: *W,CUVWSI (./testcases/void_function_export.sv,47|6): 1 input port was not connected:
+xmelab: (./testcases/alwaysff_arrayofSVI_svi_notimeunitInheritance.sv,10): i_clk
+
+  M1 u_M1 
+        |
+xmelab: *W,CUVWSP (./testcases/void_function_export.sv,49|8): 3 output ports were not connected:
+xmelab: (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,31): o_a
+xmelab: (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,32): en
+xmelab: (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,33): i_arst
+
+  M1 u_M1 
+        |
+xmelab: *W,CUVWSP (./testcases/void_function_export.sv,49|8): 3 output ports were not connected:
+xmelab: (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,31): o_a
+xmelab: (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,32): en
+xmelab: (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,33): i_arst
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+    ( u_I.P2
+           |
+xmelab: *E,CUVUNF (./testcases/void_function_export.sv,50|11): Hierarchical name component lookup failed for 'P2' at 'tb.u_DUT'.
+    ( u_I.P1
+           |
+xmelab: *E,CUVUNF (./testcases/void_function_export.sv,54|11): Hierarchical name component lookup failed for 'P1' at 'tb.u_DUT'.
+  always_comb i.adder(i_a,i_b,o_a); // Perform addition operation.
+                    |
+xmelab: *E,CUVUNF (./testcases/void_function_export.sv,36|20): Hierarchical name component lookup failed for 'adder' at 'tb.u_DUT.u_M2'.
+    always_comb p1[i].x = 1'b1;
+                      |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,37|22): Hierarchical name component lookup failed for 'x' at 'tb.u_DUT.u_M1.genblk1[0]'.
+        p1[i].y <= 1'b0;
+              |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,40|14): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[0]'.
+        p1[i].y <= p1[i].x;
+              |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,42|14): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[0]'.
+        p1[i].y <= p1[i].x;
+                         |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,42|25): Hierarchical name component lookup failed for 'x' at 'tb.u_DUT.u_M1.genblk1[0]'.
+    assign o_a[i] = p1[i].y;
+                          |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,44|26): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[0]'.
+    always_comb p1[i].x = 1'b1;
+                      |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,37|22): Hierarchical name component lookup failed for 'x' at 'tb.u_DUT.u_M1.genblk1[1]'.
+        p1[i].y <= 1'b0;
+              |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,40|14): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[1]'.
+        p1[i].y <= p1[i].x;
+              |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,42|14): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[1]'.
+        p1[i].y <= p1[i].x;
+                         |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,42|25): Hierarchical name component lookup failed for 'x' at 'tb.u_DUT.u_M1.genblk1[1]'.
+    assign o_a[i] = p1[i].y;
+                          |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,44|26): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[1]'.
+    always_comb p1[i].x = 1'b1;
+                      |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,37|22): Hierarchical name component lookup failed for 'x' at 'tb.u_DUT.u_M1.genblk1[2]'.
+        p1[i].y <= 1'b0;
+              |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,40|14): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[2]'.
+        p1[i].y <= p1[i].x;
+              |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,42|14): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[2]'.
+        p1[i].y <= p1[i].x;
+                         |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,42|25): Hierarchical name component lookup failed for 'x' at 'tb.u_DUT.u_M1.genblk1[2]'.
+    assign o_a[i] = p1[i].y;
+                          |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,44|26): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[2]'.
+    always_comb p1[i].x = 1'b1;
+                      |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,37|22): Hierarchical name component lookup failed for 'x' at 'tb.u_DUT.u_M1.genblk1[3]'.
+        p1[i].y <= 1'b0;
+              |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,40|14): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[3]'.
+        p1[i].y <= p1[i].x;
+              |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,42|14): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[3]'.
+        p1[i].y <= p1[i].x;
+                         |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,42|25): Hierarchical name component lookup failed for 'x' at 'tb.u_DUT.u_M1.genblk1[3]'.
+    assign o_a[i] = p1[i].y;
+                          |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,44|26): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[3]'.
+    always_comb p1[i].x = 1'b1;
+                      |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,37|22): Hierarchical name component lookup failed for 'x' at 'tb.u_DUT.u_M1.genblk1[4]'.
+        p1[i].y <= 1'b0;
+              |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,40|14): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[4]'.
+        p1[i].y <= p1[i].x;
+              |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,42|14): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[4]'.
+        p1[i].y <= p1[i].x;
+                         |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,42|25): Hierarchical name component lookup failed for 'x' at 'tb.u_DUT.u_M1.genblk1[4]'.
+    assign o_a[i] = p1[i].y;
+                          |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,44|26): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[4]'.
+    always_comb p1[i].x = 1'b1;
+                      |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,37|22): Hierarchical name component lookup failed for 'x' at 'tb.u_DUT.u_M1.genblk1[5]'.
+        p1[i].y <= 1'b0;
+              |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,40|14): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[5]'.
+        p1[i].y <= p1[i].x;
+              |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,42|14): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[5]'.
+        p1[i].y <= p1[i].x;
+                         |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,42|25): Hierarchical name component lookup failed for 'x' at 'tb.u_DUT.u_M1.genblk1[5]'.
+    assign o_a[i] = p1[i].y;
+                          |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,44|26): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[5]'.
+    always_comb p1[i].x = 1'b1;
+                      |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,37|22): Hierarchical name component lookup failed for 'x' at 'tb.u_DUT.u_M1.genblk1[6]'.
+        p1[i].y <= 1'b0;
+              |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,40|14): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[6]'.
+        p1[i].y <= p1[i].x;
+              |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,42|14): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[6]'.
+        p1[i].y <= p1[i].x;
+                         |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,42|25): Hierarchical name component lookup failed for 'x' at 'tb.u_DUT.u_M1.genblk1[6]'.
+    assign o_a[i] = p1[i].y;
+                          |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,44|26): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[6]'.
+    always_comb p1[i].x = 1'b1;
+                      |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,37|22): Hierarchical name component lookup failed for 'x' at 'tb.u_DUT.u_M1.genblk1[7]'.
+        p1[i].y <= 1'b0;
+              |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,40|14): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[7]'.
+        p1[i].y <= p1[i].x;
+              |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,42|14): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[7]'.
+        p1[i].y <= p1[i].x;
+                         |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,42|25): Hierarchical name component lookup failed for 'x' at 'tb.u_DUT.u_M1.genblk1[7]'.
+    assign o_a[i] = p1[i].y;
+                          |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,44|26): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1.genblk1[7]'.
+  ( I.P1 p1[SIZE-1:0]
+          |
+xmelab: *E,URCEN (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv,30|10): Unresolved constant expression VST_D_IO_INTERFACE.
+  ( interface i // Generic interface.
+              |
+xmelab: *E,URCEN (./testcases/void_function_export.sv,30|14): Unresolved constant expression VST_D_IO_INTERFACE.
+FAILURE

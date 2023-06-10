@@ -1,0 +1,309 @@
+//  Tessent Shell  2022.4    Tue Nov 29 21:19:37 GMT 2022
+//                Unpublished work. Copyright 2022 Siemens
+//
+//      This material contains trade secrets or otherwise confidential 
+//  information owned by Siemens Industry Software Inc. or its affiliates 
+//   (collectively, "SISW"), or its licensors. Access to and use of this 
+//     information is strictly limited as set forth in the Customer's 
+//                   applicable agreements with SISW. 
+//
+//  Siemens software executing under x86-64 Linux on Fri Jun 09 11:08:21 CEST 2023.
+//  64 bit version
+//  Host: cad11.nordicsemi.no (386734 MB RAM, 31999 MB Swap)
+//
+//  command: set_tcl_shell_options -abort_dofile_on_error exit
+//  command: array set params {
+//             netlist ""
+//           }
+//  command: array set params $tessent_user_arg
+//  command: #Perform Automatic Test Pattern Generation (ATPG)
+//  command: #Invoke the Tessent tool for pattern generation
+//  command: set_context patterns -scan
+//  command: #Read in library for mapping cells to design components
+//  command: #Location of cell library unknown - ATPG run without library
+//  command: #read_cell_library [insert library name]
+//  command: #Load synthesized netlist with scan chain already inserted.
+//  command: read_verilog $params(netlist)
+//  command: #Specify the design top
+//  command: set_current_design top
+//  Warning: Undefined modules were found.
+//           Before using "set_system_mode" or "create_flat_model", you must either define
+//           the missing modules using "read_verilog" and/or "read_cell_library", or use the
+//           following command to treat them as black boxes:
+             add_black_boxes -modules { \
+                    AN2P \
+                    EO \
+                    EO3P \
+                    FA1A \
+             }
+//           You can also use "add_black_boxes -auto" to black box all undefined modules but
+//           it is recommended that you do not add this command to your dofile. Doing so may
+//           unintentionally black-box new undefined modules in future runs.
+//  Warning: 1 case: Undriven net in netlist module
+//  Warning: 4 cases: Undriven primary inout pin in netlist module
+//  Warning: 4 cases: Undefined module pin assumed to be inout
+//  Note: Issue set_current_design with the -show_elaboration_warnings option to see more details about previous warnings
+//  command: #add_black_boxes used here to suppress errors due to blackboxes
+//  command: #generated;possibly from  no cells in use or unconnected nets
+//  command: #in synthesized netlist
+//  command: add_black_boxes -auto
+//  command: #Set Tessent shell to analysis mode
+//  command: set_system_mode analysis
+//  Warning: Rule FN1 violation occurs 32 times
+//  Flattening process completed, gates=192, PIs=64, POs=32, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin circuit learning analyses.
+//  --------------------------------
+//  Learning completed, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin scan chain identification process, memory elements = 0.
+//  ---------------------------------------------------------------------------
+//  Circuit has no memory elements.
+//  command: #Specify the fault model
+//  command: set_fault_type stuck
+//  command: #Generate test patterns
+//  command: create_patterns -auto
+No faults in fault list. Adding all faults...
+// | ------------------------------------------------------------------------------------------------------------------ |
+// |                                             Analyzing the design                                                   |
+// |                                                                                                                    |
+// |      Current clock restriction setting:     Domain_clock (edge interaction)                                        |
+// |                                             (optimal)                                                              |
+// |                                                                                                                    |
+// |            Current abort limit setting:     30                                                                     |
+// |                                Calling:     set_abort_limit 300 100                                                |
+// | ------------------------------------------------------------------------------------------------------------------ |
+// |                                                                                                                    |
+// |               Current sequential depth:     0 (optimal)                                                            |
+// |                                                                                                                    |
+// | ------------------------------------------------------------------------------------------------------------------ |
+// |                                                                                                                    |
+// |                        Checking faults:     No undetected faults available. Exit.                                  |
+// |                              Recommend:     reset_au_faults                                                        |
+// | ------------------------------------------------------------------------------------------------------------------ |
+//  command: #Print statistics fault test using the patterns generated
+//  command: report_statistics 
+            Statistics Report           
+             Stuck-at Faults            
+----------------------------------------
+Fault Classes                #faults    
+                             (total)    
+-----------------------  ---------------
+  FU (full)                    192      
+  ---------------------  ---------------
+  AU (atpg_untestable)     192 (100.00%)
+----------------------------------------
+Fault Sub-classes                       
+  ---------------------                 
+  AU (atpg_untestable)                  
+    BB    (black_boxes)    192 (100.00%)
+----------------------------------------
+Coverage                                
+  ---------------------                 
+  test_coverage                   0.00% 
+  fault_coverage                  0.00% 
+  atpg_effectiveness            100.00% 
+----------------------------------------
+#test_patterns                        0 
+#simulated_patterns                   0 
+CPU_time (secs)                     8.5 
+----------------------------------------
+
+//  command: #Print faults/fault location in DUT
+//  command: report_faults -all
+
+    type    code    pin_pathname
+    ----   ------   ------------------------------------
+      0    AU.BB    /i_a[31]
+      1    AU.BB    /i_a[31]
+      0    AU.BB    /i_a[30]
+      1    AU.BB    /i_a[30]
+      0    AU.BB    /i_a[29]
+      1    AU.BB    /i_a[29]
+      0    AU.BB    /i_a[28]
+      1    AU.BB    /i_a[28]
+      0    AU.BB    /i_a[27]
+      1    AU.BB    /i_a[27]
+      0    AU.BB    /i_a[26]
+      1    AU.BB    /i_a[26]
+      0    AU.BB    /i_a[25]
+      1    AU.BB    /i_a[25]
+      0    AU.BB    /i_a[24]
+      1    AU.BB    /i_a[24]
+      0    AU.BB    /i_a[23]
+      1    AU.BB    /i_a[23]
+      0    AU.BB    /i_a[22]
+      1    AU.BB    /i_a[22]
+      0    AU.BB    /i_a[21]
+      1    AU.BB    /i_a[21]
+      0    AU.BB    /i_a[20]
+      1    AU.BB    /i_a[20]
+      0    AU.BB    /i_a[19]
+      1    AU.BB    /i_a[19]
+      0    AU.BB    /i_a[18]
+      1    AU.BB    /i_a[18]
+      0    AU.BB    /i_a[17]
+      1    AU.BB    /i_a[17]
+      0    AU.BB    /i_a[16]
+      1    AU.BB    /i_a[16]
+      0    AU.BB    /i_a[15]
+      1    AU.BB    /i_a[15]
+      0    AU.BB    /i_a[14]
+      1    AU.BB    /i_a[14]
+      0    AU.BB    /i_a[13]
+      1    AU.BB    /i_a[13]
+      0    AU.BB    /i_a[12]
+      1    AU.BB    /i_a[12]
+      0    AU.BB    /i_a[11]
+      1    AU.BB    /i_a[11]
+      0    AU.BB    /i_a[10]
+      1    AU.BB    /i_a[10]
+      0    AU.BB    /i_a[9]
+      1    AU.BB    /i_a[9]
+      0    AU.BB    /i_a[8]
+      1    AU.BB    /i_a[8]
+      0    AU.BB    /i_a[7]
+      1    AU.BB    /i_a[7]
+      0    AU.BB    /i_a[6]
+      1    AU.BB    /i_a[6]
+      0    AU.BB    /i_a[5]
+      1    AU.BB    /i_a[5]
+      0    AU.BB    /i_a[4]
+      1    AU.BB    /i_a[4]
+      0    AU.BB    /i_a[3]
+      1    AU.BB    /i_a[3]
+      0    AU.BB    /i_a[2]
+      1    AU.BB    /i_a[2]
+      0    AU.BB    /i_a[1]
+      1    AU.BB    /i_a[1]
+      0    AU.BB    /i_a[0]
+      1    AU.BB    /i_a[0]
+      0    AU.BB    /i_b[31]
+      1    AU.BB    /i_b[31]
+      0    AU.BB    /i_b[30]
+      1    AU.BB    /i_b[30]
+      0    AU.BB    /i_b[29]
+      1    AU.BB    /i_b[29]
+      0    AU.BB    /i_b[28]
+      1    AU.BB    /i_b[28]
+      0    AU.BB    /i_b[27]
+      1    AU.BB    /i_b[27]
+      0    AU.BB    /i_b[26]
+      1    AU.BB    /i_b[26]
+      0    AU.BB    /i_b[25]
+      1    AU.BB    /i_b[25]
+      0    AU.BB    /i_b[24]
+      1    AU.BB    /i_b[24]
+      0    AU.BB    /i_b[23]
+      1    AU.BB    /i_b[23]
+      0    AU.BB    /i_b[22]
+      1    AU.BB    /i_b[22]
+      0    AU.BB    /i_b[21]
+      1    AU.BB    /i_b[21]
+      0    AU.BB    /i_b[20]
+      1    AU.BB    /i_b[20]
+      0    AU.BB    /i_b[19]
+      1    AU.BB    /i_b[19]
+      0    AU.BB    /i_b[18]
+      1    AU.BB    /i_b[18]
+      0    AU.BB    /i_b[17]
+      1    AU.BB    /i_b[17]
+      0    AU.BB    /i_b[16]
+      1    AU.BB    /i_b[16]
+      0    AU.BB    /i_b[15]
+      1    AU.BB    /i_b[15]
+      0    AU.BB    /i_b[14]
+      1    AU.BB    /i_b[14]
+      0    AU.BB    /i_b[13]
+      1    AU.BB    /i_b[13]
+      0    AU.BB    /i_b[12]
+      1    AU.BB    /i_b[12]
+      0    AU.BB    /i_b[11]
+      1    AU.BB    /i_b[11]
+      0    AU.BB    /i_b[10]
+      1    AU.BB    /i_b[10]
+      0    AU.BB    /i_b[9]
+      1    AU.BB    /i_b[9]
+      0    AU.BB    /i_b[8]
+      1    AU.BB    /i_b[8]
+      0    AU.BB    /i_b[7]
+      1    AU.BB    /i_b[7]
+      0    AU.BB    /i_b[6]
+      1    AU.BB    /i_b[6]
+      0    AU.BB    /i_b[5]
+      1    AU.BB    /i_b[5]
+      0    AU.BB    /i_b[4]
+      1    AU.BB    /i_b[4]
+      0    AU.BB    /i_b[3]
+      1    AU.BB    /i_b[3]
+      0    AU.BB    /i_b[2]
+      1    AU.BB    /i_b[2]
+      0    AU.BB    /i_b[1]
+      1    AU.BB    /i_b[1]
+      0    AU.BB    /i_b[0]
+      1    AU.BB    /i_b[0]
+      0    AU.BB    /o_a[31]
+      1    AU.BB    /o_a[31]
+      0    AU.BB    /o_a[30]
+      1    AU.BB    /o_a[30]
+      0    AU.BB    /o_a[29]
+      1    AU.BB    /o_a[29]
+      0    AU.BB    /o_a[28]
+      1    AU.BB    /o_a[28]
+      0    AU.BB    /o_a[27]
+      1    AU.BB    /o_a[27]
+      0    AU.BB    /o_a[26]
+      1    AU.BB    /o_a[26]
+      0    AU.BB    /o_a[25]
+      1    AU.BB    /o_a[25]
+      0    AU.BB    /o_a[24]
+      1    AU.BB    /o_a[24]
+      0    AU.BB    /o_a[23]
+      1    AU.BB    /o_a[23]
+      0    AU.BB    /o_a[22]
+      1    AU.BB    /o_a[22]
+      0    AU.BB    /o_a[21]
+      1    AU.BB    /o_a[21]
+      0    AU.BB    /o_a[20]
+      1    AU.BB    /o_a[20]
+      0    AU.BB    /o_a[19]
+      1    AU.BB    /o_a[19]
+      0    AU.BB    /o_a[18]
+      1    AU.BB    /o_a[18]
+      0    AU.BB    /o_a[17]
+      1    AU.BB    /o_a[17]
+      0    AU.BB    /o_a[16]
+      1    AU.BB    /o_a[16]
+      0    AU.BB    /o_a[15]
+      1    AU.BB    /o_a[15]
+      0    AU.BB    /o_a[14]
+      1    AU.BB    /o_a[14]
+      0    AU.BB    /o_a[13]
+      1    AU.BB    /o_a[13]
+      0    AU.BB    /o_a[12]
+      1    AU.BB    /o_a[12]
+      0    AU.BB    /o_a[11]
+      1    AU.BB    /o_a[11]
+      0    AU.BB    /o_a[10]
+      1    AU.BB    /o_a[10]
+      0    AU.BB    /o_a[9]
+      1    AU.BB    /o_a[9]
+      0    AU.BB    /o_a[8]
+      1    AU.BB    /o_a[8]
+      0    AU.BB    /o_a[7]
+      1    AU.BB    /o_a[7]
+      0    AU.BB    /o_a[6]
+      1    AU.BB    /o_a[6]
+      0    AU.BB    /o_a[5]
+      1    AU.BB    /o_a[5]
+      0    AU.BB    /o_a[4]
+      1    AU.BB    /o_a[4]
+      0    AU.BB    /o_a[3]
+      1    AU.BB    /o_a[3]
+      0    AU.BB    /o_a[2]
+      1    AU.BB    /o_a[2]
+      0    AU.BB    /o_a[1]
+      1    AU.BB    /o_a[1]
+      0    AU.BB    /o_a[0]
+      1    AU.BB    /o_a[0]
+//  command: exit -force

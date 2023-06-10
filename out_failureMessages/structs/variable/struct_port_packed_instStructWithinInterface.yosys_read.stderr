@@ -1,0 +1,5 @@
+testcases/struct_port_packed_instStructWithinInterface.sv:30: Warning: Identifier `\p1.data' is implicitly declared.
+testcases/struct_port_packed_instStructWithinInterface.sv:42: Warning: Identifier `\p2.data' is implicitly declared.
+testcases/struct_port_packed_instStructWithinInterface.sv:55: Warning: Identifier `\u_I.P1' is implicitly declared.
+testcases/struct_port_packed_instStructWithinInterface.sv:59: Warning: Identifier `\u_I.P2' is implicitly declared.
+ERROR: Module `M2' referenced in module `top' in cell `u_m2' does not have a port named 'p2'.

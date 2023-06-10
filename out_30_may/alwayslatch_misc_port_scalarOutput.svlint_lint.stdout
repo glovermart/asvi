@@ -1,0 +1,569 @@
+[93mWarning[97m: Config file '.svlint.toml' is not found. Enable all rules(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:4:1
+[94m  |
+[94m4 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m  |[33m          [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_interface
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:4:1
+[94m  |
+[94m4 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Prefix `interface` identifier with "ifc_".
+[94m  |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_interface
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:4:1
+[94m  |
+[94m4 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_interface
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:4:1
+[94m  |
+[94m4 |[37m interface I
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:4:11
+[94m  |
+[94m4 |[37m interface I
+[94m  |[93m           ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m  |[33m            [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:5:5
+[94m  |
+[94m5 |[37m   ( input logic i_en
+[94m  |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m  |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:5:17
+[94m  |
+[94m5 |[37m   ( input logic i_en
+[94m  |[93m                 ^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m                     [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:6:5
+[94m  |
+[94m6 |[37m   , output logic o_a
+[94m  |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m  |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:6:18
+[94m  |
+[94m6 |[37m   , output logic o_a
+[94m  |[93m                  ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m                     [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:7:5
+[94m  |
+[94m7 |[37m   , input logic i_a
+[94m  |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m  |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:7:17
+[94m  |
+[94m7 |[37m   , input logic i_a
+[94m  |[93m                 ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m                    [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_indent
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:9:0
+[94m  |
+[94m9 |[37m 
+[94m  |[93m [93m hint  : Follow each newline with an integer multiple of 2 spaces.
+[94m  |[33m [33m reason: Consistent indentation is essential for readability.
+(B[m
+[91mFail[97m: re_forbidden_modport
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:10:2
+[94m   |
+[94m10 |[37m  modport P
+[94m   |[93m  ^^^^^^^[93m hint  : Use a modport identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m         [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_modport
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:10:2
+[94m   |
+[94m10 |[37m  modport P
+[94m   |[93m  ^^^^^^^[93m hint  : Use a modport identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m         [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:19:1
+[94m   |
+[94m19 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:19:1
+[94m   |
+[94m19 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:19:1
+[94m   |
+[94m19 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:19:1
+[94m   |
+[94m19 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:19:8
+[94m   |
+[94m19 |[37m module M1
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:20:5
+[94m   |
+[94m20 |[37m   ( I.P p1
+[94m   |[93m     ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m      [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:20:9
+[94m   |
+[94m20 |[37m   ( I.P p1
+[94m   |[93m         ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:20:9
+[94m   |
+[94m20 |[37m   ( I.P p1
+[94m   |[93m         ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: explicit_if_else
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:24:5
+[94m   |
+[94m24 |[37m     if (p1.i_en)
+[94m   |[93m     ^^[93m hint  : Add an `else` clause to the `if` statement.
+[94m   |[33m       [33m reason: Fully-specified conditional clarifies design intent.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:24:5
+[94m   |
+[94m24 |[37m     if (p1.i_en)
+[94m   |[93m     ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m   |[33m       [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:30:1
+[94m   |
+[94m30 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:30:1
+[94m   |
+[94m30 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:30:1
+[94m   |
+[94m30 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:30:1
+[94m   |
+[94m30 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:30:8
+[94m   |
+[94m30 |[37m module M2
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:31:5
+[94m   |
+[94m31 |[37m   ( I.P p1
+[94m   |[93m     ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m      [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:31:9
+[94m   |
+[94m31 |[37m   ( I.P p1
+[94m   |[93m         ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:31:9
+[94m   |
+[94m31 |[37m   ( I.P p1
+[94m   |[93m         ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: explicit_if_else
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:35:5
+[94m   |
+[94m35 |[37m     if (p1.i_en)
+[94m   |[93m     ^^[93m hint  : Add an `else` clause to the `if` statement.
+[94m   |[33m       [33m reason: Fully-specified conditional clarifies design intent.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:35:5
+[94m   |
+[94m35 |[37m     if (p1.i_en)
+[94m   |[93m     ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m   |[33m       [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:38:3
+[94m   |
+[94m38 |[37m   M1 u_M1 
+[94m   |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:38:6
+[94m   |
+[94m38 |[37m   M1 u_M1 
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:38:6
+[94m   |
+[94m38 |[37m   M1 u_M1 
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:39:0
+[94m   |
+[94m39 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:45:1
+[94m   |
+[94m45 |[37m module M3
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:45:1
+[94m   |
+[94m45 |[37m module M3
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:45:1
+[94m   |
+[94m45 |[37m module M3
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:45:1
+[94m   |
+[94m45 |[37m module M3
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:45:8
+[94m   |
+[94m45 |[37m module M3
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:46:5
+[94m   |
+[94m46 |[37m   ( I.P p1
+[94m   |[93m     ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m      [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:46:9
+[94m   |
+[94m46 |[37m   ( I.P p1
+[94m   |[93m         ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:46:9
+[94m   |
+[94m46 |[37m   ( I.P p1
+[94m   |[93m         ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: explicit_if_else
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:50:5
+[94m   |
+[94m50 |[37m     if (p1.i_en)
+[94m   |[93m     ^^[93m hint  : Add an `else` clause to the `if` statement.
+[94m   |[33m       [33m reason: Fully-specified conditional clarifies design intent.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:50:5
+[94m   |
+[94m50 |[37m     if (p1.i_en)
+[94m   |[93m     ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m   |[33m       [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:53:3
+[94m   |
+[94m53 |[37m   M2 u_M2 
+[94m   |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:53:6
+[94m   |
+[94m53 |[37m   M2 u_M2 
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:53:6
+[94m   |
+[94m53 |[37m   M2 u_M2 
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:54:0
+[94m   |
+[94m54 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:60:1
+[94m   |
+[94m60 |[37m module M4
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:60:1
+[94m   |
+[94m60 |[37m module M4
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:60:1
+[94m   |
+[94m60 |[37m module M4
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:60:1
+[94m   |
+[94m60 |[37m module M4
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:60:8
+[94m   |
+[94m60 |[37m module M4
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:61:5
+[94m   |
+[94m61 |[37m   ( I.P p2  // Another interface instance of modport.
+[94m   |[93m     ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m      [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:61:9
+[94m   |
+[94m61 |[37m   ( I.P p2  // Another interface instance of modport.
+[94m   |[93m         ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:61:9
+[94m   |
+[94m61 |[37m   ( I.P p2  // Another interface instance of modport.
+[94m   |[93m         ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: explicit_if_else
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:65:5
+[94m   |
+[94m65 |[37m     if (p2.i_en)
+[94m   |[93m     ^^[93m hint  : Add an `else` clause to the `if` statement.
+[94m   |[33m       [33m reason: Fully-specified conditional clarifies design intent.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:65:5
+[94m   |
+[94m65 |[37m     if (p2.i_en)
+[94m   |[93m     ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m   |[33m       [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:68:3
+[94m   |
+[94m68 |[37m   M3 u_M3 
+[94m   |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:68:6
+[94m   |
+[94m68 |[37m   M3 u_M3 
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:68:6
+[94m   |
+[94m68 |[37m   M3 u_M3 
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:69:0
+[94m   |
+[94m69 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:75:1
+[94m   |
+[94m75 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:75:1
+[94m   |
+[94m75 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:75:1
+[94m   |
+[94m75 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: uppercamelcase_module
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:75:8
+[94m   |
+[94m75 |[37m module top
+[94m   |[93m        ^^^[93m hint  : Begin `module` name with UpperCamelCase.
+[94m   |[33m           [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:76:21
+[94m   |
+[94m76 |[37m   ( input var logic i_en
+[94m   |[93m                     ^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                         [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:77:5
+[94m   |
+[94m77 |[37m   , output logic o_a
+[94m   |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m   |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:77:18
+[94m   |
+[94m77 |[37m   , output logic o_a
+[94m   |[93m                  ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                     [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:78:5
+[94m   |
+[94m78 |[37m   , input logic i_a
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:78:17
+[94m   |
+[94m78 |[37m   , input logic i_a
+[94m   |[93m                 ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                    [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:81:3
+[94m   |
+[94m81 |[37m   I u_I (.*);
+[94m   |[93m   ^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m    [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:81:5
+[94m   |
+[94m81 |[37m   I u_I (.*);
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:81:5
+[94m   |
+[94m81 |[37m   I u_I (.*);
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:83:3
+[94m   |
+[94m83 |[37m   M4 u_M4
+[94m   |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:83:6
+[94m   |
+[94m83 |[37m   M4 u_M4
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/alwayslatch_misc_port_scalarOutput.sv:83:6
+[94m   |
+[94m83 |[37m   M4 u_M4
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+FAILURE

@@ -1,0 +1,14 @@
+%Warning-DECLFILENAME: testcases/alwayscomb_misc_module_definition_port_only_svi.sv:5:11: Filename 'alwayscomb_misc_module_definition_port_only_svi' does not match IFACE name: 'I'
+    5 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: testcases/alwayscomb_misc_module_definition_port_only_svi.sv:9:9: Signal is not used: 'x'
+                                                                                       : ... In instance top.u_M
+    9 |   logic x;
+      |         ^
+%Warning-UNUSEDSIGNAL: testcases/alwayscomb_misc_module_definition_port_only_svi.sv:10:9: Signal is not used: 'y'
+                                                                                        : ... In instance top.u_M
+   10 |   logic y;
+      |         ^
+%Error: Exiting due to 3 warning(s)

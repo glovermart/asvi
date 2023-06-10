@@ -1,0 +1,24 @@
+testcases/assign_packed_port.sv:22: Warning: Identifier `\p.x' is implicitly declared.
+testcases/assign_packed_port.sv:22: Warning: Range select out of bounds on signal `\p.x': Setting result bit to undef.
+testcases/assign_packed_port.sv:22: Warning: Ignoring assignment to constant bits:
+    old assignment: 1'x = \i_a
+    new assignment: { } = { }.
+testcases/assign_packed_port.sv:39: Warning: Identifier `\u_I.x' is implicitly declared.
+Warning: multiple conflicting drivers for M$interfaces$I.\i_a:
+    module input i_a[0]
+    module input p.x[0]
+    module input p.x[1]
+    module input p.x[2]
+    module input p.x[3]
+    module input p.x[4]
+    module input p.x[5]
+    module input p.x[6]
+    module input p.x[7]
+Warning: Wire top.\o_a [7] is used but has no driver.
+Warning: Wire top.\o_a [6] is used but has no driver.
+Warning: Wire top.\o_a [5] is used but has no driver.
+Warning: Wire top.\o_a [4] is used but has no driver.
+Warning: Wire top.\o_a [3] is used but has no driver.
+Warning: Wire top.\o_a [2] is used but has no driver.
+Warning: Wire top.\o_a [1] is used but has no driver.
+Warning: Wire top.\o_a [0] is used but has no driver.

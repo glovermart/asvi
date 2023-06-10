@@ -1,0 +1,4 @@
+testcases/alwaysff_packed_modport.sv:17: syntax error
+testcases/alwaysff_packed_modport.sv:17: Errors in port declarations.
+testcases/alwaysff_packed_modport.sv:31: warning: implicit definition of wire 'o_a'.
+testcases/alwaysff_packed_modport.sv:48: warning: implicit definition of wire 'u_I'.

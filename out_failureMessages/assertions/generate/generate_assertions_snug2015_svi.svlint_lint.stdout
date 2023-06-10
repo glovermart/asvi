@@ -1,0 +1,6 @@
+[91mError[97m: parse error
+[94m   -->[37m testcases/generate_assertions_snug2015_svi.sv:19:28
+[94m   |
+[94m19 |[37m     if (!(S inside {[1:2]})) $fatal(0,"In %m S=%0d; must be 1 or 2", S);
+[94m   |[93m                            ^(B[m
+FAILURE

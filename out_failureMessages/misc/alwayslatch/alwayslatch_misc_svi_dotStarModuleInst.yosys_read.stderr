@@ -1,0 +1,8 @@
+testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:25: Warning: Identifier `\u_I.i_clk' is implicitly declared.
+testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:26: Warning: Identifier `\u_I.x' is implicitly declared.
+testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:42: Warning: Identifier `\u_M1.o_a' is implicitly declared.
+testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:58: Warning: Identifier `\u_M2.a' is implicitly declared.
+Warning: wire '\u_I.o_a' is assigned in a block at testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:72.6-72.24.
+testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:72: Warning: Identifier `\u_I.o_a' is implicitly declared.
+testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:72: Warning: Identifier `\u_M3.a' is implicitly declared.
+ERROR: No matching wire for implicit port connection `o_a' of cell M2.u_M1 (M1).

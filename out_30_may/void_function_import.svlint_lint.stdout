@@ -1,0 +1,464 @@
+[93mWarning[97m: Config file '.svlint.toml' is not found. Enable all rules(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/void_function_import.sv:5:1
+[94m  |
+[94m5 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m  |[33m          [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_interface
+[94m   -->[37m testcases/void_function_import.sv:5:1
+[94m  |
+[94m5 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Prefix `interface` identifier with "ifc_".
+[94m  |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_interface
+[94m   -->[37m testcases/void_function_import.sv:5:1
+[94m  |
+[94m5 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_interface
+[94m   -->[37m testcases/void_function_import.sv:5:1
+[94m  |
+[94m5 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/void_function_import.sv:5:11
+[94m  |
+[94m5 |[37m interface I;
+[94m  |[93m           ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m  |[33m            [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: function_with_automatic
+[94m   -->[37m testcases/void_function_import.sv:7:3
+[94m  |
+[94m7 |[37m   function void adder (input int i_a, i_b, output int o_a); // Define function 1.
+[94m  |[93m   ^^^^^^^^[93m hint  : Add the `automatic` lifetime specifier to function.
+[94m  |[33m           [33m reason: Static lifetime of function items causes a simulation/synthesis mismatch.
+(B[m
+[91mFail[97m: re_forbidden_function
+[94m   -->[37m testcases/void_function_import.sv:7:3
+[94m  |
+[94m7 |[37m   function void adder (input int i_a, i_b, output int o_a); // Define function 1.
+[94m  |[93m   ^^^^^^^^[93m hint  : Use a function identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: function_with_automatic
+[94m   -->[37m testcases/void_function_import.sv:11:3
+[94m   |
+[94m11 |[37m   function void subtractor (input int i_a, i_b, output int o_b); // Define function 2.
+[94m   |[93m   ^^^^^^^^[93m hint  : Add the `automatic` lifetime specifier to function.
+[94m   |[33m           [33m reason: Static lifetime of function items causes a simulation/synthesis mismatch.
+(B[m
+[91mFail[97m: re_forbidden_function
+[94m   -->[37m testcases/void_function_import.sv:11:3
+[94m   |
+[94m11 |[37m   function void subtractor (input int i_a, i_b, output int o_b); // Define function 2.
+[94m   |[93m   ^^^^^^^^[93m hint  : Use a function identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m           [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_modport
+[94m   -->[37m testcases/void_function_import.sv:15:3
+[94m   |
+[94m15 |[37m   modport P1
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_modport
+[94m   -->[37m testcases/void_function_import.sv:15:3
+[94m   |
+[94m15 |[37m   modport P1
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_modport
+[94m   -->[37m testcases/void_function_import.sv:18:3
+[94m   |
+[94m18 |[37m   modport P2
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_modport
+[94m   -->[37m testcases/void_function_import.sv:18:3
+[94m   |
+[94m18 |[37m   modport P2
+[94m   |[93m   ^^^^^^^[93m hint  : Use a modport identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/void_function_import.sv:24:1
+[94m   |
+[94m24 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/void_function_import.sv:24:1
+[94m   |
+[94m24 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/void_function_import.sv:24:1
+[94m   |
+[94m24 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/void_function_import.sv:24:1
+[94m   |
+[94m24 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/void_function_import.sv:24:8
+[94m   |
+[94m24 |[37m module M1
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/void_function_import.sv:25:5
+[94m   |
+[94m25 |[37m   ( I.P1 p1
+[94m   |[93m     ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m      [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/void_function_import.sv:25:10
+[94m   |
+[94m25 |[37m   ( I.P1 p1
+[94m   |[93m          ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m            [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/void_function_import.sv:25:10
+[94m   |
+[94m25 |[37m   ( I.P1 p1
+[94m   |[93m          ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m            [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/void_function_import.sv:26:5
+[94m   |
+[94m26 |[37m   , input int i_a
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/void_function_import.sv:26:15
+[94m   |
+[94m26 |[37m   , input int i_a
+[94m   |[93m               ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                  [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/void_function_import.sv:27:5
+[94m   |
+[94m27 |[37m   , input int i_b
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/void_function_import.sv:27:15
+[94m   |
+[94m27 |[37m   , input int i_b
+[94m   |[93m               ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                  [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/void_function_import.sv:28:5
+[94m   |
+[94m28 |[37m   , output int o_a
+[94m   |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m   |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/void_function_import.sv:28:16
+[94m   |
+[94m28 |[37m   , output int o_a
+[94m   |[93m                ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                   [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_commaleading
+[94m   -->[37m testcases/void_function_import.sv:31:27
+[94m   |
+[94m31 |[37m   always_comb p1.adder(i_a,i_b,o_a); // Call the adder function.
+[94m   |[93m                           ^[93m hint  : Follow each comma with a single space (comma-leading format).
+[94m   |[33m                            [33m reason: Consistent style enhances readability.
+(B[m
+[91mFail[97m: style_commaleading
+[94m   -->[37m testcases/void_function_import.sv:31:31
+[94m   |
+[94m31 |[37m   always_comb p1.adder(i_a,i_b,o_a); // Call the adder function.
+[94m   |[93m                               ^[93m hint  : Follow each comma with a single space (comma-leading format).
+[94m   |[33m                                [33m reason: Consistent style enhances readability.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/void_function_import.sv:34:1
+[94m   |
+[94m34 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/void_function_import.sv:34:1
+[94m   |
+[94m34 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/void_function_import.sv:34:1
+[94m   |
+[94m34 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/void_function_import.sv:34:1
+[94m   |
+[94m34 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/void_function_import.sv:34:8
+[94m   |
+[94m34 |[37m module M2
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/void_function_import.sv:35:5
+[94m   |
+[94m35 |[37m   ( I.P2 p2
+[94m   |[93m     ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m      [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/void_function_import.sv:35:10
+[94m   |
+[94m35 |[37m   ( I.P2 p2
+[94m   |[93m          ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m            [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/void_function_import.sv:35:10
+[94m   |
+[94m35 |[37m   ( I.P2 p2
+[94m   |[93m          ^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m            [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/void_function_import.sv:36:5
+[94m   |
+[94m36 |[37m   , input int i_a
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/void_function_import.sv:36:15
+[94m   |
+[94m36 |[37m   , input int i_a
+[94m   |[93m               ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                  [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/void_function_import.sv:37:5
+[94m   |
+[94m37 |[37m   , input int i_b
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/void_function_import.sv:37:15
+[94m   |
+[94m37 |[37m   , input int i_b
+[94m   |[93m               ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                  [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/void_function_import.sv:38:5
+[94m   |
+[94m38 |[37m   , output int o_b
+[94m   |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m   |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/void_function_import.sv:38:16
+[94m   |
+[94m38 |[37m   , output int o_b
+[94m   |[93m                ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                   [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_commaleading
+[94m   -->[37m testcases/void_function_import.sv:41:32
+[94m   |
+[94m41 |[37m   always_comb p2.subtractor(i_a,i_b,o_b); // Call the subtractor function.
+[94m   |[93m                                ^[93m hint  : Follow each comma with a single space (comma-leading format).
+[94m   |[33m                                 [33m reason: Consistent style enhances readability.
+(B[m
+[91mFail[97m: style_commaleading
+[94m   -->[37m testcases/void_function_import.sv:41:36
+[94m   |
+[94m41 |[37m   always_comb p2.subtractor(i_a,i_b,o_b); // Call the subtractor function.
+[94m   |[93m                                    ^[93m hint  : Follow each comma with a single space (comma-leading format).
+[94m   |[33m                                     [33m reason: Consistent style enhances readability.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/void_function_import.sv:44:1
+[94m   |
+[94m44 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/void_function_import.sv:44:1
+[94m   |
+[94m44 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/void_function_import.sv:44:1
+[94m   |
+[94m44 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: uppercamelcase_module
+[94m   -->[37m testcases/void_function_import.sv:44:8
+[94m   |
+[94m44 |[37m module top
+[94m   |[93m        ^^^[93m hint  : Begin `module` name with UpperCamelCase.
+[94m   |[33m           [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/void_function_import.sv:45:5
+[94m   |
+[94m45 |[37m   ( input int i_a
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/void_function_import.sv:45:15
+[94m   |
+[94m45 |[37m   ( input int i_a
+[94m   |[93m               ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                  [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/void_function_import.sv:46:5
+[94m   |
+[94m46 |[37m   , input int i_b
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/void_function_import.sv:46:15
+[94m   |
+[94m46 |[37m   , input int i_b
+[94m   |[93m               ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                  [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/void_function_import.sv:47:5
+[94m   |
+[94m47 |[37m   , output int o_a
+[94m   |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m   |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/void_function_import.sv:47:16
+[94m   |
+[94m47 |[37m   , output int o_a
+[94m   |[93m                ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                   [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/void_function_import.sv:48:5
+[94m   |
+[94m48 |[37m   , output int o_b
+[94m   |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m   |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/void_function_import.sv:48:16
+[94m   |
+[94m48 |[37m   , output int o_b
+[94m   |[93m                ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                   [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/void_function_import.sv:51:1
+[94m   |
+[94m51 |[37m I u_I ();
+[94m   |[93m ^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m  [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/void_function_import.sv:51:3
+[94m   |
+[94m51 |[37m I u_I ();
+[94m   |[93m   ^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m      [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/void_function_import.sv:51:3
+[94m   |
+[94m51 |[37m I u_I ();
+[94m   |[93m   ^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m      [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/void_function_import.sv:52:1
+[94m   |
+[94m52 |[37m M1 u_M1
+[94m   |[93m ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m   [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/void_function_import.sv:52:4
+[94m   |
+[94m52 |[37m M1 u_M1
+[94m   |[93m    ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/void_function_import.sv:52:4
+[94m   |
+[94m52 |[37m M1 u_M1
+[94m   |[93m    ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/void_function_import.sv:57:1
+[94m   |
+[94m57 |[37m M2 u_M2
+[94m   |[93m ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m   [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/void_function_import.sv:57:4
+[94m   |
+[94m57 |[37m M2 u_M2
+[94m   |[93m    ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/void_function_import.sv:57:4
+[94m   |
+[94m57 |[37m M2 u_M2
+[94m   |[93m    ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+FAILURE

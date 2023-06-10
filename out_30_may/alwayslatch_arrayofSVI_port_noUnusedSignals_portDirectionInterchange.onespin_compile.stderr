@@ -1,0 +1,88 @@
+$tcl_library is set to: /cad/mentor/oneSpin360/2023.1/etc/tcl8.6
+init.tcl executed.
+source "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_defaults.tcl"
+source -signed "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_startup.tcl.obf"
+source "/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl"
+-I- FileParse - Analyzing source file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv" .... [1]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:31: Analyzing module ( M1 ). [4]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:53: Analyzing module ( M2 ). [4]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:68: Analyzing module ( top ). [4]
+-I- Elaborate auto-selected the toplevel: "verilog!work.top"
+-I- Elaborating verilog portion...
+-W- UndrivenReg - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:40: reading undriven register 'i_arst'.
+-W- UndrivenReg - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:42: reading undriven register 'en'.
+-W- UndrivenOutput - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:35: output 'i_arst' is undriven.
+-W- UndrivenOutput - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:34: output 'en' is undriven.
+-W- UndrivenReg - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:61: reading undriven register 'en'.
+-W- UndrivenOutput - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:56: output 'en' is undriven.
+-W- InputAssign - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:81: Assignment to input 'en'.
+-W- InputAssign - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:82: Assignment to input 'i_arst'.
+-W- InputAssign - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:88: Assignment to input 'en'.
+-W- NetWithoutSink - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:69: net 'en' has no sink.
+-W- NetWithoutSink - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:71: net 'i_arst' has no sink.
+-W- NetWithoutSink - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:70: net 'i_clk' has no sink.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:69: wire 'en$resolve' has 3 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:81:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:88:
+	.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:71: wire 'i_arst$resolve' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:82:
+	.
+
+Warning Statistics:
+-------------------
+    2   MultDrivers          multiple drivers
+    3   InputAssign          input assignment
+    3   NetWithoutSink       net without sink (never read)
+    3   UndrivenReg          reading undriven register
+    3   UndrivenOutput       undriven output
+-I- Elaboration of design golden succeeded.
+-I- Traversing modules of design 'top' ...
+-I- Traversing modules of design 'top' took 0.06 seconds.
+-I- Analyzing signal dependency in design 'top' ...
+-I- Analyzing signal dependency in design 'top' took 0.01 seconds.
+-I- Analyzing loops ...
+-I- Analyzing loops took 0.00 seconds.
+-I- Analyzing primary and generated clocks ...
+-I- Computing next states ...
+-I- Computing next states took 0.01 seconds.
+-I- Analyzing primary and generated clocks took 0.01 seconds.
+-I- Checking clock dependency assumption ...
+-I- Checking clock dependency assumption took 0.01 seconds.
+-I- Computing CSA result ...
+-I- Computing CSA result took 0.00 seconds.
+-I- Finishing CSA analysis ...
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:32: State 'u_M1/p1[0]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:32: State 'u_M1/p1[1]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:32: State 'u_M1/p1[2]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:32: State 'u_M1/p1[3]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:32: State 'u_M1/p1[4]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:32: State 'u_M1/p1[5]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:32: State 'u_M1/p1[6]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:32: State 'u_M1/p1[7]/y' is classified as latch, because it is not edge sensitive.
+-I- Compilation for design golden succeeded.
+-R- Printed Messages
+===============================================================================
+class       category            memo                                                          occurrence
+-------------------------------------------------------------------------------
+Warning     InputAssign         input assignment                                              3         
+Warning     MultDrivers         multiple drivers                                              2         
+Warning     NetWithoutSink      net without sink (never read)                                 3         
+Warning     UndrivenOutput      undriven output                                               3         
+Warning     UndrivenReg         reading undriven register                                     3         
+Info        AnalyzeModule       analyzing module                                              3         
+Info        FileParse           file parsed                                                   1         
+Info        Latch               State  is classified as latch                                 8         
+Info        {}                  unclassified message                                          18        
+Info        {}                  {}                                                            1         
+Result      {}                  {}                                                            1         
+Plain       {}                  unclassified message                                          1         
+Plain       {}                  {}                                                            13        
+TclStdOut   {}                  {}                                                            2         
+CommandLog  {}                  {}                                                            3         
+	
+-R- Filtered Messages
+===============================================================================
+id   active   class     category            memo                     text                     src_loc        origin  hits 
+-------------------------------------------------------------------------------
+No message filters available.

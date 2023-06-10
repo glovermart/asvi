@@ -1,0 +1,204 @@
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source tcl/vivado_batch_run.tcl
+# read_verilog -sv $argv
+read_verilog: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2998.457 ; gain = 2.023 ; free physical = 2643 ; free virtual = 276195
+# synth_design -top top -part xc7k70tfbg676-1
+Command: synth_design -top top -part xc7k70tfbg676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3655
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2998.457 ; gain = 0.000 ; free physical = 1830 ; free virtual = 274618
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:45]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'M' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:25]
+WARNING: [Synth 8-330] inout connections inferred for interface port 'I' with no modport [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:68]
+INFO: [Synth 8-6155] done synthesizing module 'M' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:45]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2998.465 ; gain = 0.008 ; free physical = 2919 ; free virtual = 275713
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2998.465 ; gain = 0.008 ; free physical = 2912 ; free virtual = 275706
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbg676-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbg676-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3006.461 ; gain = 8.004 ; free physical = 2910 ; free virtual = 275704
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3006.469 ; gain = 8.012 ; free physical = 2900 ; free virtual = 275695
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 3006.469 ; gain = 8.012 ; free physical = 2653 ; free virtual = 275451
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 3006.469 ; gain = 8.012 ; free physical = 2665 ; free virtual = 275463
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4765] Removing register instance (\genblk1[7].u_M/o_a_reg ) from module (top) as it is equivalent to (\genblk1[0].u_M/o_a_reg ) and driving same net [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:37]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[6].u_M/o_a_reg ) from module (top) as it is equivalent to (\genblk1[0].u_M/o_a_reg ) and driving same net [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:37]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[5].u_M/o_a_reg ) from module (top) as it is equivalent to (\genblk1[0].u_M/o_a_reg ) and driving same net [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:37]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[4].u_M/o_a_reg ) from module (top) as it is equivalent to (\genblk1[0].u_M/o_a_reg ) and driving same net [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:37]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[3].u_M/o_a_reg ) from module (top) as it is equivalent to (\genblk1[0].u_M/o_a_reg ) and driving same net [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:37]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[2].u_M/o_a_reg ) from module (top) as it is equivalent to (\genblk1[0].u_M/o_a_reg ) and driving same net [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:37]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[1].u_M/o_a_reg ) from module (top) as it is equivalent to (\genblk1[0].u_M/o_a_reg ) and driving same net [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:37]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[7].u_M/o_b_reg ) from module (top) as it is equivalent to (\genblk1[0].u_M/o_b_reg ) and driving same net [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:40]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[6].u_M/o_b_reg ) from module (top) as it is equivalent to (\genblk1[0].u_M/o_b_reg ) and driving same net [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:40]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[5].u_M/o_b_reg ) from module (top) as it is equivalent to (\genblk1[0].u_M/o_b_reg ) and driving same net [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:40]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[4].u_M/o_b_reg ) from module (top) as it is equivalent to (\genblk1[0].u_M/o_b_reg ) and driving same net [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:40]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[3].u_M/o_b_reg ) from module (top) as it is equivalent to (\genblk1[0].u_M/o_b_reg ) and driving same net [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:40]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[2].u_M/o_b_reg ) from module (top) as it is equivalent to (\genblk1[0].u_M/o_b_reg ) and driving same net [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:40]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[1].u_M/o_b_reg ) from module (top) as it is equivalent to (\genblk1[0].u_M/o_b_reg ) and driving same net [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:40]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 3006.469 ; gain = 8.012 ; free physical = 2664 ; free virtual = 275463
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 3006.469 ; gain = 8.012 ; free physical = 2841 ; free virtual = 275651
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 3006.469 ; gain = 8.012 ; free physical = 2841 ; free virtual = 275651
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 3006.469 ; gain = 8.012 ; free physical = 2841 ; free virtual = 275651
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 3006.469 ; gain = 8.012 ; free physical = 2841 ; free virtual = 275651
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 3006.469 ; gain = 8.012 ; free physical = 2841 ; free virtual = 275651
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 3006.469 ; gain = 8.012 ; free physical = 2841 ; free virtual = 275651
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |    16|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    16|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 3006.469 ; gain = 8.012 ; free physical = 2841 ; free virtual = 275651
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 3006.469 ; gain = 8.012 ; free physical = 2843 ; free virtual = 275654
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 3006.469 ; gain = 8.012 ; free physical = 2844 ; free virtual = 275654
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3006.691 ; gain = 0.000 ; free physical = 3169 ; free virtual = 275880
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3006.691 ; gain = 0.000 ; free physical = 3082 ; free virtual = 275794
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 2820906a
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 3006.691 ; gain = 8.234 ; free physical = 3287 ; free virtual = 275999
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  9 14:46:25 2023...

@@ -1,0 +1,6 @@
+Warning: wire '\u_I.y' is assigned in a block at testcases/alwayslatch_misc_inst.sv:20.7-20.21.
+testcases/alwayslatch_misc_inst.sv:20: Warning: Identifier `\u_I.y' is implicitly declared.
+testcases/alwayslatch_misc_inst.sv:20: Warning: Identifier `\u_I.x' is implicitly declared.
+Warning: wire '\u_I.z' is assigned in a block at testcases/alwayslatch_misc_inst.sv:37.7-37.21.
+testcases/alwayslatch_misc_inst.sv:37: Warning: Identifier `\u_I.z' is implicitly declared.
+Warning: Wire M1$interfaces$I.\u_I.x is used but has no driver.

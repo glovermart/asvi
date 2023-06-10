@@ -1,0 +1,20 @@
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/system.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/vhdl_sys.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/vhdl_textio.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/v2009.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+testcases/alwayslatch_misc_port_scalarOutput.sv:20: syntax error
+testcases/alwayslatch_misc_port_scalarOutput.sv:20: Errors in port declarations.
+testcases/alwayslatch_misc_port_scalarOutput.sv:31: syntax error
+testcases/alwayslatch_misc_port_scalarOutput.sv:31: Errors in port declarations.
+testcases/alwayslatch_misc_port_scalarOutput.sv:46: syntax error
+testcases/alwayslatch_misc_port_scalarOutput.sv:46: Errors in port declarations.
+testcases/alwayslatch_misc_port_scalarOutput.sv:61: syntax error
+testcases/alwayslatch_misc_port_scalarOutput.sv:61: Errors in port declarations.
+testcases/alwayslatch_misc_port_scalarOutput.sv:69: warning: implicit definition of wire 'p2'.
+testcases/alwayslatch_misc_port_scalarOutput.sv:76: syntax error
+testcases/alwayslatch_misc_port_scalarOutput.sv:1: Errors in port declarations.
+testcases/alwayslatch_misc_port_scalarOutput.sv:84: warning: implicit definition of wire 'u_I'.

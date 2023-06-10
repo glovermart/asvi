@@ -1,0 +1,135 @@
+$tcl_library is set to: /cad/mentor/oneSpin360/2023.1/etc/tcl8.6
+init.tcl executed.
+source "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_defaults.tcl"
+source -signed "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_startup.tcl.obf"
+source "/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl"
+-I- FileParse - Analyzing source file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv" .... [1]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:29: Analyzing module ( M1 ). [4]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:43: Analyzing module ( M2 ). [4]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:73: Analyzing module ( M3 ). [4]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:103: Analyzing module ( top ). [4]
+-I- Elaborate auto-selected the toplevel: "verilog!work.top"
+-W- SimSynMismatch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:6: Initialization of non-wire register might be ignored by some synthesis tools. Use continuous assignment instead.
+-I- Elaborating verilog portion...
+-W- PortConnection - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:112: instance 'u_I': Port 'i_clk' not found in module 'I' (defined here: /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:4:).
+-W- PortConnection - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:112: instance 'u_I': Port 'i_srst' not found in module 'I' (defined here: /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:4:).
+-W- PortConnection - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:112: instance 'u_I': Port 'i_arst' not found in module 'I' (defined here: /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:4:).
+-W- PortConnection - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:112: instance 'u_I': Port 'z' not found in module 'I' (defined here: /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:4:).
+-W- PortConnection - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:112: instance 'u_I': Port 'y' not found in module 'I' (defined here: /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:4:).
+-W- PortConnection - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:112: instance 'u_I': Port 'x' not found in module 'I' (defined here: /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:4:).
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:44: register 'p.z' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:50:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:58:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:44: output 'p.z' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:50:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:58:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:44: register 'p.y' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:50:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:63:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:44: output 'p.y' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:50:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:63:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:44: register 'p.x' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:50:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:68:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:44: output 'p.x' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:50:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:68:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:74: register 'p.z' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:80:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:88:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:74: output 'p.z' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:80:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:88:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:74: register 'p.y' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:80:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:93:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:74: output 'p.y' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:80:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:93:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:74: register 'p.x' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:80:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:98:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:74: output 'p.x' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:80:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:98:.
+-W- NetWithoutSink - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:104: net 'i_clk' has no sink.
+-W- NetWithoutSink - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:105: net 'i_srst' has no sink.
+-W- NetWithoutSink - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:106: net 'i_arst' has no sink.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:8: register 'z' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:122:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:126:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:8: register 'z' is driven in multiple procedural assignments; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:56:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:58:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:86:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:88:
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:9: register 'y' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:122:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:126:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:9: register 'y' is driven in multiple procedural assignments; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:61:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:63:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:91:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:93:
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:10: register 'x' has 2 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:122:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:126:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:10: register 'x' is driven in multiple procedural assignments; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:66:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:68:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:96:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:98:
+-W- UndrivenOutput - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:107: output 'z' is undriven.
+-W- UndrivenOutput - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:108: output 'y' is undriven.
+-W- UndrivenOutput - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_port_signalsInInterfaceDefinition.sv:109: output 'x' is undriven.
+
+Warning Statistics:
+-------------------
+    1   SimSynMismatch       simulation synthesis mismatch
+    3   NetWithoutSink       net without sink (never read)
+    3   UndrivenOutput       undriven output
+    6   PortConnection       non-matching port connection
+   18   MultDrivers          multiple drivers
+-I- Elaboration of design golden succeeded.
+-I- Traversing modules of design 'top' ...
+-I- Traversing modules of design 'top' took 0.47 seconds.
+-I- Analyzing signal dependency in design 'top' ...
+-I- Analyzing signal dependency in design 'top' took 0.03 seconds.
+-I- Analyzing loops ...
+-I- Analyzing loops took 0.02 seconds.
+-I- Analyzing primary and generated clocks ...
+-I- Computing next states ...
+-I- Computing next states took 0.00 seconds.
+-I- Analyzing primary and generated clocks took 0.00 seconds.
+-I- Checking clock dependency assumption ...
+-I- Checking clock dependency assumption took 0.03 seconds.
+-I- Computing CSA result ...
+-I- Computing CSA result took 0.01 seconds.
+-I- Finishing CSA analysis ...
+-I- Flip-flops with constant clock detected - will be treated as latch.
+-I- Compilation for design golden succeeded.
+-R- Printed Messages
+===============================================================================
+class       category            memo                                                          occurrence
+-------------------------------------------------------------------------------
+Warning     MultDrivers         multiple drivers                                              18        
+Warning     NetWithoutSink      net without sink (never read)                                 3         
+Warning     PortConnection      non-matching port connection                                  6         
+Warning     SimSynMismatch      simulation synthesis mismatch                                 1         
+Warning     UndrivenOutput      undriven output                                               3         
+Info        AnalyzeModule       analyzing module                                              4         
+Info        FileParse           file parsed                                                   1         
+Info        {}                  unclassified message                                          19        
+Info        {}                  {}                                                            1         
+Result      {}                  {}                                                            1         
+Plain       {}                  unclassified message                                          1         
+Plain       {}                  {}                                                            12        
+TclStdOut   {}                  {}                                                            2         
+CommandLog  {}                  {}                                                            3         
+	
+-R- Filtered Messages
+===============================================================================
+id   active   class     category            memo                     text                     src_loc        origin  hits 
+-------------------------------------------------------------------------------
+No message filters available.

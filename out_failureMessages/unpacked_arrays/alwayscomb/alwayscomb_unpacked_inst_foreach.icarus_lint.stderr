@@ -1,0 +1,2 @@
+testcases/alwayscomb_unpacked_inst_foreach.sv:21: syntax error
+testcases/alwayscomb_unpacked_inst_foreach.sv:22: Syntax in assignment statement l-value.

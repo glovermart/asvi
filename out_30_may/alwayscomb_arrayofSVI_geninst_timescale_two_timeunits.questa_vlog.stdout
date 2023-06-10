@@ -1,0 +1,8 @@
+QuestaSim-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+Start time: 02:35:05 on May 30,2023
+vlog -sv -lint=full testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits.sv testbench/tb.sv 
+** Error: testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits.sv(53): (vlog-2209) A new timescale value (timeUnits) conflicts with an existing value
+** Error: testcases/alwayscomb_arrayofSVI_geninst_timescale_two_timeunits.sv(84): (vlog-2730) Undefined variable: 'i'.
+End time: 02:35:05 on May 30,2023, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+FAILURE

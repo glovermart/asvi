@@ -1,0 +1,14 @@
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/system.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/vhdl_sys.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/vhdl_textio.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/v2009.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+testcases/alwayslatch_misc_svi_modportDotnameModuleInst.sv:26: syntax error
+testcases/alwayslatch_misc_svi_modportDotnameModuleInst.sv:26: Errors in port declarations.
+testcases/alwayslatch_misc_svi_modportDotnameModuleInst.sv:39: syntax error
+testcases/alwayslatch_misc_svi_modportDotnameModuleInst.sv:39: Errors in port declarations.
+testcases/alwayslatch_misc_svi_modportDotnameModuleInst.sv:44: warning: implicit definition of wire 'p'.
+testcases/alwayslatch_misc_svi_modportDotnameModuleInst.sv:63: warning: implicit definition of wire 'u_I'.

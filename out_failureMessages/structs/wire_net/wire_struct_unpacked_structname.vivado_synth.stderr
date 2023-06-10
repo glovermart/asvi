@@ -1,0 +1,3 @@
+ERROR: [Synth 8-453] net 'data' can not be used in left-hand side of procedural assignment [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/wire_struct_unpacked_structname.sv:22]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/wire_struct_unpacked_structname.sv:14]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

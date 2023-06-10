@@ -1,0 +1,134 @@
+xeCompile - 22H1_VXE, V22.04.163.s001            
+
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+WARNING (legacy-52507): The file descriptors limit is 4096, which is less than recommended minimum of 16384.
+WARNING (legacy-52368): Current overcommit memory settings are not optimal. The values are (memory=0, ratio=50). Suggested values are (memory=2, ratio=100).
+XEC> global env
+XEC> set TEST_NAME $env(TESTCASE)
+testcases/alwayslatch_misc_svi_vectorPartSelect.sv
+XEC> set TESTCASE_NAME $env(TESTCASE_NAME_NO_DIR)
+alwayslatch_misc_svi_vectorPartSelect.palladium_synth.stdout
+XEC> 
+XEC> #See UXE Command Reference Manual, Version 17.5 (uxecmdref.pdf)
+XEC> #Pages 179, 174, 177, 176, 184, 185, 189, 190, 192 
+XEC> 
+XEC> hdlInputFile ${TEST_NAME}
+XEC> 
+XEC> #-sv: Enable recognition of SystemVerilog keywords/ features.
+XEC> #-atb: Enable synthesis of force, release, and other contructs
+XEC> #that are otherwise 'non-sythesizable'
+XEC> #(See UXE User Guide Version 17.5,page 155).
+XEC> hdlImport -sv -atb
+hdlice - HDLICE, V22.04.160.s002                
+(c) 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+   >> Analyzing Verilog file testcases/alwayslatch_misc_svi_vectorPartSelect.sv ...
+   >> Analyzing interface I ...
+   >> Analyzing module M1 ...
+   >> Analyzing module M2 ...
+   >> Analyzing module top ...
+
+ >> Reporting Runtime Statistics ...
+   Hostname         :    cad11.nordicsemi.no
+   Operating system :    Linux RedHat 7.9 (64bit)
+   User CPU time     :        0.03 seconds
+   System CPU time   :        0.08 seconds
+   Wall clock time   :        0 seconds
+   Peak Memory usage :       52604 KB
+
+INFO (legacy-22893): hdlImport completed successfully!
+0
+XEC> 
+XEC> #-add -f: Writes the synthesized file in some file format.
+XEC> hdlOutputFile -add -f verilog out/${TESTCASE_NAME}.palladium_synth.v
+XEC> 
+XEC> #-dontStopOnError: Continue with sythesis when errors are detected.
+XEC> #-append: Append new output to an existing file.
+XEC> hdlSynthesize -dontStopOnError -append top
+hdlice - HDLICE, V22.04.160.s002                
+(c) 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+ >> (1) Synthesizing module 'top' at Fri Jun  9 09:30:48 2023
+
+INFO: Using new BDD package in HDLICE; to revert to legacy BDD package from 20.0, use switch '-legacy_bdd'.
+   >> Loading module top ...
+   >> Running allocation on RTL block 'always:19'
+
+   >> Mapping RTL block 'verilog/always:19/.datapath' ...
+   >> Running datapath synthesis
+      total area under this block:      20.00
+
+   >> Mapping RTL block 'verilog/always:19/.control0' ...
+   >> Running controller synthesis
+   >> Running logic minimization ... done.
+      total area under this block:       0.00
+
+   >> Mapping RTL block 'verilog/always:19' ...
+   >> Running datapath synthesis
+      total area under this block:      20.00
+
+   >> Mapping RTL block 'verilog' ...
+   >> Running datapath synthesis
+      total area under this block:      20.00
+
+   >> Running post optimization ...
+      Reduces 0.00% (20.00 -> 20.00)
+
+ >> (2) Synthesizing module 'M2' at Fri Jun  9 09:30:48 2023
+ under /top
+   >> Loading module M2 ...
+   >> Running allocation on RTL block 'always:52'
+
+   >> Mapping RTL block 'verilog/always:45' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:52' ...
+   >> Running datapath synthesis
+      total area under this block:       0.00
+
+   >> Mapping RTL block 'verilog' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Running post optimization ...
+      Reduces 0.00% (7.00 -> 7.00)
+
+ >> (3) Synthesizing module 'M1' at Fri Jun  9 09:30:48 2023
+ under /top/M2
+   >> Loading module M1 ...
+
+   >> Mapping RTL block 'verilog/always:30' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Mapping RTL block 'verilog/always:35' ...
+   >> Running datapath synthesis
+      total area under this block:       0.00
+
+   >> Mapping RTL block 'verilog' ...
+   >> Running datapath synthesis
+      total area under this block:       7.00
+
+   >> Running post optimization ...
+      Reduces 0.00% (7.00 -> 7.00)
+
+ >> writing 'out/alwayslatch_misc_svi_vectorPartSelect.palladium_synth.stdout.palladium_synth.v' at Fri Jun  9 09:30:48 2023
+ ...
+
+ >> Reporting netlist area at Fri Jun  9 09:30:48 2023
+ ...
+
+ Total Area (3 modules & 3 instances) :           34.00
+
+ >> Reporting Runtime Statistics ...
+   Hostname         :    cad11.nordicsemi.no
+   Operating system :    Linux RedHat 7.9 (64bit)
+   User CPU time     :        0.04 seconds
+   System CPU time   :        0.07 seconds
+   Wall clock time   :        0 seconds
+   Peak Memory usage :       57068 KB
+
+INFO (legacy-22984): hdlSynthesize completed successfully!
+^D
+WARNING (legacy-54241): The workstation was running low on memory (free memory dropped to 9 GB), therefore the performance might be impacted.

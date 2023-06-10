@@ -1,0 +1,95 @@
+$tcl_library is set to: /cad/mentor/oneSpin360/2023.1/etc/tcl8.6
+init.tcl executed.
+source "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_defaults.tcl"
+source -signed "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_startup.tcl.obf"
+source "/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl"
+-I- FileParse - Analyzing source file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv" .... [1]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:13: Analyzing module ( M1 ). [4]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:27: Analyzing module ( M2 ). [4]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:41: Analyzing module ( M3 ). [4]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:55: Analyzing module ( M4 ). [4]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:69: Analyzing module ( top ). [4]
+-I- Elaborate auto-selected the toplevel: "verilog!work.top"
+-W- SimSynMismatch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:17: Initialization of non-wire register might be ignored by some synthesis tools. Use continuous assignment instead.
+-I- Elaborating verilog portion...
+-W- NoOutput - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:69: module 'top' has no output.
+-W- UndrivenReg - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:36: reading undriven register 'a'.
+-W- UndrivenReg - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:50: reading undriven register 'a'.
+-W- UndrivenReg - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:64: reading undriven register 'a'.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:6: register 'z' has 4 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:74:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:78:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:82:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:86:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:6: register 'z' is driven in multiple continuous assignments; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:20:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:34:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:48:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:62:
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:7: register 'y' has 4 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:74:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:78:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:82:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:86:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:7: register 'y' is driven in multiple continuous assignments; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:21:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:35:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:49:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:63:
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:8: register 'x' has 4 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:74:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:78:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:82:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:86:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:8: register 'x' is driven in multiple continuous assignments; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:22:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:36:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:50:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_misc_inst.sv:64:
+
+Warning Statistics:
+-------------------
+    1   NoOutput             module has no output
+    1   SimSynMismatch       simulation synthesis mismatch
+    3   UndrivenReg          reading undriven register
+    6   MultDrivers          multiple drivers
+-I- Elaboration of design golden succeeded.
+-I- Traversing modules of design 'top' ...
+-I- Traversing modules of design 'top' took 0.09 seconds.
+-I- Analyzing signal dependency in design 'top' ...
+-I- Analyzing signal dependency in design 'top' took 0.01 seconds.
+-I- Analyzing loops ...
+-I- Analyzing loops took 0.00 seconds.
+-I- Analyzing primary and generated clocks ...
+-I- Computing next states ...
+-I- Computing next states took 0.00 seconds.
+-I- Analyzing primary and generated clocks took 0.00 seconds.
+-I- Checking clock dependency assumption ...
+-I- Checking clock dependency assumption took 0.00 seconds.
+-I- Computing CSA result ...
+-I- Computing CSA result took 0.00 seconds.
+-I- Finishing CSA analysis ...
+-I- Compilation for design golden succeeded.
+-R- Printed Messages
+===============================================================================
+class       category            memo                                                          occurrence
+-------------------------------------------------------------------------------
+Warning     MultDrivers         multiple drivers                                              6         
+Warning     NoOutput            module has no output                                          1         
+Warning     SimSynMismatch      simulation synthesis mismatch                                 1         
+Warning     UndrivenReg         reading undriven register                                     3         
+Info        AnalyzeModule       analyzing module                                              5         
+Info        FileParse           file parsed                                                   1         
+Info        {}                  unclassified message                                          18        
+Info        {}                  {}                                                            1         
+Result      {}                  {}                                                            1         
+Plain       {}                  unclassified message                                          1         
+Plain       {}                  {}                                                            11        
+TclStdOut   {}                  {}                                                            2         
+CommandLog  {}                  {}                                                            3         
+	
+-R- Filtered Messages
+===============================================================================
+id   active   class     category            memo                     text                     src_loc        origin  hits 
+-------------------------------------------------------------------------------
+No message filters available.

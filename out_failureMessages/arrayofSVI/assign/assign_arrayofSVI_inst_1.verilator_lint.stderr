@@ -1,0 +1,10 @@
+%Warning-DECLFILENAME: testcases/assign_arrayofSVI_inst_1.sv:8:11: Filename 'assign_arrayofSVI_inst_1' does not match IFACE name: 'I'
+    8 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-UNDRIVEN: testcases/assign_arrayofSVI_inst_1.sv:23:9: Signal is not driven: 'a'
+                                                             : ... In instance top.u_M
+   23 |   logic a;
+      |         ^
+%Error: Exiting due to 2 warning(s)

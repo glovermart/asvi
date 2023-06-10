@@ -1,0 +1,401 @@
+[93mWarning[97m: Config file '.svlint.toml' is not found. Enable all rules(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:5:1
+[94m  |
+[94m5 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m  |[33m          [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_interface
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:5:1
+[94m  |
+[94m5 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Prefix `interface` identifier with "ifc_".
+[94m  |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_interface
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:5:1
+[94m  |
+[94m5 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_interface
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:5:1
+[94m  |
+[94m5 |[37m interface I;
+[94m  |[93m ^^^^^^^^^[93m hint  : Use a interface identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m  |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:5:11
+[94m  |
+[94m5 |[37m interface I;
+[94m  |[93m           ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m  |[33m            [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:6:0
+[94m  |
+[94m6 |[37m 
+[94m  |[93m [93m hint  : Remove trailing whitespace.
+[94m  |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:13:1
+[94m   |
+[94m13 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:13:1
+[94m   |
+[94m13 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:13:1
+[94m   |
+[94m13 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:13:1
+[94m   |
+[94m13 |[37m module M1
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:13:8
+[94m   |
+[94m13 |[37m module M1
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: interface_port_with_modport
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:14:5
+[94m   |
+[94m14 |[37m   ( I u_I
+[94m   |[93m     ^[93m hint  : Specify the modport on the interface port.
+[94m   |[33m      [33m reason: Without a modport, the interface port signals are all implictly `inout`.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:14:5
+[94m   |
+[94m14 |[37m   ( I u_I
+[94m   |[93m     ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m      [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:14:7
+[94m   |
+[94m14 |[37m   ( I u_I
+[94m   |[93m       ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:14:7
+[94m   |
+[94m14 |[37m   ( I u_I
+[94m   |[93m       ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_port_inout
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:14:7
+[94m   |
+[94m14 |[37m   ( I u_I
+[94m   |[93m       ^^^[93m hint  : Use a port identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_port_interface
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:14:7
+[94m   |
+[94m14 |[37m   ( I u_I
+[94m   |[93m       ^^^[93m hint  : Use a port identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:15:21
+[94m   |
+[94m15 |[37m   , input var logic i_b // Declare as var
+[94m   |[93m                     ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: explicit_if_else
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:21:5
+[94m   |
+[94m21 |[37m     if (u_I.y == 1'b1)
+[94m   |[93m     ^^[93m hint  : Add an `else` clause to the `if` statement.
+[94m   |[33m       [33m reason: Fully-specified conditional clarifies design intent.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:21:5
+[94m   |
+[94m21 |[37m     if (u_I.y == 1'b1)
+[94m   |[93m     ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m   |[33m       [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:27:1
+[94m   |
+[94m27 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:27:1
+[94m   |
+[94m27 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:27:1
+[94m   |
+[94m27 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_module_ansi
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:27:1
+[94m   |
+[94m27 |[37m module M2
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier matching regex `^[a-z]+[a-zA-Z0-9_]*$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:27:8
+[94m   |
+[94m27 |[37m module M2
+[94m   |[93m        ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m          [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: interface_port_with_modport
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:28:5
+[94m   |
+[94m28 |[37m   ( I u_I
+[94m   |[93m     ^[93m hint  : Specify the modport on the interface port.
+[94m   |[33m      [33m reason: Without a modport, the interface port signals are all implictly `inout`.
+(B[m
+[91mFail[97m: lowercamelcase_interface
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:28:5
+[94m   |
+[94m28 |[37m   ( I u_I
+[94m   |[93m     ^[93m hint  : Begin `interface` name with lowerCamelCase.
+[94m   |[33m      [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_port_inout
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:28:7
+[94m   |
+[94m28 |[37m   ( I u_I
+[94m   |[93m       ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_forbidden_port_interface
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:28:7
+[94m   |
+[94m28 |[37m   ( I u_I
+[94m   |[93m       ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_port_inout
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:28:7
+[94m   |
+[94m28 |[37m   ( I u_I
+[94m   |[93m       ^^^[93m hint  : Use a port identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_port_interface
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:28:7
+[94m   |
+[94m28 |[37m   ( I u_I
+[94m   |[93m       ^^^[93m hint  : Use a port identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: explicit_if_else
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:32:5
+[94m   |
+[94m32 |[37m     if (u_I.y == 1'b0)
+[94m   |[93m     ^^[93m hint  : Add an `else` clause to the `if` statement.
+[94m   |[33m       [33m reason: Fully-specified conditional clarifies design intent.
+(B[m
+[91mFail[97m: multiline_if_begin
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:32:5
+[94m   |
+[94m32 |[37m     if (u_I.y == 1'b0)
+[94m   |[93m     ^^[93m hint  : Add `begin`/`end` around multi-line `if` statement.
+[94m   |[33m       [33m reason: Without `begin`/`end`, the conditional statement may be confusing.
+(B[m
+[91mFail[97m: default_nettype_none
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:38:1
+[94m   |
+[94m38 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Place `` `default_nettype none`` at the top of source code.
+[94m   |[33m       [33m reason: Compiler directive `` `default_nettype none`` detects unintentional implicit wires.
+(B[m
+[91mFail[97m: prefix_module
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:38:1
+[94m   |
+[94m38 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Prefix `module` identifier with "mod_".
+[94m   |[33m       [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_module_ansi
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:38:1
+[94m   |
+[94m38 |[37m module top
+[94m   |[93m ^^^^^^[93m hint  : Use a module identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m       [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: uppercamelcase_module
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:38:8
+[94m   |
+[94m38 |[37m module top
+[94m   |[93m        ^^^[93m hint  : Begin `module` name with UpperCamelCase.
+[94m   |[33m           [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: output_with_var
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:39:5
+[94m   |
+[94m39 |[37m   ( output logic o_a
+[94m   |[93m     ^^^^^^[93m hint  : Specify `var` datakind on `output` ports.
+[94m   |[33m           [33m reason: Explicit datakind of output ports should be consistent with input ports.
+(B[m
+[91mFail[97m: re_forbidden_port_output
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:39:18
+[94m   |
+[94m39 |[37m   ( output logic o_a
+[94m   |[93m                  ^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                     [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: input_with_var
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:40:5
+[94m   |
+[94m40 |[37m   , input logic i_clk
+[94m   |[93m     ^^^^^[93m hint  : Specify `var` datakind on `input` ports.
+[94m   |[33m          [33m reason: Default datakind of input port is a tri-state net.
+(B[m
+[91mFail[97m: re_forbidden_port_input
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:40:17
+[94m   |
+[94m40 |[37m   , input logic i_clk
+[94m   |[93m                 ^^^^^[93m hint  : Use a port identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m                      [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:43:3
+[94m   |
+[94m43 |[37m   I u_I ();
+[94m   |[93m   ^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m    [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:43:5
+[94m   |
+[94m43 |[37m   I u_I ();
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:43:5
+[94m   |
+[94m43 |[37m   I u_I ();
+[94m   |[93m     ^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m        [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:44:0
+[94m   |
+[94m44 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:45:3
+[94m   |
+[94m45 |[37m   M1 u_M1 
+[94m   |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:45:6
+[94m   |
+[94m45 |[37m   M1 u_M1 
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:45:6
+[94m   |
+[94m45 |[37m   M1 u_M1 
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:46:0
+[94m   |
+[94m46 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: lowercamelcase_module
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:49:3
+[94m   |
+[94m49 |[37m   M2 u_M2 
+[94m   |[93m   ^^[93m hint  : Begin `module` name with lowerCamelCase.
+[94m   |[33m     [33m reason: Naming convention simplifies audit.
+(B[m
+[91mFail[97m: re_forbidden_instance
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:49:6
+[94m   |
+[94m49 |[37m   M2 u_M2 
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier not matching regex `^[^X](UNCONFIGURED|.*)$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: re_required_instance
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:49:6
+[94m   |
+[94m49 |[37m   M2 u_M2 
+[94m   |[93m      ^^^^[93m hint  : Use an instance identifier matching regex `^[a-z]+[a-z0-9_]*$`.
+[94m   |[33m          [33m reason: Identifiers must conform to the naming scheme.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:50:0
+[94m   |
+[94m50 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: sequential_block_in_always_ff
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:53:30
+[94m   |
+[94m53 |[37m   always_ff @(posedge i_clk) begin
+[94m   |[93m                              ^^^^^[93m hint  : Keywords `begin` and `end` are forbidden within `always_ff`.
+[94m   |[33m                                   [33m reason: Sequential blocks within `always_ff` may encourage overly-complex code.
+(B[m
+[91mFail[97m: style_keyword_datatype
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:58:3
+[94m   |
+[94m58 |[37m   logic  [2:0] counter;
+[94m   |[93m   ^^^^^[93m hint  : Follow datatype keyword with a symbol or exactly 1 space.
+[94m   |[33m        [33m reason: Consistent use of whitespace enhances readability by reducing visual noise.
+(B[m
+[91mFail[97m: style_trailingwhitespace
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:59:0
+[94m   |
+[94m59 |[37m 
+[94m   |[93m [93m hint  : Remove trailing whitespace.
+[94m   |[33m [33m reason: Trailing whitespace leads to unnecessary awkwardness with version control.
+(B[m
+[91mFail[97m: sequential_block_in_always_ff
+[94m   -->[37m testcases/force_misc_inst_VariableDec_modulePort.sv:60:30
+[94m   |
+[94m60 |[37m   always_ff @(posedge i_clk) begin
+[94m   |[93m                              ^^^^^[93m hint  : Keywords `begin` and `end` are forbidden within `always_ff`.
+[94m   |[33m                                   [33m reason: Sequential blocks within `always_ff` may encourage overly-complex code.
+(B[m
+FAILURE

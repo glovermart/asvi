@@ -1,0 +1,19 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/force_arrayofSVI_inst_nogen_assign.sv,15): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 2 input ports were not connected:
+xmelab: (./testcases/force_arrayofSVI_inst_nogen_assign.sv,13): en
+xmelab: (./testcases/force_arrayofSVI_inst_nogen_assign.sv,14): i_a
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+  assign o_a = u_I.z;
+                   |
+xmelab: *E,CUVAIN (./testcases/force_arrayofSVI_inst_nogen_assign.sv,32|19): Wrong number of instance array index dimensions at 'u_I'.
+  assign o_a = u_I.z;
+                   |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign.sv,32|19): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT'.
+FAILURE

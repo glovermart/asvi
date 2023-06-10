@@ -1,0 +1,21 @@
+%Error-UNSUPPORTED: testcases/alwaysff_misc_portconnection_noDirection__multipleModuleInstantiations.sv:5:11: Unsupported: Ranges ignored in port-lists
+    5 |   ( logic z        
+      |           ^
+                    ... For error description see https://verilator.org/warn/UNSUPPORTED?v=5.008
+%Error-UNSUPPORTED: testcases/alwaysff_misc_portconnection_noDirection__multipleModuleInstantiations.sv:6:11: Unsupported: Ranges ignored in port-lists
+    6 |   , logic y
+      |           ^
+%Error-UNSUPPORTED: testcases/alwaysff_misc_portconnection_noDirection__multipleModuleInstantiations.sv:7:11: Unsupported: Ranges ignored in port-lists
+    7 |   , logic x
+      |           ^
+%Error-UNSUPPORTED: testcases/alwaysff_misc_portconnection_noDirection__multipleModuleInstantiations.sv:8:11: Unsupported: Ranges ignored in port-lists
+    8 |   , logic i_clk
+      |           ^~~~~
+%Error-UNSUPPORTED: testcases/alwaysff_misc_portconnection_noDirection__multipleModuleInstantiations.sv:9:11: Unsupported: Ranges ignored in port-lists
+    9 |   , logic i_srst
+      |           ^~~~~~
+%Error-UNSUPPORTED: testcases/alwaysff_misc_portconnection_noDirection__multipleModuleInstantiations.sv:10:11: Unsupported: Ranges ignored in port-lists
+   10 |   , logic i_arst
+      |           ^~~~~~
+%Error: Exiting due to 6 error(s)
+        ... See the manual at https://verilator.org/verilator_doc.html for more assistance.

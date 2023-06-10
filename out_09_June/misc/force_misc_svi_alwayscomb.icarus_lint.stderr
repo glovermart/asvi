@@ -1,0 +1,6 @@
+testcases/force_misc_svi_alwayscomb.sv:5: syntax error
+testcases/force_misc_svi_alwayscomb.sv:1: Errors in port declarations.
+testcases/force_misc_svi_alwayscomb.sv:19: syntax error
+testcases/force_misc_svi_alwayscomb.sv:19: Errors in port declarations.
+testcases/force_misc_svi_alwayscomb.sv:30: warning: implicit definition of wire 'o_a'.
+testcases/force_misc_svi_alwayscomb.sv:46: warning: implicit definition of wire 'u_I'.

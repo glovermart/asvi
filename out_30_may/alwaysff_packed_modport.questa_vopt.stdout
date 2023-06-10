@@ -1,0 +1,18 @@
+QuestaSim-64 vopt 2023.1 Compiler 2023.01 Jan 23 2023
+Start time: 02:36:44 on May 30,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+-- Loading interface I
+-- Loading module M
+** Error (suppressible): testcases/alwaysff_packed_modport.sv(44): (vopt-2912) Port 'o_a' not found in module 'M' (1st connection).
+** Error (suppressible): testcases/alwaysff_packed_modport.sv(44): (vopt-2912) Port 'i_clk' not found in module 'M' (3rd connection).
+Optimization failed
+End time: 02:36:44 on May 30,2023, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+FAILURE

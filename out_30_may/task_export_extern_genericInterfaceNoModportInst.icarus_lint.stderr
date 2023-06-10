@@ -1,0 +1,14 @@
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/system.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/vhdl_sys.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/vhdl_textio.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+error: Failed to open '/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/v2009.vpi' because:
+     : libreadline.so.6: cannot open shared object file: No such file or directory
+testcases/task_export_extern_genericInterfaceNoModportInst.sv:8: syntax error
+testcases/task_export_extern_genericInterfaceNoModportInst.sv:8: error: invalid module item.
+testcases/task_export_extern_genericInterfaceNoModportInst.sv:11: sorry: modport task/function ports are not yet supported.
+testcases/task_export_extern_genericInterfaceNoModportInst.sv:27: syntax error
+testcases/task_export_extern_genericInterfaceNoModportInst.sv:27: Errors in port declarations.
+testcases/task_export_extern_genericInterfaceNoModportInst.sv:49: warning: implicit definition of wire 'u_I'.

@@ -1,0 +1,15 @@
+%Error-UNSUPPORTED: testcases/void_function_export.sv:8:7: Unsupported: Modport import with prototype
+    8 |     ( import function void adder
+      |       ^~~~~~
+                    ... For error description see https://verilator.org/warn/UNSUPPORTED?v=5.008
+%Error-UNSUPPORTED: testcases/void_function_export.sv:23:5: Unsupported: generic interfaces
+   23 |   ( interface j
+      |     ^~~~~~~~~
+%Error-UNSUPPORTED: testcases/void_function_export.sv:26:18: Unsupported: Out of block function declaration
+   26 |   function void j.adder
+      |                  ^
+%Error-UNSUPPORTED: testcases/void_function_export.sv:40:5: Unsupported: generic interfaces
+   40 |   ( interface i  
+      |     ^~~~~~~~~
+%Error: Exiting due to 4 error(s)
+        ... See the manual at https://verilator.org/verilator_doc.html for more assistance.

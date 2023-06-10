@@ -1,0 +1,7 @@
+ERROR: [Synth 8-478] no matching signal 'o_a' for .* connection [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:35]
+ERROR: [Synth 8-6038] cannot resolve hierarchical name for the item 'u_M1' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:42]
+ERROR: [Synth 8-6156] failed synthesizing module 'M2' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:31]
+ERROR: [Synth 8-6156] failed synthesizing module 'M3' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:47]
+ERROR: [Synth 8-6156] failed synthesizing module 'M4' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:63]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:77]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

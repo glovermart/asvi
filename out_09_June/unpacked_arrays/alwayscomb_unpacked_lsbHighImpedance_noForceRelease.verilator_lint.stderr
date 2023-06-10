@@ -1,0 +1,10 @@
+%Warning-DECLFILENAME: testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:5:11: Filename 'alwayscomb_unpacked_lsbHighImpedance_noForceRelease' does not match IFACE name: 'I'
+    5 | interface I
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Error-UNSUPPORTED: testcases/alwayscomb_unpacked_lsbHighImpedance_noForceRelease.sv:14:11: Unsupported tristate construct: INITITEM
+                                                                                          : ... In instance top
+   14 |       x = '{i_a,i_a,i_a,i_a,'z,'z,'z,'z};  
+      |           ^~
+%Error: Exiting due to 1 error(s), 1 warning(s)

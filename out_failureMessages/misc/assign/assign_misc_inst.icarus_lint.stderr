@@ -1,0 +1,9 @@
+testcases/assign_misc_inst.sv:14: syntax error
+testcases/assign_misc_inst.sv:14: Errors in port declarations.
+testcases/assign_misc_inst.sv:28: syntax error
+testcases/assign_misc_inst.sv:28: Errors in port declarations.
+testcases/assign_misc_inst.sv:42: syntax error
+testcases/assign_misc_inst.sv:42: Errors in port declarations.
+testcases/assign_misc_inst.sv:56: syntax error
+testcases/assign_misc_inst.sv:56: Errors in port declarations.
+testcases/assign_misc_inst.sv:74: warning: implicit definition of wire 'u_I5'.

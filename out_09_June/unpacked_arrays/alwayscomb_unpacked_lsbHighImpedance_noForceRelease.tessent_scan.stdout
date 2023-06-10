@@ -1,0 +1,178 @@
+//  Tessent Shell  2022.4    Tue Nov 29 21:19:37 GMT 2022
+//                Unpublished work. Copyright 2022 Siemens
+//
+//      This material contains trade secrets or otherwise confidential 
+//  information owned by Siemens Industry Software Inc. or its affiliates 
+//   (collectively, "SISW"), or its licensors. Access to and use of this 
+//     information is strictly limited as set forth in the Customer's 
+//                   applicable agreements with SISW. 
+//
+//  Siemens software executing under x86-64 Linux on Fri Jun 09 11:19:00 CEST 2023.
+//  64 bit version
+//  Host: cad11.nordicsemi.no (386734 MB RAM, 31999 MB Swap)
+//
+//  command: set_tcl_shell_options -abort_dofile_on_error exit
+//  command: array set params {
+//             netlist ""
+//           }
+//  command: array set params $tessent_user_arg
+//  command: #Perform Automatic Test Pattern Generation (ATPG)
+//  command: #Invoke the Tessent tool for pattern generation
+//  command: set_context patterns -scan
+//  command: #Read in library for mapping cells to design components
+//  command: #Location of cell library unknown - ATPG run without library
+//  command: #read_cell_library [insert library name]
+//  command: #Load synthesized netlist with scan chain already inserted.
+//  command: read_verilog $params(netlist)
+//  command: #Specify the design top
+//  command: set_current_design top
+//  Warning: Undefined modules were found.
+//           Before using "set_system_mode" or "create_flat_model", you must either define
+//           the missing modules using "read_verilog" and/or "read_cell_library", or use the
+//           following command to treat them as black boxes:
+             add_black_boxes -modules { \
+                    BTS4 \
+                    IV \
+             }
+//           You can also use "add_black_boxes -auto" to black box all undefined modules but
+//           it is recommended that you do not add this command to your dofile. Doing so may
+//           unintentionally black-box new undefined modules in future runs.
+//  Warning: 2 cases: Undriven primary inout pin in netlist module
+//  Warning: 4 cases: Net in netlist not connected
+//  Warning: 1 case: Undefined module pin assumed to be input
+//  Warning: 2 cases: Undefined module pin assumed to be inout
+//  Note: Issue set_current_design with the -show_elaboration_warnings option to see more details about previous warnings
+//  command: #add_black_boxes used here to suppress errors due to blackboxes
+//  command: #generated;possibly from  no cells in use or unconnected nets
+//  command: #in synthesized netlist
+//  command: add_black_boxes -auto
+//  command: #Set Tessent shell to analysis mode
+//  command: set_system_mode analysis
+//  Warning: Rule FN1 violation occurs 5 times
+//  Flattening process completed, gates=20, PIs=2, POs=8, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin circuit learning analyses.
+//  --------------------------------
+//  Learning completed, CPU time=0.00 sec.
+//  ---------------------------------------------------------------------------
+//  Begin scan chain identification process, memory elements = 0.
+//  ---------------------------------------------------------------------------
+//  Circuit has no memory elements.
+//  command: #Specify the fault model
+//  command: set_fault_type stuck
+//  command: #Generate test patterns
+//  command: create_patterns -auto
+No faults in fault list. Adding all faults...
+// | ------------------------------------------------------------------------------------------------------------------ |
+// |                                             Analyzing the design                                                   |
+// |                                                                                                                    |
+// |      Current clock restriction setting:     Domain_clock (edge interaction)                                        |
+// |                                             (optimal)                                                              |
+// |                                                                                                                    |
+// |            Current abort limit setting:     30                                                                     |
+// |                                Calling:     set_abort_limit 300 100                                                |
+// | ------------------------------------------------------------------------------------------------------------------ |
+// |                                                                                                                    |
+// |               Current sequential depth:     0 (optimal)                                                            |
+// |                                                                                                                    |
+// | ------------------------------------------------------------------------------------------------------------------ |
+//  ------------------------------------------------------------------------
+//  Simulation performed for #gates = 20  #faults = 10
+//  system mode = analysis    pattern source = internal patterns
+//  ------------------------------------------------------------------------
+//  #patterns  test      #faults  #faults    # eff.    # test         process      RE/AU/AAB
+//  simulated  coverage  in list  detected   patterns  patterns       CPU time
+//   ---        ------      ---       ---      ---       ---          0.03 sec     0/8/0
+//   2          55.56%        0        10        2         2          0.03 sec
+//  -----------------------------------------------------------------------
+//  Performing redundant fault identification for 8 faults
+//  -----------------------------------------------------------------------
+//  deterministic ATPG invoked with abort limit = 300
+//  # red.    # non-red.   # abort     # remn.   progress   test        process
+//  faults      faults      faults      faults              coverage    CPU time
+//       0           8          0            0   100.00%    55.56%       0.00 sec
+
+           Statistics Report           
+            Stuck-at Faults            
+---------------------------------------
+Fault Classes                #faults   
+                             (total)   
+-----------------------  --------------
+  FU (full)                    20      
+  ---------------------  --------------
+  DS (det_simulation)       10 (50.00%)
+  UU (unused)                2 (10.00%)
+  AU (atpg_untestable)       8 (40.00%)
+---------------------------------------
+Fault Sub-classes                      
+  ---------------------                
+  AU (atpg_untestable)                 
+    BB    (black_boxes)      8 (40.00%)
+---------------------------------------
+Coverage                               
+  ---------------------                
+  test_coverage                 55.56% 
+  fault_coverage                50.00% 
+  atpg_effectiveness           100.00% 
+---------------------------------------
+#test_patterns                       2 
+#simulated_patterns                  2 
+CPU_time (secs)                    8.0 
+---------------------------------------
+
+//  command: #Print statistics fault test using the patterns generated
+//  command: report_statistics 
+           Statistics Report           
+            Stuck-at Faults            
+---------------------------------------
+Fault Classes                #faults   
+                             (total)   
+-----------------------  --------------
+  FU (full)                    20      
+  ---------------------  --------------
+  DS (det_simulation)       10 (50.00%)
+  UU (unused)                2 (10.00%)
+  AU (atpg_untestable)       8 (40.00%)
+---------------------------------------
+Fault Sub-classes                      
+  ---------------------                
+  AU (atpg_untestable)                 
+    BB    (black_boxes)      8 (40.00%)
+---------------------------------------
+Coverage                               
+  ---------------------                
+  test_coverage                 55.56% 
+  fault_coverage                50.00% 
+  atpg_effectiveness           100.00% 
+---------------------------------------
+#test_patterns                       2 
+#simulated_patterns                  2 
+CPU_time (secs)                    8.0 
+---------------------------------------
+
+//  command: #Print faults/fault location in DUT
+//  command: report_faults -all
+
+    type    code    pin_pathname
+    ----   ------   ------------------------------------
+      0    DS       /i_a
+      1    DS       /i_a
+      0    UU       /i_en
+      1    UU       /i_en
+      0    DS       /o_a[7]
+      1    DS       /o_a[7]
+      0    DS       /o_a[6]
+      1    DS       /o_a[6]
+      0    DS       /o_a[5]
+      1    DS       /o_a[5]
+      0    DS       /o_a[4]
+      1    DS       /o_a[4]
+      0    AU.BB    /o_a[3]
+      1    AU.BB    /o_a[3]
+      0    AU.BB    /o_a[2]
+      1    AU.BB    /o_a[2]
+      0    AU.BB    /o_a[1]
+      1    AU.BB    /o_a[1]
+      0    AU.BB    /o_a[0]
+      1    AU.BB    /o_a[0]
+//  command: exit -force

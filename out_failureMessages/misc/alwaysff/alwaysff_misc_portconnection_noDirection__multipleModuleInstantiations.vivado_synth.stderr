@@ -1,0 +1,4 @@
+ERROR: [Synth 8-453] net 'p\.z' can not be used in left-hand side of procedural assignment [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_portconnection_noDirection__multipleModuleInstantiations.sv:35]
+ERROR: [Synth 8-6156] failed synthesizing module 'M1' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_portconnection_noDirection__multipleModuleInstantiations.sv:28]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_portconnection_noDirection__multipleModuleInstantiations.sv:102]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

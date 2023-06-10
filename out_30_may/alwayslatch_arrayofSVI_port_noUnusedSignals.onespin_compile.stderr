@@ -1,0 +1,62 @@
+$tcl_library is set to: /cad/mentor/oneSpin360/2023.1/etc/tcl8.6
+init.tcl executed.
+source "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_defaults.tcl"
+source -signed "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_startup.tcl.obf"
+source "/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl"
+-I- FileParse - Analyzing source file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals.sv" .... [1]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals.sv:31: Analyzing module ( M1 ). [4]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals.sv:53: Analyzing module ( M2 ). [4]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals.sv:68: Analyzing module ( top ). [4]
+-I- Elaborate auto-selected the toplevel: "verilog!work.top"
+-I- Elaborating verilog portion...
+-W- NetWithoutSink - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals.sv:70: net 'i_clk' has no sink.
+
+Warning Statistics:
+-------------------
+    1   NetWithoutSink       net without sink (never read)
+-I- Elaboration of design golden succeeded.
+-I- Traversing modules of design 'top' ...
+-I- Traversing modules of design 'top' took 0.05 seconds.
+-I- Analyzing signal dependency in design 'top' ...
+-I- Analyzing signal dependency in design 'top' took 0.01 seconds.
+-I- Analyzing loops ...
+-I- Analyzing loops took 0.01 seconds.
+-I- Analyzing primary and generated clocks ...
+-I- Computing next states ...
+-I- Computing next states took 0.00 seconds.
+-I- Analyzing primary and generated clocks took 0.00 seconds.
+-I- Checking clock dependency assumption ...
+-I- Checking clock dependency assumption took 0.01 seconds.
+-I- Computing CSA result ...
+-I- Computing CSA result took 0.00 seconds.
+-I- Finishing CSA analysis ...
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals.sv:32: State 'u_M1/p1[0]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals.sv:32: State 'u_M1/p1[1]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals.sv:32: State 'u_M1/p1[2]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals.sv:32: State 'u_M1/p1[3]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals.sv:32: State 'u_M1/p1[4]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals.sv:32: State 'u_M1/p1[5]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals.sv:32: State 'u_M1/p1[6]/y' is classified as latch, because it is not edge sensitive.
+-I- Latch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_noUnusedSignals.sv:32: State 'u_M1/p1[7]/y' is classified as latch, because it is not edge sensitive.
+-I- Compilation for design golden succeeded.
+-R- Printed Messages
+===============================================================================
+class       category            memo                                                          occurrence
+-------------------------------------------------------------------------------
+Warning     NetWithoutSink      net without sink (never read)                                 1         
+Info        AnalyzeModule       analyzing module                                              3         
+Info        FileParse           file parsed                                                   1         
+Info        Latch               State  is classified as latch                                 8         
+Info        {}                  unclassified message                                          18        
+Info        {}                  {}                                                            1         
+Result      {}                  {}                                                            1         
+Plain       {}                  unclassified message                                          1         
+Plain       {}                  {}                                                            9         
+TclStdOut   {}                  {}                                                            2         
+CommandLog  {}                  {}                                                            3         
+	
+-R- Filtered Messages
+===============================================================================
+id   active   class     category            memo                     text                     src_loc        origin  hits 
+-------------------------------------------------------------------------------
+No message filters available.

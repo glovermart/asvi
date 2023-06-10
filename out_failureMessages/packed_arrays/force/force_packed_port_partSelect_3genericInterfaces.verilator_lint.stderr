@@ -1,0 +1,18 @@
+%Error-UNSUPPORTED: testcases/force_packed_port_partSelect_3genericInterfaces.sv:15:14: Unsupported: Modport dotted port name
+   15 |     ( output .p1(z[3:0])  
+      |              ^
+                    ... For error description see https://verilator.org/warn/UNSUPPORTED?v=5.008
+%Error-UNSUPPORTED: testcases/force_packed_port_partSelect_3genericInterfaces.sv:19:14: Unsupported: Modport dotted port name
+   19 |     ( output .p2(z[7:4])  
+      |              ^
+%Error-UNSUPPORTED: testcases/force_packed_port_partSelect_3genericInterfaces.sv:26:5: Unsupported: generic interfaces
+   26 |   ( interface i   
+      |     ^~~~~~~~~
+%Error-UNSUPPORTED: testcases/force_packed_port_partSelect_3genericInterfaces.sv:27:5: Unsupported: generic interfaces
+   27 |   , interface j
+      |     ^~~~~~~~~
+%Error-UNSUPPORTED: testcases/force_packed_port_partSelect_3genericInterfaces.sv:28:5: Unsupported: generic interfaces
+   28 |   , interface k
+      |     ^~~~~~~~~
+%Error: Exiting due to 5 error(s)
+        ... See the manual at https://verilator.org/verilator_doc.html for more assistance.

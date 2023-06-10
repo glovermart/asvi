@@ -1,0 +1,40 @@
+xeCompile - 22H1_VXE, V22.04.163.s001            
+
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+WARNING (legacy-52507): The file descriptors limit is 4096, which is less than recommended minimum of 16384.
+WARNING (legacy-52368): Current overcommit memory settings are not optimal. The values are (memory=0, ratio=50). Suggested values are (memory=2, ratio=100).
+XEC> global env
+XEC> set TEST_NAME $env(TESTCASE)
+testcases/struct_port_unpacked_instStructWithinInterface.sv
+XEC> set TESTCASE_NAME $env(TESTCASE_NAME_NO_DIR)
+struct_port_unpacked_instStructWithinInterface.palladium_synth.stdout
+XEC> 
+XEC> #See UXE Command Reference Manual, Version 17.5 (uxecmdref.pdf)
+XEC> #Pages 179, 174, 177, 176, 184, 185, 189, 190, 192 
+XEC> 
+XEC> hdlInputFile ${TEST_NAME}
+XEC> 
+XEC> #-sv: Enable recognition of SystemVerilog keywords/ features.
+XEC> #-atb: Enable synthesis of force, release, and other contructs
+XEC> #that are otherwise 'non-sythesizable'
+XEC> #(See UXE User Guide Version 17.5,page 155).
+XEC> hdlImport -sv -atb
+hdlice - HDLICE, V22.04.160.s002                
+(c) 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+   >> Analyzing Verilog file testcases/struct_port_unpacked_instStructWithinInterface.sv ...
+   >> Analyzing Global Compilation Unit ...
+   >> Analyzing interface I ...
+   >> Analyzing module M1 ...
+ERROR: testcases/struct_port_unpacked_instStructWithinInterface.sv(line 29): Assignment compatible type is required for continuous assignment.
+   >> Analyzing module M2 ...
+ERROR: testcases/struct_port_unpacked_instStructWithinInterface.sv(line 41): Assignment compatible type is required for assignment.
+   >> Analyzing module top ...
+ERROR: Failed to analyze all Verilog modules.
+ERROR (legacy-21806): hdlImport Failed.
+
+    while executing
+"hdlImport -sv -atb"
+    (file "tcl/palladium_batch_run.tcl" line 14)
+WARNING (legacy-54241): The workstation was running low on memory (free memory dropped to 9 GB), therefore the performance might be impacted.
+FAILURE

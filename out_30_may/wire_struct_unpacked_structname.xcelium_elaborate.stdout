@@ -1,0 +1,18 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/wire_struct_unpacked_structname.sv,16): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 1 input port was not connected:
+xmelab: (./testcases/wire_struct_unpacked_structname.sv,15): i_clk
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+    u_I.data.data <= '1;
+                |
+xmelab: *E,CUVUNF (./testcases/wire_struct_unpacked_structname.sv,22|16): Hierarchical name component lookup failed for 'data' at 'tb.u_DUT'.
+  assign o_a = u_I.data; // struct name only
+                      |
+xmelab: *E,CUVUNF (./testcases/wire_struct_unpacked_structname.sv,24|22): Hierarchical name component lookup failed for 'data' at 'tb.u_DUT'.
+FAILURE

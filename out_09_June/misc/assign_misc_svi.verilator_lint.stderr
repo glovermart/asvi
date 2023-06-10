@@ -1,0 +1,12 @@
+%Warning-DECLFILENAME: testcases/assign_misc_svi.sv:3:11: Filename 'assign_misc_svi' does not match IFACE name: 'I'
+    3 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-PINMISSING: testcases/assign_misc_svi.sv:44:6: Cell has missing pin: 'o_b'
+   44 |   M1 u_M1
+      |      ^~~~
+%Warning-PINMISSING: testcases/assign_misc_svi.sv:48:6: Cell has missing pin: 'o_b'
+   48 |   M2 u_M2
+      |      ^~~~
+%Error: Exiting due to 3 warning(s)

@@ -1,0 +1,5 @@
+testcases/alwayslatch_misc_svi_modportDotStarModuleInst.sv:26: syntax error
+testcases/alwayslatch_misc_svi_modportDotStarModuleInst.sv:26: Errors in port declarations.
+testcases/alwayslatch_misc_svi_modportDotStarModuleInst.sv:39: syntax error
+testcases/alwayslatch_misc_svi_modportDotStarModuleInst.sv:39: Errors in port declarations.
+testcases/alwayslatch_misc_svi_modportDotStarModuleInst.sv:64: warning: implicit definition of wire 'u_I'.

@@ -1,0 +1,2 @@
+testcases/alwaysff_arrayofSVI_noTimescaleInst.sv:19: syntax error
+testcases/alwaysff_arrayofSVI_noTimescaleInst.sv:1: Errors in port declarations.

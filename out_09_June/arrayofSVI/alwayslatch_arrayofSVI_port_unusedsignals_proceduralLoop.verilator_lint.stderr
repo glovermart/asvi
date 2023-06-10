@@ -1,0 +1,13 @@
+%Warning-DECLFILENAME: testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8:11: Filename 'alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop' does not match IFACE name: 'I'
+    8 | interface I
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-PINMISSING: testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:63:5: Cell has missing pin: 'arst'
+   63 |   I u_I
+      |     ^~~
+%Error: testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:43:23: Attempt to drive input-only modport: 'x'
+                                                                                   : ... In instance top.u_M1
+   43 |     always_comb p1[i].x = 1'b1;
+      |                       ^
+%Error: Exiting due to 1 error(s), 2 warning(s)

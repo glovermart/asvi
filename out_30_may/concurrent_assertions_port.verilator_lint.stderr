@@ -1,0 +1,12 @@
+%Error-UNSUPPORTED: testcases/concurrent_assertions_port.sv:10:11: Unsupported: Ranges ignored in port-lists
+   10 |   ( logic i_clk
+      |           ^~~~~
+                    ... For error description see https://verilator.org/warn/UNSUPPORTED?v=5.008
+%Error-UNSUPPORTED: testcases/concurrent_assertions_port.sv:11:11: Unsupported: Ranges ignored in port-lists
+   11 |   , logic i_srst
+      |           ^~~~~~
+%Error: testcases/concurrent_assertions_port.sv:34:68: syntax error, unexpected [*, expecting ')'
+   34 |   assert property (@(posedge p.i_clk) $fell(p.i_srst) |-> !p.i_srst[*4])
+      |                                                                    ^~
+%Error: Exiting due to 3 error(s)
+        ... See the manual at https://verilator.org/verilator_doc.html for more assistance.

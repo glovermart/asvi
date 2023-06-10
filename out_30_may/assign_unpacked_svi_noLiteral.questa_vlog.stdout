@@ -1,0 +1,10 @@
+QuestaSim-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+Start time: 02:34:33 on May 30,2023
+vlog -sv -lint=full testcases/assign_unpacked_svi_noLiteral.sv testbench/tb.sv 
+-- Compiling interface I
+** Error (suppressible): testcases/assign_unpacked_svi_noLiteral.sv(9): (vlog-2997) Cannot assign a packed type 'reg[7:0]' to an unpacked type 'reg $[7:0]'.
+-- Compiling module top
+-- Compiling module tb
+End time: 02:34:33 on May 30,2023, Elapsed time: 0:00:00
+Errors: 1, Warnings: 0
+FAILURE

@@ -1,0 +1,7 @@
+[93mWarning[97m: Config file '.svlint.toml' is not found. Enable all rules(B[m
+[91mError[97m: parse error
+[94m   -->[37m testcases/assign_unpacked_inst_foreachAssignIn.sv:20:12
+[94m   |
+[94m20 |[37m     foreach (u_I.x[i])
+[94m   |[93m            ^(B[m
+FAILURE

@@ -1,0 +1,4 @@
+testcases/alwaysff_arrayofSVI_port_inheritTimeprecisionInst.sv:13: error: a timeprecision is missing or is too large!
+testcases/alwaysff_arrayofSVI_port_inheritTimeprecisionInst.sv:26: syntax error
+testcases/alwaysff_arrayofSVI_port_inheritTimeprecisionInst.sv:26: Errors in port declarations.
+testcases/alwaysff_arrayofSVI_port_inheritTimeprecisionInst.sv:67: warning: implicit definition of wire 'u_I'.

@@ -1,0 +1,17 @@
+QuestaSim-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+Start time: 02:33:42 on May 30,2023
+vlog -sv -sv17compat -lint=default testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv 
+-- Compiling package alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop_sv_unit
+-- Compiling interface I
+-- Compiling module M1
+** Warning: testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv(37): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv(40): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv(42): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+-- Compiling module M2
+** Warning: testcases/alwayslatch_arrayofSVI_port_unusedsignals_noproceduralLoop.sv(59): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+-- Compiling module top
+
+Top level modules:
+	top
+End time: 02:33:42 on May 30,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 4

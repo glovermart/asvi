@@ -1,0 +1,10 @@
+QuestaSim-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+Start time: 02:35:50 on May 30,2023
+vlog -sv -lint=full testcases/assign_unpacked_inst_foreachAssignOut.sv testbench/tb.sv 
+-- Compiling interface I
+-- Compiling module top
+** Error: (vlog-13069) testcases/assign_unpacked_inst_foreachAssignOut.sv(20): near "foreach": syntax error, unexpected "SystemVerilog keyword 'foreach'".
+-- Compiling module tb
+End time: 02:35:50 on May 30,2023, Elapsed time: 0:00:00
+Errors: 1, Warnings: 0
+FAILURE
