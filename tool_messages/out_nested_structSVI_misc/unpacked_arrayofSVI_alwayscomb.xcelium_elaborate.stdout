@@ -1,0 +1,15 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/unpacked_arrayofSVI_alwayscomb.sv,13): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 1 input port was not connected:
+xmelab: (./testcases/unpacked_arrayofSVI_alwayscomb.sv,12): i_a
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+    a = '{8{u_I}};
+              |
+xmelab: *E,TYCMPAT (./testcases/unpacked_arrayofSVI_alwayscomb.sv,22|14): assignment operator type check failed on instance 'tb.u_DUT' (expecting datatype compatible with 'logic' but found 'I instance' instead).
+FAILURE

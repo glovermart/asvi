@@ -1,0 +1,5 @@
+testcases/structofSVIs_2.sv:13: syntax error
+testcases/structofSVIs_2.sv:13: Error in struct/union member.
+testcases/structofSVIs_2.sv:14: syntax error
+testcases/structofSVIs_2.sv:14: Error in struct/union member.
+testcases/structofSVIs_2.sv:12: sorry: Unpacked structs not supported.

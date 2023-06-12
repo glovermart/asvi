@@ -1,0 +1,3 @@
+testcases/structofSVIs_4.sv:20: syntax error
+testcases/structofSVIs_4.sv:20: Error in struct/union member.
+testcases/structofSVIs_4.sv:19: sorry: Unpacked structs not supported.

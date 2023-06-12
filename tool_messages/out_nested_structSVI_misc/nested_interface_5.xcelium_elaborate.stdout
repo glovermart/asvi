@@ -1,0 +1,18 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/nested_interface_5.sv,40): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 2 input ports were not connected:
+xmelab: (./testcases/nested_interface_5.sv,38): i_a
+xmelab: (./testcases/nested_interface_5.sv,39): i_clk
+
+    ( u_I
+        |
+xmelab: *E,CUINDN (./testcases/nested_interface_5.sv,45|8): A named interface port should be connected to an interface of the same name (tb.u_DUT).
+  ( I1.P p
+         |
+xmelab: *E,CUIMPX (./testcases/nested_interface_7.sv,27|9): The interface modport used (P) does not exist (tb.u_DUT.u_M).
+FAILURE

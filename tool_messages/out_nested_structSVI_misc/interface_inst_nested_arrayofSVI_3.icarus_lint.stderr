@@ -1,0 +1,6 @@
+testcases/interface_inst_nested_arrayofSVI_3.sv:13: error: Module instantiations are not allowed in interfaces.
+testcases/interface_inst_nested_arrayofSVI_3.sv:20: syntax error
+testcases/interface_inst_nested_arrayofSVI_3.sv:21: Syntax in assignment statement l-value.
+testcases/interface_inst_nested_arrayofSVI_3.sv:24: syntax error
+testcases/interface_inst_nested_arrayofSVI_3.sv:25: Syntax in assignment statement l-value.
+testcases/interface_inst_nested_arrayofSVI_3.sv:30: error: Module instantiations are not allowed in interfaces.

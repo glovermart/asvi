@@ -1,0 +1,19 @@
+Reading pref.tcl
+
+# 2022.2_1
+
+# Jobspy Error: error flushing "sock2c4cb50": broken pipe
+#     while executing
+# "JobSpyIntf::Start"
+# vsim -c design_unit -do "run -all; quit -f" 
+# Start time: 03:31:57 on Jun 12,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: (vopt-13130) Failed to find design unit design_unit.
+#         Searched libraries:
+#             work
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 03:31:58 on Jun 12,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+FAILURE

@@ -1,0 +1,10 @@
+%Warning-DECLFILENAME: testcases/unpacked_arrayofSVI_alwayscomb.sv:4:11: Filename 'unpacked_arrayofSVI_alwayscomb' does not match IFACE name: 'I'
+    4 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Error: testcases/unpacked_arrayofSVI_alwayscomb.sv:22:13: Operator PATMEMBER expected non-interface on Pattern value but 'u_I__Viftop' is an interface.
+                                                         : ... In instance top
+   22 |     a = '{8{u_I}};
+      |             ^~~
+%Error: Exiting due to 1 error(s), 1 warning(s)

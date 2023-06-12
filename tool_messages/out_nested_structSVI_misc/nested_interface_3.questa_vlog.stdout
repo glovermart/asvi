@@ -1,0 +1,12 @@
+QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 03:24:46 on Jun 12,2023
+vlog -sv -lint=full testcases/nested_interface_3.sv testbench/tb.sv 
+-- Compiling interface I
+-- Compiling interface I1
+-- Compiling module top
+-- Compiling module tb
+
+Top level modules:
+	tb
+End time: 03:24:46 on Jun 12,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

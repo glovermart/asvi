@@ -1,0 +1,5 @@
+ERROR: [Synth 8-7039] Interface instance 'u_I' cannot be reassigned, ignoring this assignment [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/interface_inst_nested_4.sv:25]
+ERROR: [Synth 8-6156] failed synthesizing module 'I2' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/interface_inst_nested_4.sv:21]
+ERROR: [Synth 8-6156] failed synthesizing module 'I1' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/interface_inst_nested_4.sv:14]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/interface_inst_nested_4.sv:37]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

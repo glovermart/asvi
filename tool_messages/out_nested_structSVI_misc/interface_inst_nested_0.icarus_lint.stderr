@@ -1,0 +1,2 @@
+testcases/interface_inst_nested_0.sv:17: error: Module instantiations are not allowed in interfaces.
+testcases/interface_inst_nested_0.sv:29: error: Module instantiations are not allowed in interfaces.

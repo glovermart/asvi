@@ -1,0 +1,2 @@
+Warning: wire '\u_I.x' is assigned in a block at testcases/structofSVIs_8.sv:17.15-17.26.
+testcases/structofSVIs_8.sv:24: ERROR: Failed to detect width for identifier \u_I!

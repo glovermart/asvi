@@ -1,0 +1,4 @@
+    a = {8{u_I}};
+             |
+xmvlog: *E,TYPEERR (testcases/packed_arrayofSVI_slice_initial.sv,24|13): {} concatenation operator operand type is illegal.
+FAILURE

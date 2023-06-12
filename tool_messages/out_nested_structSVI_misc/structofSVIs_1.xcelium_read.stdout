@@ -1,0 +1,7 @@
+    { I u_I; // Parenthesis omitted.
+      |
+xmvlog: *E,SVNOTY (testcases/structofSVIs_1.sv,13|6): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+    { I u_I; // Parenthesis omitted.
+          |
+xmvlog: *E,SVEXTK (testcases/structofSVIs_1.sv,13|10): expecting a ',' or ';' after 'variable_identifier variable_dimension' (in a struct/union member declaration).
+FAILURE

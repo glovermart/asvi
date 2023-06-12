@@ -1,0 +1,11 @@
+QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 01:52:33 on Jun 12,2023
+vlog -sv -sv17compat -lint=default testcases/interface_modport_interface.sv 
+-- Compiling interface I1
+-- Compiling interface I2
+-- Compiling module top
+
+Top level modules:
+	top
+End time: 01:52:33 on Jun 12,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

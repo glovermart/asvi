@@ -1,0 +1,18 @@
+QuestaSim-64 vopt 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 03:35:27 on Jun 12,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+-- Loading interface I
+-- Loading interface I1
+** Error (suppressible): testcases/nested_interface_0.sv(37): (vopt-7063) Failed to find 'o_a' in hierarchical name 'u_I.o_a'.
+        Region: tb.u_DUT
+Optimization failed
+End time: 03:35:28 on Jun 12,2023, Elapsed time: 0:00:01
+Errors: 1, Warnings: 0
+FAILURE

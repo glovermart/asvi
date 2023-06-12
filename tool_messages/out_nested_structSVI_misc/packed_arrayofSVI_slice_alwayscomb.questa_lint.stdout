@@ -1,0 +1,10 @@
+QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 01:52:32 on Jun 12,2023
+vlog -sv -sv17compat -lint=default testcases/packed_arrayofSVI_slice_alwayscomb.sv 
+-- Compiling interface I
+-- Compiling module top
+** Error: testcases/packed_arrayofSVI_slice_alwayscomb.sv(24): (vlog-2110) Illegal reference to interface "u_I".
+** Warning: testcases/packed_arrayofSVI_slice_alwayscomb.sv(24): (vlog-2251) Illegal concatenation of unpacked value 'u_I'.
+End time: 01:52:32 on Jun 12,2023, Elapsed time: 0:00:00
+Errors: 1, Warnings: 1
+FAILURE

@@ -1,0 +1,3 @@
+testcases/structofSVIs_8.sv:24: error: Unable to bind wire/reg/memory `u_I' in `top'
+testcases/structofSVIs_8.sv:24: error: Concatenation/replication may not have zero width in this context.
+Elaboration failed

@@ -1,0 +1,15 @@
+$tcl_library is set to: /cad/mentor/oneSpin360/2023.1/etc/tcl8.6
+init.tcl executed.
+source "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_defaults.tcl"
+source -signed "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_startup.tcl.obf"
+source "/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl"
+-I- FileParse - Analyzing source file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/nested_interface_1.sv" .... [1]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/nested_interface_1.sv:26: Analyzing module ( top ). [4]
+-I- Elaborate auto-selected the toplevel: "verilog!work.top"
+-E- UnsuppVerilog - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/nested_interface_1.sv:12: Nested module/interface definition not supported.
+-E- Elaboration of design golden failed.
+-E- Can not source script '/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl'.
+    while executing
+"elaborate"
+    (file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl" line 4)
+-E- Error during execution of user commands.

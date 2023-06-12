@@ -1,0 +1,19 @@
+  interface I;  // Interface declaration in module top.
+            |
+xmvlog: *W,NONAIF (testcases/interfaceDeclaration_moduleDefinition_0.sv,11|12): Non Ansi Interface port declaration seen - Not official SystemVerilog syntax - [SystemVerilog].
+  interface I;  // Interface declaration in module top.
+            |
+xmvlog: *E,ILLPDL (testcases/interfaceDeclaration_moduleDefinition_0.sv,11|12): Mixing of ansi & non-ansi style port declaration is not legal.
+  endinterface
+             |
+xmvlog: *E,EXPENM (testcases/interfaceDeclaration_moduleDefinition_0.sv,16|13): expecting the keyword 'endmodule' [12.1(IEEE)].
+    always_ff @(posedge i_clk)
+                            |
+xmvlog: *E,UNDIDN (testcases/interfaceDeclaration_moduleDefinition_0.sv,26|28): 'i_clk': undeclared identifier [12.5(IEEE)].
+  M u_M
+      |
+xmvlog: *E,NCUITEM (testcases/interfaceDeclaration_moduleDefinition_0.sv,32|6): Not a valid compilation unit/global item: 'module/udp instance' [SystemVerilog].
+endmodule
+        |
+xmvlog: *E,MPANDC (testcases/interfaceDeclaration_moduleDefinition_0.sv,37|8): expecting the keyword 'module', 'macromodule', 'primitive', 'connectmodule','connect', 'discipline' or 'nature' [A.1].
+FAILURE

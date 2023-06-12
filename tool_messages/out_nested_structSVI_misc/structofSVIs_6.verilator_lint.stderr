@@ -1,0 +1,10 @@
+%Warning-DECLFILENAME: testcases/structofSVIs_6.sv:3:11: Filename 'structofSVIs_6' does not match IFACE name: 'I'
+    3 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: testcases/structofSVIs_6.sv:5:9: Signal is not used: 'x'
+                                                      : ... In instance top
+    5 |   logic x;
+      |         ^
+%Error: Exiting due to 2 warning(s)

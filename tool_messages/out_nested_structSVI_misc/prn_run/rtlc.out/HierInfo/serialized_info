@@ -1,0 +1,6 @@
+22 serialization::archive 18 0 1 0
+0 0 0 2 16 0 0 0 8 work.top 3 1 0
+1 8 work.top 6 top__0 8 _no_attr 3 top 99 /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/interfaceDeclaration_moduleDefinition_0.sv 4 12 work.top.u_M 3
+2 12 work.top.u_M 4 M__0 0  1 M 99 /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/interfaceDeclaration_moduleDefinition_0.sv 32 0 0 2 16 0 0 0 6 top__0 6 1 0
+3 6 top__0 0 0 0 16 0 0 0 0 16 0 4 M__0 6
+4 4 M__0 0 16 0 0 16 0 0

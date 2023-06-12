@@ -1,0 +1,6 @@
+%Error-UNSUPPORTED: testcases/nested_interface_2.sv:20:3: Unsupported: interface decls within interface decls
+   20 |   I1 u_I1 
+      |   ^~
+                    ... For error description see https://verilator.org/warn/UNSUPPORTED?v=5.008
+%Error: Exiting due to 1 error(s)
+        ... See the manual at https://verilator.org/verilator_doc.html for more assistance.

@@ -1,0 +1,6 @@
+[91mError[97m: parse error
+[94m   -->[37m testcases/structofSVIs_3.sv:13:13
+[94m   |
+[94m13 |[37m     { I u_I (); // Interface instance with parenthesis.
+[94m   |[93m             ^(B[m
+FAILURE

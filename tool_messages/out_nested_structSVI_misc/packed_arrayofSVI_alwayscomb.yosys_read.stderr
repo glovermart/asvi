@@ -1,0 +1,2 @@
+Warning: wire '\u_I.x' is assigned in a block at testcases/packed_arrayofSVI_alwayscomb.sv:19.15-19.26.
+testcases/packed_arrayofSVI_alwayscomb.sv:22: ERROR: Failed to detect width for identifier \u_I!

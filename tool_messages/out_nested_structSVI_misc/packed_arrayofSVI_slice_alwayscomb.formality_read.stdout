@@ -1,0 +1,41 @@
+
+                                 Formality (R)
+
+               Version U-2022.12-SP2 for linux64 - Feb 24, 2023 
+
+                    Copyright (c) 1988 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Build: 8051736
+Hostname: cad11.nordicsemi.no
+Current time: Mon Jun 12 04:06:05 2023
+
+Loading db file '/cad/synopsys/formality/2022.12-SP2/libraries/syn/gtech.db'
+No target library specified, default is WORK
+Loading verilog file '/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/packed_arrayofSVI_slice_alwayscomb.sv'
+Current container set to 'r'
+Setting top design to 'r:/WORK/top'
+Status:   Elaborating design top   ...  
+Error: Instance name symbol 'u_I' is used in a context that requires an expression. (File: /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/packed_arrayofSVI_slice_alwayscomb.sv Line: 24)  (FMR_ELAB-269)
+Error: Failed to set top design to 'r:/WORK/top' (FM-156)
+Error: Reference design not set (FM-045)
+
+Maximum memory usage for this session: 776 MB
+CPU usage for this session: 1.49 seconds ( 0.00 hours )
+Current time: Mon Jun 12 04:06:05 2023
+Elapsed time: 1 seconds ( 0.00 hours )
+
+Thank you for using Formality (R)!

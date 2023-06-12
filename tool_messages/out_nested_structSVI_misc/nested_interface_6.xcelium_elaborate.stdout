@@ -1,0 +1,15 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/nested_interface_6.sv,41): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 2 input ports were not connected:
+xmelab: (./testcases/nested_interface_6.sv,39): i_a
+xmelab: (./testcases/nested_interface_6.sv,40): i_clk
+
+  M u_M
+      |
+xmelab: *E,CUVMUR (./testcases/nested_interface_6.sv,45|6): instance 'tb.u_DUT.u_M' of design unit 'M' is unresolved in 'worklib.top:module'.
+FAILURE

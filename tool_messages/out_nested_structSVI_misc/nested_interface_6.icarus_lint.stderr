@@ -1,0 +1,4 @@
+testcases/nested_interface_6.sv:21: error: Module instantiations are not allowed in interfaces.
+testcases/nested_interface_6.sv:27: syntax error
+testcases/nested_interface_6.sv:27: Errors in port declarations.
+testcases/nested_interface_6.sv:46: warning: implicit definition of wire 'u_I'.

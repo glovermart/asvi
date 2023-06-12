@@ -1,0 +1,262 @@
+
+                        SpyGlass Predictive Analyzer (R)
+                              Synopsys TestMAX(TM)
+                            SpyGlass Fault Analysis
+
+                 Version U-2023.03 for linux64 - Feb 28, 2023 
+
+                    Copyright (c) 2001 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+
+
+To access quickstart manual, please use `man quickstart'
+
+current_methodology: info: methodology is now `/cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/GuideWare/latest/block/rtl_handoff'
+current_goal: info: loading goal `lint/lint_rtl_enhanced' with top `top' (in progress)
+current_goal: info: finished loading goal `lint/lint_rtl_enhanced' (ok)
+
+INFO:    SpyGlass will run goal(s) 'lint/lint_rtl_enhanced'.
+
+
+RULE-CHECKING IN MIXED MODE
+Loading spyglass (SpyGlass_vU-2023.03) ... (picked from /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/policies/spyglass)
+Loading openmore (SpyGlass_vU-2023.03) ... (picked from /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/policies/openmore)
+Loading starc (SpyGlass_vU-2023.03) ... (picked from /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/policies/starc)
+Loading starc2005 (SpyGlass_vU-2023.03) ... (picked from /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/policies/starc2005)
+Loading erc (SpyGlass_vU-2023.03) ... (picked from /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/policies/erc)
+Loading simulation (SpyGlass_vU-2023.03) ... (picked from /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/policies/simulation)
+Loading lint (SpyGlass_vU-2023.03) ... (picked from /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/policies/lint)
+Loading latch (SpyGlass_vU-2023.03) ... (picked from /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/policies/latch)
+Loading morelint (SpyGlass_vU-2023.03) ... (picked from /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/policies/morelint)
+Loading timing (SpyGlass_vU-2023.03) ... (picked from /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/policies/timing)
+Loading starc2002 (SpyGlass_vU-2023.03) ... (picked from /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/policies/starc2002)
+Loading Audits (SpyGlass_vU-2023.03) ... (picked from /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/policies/Audits)
+Loading area (SpyGlass_vU-2023.03) ... (picked from /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/policies/area)
+Loading miscellaneous (SpyGlass_vU-2023.03) ... (picked from /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/policies/miscellaneous)
+Loading starcad-21 (SpyGlass_vU-2023.03) ... (picked from /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/policies/starcad-21)
+Loading txv (SpyGlass_vU-2023.03) ... (picked from /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/policies/txv)
+
+TXV_INFO Parameter txv_extract_domain will be renamed to txv_domain_mode in future!
+
+Loading power_est (SpyGlass_vU-2023.03) ... (picked from /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/policies/power_est)
+Loading lowpower (5.6.1) ... (picked from /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/policies/lowpower)
+Loading dft_dsm (SpyGlass_vU-2023.03) ... (picked from /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/policies/dft_dsm)
+Loading dft (SpyGlass_vU-2023.03) ... (picked from /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/policies/dft)
+Loading constraints (SpyGlass_vU-2023.03) ... (picked from /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/policies/constraints)
+Loading const_intern1 (SpyGlass_vU-2023.03) ... (picked from /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/policies/constraints)
+Loading clock-reset (SpyGlass_vU-2023.03) ... (picked from /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/policies/clock)
+
+INFO [6]    Work Directory 'spyglass/spyglass_lint/top/WORK' does not exist.
+
+INFO [75]    Creating the Work Directory 'spyglass/spyglass_lint/top/WORK/64' for 64bit  precompiled dump.
+Checking Rule SGDC_power_est29 (Rule 1 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule PECHECK04 (Rule 2 of total 363) .... done (Time = 0.01s, Memory = 16.0K)
+Checking Rule PECHECK18 (Rule 3 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule PEMVDD01 (Rule 4 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule PrecompileLibCheck01 (Rule 5 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule PrecompileLibCheck02 (Rule 6 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule PrecompileLibCheck03 (Rule 7 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule PrecompileLibCheck04 (Rule 8 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule AbstractInterface (Rule 9 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_assume_path01 (Rule 10 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_sdcschema02 (Rule 11 of total 363) .... done (Time = 0.00s, Memory = 32.0K)
+Checking Rule SGDC_clock05 (Rule 12 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_clock09 (Rule 13 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_force_ta05 (Rule 14 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_require_path03 (Rule 15 of total 363) .... done (Time = 0.00s, Memory = 32.0K)
+Checking Rule SGDC_require_value03 (Rule 16 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_voltagedomain05 (Rule 17 of total 363) .... done (Time = 0.00s, Memory = -24.0K)
+Checking Rule SGDC_voltagedomain06 (Rule 18 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_voltagedomain07 (Rule 19 of total 363) .... done (Time = 0.00s, Memory = 8.0K)
+Checking Rule SGDC_powerdomainoutputs02 (Rule 20 of total 363) .... done (Time = 0.00s, Memory = 8.0K)
+Checking Rule SGDC_supply01 (Rule 21 of total 363) .... done (Time = 0.00s, Memory = 8.0K)
+Checking Rule SGDC_waive01 (Rule 22 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive02 (Rule 23 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive03 (Rule 24 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive04 (Rule 25 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive05 (Rule 26 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive06 (Rule 27 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive07 (Rule 28 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive08 (Rule 29 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive09 (Rule 30 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive10 (Rule 31 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive11 (Rule 32 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive12 (Rule 33 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive13 (Rule 34 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive21 (Rule 35 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive22 (Rule 36 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive30 (Rule 37 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive32 (Rule 38 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive33 (Rule 39 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive36 (Rule 40 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive38 (Rule 41 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_fifo01 (Rule 42 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_libgroup01 (Rule 43 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_libgroup02 (Rule 44 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_libgroup04 (Rule 45 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_power_data01 (Rule 46 of total 363) .... done (Time = 0.00s, Memory = -24.0K)
+Checking Rule SGDC_ungroup01 (Rule 47 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_abstract_port06 (Rule 48 of total 363) .... done (Time = 0.00s, Memory = 8.0K)
+Checking Rule SGDC_abstract_port14 (Rule 49 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_abstract_port15 (Rule 50 of total 363) .... done (Time = 0.00s, Memory = 8.0K)
+Checking Rule SGDC_abstract_port18 (Rule 51 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule sdc_init_rule (Rule 52 of total 363) .... done (Time = 0.00s, Memory = -32.0K)
+Checking Rule CMD_ignorelibs01 (Rule 53 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule ReportRuleNotRun (Rule 54 of total 363) .... done (Time = 0.02s, Memory = 0.0K)
+Checking Rule ReserveName (Rule 55 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule ReserveName (Rule 56 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule STARC05-2.3.1.2c (Rule 57 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule W442a (Rule 58 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule W442b (Rule 59 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule W442c (Rule 60 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule W442f (Rule 61 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule W561 (Rule 62 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule mixedsenselist (Rule 63 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule badimplicitSM1 (Rule 64 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule badimplicitSM2 (Rule 65 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule badimplicitSM4 (Rule 66 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule bothedges (Rule 67 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule infiniteloop (Rule 68 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule BlockHeader (Rule 69 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule W421 (Rule 70 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule ReserveNameSystemVerilog-ML (Rule 71 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule ReserveNameSystemVerilog-ML (Rule 72 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule STARC05-2.1.6.5 (Rule 73 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule ReportStopSummary (Rule 74 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule ReportIgnoreSummary (Rule 75 of total 363) .... done (Time = 0.00s, Memory = 0.0K)
+ Analyzing source file "testcases/packed_arrayofSVI_slice_alwayscomb.sv" ....
+ Elaborating Top Verilog Design Unit 'top' ..... done
+***Syntax Errors detected - RULE CHECKING ABORTED***
+
+SpyGlass Rule Checking ABORTED.
+
+Generating data for Console...
+
+Generating moresimple report from 'spyglass/spyglass_lint/top/lint/lint_rtl_enhanced/spyglass.vdb' to 'spyglass/spyglass_lint/top/lint/lint_rtl_enhanced/spyglass_reports/moresimple.rpt' ....
+
+Generating runsummary report from 'spyglass/spyglass_lint/top/lint/lint_rtl_enhanced/spyglass.vdb' ....
+
+Generating no_msg_reporting_rules report from 'spyglass/spyglass_lint/top/lint/lint_rtl_enhanced/spyglass.vdb' to 'spyglass/spyglass_lint/top/lint/lint_rtl_enhanced/spyglass_reports/no_msg_reporting_rules.rpt' ....
+
+Generating W415_Report report from 'spyglass/spyglass_lint/top/lint/lint_rtl_enhanced/spyglass.vdb' to 'spyglass/spyglass_lint/top/lint/lint_rtl_enhanced/spyglass_reports/lint/W415_Report.rpt' ....
+
+Policy specific data (reports) are present in the directory 'spyglass/spyglass_lint/top/lint/lint_rtl_enhanced/spyglass_reports'.
+
+SpyGlass critical reports for the current run are present in directory 'spyglass/spyglass_lint/consolidated_reports/top_lint_lint_rtl_enhanced/'.
+
+---------------------------------------------------------------------------------------------
+Results Summary:
+---------------------------------------------------------------------------------------------
+   Goal Run           :      lint/lint_rtl_enhanced
+   Command-line read  :      0 fatal,      0 error,        1 warning,      0 information message 
+** Design Read        :      1 fatal,      0 error,        0 warning,      0 information message 
+   -------------------------------------------------------------------------------------
+** Total              :      1 fatal,      0 error,        1 warning,      0 information message 
+
+  Total Number of Generated Messages     :         2 (1 fatal, 0 error, 1 warning, 0 Info)
+  Number of Reported Messages            :         2 (1 fatal, 0 error, 1 warning, 0 Info)
+
+  NOTE: It is recommended to first fix/reconcile fatals/errors reported on
+        lines starting with ** as subsequent issues might be related to it.
+        Please re-run SpyGlass once ** prefixed lines are fatal/error clean.
+
+---------------------------------------------------------------------------------------------
+
+Following FATAL message(s) generated in current run -
+
+Rule         Severity   File                                              Line   Message
+-------------------------------------------------------------------------
+STX_VE_467   Syntax     testcases/packed_arrayofSVI_slice_alwayscomb.sv   24     Non-equivalent data types in assignment operation
+run_goal: info: updating spyglass.log with goal summary
+---------------------------------------------------------------------------------------------------
+Results Summary:
+---------------------------------------------------------------------------------------------------
+   Goal Run           :      lint/lint_rtl_enhanced
+   Top Module         :      top
+---------------------------------------------------------------------------------------------------
+   Reports Directory: 
+   /hizz/pro/sig_research/dddTools/work/anm3/asvi/spyglass/spyglass_lint/consolidated_reports/top_lint_lint_rtl_enhanced/ 
+
+   SpyGlass LogFile: 
+    /hizz/pro/sig_research/dddTools/work/anm3/asvi/spyglass/spyglass_lint/top/lint/lint_rtl_enhanced/spyglass.log 
+
+   Standard Reports: 
+     moresimple.rpt          no_msg_reporting_rules.rpt       
+
+   HTML report:
+    /hizz/pro/sig_research/dddTools/work/anm3/asvi/spyglass/spyglass_lint/html_reports/goals_summary.html
+  
+
+   Technology Reports:  
+     <Not Available>
+   
+   
+---------------------------------------------------------------------------------------------------
+   Goal Violation Summary:
+       Waived   Messages:                      0 Errors,      0 Warnings,      0 Infos
+       Reported Messages:         1 Fatals,    0 Errors,      1 Warnings,      0 Infos
+---------------------------------------------------------------------------------------------------
+   
+---------------------------------------------------------------------------------------------------
+ 
+run_goal: info: spyglass.log successfully updated with goal summary
+
+################################################################################
+#
+# This file has been generated by SpyGlass:
+#     Report Name      : moresimple
+#     Report Created by: anm3
+#     Report Created on:  Mon Jun 12 04:33:07 2023
+#     Working Directory: /hizz/pro/sig_research/dddTools/work/anm3/asvi
+#     SpyGlass Version : SpyGlass_vU-2023.03
+#     Policy Name      : SpyGlass(SpyGlass_vU-2023.03)
+#                        clock-reset(SpyGlass_vU-2023.03)
+#                        erc(SpyGlass_vU-2023.03)
+#                        latch(SpyGlass_vU-2023.03)
+#                        lint(SpyGlass_vU-2023.03)
+#                        morelint(SpyGlass_vU-2023.03)
+#                        openmore(SpyGlass_vU-2023.03)
+#                        power_est(SpyGlass_vU-2023.03)
+#                        simulation(SpyGlass_vU-2023.03)
+#                        starc(SpyGlass_vU-2023.03)
+#                        starc2005(SpyGlass_vU-2023.03)
+#                        txv(SpyGlass_vU-2023.03)
+#
+#     Total Number of Generated Messages :          2
+#     Number of Waived Messages          :          0
+#     Number of Reported Messages        :          2
+#     Number of Overlimit Messages       :          0
+#
+#
+################################################################################
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+MORESIMPLE REPORT:
+############### FATAL MESSAGES ############### 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ID       Rule          Alias         Severity    File                                               Line    Wt      Message
+======================================================================================
+[1]      STX_VE_467    STX_VE_467    Syntax      testcases/packed_arrayofSVI_slice_alwayscomb.sv    24      1000    Non-equivalent data types in assignment operation
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+############### BuiltIn -> RuleGroup=Command-line read ###############
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ID       Rule                  Alias                 Severity    File                                                                                                          Line    Wt    Message
+======================================================================================
+[0]      CMD_overloadrule01    OverloadRuleUnused    Warning     /cad/synopsys/Spyglass/2023.03/SPYGLASS_HOME/GuideWare/latest/block/rtl_handoff/lint/lint_rtl_enhanced.spq    369     10    Overload Specification for rule 'W339' has been ignored
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

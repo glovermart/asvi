@@ -1,0 +1,15 @@
+8:-out_dir
+68:/hizz/pro/sig_research/dddTools/work/anm3/asvi/out/prn_run//rtlc.out
+10:-pipe_flow
+2:-v
+71:/cad/mentor/precision/2022.2/Mgc_home/pkgs/rtlc_psr/rtlc/lib/unimacro.v
+2:-v
+80:/cad/mentor/precision/2022.2/Mgc_home/pkgs/rtlc_psr/rtlc/lib/xcv7_retarget_lib.v
+4:-svf
+85:/hizz/pro/sig_research/dddTools/work/anm3/asvi/out/prn_run//hdlAnalyze_sysverilogfile
+25:-comment_transoff_regions
+13:-lib_map_file
+68:/hizz/pro/sig_research/dddTools/work/anm3/asvi/out/prn_run//.jaguarc
+7:-sv2012
+115:+incdir+/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases+/hizz/pro/sig_research/dddTools/work/anm3/asvi/out
+17:+define+synthesis

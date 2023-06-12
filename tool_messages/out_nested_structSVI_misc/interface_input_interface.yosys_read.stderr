@@ -1,0 +1,5 @@
+Warning: wire '\u_I1.z' is assigned in a block at testcases/interface_input_interface.sv:17.15-17.39.
+testcases/interface_input_interface.sv:17: Warning: Identifier `\u_I1.z' is implicitly declared.
+testcases/interface_input_interface.sv:17: Warning: Identifier `\u_I1.x' is implicitly declared.
+testcases/interface_input_interface.sv:17: Warning: Identifier `\u_I1.y' is implicitly declared.
+Warning: Wire top.\o_a is used but has no driver.

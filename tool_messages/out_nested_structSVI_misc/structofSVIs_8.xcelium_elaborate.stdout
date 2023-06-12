@@ -1,0 +1,4 @@
+  top u_DUT();
+          |
+xmelab: *E,CUVMUR (./testbench/tb.sv,3|10): instance 'tb.u_DUT' of design unit 'top' is unresolved in 'worklib.tb:module'.
+FAILURE

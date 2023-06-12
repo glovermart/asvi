@@ -1,0 +1,16 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/interface_inst_nested_1.sv,37): o_b
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 2 input ports were not connected:
+xmelab: (./testcases/interface_inst_nested_1.sv,35): i_a
+xmelab: (./testcases/interface_inst_nested_1.sv,36): i_clk
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+  assign o_b = u_I1.u_I2.y; // Hierachical assignment.
+                         |
+xmelab: *E,CUVUNF (./testcases/interface_inst_nested_1.sv,47|25): Hierarchical name component lookup failed for 'u_I2' at 'tb.u_DUT'.
+FAILURE

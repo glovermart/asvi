@@ -1,0 +1,14 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/interface_inst_nested_arrayofSVI_1.sv,36): o_b
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 1 input port was not connected:
+xmelab: (./testcases/interface_inst_nested_arrayofSVI_1.sv,35): i_a
+
+    ( .i_a
+         |
+xmelab: *E,CUVPOM (./testcases/interface_inst_nested_arrayofSVI_1.sv,41|9): Port name 'i_a' of instance 'tb.u_DUT.u_I1' is invalid or has multiple connections and the instantiated module is defined in file '/pro/sig_research/dddTools/work/anm3/asvi/testcases/interface_modport_interface.sv'.
+FAILURE

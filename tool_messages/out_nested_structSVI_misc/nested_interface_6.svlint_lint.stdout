@@ -1,0 +1,6 @@
+[91mError[97m: parse error
+[94m   -->[37m testcases/nested_interface_6.sv:27:12
+[94m   |
+[94m27 |[37m   ( I.I1.P p
+[94m   |[93m            ^(B[m
+FAILURE
