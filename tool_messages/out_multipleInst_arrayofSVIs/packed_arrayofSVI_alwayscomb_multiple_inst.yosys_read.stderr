@@ -1,0 +1,9 @@
+Warning: wire '\u_I1.x' is assigned in a block at testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv:27.15-27.27.
+Warning: wire '\u_I2.x' is assigned in a block at testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv:28.15-28.27.
+Warning: wire '\u_I3.x' is assigned in a block at testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv:29.15-29.27.
+Warning: wire '\u_I4.x' is assigned in a block at testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv:30.15-30.27.
+Warning: wire '\u_I5.x' is assigned in a block at testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv:31.15-31.27.
+Warning: wire '\u_I6.x' is assigned in a block at testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv:32.15-32.27.
+Warning: wire '\u_I7.x' is assigned in a block at testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv:33.15-33.27.
+Warning: wire '\u_I8.x' is assigned in a block at testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv:34.15-34.27.
+testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv:43: ERROR: Failed to detect width for identifier \u_I8!

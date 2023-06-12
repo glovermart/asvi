@@ -1,0 +1,38 @@
+%Warning-DECLFILENAME: testcases/unpacked_arrayofSVI_alwayscomb_multiple_inst.sv:3:11: Filename 'unpacked_arrayofSVI_alwayscomb_multiple_inst' does not match IFACE name: 'I'
+    3 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Error: testcases/unpacked_arrayofSVI_alwayscomb_multiple_inst.sv:35:22: Operator PATMEMBER expected non-interface on Pattern value but 'u_I1__Viftop' is an interface.
+                                                                       : ... In instance top
+   35 |   always_comb a = '{ u_I1
+      |                      ^~~~
+%Error: testcases/unpacked_arrayofSVI_alwayscomb_multiple_inst.sv:36:22: Operator PATMEMBER expected non-interface on Pattern value but 'u_I2__Viftop' is an interface.
+                                                                       : ... In instance top
+   36 |                    , u_I2
+      |                      ^~~~
+%Error: testcases/unpacked_arrayofSVI_alwayscomb_multiple_inst.sv:37:22: Operator PATMEMBER expected non-interface on Pattern value but 'u_I3__Viftop' is an interface.
+                                                                       : ... In instance top
+   37 |                    , u_I3
+      |                      ^~~~
+%Error: testcases/unpacked_arrayofSVI_alwayscomb_multiple_inst.sv:38:22: Operator PATMEMBER expected non-interface on Pattern value but 'u_I4__Viftop' is an interface.
+                                                                       : ... In instance top
+   38 |                    , u_I4
+      |                      ^~~~
+%Error: testcases/unpacked_arrayofSVI_alwayscomb_multiple_inst.sv:39:22: Operator PATMEMBER expected non-interface on Pattern value but 'u_I5__Viftop' is an interface.
+                                                                       : ... In instance top
+   39 |                    , u_I5
+      |                      ^~~~
+%Error: testcases/unpacked_arrayofSVI_alwayscomb_multiple_inst.sv:40:22: Operator PATMEMBER expected non-interface on Pattern value but 'u_I6__Viftop' is an interface.
+                                                                       : ... In instance top
+   40 |                    , u_I6
+      |                      ^~~~
+%Error: testcases/unpacked_arrayofSVI_alwayscomb_multiple_inst.sv:41:22: Operator PATMEMBER expected non-interface on Pattern value but 'u_I7__Viftop' is an interface.
+                                                                       : ... In instance top
+   41 |                    , u_I7
+      |                      ^~~~
+%Error: testcases/unpacked_arrayofSVI_alwayscomb_multiple_inst.sv:42:22: Operator PATMEMBER expected non-interface on Pattern value but 'u_I8__Viftop' is an interface.
+                                                                       : ... In instance top
+   42 |                    , u_I8
+      |                      ^~~~
+%Error: Exiting due to 8 error(s), 1 warning(s)

@@ -1,0 +1,25 @@
+  always_comb a = { u_I1
+                       |
+xmvlog: *E,TYPEERR (testcases/packed_arrayofSVI_assign_multiple_inst.sv,36|23): {} concatenation operator operand type is illegal.
+                  , u_I2
+                       |
+xmvlog: *E,TYPEERR (testcases/packed_arrayofSVI_assign_multiple_inst.sv,37|23): {} concatenation operator operand type is illegal.
+                  , u_I3
+                       |
+xmvlog: *E,TYPEERR (testcases/packed_arrayofSVI_assign_multiple_inst.sv,38|23): {} concatenation operator operand type is illegal.
+                  , u_I4
+                       |
+xmvlog: *E,TYPEERR (testcases/packed_arrayofSVI_assign_multiple_inst.sv,39|23): {} concatenation operator operand type is illegal.
+                  , u_I5
+                       |
+xmvlog: *E,TYPEERR (testcases/packed_arrayofSVI_assign_multiple_inst.sv,40|23): {} concatenation operator operand type is illegal.
+                  , u_I6
+                       |
+xmvlog: *E,TYPEERR (testcases/packed_arrayofSVI_assign_multiple_inst.sv,41|23): {} concatenation operator operand type is illegal.
+                  , u_I7
+                       |
+xmvlog: *E,TYPEERR (testcases/packed_arrayofSVI_assign_multiple_inst.sv,42|23): {} concatenation operator operand type is illegal.
+                  , u_I8
+                       |
+xmvlog: *E,TYPEERR (testcases/packed_arrayofSVI_assign_multiple_inst.sv,43|23): {} concatenation operator operand type is illegal.
+FAILURE

@@ -1,0 +1,16 @@
+QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 17:19:10 on Jun 12,2023
+vlog -sv -sv17compat -lint=default testcases/unpacked_arrayofSVI_assign_multiple_inst.sv 
+-- Compiling interface I
+-- Compiling module top
+** Error (suppressible): testcases/unpacked_arrayofSVI_assign_multiple_inst.sv(35): (vlog-13215) Assignment pattern element 'u_I1':  Cannot assign an unpacked type 'interface I' to a packed type 'reg'.
+** Error (suppressible): testcases/unpacked_arrayofSVI_assign_multiple_inst.sv(36): (vlog-13215) Assignment pattern element 'u_I2':  Cannot assign an unpacked type 'interface I' to a packed type 'reg'.
+** Error (suppressible): testcases/unpacked_arrayofSVI_assign_multiple_inst.sv(37): (vlog-13215) Assignment pattern element 'u_I3':  Cannot assign an unpacked type 'interface I' to a packed type 'reg'.
+** Error (suppressible): testcases/unpacked_arrayofSVI_assign_multiple_inst.sv(38): (vlog-13215) Assignment pattern element 'u_I4':  Cannot assign an unpacked type 'interface I' to a packed type 'reg'.
+** Error (suppressible): testcases/unpacked_arrayofSVI_assign_multiple_inst.sv(39): (vlog-13215) Assignment pattern element 'u_I5':  Cannot assign an unpacked type 'interface I' to a packed type 'reg'.
+** Error (suppressible): testcases/unpacked_arrayofSVI_assign_multiple_inst.sv(40): (vlog-13215) Assignment pattern element 'u_I6':  Cannot assign an unpacked type 'interface I' to a packed type 'reg'.
+** Error (suppressible): testcases/unpacked_arrayofSVI_assign_multiple_inst.sv(41): (vlog-13215) Assignment pattern element 'u_I7':  Cannot assign an unpacked type 'interface I' to a packed type 'reg'.
+** Error (suppressible): testcases/unpacked_arrayofSVI_assign_multiple_inst.sv(42): (vlog-13215) Assignment pattern element 'u_I8':  Cannot assign an unpacked type 'interface I' to a packed type 'reg'.
+End time: 17:19:10 on Jun 12,2023, Elapsed time: 0:00:00
+Errors: 8, Warnings: 0
+FAILURE

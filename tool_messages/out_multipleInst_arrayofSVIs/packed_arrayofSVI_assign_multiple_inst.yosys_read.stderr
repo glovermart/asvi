@@ -1,0 +1,1 @@
+testcases/packed_arrayofSVI_assign_multiple_inst.sv:43: ERROR: Failed to detect width for identifier \u_I8!

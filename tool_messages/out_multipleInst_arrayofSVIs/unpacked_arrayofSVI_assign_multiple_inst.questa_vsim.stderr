@@ -1,0 +1,3 @@
+Jobspy Error: error flushing "sock2c7aef0": broken pipe
+    while executing
+"JobSpyIntf::Start"

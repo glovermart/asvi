@@ -1,0 +1,36 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/unpacked_arrayofSVI_alwayscomb_multiple_inst.sv,12): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 1 input port was not connected:
+xmelab: (./testcases/unpacked_arrayofSVI_alwayscomb_multiple_inst.sv,11): i_a
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+  always_comb a = '{ u_I1
+                        |
+xmelab: *E,TYCMPAT (./testcases/unpacked_arrayofSVI_alwayscomb_multiple_inst.sv,35|24): assignment operator type check failed on instance 'tb.u_DUT' (expecting datatype compatible with 'logic' but found 'I instance' instead).
+                   , u_I2
+                        |
+xmelab: *E,TYCMPAT (./testcases/unpacked_arrayofSVI_alwayscomb_multiple_inst.sv,36|24): assignment operator type check failed on instance 'tb.u_DUT' (expecting datatype compatible with 'logic' but found 'I instance' instead).
+                   , u_I3
+                        |
+xmelab: *E,TYCMPAT (./testcases/unpacked_arrayofSVI_alwayscomb_multiple_inst.sv,37|24): assignment operator type check failed on instance 'tb.u_DUT' (expecting datatype compatible with 'logic' but found 'I instance' instead).
+                   , u_I4
+                        |
+xmelab: *E,TYCMPAT (./testcases/unpacked_arrayofSVI_alwayscomb_multiple_inst.sv,38|24): assignment operator type check failed on instance 'tb.u_DUT' (expecting datatype compatible with 'logic' but found 'I instance' instead).
+                   , u_I5
+                        |
+xmelab: *E,TYCMPAT (./testcases/unpacked_arrayofSVI_alwayscomb_multiple_inst.sv,39|24): assignment operator type check failed on instance 'tb.u_DUT' (expecting datatype compatible with 'logic' but found 'I instance' instead).
+                   , u_I6
+                        |
+xmelab: *E,TYCMPAT (./testcases/unpacked_arrayofSVI_alwayscomb_multiple_inst.sv,40|24): assignment operator type check failed on instance 'tb.u_DUT' (expecting datatype compatible with 'logic' but found 'I instance' instead).
+                   , u_I7
+                        |
+xmelab: *E,TYCMPAT (./testcases/unpacked_arrayofSVI_alwayscomb_multiple_inst.sv,41|24): assignment operator type check failed on instance 'tb.u_DUT' (expecting datatype compatible with 'logic' but found 'I instance' instead).
+                   , u_I8
+                        |
+xmelab: *E,TYCMPAT (./testcases/unpacked_arrayofSVI_alwayscomb_multiple_inst.sv,42|24): assignment operator type check failed on instance 'tb.u_DUT' (expecting datatype compatible with 'logic' but found 'I instance' instead).
+FAILURE
