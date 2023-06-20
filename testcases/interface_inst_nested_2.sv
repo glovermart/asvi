@@ -22,7 +22,7 @@ interface I1
     logic y;
     
     always_ff @(posedge i_clk) // Use of `always_ff` construct in nested interface.
-      y = u_I.x;
+      y <= u_I.x;
 
   endinterface
 

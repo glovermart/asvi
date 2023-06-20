@@ -20,14 +20,14 @@ interface I1
 
 
   interface I2;
-    
-    logic y;
   
+    logic y;
+
     always_ff @(posedge i_clk)
       u_I.x <= i_a;
 
     always_ff @(posedge i_clk) 
-      y = u_I.x;
+      y <= u_I.x;
 
   endinterface
 
