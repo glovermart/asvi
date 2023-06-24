@@ -1,0 +1,11 @@
+QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 11:58:04 on Jun 23,2023
+vlog -sv -sv17compat -lint=default testcases/nested_interface_5.sv 
+-- Compiling interface I
+-- Compiling interface I1
+** Error: testcases/nested_interface_5.sv(12): Modport item 'x' must refer to an item in 'I1'.
+-- Compiling module M
+** Error: (vlog-13069) testcases/nested_interface_5.sv(26): near ".": syntax error, unexpected '.', expecting IDENTIFIER.
+End time: 11:58:04 on Jun 23,2023, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+FAILURE

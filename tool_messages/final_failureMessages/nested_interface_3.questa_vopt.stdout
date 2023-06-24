@@ -1,0 +1,24 @@
+QuestaSim-64 vopt 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 14:00:20 on Jun 23,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+-- Loading interface I
+-- Loading interface I1
+** Warning: testbench/tb.sv(3): (vopt-2685) [TFMPC] - Too few port connections for 'u_DUT'.  Expected 3, found 0.
+Optimizing 5 design-units (inlining 2/4 module instances):
+-- Inlining interface I(fast__1)
+-- Optimizing interface I1(fast__1)
+-- Inlining module top(fast)
+-- Optimizing module tb(fast)
+** Error (suppressible): testcases/nested_interface_3.sv(14): (vopt-7045) 'z' is driven by more than one continuous assignment. See testcases/nested_interface_3.sv(14).
+Optimization failed
+** Error: (vopt-2064) Compiler back-end code generation process terminated with code 12.
+End time: 14:00:21 on Jun 23,2023, Elapsed time: 0:00:01
+Errors: 2, Warnings: 1
+FAILURE

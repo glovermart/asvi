@@ -1,0 +1,27 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/nested_interface_6.sv,41): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 2 input ports were not connected:
+xmelab: (./testcases/nested_interface_6.sv,39): i_a
+xmelab: (./testcases/nested_interface_6.sv,40): i_clk
+
+  I u_I ();
+      |
+xmelab: *W,CUVWSI (./testcases/nested_interface_6.sv,44|6): 2 input ports were not connected:
+xmelab: (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv,9): arst
+xmelab: (./testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv,10): en
+
+  M u_M
+      |
+xmelab: *E,CUVWLP (./testcases/nested_interface_6.sv,45|6): Too many module port connections.
+    ( u_I
+        |
+xmelab: *E,CUINPD (./testcases/nested_interface_6.sv,46|8): Interface array port does not match scalar interface instance.
+  ( I u_I [SIZE-1:0]
+        |
+xmelab: *E,CUIMBC (./testcases/assign_arrayofSVI_inst_2.sv,18|8): An interface port declaration must be connected in instance(tb.u_DUT.u_M, file:./testcases/nested_interface_6.sv, line:45).
+FAILURE

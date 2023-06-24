@@ -1,0 +1,39 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 2 output ports were not connected:
+xmelab: (./testcases/force_misc_svi_alwaysff.sv,37): o_a
+xmelab: (./testcases/force_misc_svi_alwaysff.sv,38): i_srst
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 1 input port was not connected:
+xmelab: (./testcases/force_misc_svi_alwaysff.sv,36): i_sclk
+
+  M u_M1 (u_I);
+       |
+xmelab: *W,CUVWSP (./testcases/force_misc_svi_alwaysff.sv,42|7): 1 output port was not connected:
+xmelab: (./testcases/force_misc_svi_alwaysff.sv,17): o_a
+
+  M u_M1 (u_I);
+       |
+xmelab: *W,CUVWSI (./testcases/force_misc_svi_alwaysff.sv,42|7): 1 input port was not connected:
+xmelab: (./testcases/force_misc_svi_alwaysff.sv,18): i_sclk
+
+  M u_M2 (u_I);
+       |
+xmelab: *W,CUVWSP (./testcases/force_misc_svi_alwaysff.sv,43|7): 1 output port was not connected:
+xmelab: (./testcases/force_misc_svi_alwaysff.sv,17): o_a
+
+  M u_M2 (u_I);
+       |
+xmelab: *W,CUVWSI (./testcases/force_misc_svi_alwaysff.sv,43|7): 1 input port was not connected:
+xmelab: (./testcases/force_misc_svi_alwaysff.sv,18): i_sclk
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+  always_ff @(posedge i_sclk)
+          |
+xmelab: *E,MULAXX (./testcases/force_misc_svi_alwaysff.sv,26|10): Multiple drivers to always_ff output variable u_I.y detected.
+  always_ff @(posedge i_sclk)
+          |
+xmelab: *E,MULAXX (./testcases/force_misc_svi_alwaysff.sv,23|10): Multiple drivers to always_ff output variable u_I.x detected.
+FAILURE

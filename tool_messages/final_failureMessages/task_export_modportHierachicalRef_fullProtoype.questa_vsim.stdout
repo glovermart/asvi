@@ -1,0 +1,33 @@
+Reading pref.tcl
+
+# 2022.2_1
+
+# Couldn't connect to Jobspy Daemon at port 1305 on host jobspy
+# vsim -c design_unit -do "run -all; quit -f" 
+# Start time: 14:28:36 on Jun 23,2023
+# //  Questa Sim-64
+# //  Version 2022.2_1 linux_x86_64 May 19 2022
+# //
+# //  Copyright 1991-2022 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb(fast)
+# Loading work.I(fast__1)
+# Loading work.M1(fast)
+# Loading work.M2(fast)
+# run -all
+# ** Info: Simulation started.
+#    Time: 0 ns  Scope: tb.l_tb_initial File: testbench/tb.sv Line: 5
+# ** Note: $finish    : testbench/tb.sv(6)
+#    Time: 0 ns  Iteration: 0  Instance: /tb
+# End time: 14:28:37 on Jun 23,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

@@ -1,0 +1,3 @@
+testcases/interface_modport_interface.sv:16: syntax error
+testcases/interface_modport_interface.sv:16: Errors in port declarations.
+testcases/interface_modport_interface.sv:34: warning: implicit definition of wire 'u_I1'.

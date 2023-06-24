@@ -1,0 +1,1 @@
+testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv:32: ERROR: syntax error, unexpected '[', expecting ',' or '=' or ')'

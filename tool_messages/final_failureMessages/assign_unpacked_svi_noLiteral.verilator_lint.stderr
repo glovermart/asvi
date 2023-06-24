@@ -1,0 +1,38 @@
+%Warning-DECLFILENAME: testcases/assign_unpacked_svi_noLiteral.sv:3:11: Filename 'assign_unpacked_svi_noLiteral' does not match IFACE name: 'I'
+    3 | interface I
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Error-UNSUPPORTED: testcases/assign_unpacked_svi_noLiteral.sv:9:16: Unsupported: Non-1 replication to form 'logic$[7:0]' data type
+                                                                   : ... In instance top
+    9 |   assign x = {8{i_a}};  
+      |                ^
+%Error: testcases/assign_unpacked_svi_noLiteral.sv:9:16: Assignment pattern missed initializing elements: 6
+                                                       : ... In instance top
+    9 |   assign x = {8{i_a}};  
+      |                ^
+%Error: testcases/assign_unpacked_svi_noLiteral.sv:9:16: Assignment pattern missed initializing elements: 5
+                                                       : ... In instance top
+    9 |   assign x = {8{i_a}};  
+      |                ^
+%Error: testcases/assign_unpacked_svi_noLiteral.sv:9:16: Assignment pattern missed initializing elements: 4
+                                                       : ... In instance top
+    9 |   assign x = {8{i_a}};  
+      |                ^
+%Error: testcases/assign_unpacked_svi_noLiteral.sv:9:16: Assignment pattern missed initializing elements: 3
+                                                       : ... In instance top
+    9 |   assign x = {8{i_a}};  
+      |                ^
+%Error: testcases/assign_unpacked_svi_noLiteral.sv:9:16: Assignment pattern missed initializing elements: 2
+                                                       : ... In instance top
+    9 |   assign x = {8{i_a}};  
+      |                ^
+%Error: testcases/assign_unpacked_svi_noLiteral.sv:9:16: Assignment pattern missed initializing elements: 1
+                                                       : ... In instance top
+    9 |   assign x = {8{i_a}};  
+      |                ^
+%Error: testcases/assign_unpacked_svi_noLiteral.sv:9:16: Assignment pattern missed initializing elements: 0
+                                                       : ... In instance top
+    9 |   assign x = {8{i_a}};  
+      |                ^
+%Error: Exiting due to 8 error(s), 1 warning(s)

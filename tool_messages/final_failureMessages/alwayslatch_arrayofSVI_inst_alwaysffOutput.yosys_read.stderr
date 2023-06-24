@@ -1,0 +1,40 @@
+Warning: wire '\u_I[0].x' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:28.17-28.29.
+Warning: wire '\u_I[0].y' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:31.9-31.25.
+Warning: wire '\u_I[0].y' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:33.9-33.29.
+Warning: wire '\u_I[1].x' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:28.17-28.29.
+Warning: wire '\u_I[1].y' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:31.9-31.25.
+Warning: wire '\u_I[1].y' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:33.9-33.29.
+Warning: wire '\u_I[2].x' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:28.17-28.29.
+Warning: wire '\u_I[2].y' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:31.9-31.25.
+Warning: wire '\u_I[2].y' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:33.9-33.29.
+Warning: wire '\u_I[3].x' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:28.17-28.29.
+Warning: wire '\u_I[3].y' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:31.9-31.25.
+Warning: wire '\u_I[3].y' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:33.9-33.29.
+Warning: wire '\u_I[4].x' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:28.17-28.29.
+Warning: wire '\u_I[4].y' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:31.9-31.25.
+Warning: wire '\u_I[4].y' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:33.9-33.29.
+Warning: wire '\u_I[5].x' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:28.17-28.29.
+Warning: wire '\u_I[5].y' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:31.9-31.25.
+Warning: wire '\u_I[5].y' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:33.9-33.29.
+Warning: wire '\u_I[6].x' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:28.17-28.29.
+Warning: wire '\u_I[6].y' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:31.9-31.25.
+Warning: wire '\u_I[6].y' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:33.9-33.29.
+Warning: wire '\u_I[7].x' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:28.17-28.29.
+Warning: wire '\u_I[7].y' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:31.9-31.25.
+Warning: wire '\u_I[7].y' is assigned in a block at testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:33.9-33.29.
+testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:28: Warning: Identifier `\u_I[0].x' is implicitly declared.
+testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:31: Warning: Identifier `\u_I[0].y' is implicitly declared.
+testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:28: Warning: Identifier `\u_I[1].x' is implicitly declared.
+testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:31: Warning: Identifier `\u_I[1].y' is implicitly declared.
+testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:28: Warning: Identifier `\u_I[2].x' is implicitly declared.
+testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:31: Warning: Identifier `\u_I[2].y' is implicitly declared.
+testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:28: Warning: Identifier `\u_I[3].x' is implicitly declared.
+testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:31: Warning: Identifier `\u_I[3].y' is implicitly declared.
+testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:28: Warning: Identifier `\u_I[4].x' is implicitly declared.
+testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:31: Warning: Identifier `\u_I[4].y' is implicitly declared.
+testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:28: Warning: Identifier `\u_I[5].x' is implicitly declared.
+testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:31: Warning: Identifier `\u_I[5].y' is implicitly declared.
+testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:28: Warning: Identifier `\u_I[6].x' is implicitly declared.
+testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:31: Warning: Identifier `\u_I[6].y' is implicitly declared.
+testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:28: Warning: Identifier `\u_I[7].x' is implicitly declared.
+testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv:31: Warning: Identifier `\u_I[7].y' is implicitly declared.

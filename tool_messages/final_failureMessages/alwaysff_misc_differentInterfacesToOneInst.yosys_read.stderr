@@ -1,0 +1,32 @@
+Warning: wire '\u_I1.z' is assigned in a block at testcases/alwaysff_misc_differentInterfacesToOneInst.sv:27.35-27.46.
+Warning: wire '\u_I1.y' is assigned in a block at testcases/alwaysff_misc_differentInterfacesToOneInst.sv:28.35-28.49.
+Warning: wire '\u_I1.x' is assigned in a block at testcases/alwaysff_misc_differentInterfacesToOneInst.sv:29.35-29.46.
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:27: Warning: Identifier `\u_I1.z' is implicitly declared.
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:27: Warning: Identifier `\u_I1.i_clk' is implicitly declared.
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:28: Warning: Identifier `\u_I1.y' is implicitly declared.
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:29: Warning: Identifier `\u_I1.x' is implicitly declared.
+Warning: wire '\u_I2.z' is assigned in a block at testcases/alwaysff_misc_differentInterfacesToOneInst.sv:44.7-44.21.
+Warning: wire '\u_I2.z' is assigned in a block at testcases/alwaysff_misc_differentInterfacesToOneInst.sv:46.7-46.18.
+Warning: wire '\u_I2.y' is assigned in a block at testcases/alwaysff_misc_differentInterfacesToOneInst.sv:49.7-49.21.
+Warning: wire '\u_I2.y' is assigned in a block at testcases/alwaysff_misc_differentInterfacesToOneInst.sv:51.7-51.21.
+Warning: wire '\u_I2.x' is assigned in a block at testcases/alwaysff_misc_differentInterfacesToOneInst.sv:54.7-54.21.
+Warning: wire '\u_I2.x' is assigned in a block at testcases/alwaysff_misc_differentInterfacesToOneInst.sv:56.7-56.18.
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:44: Warning: Identifier `\u_I2.z' is implicitly declared.
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:42: Warning: Identifier `\u_I2.i_clk' is implicitly declared.
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:43: Warning: Identifier `\u_I2.i_srst' is implicitly declared.
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:49: Warning: Identifier `\u_I2.y' is implicitly declared.
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:54: Warning: Identifier `\u_I2.x' is implicitly declared.
+Warning: wire '\u_I3.z' is assigned in a block at testcases/alwaysff_misc_differentInterfacesToOneInst.sv:71.7-71.21.
+Warning: wire '\u_I3.z' is assigned in a block at testcases/alwaysff_misc_differentInterfacesToOneInst.sv:73.7-73.18.
+Warning: wire '\u_I3.y' is assigned in a block at testcases/alwaysff_misc_differentInterfacesToOneInst.sv:76.7-76.21.
+Warning: wire '\u_I3.y' is assigned in a block at testcases/alwaysff_misc_differentInterfacesToOneInst.sv:78.7-78.21.
+Warning: wire '\u_I3.x' is assigned in a block at testcases/alwaysff_misc_differentInterfacesToOneInst.sv:81.7-81.21.
+Warning: wire '\u_I3.x' is assigned in a block at testcases/alwaysff_misc_differentInterfacesToOneInst.sv:83.7-83.18.
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:71: Warning: Identifier `\u_I3.z' is implicitly declared.
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:69: Warning: Identifier `\u_I3.i_clk' is implicitly declared.
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:69: Warning: Identifier `\u_I3.i_arst' is implicitly declared.
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:76: Warning: Identifier `\u_I3.y' is implicitly declared.
+testcases/alwaysff_misc_differentInterfacesToOneInst.sv:81: Warning: Identifier `\u_I3.x' is implicitly declared.
+Warning: Wire M1$interfaces$I.\a is used but has no driver.
+Warning: Wire M2$interfaces$I.\a is used but has no driver.
+Warning: Wire M3$interfaces$I.\a is used but has no driver.

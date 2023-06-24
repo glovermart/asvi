@@ -1,0 +1,18 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/interface_inst_nested_arrayofSVI_3.sv,38): o_b
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 2 input ports were not connected:
+xmelab: (./testcases/interface_inst_nested_arrayofSVI_3.sv,36): i_a
+xmelab: (./testcases/interface_inst_nested_arrayofSVI_3.sv,37): i_clk
+
+    ( .i_a
+         |
+xmelab: *E,CUVPOM (./testcases/interface_inst_nested_arrayofSVI_3.sv,43|9): Port name 'i_a' of instance 'tb.u_DUT.u_I1' is invalid or has multiple connections and the instantiated module is defined in file '/pro/sig_research/dddTools/work/anm3/asvi/testcases/nested_interface_8.sv'.
+    , .i_clk
+           |
+xmelab: *E,CUVPOM (./testcases/interface_inst_nested_arrayofSVI_3.sv,44|11): Port name 'i_clk' of instance 'tb.u_DUT.u_I1' is invalid or has multiple connections and the instantiated module is defined in file '/pro/sig_research/dddTools/work/anm3/asvi/testcases/nested_interface_8.sv'.
+FAILURE

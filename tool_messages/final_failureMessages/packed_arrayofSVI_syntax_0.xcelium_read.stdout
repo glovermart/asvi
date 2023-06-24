@@ -1,0 +1,7 @@
+  I [7:0] u_I ();
+  |
+xmvlog: *E,SVNOTY (testcases/packed_arrayofSVI_syntax_0.sv,17|2): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+  I [7:0] u_I ();
+              |
+xmvlog: *E,EXPSMC (testcases/packed_arrayofSVI_syntax_0.sv,17|14): expecting a semicolon (';') [3.2.2(IEEE)].
+FAILURE

@@ -1,0 +1,11 @@
+QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 19:14:29 on Jun 23,2023
+vlog -sv -lint=full testcases/task_automatic.sv testbench/tb.sv 
+-- Compiling interface I
+-- Compiling module top
+-- Compiling module tb
+
+Top level modules:
+	tb
+End time: 19:14:30 on Jun 23,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

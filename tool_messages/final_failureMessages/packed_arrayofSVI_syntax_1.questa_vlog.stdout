@@ -1,0 +1,15 @@
+QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 18:22:12 on Jun 23,2023
+vlog -sv -lint=full testcases/packed_arrayofSVI_syntax_1.sv testbench/tb.sv 
+-- Compiling interface I
+-- Compiling module top
+** Error: (vlog-13442) testcases/packed_arrayofSVI_syntax_1.sv(17): near "u_I": Syntax error. Unexpected range following an IDENTIFIER.
+** Error: testcases/packed_arrayofSVI_syntax_1.sv(21): Automatic variable not allowed in procedural continuous assignment statement: i
+** Error: testcases/packed_arrayofSVI_syntax_1.sv(22): Automatic variable not allowed in procedural continuous assignment statement: i
+** Error: testcases/packed_arrayofSVI_syntax_1.sv(22): Automatic variable not allowed in procedural continuous assignment statement: i
+** Error: testcases/packed_arrayofSVI_syntax_1.sv(22): Bit-select of reg not allowed in procedural continuous assignment: a.
+** Warning: testcases/packed_arrayofSVI_syntax_1.sv(20): (vlog-2623) Undefined variable: u_I.
+-- Compiling module tb
+End time: 18:22:13 on Jun 23,2023, Elapsed time: 0:00:01
+Errors: 5, Warnings: 1
+FAILURE

@@ -1,0 +1,2 @@
+ERROR: [Synth 8-9195] bit-select or part-select is not allowed in a assign statement for non-net 'a' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/packed_arrayofSVI_syntax_1.sv:22]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

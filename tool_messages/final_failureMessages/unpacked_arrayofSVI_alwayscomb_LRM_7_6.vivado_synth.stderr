@@ -1,0 +1,2 @@
+ERROR: [Synth 8-35] 'i' is not a constant [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/unpacked_arrayofSVI_alwayscomb_LRM_7_6.sv:20]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

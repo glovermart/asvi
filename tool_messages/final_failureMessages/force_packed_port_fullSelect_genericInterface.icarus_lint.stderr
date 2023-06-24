@@ -1,0 +1,5 @@
+testcases/force_packed_port_fullSelect_genericInterface.sv:16: syntax error
+testcases/force_packed_port_fullSelect_genericInterface.sv:16: Errors in port declarations.
+testcases/force_packed_port_fullSelect_genericInterface.sv:31: syntax error
+testcases/force_packed_port_fullSelect_genericInterface.sv:1: Errors in port declarations.
+testcases/force_packed_port_fullSelect_genericInterface.sv:44: warning: implicit definition of wire 'o_a'.

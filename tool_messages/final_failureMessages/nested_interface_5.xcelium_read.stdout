@@ -1,0 +1,13 @@
+  interface I1;
+          |
+xmvlog: *E,SVNIMP (testcases/nested_interface_5.sv,10|10): SystemVerilog construct not yet implemented:  nested interface.
+  ( I.u_I1.P p
+          |
+xmvlog: *E,EXPIDN (testcases/nested_interface_5.sv,26|10): expecting an identifier [13.3.2][3.2.1(IEEE)].
+  ( I.u_I1.P p
+             |
+xmvlog: *E,EXPCORP (testcases/nested_interface_5.sv,26|13): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
+  ( I.u_I1.P p
+             |
+xmvlog: *E,EXPCORP (testcases/nested_interface_5.sv,26|13): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
+FAILURE

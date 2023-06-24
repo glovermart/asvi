@@ -1,0 +1,9 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSN (./testbench/tb.sv,3|10): 1 null-IO port was not connected:
+xmelab: (./testcases/assign_misc_port_Module2opt.sv,37): u_I
+
+  ( I u_I
+        |
+xmelab: *E,CUIMBC (./testcases/assign_misc_port_Module2opt.sv,37|8): An interface port declaration must be connected in instance(tb.u_DUT, file:./testbench/tb.sv, line:3).
+FAILURE

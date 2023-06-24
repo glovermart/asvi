@@ -1,0 +1,71 @@
+[01m[31mNote:[0m DISPLAY is not valid, GUI view commands are disabled.
+
+                                   VC Static 
+
+                Version T-2022.06-SP2 for linux64 - Nov 29, 2022
+
+                    Copyright (c) 2010 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+vcf> vcf> global env
+set TEST_NAME $env(TESTCASE)
+testcases/alwayslatch_misc_svi_modportDotnameModuleInst.sv
+read_file -format sverilog -top top ${TEST_NAME}
+
+Error-[SV-UMPP] Undefined modport port
+testcases/alwayslatch_misc_svi_modportDotnameModuleInst.sv, 12
+  Modport 'P' contains port 'x' which is not defined in the interface 'I'.
+  Add the signal to the interface or delete it from the modport.
+
+1 error
+[Info] DB_COPT045: Vcs analyzer task has finished.
+[Error] DB_COPT012: VCS reader failed
+	No scm file is generated, thus no NLDM is created.
+[Error] COM_ENV005: Design read using VCS & Simon failed.
+Error: 0
+	Use error_info for more info. (CMD-013)
+Information: script 'tcl/vcformal_batch_run.tcl'
+	stopped at line 3 due to error. (CMD-081)
+Extended error info:
+0
+    while executing
+"read_file -format sverilog -top top ${TEST_NAME}"
+    (file "tcl/vcformal_batch_run.tcl" line 3)
+ -- End Extended Error Info
+
+=======================================================
+Total Time(S)  :7.98
+CPU Time(S)    :3.61
+Peak Memory(MB):1148
+=======================================================
+FAILURE

@@ -1,0 +1,3 @@
+testcases/alwayscomb_arrayofSVI_port_nomodport.sv:18: syntax error
+testcases/alwayscomb_arrayofSVI_port_nomodport.sv:18: Errors in port declarations.
+testcases/alwayscomb_arrayofSVI_port_nomodport.sv:44: warning: implicit definition of wire 'u_I'.

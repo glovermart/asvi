@@ -1,0 +1,24 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 3 output ports were not connected:
+xmelab: (./testcases/alwaysff_misc_singleModuleInstantiation.sv,106): z
+xmelab: (./testcases/alwaysff_misc_singleModuleInstantiation.sv,107): y
+xmelab: (./testcases/alwaysff_misc_singleModuleInstantiation.sv,108): x
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 3 input ports were not connected:
+xmelab: (./testcases/alwaysff_misc_singleModuleInstantiation.sv,103): i_clk
+xmelab: (./testcases/alwaysff_misc_singleModuleInstantiation.sv,104): i_srst
+xmelab: (./testcases/alwaysff_misc_singleModuleInstantiation.sv,105): i_arst
+
+  ( I.P p
+        |
+xmelab: *E,CUIMPX (./testcases/alwaysff_misc_singleModuleInstantiation.sv,73|8): The interface modport used (P) does not exist (tb.u_DUT.u_M3).
+  ( I.P p
+        |
+xmelab: *E,CUIMPX (./testcases/alwaysff_misc_singleModuleInstantiation.sv,43|8): The interface modport used (P) does not exist (tb.u_DUT.u_M3.u_M2).
+  ( I.P p
+        |
+xmelab: *E,CUIMPX (./testcases/alwaysff_misc_singleModuleInstantiation.sv,29|8): The interface modport used (P) does not exist (tb.u_DUT.u_M3.u_M2.u_M1).
+FAILURE

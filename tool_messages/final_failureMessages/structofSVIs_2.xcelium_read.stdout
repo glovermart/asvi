@@ -1,0 +1,13 @@
+    { I u_I1; // 1st Struct member.
+      |
+xmvlog: *E,SVNOTY (testcases/structofSVIs_2.sv,13|6): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+    { I u_I1; // 1st Struct member.
+           |
+xmvlog: *E,SVEXTK (testcases/structofSVIs_2.sv,13|11): expecting a ',' or ';' after 'variable_identifier variable_dimension' (in a struct/union member declaration).
+    , I u_I2; // 2nd Struct member.
+    |
+xmvlog: *E,SVEXTK (testcases/structofSVIs_2.sv,14|4): expecting a symbol that could start a datatype (e.g., 'integer', 'enum', type_identifier, etc).
+    , I u_I2; // 2nd Struct member.
+           |
+xmvlog: *E,SVEXTK (testcases/structofSVIs_2.sv,14|11): expecting a ',' or ';' after 'variable_identifier variable_dimension' (in a struct/union member declaration).
+FAILURE

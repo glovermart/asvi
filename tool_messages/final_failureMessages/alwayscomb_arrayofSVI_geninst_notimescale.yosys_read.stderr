@@ -1,0 +1,4 @@
+testcases/alwayscomb_arrayofSVI_geninst_notimescale.sv:28: Warning: Identifier `\u_I.x' is implicitly declared.
+testcases/alwayscomb_arrayofSVI_geninst_notimescale.sv:30: Warning: Identifier `\u_I.y' is implicitly declared.
+testcases/alwayscomb_arrayofSVI_geninst_notimescale.sv:56: Warning: Identifier `\u_I' is implicitly declared.
+testcases/alwayscomb_arrayofSVI_geninst_notimescale.sv:56: Warning: Range select out of bounds on signal `\u_I': Setting result bit to undef.

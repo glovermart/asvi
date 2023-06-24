@@ -1,0 +1,6 @@
+testcases/force_misc_svi_alwaysff.sv:3: syntax error
+testcases/force_misc_svi_alwaysff.sv:1: Errors in port declarations.
+testcases/force_misc_svi_alwaysff.sv:16: syntax error
+testcases/force_misc_svi_alwaysff.sv:16: Errors in port declarations.
+testcases/force_misc_svi_alwaysff.sv:30: warning: implicit definition of wire 'o_a'.
+testcases/force_misc_svi_alwaysff.sv:42: warning: implicit definition of wire 'u_I'.

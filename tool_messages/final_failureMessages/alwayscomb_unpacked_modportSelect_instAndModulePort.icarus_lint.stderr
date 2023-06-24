@@ -1,0 +1,4 @@
+testcases/alwayscomb_unpacked_modportSelect_instAndModulePort.sv:17: syntax error
+testcases/alwayscomb_unpacked_modportSelect_instAndModulePort.sv:17: Errors in port declarations.
+testcases/alwayscomb_unpacked_modportSelect_instAndModulePort.sv:22: syntax error
+testcases/alwayscomb_unpacked_modportSelect_instAndModulePort.sv:23: Syntax in assignment statement l-value.

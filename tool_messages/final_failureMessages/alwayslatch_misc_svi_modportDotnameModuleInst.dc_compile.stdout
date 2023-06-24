@@ -1,0 +1,56 @@
+Information: License queuing is enabled. (DCSH-18)
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version U-2022.12-SP2 for linux64 - Feb 21, 2023 
+
+                    Copyright (c) 1988 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Initializing gui preferences from file  /pri/anm3/.synopsys_dc_gui/preferences.tcl
+Loading db file '/cad/synopsys/2022.12-SP2/libraries/syn/lsi_10k.db'
+Loading db file '/cad/synopsys/2022.12-SP2/libraries/syn/gtech.db'
+Loading db file '/cad/synopsys/2022.12-SP2/libraries/syn/standard.sldb'
+  Loading link library 'lsi_10k'
+  Loading link library 'gtech'
+Loading sverilog file '/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_modportDotnameModuleInst.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_modportDotnameModuleInst.sv
+Warning:  /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_modportDotnameModuleInst.sv:31: Netlist for always_comb block is empty. (ELAB-982)
+Error:  Port name 'p' is not declared by this module or interface. (ELAB-1016)
+*** Presto compilation terminated with 1 errors. ***
+Error: Can't read 'sverilog' file '/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_modportDotnameModuleInst.sv'. (UID-59)
+No designs were read
+Error: Current design is not defined. (UID-4)
+
+Memory usage for this session 90 Mbytes.
+Memory usage for this session including child processes 90 Mbytes.
+CPU usage for this session 4 seconds ( 0.00 hours ).
+Elapsed time for this session 5 seconds ( 0.00 hours ).
+
+Thank you...

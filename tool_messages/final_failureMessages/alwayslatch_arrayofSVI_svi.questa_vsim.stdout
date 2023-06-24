@@ -1,0 +1,141 @@
+Reading pref.tcl
+
+# 2022.2_1
+
+# Couldn't connect to Jobspy Daemon at port 1305 on host jobspy
+# vsim -c design_unit -do "run -all; quit -f" 
+# Start time: 12:44:13 on Jun 23,2023
+# //  Questa Sim-64
+# //  Version 2022.2_1 linux_x86_64 May 19 2022
+# //
+# //  Copyright 1991-2022 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.alwayslatch_arrayofSVI_svi_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.I(fast__1)
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[0]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[1]/u_M/genblk1[0] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[1]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[1]/u_M/genblk1[1] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[2]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[1]/u_M/genblk1[2] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[3]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[1]/u_M/genblk1[3] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[4]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[1]/u_M/genblk1[4] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[5]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[1]/u_M/genblk1[5] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[6]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[1]/u_M/genblk1[6] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[7]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[1]/u_M/genblk1[7] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[0]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[2]/u_M/genblk1[0] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[1]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[2]/u_M/genblk1[1] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[2]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[2]/u_M/genblk1[2] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[3]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[2]/u_M/genblk1[3] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[4]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[2]/u_M/genblk1[4] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[5]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[2]/u_M/genblk1[5] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[6]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[2]/u_M/genblk1[6] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[7]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[2]/u_M/genblk1[7] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[0]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[3]/u_M/genblk1[0] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[1]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[3]/u_M/genblk1[1] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[2]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[3]/u_M/genblk1[2] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[3]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[3]/u_M/genblk1[3] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[4]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[3]/u_M/genblk1[4] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[5]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[3]/u_M/genblk1[5] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[6]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[3]/u_M/genblk1[6] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[7]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[3]/u_M/genblk1[7] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[0]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[4]/u_M/genblk1[0] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[1]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[4]/u_M/genblk1[1] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[2]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[4]/u_M/genblk1[2] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[3]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[4]/u_M/genblk1[3] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[4]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[4]/u_M/genblk1[4] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[5]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[4]/u_M/genblk1[5] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[6]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[4]/u_M/genblk1[6] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[7]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[4]/u_M/genblk1[7] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[0]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[5]/u_M/genblk1[0] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[1]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[5]/u_M/genblk1[1] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[2]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[5]/u_M/genblk1[2] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[3]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[5]/u_M/genblk1[3] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[4]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[5]/u_M/genblk1[4] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[5]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[5]/u_M/genblk1[5] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[6]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[5]/u_M/genblk1[6] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[7]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[5]/u_M/genblk1[7] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[0]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[6]/u_M/genblk1[0] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[1]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[6]/u_M/genblk1[1] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[2]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[6]/u_M/genblk1[2] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[3]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[6]/u_M/genblk1[3] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[4]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[6]/u_M/genblk1[4] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[5]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[6]/u_M/genblk1[5] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[6]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[6]/u_M/genblk1[6] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[7]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[6]/u_M/genblk1[7] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[0]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[7]/u_M/genblk1[0] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[1]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[7]/u_M/genblk1[1] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[2]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[7]/u_M/genblk1[2] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[3]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[7]/u_M/genblk1[3] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[4]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[7]/u_M/genblk1[4] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[5]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[7]/u_M/genblk1[5] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[6]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[7]/u_M/genblk1[6] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# ** Error (suppressible): (vsim-3837) Variable '/tb/u_DUT/u_I[7]/z' written by more than one continuous assignment. See testcases/alwayslatch_arrayofSVI_svi.sv(39).
+#    Time: 0 ns  Iteration: 0  Region: /tb/u_DUT/genblk1[7]/u_M/genblk1[7] File: testcases/alwayslatch_arrayofSVI_svi.sv Line: 39
+# Error loading design
+# End time: 12:44:14 on Jun 23,2023, Elapsed time: 0:00:01
+# Errors: 56, Warnings: 0
+FAILURE

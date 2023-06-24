@@ -1,0 +1,1 @@
+testcases/assign_unpacked_port.sv:28: ERROR: syntax error, unexpected '[', expecting ',' or '=' or ')'

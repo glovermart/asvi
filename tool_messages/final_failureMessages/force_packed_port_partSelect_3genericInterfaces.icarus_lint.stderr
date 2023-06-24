@@ -1,0 +1,6 @@
+testcases/force_packed_port_partSelect_3genericInterfaces.sv:26: syntax error
+testcases/force_packed_port_partSelect_3genericInterfaces.sv:26: Errors in port declarations.
+testcases/force_packed_port_partSelect_3genericInterfaces.sv:51: syntax error
+testcases/force_packed_port_partSelect_3genericInterfaces.sv:1: Errors in port declarations.
+testcases/force_packed_port_partSelect_3genericInterfaces.sv:63: warning: implicit definition of wire 'u_I'.
+testcases/force_packed_port_partSelect_3genericInterfaces.sv:66: warning: implicit definition of wire 'o_a'.

@@ -1,0 +1,17 @@
+Reading pref.tcl
+
+# 2022.2_1
+
+# Couldn't connect to Jobspy Daemon at port 1305 on host jobspy
+# vsim -c design_unit -do "run -all; quit -f" 
+# Start time: 12:11:36 on Jun 23,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: (vopt-13130) Failed to find design unit design_unit.
+#         Searched libraries:
+#             work
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 12:11:37 on Jun 23,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+FAILURE

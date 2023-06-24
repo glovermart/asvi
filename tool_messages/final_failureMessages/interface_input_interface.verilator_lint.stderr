@@ -1,0 +1,6 @@
+%Warning-DECLFILENAME: testcases/interface_input_interface.sv:4:11: Filename 'interface_input_interface' does not match IFACE name: 'I1'
+    4 | interface I1;
+      |           ^~
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Error: Exiting due to 1 warning(s)

@@ -1,0 +1,19 @@
+QuestaSim-64 vopt 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 13:58:10 on Jun 23,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+-- Loading interface I
+** Error (suppressible): testcases/wire_struct_unpacked_structname.sv(22): (vopt-7063) Failed to find 'data' in hierarchical name 'u_I.data.data'.
+        Region: tb.u_DUT
+** Error (suppressible): testcases/wire_struct_unpacked_structname.sv(24): (vopt-7063) Failed to find 'data' in hierarchical name 'u_I.data'.
+        Region: tb.u_DUT
+Optimization failed
+End time: 13:58:10 on Jun 23,2023, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+FAILURE

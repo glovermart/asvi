@@ -1,0 +1,20 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/task_export_extern_noGenericInterfaceModportInst.sv,41): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 2 input ports were not connected:
+xmelab: (./testcases/task_export_extern_noGenericInterfaceModportInst.sv,39): i_a
+xmelab: (./testcases/task_export_extern_noGenericInterfaceModportInst.sv,40): i_b
+
+  I u_I ();
+      |
+xmelab: *W,CUVWSI (./testcases/task_export_extern_noGenericInterfaceModportInst.sv,44|6): 1 input port was not connected:
+xmelab: (./testcases/assign_unpacked_svi_noLiteral.sv,4): i_a
+
+  ( I.P p
+        |
+xmelab: *E,CUIMPX (./testcases/task_export_extern_noGenericInterfaceModportInst.sv,27|8): The interface modport used (P) does not exist (tb.u_DUT.u_M2).
+FAILURE

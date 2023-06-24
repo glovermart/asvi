@@ -1,0 +1,1 @@
+testcases/alwayscomb_unpacked_inst_foreach.sv:14: ERROR: syntax error, unexpected '[', expecting ',' or '=' or ')'

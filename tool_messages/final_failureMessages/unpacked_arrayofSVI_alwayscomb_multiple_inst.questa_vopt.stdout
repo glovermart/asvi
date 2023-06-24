@@ -1,0 +1,31 @@
+QuestaSim-64 vopt 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 19:21:04 on Jun 23,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+-- Loading interface I
+** Error (suppressible): testcases/alwayslatch_arrayofSVI_inst_assignOutput.sv(34): (vopt-7063) Failed to find 'y' in hierarchical name 'u_I[i].y'.
+        Region: tb.u_DUT.genblk1[0]
+** Error (suppressible): testcases/alwayslatch_arrayofSVI_inst_assignOutput.sv(34): (vopt-7063) Failed to find 'y' in hierarchical name 'u_I[i].y'.
+        Region: tb.u_DUT.genblk1[1]
+** Error (suppressible): testcases/alwayslatch_arrayofSVI_inst_assignOutput.sv(34): (vopt-7063) Failed to find 'y' in hierarchical name 'u_I[i].y'.
+        Region: tb.u_DUT.genblk1[2]
+** Error (suppressible): testcases/alwayslatch_arrayofSVI_inst_assignOutput.sv(34): (vopt-7063) Failed to find 'y' in hierarchical name 'u_I[i].y'.
+        Region: tb.u_DUT.genblk1[3]
+** Error (suppressible): testcases/alwayslatch_arrayofSVI_inst_assignOutput.sv(34): (vopt-7063) Failed to find 'y' in hierarchical name 'u_I[i].y'.
+        Region: tb.u_DUT.genblk1[4]
+** Error (suppressible): testcases/alwayslatch_arrayofSVI_inst_assignOutput.sv(34): (vopt-7063) Failed to find 'y' in hierarchical name 'u_I[i].y'.
+        Region: tb.u_DUT.genblk1[5]
+** Error (suppressible): testcases/alwayslatch_arrayofSVI_inst_assignOutput.sv(34): (vopt-7063) Failed to find 'y' in hierarchical name 'u_I[i].y'.
+        Region: tb.u_DUT.genblk1[6]
+** Error (suppressible): testcases/alwayslatch_arrayofSVI_inst_assignOutput.sv(34): (vopt-7063) Failed to find 'y' in hierarchical name 'u_I[i].y'.
+        Region: tb.u_DUT.genblk1[7]
+Optimization failed
+End time: 19:21:04 on Jun 23,2023, Elapsed time: 0:00:00
+Errors: 8, Warnings: 0
+FAILURE

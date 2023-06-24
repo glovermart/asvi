@@ -1,0 +1,13 @@
+Warning: wire '\u_I.o_a' is assigned in a block at testcases/alwayslatch_misc_svi_noModport.sv:25.5-25.27.
+testcases/alwayslatch_misc_svi_noModport.sv:25: Warning: Identifier `\u_I.o_a' is implicitly declared.
+testcases/alwayslatch_misc_svi_noModport.sv:25: Warning: Range select out of bounds on signal `\u_I.o_a': Setting result bit to undef.
+testcases/alwayslatch_misc_svi_noModport.sv:24: Warning: Identifier `\u_I.i_clk' is implicitly declared.
+testcases/alwayslatch_misc_svi_noModport.sv:25: Warning: Identifier `\u_I.x' is implicitly declared.
+testcases/alwayslatch_misc_svi_noModport.sv:25: Warning: Range select out of bounds on signal `\u_I.x': Setting result bit to undef.
+Warning: wire '\u_I.o_a' is assigned in a block at testcases/alwayslatch_misc_svi_noModport.sv:35.5-35.27.
+Warning: wire '\u_I.o_a' is assigned in a block at testcases/alwayslatch_misc_svi_noModport.sv:45.5-45.27.
+Warning: wire '\u_I.o_a' is assigned in a block at testcases/alwayslatch_misc_svi_noModport.sv:55.5-55.27.
+Warning: Wire I.\o_a [3] is used but has no driver.
+Warning: Wire I.\o_a [2] is used but has no driver.
+Warning: Wire I.\o_a [1] is used but has no driver.
+Warning: Wire I.\o_a [0] is used but has no driver.

@@ -1,0 +1,4 @@
+    a = u_I;
+          |
+xmvlog: *E,TYCMPAT (testcases/unpacked_arrayofSVI_alwayscomb_LRM_7_6.sv,23|10): assignment operator type check failed (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'unpacked array [7:0] of I instance' instead).
+FAILURE

@@ -1,0 +1,2 @@
+testcases/struct_out_unpacked_InterfacePort.sv:4: sorry: Unpacked structs not supported.
+testcases/struct_out_unpacked_InterfacePort.sv:11: sorry: Given type 13struct_type_t not supported here (pform.cc:2620).

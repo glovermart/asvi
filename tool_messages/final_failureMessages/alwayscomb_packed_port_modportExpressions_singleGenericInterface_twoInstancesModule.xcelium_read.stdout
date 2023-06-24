@@ -1,0 +1,7 @@
+    ( output .p1(x[3:0])
+               |
+xmvlog: *E,MODPXE (testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoInstancesModule.sv,12|15): Unsupported modport expression for port identifier 'p1'.
+    ( output .p2(x[7:4])
+               |
+xmvlog: *E,MODPXE (testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_twoInstancesModule.sv,16|15): Unsupported modport expression for port identifier 'p2'.
+FAILURE

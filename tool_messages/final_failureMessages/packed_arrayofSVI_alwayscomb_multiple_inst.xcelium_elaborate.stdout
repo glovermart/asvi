@@ -1,0 +1,109 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,15): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 2 input ports were not connected:
+xmelab: (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,13): en
+xmelab: (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,14): i_a
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+  assign o_a[0] = u_I[0].z;
+                         |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,32|25): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT'.
+  assign o_a[1] = u_I[1].z;
+                         |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,33|25): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT'.
+  assign o_a[2] = u_I[2].z;
+                         |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,34|25): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT'.
+  assign o_a[3] = u_I[3].z;
+                         |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,35|25): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT'.
+  assign o_a[4] = u_I[4].z;
+                         |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,36|25): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT'.
+  assign o_a[5] = u_I[5].z;
+                         |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,37|25): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT'.
+  assign o_a[6] = u_I[6].z;
+                         |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,38|25): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT'.
+  assign o_a[7] = u_I[7].z;
+                         |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,39|25): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT'.
+    assign u_I[i].z = i_a;
+                  |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,21|18): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk1[0]'.
+    assign u_I[i].z = i_a;
+                  |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,21|18): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk1[1]'.
+    assign u_I[i].z = i_a;
+                  |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,21|18): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk1[2]'.
+    assign u_I[i].z = i_a;
+                  |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,21|18): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk1[3]'.
+    assign u_I[i].z = i_a;
+                  |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,21|18): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk1[4]'.
+    assign u_I[i].z = i_a;
+                  |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,21|18): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk1[5]'.
+    assign u_I[i].z = i_a;
+                  |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,21|18): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk1[6]'.
+    assign u_I[i].z = i_a;
+                  |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,21|18): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk1[7]'.
+        force u_I[i].z = 1'bz;
+                     |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,26|21): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk2[0]'.
+        release u_I[i].z;
+                       |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,28|23): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk2[0]'.
+        force u_I[i].z = 1'bz;
+                     |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,26|21): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk2[1]'.
+        release u_I[i].z;
+                       |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,28|23): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk2[1]'.
+        force u_I[i].z = 1'bz;
+                     |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,26|21): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk2[2]'.
+        release u_I[i].z;
+                       |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,28|23): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk2[2]'.
+        force u_I[i].z = 1'bz;
+                     |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,26|21): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk2[3]'.
+        release u_I[i].z;
+                       |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,28|23): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk2[3]'.
+        force u_I[i].z = 1'bz;
+                     |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,26|21): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk2[4]'.
+        release u_I[i].z;
+                       |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,28|23): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk2[4]'.
+        force u_I[i].z = 1'bz;
+                     |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,26|21): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk2[5]'.
+        release u_I[i].z;
+                       |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,28|23): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk2[5]'.
+        force u_I[i].z = 1'bz;
+                     |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,26|21): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk2[6]'.
+        release u_I[i].z;
+                       |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,28|23): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk2[6]'.
+        force u_I[i].z = 1'bz;
+                     |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,26|21): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk2[7]'.
+        release u_I[i].z;
+                       |
+xmelab: *E,CUVUNF (./testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv,28|23): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.genblk2[7]'.
+FAILURE

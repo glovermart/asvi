@@ -1,0 +1,3 @@
+ERROR: [Synth 8-281] expression must be of a packed type [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/packed_arrayofSVI_slice_initial.sv:24]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/packed_arrayofSVI_slice_initial.sv:11]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

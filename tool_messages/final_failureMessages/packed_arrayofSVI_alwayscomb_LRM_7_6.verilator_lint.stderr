@@ -1,0 +1,22 @@
+%Warning-DECLFILENAME: testcases/packed_arrayofSVI_alwayscomb_LRM_7_6.sv:3:11: Filename 'packed_arrayofSVI_alwayscomb_LRM_7_6' does not match IFACE name: 'I'
+    3 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Error: testcases/packed_arrayofSVI_alwayscomb_LRM_7_6.sv:21:12: Expecting expression to be constant, but variable isn't const: 'i'
+                                                               : ... In instance top
+   21 |       u_I1[i].x = i_a;
+      |            ^
+%Error: testcases/packed_arrayofSVI_alwayscomb_LRM_7_6.sv:21:11: Could not expand constant selection inside dotted reference: 'i'
+                                                               : ... In instance top
+   21 |       u_I1[i].x = i_a;
+      |           ^
+%Error: testcases/packed_arrayofSVI_alwayscomb_LRM_7_6.sv:22:19: Expecting expression to be constant, but variable isn't const: 'i'
+                                                               : ... In instance top
+   22 |       a[i] = u_I1[i].x;
+      |                   ^
+%Error: testcases/packed_arrayofSVI_alwayscomb_LRM_7_6.sv:22:18: Could not expand constant selection inside dotted reference: 'i'
+                                                               : ... In instance top
+   22 |       a[i] = u_I1[i].x;
+      |                  ^
+%Error: Exiting due to 4 error(s), 1 warning(s)

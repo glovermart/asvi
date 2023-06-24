@@ -1,0 +1,10 @@
+%Warning-DECLFILENAME: testcases/generate_assertions_snug2015_inst.sv:10:11: Filename 'generate_assertions_snug2015_inst' does not match IFACE name: 'I'
+   10 | interface I
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: testcases/generate_assertions_snug2015_inst.sv:30:5: Operator CASE expects 2 bits on the Case expression, but Case expression's VARREF 'i_sel' generates 1 bits.
+                                                                         : ... In instance top
+   30 |     case (i_sel)
+      |     ^~~~
+%Error: Exiting due to 2 warning(s)

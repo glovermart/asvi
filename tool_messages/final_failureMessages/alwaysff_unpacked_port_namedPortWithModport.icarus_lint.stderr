@@ -1,0 +1,5 @@
+testcases/alwaysff_unpacked_port_namedPortWithModport.sv:17: syntax error
+testcases/alwaysff_unpacked_port_namedPortWithModport.sv:17: Errors in port declarations.
+testcases/alwaysff_unpacked_port_namedPortWithModport.sv:24: syntax error
+testcases/alwaysff_unpacked_port_namedPortWithModport.sv:25: Syntax in assignment statement l-value.
+testcases/alwaysff_unpacked_port_namedPortWithModport.sv:27: warning: implicit definition of wire 'o_a'.

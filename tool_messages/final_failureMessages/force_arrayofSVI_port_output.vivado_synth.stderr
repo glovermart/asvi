@@ -1,0 +1,3 @@
+ERROR: [Synth 8-6038] cannot resolve hierarchical name for the item 'P' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_output.sv:50]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/force_arrayofSVI_port_output.sv:41]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

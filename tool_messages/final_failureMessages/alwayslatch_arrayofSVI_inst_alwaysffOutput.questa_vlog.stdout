@@ -1,0 +1,13 @@
+QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 15:23:09 on Jun 23,2023
+vlog -sv -lint=full testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv testbench/tb.sv 
+-- Compiling package alwayslatch_arrayofSVI_inst_alwaysffOutput_sv_unit
+-- Compiling interface I
+-- Compiling module top
+** Warning: testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv(28): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv(31): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv(33): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Error (suppressible): testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv(38): (vlog-7061) Variable 'i_i' driven in an always_ff block, may not be driven by any other process. See testcases/alwayslatch_arrayofSVI_inst_alwaysffOutput.sv(41).
+End time: 15:23:09 on Jun 23,2023, Elapsed time: 0:00:00
+Errors: 1, Warnings: 3
+FAILURE

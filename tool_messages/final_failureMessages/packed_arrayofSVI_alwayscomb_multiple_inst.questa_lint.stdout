@@ -1,0 +1,18 @@
+QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 11:58:33 on Jun 23,2023
+vlog -sv -sv17compat -lint=default testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv 
+-- Compiling interface I
+-- Compiling module top
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(43): (vlog-2251) Illegal concatenation of unpacked value 'u_I8'.
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(42): (vlog-2251) Illegal concatenation of unpacked value 'u_I7'.
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(41): (vlog-2251) Illegal concatenation of unpacked value 'u_I6'.
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(40): (vlog-2251) Illegal concatenation of unpacked value 'u_I5'.
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(39): (vlog-2251) Illegal concatenation of unpacked value 'u_I4'.
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(38): (vlog-2251) Illegal concatenation of unpacked value 'u_I3'.
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(37): (vlog-2251) Illegal concatenation of unpacked value 'u_I2'.
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(36): (vlog-2251) Illegal concatenation of unpacked value 'u_I1'.
+
+Top level modules:
+	top
+End time: 11:58:33 on Jun 23,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 8

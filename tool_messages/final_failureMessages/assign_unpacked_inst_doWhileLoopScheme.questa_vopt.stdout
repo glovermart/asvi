@@ -1,0 +1,25 @@
+QuestaSim-64 vopt 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 18:28:45 on Jun 23,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+-- Loading interface I
+-- Loading module M2
+-- Loading module M1
+** Error (suppressible): testcases/alwayslatch_misc_inst.sv(54): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I.z'.
+        Region: tb.u_DUT
+** Error (suppressible): testcases/alwayslatch_misc_inst.sv(37): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I.z'.
+        Region: tb.u_DUT.u_M2
+** Error (suppressible): testcases/alwayslatch_misc_inst.sv(37): (vopt-7063) Failed to find 'y' in hierarchical name 'u_I.y'.
+        Region: tb.u_DUT.u_M2
+** Error (suppressible): testcases/alwayslatch_misc_inst.sv(20): (vopt-7063) Failed to find 'y' in hierarchical name 'u_I.y'.
+        Region: tb.u_DUT.u_M2.u_M1
+Optimization failed
+End time: 18:28:45 on Jun 23,2023, Elapsed time: 0:00:00
+Errors: 4, Warnings: 0
+FAILURE

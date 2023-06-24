@@ -1,0 +1,23 @@
+$tcl_library is set to: /cad/mentor/oneSpin360/2023.1/etc/tcl8.6
+init.tcl executed.
+source "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_defaults.tcl"
+source -signed "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_startup.tcl.obf"
+source "/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl"
+-I- FileParse - Analyzing source file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/nested_interface_6.sv" .... [1]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/nested_interface_6.sv:26: Analyzing module ( M ). [4]
+-E- Parse - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/nested_interface_6.sv:27: Syntax error near ( . ).
+  ( I.I1. <-  [ Expected Token(s): `IDENTIFIER' ] [481]
+-E- Parse - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/nested_interface_6.sv:28: semicolon missing. [573]
+-E- /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/nested_interface_6.sv:28: ( i_clk ) is declared as input though not in module header. [647]
+-E- Parse - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/nested_interface_6.sv:29: Syntax error near ( output ).
+  , output <-  [ Expected Token(s): `IDENTIFIER' ] [481]
+-E- /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/nested_interface_6.sv:29: ( o_a ) is declared as output though not in module header. [648]
+-E- Parse - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/nested_interface_6.sv:30: Syntax error near ( ) ).
+  ) <- [481]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/nested_interface_6.sv:38: Analyzing module ( top ). [4]
+-E- Could not read HDL files.
+-E- Can not source script '/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl'.
+    while executing
+"read_verilog -version sv2012 ${TEST_NAME}"
+    (file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl" line 3)
+-E- Error during execution of user commands.

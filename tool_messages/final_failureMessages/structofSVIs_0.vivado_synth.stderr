@@ -1,0 +1,3 @@
+ERROR: [Synth 8-2715] syntax error near ( [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/structofSVIs_0.sv:12]
+ERROR: [Synth 8-8891] 'st_Ifc' is already declared [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/structofSVIs_0.sv:17]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

@@ -1,0 +1,58 @@
+$tcl_library is set to: /cad/mentor/oneSpin360/2023.1/etc/tcl8.6
+init.tcl executed.
+source "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_defaults.tcl"
+source -signed "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_startup.tcl.obf"
+source "/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl"
+-I- FileParse - Analyzing source file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_foreachAssignIn.sv" .... [1]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_foreachAssignIn.sv:12: Analyzing module ( top ). [4]
+-I- Elaborate auto-selected the toplevel: "verilog!work.top"
+-I- Elaborating verilog portion...
+-W- SimSynMismatch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_foreachAssignIn.sv:21: value assignment in initial block to register 'u_I.x' declared in an interface (here: /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_foreachAssignIn.sv:7:) is ignored.
+-W- SimSynMismatch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_foreachAssignIn.sv:21: value assignment in initial block to register 'u_I.x' declared in an interface (here: /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_foreachAssignIn.sv:7:) is ignored.
+-W- SimSynMismatch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_foreachAssignIn.sv:21: value assignment in initial block to register 'u_I.x' declared in an interface (here: /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_foreachAssignIn.sv:7:) is ignored.
+-W- SimSynMismatch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_foreachAssignIn.sv:21: value assignment in initial block to register 'u_I.x' declared in an interface (here: /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_foreachAssignIn.sv:7:) is ignored.
+-W- SimSynMismatch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_foreachAssignIn.sv:21: value assignment in initial block to register 'u_I.x' declared in an interface (here: /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_foreachAssignIn.sv:7:) is ignored.
+-W- SimSynMismatch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_foreachAssignIn.sv:21: value assignment in initial block to register 'u_I.x' declared in an interface (here: /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_foreachAssignIn.sv:7:) is ignored.
+-W- SimSynMismatch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_foreachAssignIn.sv:21: value assignment in initial block to register 'u_I.x' declared in an interface (here: /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_foreachAssignIn.sv:7:) is ignored.
+-W- SimSynMismatch - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_foreachAssignIn.sv:21: value assignment in initial block to register 'u_I.x' declared in an interface (here: /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/assign_unpacked_inst_foreachAssignIn.sv:7:) is ignored.
+
+Warning Statistics:
+-------------------
+    8   SimSynMismatch       simulation synthesis mismatch
+-I- Elaboration of design golden succeeded.
+-I- Traversing modules of design 'top' ...
+-I- Traversing modules of design 'top' took 0.05 seconds.
+-I- Analyzing signal dependency in design 'top' ...
+-I- Analyzing signal dependency in design 'top' took 0.01 seconds.
+-I- Analyzing loops ...
+-I- Analyzing loops took 0.00 seconds.
+-I- Analyzing primary and generated clocks ...
+-I- Computing next states ...
+-I- Computing next states took 0.00 seconds.
+-I- Analyzing primary and generated clocks took 0.00 seconds.
+-I- Checking clock dependency assumption ...
+-I- Checking clock dependency assumption took 0.00 seconds.
+-I- Computing CSA result ...
+-I- Computing CSA result took 0.00 seconds.
+-I- Finishing CSA analysis ...
+-I- Compilation for design golden succeeded.
+-R- Printed Messages
+===============================================================================
+class       category            memo                                                          occurrence
+-------------------------------------------------------------------------------
+Warning     SimSynMismatch      simulation synthesis mismatch                                 8         
+Info        AnalyzeModule       analyzing module                                              1         
+Info        FileParse           file parsed                                                   1         
+Info        {}                  unclassified message                                          18        
+Info        {}                  {}                                                            1         
+Result      {}                  {}                                                            1         
+Plain       {}                  unclassified message                                          1         
+Plain       {}                  {}                                                            8         
+TclStdOut   {}                  {}                                                            2         
+CommandLog  {}                  {}                                                            3         
+	
+-R- Filtered Messages
+===============================================================================
+id   active   class     category            memo                     text                     src_loc        origin  hits 
+-------------------------------------------------------------------------------
+No message filters available.

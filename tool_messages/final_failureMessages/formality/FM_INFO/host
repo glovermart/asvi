@@ -1,0 +1,7 @@
+System name = Linux
+Host name   = cad11.nordicsemi.no
+Process     = 8455
+Release     = 3.10.0-1160.80.1.el7.x86_64
+Version     = #1 SMP Tue Nov 8 15:48:59 UTC 2022
+Machine     = x86_64
+Domain name = nvlsi

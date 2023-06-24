@@ -1,0 +1,4 @@
+testcases/task_import.sv:13: sorry: modport task/function ports are not yet supported.
+testcases/task_import.sv:20: syntax error
+testcases/task_import.sv:20: Errors in port declarations.
+testcases/task_import.sv:40: warning: implicit definition of wire 'u_I'.

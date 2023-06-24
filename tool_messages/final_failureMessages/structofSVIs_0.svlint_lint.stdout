@@ -1,0 +1,6 @@
+[91mError[97m: parse error
+[94m   -->[37m testcases/structofSVIs_0.sv:12:14
+[94m   |
+[94m12 |[37m     { I u_I1 ();
+[94m   |[93m              ^(B[m
+FAILURE

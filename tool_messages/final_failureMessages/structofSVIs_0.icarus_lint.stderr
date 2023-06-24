@@ -1,0 +1,9 @@
+testcases/structofSVIs_0.sv:12: syntax error
+testcases/structofSVIs_0.sv:12: Error in struct/union member.
+testcases/structofSVIs_0.sv:13: syntax error
+testcases/structofSVIs_0.sv:13: Error in struct/union member.
+testcases/structofSVIs_0.sv:14: syntax error
+testcases/structofSVIs_0.sv:14: Error in struct/union member.
+testcases/structofSVIs_0.sv:11: sorry: Unpacked structs not supported.
+testcases/structofSVIs_0.sv:17: syntax error
+testcases/structofSVIs_0.sv:17: error: invalid module item.

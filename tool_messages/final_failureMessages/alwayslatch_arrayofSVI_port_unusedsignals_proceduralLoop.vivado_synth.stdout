@@ -1,0 +1,313 @@
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source tcl/vivado_batch_run.tcl
+# read_verilog -sv $argv
+read_verilog: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2986.582 ; gain = 2.023 ; free physical = 2419 ; free virtual = 238929
+# synth_design -top top -part xc7k70tfbg676-1
+Command: synth_design -top top -part xc7k70tfbg676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28518
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2986.582 ; gain = 0.000 ; free physical = 1355 ; free virtual = 237865
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:79]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'M1' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:30]
+WARNING: [Synth 8-6104] Input port 'p1[0]\.x' has an internal driver [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:43]
+WARNING: [Synth 8-6104] Input port 'p1[1]\.x' has an internal driver [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:43]
+WARNING: [Synth 8-6104] Input port 'p1[2]\.x' has an internal driver [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:43]
+WARNING: [Synth 8-6104] Input port 'p1[3]\.x' has an internal driver [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:43]
+WARNING: [Synth 8-6104] Input port 'p1[4]\.x' has an internal driver [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:43]
+WARNING: [Synth 8-6104] Input port 'p1[5]\.x' has an internal driver [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:43]
+WARNING: [Synth 8-6104] Input port 'p1[6]\.x' has an internal driver [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:43]
+WARNING: [Synth 8-6104] Input port 'p1[7]\.x' has an internal driver [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:43]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'M1' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:30]
+INFO: [Synth 8-6157] synthesizing module 'M2' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:56]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:8]
+WARNING: [Synth 8-7071] port 'arst' of module 'I' is unconnected for instance 'u_I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:63]
+WARNING: [Synth 8-7023] instance 'u_I' of module 'I' has 2 connections declared, but only 1 given [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:63]
+INFO: [Synth 8-6155] done synthesizing module 'M2' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:79]
+WARNING: [Synth 8-3848] Net en in module/entity M1 does not have driver. [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:34]
+WARNING: [Synth 8-3848] Net rst in module/entity M1 does not have driver. [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:35]
+WARNING: [Synth 8-3848] Net en in module/entity M2 does not have driver. [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:61]
+WARNING: [Synth 8-3848] Net u_I\.x in module/entity top does not have driver. [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:14]
+WARNING: [Synth 8-3848] Net u_I\.x in module/entity top does not have driver. [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:14]
+WARNING: [Synth 8-3848] Net u_I\.x in module/entity top does not have driver. [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:14]
+WARNING: [Synth 8-3848] Net u_I\.x in module/entity top does not have driver. [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:14]
+WARNING: [Synth 8-3848] Net u_I\.x in module/entity top does not have driver. [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:14]
+WARNING: [Synth 8-3848] Net u_I\.x in module/entity top does not have driver. [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:14]
+WARNING: [Synth 8-3848] Net u_I\.x in module/entity top does not have driver. [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:14]
+WARNING: [Synth 8-3848] Net u_I\.x in module/entity top does not have driver. [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:14]
+WARNING: [Synth 8-7129] Port p2[7]\.arst in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p2[7]\.en in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p2[7]\.x in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p2[6]\.arst in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p2[6]\.en in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p2[6]\.x in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p2[5]\.arst in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p2[5]\.en in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p2[5]\.x in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p2[4]\.arst in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p2[4]\.en in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p2[4]\.x in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p2[3]\.arst in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p2[3]\.en in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p2[3]\.x in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p2[2]\.arst in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p2[2]\.en in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p2[2]\.x in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p2[1]\.arst in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p2[1]\.en in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p2[1]\.x in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p2[0]\.arst in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p2[0]\.en in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p2[0]\.x in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[7]\.arst in module M1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[7]\.en in module M1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[7]\.w in module M1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[6]\.arst in module M1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[6]\.en in module M1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[6]\.w in module M1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[5]\.arst in module M1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[5]\.en in module M1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[5]\.w in module M1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[4]\.arst in module M1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[4]\.en in module M1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[4]\.w in module M1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[3]\.arst in module M1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[3]\.en in module M1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[3]\.w in module M1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[2]\.arst in module M1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[2]\.en in module M1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[2]\.w in module M1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[1]\.arst in module M1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[1]\.en in module M1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[1]\.w in module M1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[0]\.arst in module M1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[0]\.en in module M1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p1[0]\.w in module M1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2986.590 ; gain = 0.008 ; free physical = 2037 ; free virtual = 238548
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2986.590 ; gain = 0.008 ; free physical = 2030 ; free virtual = 238541
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbg676-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbg676-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2994.586 ; gain = 8.004 ; free physical = 2029 ; free virtual = 238540
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'genblk1[7].p1[7]\.y_reg' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:46]
+WARNING: [Synth 8-327] inferring latch for variable 'genblk1[6].p1[6]\.y_reg' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:46]
+WARNING: [Synth 8-327] inferring latch for variable 'genblk1[5].p1[5]\.y_reg' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:46]
+WARNING: [Synth 8-327] inferring latch for variable 'genblk1[4].p1[4]\.y_reg' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:46]
+WARNING: [Synth 8-327] inferring latch for variable 'genblk1[3].p1[3]\.y_reg' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:46]
+WARNING: [Synth 8-327] inferring latch for variable 'genblk1[2].p1[2]\.y_reg' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:46]
+WARNING: [Synth 8-327] inferring latch for variable 'genblk1[1].p1[1]\.y_reg' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:46]
+WARNING: [Synth 8-327] inferring latch for variable 'genblk1[0].p1[0]\.y_reg' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:46]
+WARNING: [Synth 8-327] inferring latch for variable 'genblk1[7].p2[7]\.w_reg' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:71]
+WARNING: [Synth 8-327] inferring latch for variable 'genblk1[6].p2[6]\.w_reg' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:71]
+WARNING: [Synth 8-327] inferring latch for variable 'genblk1[5].p2[5]\.w_reg' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:71]
+WARNING: [Synth 8-327] inferring latch for variable 'genblk1[4].p2[4]\.w_reg' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:71]
+WARNING: [Synth 8-327] inferring latch for variable 'genblk1[3].p2[3]\.w_reg' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:71]
+WARNING: [Synth 8-327] inferring latch for variable 'genblk1[2].p2[2]\.w_reg' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:71]
+WARNING: [Synth 8-327] inferring latch for variable 'genblk1[1].p2[1]\.w_reg' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:71]
+WARNING: [Synth 8-327] inferring latch for variable 'genblk1[0].p2[0]\.w_reg' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_arrayofSVI_port_unusedsignals_proceduralLoop.sv:71]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2994.594 ; gain = 8.012 ; free physical = 2020 ; free virtual = 238531
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port en in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_arst in module top is either unconnected or has no load
+WARNING: [Synth 8-264] enable of latch \u_M2/genblk1[7].p2[7]\.w_reg  is always disabled
+WARNING: [Synth 8-264] enable of latch \u_M2/genblk1[7].p2[7]\.w_reg  is always disabled
+WARNING: [Synth 8-264] enable of latch \u_M2/genblk1[6].p2[6]\.w_reg  is always disabled
+WARNING: [Synth 8-264] enable of latch \u_M2/genblk1[6].p2[6]\.w_reg  is always disabled
+WARNING: [Synth 8-264] enable of latch \u_M2/genblk1[5].p2[5]\.w_reg  is always disabled
+WARNING: [Synth 8-264] enable of latch \u_M2/genblk1[5].p2[5]\.w_reg  is always disabled
+WARNING: [Synth 8-264] enable of latch \u_M2/genblk1[4].p2[4]\.w_reg  is always disabled
+WARNING: [Synth 8-264] enable of latch \u_M2/genblk1[4].p2[4]\.w_reg  is always disabled
+WARNING: [Synth 8-264] enable of latch \u_M2/genblk1[3].p2[3]\.w_reg  is always disabled
+WARNING: [Synth 8-264] enable of latch \u_M2/genblk1[3].p2[3]\.w_reg  is always disabled
+WARNING: [Synth 8-264] enable of latch \u_M2/genblk1[2].p2[2]\.w_reg  is always disabled
+WARNING: [Synth 8-264] enable of latch \u_M2/genblk1[2].p2[2]\.w_reg  is always disabled
+WARNING: [Synth 8-264] enable of latch \u_M2/genblk1[1].p2[1]\.w_reg  is always disabled
+WARNING: [Synth 8-264] enable of latch \u_M2/genblk1[1].p2[1]\.w_reg  is always disabled
+WARNING: [Synth 8-264] enable of latch \u_M2/genblk1[0].p2[0]\.w_reg  is always disabled
+WARNING: [Synth 8-264] enable of latch \u_M2/genblk1[0].p2[0]\.w_reg  is always disabled
+WARNING: [Synth 8-3332] Sequential element (u_M1/genblk1[7].p1[7]\.y_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_M1/genblk1[6].p1[6]\.y_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_M1/genblk1[5].p1[5]\.y_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_M1/genblk1[4].p1[4]\.y_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_M1/genblk1[3].p1[3]\.y_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_M1/genblk1[2].p1[2]\.y_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_M1/genblk1[1].p1[1]\.y_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_M1/genblk1[0].p1[0]\.y_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_M2/genblk1[7].p2[7]\.w_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_M2/genblk1[6].p2[6]\.w_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_M2/genblk1[5].p2[5]\.w_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_M2/genblk1[4].p2[4]\.w_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_M2/genblk1[3].p2[3]\.w_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_M2/genblk1[2].p2[2]\.w_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_M2/genblk1[1].p2[1]\.w_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_M2/genblk1[0].p2[0]\.w_reg) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 2994.594 ; gain = 8.012 ; free physical = 1752 ; free virtual = 238265
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 2994.594 ; gain = 8.012 ; free physical = 1749 ; free virtual = 238262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 2994.594 ; gain = 8.012 ; free physical = 1748 ; free virtual = 238262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2994.594 ; gain = 8.012 ; free physical = 1739 ; free virtual = 238260
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2994.594 ; gain = 8.012 ; free physical = 1739 ; free virtual = 238260
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2994.594 ; gain = 8.012 ; free physical = 1739 ; free virtual = 238260
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2994.594 ; gain = 8.012 ; free physical = 1739 ; free virtual = 238260
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2994.594 ; gain = 8.012 ; free physical = 1739 ; free virtual = 238260
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2994.594 ; gain = 8.012 ; free physical = 1739 ; free virtual = 238260
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |    16|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    16|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2994.594 ; gain = 8.012 ; free physical = 1739 ; free virtual = 238260
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 120 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2994.594 ; gain = 8.012 ; free physical = 1739 ; free virtual = 238260
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2994.594 ; gain = 8.012 ; free physical = 1739 ; free virtual = 238260
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2994.816 ; gain = 0.000 ; free physical = 1828 ; free virtual = 238348
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2994.816 ; gain = 0.000 ; free physical = 1738 ; free virtual = 238258
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: a5cb5ba8
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 120 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2994.816 ; gain = 8.234 ; free physical = 1951 ; free virtual = 238471
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 24 02:35:09 2023...

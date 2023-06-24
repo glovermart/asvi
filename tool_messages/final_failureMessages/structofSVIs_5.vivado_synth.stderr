@@ -1,0 +1,3 @@
+ERROR: [Synth 8-3892] undeclared type 'I'  [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/structofSVIs_5.sv:16]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/structofSVIs_5.sv:10]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

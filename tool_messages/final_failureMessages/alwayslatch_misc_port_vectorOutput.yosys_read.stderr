@@ -1,0 +1,28 @@
+Warning: wire '\p1.o_a' is assigned in a block at testcases/alwayslatch_misc_port_vectorOutput.sv:26.7-26.26.
+testcases/alwayslatch_misc_port_vectorOutput.sv:26: Warning: Identifier `\p1.o_a' is implicitly declared.
+testcases/alwayslatch_misc_port_vectorOutput.sv:26: Warning: Range select out of bounds on signal `\p1.o_a': Setting result bit to undef.
+testcases/alwayslatch_misc_port_vectorOutput.sv:25: Warning: Identifier `\p1.i_en' is implicitly declared.
+testcases/alwayslatch_misc_port_vectorOutput.sv:26: Warning: Identifier `\p1.i_a' is implicitly declared.
+Warning: wire '\p1.o_a' is assigned in a block at testcases/alwayslatch_misc_port_vectorOutput.sv:37.7-37.26.
+Warning: wire '\p1.o_a' is assigned in a block at testcases/alwayslatch_misc_port_vectorOutput.sv:52.7-52.26.
+Warning: wire '\p2.o_a' is assigned in a block at testcases/alwayslatch_misc_port_vectorOutput.sv:67.7-67.26.
+testcases/alwayslatch_misc_port_vectorOutput.sv:67: Warning: Identifier `\p2.o_a' is implicitly declared.
+testcases/alwayslatch_misc_port_vectorOutput.sv:67: Warning: Range select out of bounds on signal `\p2.o_a': Setting result bit to undef.
+testcases/alwayslatch_misc_port_vectorOutput.sv:66: Warning: Identifier `\p2.i_en' is implicitly declared.
+testcases/alwayslatch_misc_port_vectorOutput.sv:67: Warning: Identifier `\p2.i_a' is implicitly declared.
+Warning: Wire I.\o_a [3] is used but has no driver.
+Warning: Wire I.\o_a [2] is used but has no driver.
+Warning: Wire I.\o_a [1] is used but has no driver.
+Warning: Wire I.\o_a [0] is used but has no driver.
+Warning: Wire M1$interfaces$I.\p1.o_a [3] is used but has no driver.
+Warning: Wire M1$interfaces$I.\p1.o_a [2] is used but has no driver.
+Warning: Wire M1$interfaces$I.\p1.o_a [1] is used but has no driver.
+Warning: multiple conflicting drivers for M2$interfaces$I.\p1.o_a [1]:
+    port Q[0] of cell $auto$proc_dlatch.cc:427:proc_dlatch$53 ($dlatch)
+    port p1.o_a[1] of cell u_M1 (M1$interfaces$I)
+Warning: multiple conflicting drivers for M3$interfaces$I.\p1.o_a [2]:
+    port Q[0] of cell $auto$proc_dlatch.cc:427:proc_dlatch$42 ($dlatch)
+    port p1.o_a[2] of cell u_M2 (M2$interfaces$I)
+Warning: multiple conflicting drivers for M4$interfaces$I.\p2.o_a [3]:
+    port Q[0] of cell $auto$proc_dlatch.cc:427:proc_dlatch$31 ($dlatch)
+    port p1.o_a[3] of cell u_M3 (M3$interfaces$I)

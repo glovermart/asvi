@@ -1,0 +1,23 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/task_export_modportHierachicalRef_fullProtoype.sv,45): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 2 input ports were not connected:
+xmelab: (./testcases/task_export_modportHierachicalRef_fullProtoype.sv,43): i_a
+xmelab: (./testcases/task_export_modportHierachicalRef_fullProtoype.sv,44): i_b
+
+  I u_I ();
+      |
+xmelab: *W,CUVWSI (./testcases/task_export_modportHierachicalRef_fullProtoype.sv,48|6): 1 input port was not connected:
+xmelab: (./testcases/assign_unpacked_svi_noLiteral.sv,4): i_a
+
+    ( .p2  (u_I.P2)
+        |
+xmelab: *E,CUVPOM (./testcases/task_export_modportHierachicalRef_fullProtoype.sv,51|8): Port name 'p2' of instance 'tb.u_DUT.u_M1' is invalid or has multiple connections and the instantiated module is defined in file '/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwaysff_misc_differentInterfacesToOneInst.sv'.
+  ( I u_I1
+         |
+xmelab: *E,CUIMBC (./testcases/alwaysff_misc_differentInterfacesToOneInst.sv,20|9): An interface port declaration must be connected in instance(tb.u_DUT.u_M1, file:./testcases/task_export_modportHierachicalRef_fullProtoype.sv, line:50).
+FAILURE

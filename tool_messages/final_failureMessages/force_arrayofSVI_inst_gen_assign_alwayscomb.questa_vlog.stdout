@@ -1,0 +1,12 @@
+QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 16:39:34 on Jun 23,2023
+vlog -sv -lint=full testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv testbench/tb.sv 
+-- Compiling interface I
+-- Compiling module top
+** Warning: testcases/force_arrayofSVI_inst_gen_assign_alwayscomb.sv(21): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+-- Compiling module tb
+
+Top level modules:
+	tb
+End time: 16:39:35 on Jun 23,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1

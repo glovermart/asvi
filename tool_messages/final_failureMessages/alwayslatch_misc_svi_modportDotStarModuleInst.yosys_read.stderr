@@ -1,0 +1,4 @@
+testcases/alwayslatch_misc_svi_modportDotStarModuleInst.sv:31: Warning: Identifier `\p.x' is implicitly declared.
+testcases/alwayslatch_misc_svi_modportDotStarModuleInst.sv:33: Warning: Identifier `\p.o_a' is implicitly declared.
+testcases/alwayslatch_misc_svi_modportDotStarModuleInst.sv:47: Warning: Identifier `\u_M1.a' is implicitly declared.
+ERROR: Module `M2$interfaces$I' referenced in module `top' in cell `u_M2' does not have a port named 'p.i_a'.

@@ -1,0 +1,6 @@
+testcases/task_export_modportNohierachicalRef.sv:9: sorry: modport task/function ports are not yet supported.
+testcases/task_export_modportNohierachicalRef.sv:13: sorry: modport task/function ports are not yet supported.
+testcases/task_export_modportNohierachicalRef.sv:20: syntax error
+testcases/task_export_modportNohierachicalRef.sv:20: Errors in port declarations.
+testcases/task_export_modportNohierachicalRef.sv:31: syntax error
+testcases/task_export_modportNohierachicalRef.sv:31: Errors in port declarations.

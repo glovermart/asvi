@@ -1,0 +1,46 @@
+QuestaSim-64 vopt 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 12:20:20 on Jun 23,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+-- Loading interface I
+-- Loading module M3
+-- Loading module M2
+-- Loading module M1
+** Error (suppressible): testcases/alwaysff_misc_singleModuleInstantiation.sv(83): (vopt-7063) Failed to find 'i_clk' in hierarchical name 'p.i_clk'.
+        Region: tb.u_DUT.u_M3
+** Error (suppressible): testcases/alwaysff_misc_singleModuleInstantiation.sv(83): (vopt-7063) Failed to find 'i_arst' in hierarchical name 'p.i_arst'.
+        Region: tb.u_DUT.u_M3
+** Error (suppressible): testcases/alwaysff_misc_singleModuleInstantiation.sv(85): (vopt-7063) Failed to find 'z' in hierarchical name 'p.z'.
+        Region: tb.u_DUT.u_M3
+** Error (suppressible): testcases/alwaysff_misc_singleModuleInstantiation.sv(90): (vopt-7063) Failed to find 'y' in hierarchical name 'p.y'.
+        Region: tb.u_DUT.u_M3
+** Error (suppressible): testcases/alwaysff_misc_singleModuleInstantiation.sv(97): (vopt-7063) Failed to find 'w' in hierarchical name 'p.w'.
+        Region: tb.u_DUT.u_M3
+** Error (suppressible): testcases/alwaysff_misc_singleModuleInstantiation.sv(53): (vopt-7063) Failed to find 'i_clk' in hierarchical name 'p.i_clk'.
+        Region: tb.u_DUT.u_M3.u_M2
+** Error (suppressible): testcases/alwaysff_misc_singleModuleInstantiation.sv(54): (vopt-7063) Failed to find 'i_srst' in hierarchical name 'p.i_srst'.
+        Region: tb.u_DUT.u_M3.u_M2
+** Error (suppressible): testcases/alwaysff_misc_singleModuleInstantiation.sv(55): (vopt-7063) Failed to find 'z' in hierarchical name 'p.z'.
+        Region: tb.u_DUT.u_M3.u_M2
+** Error (suppressible): testcases/alwaysff_misc_singleModuleInstantiation.sv(60): (vopt-7063) Failed to find 'y' in hierarchical name 'p.y'.
+        Region: tb.u_DUT.u_M3.u_M2
+** Error (suppressible): testcases/alwaysff_misc_singleModuleInstantiation.sv(67): (vopt-7063) Failed to find 'w' in hierarchical name 'p.w'.
+        Region: tb.u_DUT.u_M3.u_M2
+** Error (suppressible): testcases/alwaysff_misc_singleModuleInstantiation.sv(35): (vopt-7063) Failed to find 'i_clk' in hierarchical name 'p.i_clk'.
+        Region: tb.u_DUT.u_M3.u_M2.u_M1
+** Error (suppressible): testcases/alwaysff_misc_singleModuleInstantiation.sv(35): (vopt-7063) Failed to find 'z' in hierarchical name 'p.z'.
+        Region: tb.u_DUT.u_M3.u_M2.u_M1
+** Error (suppressible): testcases/alwaysff_misc_singleModuleInstantiation.sv(36): (vopt-7063) Failed to find 'y' in hierarchical name 'p.y'.
+        Region: tb.u_DUT.u_M3.u_M2.u_M1
+** Error (suppressible): testcases/alwaysff_misc_singleModuleInstantiation.sv(37): (vopt-7063) Failed to find 'w' in hierarchical name 'p.w'.
+        Region: tb.u_DUT.u_M3.u_M2.u_M1
+Optimization failed
+End time: 12:20:20 on Jun 23,2023, Elapsed time: 0:00:00
+Errors: 14, Warnings: 0
+FAILURE

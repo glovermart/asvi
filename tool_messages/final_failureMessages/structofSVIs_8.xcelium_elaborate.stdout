@@ -1,0 +1,14 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/assign_packed_port.sv,29): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 1 input port was not connected:
+xmelab: (./testcases/assign_packed_port.sv,28): i_a
+
+  ( I.P p
+        |
+xmelab: *E,CUIMPX (./testcases/assign_packed_port.sv,17|8): The interface modport used (P) does not exist (tb.u_DUT.u_M).
+FAILURE

@@ -1,0 +1,2 @@
+testcases/assign_unpacked_inst_foreachAssignOut.sv:20: syntax error
+testcases/assign_unpacked_inst_foreachAssignOut.sv:22: Syntax in assignment statement l-value.

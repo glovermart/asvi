@@ -1,0 +1,20 @@
+$tcl_library is set to: /cad/mentor/oneSpin360/2023.1/etc/tcl8.6
+init.tcl executed.
+source "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_defaults.tcl"
+source -signed "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_startup.tcl.obf"
+source "/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl"
+-I- FileParse - Analyzing source file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/structofSVIs_0.sv" .... [1]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/structofSVIs_0.sv:9: Analyzing module ( top ). [4]
+-E- Parse - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/structofSVIs_0.sv:12: Syntax error near ( I ).
+  { I <- [481]
+-E- Parse - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/structofSVIs_0.sv:13: Syntax error near ( , ).
+  , <- [481]
+-E- Parse - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/structofSVIs_0.sv:14: Syntax error near ( , ).
+  , <- [481]
+-E- /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/structofSVIs_0.sv:17: Variable name ( st_Ifc ) previously declared in /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/structofSVIs_0.sv line 11. [600]
+-E- Could not read HDL files.
+-E- Can not source script '/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl'.
+    while executing
+"read_verilog -version sv2012 ${TEST_NAME}"
+    (file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl" line 3)
+-E- Error during execution of user commands.

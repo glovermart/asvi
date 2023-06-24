@@ -1,0 +1,2 @@
+testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv:14: syntax error
+testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0_bit7.sv:1: Errors in port declarations.

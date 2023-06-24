@@ -1,0 +1,2 @@
+ERROR: [Synth 8-9747] modport item 'x' must refer to an item in interface 'I1' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/nested_interface_5.sv:12]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

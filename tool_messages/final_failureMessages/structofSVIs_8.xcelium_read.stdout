@@ -1,0 +1,4 @@
+    st_Ifc.a = {8{u_I}};
+                    |
+xmvlog: *E,TYPEERR (testcases/structofSVIs_8.sv,24|20): {} concatenation operator operand type is illegal.
+FAILURE

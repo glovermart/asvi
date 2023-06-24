@@ -1,0 +1,4 @@
+testcases/void_function_static.sv:7: error: Function top.u_I.adder port o_a is not an input port.
+testcases/void_function_static.sv:7:      : Function arguments must be input ports.
+testcases/void_function_static.sv:7: warning: user task (adder) must be automatic to be synthesized in an always_comb process.
+1 error(s) during elaboration.

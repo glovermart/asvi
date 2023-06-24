@@ -1,0 +1,20 @@
+QuestaSim-64 vopt 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 12:13:48 on Jun 23,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+-- Loading interface I
+-- Loading module M
+** Error (suppressible): testcases/force_packed_port_partSelect_genericInterface.sv(37): (vopt-7063) Failed to find 'z' in hierarchical name 'u_I.z'.
+        Region: tb.u_DUT
+** Error (suppressible): testcases/force_packed_port_partSelect_genericInterface.sv(41): (vopt-7063) Failed to find 'P1' in hierarchical name 'u_I.P1'.
+        Region: tb.u_DUT
+Optimization failed
+End time: 12:13:48 on Jun 23,2023, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+FAILURE

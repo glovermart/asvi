@@ -1,0 +1,6 @@
+testcases/assign_misc_port_Module2opt.sv:30: Warning: Identifier `\p2.z' is implicitly declared.
+testcases/assign_misc_port_Module2opt.sv:30: Warning: Identifier `\p1.y' is implicitly declared.
+testcases/assign_misc_port_Module2opt.sv:30: Warning: Identifier `\p1.x' is implicitly declared.
+testcases/assign_misc_port_Module2opt.sv:31: Warning: Identifier `\p2.w' is implicitly declared.
+testcases/assign_misc_port_Module2opt.sv:41: Warning: Identifier `\u_I.P1' is implicitly declared.
+testcases/assign_misc_port_Module2opt.sv:42: Warning: Identifier `\u_I.P2' is implicitly declared.

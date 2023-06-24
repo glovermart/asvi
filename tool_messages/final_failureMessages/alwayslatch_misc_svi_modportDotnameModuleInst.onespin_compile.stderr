@@ -1,0 +1,16 @@
+$tcl_library is set to: /cad/mentor/oneSpin360/2023.1/etc/tcl8.6
+init.tcl executed.
+source "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_defaults.tcl"
+source -signed "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_startup.tcl.obf"
+source "/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl"
+-I- FileParse - Analyzing source file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_modportDotnameModuleInst.sv" .... [1]
+-E- /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_modportDotnameModuleInst.sv:13: Modport variable ( x ) is not declared within the scope. [1475]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_modportDotnameModuleInst.sv:25: Analyzing module ( M1 ). [4]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_modportDotnameModuleInst.sv:38: Analyzing module ( M2 ). [4]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayslatch_misc_svi_modportDotnameModuleInst.sv:51: Analyzing module ( top ). [4]
+-E- Could not read HDL files.
+-E- Can not source script '/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl'.
+    while executing
+"read_verilog -version sv2012 ${TEST_NAME}"
+    (file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl" line 3)
+-E- Error during execution of user commands.

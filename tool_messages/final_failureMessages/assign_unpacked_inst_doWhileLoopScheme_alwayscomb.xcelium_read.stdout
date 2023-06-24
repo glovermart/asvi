@@ -1,0 +1,3 @@
+    int i = 0;
+          |
+xmvlog: *W,VARIST (testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,19|10): Local static variable with initializer requires 'static' keyword.

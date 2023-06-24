@@ -1,0 +1,1 @@
+testcases/struct_svi_unpacked.sv:9: ERROR: Only PACKED supported at this time

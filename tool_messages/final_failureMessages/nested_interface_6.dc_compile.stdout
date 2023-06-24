@@ -1,0 +1,87 @@
+Information: License queuing is enabled. (DCSH-18)
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version U-2022.12-SP2 for linux64 - Feb 21, 2023 
+
+                    Copyright (c) 1988 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Initializing gui preferences from file  /pri/anm3/.synopsys_dc_gui/preferences.tcl
+Loading db file '/cad/synopsys/2022.12-SP2/libraries/syn/lsi_10k.db'
+Loading db file '/cad/synopsys/2022.12-SP2/libraries/syn/gtech.db'
+Loading db file '/cad/synopsys/2022.12-SP2/libraries/syn/standard.sldb'
+  Loading link library 'lsi_10k'
+  Loading link library 'gtech'
+Loading sverilog file '/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/nested_interface_6.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/nested_interface_6.sv
+#line 958
+SNPSee_4d3b383cf3f0475f08f37a6f3d5e97d3
+SNPSee_35d86cf73ec3d8134d4400e3beb8eb9f636858db9b90a76b19489721e17ee730
+SNPSee_49ce22df8736e208c4536427271b41b2efa8491f4668ea20474f4c70ec3f48bd
+SNPSee_51c1e34305eeed58ab0e569ab552c1ec
+SNPSee_232ab85f61204878262ee765ce5c751f71cacba289d4ef3b
+SNPSee_e044069a63cb7620
+SNPSee_925552ba911762e28ae23eadc6ab9e97
+SNPSee_59510a0971b4c91016fe34a8ff44d62c
+SNPSee_98f556962482c678571cc3d2ef17e3f5
+SNPSee_1c8ac67927dd1f3ef369bd6d704842562e11c4d15820c54b7b459b12c0315cf1
+SNPSee_1c8ac67927dd1f3e341bfc8166b35f5d
+SNPSee_2a76b24eecade04e
+SNPSee_791c2e3522f8e1336fd0468d2effc273bb2ee4a10941713b
+SNPSee_ccb55e093e04bf6849bcd3af4b175b819953ff860e7169ef
+SNPSee_7a768b7324a005c791d0e8835632f760
+SNPSee_07249ba03a541f4989f00c038e8e604f0ba63447d0524bbb88c0e930a3be8e6c
+SNPSee_07249ba03a541f49235efcddf3bf51e50f7ff6b80f5941e2
+SNPSee_e62e1698d01baea2f0ae7e2593b52a11
+SNPSee_800cfa09c4312a2a658022cd459e34616900e8f99890a5ed
+SNPSee_7ea007f17721baa8c52712154029f5e48c5b42d17487296853bec6f509fb5cd7fb8e3aecaf9a59df5ceaf3227abcdf276664c5bfd5ca6b006d34e6f6d0022bb5aa6a0546020548c042f868058edbb564
+SNPSee_18ae1188a5a6482452f3b67abbc891010269f13ce0e30d67
+SNPSee_57415c5b07ec5e8b8118f96e6212a2c42c69fd3f49376c0d
+SNPSee_1ac40924fdff8310f5184d6eb67c5798036a89169a27d790
+SNPSee_eb883b8643ac3618e46fbd7d90d84cd1d9cf41f1ea1de2433ad64196cf3fcc2ce0cf4135a98ecf06
+SNPSee_3221a15a6f1a35304e1e2a6725c055e64954ed411c02b8fea588b35e0540b178b78986c80d1d5eb53d84afadfe38b7c2
+SNPSee_3221a15a6f1a3530a06e6740411df9e026698cb37d965801c2f87fce0f07c0f8
+SNPSee_76d6cca1ef29382ca84b036280d53dca
+SNPSee_a8c67c391924da59bb0a6e836c77e2d8
+main
+__libc_start_main
+SNPSee_d06eed713327be76
+Error:  /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/nested_interface_6.sv:9: Internal assertion failure.  (VER-37)
+*** Presto compilation terminated with 1 errors. ***
+Error: Can't read 'sverilog' file '/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/nested_interface_6.sv'. (UID-59)
+No designs were read
+Error: Current design is not defined. (UID-4)
+
+Memory usage for this session 90 Mbytes.
+Memory usage for this session including child processes 90 Mbytes.
+CPU usage for this session 4 seconds ( 0.00 hours ).
+Elapsed time for this session 5 seconds ( 0.00 hours ).
+
+Thank you...

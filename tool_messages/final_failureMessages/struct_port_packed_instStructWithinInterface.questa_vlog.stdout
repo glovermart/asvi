@@ -1,0 +1,14 @@
+QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 13:45:06 on Jun 23,2023
+vlog -sv -lint=full testcases/struct_port_packed_instStructWithinInterface.sv testbench/tb.sv 
+-- Compiling package struct_port_packed_instStructWithinInterface_sv_unit
+-- Compiling interface I
+-- Compiling module M1
+-- Compiling module M2
+-- Compiling module top
+-- Compiling module tb
+
+Top level modules:
+	tb
+End time: 13:45:07 on Jun 23,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

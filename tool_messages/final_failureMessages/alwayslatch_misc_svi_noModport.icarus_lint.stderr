@@ -1,0 +1,8 @@
+testcases/alwayslatch_misc_svi_noModport.sv:21: syntax error
+testcases/alwayslatch_misc_svi_noModport.sv:21: Errors in port declarations.
+testcases/alwayslatch_misc_svi_noModport.sv:31: syntax error
+testcases/alwayslatch_misc_svi_noModport.sv:31: Errors in port declarations.
+testcases/alwayslatch_misc_svi_noModport.sv:41: syntax error
+testcases/alwayslatch_misc_svi_noModport.sv:41: Errors in port declarations.
+testcases/alwayslatch_misc_svi_noModport.sv:51: syntax error
+testcases/alwayslatch_misc_svi_noModport.sv:51: Errors in port declarations.

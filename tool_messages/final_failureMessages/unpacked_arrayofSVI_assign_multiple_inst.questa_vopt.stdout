@@ -1,0 +1,21 @@
+QuestaSim-64 vopt 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 13:16:54 on Jun 23,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+-- Loading interface I
+-- Loading module M1
+-- Loading module M2
+** Error (suppressible): testcases/void_function_import.sv(41): (vopt-7063) Failed to find 'subtractor' in hierarchical name 'p2.subtractor'.
+        Region: tb.u_DUT.u_M2
+** Error (suppressible): testcases/void_function_import.sv(31): (vopt-7063) Failed to find 'adder' in hierarchical name 'p1.adder'.
+        Region: tb.u_DUT.u_M1
+Optimization failed
+End time: 13:16:54 on Jun 23,2023, Elapsed time: 0:00:00
+Errors: 2, Warnings: 0
+FAILURE

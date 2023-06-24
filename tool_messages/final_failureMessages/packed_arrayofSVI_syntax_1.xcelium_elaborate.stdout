@@ -1,0 +1,15 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/alwaysff_packed_svi_orderedPortCOn_sequentialBlock.sv,29): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 2 input ports were not connected:
+xmelab: (./testcases/alwaysff_packed_svi_orderedPortCOn_sequentialBlock.sv,27): i_a
+xmelab: (./testcases/alwaysff_packed_svi_orderedPortCOn_sequentialBlock.sv,28): i_clk
+
+  I u_I        // Ordered port connection: Interface I and module top have
+      |
+xmelab: *E,CUVWLP (./testcases/alwaysff_packed_svi_orderedPortCOn_sequentialBlock.sv,32|6): Too many module port connections.
+FAILURE

@@ -1,0 +1,5 @@
+testcases/force_misc_inst_noVariableDec_modulePort.sv:12: syntax error
+testcases/force_misc_inst_noVariableDec_modulePort.sv:12: Errors in port declarations.
+testcases/force_misc_inst_noVariableDec_modulePort.sv:26: syntax error
+testcases/force_misc_inst_noVariableDec_modulePort.sv:26: Errors in port declarations.
+testcases/force_misc_inst_noVariableDec_modulePort.sv:44: warning: implicit definition of wire 'u_I'.

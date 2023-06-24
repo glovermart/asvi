@@ -1,0 +1,7 @@
+testcases/force_unpacked_inst.sv:12: syntax error
+testcases/force_unpacked_inst.sv:1: Errors in port declarations.
+testcases/force_unpacked_inst.sv:18: syntax error
+testcases/force_unpacked_inst.sv:18: error: syntax error in continuous assignment
+testcases/force_unpacked_inst.sv:22: syntax error
+testcases/force_unpacked_inst.sv:22: error: malformed statement
+testcases/force_unpacked_inst.sv:26: warning: implicit definition of wire 'o_a'.

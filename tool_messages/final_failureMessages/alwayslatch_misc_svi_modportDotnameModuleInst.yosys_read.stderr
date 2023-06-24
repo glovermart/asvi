@@ -1,0 +1,4 @@
+testcases/alwayslatch_misc_svi_modportDotnameModuleInst.sv:31: Warning: Identifier `\p.x' is implicitly declared.
+testcases/alwayslatch_misc_svi_modportDotnameModuleInst.sv:33: Warning: Identifier `\p.o_a' is implicitly declared.
+testcases/alwayslatch_misc_svi_modportDotnameModuleInst.sv:46: Warning: Identifier `\u_M1.a' is implicitly declared.
+ERROR: Could not find signal '\p.$0\x[3:0]' in 'M2'

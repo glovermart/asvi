@@ -1,0 +1,2 @@
+testcases/assign_unpacked_svi_Literal.sv:9: syntax error
+testcases/assign_unpacked_svi_Literal.sv:9: error: syntax error in continuous assignment

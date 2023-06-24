@@ -1,0 +1,27 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 3 input ports were not connected:
+xmelab: (./testcases/alwaysff_misc_differentInterfacesToOneInst.sv,89): i_clk
+xmelab: (./testcases/alwaysff_misc_differentInterfacesToOneInst.sv,90): i_srst
+xmelab: (./testcases/alwaysff_misc_differentInterfacesToOneInst.sv,91): i_arst
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+  always_ff @(posedge u_I2.i_clk)
+          |
+xmelab: *E,MULAXX (./testcases/alwaysff_misc_differentInterfacesToOneInst.sv,42|10): Multiple drivers to always_ff output variable u_I2.z detected.
+  always_ff @(posedge u_I1.i_clk) u_I1.z <= Z;      // Constant
+          |
+xmelab: *E,MULAXX (./testcases/alwaysff_misc_differentInterfacesToOneInst.sv,27|10): Multiple drivers to always_ff output variable u_I1.z detected.
+  always_ff @(posedge u_I2.i_clk)
+          |
+xmelab: *E,MULAXX (./testcases/alwaysff_misc_differentInterfacesToOneInst.sv,47|10): Multiple drivers to always_ff output variable u_I2.y detected.
+  always_ff @(posedge u_I1.i_clk) u_I1.y <= 1'b1;   // Literal
+          |
+xmelab: *E,MULAXX (./testcases/alwaysff_misc_differentInterfacesToOneInst.sv,28|10): Multiple drivers to always_ff output variable u_I1.y detected.
+  always_ff @(posedge u_I2.i_clk)
+          |
+xmelab: *E,MULAXX (./testcases/alwaysff_misc_differentInterfacesToOneInst.sv,52|10): Multiple drivers to always_ff output variable u_I2.x detected.
+  always_ff @(posedge u_I1.i_clk) u_I1.x <= a;      // Signal
+          |
+xmelab: *E,MULAXX (./testcases/alwaysff_misc_differentInterfacesToOneInst.sv,29|10): Multiple drivers to always_ff output variable u_I1.x detected.
+FAILURE

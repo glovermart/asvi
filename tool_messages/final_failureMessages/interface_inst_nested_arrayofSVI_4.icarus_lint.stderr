@@ -1,0 +1,2 @@
+testcases/interface_inst_nested_arrayofSVI_4.sv:13: error: Module instantiations are not allowed in interfaces.
+testcases/interface_inst_nested_arrayofSVI_4.sv:28: error: Module instantiations are not allowed in interfaces.

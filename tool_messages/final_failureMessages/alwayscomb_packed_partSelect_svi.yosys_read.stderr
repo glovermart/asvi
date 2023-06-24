@@ -1,0 +1,9 @@
+testcases/alwayscomb_packed_partSelect_svi.sv:21: Warning: Identifier `\u_I.x' is implicitly declared.
+Warning: Wire top.\o_a [7] is used but has no driver.
+Warning: Wire top.\o_a [6] is used but has no driver.
+Warning: Wire top.\o_a [5] is used but has no driver.
+Warning: Wire top.\o_a [4] is used but has no driver.
+Warning: Wire top.\o_a [3] is used but has no driver.
+Warning: Wire top.\o_a [2] is used but has no driver.
+Warning: Wire top.\o_a [1] is used but has no driver.
+Warning: Wire top.\o_a [0] is used but has no driver.

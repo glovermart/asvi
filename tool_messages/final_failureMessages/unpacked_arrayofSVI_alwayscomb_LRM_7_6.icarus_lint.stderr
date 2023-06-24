@@ -1,0 +1,3 @@
+testcases/unpacked_arrayofSVI_alwayscomb_LRM_7_6.sv:19: error: Unable to find foreach array u_I in scope top.$ivl_foreach0.
+testcases/unpacked_arrayofSVI_alwayscomb_LRM_7_6.sv:23: sorry: Assignment to an entire array or to an array slice is not yet supported.
+Elaboration failed

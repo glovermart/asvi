@@ -1,0 +1,10 @@
+testcases/packed_arrayofSVI_assign_multiple_inst.sv:36: error: Unable to bind wire/reg/memory `u_I1' in `top'
+testcases/packed_arrayofSVI_assign_multiple_inst.sv:37: error: Unable to bind wire/reg/memory `u_I2' in `top'
+testcases/packed_arrayofSVI_assign_multiple_inst.sv:38: error: Unable to bind wire/reg/memory `u_I3' in `top'
+testcases/packed_arrayofSVI_assign_multiple_inst.sv:39: error: Unable to bind wire/reg/memory `u_I4' in `top'
+testcases/packed_arrayofSVI_assign_multiple_inst.sv:40: error: Unable to bind wire/reg/memory `u_I5' in `top'
+testcases/packed_arrayofSVI_assign_multiple_inst.sv:41: error: Unable to bind wire/reg/memory `u_I6' in `top'
+testcases/packed_arrayofSVI_assign_multiple_inst.sv:42: error: Unable to bind wire/reg/memory `u_I7' in `top'
+testcases/packed_arrayofSVI_assign_multiple_inst.sv:43: error: Unable to bind wire/reg/memory `u_I8' in `top'
+testcases/packed_arrayofSVI_assign_multiple_inst.sv:36: error: Concatenation/replication may not have zero width in this context.
+Elaboration failed

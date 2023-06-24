@@ -1,0 +1,13 @@
+QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 12:42:03 on Jun 23,2023
+vlog -sv -lint=full testcases/alwayslatch_arrayofSVI_svi.sv testbench/tb.sv 
+-- Compiling package alwayslatch_arrayofSVI_svi_sv_unit
+-- Compiling interface I
+-- Compiling module M
+-- Compiling module top
+-- Compiling module tb
+
+Top level modules:
+	tb
+End time: 12:42:04 on Jun 23,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

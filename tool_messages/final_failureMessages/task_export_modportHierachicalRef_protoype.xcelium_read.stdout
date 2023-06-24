@@ -1,0 +1,7 @@
+    ( export adder
+           |
+xmvlog: *E,MODIOI (testcases/task_export_modportHierachicalRef_protoype.sv,13|11): Expected input/output/inout/import in modport declaration [SystemVerilog].
+  task p2.adder (input int i_a, i_b, output int o_a); // Hierrachical define.
+        |
+xmvlog: *E,SVNIMP (testcases/task_export_modportHierachicalRef_protoype.sv,23|8): SystemVerilog construct not yet implemented:  hierarchical task/function names (interface identifiers).
+FAILURE

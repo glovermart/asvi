@@ -1,0 +1,15 @@
+QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 12:52:56 on Jun 23,2023
+vlog -sv -lint=full testcases/interface_inst_nested_arrayofSVI_1.sv testbench/tb.sv 
+-- Compiling interface I
+-- Compiling interface I1
+-- Compiling interface I2
+** Error: testcases/interface_inst_nested_arrayofSVI_1.sv(20): Nonconstant index into instance array 'u_I'.
+** Error: testcases/interface_inst_nested_arrayofSVI_1.sv(24): Nonconstant index into instance array 'u_I'.
+** Error: testcases/interface_inst_nested_arrayofSVI_1.sv(19): (vlog-13118) Number of dimensions specified in foreach loop are more than array dimensions.
+** Error: testcases/interface_inst_nested_arrayofSVI_1.sv(23): (vlog-13118) Number of dimensions specified in foreach loop are more than array dimensions.
+-- Compiling module top
+-- Compiling module tb
+End time: 12:52:56 on Jun 23,2023, Elapsed time: 0:00:00
+Errors: 4, Warnings: 0
+FAILURE

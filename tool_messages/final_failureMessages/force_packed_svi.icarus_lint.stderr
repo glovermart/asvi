@@ -1,0 +1,2 @@
+testcases/force_packed_svi.sv:16: warning: A force statement cannot be synthesized in an always_comb process.
+testcases/force_packed_svi.sv:18: warning: A release statement cannot be synthesized in an always_comb process.

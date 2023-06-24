@@ -1,0 +1,40 @@
+QuestaSim-64 vopt 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 14:15:34 on Jun 23,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+-- Loading interface I
+-- Loading module M1
+-- Loading module M2
+-- Loading module M3
+** Warning: testbench/tb.sv(3): (vopt-2685) [TFMPC] - Too few port connections for 'u_DUT'.  Expected 3, found 0.
+Incremental compilation check found no design-units (out of 7) may be reused.
+Optimizing 7 design-units (inlining 5/6 module instances):
+-- Inlining interface I(fast__1)
+-- Inlining module M1(fast)
+-- Inlining module M2(fast)
+-- Inlining module M3(fast)
+-- Inlining module top(fast)
+-- Optimizing module tb(fast)
+** Error (suppressible): testcases/alwaysff_misc_differentInterfacesToOneInst.sv(44): (vopt-7061) Variable 'z' driven in an always_ff block, may not be driven by any other process. See testcases/alwaysff_misc_differentInterfacesToOneInst.sv(27).
+** Error (suppressible): testcases/alwaysff_misc_differentInterfacesToOneInst.sv(46): (vopt-7061) Variable 'z' driven in an always_ff block, may not be driven by any other process. See testcases/alwaysff_misc_differentInterfacesToOneInst.sv(27).
+** Error (suppressible): testcases/alwaysff_misc_differentInterfacesToOneInst.sv(49): (vopt-7061) Variable 'y' driven in an always_ff block, may not be driven by any other process. See testcases/alwaysff_misc_differentInterfacesToOneInst.sv(28).
+** Error (suppressible): testcases/alwaysff_misc_differentInterfacesToOneInst.sv(51): (vopt-7061) Variable 'y' driven in an always_ff block, may not be driven by any other process. See testcases/alwaysff_misc_differentInterfacesToOneInst.sv(28).
+** Error (suppressible): testcases/alwaysff_misc_differentInterfacesToOneInst.sv(54): (vopt-7061) Variable 'x' driven in an always_ff block, may not be driven by any other process. See testcases/alwaysff_misc_differentInterfacesToOneInst.sv(29).
+** Error (suppressible): testcases/alwaysff_misc_differentInterfacesToOneInst.sv(56): (vopt-7061) Variable 'x' driven in an always_ff block, may not be driven by any other process. See testcases/alwaysff_misc_differentInterfacesToOneInst.sv(29).
+** Error (suppressible): testcases/alwaysff_misc_differentInterfacesToOneInst.sv(71): (vopt-7061) Variable 'z' driven in an always_ff block, may not be driven by any other process. See testcases/alwaysff_misc_differentInterfacesToOneInst.sv(27).
+** Error (suppressible): testcases/alwaysff_misc_differentInterfacesToOneInst.sv(73): (vopt-7061) Variable 'z' driven in an always_ff block, may not be driven by any other process. See testcases/alwaysff_misc_differentInterfacesToOneInst.sv(27).
+** Error (suppressible): testcases/alwaysff_misc_differentInterfacesToOneInst.sv(76): (vopt-7061) Variable 'y' driven in an always_ff block, may not be driven by any other process. See testcases/alwaysff_misc_differentInterfacesToOneInst.sv(28).
+** Error (suppressible): testcases/alwaysff_misc_differentInterfacesToOneInst.sv(78): (vopt-7061) Variable 'y' driven in an always_ff block, may not be driven by any other process. See testcases/alwaysff_misc_differentInterfacesToOneInst.sv(28).
+** Error (suppressible): testcases/alwaysff_misc_differentInterfacesToOneInst.sv(81): (vopt-7061) Variable 'x' driven in an always_ff block, may not be driven by any other process. See testcases/alwaysff_misc_differentInterfacesToOneInst.sv(29).
+** Error (suppressible): testcases/alwaysff_misc_differentInterfacesToOneInst.sv(83): (vopt-7061) Variable 'x' driven in an always_ff block, may not be driven by any other process. See testcases/alwaysff_misc_differentInterfacesToOneInst.sv(29).
+Optimization failed
+** Error: (vopt-2064) Compiler back-end code generation process terminated with code 12.
+End time: 14:15:35 on Jun 23,2023, Elapsed time: 0:00:01
+Errors: 13, Warnings: 1
+FAILURE

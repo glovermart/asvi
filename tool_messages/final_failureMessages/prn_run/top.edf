@@ -1,0 +1,110 @@
+(edif top 
+ (edifVersion 2 0 0)
+ (edifLevel 0)
+ (keywordMap (keywordLevel 0))
+ (status 
+  (written 
+   (timestamp 2023 06 23 18 04 39)
+   (program "Precision RTL Synthesis" (version "64-bit 2022.2.0.9"))
+   (author "Mentor Graphics Corporation")))
+ (external xck7 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell OBUFT (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port I (direction INPUT))
+     (port T (direction INPUT))
+     (port O (direction OUTPUT)))))
+  (cell VCC (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port P (direction OUTPUT)))))
+  (cell GND (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port G (direction OUTPUT))))))
+ (library work 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell top (cellType GENERIC)
+   (view INTERFACE  (viewType NETLIST)
+    (interface 
+     (port i_a (direction INPUT))
+     (port (rename o_a_0_ "o_a(0)") (direction OUTPUT))
+     (port (rename o_a_1_ "o_a(1)") (direction OUTPUT))
+     (port (rename o_a_2_ "o_a(2)") (direction OUTPUT))
+     (port (rename o_a_3_ "o_a(3)") (direction OUTPUT))
+     (port (rename o_a_4_ "o_a(4)") (direction OUTPUT))
+     (port (rename o_a_5_ "o_a(5)") (direction OUTPUT))
+     (port (rename o_a_6_ "o_a(6)") (direction OUTPUT))
+     (port (rename o_a_7_ "o_a(7)") (direction OUTPUT)))
+    (property DESIGN_IS_RTL (string "NO"))
+    (property PART (string "7K70TFBG676-1"))
+    (contents 
+     (instance ix36789z40921 (viewRef NETLIST  (cellRef OBUFT (libraryRef xck7 ))))
+     (instance ix37786z40921 (viewRef NETLIST  (cellRef OBUFT (libraryRef xck7 ))))
+     (instance ix38783z40921 (viewRef NETLIST  (cellRef OBUFT (libraryRef xck7 ))))
+     (instance ix39780z40921 (viewRef NETLIST  (cellRef OBUFT (libraryRef xck7 ))))
+     (instance ix40777z40921 (viewRef NETLIST  (cellRef OBUFT (libraryRef xck7 ))))
+     (instance ix41774z40921 (viewRef NETLIST  (cellRef OBUFT (libraryRef xck7 ))))
+     (instance ix42771z40921 (viewRef NETLIST  (cellRef OBUFT (libraryRef xck7 ))))
+     (instance ix43768z40921 (viewRef NETLIST  (cellRef OBUFT (libraryRef xck7 ))))
+     (instance ps_vcc (viewRef NETLIST  (cellRef VCC (libraryRef xck7 ))))
+     (instance ps_gnd (viewRef NETLIST  (cellRef GND (libraryRef xck7 ))))
+     (net (rename o_a_7_ "o_a(7)") 
+      (joined 
+       (portRef o_a_7_ )
+       (portRef O (instanceRef ix36789z40921 ))))
+     (net (rename o_a_6_ "o_a(6)") 
+      (joined 
+       (portRef o_a_6_ )
+       (portRef O (instanceRef ix37786z40921 ))))
+     (net (rename o_a_5_ "o_a(5)") 
+      (joined 
+       (portRef o_a_5_ )
+       (portRef O (instanceRef ix38783z40921 ))))
+     (net (rename o_a_4_ "o_a(4)") 
+      (joined 
+       (portRef o_a_4_ )
+       (portRef O (instanceRef ix39780z40921 ))))
+     (net (rename o_a_3_ "o_a(3)") 
+      (joined 
+       (portRef o_a_3_ )
+       (portRef O (instanceRef ix40777z40921 ))))
+     (net (rename o_a_2_ "o_a(2)") 
+      (joined 
+       (portRef o_a_2_ )
+       (portRef O (instanceRef ix41774z40921 ))))
+     (net (rename o_a_1_ "o_a(1)") 
+      (joined 
+       (portRef o_a_1_ )
+       (portRef O (instanceRef ix42771z40921 ))))
+     (net (rename o_a_0_ "o_a(0)") 
+      (joined 
+       (portRef o_a_0_ )
+       (portRef O (instanceRef ix43768z40921 ))))
+     (net nx43768z2 
+      (joined 
+       (portRef P (instanceRef ps_vcc ))
+       (portRef T (instanceRef ix39780z40921 ))
+       (portRef T (instanceRef ix38783z40921 ))
+       (portRef T (instanceRef ix37786z40921 ))
+       (portRef T (instanceRef ix36789z40921 ))
+       (portRef T (instanceRef ix43768z40921 ))
+       (portRef T (instanceRef ix42771z40921 ))
+       (portRef T (instanceRef ix41774z40921 ))
+       (portRef T (instanceRef ix40777z40921 ))))
+     (net nx43768z1 
+      (joined 
+       (portRef G (instanceRef ps_gnd ))
+       (portRef I (instanceRef ix39780z40921 ))
+       (portRef I (instanceRef ix38783z40921 ))
+       (portRef I (instanceRef ix37786z40921 ))
+       (portRef I (instanceRef ix36789z40921 ))
+       (portRef I (instanceRef ix43768z40921 ))
+       (portRef I (instanceRef ix42771z40921 ))
+       (portRef I (instanceRef ix41774z40921 ))
+       (portRef I (instanceRef ix40777z40921 ))))))))
+ (design top (cellRef top (libraryRef work ))
+  (property PART (string "7K70TFBG676-1"))))

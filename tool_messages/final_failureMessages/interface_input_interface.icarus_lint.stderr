@@ -1,0 +1,3 @@
+testcases/interface_input_interface.sv:14: syntax error
+testcases/interface_input_interface.sv:14: Errors in port declarations.
+testcases/interface_input_interface.sv:31: warning: implicit definition of wire 'u_I1'.

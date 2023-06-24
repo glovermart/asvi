@@ -1,0 +1,3 @@
+ERROR: [Synth 8-35] 'i' is not a constant [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/interface_inst_nested_arrayofSVI_1.sv:20]
+ERROR: [Synth 8-35] 'i' is not a constant [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/interface_inst_nested_arrayofSVI_1.sv:24]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

@@ -1,0 +1,3 @@
+ERROR: [Synth 8-27] extern task/function in modport not supported [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/task_export_extern_noGenericInterfaceModportInst.sv:10]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/task_export_extern_noGenericInterfaceModportInst.sv:38]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

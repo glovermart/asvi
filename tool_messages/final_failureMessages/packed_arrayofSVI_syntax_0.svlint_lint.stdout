@@ -1,0 +1,6 @@
+[91mError[97m: parse error
+[94m   -->[37m testcases/packed_arrayofSVI_syntax_0.sv:17:15
+[94m   |
+[94m17 |[37m   I [7:0] u_I ();
+[94m   |[93m               ^(B[m
+FAILURE

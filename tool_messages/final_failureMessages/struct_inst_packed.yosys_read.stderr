@@ -1,0 +1,2 @@
+Warning: wire '\u_I.data.data' is assigned in a block at testcases/struct_inst_packed.sv:22.5-22.24.
+testcases/struct_inst_packed.sv:22: Warning: Identifier `\u_I.data.data' is implicitly declared.

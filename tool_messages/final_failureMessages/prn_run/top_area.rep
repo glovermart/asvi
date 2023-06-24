@@ -1,0 +1,73 @@
+//  Precision RTL Synthesis 64-bit 2022.2.0.9 (Production Release) Fri Nov 25 19:04:53 PST 2022
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2022, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux anm3@cad11.nordicsemi.no #1 SMP Tue Nov 8 15:48:59 UTC 2022 3.10.0-1160.80.1.el7.x86_64 x86_64
+//  
+//  Start time Fri Jun 23 20:04:35 2023
+
+***************************************************************
+Device Utilization for 7K70TFBG676
+***************************************************************
+Resource                          Used    Avail   Utilization
+---------------------------------------------------------------
+IOs                               9       300       3.00%
+Global Buffers                    0       32        0.00%
+LUTs                              0       41000     0.00%
+CLB Slices                        0       10250     0.00%
+Dffs or Latches                   0       82000     0.00%
+Block RAMs                        0       135       0.00%
+DSP48E1s                          0       240       0.00%
+---------------------------------------------------------------
+
+*********************************************
+
+Library: work    Cell: top    View: INTERFACE
+
+*********************************************
+
+  Cell            Library  References     Total Area
+
+ GND              xck7     1 x
+ OBUFT            xck7     8 x
+ VCC              xck7     1 x
+
+ Number of ports :                            9
+ Number of nets :                            10
+ Number of instances :                       10
+ Number of references to this view :          0
+
+Total accumulated area : unknown
+
+
+*****************************
+ IO Register Mapping Report
+*****************************
+Design: work.top.INTERFACE
+
++-----------+-----------+----------+----------+----------+
+| Port      | Direction |   INFF   |  OUTFF   |  TRIFF   |
++-----------+-----------+----------+----------+----------+
+| i_a       | Input     |          |          |          |
++-----------+-----------+----------+----------+----------+
+| o_a(0)    | Output    |          |          |          |
++-----------+-----------+----------+----------+----------+
+| o_a(1)    | Output    |          |          |          |
++-----------+-----------+----------+----------+----------+
+| o_a(2)    | Output    |          |          |          |
++-----------+-----------+----------+----------+----------+
+| o_a(3)    | Output    |          |          |          |
++-----------+-----------+----------+----------+----------+
+| o_a(4)    | Output    |          |          |          |
++-----------+-----------+----------+----------+----------+
+| o_a(5)    | Output    |          |          |          |
++-----------+-----------+----------+----------+----------+
+| o_a(6)    | Output    |          |          |          |
++-----------+-----------+----------+----------+----------+
+| o_a(7)    | Output    |          |          |          |
++-----------+-----------+----------+----------+----------+
+Total registers mapped: 0

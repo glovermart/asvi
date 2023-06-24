@@ -1,0 +1,12 @@
+QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 15:53:39 on Jun 23,2023
+vlog -sv -lint=full testcases/alwaysff_unpacked_port_namedPortWithoutModport.sv testbench/tb.sv 
+-- Compiling interface I
+-- Compiling module M
+-- Compiling module top
+-- Compiling module tb
+
+Top level modules:
+	tb
+End time: 15:53:40 on Jun 23,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

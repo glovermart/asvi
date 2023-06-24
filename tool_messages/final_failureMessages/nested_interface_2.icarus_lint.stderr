@@ -1,0 +1,1 @@
+testcases/nested_interface_2.sv:20: error: Module instantiations are not allowed in interfaces.

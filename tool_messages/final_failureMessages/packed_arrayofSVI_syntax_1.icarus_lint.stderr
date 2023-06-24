@@ -1,0 +1,2 @@
+testcases/packed_arrayofSVI_syntax_1.sv:17: syntax error
+testcases/packed_arrayofSVI_syntax_1.sv:17: error: Invalid module instantiation

@@ -1,0 +1,8 @@
+testcases/assign_misc_port_withModule2.sv:25: syntax error
+testcases/assign_misc_port_withModule2.sv:25: Errors in port declarations.
+testcases/assign_misc_port_withModule2.sv:36: syntax error
+testcases/assign_misc_port_withModule2.sv:36: Errors in port declarations.
+testcases/assign_misc_port_withModule2.sv:41: warning: implicit definition of wire 'o_a'.
+testcases/assign_misc_port_withModule2.sv:42: warning: implicit definition of wire 'o_b'.
+testcases/assign_misc_port_withModule2.sv:48: syntax error
+testcases/assign_misc_port_withModule2.sv:48: Errors in port declarations.

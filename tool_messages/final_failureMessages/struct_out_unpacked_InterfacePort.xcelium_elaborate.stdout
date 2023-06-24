@@ -1,0 +1,15 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/struct_out_unpacked_InterfacePort.sv,22): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 1 input port was not connected:
+xmelab: (./testcases/struct_out_unpacked_InterfacePort.sv,21): i_clk
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+    , .o_a
+         |
+xmelab: *E,TYCMPAT (./testcases/struct_out_unpacked_InterfacePort.sv,27|9): port or terminal connection type check failed on instance 'tb.u_DUT' (expecting datatype compatible with 'packed array' but found 'unpacked structure $unit::data_t' instead).
+FAILURE

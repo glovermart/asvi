@@ -1,0 +1,277 @@
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source tcl/vivado_batch_run.tcl
+# read_verilog -sv $argv
+read_verilog: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2998.453 ; gain = 2.023 ; free physical = 2654 ; free virtual = 239058
+# synth_design -top top -part xc7k70tfbg676-1
+Command: synth_design -top top -part xc7k70tfbg676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 986
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2998.453 ; gain = 0.000 ; free physical = 1162 ; free virtual = 237566
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/task_export_extern_genericInterfaceModportInst.sv:38]
+INFO: [Synth 8-6157] synthesizing module 'I' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/task_export_extern_genericInterfaceModportInst.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'I' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/task_export_extern_genericInterfaceModportInst.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'M1' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/task_export_extern_genericInterfaceModportInst.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'M1' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/task_export_extern_genericInterfaceModportInst.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'M2' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/task_export_extern_genericInterfaceModportInst.sv:26]
+INFO: [Synth 8-6155] done synthesizing module 'M2' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/task_export_extern_genericInterfaceModportInst.sv:26]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/task_export_extern_genericInterfaceModportInst.sv:38]
+WARNING: [Synth 8-3848] Net o_a in module/entity M2 does not have driver. [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/task_export_extern_genericInterfaceModportInst.sv:30]
+WARNING: [Synth 8-7129] Port o_a[31] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[30] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[29] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[28] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[27] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[26] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[25] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[24] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[23] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[22] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[21] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[20] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[19] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[18] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[17] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[16] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[15] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[14] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[13] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[12] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[11] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[10] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[9] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[8] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[7] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[6] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[5] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[4] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[3] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[2] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[1] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[0] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[31] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[30] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[29] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[28] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[27] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[26] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[25] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[24] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[23] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[22] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[21] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[20] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[19] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[18] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[17] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[16] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[15] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[14] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[13] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[12] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[11] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[10] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[9] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[8] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[7] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[6] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[5] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[4] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[3] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[2] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[1] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_a[0] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[31] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[30] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[29] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[28] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[27] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[26] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[25] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[24] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[23] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[22] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[21] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[20] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[19] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[18] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[17] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[16] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[15] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[14] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[13] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[12] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[11] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[10] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[9] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[8] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[7] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[6] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[5] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[4] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[3] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[2] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[1] in module M2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_b[0] in module M2 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2998.461 ; gain = 0.008 ; free physical = 2265 ; free virtual = 238670
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2998.461 ; gain = 0.008 ; free physical = 2260 ; free virtual = 238664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbg676-1
+INFO: [Device 21-403] Loading part xc7k70tfbg676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3006.457 ; gain = 8.004 ; free physical = 2259 ; free virtual = 238664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3006.465 ; gain = 8.012 ; free physical = 2258 ; free virtual = 238664
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3330] design top has an empty top module
+WARNING: [Synth 8-7129] Port o_a[31] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[30] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[29] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_a[28] in module top is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 3006.465 ; gain = 8.012 ; free physical = 1982 ; free virtual = 238396
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 3006.465 ; gain = 8.012 ; free physical = 1978 ; free virtual = 238392
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 3006.465 ; gain = 8.012 ; free physical = 1978 ; free virtual = 238392
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 3006.465 ; gain = 8.012 ; free physical = 1980 ; free virtual = 238394
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 3006.465 ; gain = 8.012 ; free physical = 1980 ; free virtual = 238394
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 3006.465 ; gain = 8.012 ; free physical = 1980 ; free virtual = 238394
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 3006.465 ; gain = 8.012 ; free physical = 1980 ; free virtual = 238394
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 3006.465 ; gain = 8.012 ; free physical = 1980 ; free virtual = 238394
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 3006.465 ; gain = 8.012 ; free physical = 1980 ; free virtual = 238394
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |OBUFT |    32|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    32|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 3006.465 ; gain = 8.012 ; free physical = 1980 ; free virtual = 238394
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 195 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 3006.465 ; gain = 8.012 ; free physical = 1982 ; free virtual = 238396
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 3006.465 ; gain = 8.012 ; free physical = 1983 ; free virtual = 238397
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3006.688 ; gain = 0.000 ; free physical = 2072 ; free virtual = 238486
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3006.688 ; gain = 0.000 ; free physical = 1978 ; free virtual = 238392
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 964f02a7
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 3006.688 ; gain = 8.234 ; free physical = 2184 ; free virtual = 238598
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 24 01:34:23 2023...

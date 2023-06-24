@@ -1,0 +1,7 @@
+testcases/assign_misc_svi.sv:18: syntax error
+testcases/assign_misc_svi.sv:18: Errors in port declarations.
+testcases/assign_misc_svi.sv:22: warning: implicit definition of wire 'o_b'.
+testcases/assign_misc_svi.sv:28: syntax error
+testcases/assign_misc_svi.sv:28: Errors in port declarations.
+testcases/assign_misc_svi.sv:32: warning: implicit definition of wire 'o_b'.
+testcases/assign_misc_svi.sv:45: warning: implicit definition of wire 'u_I'.

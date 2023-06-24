@@ -1,0 +1,12 @@
+%Warning-DECLFILENAME: testcases/force_misc_svi_assign_wire.sv:5:11: Filename 'force_misc_svi_assign_wire' does not match IFACE name: 'I'
+    5 | interface I(input var logic i_srst);
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-PINMISSING: testcases/force_misc_svi_assign_wire.sv:44:5: Cell has missing pin: 'o_a'
+   44 |   M u_M1
+      |     ^~~~
+%Warning-PINMISSING: testcases/force_misc_svi_assign_wire.sv:48:5: Cell has missing pin: 'o_a'
+   48 |   M u_M2
+      |     ^~~~
+%Error: Exiting due to 3 warning(s)

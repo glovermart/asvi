@@ -1,0 +1,61 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 2 output ports were not connected:
+xmelab: (./testcases/alwayscomb_arrayofSVI_geninst_notimescale.sv,37): o_a
+xmelab: (./testcases/alwayscomb_arrayofSVI_geninst_notimescale.sv,38): o_b
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 1 input port was not connected:
+xmelab: (./testcases/alwayscomb_arrayofSVI_geninst_notimescale.sv,36): i_clk
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+      , .o_a    (a1)
+           |
+xmelab: *E,MULDRN (./testcases/alwayscomb_arrayofSVI_geninst_notimescale.sv,58|11): Variable 'tb.u_DUT.a1' has multiple conflicting drivers and the indicated output port connection in scope 'tb.u_DUT.genblk1[0]' is contributing to this conflict set.
+      , .o_a    (a1)
+           |
+xmelab: *E,MULDRN (./testcases/alwayscomb_arrayofSVI_geninst_notimescale.sv,58|11): Variable 'tb.u_DUT.a1' has multiple conflicting drivers and the indicated output port connection in scope 'tb.u_DUT.genblk1[1]' is contributing to this conflict set.
+      , .o_a    (a1)
+           |
+xmelab: *E,MULDRN (./testcases/alwayscomb_arrayofSVI_geninst_notimescale.sv,58|11): Variable 'tb.u_DUT.a1' has multiple conflicting drivers and the indicated output port connection in scope 'tb.u_DUT.genblk1[2]' is contributing to this conflict set.
+      , .o_a    (a1)
+           |
+xmelab: *E,MULDRN (./testcases/alwayscomb_arrayofSVI_geninst_notimescale.sv,58|11): Variable 'tb.u_DUT.a1' has multiple conflicting drivers and the indicated output port connection in scope 'tb.u_DUT.genblk1[3]' is contributing to this conflict set.
+      , .o_a    (a1)
+           |
+xmelab: *E,MULDRN (./testcases/alwayscomb_arrayofSVI_geninst_notimescale.sv,58|11): Variable 'tb.u_DUT.a1' has multiple conflicting drivers and the indicated output port connection in scope 'tb.u_DUT.genblk1[4]' is contributing to this conflict set.
+      , .o_a    (a1)
+           |
+xmelab: *E,MULDRN (./testcases/alwayscomb_arrayofSVI_geninst_notimescale.sv,58|11): Variable 'tb.u_DUT.a1' has multiple conflicting drivers and the indicated output port connection in scope 'tb.u_DUT.genblk1[5]' is contributing to this conflict set.
+      , .o_a    (a1)
+           |
+xmelab: *E,MULDRN (./testcases/alwayscomb_arrayofSVI_geninst_notimescale.sv,58|11): Variable 'tb.u_DUT.a1' has multiple conflicting drivers and the indicated output port connection in scope 'tb.u_DUT.genblk1[6]' is contributing to this conflict set.
+      , .o_a    (a1)
+           |
+xmelab: *E,MULDRN (./testcases/alwayscomb_arrayofSVI_geninst_notimescale.sv,58|11): Variable 'tb.u_DUT.a1' has multiple conflicting drivers and the indicated output port connection in scope 'tb.u_DUT.genblk1[7]' is contributing to this conflict set.
+      , .o_b    (b1)
+           |
+xmelab: *E,MULDRN (./testcases/alwayscomb_arrayofSVI_geninst_notimescale.sv,59|11): Variable 'tb.u_DUT.b1' has multiple conflicting drivers and the indicated output port connection in scope 'tb.u_DUT.genblk1[0]' is contributing to this conflict set.
+      , .o_b    (b1)
+           |
+xmelab: *E,MULDRN (./testcases/alwayscomb_arrayofSVI_geninst_notimescale.sv,59|11): Variable 'tb.u_DUT.b1' has multiple conflicting drivers and the indicated output port connection in scope 'tb.u_DUT.genblk1[1]' is contributing to this conflict set.
+      , .o_b    (b1)
+           |
+xmelab: *E,MULDRN (./testcases/alwayscomb_arrayofSVI_geninst_notimescale.sv,59|11): Variable 'tb.u_DUT.b1' has multiple conflicting drivers and the indicated output port connection in scope 'tb.u_DUT.genblk1[2]' is contributing to this conflict set.
+      , .o_b    (b1)
+           |
+xmelab: *E,MULDRN (./testcases/alwayscomb_arrayofSVI_geninst_notimescale.sv,59|11): Variable 'tb.u_DUT.b1' has multiple conflicting drivers and the indicated output port connection in scope 'tb.u_DUT.genblk1[3]' is contributing to this conflict set.
+      , .o_b    (b1)
+           |
+xmelab: *E,MULDRN (./testcases/alwayscomb_arrayofSVI_geninst_notimescale.sv,59|11): Variable 'tb.u_DUT.b1' has multiple conflicting drivers and the indicated output port connection in scope 'tb.u_DUT.genblk1[4]' is contributing to this conflict set.
+      , .o_b    (b1)
+           |
+xmelab: *E,MULDRN (./testcases/alwayscomb_arrayofSVI_geninst_notimescale.sv,59|11): Variable 'tb.u_DUT.b1' has multiple conflicting drivers and the indicated output port connection in scope 'tb.u_DUT.genblk1[5]' is contributing to this conflict set.
+      , .o_b    (b1)
+           |
+xmelab: *E,MULDRN (./testcases/alwayscomb_arrayofSVI_geninst_notimescale.sv,59|11): Variable 'tb.u_DUT.b1' has multiple conflicting drivers and the indicated output port connection in scope 'tb.u_DUT.genblk1[6]' is contributing to this conflict set.
+      , .o_b    (b1)
+           |
+xmelab: *E,MULDRN (./testcases/alwayscomb_arrayofSVI_geninst_notimescale.sv,59|11): Variable 'tb.u_DUT.b1' has multiple conflicting drivers and the indicated output port connection in scope 'tb.u_DUT.genblk1[7]' is contributing to this conflict set.
+FAILURE

@@ -1,0 +1,5 @@
+testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv:19: warning: Static variable initialization requires explicit lifetime in this context.
+testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv:22: error: array 'x' index must be a constant in this context.
+testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv:18: warning: always_comb process has no sensitivities.
+testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv:21: warning: A do/while statement cannot be synthesized in an always_comb process.
+1 error(s) during elaboration.

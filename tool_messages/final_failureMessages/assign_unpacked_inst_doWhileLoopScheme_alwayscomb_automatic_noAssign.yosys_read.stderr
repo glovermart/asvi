@@ -1,0 +1,1 @@
+testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb_automatic_noAssign.sv:13: ERROR: syntax error, unexpected '[', expecting ',' or '=' or ')'

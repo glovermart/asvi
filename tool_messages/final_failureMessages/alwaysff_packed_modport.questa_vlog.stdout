@@ -1,0 +1,11 @@
+QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 15:12:15 on Jun 23,2023
+vlog -sv -lint=full testcases/alwaysff_packed_modport.sv testbench/tb.sv 
+-- Compiling interface I
+-- Compiling module M
+** Error (suppressible): testcases/alwaysff_packed_modport.sv(23): (vlog-7061) Variable 'i' driven in an always_ff block, may not be driven by any other process. See testcases/alwaysff_packed_modport.sv(29).
+-- Compiling module top
+-- Compiling module tb
+End time: 15:12:15 on Jun 23,2023, Elapsed time: 0:00:00
+Errors: 1, Warnings: 0
+FAILURE

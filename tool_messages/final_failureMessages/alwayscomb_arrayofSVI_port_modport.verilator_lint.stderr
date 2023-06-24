@@ -1,0 +1,14 @@
+%Warning-DECLFILENAME: testcases/alwayscomb_arrayofSVI_port_modport.sv:8:11: Filename 'alwayscomb_arrayofSVI_port_modport' does not match IFACE name: 'I'
+    8 | interface I;
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: testcases/alwayscomb_arrayofSVI_port_modport.sv:41:18: Signal is not used: 'i_clk'
+                                                                            : ... In instance top
+   41 |   ( input  logic i_clk
+      |                  ^~~~~
+%Warning-UNDRIVEN: testcases/alwayscomb_arrayofSVI_port_modport.sv:29:9: Signal is not driven: 'c'
+                                                                       : ... In instance top.u_M
+   29 |   logic c;
+      |         ^
+%Error: Exiting due to 3 warning(s)

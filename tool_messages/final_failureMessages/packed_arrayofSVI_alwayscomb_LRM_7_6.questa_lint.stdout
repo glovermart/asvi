@@ -1,0 +1,11 @@
+QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 11:58:28 on Jun 23,2023
+vlog -sv -sv17compat -lint=default testcases/packed_arrayofSVI_alwayscomb_LRM_7_6.sv 
+-- Compiling interface I
+-- Compiling module top
+** Error: testcases/packed_arrayofSVI_alwayscomb_LRM_7_6.sv(20): (vlog-13118) Number of dimensions specified in foreach loop are more than array dimensions.
+** Error: testcases/packed_arrayofSVI_alwayscomb_LRM_7_6.sv(21): Nonconstant index into instance array 'u_I1'.
+** Error: testcases/packed_arrayofSVI_alwayscomb_LRM_7_6.sv(22): Nonconstant index into instance array 'u_I1'.
+End time: 11:58:28 on Jun 23,2023, Elapsed time: 0:00:00
+Errors: 3, Warnings: 0
+FAILURE

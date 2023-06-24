@@ -1,0 +1,5 @@
+testcases/alwayslatch_arrayofSVI_port_noUnusedSignals.sv:32: syntax error
+testcases/alwayslatch_arrayofSVI_port_noUnusedSignals.sv:32: Errors in port declarations.
+testcases/alwayslatch_arrayofSVI_port_noUnusedSignals.sv:54: syntax error
+testcases/alwayslatch_arrayofSVI_port_noUnusedSignals.sv:54: Errors in port declarations.
+testcases/alwayslatch_arrayofSVI_port_noUnusedSignals.sv:79: warning: implicit definition of wire 'u_I'.

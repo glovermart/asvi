@@ -1,0 +1,37 @@
+QuestaSim-64 vopt 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 18:50:33 on Jun 23,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+-- Loading interface I
+** Warning: testbench/tb.sv(3): (vopt-2685) [TFMPC] - Too few port connections for 'u_DUT'.  Expected 2, found 0.
+Incremental compilation check found no design-units (out of 4) may be reused.
+Optimizing 4 design-units (inlining 9/10 module instances):
+-- Inlining interface I(fast__1)
+-- Inlining module top(fast)
+-- Optimizing module tb(fast)
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(43): (vopt-2251) Illegal concatenation of unpacked value 'u_I8'.
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(42): (vopt-2251) Illegal concatenation of unpacked value 'u_I7'.
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(41): (vopt-2251) Illegal concatenation of unpacked value 'u_I6'.
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(40): (vopt-2251) Illegal concatenation of unpacked value 'u_I5'.
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(39): (vopt-2251) Illegal concatenation of unpacked value 'u_I4'.
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(38): (vopt-2251) Illegal concatenation of unpacked value 'u_I3'.
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(37): (vopt-2251) Illegal concatenation of unpacked value 'u_I2'.
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(36): (vopt-2251) Illegal concatenation of unpacked value 'u_I1'.
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(43): (vopt-2251) Illegal concatenation of unpacked value 'u_I8'.
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(42): (vopt-2251) Illegal concatenation of unpacked value 'u_I7'.
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(41): (vopt-2251) Illegal concatenation of unpacked value 'u_I6'.
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(40): (vopt-2251) Illegal concatenation of unpacked value 'u_I5'.
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(39): (vopt-2251) Illegal concatenation of unpacked value 'u_I4'.
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(38): (vopt-2251) Illegal concatenation of unpacked value 'u_I3'.
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(37): (vopt-2251) Illegal concatenation of unpacked value 'u_I2'.
+** Warning: testcases/packed_arrayofSVI_alwayscomb_multiple_inst.sv(36): (vopt-2251) Illegal concatenation of unpacked value 'u_I1'.
+-- Optimizing interface I(fast)
+Optimized design name is design_unit
+End time: 18:50:34 on Jun 23,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 17

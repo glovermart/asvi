@@ -1,0 +1,14 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 2 output ports were not connected:
+xmelab: (./testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv,72): o_a
+xmelab: (./testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv,73): o_b
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 3 input ports were not connected:
+xmelab: (./testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv,69): en
+xmelab: (./testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv,70): i_clk
+xmelab: (./testcases/alwayslatch_arrayofSVI_port_noUnusedSignals_portDirectionInterchange.sv,71): i_arst
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.

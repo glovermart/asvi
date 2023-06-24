@@ -1,0 +1,31 @@
+//  Tessent Shell  2022.4    Tue Nov 29 21:19:37 GMT 2022
+//                Unpublished work. Copyright 2022 Siemens
+//
+//      This material contains trade secrets or otherwise confidential 
+//  information owned by Siemens Industry Software Inc. or its affiliates 
+//   (collectively, "SISW"), or its licensors. Access to and use of this 
+//     information is strictly limited as set forth in the Customer's 
+//                   applicable agreements with SISW. 
+//
+//  Siemens software executing under x86-64 Linux on Fri Jun 23 21:14:32 CEST 2023.
+//  64 bit version
+//  Host: cad11.nordicsemi.no (386734 MB RAM, 31999 MB Swap)
+//
+//  command: set_tcl_shell_options -abort_dofile_on_error exit
+//  command: array set params {
+//             netlist ""
+//           }
+//  command: array set params $tessent_user_arg
+//  command: #Perform Automatic Test Pattern Generation (ATPG)
+//  command: #Invoke the Tessent tool for pattern generation
+//  command: set_context patterns -scan
+//  command: #Read in library for mapping cells to design components
+//  command: #Location of cell library unknown - ATPG run without library
+//  command: #read_cell_library [insert library name]
+//  command: #Load synthesized netlist with scan chain already inserted.
+//  command: read_verilog $params(netlist)
+//  command: #Specify the design top
+//  command: set_current_design top
+//  Error: Specified module 'top' is not defined.
+// 'DOFile tcl/tessent_batch.do' aborted at line 18
+FAILURE

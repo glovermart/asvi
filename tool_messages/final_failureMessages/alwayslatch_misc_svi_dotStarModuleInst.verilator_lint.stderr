@@ -1,0 +1,9 @@
+%Warning-DECLFILENAME: testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:4:11: Filename 'alwayslatch_misc_svi_dotStarModuleInst' does not match IFACE name: 'I'
+    4 | interface I
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Error: testcases/alwayslatch_misc_svi_dotStarModuleInst.sv:35:7: Can't find definition of variable: 'o_a'
+   35 |    M1 u_M1
+      |       ^~~~
+%Error: Exiting due to 1 error(s), 1 warning(s)

@@ -1,0 +1,17 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/packed_arrayofSVI_alwayscomb_LRM_7_6.sv,12): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 1 input port was not connected:
+xmelab: (./testcases/packed_arrayofSVI_alwayscomb_LRM_7_6.sv,11): i_a
+
+      u_I1[i].x = i_a;
+           |
+xmelab: *E,NOTPAR (./testcases/packed_arrayofSVI_alwayscomb_LRM_7_6.sv,21|11): Illegal operand for constant expression [4(IEEE)].
+      a[i] = u_I1[i].x;
+                  |
+xmelab: *E,NOTPAR (./testcases/packed_arrayofSVI_alwayscomb_LRM_7_6.sv,22|18): Illegal operand for constant expression [4(IEEE)].
+FAILURE

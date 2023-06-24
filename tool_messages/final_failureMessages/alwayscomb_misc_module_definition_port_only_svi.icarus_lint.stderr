@@ -1,0 +1,3 @@
+testcases/alwayscomb_misc_module_definition_port_only_svi.sv:21: syntax error
+testcases/alwayscomb_misc_module_definition_port_only_svi.sv:21: Errors in port declarations.
+testcases/alwayscomb_misc_module_definition_port_only_svi.sv:31: warning: implicit definition of wire 'u_I'.

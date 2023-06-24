@@ -1,0 +1,5 @@
+testcases/unpacked_arrayofSVI_assign_multiple_inst.sv:35: sorry: I do not know how to elaborate assignment patterns using old method.
+testcases/unpacked_arrayofSVI_assign_multiple_inst.sv:35:      : Expression is: '{u_I1, u_I2, u_I3, u_I4, u_I5, u_I6, u_I7, u_I8}
+testcases/unpacked_arrayofSVI_assign_multiple_inst.sv:35: assert: elab_expr.cc:252: failed assertion 0
+sh: line 1: 22489 Done                    /hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/ivlpp -L -Wredef-chg -F"/tmp/ivrlg22561ec2a" -f"/tmp/ivrlg2561ec2a" -p"/tmp/ivrli2561ec2a"
+     22490 Aborted                 (core dumped) | /hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/ivl -C"/tmp/ivrlh2561ec2a" -C"/hizz/pro/sig_research/dddTools/work/aade/linttools/iverilog/12.0-devel/lib/ivl/null.conf" -- -

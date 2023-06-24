@@ -1,0 +1,97 @@
+$tcl_library is set to: /cad/mentor/oneSpin360/2023.1/etc/tcl8.6
+init.tcl executed.
+source "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_defaults.tcl"
+source -signed "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_startup.tcl.obf"
+source "/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl"
+-I- FileParse - Analyzing source file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv" .... [1]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:25: Analyzing module ( M ). [4]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:45: Analyzing module ( top ). [4]
+-I- Elaborate auto-selected the toplevel: "verilog!work.top"
+-W- UnsuppVerilog - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:11: timeunit declaration not supported (ignored).
+-W- UnsuppVerilog - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:12: timeprecision declaration not supported (ignored).
+-W- UnsuppVerilog - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:33: timeunit declaration not supported (ignored).
+-W- UnsuppVerilog - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:34: timeprecision declaration not supported (ignored).
+-W- UnsuppVerilog - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:52: timeunit declaration not supported (ignored).
+-W- UnsuppVerilog - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:53: timeprecision declaration not supported (ignored).
+-I- Elaborating verilog portion...
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:57: register 'a1' has 8 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:70:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:70:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:70:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:70:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:70:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:70:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:70:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:70:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:57: wire 'a1' has 8 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:70:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:70:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:70:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:70:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:70:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:70:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:70:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:70:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:58: register 'b1' has 8 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:71:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:71:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:71:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:71:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:71:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:71:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:71:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:71:.
+-W- MultDrivers - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:58: wire 'b1' has 8 drivers; here:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:71:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:71:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:71:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:71:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:71:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:71:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:71:
+	/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_arrayofSVI_geninst_timescale_beginForLoop.sv:71:.
+
+Warning Statistics:
+-------------------
+    4   MultDrivers          multiple drivers
+    6   UnsuppVerilog        unsupported Verilog feature
+-I- Elaboration of design golden succeeded.
+-I- Traversing modules of design 'top' ...
+-I- Traversing modules of design 'top' took 0.16 seconds.
+-I- Analyzing signal dependency in design 'top' ...
+-I- Analyzing signal dependency in design 'top' took 0.04 seconds.
+-I- Analyzing loops ...
+-I- Analyzing loops took 0.02 seconds.
+-I- Analyzing primary and generated clocks ...
+-I- Computing next states ...
+-I- Computing next states took 0.00 seconds.
+-I- Analyzing primary and generated clocks took 0.00 seconds.
+-I- Checking clock dependency assumption ...
+-I- Checking clock dependency assumption took 0.00 seconds.
+-I- Clock input 'i_clk (posedge)' found.
+-I- Computing CSA result ...
+-I- Computing CSA result took 0.01 seconds.
+-I- Finishing CSA analysis ...
+-I- Compilation for design golden succeeded.
+-R- Printed Messages
+===============================================================================
+class       category            memo                                                          occurrence
+-------------------------------------------------------------------------------
+Warning     MultDrivers         multiple drivers                                              4         
+Warning     UnsuppVerilog       unsupported Verilog feature                                   6         
+Info        AnalyzeModule       analyzing module                                              2         
+Info        FileParse           file parsed                                                   1         
+Info        {}                  Clock input '<Name> (<Name>)' found.                          1         
+Info        {}                  unclassified message                                          18        
+Info        {}                  {}                                                            1         
+Result      {}                  {}                                                            1         
+Plain       {}                  unclassified message                                          1         
+Plain       {}                  {}                                                            10        
+TclStdOut   {}                  {}                                                            2         
+CommandLog  {}                  {}                                                            3         
+	
+-R- Filtered Messages
+===============================================================================
+id   active   class     category            memo                     text                     src_loc        origin  hits 
+-------------------------------------------------------------------------------
+No message filters available.

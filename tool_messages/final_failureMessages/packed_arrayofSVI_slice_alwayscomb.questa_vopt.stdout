@@ -1,0 +1,25 @@
+QuestaSim-64 vopt 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 12:57:20 on Jun 23,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+-- Loading interface I
+-- Loading module M1
+-- Loading module M2
+** Error (suppressible): testcases/struct_port_packed_instStructInterfacePort.sv(53): (vopt-7063) Failed to find 'P1' in hierarchical name 'u_I.P1'.
+        Region: tb.u_DUT
+** Error (suppressible): testcases/struct_port_packed_instStructInterfacePort.sv(57): (vopt-7063) Failed to find 'P2' in hierarchical name 'u_I.P2'.
+        Region: tb.u_DUT
+** Error (suppressible): testcases/struct_port_packed_instStructInterfacePort.sv(40): (vopt-7063) Failed to find 'data' in hierarchical name 'p2.data'.
+        Region: tb.u_DUT.u_m2
+** Error (suppressible): testcases/struct_port_packed_instStructInterfacePort.sv(28): (vopt-7063) Failed to find 'data' in hierarchical name 'p1.data'.
+        Region: tb.u_DUT.u_m1
+Optimization failed
+End time: 12:57:20 on Jun 23,2023, Elapsed time: 0:00:00
+Errors: 4, Warnings: 0
+FAILURE

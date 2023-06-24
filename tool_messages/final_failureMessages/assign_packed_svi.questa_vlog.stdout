@@ -1,0 +1,9 @@
+QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 17:09:59 on Jun 23,2023
+vlog -sv -lint=full testcases/assign_packed_svi.sv testbench/tb.sv 
+-- Compiling interface I
+** Error: (vlog-13069) testcases/assign_packed_svi.sv(14): near "assign": syntax error, unexpected assign, expecting begin.
+-- Compiling module tb
+End time: 17:09:59 on Jun 23,2023, Elapsed time: 0:00:00
+Errors: 1, Warnings: 0
+FAILURE

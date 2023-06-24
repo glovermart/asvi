@@ -1,0 +1,7 @@
+xmsim: *W,DLWNEW: Intermediate file module worklib.tb:module (VST)
+	is newer than expected by snapshot worklib.tb:module (SSS)
+		actual:   Fri Jun 23 19:25:44 2023
+		expected: Fri Jun 23 19:25:43 2023.
+xmsim: *E,DLCSMD: Dependent checksum module worklib.M2:module (VST) doesn't match with the checksum that's in the header of: snapshot worklib.tb:module (SSS).
+xmsim: *F,NOSIMU: Errors initializing simulation 'tb'.
+FAILURE

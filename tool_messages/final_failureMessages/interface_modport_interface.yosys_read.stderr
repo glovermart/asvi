@@ -1,0 +1,5 @@
+testcases/interface_modport_interface.sv:21: Warning: Identifier `\p.x' is implicitly declared.
+Warning: wire '\u_I1.x' is assigned in a block at testcases/interface_modport_interface.sv:37.15-37.27.
+testcases/interface_modport_interface.sv:37: Warning: Identifier `\u_I1.x' is implicitly declared.
+testcases/interface_modport_interface.sv:39: Warning: Identifier `\u_I2.y' is implicitly declared.
+Warning: Wire top.\o_b is used but has no driver.

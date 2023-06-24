@@ -1,0 +1,35 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/force_misc_port.sv,56): o_c
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 3 input ports were not connected:
+xmelab: (./testcases/force_misc_port.sv,53): i_a
+xmelab: (./testcases/force_misc_port.sv,54): i_b
+xmelab: (./testcases/force_misc_port.sv,55): i_srst
+
+  M1 u_M1
+        |
+xmelab: *W,CUVWSP (./testcases/force_misc_port.sv,61|8): 1 output port was not connected:
+xmelab: (./testcases/force_misc_port.sv,23): o_a
+
+  M2 u_M2
+        |
+xmelab: *W,CUVWSI (./testcases/force_misc_port.sv,65|8): 2 input ports were not connected:
+xmelab: (./testcases/force_misc_port.sv,36): i_a
+xmelab: (./testcases/force_misc_port.sv,37): i_b
+
+  M1 u_M1
+        |
+xmelab: *W,CUVWSP (./testcases/force_misc_port.sv,61|8): 1 output port was not connected:
+xmelab: (./testcases/force_misc_port.sv,23): o_a
+
+  M2 u_M2
+        |
+xmelab: *W,CUVWSI (./testcases/force_misc_port.sv,65|8): 2 input ports were not connected:
+xmelab: (./testcases/force_misc_port.sv,36): i_a
+xmelab: (./testcases/force_misc_port.sv,37): i_b
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.

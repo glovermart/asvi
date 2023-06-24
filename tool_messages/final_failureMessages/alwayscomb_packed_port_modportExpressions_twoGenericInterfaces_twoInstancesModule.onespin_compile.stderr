@@ -1,0 +1,17 @@
+$tcl_library is set to: /cad/mentor/oneSpin360/2023.1/etc/tcl8.6
+init.tcl executed.
+source "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_defaults.tcl"
+source -signed "/cad/mentor/oneSpin360/2023.1/etc/startup/onespin_startup.tcl.obf"
+source "/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl"
+-I- FileParse - Analyzing source file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_packed_port_modportExpressions_twoGenericInterfaces_twoInstancesModule.sv" .... [1]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_packed_port_modportExpressions_twoGenericInterfaces_twoInstancesModule.sv:21: Analyzing module ( M ). [4]
+-I- AnalyzeModule - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_packed_port_modportExpressions_twoGenericInterfaces_twoInstancesModule.sv:32: Analyzing module ( top ). [4]
+-I- Elaborate auto-selected the toplevel: "verilog!work.top"
+-I- Elaborating verilog portion...
+-E- InterfaceErr - /hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_packed_port_modportExpressions_twoGenericInterfaces_twoInstancesModule.sv:23: port 'j' is not bound to an interface in instance 'u_M1' (/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/alwayscomb_packed_port_modportExpressions_twoGenericInterfaces_twoInstancesModule.sv:38:) because no argument was provided.
+-E- Elaboration of design golden failed.
+-E- Can not source script '/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl'.
+    while executing
+"elaborate"
+    (file "/hizz/pro/sig_research/dddTools/work/anm3/asvi/tcl/onespin_batch_run.tcl" line 4)
+-E- Error during execution of user commands.

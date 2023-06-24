@@ -1,0 +1,4 @@
+  interface I2; // Nested interface.
+          |
+xmvlog: *E,SVNIMP (testcases/interface_inst_nested_1.sv,20|10): SystemVerilog construct not yet implemented:  nested interface.
+FAILURE

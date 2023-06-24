@@ -1,0 +1,6 @@
+ERROR: [Synth 8-27] virtual interface in continuous assignment not supported [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/interface_inst_nested_0.sv:24]
+ERROR: [Synth 8-6038] cannot resolve hierarchical name for the item 'x' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/interface_inst_nested_0.sv:24]
+ERROR: [Synth 8-6156] failed synthesizing module 'I2' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/interface_inst_nested_0.sv:20]
+ERROR: [Synth 8-6156] failed synthesizing module 'I1' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/interface_inst_nested_0.sv:15]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [/hizz/pro/sig_research/dddTools/work/anm3/asvi/testcases/interface_inst_nested_0.sv:34]
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed

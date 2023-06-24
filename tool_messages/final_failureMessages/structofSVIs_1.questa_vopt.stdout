@@ -1,0 +1,29 @@
+QuestaSim-64 vopt 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 17:53:47 on Jun 23,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+-- Loading interface I
+-- Loading module M4
+-- Loading module M3
+-- Loading module M2
+-- Loading module M1
+** Error (suppressible): testcases/alwayslatch_misc_svi_dotnameModuleInst.sv(61): (vopt-7063) Failed to find 'i_clk' in hierarchical name 'u_I.i_clk'.
+        Region: tb.u_DUT.u_M4
+** Error (suppressible): testcases/alwayslatch_misc_svi_dotnameModuleInst.sv(62): (vopt-7063) Failed to find 'o_a' in hierarchical name 'u_I.o_a'.
+        Region: tb.u_DUT.u_M4
+** Error (suppressible): testcases/alwayslatch_misc_svi_dotnameModuleInst.sv(49): (vopt-7063) Failed to find 'i_clk' in hierarchical name 'u_I.i_clk'.
+        Region: tb.u_DUT.u_M4.u_M3
+** Error (suppressible): testcases/alwayslatch_misc_svi_dotnameModuleInst.sv(35): (vopt-7063) Failed to find 'i_clk' in hierarchical name 'u_I.i_clk'.
+        Region: tb.u_DUT.u_M4.u_M3.u_M2
+** Error (suppressible): testcases/alwayslatch_misc_svi_dotnameModuleInst.sv(21): (vopt-7063) Failed to find 'i_clk' in hierarchical name 'u_I.i_clk'.
+        Region: tb.u_DUT.u_M4.u_M3.u_M2.u_M1
+Optimization failed
+End time: 17:53:47 on Jun 23,2023, Elapsed time: 0:00:00
+Errors: 5, Warnings: 0
+FAILURE

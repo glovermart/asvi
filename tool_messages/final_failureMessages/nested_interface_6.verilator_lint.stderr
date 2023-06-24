@@ -1,0 +1,12 @@
+%Error-UNSUPPORTED: testcases/nested_interface_6.sv:21:3: Unsupported: interface decls within interface decls
+   21 |   I1 u_I1 ();
+      |   ^~
+                    ... For error description see https://verilator.org/warn/UNSUPPORTED?v=5.008
+%Error: testcases/nested_interface_6.sv:27:9: syntax error, unexpected '.', expecting IDENTIFIER or do or final or randomize
+   27 |   ( I.I1.P p
+      |         ^
+%Error: testcases/nested_interface_6.sv:29:5: syntax error, unexpected output
+   29 |   , output logic o_a
+      |     ^~~~~~
+%Error: Exiting due to 3 error(s)
+        ... See the manual at https://verilator.org/verilator_doc.html for more assistance.

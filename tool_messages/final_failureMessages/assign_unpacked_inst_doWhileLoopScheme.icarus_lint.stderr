@@ -1,0 +1,4 @@
+testcases/assign_unpacked_inst_doWhileLoopScheme.sv:26: error: Array u_I.x needs an array index here.
+testcases/assign_unpacked_inst_doWhileLoopScheme.sv:26: error: Unable to elaborate r-value: u_I.x
+testcases/assign_unpacked_inst_doWhileLoopScheme.sv:22: error: array 'x' index must be a constant in this context.
+3 error(s) during elaboration.

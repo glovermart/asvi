@@ -1,0 +1,3 @@
+testcases/packed_arrayofSVI_alwayscomb_LRM_7_6.sv:20: error: Unable to find foreach array u_I1 in scope top.$ivl_foreach0.
+testcases/packed_arrayofSVI_alwayscomb_LRM_7_6.sv:19: warning: always_comb process has no sensitivities.
+1 error(s) during elaboration.

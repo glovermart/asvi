@@ -1,0 +1,34 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/alwayslatch_misc_svi_dotnameModuleInst.sv,69): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 3 input ports were not connected:
+xmelab: (./testcases/alwayslatch_misc_svi_dotnameModuleInst.sv,67): i_clk
+xmelab: (./testcases/alwayslatch_misc_svi_dotnameModuleInst.sv,68): i_en
+xmelab: (./testcases/alwayslatch_misc_svi_dotnameModuleInst.sv,70): i_a
+
+   M1 u_M1
+         |
+xmelab: *W,CUVWSP (./testcases/alwayslatch_misc_svi_dotnameModuleInst.sv,30|9): 1 output port was not connected:
+xmelab: (./testcases/alwayslatch_misc_svi_dotnameModuleInst.sv,18): o_a
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+   always_ff @(posedge u_I.i_clk)
+                               |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_misc_svi_dotnameModuleInst.sv,61|31): Hierarchical name component lookup failed for 'i_clk' at 'tb.u_DUT.u_M4'.
+     u_I.o_a <= ~u_M3.a;
+           |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_misc_svi_dotnameModuleInst.sv,62|11): Hierarchical name component lookup failed for 'o_a' at 'tb.u_DUT.u_M4'.
+   always_ff @(posedge u_I.i_clk)
+                               |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_misc_svi_dotnameModuleInst.sv,49|31): Hierarchical name component lookup failed for 'i_clk' at 'tb.u_DUT.u_M4.u_M3'.
+   always_ff @(posedge u_I.i_clk)
+                               |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_misc_svi_dotnameModuleInst.sv,35|31): Hierarchical name component lookup failed for 'i_clk' at 'tb.u_DUT.u_M4.u_M3.u_M2'.
+   always_ff @(posedge u_I.i_clk)
+                               |
+xmelab: *E,CUVUNF (./testcases/alwayslatch_misc_svi_dotnameModuleInst.sv,21|31): Hierarchical name component lookup failed for 'i_clk' at 'tb.u_DUT.u_M4.u_M3.u_M2.u_M1'.
+FAILURE

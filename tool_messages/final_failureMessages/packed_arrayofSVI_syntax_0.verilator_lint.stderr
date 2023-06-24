@@ -1,0 +1,4 @@
+%Error: testcases/packed_arrayofSVI_syntax_0.sv:17:5: syntax error, unexpected '[', expecting IDENTIFIER or randomize
+   17 |   I [7:0] u_I ();
+      |     ^
+%Error: Exiting due to 1 error(s)

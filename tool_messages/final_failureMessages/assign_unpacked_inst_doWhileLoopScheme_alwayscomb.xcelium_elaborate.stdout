@@ -1,0 +1,108 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,13): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 1 input port was not connected:
+xmelab: (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,12): i_a
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+  always_comb begin
+            |
+xmelab: *E,MULAXX (./testcases/assign_unpacked_inst_doWhileLoopScheme_alwayscomb.sv,18|12): Multiple drivers to always_comb output variable i detected.
+FAILURE

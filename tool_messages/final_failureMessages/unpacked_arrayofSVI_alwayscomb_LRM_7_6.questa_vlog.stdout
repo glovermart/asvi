@@ -1,0 +1,10 @@
+QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 12:13:48 on Jun 23,2023
+vlog -sv -lint=full testcases/unpacked_arrayofSVI_alwayscomb_LRM_7_6.sv testbench/tb.sv 
+-- Compiling interface I
+-- Compiling module top
+** Error: testcases/unpacked_arrayofSVI_alwayscomb_LRM_7_6.sv(20): Automatic variable not allowed in procedural continuous assignment statement: i
+-- Compiling module tb
+End time: 12:13:48 on Jun 23,2023, Elapsed time: 0:00:00
+Errors: 1, Warnings: 0
+FAILURE

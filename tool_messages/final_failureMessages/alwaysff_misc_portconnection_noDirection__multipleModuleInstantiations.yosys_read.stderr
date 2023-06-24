@@ -1,0 +1,1 @@
+testcases/alwaysff_misc_portconnection_noDirection__multipleModuleInstantiations.sv:5: ERROR: Module port `\z' is neither input nor output.

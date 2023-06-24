@@ -1,0 +1,17 @@
+QuestaSim-64 vopt 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 15:27:30 on Jun 23,2023
+vopt tb -o design_unit 
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module top
+** Error: testcases/alwaysff_arrayofSVI_proceduralLoopInst.sv(41): Module 'M' is not defined.
+ For instance 'u_M' at path 'tb.u_DUT'
+-- Loading interface I
+Optimization failed
+End time: 15:27:31 on Jun 23,2023, Elapsed time: 0:00:01
+Errors: 1, Warnings: 0
+FAILURE

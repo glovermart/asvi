@@ -1,0 +1,22 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 3 output ports were not connected:
+xmelab: (./testcases/alwaysff_arrayofSVI_proceduralLoopInst.sv,34): o_a
+xmelab: (./testcases/alwaysff_arrayofSVI_proceduralLoopInst.sv,35): o_b
+xmelab: (./testcases/alwaysff_arrayofSVI_proceduralLoopInst.sv,36): o_c
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 1 input port was not connected:
+xmelab: (./testcases/alwaysff_arrayofSVI_proceduralLoopInst.sv,33): i_clk
+
+      u_I[i].x <= 1'b1; // Literal.
+          |
+xmelab: *E,NOTPAR (./testcases/alwaysff_arrayofSVI_proceduralLoopInst.sv,24|10): Illegal operand for constant expression [4(IEEE)].
+      u_I[i].y <= 1'b0; // Literal.
+          |
+xmelab: *E,NOTPAR (./testcases/alwaysff_arrayofSVI_proceduralLoopInst.sv,25|10): Illegal operand for constant expression [4(IEEE)].
+      u_I[i].z <= 1'b1; // Literal.
+          |
+xmelab: *E,NOTPAR (./testcases/alwaysff_arrayofSVI_proceduralLoopInst.sv,26|10): Illegal operand for constant expression [4(IEEE)].
+FAILURE

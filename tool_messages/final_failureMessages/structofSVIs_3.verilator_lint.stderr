@@ -1,0 +1,6 @@
+%Error: testcases/structofSVIs_3.sv:13:7: syntax error, unexpected IDENTIFIER, expecting TYPE-IDENTIFIER
+   13 |     { I u_I ();  
+      |       ^
+%Error: Internal Error: testcases/structofSVIs_3.sv:10:8: ../V3ParseSym.h:126: Symbols suggest ending STRUCTDTYPE but parser thinks ending MODULE 'top'
+   10 | module top; 
+      |        ^~~

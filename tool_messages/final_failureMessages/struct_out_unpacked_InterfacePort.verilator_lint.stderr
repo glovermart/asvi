@@ -1,0 +1,10 @@
+%Warning-DECLFILENAME: testcases/struct_out_unpacked_InterfacePort.sv:9:11: Filename 'struct_out_unpacked_InterfacePort' does not match IFACE name: 'I'
+    9 | interface I
+      |           ^
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.008
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-WIDTHTRUNC: testcases/struct_out_unpacked_InterfacePort.sv:27:8: Output port connection 'o_a' expects 1 bits on the pin connection, but pin connection's VARREF 'o_a' generates 8 bits.
+                                                                        : ... In instance top
+   27 |     , .o_a
+      |        ^~~
+%Error: Exiting due to 2 warning(s)

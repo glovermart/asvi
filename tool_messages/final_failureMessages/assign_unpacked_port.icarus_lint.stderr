@@ -1,0 +1,3 @@
+testcases/assign_unpacked_port.sv:16: syntax error
+testcases/assign_unpacked_port.sv:16: Errors in port declarations.
+testcases/assign_unpacked_port.sv:35: warning: implicit definition of wire 'u_I'.

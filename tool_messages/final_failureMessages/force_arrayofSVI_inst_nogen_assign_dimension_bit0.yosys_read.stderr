@@ -1,0 +1,1 @@
+testcases/force_arrayofSVI_inst_nogen_assign_dimension_bit0.sv:15: ERROR: syntax error, unexpected '[', expecting ',' or '=' or ')'

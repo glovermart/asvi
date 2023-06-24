@@ -1,0 +1,7 @@
+    ( output .p1(x[3:0]) // Modport expression; LSBs.
+               |
+xmvlog: *E,MODPXE (testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_singleModule.sv,11|15): Unsupported modport expression for port identifier 'p1'.
+    ( output .p2(x[7:4]) // Modport expression; MSBs.
+               |
+xmvlog: *E,MODPXE (testcases/alwayscomb_packed_port_modportExpressions_singleGenericInterface_singleModule.sv,15|15): Unsupported modport expression for port identifier 'p2'.
+FAILURE

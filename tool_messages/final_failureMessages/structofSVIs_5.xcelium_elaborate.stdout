@@ -1,0 +1,41 @@
+  top u_DUT();
+          |
+xmelab: *W,CUVWSP (./testbench/tb.sv,3|10): 1 output port was not connected:
+xmelab: (./testcases/force_misc_inst_noVariableDec_modulePort.sv,37): o_a
+
+  top u_DUT();
+          |
+xmelab: *W,CUVWSI (./testbench/tb.sv,3|10): 1 input port was not connected:
+xmelab: (./testcases/force_misc_inst_noVariableDec_modulePort.sv,38): i_clk
+
+  M1 u_M1
+        |
+xmelab: *W,CUVWSI (./testcases/force_misc_inst_noVariableDec_modulePort.sv,43|8): 1 input port was not connected:
+xmelab: (./testcases/force_misc_inst_noVariableDec_modulePort.sv,13): i_b
+
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+    o_a <= u_I.z;
+               |
+xmelab: *E,CUVUNF (./testcases/force_misc_inst_noVariableDec_modulePort.sv,52|15): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT'.
+      u_I.y <= 1'b1;
+          |
+xmelab: *E,CUVUNF (./testcases/force_misc_inst_noVariableDec_modulePort.sv,61|10): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT'.
+      u_I.y <= 1'b0;
+          |
+xmelab: *E,CUVUNF (./testcases/force_misc_inst_noVariableDec_modulePort.sv,65|10): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT'.
+  assign u_I.z = i_b;
+             |
+xmelab: *E,CUVUNF (./testcases/force_misc_inst_noVariableDec_modulePort.sv,16|13): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.u_M1'.
+    if (u_I.y == 1'b1)
+            |
+xmelab: *E,CUVUNF (./testcases/force_misc_inst_noVariableDec_modulePort.sv,19|12): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M1'.
+      force u_I.z = 1'bz;
+                |
+xmelab: *E,CUVUNF (./testcases/force_misc_inst_noVariableDec_modulePort.sv,20|16): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.u_M1'.
+    if (u_I.y == 1'b0)
+            |
+xmelab: *E,CUVUNF (./testcases/force_misc_inst_noVariableDec_modulePort.sv,30|12): Hierarchical name component lookup failed for 'y' at 'tb.u_DUT.u_M2'.
+      release u_I.z;
+                  |
+xmelab: *E,CUVUNF (./testcases/force_misc_inst_noVariableDec_modulePort.sv,31|18): Hierarchical name component lookup failed for 'z' at 'tb.u_DUT.u_M2'.
+FAILURE

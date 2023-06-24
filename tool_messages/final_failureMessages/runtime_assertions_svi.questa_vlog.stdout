@@ -1,0 +1,12 @@
+QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+Start time: 16:48:16 on Jun 23,2023
+vlog -sv -lint=full testcases/runtime_assertions_svi.sv testbench/tb.sv 
+-- Compiling package runtime_assertions_svi_sv_unit
+-- Compiling interface I
+-- Compiling module top
+-- Compiling module tb
+
+Top level modules:
+	tb
+End time: 16:48:16 on Jun 23,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

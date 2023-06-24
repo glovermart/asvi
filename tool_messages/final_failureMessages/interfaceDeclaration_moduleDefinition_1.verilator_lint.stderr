@@ -1,0 +1,9 @@
+%Error-UNSUPPORTED: testcases/interfaceDeclaration_moduleDefinition_1.sv:23:3: Unsupported: interface decls within module decls
+   23 |   module M   
+      |   ^~~~~~
+                    ... For error description see https://verilator.org/warn/UNSUPPORTED?v=5.008
+%Error-UNSUPPORTED: testcases/interfaceDeclaration_moduleDefinition_1.sv:36:3: Unsupported: module decls within module decls
+   36 |   M u_M
+      |   ^
+%Error: Exiting due to 2 error(s)
+        ... See the manual at https://verilator.org/verilator_doc.html for more assistance.
